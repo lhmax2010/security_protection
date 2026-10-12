@@ -104,7 +104,7 @@ npx --prefix .local-tools/rea --no-install rea-agents function "$PWD/docs/probe/
 
 ## board-survey 进度与结论
 
-本轮目标：只读调查 Tizen 开发板 `192.168.108.26` 上20~40份平台ELF的现有加固与平台机制。所有新审计文件只写 `docs/probe/board-survey/`；板上不安装、不编译、不执行选中二进制、不写入任何文件；不取回二进制/固件/源码，仅采集版本、ELF符号/头部、加固表等文本元数据。只用普通 git push 同步。
+历史第一版目标（后续SDB授权增加网络持久化唯一写入）：只读调查 Tizen 开发板 `192.168.108.26` 上20~40份平台ELF的现有加固与平台机制。所有新审计文件只写 `docs/probe/board-survey/`；板上不安装、不编译、不执行选中二进制、不写入任何文件；不取回二进制/固件/源码，仅采集版本、ELF符号/头部、加固表等文本元数据。只用普通 git push 同步。
 
 - 开场已执行 `git pull --ff-only`，已核对上一轮STATE：REA/Ghidra ARM基线完成，Python pyc不支持等限制保留。当前基点48710eb。证据：[会话开始](board-survey/session-start.txt)。
 - [阻塞] 步骤1 SSH连接与板子身份；PM已提供用户名root，实际连接192.168.108.26:22超时（SSH exit255），未进入认证、未执行板上命令。证据：[原始SSH错误](board-survey/board-identity-ssh-timeout.txt)、[命令及退出状态](board-survey/board-identity-ssh-timeout.txt.meta.json)。
@@ -117,7 +117,7 @@ npx --prefix .local-tools/rea --no-install rea-agents function "$PWD/docs/probe/
 
 board-survey 上一次连接前暂停（历史记录）：当时用户名提示已发出但尚未收到答复；未尝试用本机默认账号linhao或root猜测登录，尚无板上身份/加固数据，不将准备脚本记为实测结果。只读身份、readelf采集、文本判定与平台机制脚本已准备并通过语法检查。后续由执行器将脚本直接通过SSH stdin送入`sh -s`，原输出只落本机board-survey；共享库PIE为N/A，helper仅定义不算canary/FORTIFY已启用。需PM输入仅为SSH用户名；凭据走本机密码窗口。
 
-### board-survey 当前挂账：SSH连接失败，按PM要求停止
+### board-survey 历史挂账：SSH连接失败（后续已改用SDB闭合连接）
 
 - PM已提供SSH账号`root`，本次开场再次`git pull --ff-only`，仓库已是最新。
 - 已执行一次SSH连接：`root@192.168.108.26`，端口22，ConnectTimeout=10、ConnectionAttempts=1；返回255。原始错误为`ssh: connect to host 192.168.108.26 port 22: Connection timed out`。证据：[board-identity.txt](board-survey/board-identity-ssh-timeout.txt)、[执行元数据](board-survey/board-identity-ssh-timeout.txt.meta.json)。
@@ -166,3 +166,17 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [完成，替代方法限制] 新步骤10：16份共享库动态导出数量及名称从板上真实SHT_DYNSYM元数据汇总，排除UND、只数定义GLOBAL/WEAK且DEFAULT/PROTECTED，并单列ABS版本标签。nm-D/readelf-dyn-syms真实尝试均exit127，原错保留。结论是动态接口暴露程度不统一、strip不消除动态名字；是否某个名字本应内部、源码visibility默认旗标不能由数量单独断定。证据：[符号数量/例名](board-survey/symbol-exposure.txt)、[精确计数及visibility](board-survey/symbol-exposure.json)、[标准工具错误](board-survey/symbol-tool-errors.txt)、[原始libdlog动态表](board-survey/raw/libdlog_so_0.txt)。
 
 - [完成] 新步骤11平台痕迹：smackfs真实挂载/sys/fs/smackfs，目录含access/access2/load/load2/ambient等接口，只ls文件名未dump规则；内核randomize_va_space=2；根/dev/mmcblk0p2 ext4为ro，/opt ext4为rw，与ConnMan实际/opt持久存储相容。mount未见verity字样、sys/block未见dm目录，限于这些查询范围不推断所有验证启动缺失。/sys/kernel/security/lsm不存在的报错保留，SMACK结论依赖实际挂载与身份context。证据：[原始平台查询](board-survey/platform-mechanisms.txt)、[解析结论与范围](board-survey/platform-mechanisms-summary.json)。
+
+### 本轮SDB board-survey最终进度与结论
+
+本轮步骤1~11均已完成其可执行范围；网络持久化是唯一板上配置写入，未重启、未安装工具、未取回任何板上二进制/固件/源码。标准readelf/nm不可用的字面工具路径仍挂账，实际属性与动态符号由通过交叉校验的既有RPM/Lua在板上读取，全部在报告中明确标记，不冒充标准工具输出。
+
+- **身份**：Raspberry Pi4 ModelB Rev1.5，Tizen11.0.0 Unified，armv7l，Linux6.12.80，内核Clang/LLD22.1.8；BuildID见[board-identity.txt](board-survey/board-identity.txt)。
+- **网络配置**：`/var/lib/connman/ethernet_2ccf67a072b5_cable/settings`（真实`/opt/var/lib/connman/.../settings`）持久存储manual192.168.108.26/24、gateway192.168.108.1、nameserver221.131.143.69、AutoConnect=true。原值本已存盘，通过API重新确认后当前DNS模式由unknown变为ipv4.manual；文件只改变Modified。已有vendor connman开机链接，不新增启动脚本、不改resolv.conf的本地代理、不重启。持久文件与语法已核验；重启后实际DNS/网络连通性未测试，交PM裁决。证据：[备份](board-survey/net-config-backup/var/lib/connman/ethernet_2ccf67a072b5_cable/settings)、[后配置/差异](board-survey/net-config-after/validation.json)、[最终实时读回](board-survey/final-readback.txt)。
+- **默认加固样本比例**：27真实ELF，PIE11/11可执行=100%（16DSO不适用），Full RELRO8/27=29.63%，Partial18/27=66.67%，None1/27=3.70%，NX请求27/27=100%，strip27/27=100%，FORTIFY导入迹象17/27=62.96%，canary导入迹象21/27=77.78%。RPATH0，RUNPATH8。没有动态helper导入不证明源码保护旗标关闭。证据：[统计](board-survey/hardening-summary.txt)、[矩阵](board-survey/hardening-matrix.txt)。
+- **动态符号**：libdlog11、libcynara-client14、libnetwork55，libpkgmgr-info1456（1158 C++mangled条目，包含pkgmgr_common类/模板实现线索）；基础库libstdc++5898、libcrypto5790。均指非ABS的可导出动态条目，不是唯一函数名或“内部符号”精确数。说明strip后仍有明显接口/实现命名线索，库间暴露程度不统一；不能仅凭数量推断-fvisibility默认值。证据：[符号数量/例名](board-survey/symbol-exposure.txt)、[原始pkgmgr动态表](board-survey/raw/libpkgmgr_info_so_0.txt)。
+- **平台**：SMACK已挂载并观察到带label的root上下文；ASLR=2；根ext4只读，/opt可写；mount/sysfs有限查询未见dm-verity证据，不能推断所有安全启动缺失。证据：[平台原输出](board-survey/platform-mechanisms.txt)、[范围说明](board-survey/platform-mechanisms-summary.json)。
+
+**保留挂账**：板上标准ELF工具均缺失（替代元数据结果已取得，但标准工具复验未完成）；/sys/kernel/security/lsm不存在；vconftool非ELF已排除；初次busctl标准Properties.Get不支持，改真实GetProperties接口后成功；SDB长命令/初次交互及heredoc解析错误原样存档。没有需PM执行的阻断项；是否重启验网由PM决定。
+
+- 最终证据审计通过：逐样本原输出/派生字段、统计分母、网络备份与最终读回、身份/平台断言、STATE证据链接、脚本语法及全部新增文件UTF8/非二进制检查通过。新增调查文件均位于docs/probe/board-survey，忽略SDB/SSH运行时目录；所有结果只通过git push同步。证据：[审计结果](board-survey/final-audit.json)、[文本文件SHA256清单](board-survey/metadata-manifest.json)。未把替代解码器误写为readelf，不隐藏工具缺失，不宣称重启联网验证。

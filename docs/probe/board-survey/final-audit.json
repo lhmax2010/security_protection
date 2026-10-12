@@ -1,0 +1,1760 @@
+{
+  "passed": 350,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "27 real ARM ELF rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "11 executable and 16 DSO",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "bash actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "systemctl actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dbus_daemon actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "connmand actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dlogutil actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "cynara actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "security_manager actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "pkgmgr_server actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sqlite3 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "rpm actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "find actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libc_so_6 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libstdc++_so_6 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libsystemd_so_0 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libglib_2_0_so_0 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libdbus_1_so_3 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libcrypto_so_3 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libssl_so_3 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libsqlite3_so_0 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libdlog_so_0 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libcynara_client_so_0 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libcynara_admin_so_0 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libsecurity_manager_client_so_3 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libnetwork_so_0 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libpkgmgr_client_so_0 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libpkgmgr_info_so_0 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "libvconf_so_0 actual decoder fields and preserved readelf failure",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "reference reader validation passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "whole batch source integrity checked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "summary denominators and positive counts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "network prior backup and after config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "network fields syntax and no reboot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "current independent final readback succeeded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "SMACK ASLR and readonly root observed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "candidate exclusion preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "STATE survey evidence links exist",
+      "passed": true,
+      "detail": {
+        "count": 69,
+        "missing": []
+      }
+    },
+    {
+      "check": ".gitignore text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": ".gitignore UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base64-tool-path.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base64-tool-path.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base64-tool-path.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "base64-tool-path.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity-sdb.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity-sdb.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity-sdb.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity-sdb.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity-ssh-timeout.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity-ssh-timeout.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity-ssh-timeout.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity-ssh-timeout.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "board-identity.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-base64.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-base64.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-base64.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-base64.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-direct.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-direct.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-direct.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-direct.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-verified.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-verified.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-verified.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation-verified.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-board-validation.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-local-validation.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-local-validation.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-local-validation.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "elf-reader-local-validation.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "excluded-candidates.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "excluded-candidates.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "final-readback.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "final-readback.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "final-readback.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "final-readback.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-capture.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-capture.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-capture.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-capture.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-matrix.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-matrix.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-matrix.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-matrix.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-summary.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-summary.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-summary.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "hardening-summary.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-backup-capture.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-backup-capture.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-backup-capture.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-backup-capture.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-before.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-before.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-before.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-before.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-config-after/validation.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-config-after/validation.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-config-after/var/lib/connman/ethernet_2ccf67a072b5_cable/settings text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-config-after/var/lib/connman/ethernet_2ccf67a072b5_cable/settings UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-config-backup/manifest.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-config-backup/manifest.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-config-backup/var/lib/connman/ethernet_2ccf67a072b5_cable/settings text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-config-backup/var/lib/connman/ethernet_2ccf67a072b5_cable/settings UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-dns-before.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-dns-before.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-dns-before.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-dns-before.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-manager-inspection-no-pager.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-manager-inspection-no-pager.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-manager-inspection-no-pager.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-manager-inspection-no-pager.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-manager-inspection.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-manager-inspection.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-manager-inspection.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-manager-inspection.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-persist.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-persist.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-persist.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-persist.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-verification.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-verification.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-verification.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "net-verification.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "platform-file-inventory.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "platform-file-inventory.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "platform-file-inventory.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "platform-file-inventory.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "platform-mechanisms-summary.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "platform-mechanisms-summary.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "platform-mechanisms.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "platform-mechanisms.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "platform-mechanisms.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "platform-mechanisms.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/bash.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/bash.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/connmand.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/connmand.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/cynara.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/cynara.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/dbus_daemon.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/dbus_daemon.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/dlogutil.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/dlogutil.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/find.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/find.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libc_so_6.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libc_so_6.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libcrypto_so_3.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libcrypto_so_3.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libcynara_admin_so_0.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libcynara_admin_so_0.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libcynara_client_so_0.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libcynara_client_so_0.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libdbus_1_so_3.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libdbus_1_so_3.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libdlog_so_0.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libdlog_so_0.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libglib_2_0_so_0.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libglib_2_0_so_0.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libnetwork_so_0.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libnetwork_so_0.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libpkgmgr_client_so_0.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libpkgmgr_client_so_0.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libpkgmgr_info_so_0.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libpkgmgr_info_so_0.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libsecurity_manager_client_so_3.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libsecurity_manager_client_so_3.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libsqlite3_so_0.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libsqlite3_so_0.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libssl_so_3.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libssl_so_3.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libstdc++_so_6.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libstdc++_so_6.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libsystemd_so_0.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libsystemd_so_0.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libvconf_so_0.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/libvconf_so_0.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/pkgmgr_server.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/pkgmgr_server.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/rpm.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/rpm.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/security_manager.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/security_manager.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/sqlite3.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/sqlite3.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/systemctl.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/systemctl.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/vconftool.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "raw/vconftool.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-list.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-list.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-resolution-batched.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-resolution-batched.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-resolution-streamed.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-resolution-streamed.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-resolution-streamed.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-resolution-streamed.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-resolution.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-resolution.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-resolution.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sample-resolution.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "samples-candidates.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "samples-candidates.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "samples.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "samples.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/collect-elf-metadata.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/collect-elf-metadata.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/elf-board-validation-direct.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/elf-board-validation-direct.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/elf-board-validation.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/elf-board-validation.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/elf-metadata.lua text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/elf-metadata.lua UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/elf-reader-local-validation.lua text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/elf-reader-local-validation.lua UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/final-audit.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/final-audit.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/final-readback.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/final-readback.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/hardening-collect.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/hardening-collect.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/identity.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/identity.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/inventory.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/inventory.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/lua-host-run.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/lua-host-run.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-backup.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-backup.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-before.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-before.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-dns-read.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-dns-read.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-inspect.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-inspect.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-persist.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-persist.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-verify.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-verify.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/parse-hardening.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/parse-hardening.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/parse-rpm-metadata.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/parse-rpm-metadata.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/platform-mechanisms.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/platform-mechanisms.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/sample-resolve-batched.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/sample-resolve-batched.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/sample-resolve.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/sample-resolve.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/sdb-connect.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/sdb-connect.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/sdb-run.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/sdb-run.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/ssh-askpass.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/ssh-askpass.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/ssh-run.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/ssh-run.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/stream-test.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/stream-test.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/summarize-hardening.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/summarize-hardening.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/summarize-platform.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/summarize-platform.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/summarize-symbols.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/summarize-symbols.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/symbol-tools.sh text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/symbol-tools.sh UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/validate-elf-reader.py text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/validate-elf-reader.py UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-connect.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-connect.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-connect.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-connect.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-help.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-help.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-root.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-root.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-root.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-root.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-stdin-test.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-stdin-test.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-stdin-test.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-stdin-test.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-target.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-target.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-version.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "sdb-version.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "session-start.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "session-start.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "symbol-exposure.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "symbol-exposure.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "symbol-exposure.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "symbol-exposure.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "symbol-tool-errors.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "symbol-tool-errors.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "symbol-tool-errors.txt.meta.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "symbol-tool-errors.txt.meta.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "transport-echo-diagnosis.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "transport-echo-diagnosis.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/comparison.json text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/comparison.json UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/ls-decoder.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/ls-decoder.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/ls-readelf.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/ls-readelf.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/ls.lua text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/ls.lua UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_gcc_armv7l-decoder.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_gcc_armv7l-decoder.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_gcc_armv7l-readelf.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_gcc_armv7l-readelf.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_gcc_armv7l.lua text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_gcc_armv7l.lua UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_llvm_armv7l-decoder.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_llvm_armv7l-decoder.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_llvm_armv7l-readelf.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_llvm_armv7l-readelf.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_llvm_armv7l.lua text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_c_llvm_armv7l.lua UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_rust_armv7l-decoder.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_rust_armv7l-decoder.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_rust_armv7l-readelf.txt text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_rust_armv7l-readelf.txt UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_rust_armv7l.lua text metadata or authored source only",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "validation/target_rust_armv7l.lua UTF8 text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/identity.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/stream-test.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/ssh-askpass.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-backup.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/symbol-tools.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/elf-board-validation.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-inspect.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/elf-board-validation-direct.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-dns-read.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/platform-mechanisms.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-persist.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/collect-elf-metadata.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/inventory.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/hardening-collect.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/final-readback.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-before.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/net-verify.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "scripts/sample-resolve.sh host shell syntax",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "limits": "No reboot was performed; board readelf/nm/checksec remain unavailable. The replacement decoder was independently compared against host readelf and executed on-board."
+}

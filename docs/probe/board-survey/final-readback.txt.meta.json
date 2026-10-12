@@ -1,0 +1,10 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/final-readback.sh",
+  "script_sha256": "abdf931150fb45124d41a5e61c56294fdb617ae5a8dcee6a0fb6e2d9e89d1f71",
+  "normalized_source_sha256": "16b0f6cdd99602db8b9d8bebe6e7b704e4237deea8c562f0056e47114a71597f",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 0.215,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}
