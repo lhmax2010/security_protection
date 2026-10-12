@@ -5,7 +5,7 @@
 ## 计划与进度
 1. [完成] 初始化台账、获取官方文档、安装本地 Node/JDK/Ghidra/REA。
 2. [完成（全量 doctor 异常已挂账）] 配置 Ghidra native provider，运行 doctor。
-3. [待执行] 编译 GCC/LLVM/Rust ARM32 ELF、Python pyc、JS、.NET DLL。
+3. [完成] 编译 GCC/LLVM/Rust ARM32 ELF、Python pyc、JS、.NET DLL。
 4. [待执行] 逐样本运行 REA，记录恢复质量、错误与能力边界。
 5. [待执行] 汇总真实证据、复现脚本与强弱排序，完成 push。
 
@@ -56,3 +56,5 @@
 - LLVM ARM32 REA 完成，32 项 procedure 库存，函数/明文/算法可见，main 调用清晰；返回/参数被缩窄为 short/ushort。证据 evidence/target_c_llvm_armv7l/{requests.json,marker-search.decoded.json,secret_transform-pseudocode.c,simple_checksum-pseudocode.c,main-pseudocode.c,secret_transform-assembly.asm,symbol-recovery-metrics.json}。
 
 - Rust ARM32 REA 主分析完成，768 项 procedure 库存，两个锚点算法可反编译；字符串搜索为 []（仅 Ghidra 已定义 string data 库存），main 名称歧义导致8项聚焦调用报错，待地址选择补查。证据 evidence/target_rust_armv7l/{requests.json,marker-search.decoded.json,main-info.decoded.json,secret_transform-pseudocode.c,simple_checksum-pseudocode.c,symbol-recovery-metrics.json}。
+
+- Python pyc REA 实测拒绝 unsupported binary format，后续 overview 因无 active target 报错；未用 Python dis 或外部反编译器充当 REA 成功。三锚点恢复均 N/A，不代表 pyc 有保护。证据 evidence/target_py.pyc/{open.decoded.json,overview.decoded.json,capability-names.json,requests.json}。

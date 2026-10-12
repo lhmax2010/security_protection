@@ -1,0 +1,37 @@
+[
+  {
+    "label": "open",
+    "tool": "open_binary",
+    "arguments": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_py.pyc",
+      "provider_id": "ghidra"
+    },
+    "elapsed_ms": 1862,
+    "isError": true,
+    "transport_error": null
+  },
+  {
+    "label": "session",
+    "tool": "binary_session",
+    "arguments": {},
+    "elapsed_ms": 235,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "overview",
+    "tool": "binary_overview",
+    "arguments": {},
+    "elapsed_ms": 2,
+    "isError": true,
+    "transport_error": null
+  },
+  {
+    "label": "close",
+    "tool": "close_binary",
+    "arguments": {},
+    "elapsed_ms": 2,
+    "isError": false,
+    "transport_error": null
+  }
+]
