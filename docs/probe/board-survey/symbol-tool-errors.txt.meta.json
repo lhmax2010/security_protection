@@ -1,0 +1,10 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/symbol-tools.sh",
+  "script_sha256": "d513c4344add02337cc0956b7672c7046cb4d9426dbbfa2e7d29af5316b47c85",
+  "normalized_source_sha256": "ccd4b8f9b33a71aa5f6615a2ef4847fc00aab9dfeaa2e998d86326d104e2b6cb",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 0.165,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}

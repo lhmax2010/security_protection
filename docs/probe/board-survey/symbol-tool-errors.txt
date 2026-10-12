@@ -1,0 +1,21 @@
+
+COMMAND: nm -D /usr/lib/libdlog.so.0
+sh: line 4: nm: command not found
+EXIT_CODE: 127
+COMMAND: readelf --dyn-syms /usr/lib/libdlog.so.0
+sh: line 7: readelf: command not found
+EXIT_CODE: 127
+
+COMMAND: nm -D /usr/lib/libcynara-client.so.0
+sh: line 4: nm: command not found
+EXIT_CODE: 127
+COMMAND: readelf --dyn-syms /usr/lib/libcynara-client.so.0
+sh: line 7: readelf: command not found
+EXIT_CODE: 127
+
+COMMAND: nm -D /usr/lib/libsecurity-manager-client.so.3
+sh: line 4: nm: command not found
+EXIT_CODE: 127
+COMMAND: readelf --dyn-syms /usr/lib/libsecurity-manager-client.so.3
+sh: line 7: readelf: command not found
+EXIT_CODE: 127

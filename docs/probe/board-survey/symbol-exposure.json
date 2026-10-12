@@ -1,0 +1,526 @@
+{
+  "libraries": [
+    {
+      "path": "/usr/lib/libc.so.6",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 3184,
+      "exported_non_ABS": 3149,
+      "exported_FUNC_IFUNC": 3003,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 3186
+      },
+      "exported_Cpp_mangled_names": 0,
+      "example_export_names": [
+        "fgetc",
+        "pthread_attr_getstacksize",
+        "pthread_attr_setscope",
+        "envz_strip",
+        "pthread_attr_getstacksize",
+        "iruserok_af",
+        "_nss_files_getpwent_r",
+        "pthread_setcancelstate",
+        "stdc_first_leading_one_ul",
+        "cfmakeraw",
+        "ns_name_pack",
+        "ns_name_pack"
+      ],
+      "underscore_prefixed_examples": [
+        "_nss_files_getpwent_r",
+        "_IO_iter_begin",
+        "_IO_str_init_readonly",
+        "__vswprintf_chk",
+        "_nss_files_gethostbyname4_r",
+        "__pthread_rwlock_rdlock",
+        "__sendmsg64",
+        "__cmsg_nxthdr",
+        "_nss_files_gethostent_r",
+        "_nss_files_setprotoent",
+        "__pthread_rwlock_trywrlock",
+        "_IO_free_wbackup_area"
+      ],
+      "raw_evidence": "raw/libc_so_6.txt"
+    },
+    {
+      "path": "/usr/lib/libstdc++.so.6",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 5950,
+      "exported_non_ABS": 5898,
+      "exported_FUNC_IFUNC": 4610,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 6058
+      },
+      "exported_Cpp_mangled_names": 5816,
+      "example_export_names": [
+        "_ZNKSbIwSt11char_traitsIwESaIwEE8capacityEv",
+        "_ZTVNSt7__cxx1117moneypunct_bynameIwLb0EEE",
+        "_ZNSt7__cxx1115messages_bynameIcEC2EPKcj",
+        "_ZNSsC1Ev",
+        "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE10_M_disposeEv",
+        "_ZNSt9money_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEED0Ev",
+        "_ZTIPKu6__bf16",
+        "_ZNSt12ctype_bynameIcEC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj",
+        "_ZNSt14numeric_limitsIjE15tinyness_beforeE",
+        "_ZNKSt7__cxx118time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE8get_dateES4_S4_RSt8ios_baseRSt12_Ios_IostateP2tm",
+        "_ZStrsIfwSt11char_traitsIwEERSt13basic_istreamIT0_T1_ES6_RSt7complexIT_E",
+        "_ZNSt15basic_streambufIcSt11char_traitsIcEE8overflowEi"
+      ],
+      "underscore_prefixed_examples": [
+        "_ZNKSbIwSt11char_traitsIwESaIwEE8capacityEv",
+        "_ZTVNSt7__cxx1117moneypunct_bynameIwLb0EEE",
+        "_ZNSt7__cxx1115messages_bynameIcEC2EPKcj",
+        "_ZNSsC1Ev",
+        "_ZNSt7__cxx1112basic_stringIwSt11char_traitsIwESaIwEE10_M_disposeEv",
+        "_ZNSt9money_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEED0Ev",
+        "_ZTIPKu6__bf16",
+        "_ZNSt12ctype_bynameIcEC1ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEj",
+        "_ZNSt14numeric_limitsIjE15tinyness_beforeE",
+        "_ZNKSt7__cxx118time_getIcSt19istreambuf_iteratorIcSt11char_traitsIcEEE8get_dateES4_S4_RSt8ios_baseRSt12_Ios_IostateP2tm",
+        "_ZStrsIfwSt11char_traitsIwEERSt13basic_istreamIT0_T1_ES6_RSt7complexIT_E",
+        "_ZNSt15basic_streambufIcSt11char_traitsIcEE8overflowEi"
+      ],
+      "raw_evidence": "raw/libstdc++_so_6.txt"
+    },
+    {
+      "path": "/usr/lib/libsystemd.so.0",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 568,
+      "exported_non_ABS": 542,
+      "exported_FUNC_IFUNC": 541,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 570
+      },
+      "exported_Cpp_mangled_names": 0,
+      "example_export_names": [
+        "sd_event_source_disable_unref",
+        "sd_bus_set_connected_signal",
+        "sd_is_socket",
+        "sd_bus_call",
+        "sd_event_source_get_pending",
+        "sd_bus_set_method_call_timeout",
+        "sd_pid_get_slice",
+        "sd_journal_sendv",
+        "sd_event_source_get_child_pid",
+        "sd_journal_close",
+        "sd_device_monitor_unref",
+        "sd_journal_open_files_fd"
+      ],
+      "underscore_prefixed_examples": [],
+      "raw_evidence": "raw/libsystemd_so_0.txt"
+    },
+    {
+      "path": "/usr/lib/libglib-2.0.so.0",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 1879,
+      "exported_non_ABS": 1879,
+      "exported_FUNC_IFUNC": 1857,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 1881
+      },
+      "exported_Cpp_mangled_names": 0,
+      "example_export_names": [
+        "g_cond_broadcast",
+        "g_uuid_string_random",
+        "g_node_depth",
+        "g_bytes_get_region",
+        "g_strrstr",
+        "g_usleep",
+        "g_variant_new_printf",
+        "g_mem_set_vtable",
+        "g_async_queue_try_pop",
+        "g_hash_table_iter_init",
+        "g_rw_lock_reader_lock",
+        "g_variant_ref_sink"
+      ],
+      "underscore_prefixed_examples": [
+        "__glib_assert_msg"
+      ],
+      "raw_evidence": "raw/libglib_2_0_so_0.txt"
+    },
+    {
+      "path": "/usr/lib/libdbus-1.so.3",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 564,
+      "exported_non_ABS": 562,
+      "exported_FUNC_IFUNC": 561,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 566
+      },
+      "exported_Cpp_mangled_names": 0,
+      "example_export_names": [
+        "_dbus_concat_dir_and_file",
+        "dbus_message_new_error",
+        "_dbus_hash_table_insert_string",
+        "_dbus_string_replace_len",
+        "_dbus_string_append_printf_valist",
+        "_dbus_watch_list_new",
+        "_dbus_list_pop_first",
+        "dbus_connection_set_max_message_unix_fds",
+        "dbus_message_has_interface",
+        "dbus_signature_iter_next",
+        "_dbus_pipe_write",
+        "_dbus_list_copy"
+      ],
+      "underscore_prefixed_examples": [
+        "_dbus_concat_dir_and_file",
+        "_dbus_hash_table_insert_string",
+        "_dbus_string_replace_len",
+        "_dbus_string_append_printf_valist",
+        "_dbus_watch_list_new",
+        "_dbus_list_pop_first",
+        "_dbus_pipe_write",
+        "_dbus_list_copy",
+        "_dbus_header_set_field_basic",
+        "_dbus_is_a_number",
+        "_dbus_asv_abandon",
+        "_dbus_create_uuid"
+      ],
+      "raw_evidence": "raw/libdbus_1_so_3.txt"
+    },
+    {
+      "path": "/usr/lib/libcrypto.so.3",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 5799,
+      "exported_non_ABS": 5790,
+      "exported_FUNC_IFUNC": 5790,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 5801
+      },
+      "exported_Cpp_mangled_names": 0,
+      "example_export_names": [
+        "d2i_OSSL_TIME_SPEC_WEEKS",
+        "OCSP_basic_add1_cert",
+        "d2i_RSA_PSS_PARAMS",
+        "EVP_PKEY_public_check_quick",
+        "NAMING_AUTHORITY_get0_authorityURL",
+        "EVP_CIPHER_CTX_test_flags",
+        "PKCS12_pack_p7data",
+        "ASN1_GENERALIZEDTIME_adj",
+        "ASN1_TIME_new",
+        "EVP_KDF_is_a",
+        "ERR_load_OCSP_strings",
+        "EVP_PKEY_meth_get_paramgen"
+      ],
+      "underscore_prefixed_examples": [],
+      "raw_evidence": "raw/libcrypto_so_3.txt"
+    },
+    {
+      "path": "/usr/lib/libssl.so.3",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 604,
+      "exported_non_ABS": 599,
+      "exported_FUNC_IFUNC": 599,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 606
+      },
+      "exported_Cpp_mangled_names": 0,
+      "example_export_names": [
+        "SSL_CTX_set_not_resumable_session_callback",
+        "SSL_CTX_get_client_cert_cb",
+        "SSL_CTX_check_private_key",
+        "SSL_CTX_set_block_padding_ex",
+        "SSL_renegotiate_pending",
+        "SSL_CTX_new_ex",
+        "SSL_CIPHER_get_kx_nid",
+        "SSL_SESSION_get_timeout",
+        "SSL_CONF_CTX_set1_prefix",
+        "SSL_CTX_set_srp_username",
+        "SSL_SESSION_get0_peer",
+        "SSL_set_security_level"
+      ],
+      "underscore_prefixed_examples": [],
+      "raw_evidence": "raw/libssl_so_3.txt"
+    },
+    {
+      "path": "/usr/lib/libsqlite3.so.0",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 341,
+      "exported_non_ABS": 341,
+      "exported_FUNC_IFUNC": 338,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 343
+      },
+      "exported_Cpp_mangled_names": 0,
+      "example_export_names": [
+        "sqlite3changeset_start_v2",
+        "sqlite3_error_offset",
+        "sqlite3_backup_remaining",
+        "sqlite3changegroup_add_change",
+        "sqlite3_status64",
+        "sqlite3changeset_new",
+        "sqlite3_str_reset",
+        "sqlite3_total_changes64",
+        "sqlite3_log",
+        "sqlite3_bind_text16",
+        "sqlite3_stmt_status",
+        "sqlite3_db_status"
+      ],
+      "underscore_prefixed_examples": [],
+      "raw_evidence": "raw/libsqlite3_so_0.txt"
+    },
+    {
+      "path": "/usr/lib/libdlog.so.0",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 11,
+      "exported_non_ABS": 11,
+      "exported_FUNC_IFUNC": 11,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 13
+      },
+      "exported_Cpp_mangled_names": 0,
+      "example_export_names": [
+        "dlog_print_dotnet",
+        "dlog_set_minimum_priority",
+        "dlog_vprint_dotnet",
+        "dlog_vprint",
+        "dlog_print",
+        "__dlog_print",
+        "__dlog_critical_print",
+        "__dlog_vprint",
+        "dlog_vprint_native",
+        "__dlog_sec_print",
+        "dlog_print_native"
+      ],
+      "underscore_prefixed_examples": [
+        "__dlog_print",
+        "__dlog_critical_print",
+        "__dlog_vprint",
+        "__dlog_sec_print"
+      ],
+      "raw_evidence": "raw/libdlog_so_0.txt"
+    },
+    {
+      "path": "/usr/lib/libcynara-client.so.0",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 14,
+      "exported_non_ABS": 14,
+      "exported_FUNC_IFUNC": 8,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 16
+      },
+      "exported_Cpp_mangled_names": 7,
+      "example_export_names": [
+        "cynara_check",
+        "_ZTISt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZTSSt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "cynara_initialize",
+        "_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "cynara_finish",
+        "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EED2Ev",
+        "_ZZNSt19_Sp_make_shared_tag5_S_tiEvE5__tag",
+        "cynara_configuration_create",
+        "cynara_simple_check",
+        "_ZTSSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "cynara_configuration_set_cache_size"
+      ],
+      "underscore_prefixed_examples": [
+        "_ZTISt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZTSSt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EED2Ev",
+        "_ZZNSt19_Sp_make_shared_tag5_S_tiEvE5__tag",
+        "_ZTSSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZTSSt19_Sp_make_shared_tag"
+      ],
+      "raw_evidence": "raw/libcynara_client_so_0.txt"
+    },
+    {
+      "path": "/usr/lib/libcynara-admin.so.0",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 21,
+      "exported_non_ABS": 21,
+      "exported_FUNC_IFUNC": 12,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 23
+      },
+      "exported_Cpp_mangled_names": 11,
+      "example_export_names": [
+        "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EED2Ev",
+        "cynara_admin_check",
+        "_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZTIFivE",
+        "cynara_admin_list_policies_descriptions",
+        "cynara_admin_set_bucket",
+        "_ZTISt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZTSSt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZTSFivE",
+        "cynara_admin_initialize",
+        "_ZTSSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZSt19piecewise_construct"
+      ],
+      "underscore_prefixed_examples": [
+        "_ZNSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EED2Ev",
+        "_ZTISt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZTIFivE",
+        "_ZTISt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZTSSt11_Mutex_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZTSFivE",
+        "_ZTSSt16_Sp_counted_baseILN9__gnu_cxx12_Lock_policyE2EE",
+        "_ZSt19piecewise_construct",
+        "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESaIS8_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSA_18_Mod_range_hashingENSA_20_Default_ranged_hashENSA_20_Prime_rehash_policyENSA_17_Hashtable_traitsILb1ELb0ELb1EEEED2Ev",
+        "_ZTSSt19_Sp_make_shared_tag",
+        "_ZZNSt19_Sp_make_shared_tag5_S_tiEvE5__tag"
+      ],
+      "raw_evidence": "raw/libcynara_admin_so_0.txt"
+    },
+    {
+      "path": "/usr/lib/libsecurity-manager-client.so.3",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 137,
+      "exported_non_ABS": 137,
+      "exported_FUNC_IFUNC": 137,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 139
+      },
+      "exported_Cpp_mangled_names": 40,
+      "example_export_names": [
+        "security_manager_private_sharing_req_set_owner_appid",
+        "security_manager_set_identity",
+        "security_manager_policy_entry_set_privilege",
+        "security_manager_private_sharing_req_set_target_appid",
+        "security_manager_path_req_set_pkg_id",
+        "security_manager_path_req_set_uid",
+        "security_manager_app_inst_req_set_target_version",
+        "security_manager_app_inst_req_add_path",
+        "_ZSt16__do_uninit_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiESt6vectorIS9_SaIS9_EEEEPS9_ET0_T_SI_SH_",
+        "security_manager_app_inst_req_set_pkg_id",
+        "_ZSt8_DestroyIPSt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_EEvT_S9_",
+        "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_SaIS5_ENSt8__detail9_IdentityESt8equal_toIS5_ESt4hashIS5_ENS7_18_Mod_range_hashingENS7_20_Default_ranged_hashENS7_20_Prime_rehash_policyENS7_17_Hashtable_traitsILb1ELb1ELb1EEEE10_M_emplaceIJRKS5_EEESt4pairINS7_14_Node_iteratorIS5_Lb1ELb1EEEbESt17integral_constantIbLb1EEDpOT_"
+      ],
+      "underscore_prefixed_examples": [
+        "_ZSt16__do_uninit_copyIN9__gnu_cxx17__normal_iteratorIPKSt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiESt6vectorIS9_SaIS9_EEEEPS9_ET0_T_SI_SH_",
+        "_ZSt8_DestroyIPSt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_EEvT_S9_",
+        "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_SaIS5_ENSt8__detail9_IdentityESt8equal_toIS5_ESt4hashIS5_ENS7_18_Mod_range_hashingENS7_20_Default_ranged_hashENS7_20_Prime_rehash_policyENS7_17_Hashtable_traitsILb1ELb1ELb1EEEE10_M_emplaceIJRKS5_EEESt4pairINS7_14_Node_iteratorIS5_Lb1ELb1EEEbESt17integral_constantIbLb1EEDpOT_",
+        "_ZNSt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_ED2Ev",
+        "_ZNSt10_HashtableIiSt4pairIKiPFvvEESaIS4_ENSt8__detail10_Select1stESt8equal_toIiESt4hashIiENS6_18_Mod_range_hashingENS6_20_Default_ranged_hashENS6_20_Prime_rehash_policyENS6_17_Hashtable_traitsILb0ELb0ELb1EEEE9_M_rehashEjSt17integral_constantIbLb1EE",
+        "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EE17_M_realloc_appendIJS7_EEEvDpOT_",
+        "_ZStlsIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_RKSt10error_code",
+        "_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_SaIS5_ENSt8__detail9_IdentityESt8equal_toIS5_ESt4hashIS5_ENS7_18_Mod_range_hashingENS7_20_Default_ranged_hashENS7_20_Prime_rehash_policyENS7_17_Hashtable_traitsILb1ELb1ELb1EEEE12_Scoped_nodeD2Ev",
+        "_ZNSt13unordered_mapIiPFvvESt4hashIiESt8equal_toIiESaISt4pairIKiS1_EEED2Ev",
+        "_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiESaIS7_EE17_M_realloc_appendIJS7_EEEvDpOT_",
+        "_ZNSt8__detail16_Hashtable_allocISaINS_10_Hash_nodeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEELb1EEEEE16_M_allocate_nodeIJRKS7_EEEPS8_DpOT_",
+        "_ZNSt6vectorIbSaIbEE13_M_insert_auxESt13_Bit_iteratorb"
+      ],
+      "raw_evidence": "raw/libsecurity_manager_client_so_3.txt"
+    },
+    {
+      "path": "/usr/lib/libnetwork.so.0",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 55,
+      "exported_non_ABS": 55,
+      "exported_FUNC_IFUNC": 55,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 57
+      },
+      "exported_Cpp_mangled_names": 0,
+      "example_export_names": [
+        "net_get_metered_state",
+        "net_get_active_net_info",
+        "net_mptcp_set_path_manager",
+        "net_mptcp_get_scheduler",
+        "net_mptcp_supported",
+        "net_ethernet_eap_enabled",
+        "net_get_network_status",
+        "net_set_default_cellular_service_profile_async",
+        "net_save_ethernet_eap_config",
+        "net_get_ntp_server_info",
+        "net_add_route_ipv6",
+        "net_deregister_client"
+      ],
+      "underscore_prefixed_examples": [],
+      "raw_evidence": "raw/libnetwork_so_0.txt"
+    },
+    {
+      "path": "/usr/lib/libpkgmgr-client.so.0",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 242,
+      "exported_non_ABS": 242,
+      "exported_FUNC_IFUNC": 215,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 244
+      },
+      "exported_Cpp_mangled_names": 133,
+      "example_export_names": [
+        "pkgmgr_client_res_usr_uninstall",
+        "_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE4findERS7_",
+        "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE17_M_insert_unique_IRKS8_NSE_11_Alloc_nodeEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EOT_RT0_",
+        "_ZNKSt13__future_base13_State_baseV221_M_is_deferred_futureEv",
+        "pkgmgr_client_clear_all_cache_dir",
+        "_ZNKSt14__basic_futureIiE13_M_get_resultEv",
+        "_ZNSt8__detail9__variant15_Move_ctor_baseILb0EJNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt17basic_string_viewIcS5_EEEC2EOSA_",
+        "_ZZNSt9once_flag18_Prepare_executionC1IZSt9call_onceIMNSt13__future_base13_State_baseV2EFvPSt8functionIFSt10unique_ptrINS3_12_Result_baseENS7_8_DeleterEEvEEPbEJPS4_SC_SD_EEvRS_OT_DpOT0_EUlvE_EERSI_ENUlvE_8__invokeEv",
+        "_ZNSt13__future_base13_State_baseV216_M_break_promiseESt10unique_ptrINS_12_Result_baseENS2_8_DeleterEE",
+        "pkgmgr_client_install",
+        "pkgmgr_client_usr_clear_user_data",
+        "_ZNSt11unique_lockISt5mutexED2Ev"
+      ],
+      "underscore_prefixed_examples": [
+        "_ZNKSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE4findERS7_",
+        "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_iESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE17_M_insert_unique_IRKS8_NSE_11_Alloc_nodeEEESt17_Rb_tree_iteratorIS8_ESt23_Rb_tree_const_iteratorIS8_EOT_RT0_",
+        "_ZNKSt13__future_base13_State_baseV221_M_is_deferred_futureEv",
+        "_ZNKSt14__basic_futureIiE13_M_get_resultEv",
+        "_ZNSt8__detail9__variant15_Move_ctor_baseILb0EJNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt17basic_string_viewIcS5_EEEC2EOSA_",
+        "_ZZNSt9once_flag18_Prepare_executionC1IZSt9call_onceIMNSt13__future_base13_State_baseV2EFvPSt8functionIFSt10unique_ptrINS3_12_Result_baseENS7_8_DeleterEEvEEPbEJPS4_SC_SD_EEvRS_OT_DpOT0_EUlvE_EERSI_ENUlvE_8__invokeEv",
+        "_ZNSt13__future_base13_State_baseV216_M_break_promiseESt10unique_ptrINS_12_Result_baseENS2_8_DeleterEE",
+        "_ZNSt11unique_lockISt5mutexED2Ev",
+        "_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJS5_EEEvDpOT_",
+        "_ZTINSt13__future_base7_ResultIiEE",
+        "_ZNSt14_Function_baseD2Ev",
+        "_ZNSt14__basic_futureIiEC2ERKSt10shared_ptrINSt13__future_base13_State_baseV2EE"
+      ],
+      "raw_evidence": "raw/libpkgmgr_client_so_0.txt"
+    },
+    {
+      "path": "/usr/lib/libpkgmgr-info.so.0",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 1456,
+      "exported_non_ABS": 1456,
+      "exported_FUNC_IFUNC": 1378,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 1458
+      },
+      "exported_Cpp_mangled_names": 1158,
+      "example_export_names": [
+        "_ZN13pkgmgr_common6parcel18CertInfoParcelable12ReadCertInfoEPN10tizen_base6ParcelE",
+        "pkgmgrinfo_appinfo_metadata_filter_add",
+        "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE17_M_construct_nodeIJRKSt21piecewise_construct_tSt5tupleIJRS7_EESJ_IJEEEEEvPSt13_Rb_tree_nodeIS8_EDpOT_",
+        "_ZN13pkgmgr_common13PkgInfoHandleD0Ev",
+        "_ZNK13pkgmgr_common15HandleContainerINS_17PkgInfoHandleViewEE10GetHandlesEv",
+        "_ZN13pkgmgr_common15HandleContainerINS_17PkgInfoHandleViewEEC2Ev",
+        "_ZN13pkgmgr_common13LicenseWriter9WriteTextEPKc",
+        "_ZNK13pkgmgr_common17AppInfoHandleView17GetSupportAmbientEv",
+        "_ZN13pkgmgr_common6parcel17AppInfoParcelable12ReadCategoryEPN10tizen_base6ParcelEPP6_GList",
+        "_ZN13pkgmgr_common6parcel17ParcelableFactory12CreateParcelEPhjb",
+        "pkgmgrinfo_pkginfo_metadata_filter_foreach",
+        "pkgmgrinfo_appinfo_get_component"
+      ],
+      "underscore_prefixed_examples": [
+        "_ZN13pkgmgr_common6parcel18CertInfoParcelable12ReadCertInfoEPN10tizen_base6ParcelE",
+        "_ZNSt8_Rb_treeINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_S5_ESt10_Select1stIS8_ESt4lessIS5_ESaIS8_EE17_M_construct_nodeIJRKSt21piecewise_construct_tSt5tupleIJRS7_EESJ_IJEEEEEvPSt13_Rb_tree_nodeIS8_EDpOT_",
+        "_ZN13pkgmgr_common13PkgInfoHandleD0Ev",
+        "_ZNK13pkgmgr_common15HandleContainerINS_17PkgInfoHandleViewEE10GetHandlesEv",
+        "_ZN13pkgmgr_common15HandleContainerINS_17PkgInfoHandleViewEEC2Ev",
+        "_ZN13pkgmgr_common13LicenseWriter9WriteTextEPKc",
+        "_ZNK13pkgmgr_common17AppInfoHandleView17GetSupportAmbientEv",
+        "_ZN13pkgmgr_common6parcel17AppInfoParcelable12ReadCategoryEPN10tizen_base6ParcelEPP6_GList",
+        "_ZN13pkgmgr_common6parcel17ParcelableFactory12CreateParcelEPhjb",
+        "_ZN13pkgmgr_common6socket14AbstractSocket10DisconnectEv",
+        "_ZN13pkgmgr_common12SystemLocale15UnRegisterEventEv",
+        "_ZN13pkgmgr_common13shared_memory9ShmMapperC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE"
+      ],
+      "raw_evidence": "raw/libpkgmgr_info_so_0.txt"
+    },
+    {
+      "path": "/usr/lib/libvconf.so.0",
+      "exported_GLOBAL_WEAK_DEFAULT_PROTECTED_including_ABS": 35,
+      "exported_non_ABS": 34,
+      "exported_FUNC_IFUNC": 34,
+      "defined_dynamic_symbol_visibility_distribution": {
+        "0": 37
+      },
+      "exported_Cpp_mangled_names": 0,
+      "example_export_names": [
+        "vconf_unset_recursive",
+        "vconf_keylist_free",
+        "vconf_get_ext_errno",
+        "vconf_set_int",
+        "vconf_get_int",
+        "vconf_keylist_new",
+        "vconf_keylist_add_dbl",
+        "vconf_keylist_add_null",
+        "vconf_keynode_get_type",
+        "vconf_keynode_get_str",
+        "vconf_keylist_nextnode",
+        "vconf_set_bool"
+      ],
+      "underscore_prefixed_examples": [],
+      "raw_evidence": "raw/libvconf_so_0.txt"
+    }
+  ],
+  "export_policy_inference": "Mixed exposure. Every sampled DSO retains public/global/weak dynamic names, with counts ranging from small APIs to thousands. Stripping .symtab does not erase .dynsym. Counts alone cannot identify private/internal implementation symbols, original -fvisibility flags, or ABI export intent.",
+  "method": "Exact SHT_DYNSYM entries decoded on board by existing RPM Lua; all nm/readelf attempts explicitly unavailable, no binary copied."
+}
