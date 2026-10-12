@@ -107,12 +107,20 @@ npx --prefix .local-tools/rea --no-install rea-agents function "$PWD/docs/probe/
 本轮目标：只读调查 Tizen 开发板 `192.168.108.26` 上20~40份平台ELF的现有加固与平台机制。所有新审计文件只写 `docs/probe/board-survey/`；板上不安装、不编译、不执行选中二进制、不写入任何文件；不取回二进制/固件/源码，仅采集版本、ELF符号/头部、加固表等文本元数据。只用普通 git push 同步。
 
 - 开场已执行 `git pull --ff-only`，已核对上一轮STATE：REA/Ghidra ARM基线完成，Python pyc不支持等限制保留。当前基点48710eb。证据：[会话开始](board-survey/session-start.txt)。
-- [进行中] 步骤1 SSH连接与板子身份；本机没有针对该IP的SSH账号配置，等待PM提供**用户名**。密码/私钥口令若需要，只通过本机zenity密码窗口传给OpenSSH，不经聊天、不进脚本或日志。未尝试猜测账号。
+- [阻塞] 步骤1 SSH连接与板子身份；PM已提供用户名root，实际连接192.168.108.26:22超时（SSH exit255），未进入认证、未执行板上命令。证据：[原始SSH错误](board-survey/board-identity.txt)、[命令及退出状态](board-survey/board-identity.txt.meta.json)。
 - [待执行] 步骤2 选择20~40个/usr/bin、/usr/lib样本并说明选择理由。
 - [待执行] 步骤3 每样本只读readelf原输出与加固矩阵。
 - [待执行] 步骤4 属性比例（共享库不误判为可执行PIE，未知项显式保留）。
 - [待执行] 步骤5 共享库动态符号暴露。
 - [待执行] 步骤6 SMACK、ASLR、只读根/verity痕迹。
-- 人工前提：SSH用户名尚未提供；“LLVM开源板”必须以实测身份/构建元数据或PM映射确认，不能单凭IP或内核clang字符串作结论。
+- 人工前提：SSH用户名已闭合为root；需要PM处理板子到本机的SSH连接可达性后通知继续。“LLVM开源板”仍需实测身份/构建元数据或PM映射确认，不能单凭IP或内核clang字符串作结论。
 
-board-survey 本次连接前暂停：用户名提示已发出但尚未收到答复；未尝试用本机默认账号linhao或root猜测登录，尚无板上身份/加固数据，不将准备脚本记为实测结果。只读身份、readelf采集、文本判定与平台机制脚本已准备并通过语法检查。后续由执行器将脚本直接通过SSH stdin送入`sh -s`，原输出只落本机board-survey；共享库PIE为N/A，helper仅定义不算canary/FORTIFY已启用。需PM输入仅为SSH用户名；凭据走本机密码窗口。
+board-survey 上一次连接前暂停（历史记录）：当时用户名提示已发出但尚未收到答复；未尝试用本机默认账号linhao或root猜测登录，尚无板上身份/加固数据，不将准备脚本记为实测结果。只读身份、readelf采集、文本判定与平台机制脚本已准备并通过语法检查。后续由执行器将脚本直接通过SSH stdin送入`sh -s`，原输出只落本机board-survey；共享库PIE为N/A，helper仅定义不算canary/FORTIFY已启用。需PM输入仅为SSH用户名；凭据走本机密码窗口。
+
+### board-survey 当前挂账：SSH连接失败，按PM要求停止
+
+- PM已提供SSH账号`root`，本次开场再次`git pull --ff-only`，仓库已是最新。
+- 已执行一次SSH连接：`root@192.168.108.26`，端口22，ConnectTimeout=10、ConnectionAttempts=1；返回255。原始错误为`ssh: connect to host 192.168.108.26 port 22: Connection timed out`。证据：[board-identity.txt](board-survey/board-identity.txt)、[执行元数据](board-survey/board-identity.txt.meta.json)。
+- 身份信息尚未取得；Tizen版本、CPU架构、是否LLVM开源板全部未知。密码窗口没有进入认证流程；没有把任何凭据写入脚本或仓库。
+- 按任务原文“如果连不上或登录失败，原样记录错误、在STATE.md挂账、停下等我处理”，停止后续连接/采样/统计。步骤2~6均未执行，样本数为0；不生成假样本表或加固比例，不把网络超时解释成具体板子故障。
+- 本次只新增本机SSH文本错误及执行元数据，均位于`docs/probe/board-survey/`；未执行板上命令，未取回二进制/固件/源码。后续等待PM处理连接并通知继续；再次尝试应保存新证据文件，不覆盖首次错误。
