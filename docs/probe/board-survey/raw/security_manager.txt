@@ -1,0 +1,338 @@
+COMMAND: readelf -W -h -l -S -d --dyn-syms /usr/bin/security-manager
+sh: line 160: readelf: command not found
+READELF_EXIT_CODE: 127
+COMMAND: RPM4.14.1 embedded Lua5.1 direct read-only ELF metadata (/usr/bin/security-manager)
+METHOD	RPM_EMBEDDED_LUA_DIRECT_ELF_METADATA	Lua=Lua 5.1
+TARGET	/usr/bin/security-manager	executable
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	9	shoff	0x1640c	shnum	27
+PROGRAM_HEADER	0	0x70000001	offset	0x148f8	vaddr	0x148f8	filesz	1496	memsz	1496	flags	4
+PROGRAM_HEADER	1	0x6	offset	0x34	vaddr	0x34	filesz	288	memsz	288	flags	4
+PROGRAM_HEADER	2	0x3	offset	0x154	vaddr	0x154	filesz	19	memsz	19	flags	4
+INTERPRETER	/lib/ld-linux.so.3
+PROGRAM_HEADER	3	0x1	offset	0x0	vaddr	0x0	filesz	85716	memsz	85716	flags	5
+PROGRAM_HEADER	4	0x1	offset	0x15000	vaddr	0x15000	filesz	4864	memsz	4920	flags	6
+PROGRAM_HEADER	5	0x2	offset	0x152a4	vaddr	0x152a4	filesz	304	memsz	304	flags	6
+PROGRAM_HEADER	6	0x4	offset	0x168	vaddr	0x168	filesz	32	memsz	32	flags	4
+PROGRAM_HEADER	7	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+PROGRAM_HEADER	8	0x6474e552	offset	0x15000	vaddr	0x15000	filesz	4096	memsz	4096	flags	4
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.interp	1	offset	0x154	size	19	link	0	entsize	0
+SECTION	2	.note.ABI-tag	7	offset	0x168	size	32	link	0	entsize	0
+SECTION	3	.gnu.hash	1879048182	offset	0x188	size	356	link	4	entsize	4
+SECTION	4	.dynsym	11	offset	0x2ec	size	3440	link	5	entsize	16
+SECTION	5	.dynstr	3	offset	0x105c	size	9892	link	0	entsize	0
+SECTION	6	.gnu.version	1879048191	offset	0x3700	size	430	link	4	entsize	2
+SECTION	7	.gnu.version_r	1879048190	offset	0x38b0	size	448	link	5	entsize	0
+SECTION	8	.rel.dyn	9	offset	0x3a70	size	1400	link	4	entsize	8
+SECTION	9	.rel.plt	9	offset	0x3fe8	size	1296	link	4	entsize	8
+SECTION	10	.init	1	offset	0x44f8	size	12	link	0	entsize	0
+SECTION	11	.plt	1	offset	0x4504	size	1984	link	0	entsize	4
+SECTION	12	.text	1	offset	0x4cc8	size	52800	link	0	entsize	0
+SECTION	13	.fini	1	offset	0x11b08	size	8	link	0	entsize	0
+SECTION	14	.rodata	1	offset	0x11b10	size	5305	link	0	entsize	0
+SECTION	15	.ARM.extab	1	offset	0x12fcc	size	6444	link	0	entsize	0
+SECTION	16	.ARM.exidx	1879048193	offset	0x148f8	size	1496	link	12	entsize	0
+SECTION	17	.eh_frame	1	offset	0x14ed0	size	4	link	0	entsize	0
+SECTION	18	.init_array	14	offset	0x15000	size	8	link	0	entsize	4
+SECTION	19	.fini_array	15	offset	0x15008	size	4	link	0	entsize	4
+SECTION	20	.data.rel.ro	1	offset	0x1500c	size	664	link	0	entsize	0
+SECTION	21	.dynamic	6	offset	0x152a4	size	304	link	5	entsize	8
+SECTION	22	.got	1	offset	0x16000	size	760	link	0	entsize	4
+SECTION	23	.data	1	offset	0x162f8	size	8	link	0	entsize	0
+SECTION	24	.bss	8	offset	0x16300	size	56	link	0	entsize	0
+SECTION	25	.gnu_debuglink	1	offset	0x16300	size	28	link	0	entsize	0
+SECTION	26	.shstrtab	3	offset	0x1631c	size	240	link	0	entsize	0
+DYNAMIC_SYMBOL	0	0x0	type	0	bind	0	vis	0	ndx	0	name	
+DYNAMIC_SYMBOL	1	0x44f8	type	3	bind	0	vis	0	ndx	10	name	
+DYNAMIC_SYMBOL	2	0x162f8	type	3	bind	0	vis	0	ndx	23	name	
+DYNAMIC_SYMBOL	3	0x0	type	2	bind	1	vis	0	ndx	0	name	bind
+DYNAMIC_SYMBOL	4	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl10appInstallERKNS_11CredentialsER12app_inst_req
+DYNAMIC_SYMBOL	5	0x0	type	2	bind	1	vis	0	ndx	0	name	getuid
+DYNAMIC_SYMBOL	6	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZSt19__throw_logic_errorPKc
+DYNAMIC_SYMBOL	7	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_begin_catch
+DYNAMIC_SYMBOL	8	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr1
+DYNAMIC_SYMBOL	9	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZSt17__throw_bad_allocv
+DYNAMIC_SYMBOL	10	0x0	type	2	bind	1	vis	0	ndx	0	name	_Znaj
+DYNAMIC_SYMBOL	11	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt9bad_allocD1Ev
+DYNAMIC_SYMBOL	12	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11CynaraAdminD1Ev
+DYNAMIC_SYMBOL	13	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_deregisterTMCloneTable
+DYNAMIC_SYMBOL	14	0x0	type	2	bind	1	vis	0	ndx	0	name	socket
+DYNAMIC_SYMBOL	15	0x0	type	2	bind	1	vis	0	ndx	0	name	eventfd_write
+DYNAMIC_SYMBOL	16	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl16getAppNameAndPkgEjRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_
+DYNAMIC_SYMBOL	17	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl7userAddERKNS_11CredentialsEji
+DYNAMIC_SYMBOL	18	0x0	type	2	bind	1	vis	0	ndx	0	name	sigaddset
+DYNAMIC_SYMBOL	19	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr0
+DYNAMIC_SYMBOL	20	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl10prepareAppERKNS_11CredentialsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERKSt6vectorIS9_SaIS9_EER9ProcessIdRS9_RhRSC_IjSaIjEESN_RSC_IbSaIbEE
+DYNAMIC_SYMBOL	21	0x0	type	2	bind	1	vis	0	ndx	0	name	fcntl64
+DYNAMIC_SYMBOL	22	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_sigmask
+DYNAMIC_SYMBOL	23	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl19getConfiguredPolicyERKNS_11CredentialsENS_20ConfiguredPolicyTypeERK12policy_entryRSt6vectorIS5_SaIS5_EE
+DYNAMIC_SYMBOL	24	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl10getPkgNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS6_
+DYNAMIC_SYMBOL	25	0x0	type	2	bind	1	vis	0	ndx	0	name	send
+DYNAMIC_SYMBOL	26	0x0	type	2	bind	1	vis	0	ndx	0	name	tgkill
+DYNAMIC_SYMBOL	27	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl18policyGroupsForUidEjRSt6vectorIjSaIjEE
+DYNAMIC_SYMBOL	28	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager14ChannelCreatorD1Ev
+DYNAMIC_SYMBOL	29	0x0	type	2	bind	1	vis	0	ndx	0	name	__vsnprintf_chk
+DYNAMIC_SYMBOL	30	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager9Exception16m_exceptionCountE
+DYNAMIC_SYMBOL	31	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl12policyUpdateERKNS_11CredentialsERKSt6vectorI12policy_entrySaIS5_EE
+DYNAMIC_SYMBOL	32	0x0	type	2	bind	1	vis	0	ndx	0	name	eventfd_read
+DYNAMIC_SYMBOL	33	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNK15SecurityManager3Log9LogSystem16IsLoggingEnabledEv
+DYNAMIC_SYMBOL	34	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZTVNSt7__cxx1115basic_stringbufIcSt11char_traitsIcESaIcEEE
+DYNAMIC_SYMBOL	35	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager6Worker8mainLoopEv
+DYNAMIC_SYMBOL	36	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager14ChannelCreatorC1Ev
+DYNAMIC_SYMBOL	37	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZTISt9exception
+DYNAMIC_SYMBOL	38	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl13pathsRegisterERKNS_11CredentialsE8path_req
+DYNAMIC_SYMBOL	39	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt6thread4joinEv
+DYNAMIC_SYMBOL	40	0x0	type	2	bind	1	vis	0	ndx	0	name	__stack_chk_fail
+DYNAMIC_SYMBOL	41	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl17appCleanNamespaceERKNS_11CredentialsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEji
+DYNAMIC_SYMBOL	42	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSolsEi
+DYNAMIC_SYMBOL	43	0x0	type	2	bind	1	vis	0	ndx	0	name	recvmsg
+DYNAMIC_SYMBOL	44	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl13policyGetDescERSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS7_EE
+DYNAMIC_SYMBOL	45	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_guard_acquire
+DYNAMIC_SYMBOL	46	0x0	type	2	bind	1	vis	0	ndx	0	name	umask
+DYNAMIC_SYMBOL	47	0x0	type	2	bind	1	vis	0	ndx	0	name	accept4
+DYNAMIC_SYMBOL	48	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZTVN10__cxxabiv117__class_type_infoE
+DYNAMIC_SYMBOL	49	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZdaPv
+DYNAMIC_SYMBOL	50	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSo9_M_insertIlEERSoT_
+DYNAMIC_SYMBOL	51	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager7ChannelaSEOS0_
+DYNAMIC_SYMBOL	52	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11SmackLabels20setSmackLabelForIpInEiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+DYNAMIC_SYMBOL	53	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_allocate_exception
+DYNAMIC_SYMBOL	54	0x0	type	2	bind	1	vis	0	ndx	0	name	resource_unregister_cpu_inheritance_destination
+DYNAMIC_SYMBOL	55	0x0	type	0	bind	2	vis	0	ndx	0	name	__gmon_start__
+DYNAMIC_SYMBOL	56	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt6thread6_StateD2Ev
+DYNAMIC_SYMBOL	57	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZTVSt9bad_alloc
+DYNAMIC_SYMBOL	58	0x0	type	2	bind	1	vis	0	ndx	0	name	strchr
+DYNAMIC_SYMBOL	59	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl9appUpdateERKNS_11CredentialsER12app_inst_req
+DYNAMIC_SYMBOL	60	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl12appUninstallERKNS_11CredentialsER12app_inst_req
+DYNAMIC_SYMBOL	61	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZSt20__throw_system_errori
+DYNAMIC_SYMBOL	62	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_guard_abort
+DYNAMIC_SYMBOL	63	0x0	type	2	bind	1	vis	0	ndx	0	name	__errno_location
+DYNAMIC_SYMBOL	64	0x0	type	2	bind	1	vis	0	ndx	0	name	gettid
+DYNAMIC_SYMBOL	65	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager14GetErrnoStringB5cxx11Ei
+DYNAMIC_SYMBOL	66	0x0	type	2	bind	1	vis	0	ndx	0	name	cap_free
+DYNAMIC_SYMBOL	67	0x0	type	2	bind	1	vis	0	ndx	0	name	sigemptyset
+DYNAMIC_SYMBOL	68	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZSt28__throw_bad_array_new_lengthv
+DYNAMIC_SYMBOL	69	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager9Exception18m_terminateHandlerE
+DYNAMIC_SYMBOL	70	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl22dropPrivatePathSharingERKNS_11CredentialsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESB_RKSt6vectorIS9_SaIS9_EE
+DYNAMIC_SYMBOL	71	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZdlPvj
+DYNAMIC_SYMBOL	72	0x0	type	2	bind	1	vis	0	ndx	0	name	setuid
+DYNAMIC_SYMBOL	73	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_lock
+DYNAMIC_SYMBOL	74	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSo9_M_insertImEERSoT_
+DYNAMIC_SYMBOL	75	0x0	type	2	bind	1	vis	0	ndx	0	name	timer_delete
+DYNAMIC_SYMBOL	76	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_replace_coldEPcjPKcjj
+DYNAMIC_SYMBOL	77	0x0	type	2	bind	1	vis	0	ndx	0	name	__fdelt_chk
+DYNAMIC_SYMBOL	78	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager3Log9LogSystem7WarningEPKcS3_iS3_
+DYNAMIC_SYMBOL	79	0x0	type	2	bind	1	vis	0	ndx	0	name	free
+DYNAMIC_SYMBOL	80	0x0	type	2	bind	1	vis	0	ndx	0	name	close
+DYNAMIC_SYMBOL	81	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZTISt9bad_alloc
+DYNAMIC_SYMBOL	82	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_guard_release
+DYNAMIC_SYMBOL	83	0x0	type	2	bind	1	vis	0	ndx	0	name	memcpy
+DYNAMIC_SYMBOL	84	0x0	type	2	bind	1	vis	0	ndx	0	name	memmove
+DYNAMIC_SYMBOL	85	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_PKc
+DYNAMIC_SYMBOL	86	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImplC1ENS_7OfflineE
+DYNAMIC_SYMBOL	87	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager10FileLockerD2Ev
+DYNAMIC_SYMBOL	88	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager7ChannelD1Ev
+DYNAMIC_SYMBOL	89	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt18condition_variable10notify_oneEv
+DYNAMIC_SYMBOL	90	0x0	type	2	bind	1	vis	0	ndx	0	name	_Znwj
+DYNAMIC_SYMBOL	91	0x0	type	2	bind	1	vis	0	ndx	0	name	__gxx_personality_v0
+DYNAMIC_SYMBOL	92	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZSt20__throw_length_errorPKc
+DYNAMIC_SYMBOL	93	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11Credentials24getCredentialsFromSocketEi
+DYNAMIC_SYMBOL	94	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_throw
+DYNAMIC_SYMBOL	95	0x0	type	2	bind	1	vis	0	ndx	0	name	unlink
+DYNAMIC_SYMBOL	96	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt18condition_variable4waitERSt11unique_lockISt5mutexE
+DYNAMIC_SYMBOL	97	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager6WorkerC1ENS_7ChannelE
+DYNAMIC_SYMBOL	98	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl29getAppDefinedPrivilegeLicenseEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS6_
+DYNAMIC_SYMBOL	99	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_finalize
+DYNAMIC_SYMBOL	100	0x0	type	2	bind	1	vis	0	ndx	0	name	fork
+DYNAMIC_SYMBOL	101	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZTTNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEE
+DYNAMIC_SYMBOL	102	0x0	type	2	bind	1	vis	0	ndx	0	name	__memcpy_chk
+DYNAMIC_SYMBOL	103	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager18monotonicCoarseNowEv
+DYNAMIC_SYMBOL	104	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt18condition_variableD1Ev
+DYNAMIC_SYMBOL	105	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt8ios_baseD2Ev
+DYNAMIC_SYMBOL	106	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager2DB13SqlConnection11DataCommandD1Ev
+DYNAMIC_SYMBOL	107	0x0	type	2	bind	1	vis	0	ndx	0	name	malloc
+DYNAMIC_SYMBOL	108	0x0	type	2	bind	1	vis	0	ndx	0	name	cap_get_proc
+DYNAMIC_SYMBOL	109	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNKRSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEE3strEv
+DYNAMIC_SYMBOL	110	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager7Channel8closeAllEv
+DYNAMIC_SYMBOL	111	0x0	type	2	bind	1	vis	0	ndx	0	name	strlen
+DYNAMIC_SYMBOL	112	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager21LogUnhandledExceptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKciS9_
+DYNAMIC_SYMBOL	113	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt6thread15_M_start_threadESt10unique_ptrINS_6_StateESt14default_deleteIS1_EEPFvvE
+DYNAMIC_SYMBOL	114	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_end_catch
+DYNAMIC_SYMBOL	115	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager3Log9LogSystem5ErrorEPKcS3_iS3_
+DYNAMIC_SYMBOL	116	0x0	type	2	bind	1	vis	0	ndx	0	name	getpid
+DYNAMIC_SYMBOL	117	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZSt16__ostream_insertIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_PKS3_i
+DYNAMIC_SYMBOL	118	0x0	type	2	bind	1	vis	0	ndx	0	name	select
+DYNAMIC_SYMBOL	119	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl11configureFdERKNS_11CredentialsEib
+DYNAMIC_SYMBOL	120	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_rethrow
+DYNAMIC_SYMBOL	121	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZStlsISt11char_traitsIcEERSt13basic_ostreamIcT_ES5_h
+DYNAMIC_SYMBOL	122	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl29getAppContextIdAndAgidAndPgidEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERjS9_S9_
+DYNAMIC_SYMBOL	123	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager7ChannelC1Ev
+DYNAMIC_SYMBOL	124	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZTVN10__cxxabiv120__si_class_type_infoE
+DYNAMIC_SYMBOL	125	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZTINSt6thread6_StateE
+DYNAMIC_SYMBOL	126	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager12NSMountLogicD1Ev
+DYNAMIC_SYMBOL	127	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt18condition_variableC1Ev
+DYNAMIC_SYMBOL	128	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZSt21ios_base_library_initv
+DYNAMIC_SYMBOL	129	0x0	type	2	bind	1	vis	0	ndx	0	name	timer_settime
+DYNAMIC_SYMBOL	130	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl23applyPrivatePathSharingERKNS_11CredentialsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESB_RKSt6vectorIS9_SaIS9_EE
+DYNAMIC_SYMBOL	131	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager7MountNS39isPrivacyPrivilegeMountNamespaceEnabledEv
+DYNAMIC_SYMBOL	132	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_free_exception
+DYNAMIC_SYMBOL	133	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager17ServiceFileLockerC1Eb
+DYNAMIC_SYMBOL	134	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl25getClientPrivilegeLicenseERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES8_jS8_RS6_
+DYNAMIC_SYMBOL	135	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEED1Ev
+DYNAMIC_SYMBOL	136	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZTVSt15basic_streambufIcSt11char_traitsIcEE
+DYNAMIC_SYMBOL	137	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl15getProcessLabelERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+DYNAMIC_SYMBOL	138	0x0	type	2	bind	1	vis	0	ndx	0	name	signalfd
+DYNAMIC_SYMBOL	139	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl10userDeleteERKNS_11CredentialsEj
+DYNAMIC_SYMBOL	140	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager2DB13SqlConnectionD1Ev
+DYNAMIC_SYMBOL	141	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_notify
+DYNAMIC_SYMBOL	142	0x0	type	1	bind	1	vis	0	ndx	0	name	__stack_chk_guard
+DYNAMIC_SYMBOL	143	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_pure_virtual
+DYNAMIC_SYMBOL	144	0x0	type	2	bind	1	vis	0	ndx	0	name	memset
+DYNAMIC_SYMBOL	145	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt7__cxx1119basic_ostringstreamIcSt11char_traitsIcESaIcEEC1Ev
+DYNAMIC_SYMBOL	146	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_end_cleanup
+DYNAMIC_SYMBOL	147	0x0	type	2	bind	1	vis	0	ndx	0	name	listen
+DYNAMIC_SYMBOL	148	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZNSt6localeD1Ev
+DYNAMIC_SYMBOL	149	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager14ChannelCreator5childEv
+DYNAMIC_SYMBOL	150	0x0	type	2	bind	1	vis	0	ndx	0	name	resource_register_cpu_inheritance_destination
+DYNAMIC_SYMBOL	151	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_registerTMCloneTable
+DYNAMIC_SYMBOL	152	0x0	type	2	bind	1	vis	0	ndx	0	name	prctl
+DYNAMIC_SYMBOL	153	0x0	type	2	bind	1	vis	0	ndx	0	name	__cxa_atexit
+DYNAMIC_SYMBOL	154	0x0	type	2	bind	1	vis	0	ndx	0	name	timer_create
+DYNAMIC_SYMBOL	155	0x0	type	2	bind	1	vis	0	ndx	0	name	abort
+DYNAMIC_SYMBOL	156	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl20getAppManifestPolicyERKNS_11CredentialsERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjRSt6vectorIS9_SaIS9_EE
+DYNAMIC_SYMBOL	157	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl30repairPermissibleFileForClientEj16app_install_type
+DYNAMIC_SYMBOL	158	0x0	type	2	bind	1	vis	0	ndx	0	name	waitpid
+DYNAMIC_SYMBOL	159	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11smack_checkEv
+DYNAMIC_SYMBOL	160	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_listen_fds
+DYNAMIC_SYMBOL	161	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl30getAppDefinedPrivilegeProviderEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERS6_S9_
+DYNAMIC_SYMBOL	162	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl23getAppAllowedPrivilegesERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjRSt6vectorIS6_SaIS6_EE
+DYNAMIC_SYMBOL	163	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZSt9terminatev
+DYNAMIC_SYMBOL	164	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager7ChannelC1EOS0_
+DYNAMIC_SYMBOL	165	0x0	type	2	bind	1	vis	0	ndx	0	name	cap_set_proc
+DYNAMIC_SYMBOL	166	0x0	type	2	bind	1	vis	0	ndx	0	name	realloc
+DYNAMIC_SYMBOL	167	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl28getForbiddenAndAllowedGroupsERKSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS7_EERS1_IjSaIjEESE_
+DYNAMIC_SYMBOL	168	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_is_socket_unix
+DYNAMIC_SYMBOL	169	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl15appHasPrivilegeERKNS_11CredentialsENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES9_jRb
+DYNAMIC_SYMBOL	170	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl9getPolicyERKNS_11CredentialsERK12policy_entryRSt6vectorIS4_SaIS4_EE
+DYNAMIC_SYMBOL	171	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager11ServiceImpl29getPkgContextIdAndAgidAndPgidEjRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEERjS9_S9_
+DYNAMIC_SYMBOL	172	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager21LogUnhandledExceptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+DYNAMIC_SYMBOL	173	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_unlock
+DYNAMIC_SYMBOL	174	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager12getUidByNameERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+DYNAMIC_SYMBOL	175	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager6CynaraD1Ev
+DYNAMIC_SYMBOL	176	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager14ChannelCreator4initEv
+DYNAMIC_SYMBOL	177	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZTISt12system_error
+DYNAMIC_SYMBOL	178	0x0	type	2	bind	1	vis	0	ndx	0	name	__read_chk
+DYNAMIC_SYMBOL	179	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZSt13set_terminatePFvvE
+DYNAMIC_SYMBOL	180	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager3Log9LogSystem6SetTagEPKc
+DYNAMIC_SYMBOL	181	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager9Exception15m_lastExceptionE
+DYNAMIC_SYMBOL	182	0x0	type	2	bind	1	vis	0	ndx	0	name	eventfd
+DYNAMIC_SYMBOL	183	0x0	type	2	bind	1	vis	0	ndx	0	name	__libc_start_main
+DYNAMIC_SYMBOL	184	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager9SingletonINS_3Log9LogSystemEE8InstanceEv
+DYNAMIC_SYMBOL	185	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN15SecurityManager14ChannelCreator6parentEv
+DYNAMIC_SYMBOL	186	0x16338	type	0	bind	1	vis	0	ndx	24	name	_bss_end__
+EXPORT	0	1	0	24	_bss_end__
+DYNAMIC_SYMBOL	187	0x8a05	type	2	bind	2	vis	0	ndx	12	name	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEjjPKcj
+EXPORT	2	2	0	12	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEjjPKcj
+DYNAMIC_SYMBOL	188	0x16300	type	0	bind	1	vis	0	ndx	23	name	_edata
+EXPORT	0	1	0	23	_edata
+DYNAMIC_SYMBOL	189	0x11891	type	2	bind	2	vis	0	ndx	12	name	_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJS5_EEEvDpOT_
+EXPORT	2	2	0	12	_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE17_M_realloc_appendIJS5_EEEvDpOT_
+DYNAMIC_SYMBOL	190	0x16338	type	0	bind	1	vis	0	ndx	24	name	__end__
+EXPORT	0	1	0	24	__end__
+DYNAMIC_SYMBOL	191	0x10459	type	2	bind	2	vis	0	ndx	12	name	_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiESaIS7_EE17_M_realloc_appendIJS7_EEEvDpOT_
+EXPORT	2	2	0	12	_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiESaIS7_EE17_M_realloc_appendIJS7_EEEvDpOT_
+DYNAMIC_SYMBOL	192	0x8ee1	type	2	bind	2	vis	0	ndx	12	name	_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St6vectorIjSaIjEEESaISB_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSD_18_Mod_range_hashingENSD_20_Default_ranged_hashENSD_20_Prime_rehash_policyENSD_17_Hashtable_traitsILb1ELb0ELb1EEEED2Ev
+EXPORT	2	2	0	12	_ZNSt10_HashtableINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESt4pairIKS5_St6vectorIjSaIjEEESaISB_ENSt8__detail10_Select1stESt8equal_toIS5_ESt4hashIS5_ENSD_18_Mod_range_hashingENSD_20_Default_ranged_hashENSD_20_Prime_rehash_policyENSD_17_Hashtable_traitsILb1ELb0ELb1EEEED2Ev
+DYNAMIC_SYMBOL	193	0xfd69	type	2	bind	2	vis	0	ndx	12	name	_ZNSt11_Tuple_implILj0EJNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS5_EED2Ev
+EXPORT	2	2	0	12	_ZNSt11_Tuple_implILj0EJNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS5_EED2Ev
+DYNAMIC_SYMBOL	194	0xfd95	type	2	bind	2	vis	0	ndx	12	name	_ZNSt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_ED2Ev
+EXPORT	2	2	0	12	_ZNSt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES5_ED2Ev
+DYNAMIC_SYMBOL	195	0xa483	type	2	bind	2	vis	0	ndx	12	name	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev
+EXPORT	2	2	0	12	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEED2Ev
+DYNAMIC_SYMBOL	196	0xfcc1	type	2	bind	2	vis	0	ndx	12	name	_ZNSt6vectorISt5tupleIJNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS6_EESaIS7_EED2Ev
+EXPORT	2	2	0	12	_ZNSt6vectorISt5tupleIJNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS6_EESaIS7_EED2Ev
+DYNAMIC_SYMBOL	197	0x11b10	type	1	bind	1	vis	0	ndx	14	name	_IO_stdin_used
+EXPORT	1	1	0	14	_IO_stdin_used
+DYNAMIC_SYMBOL	198	0xa901	type	2	bind	2	vis	0	ndx	12	name	_ZNSt6thread24_M_thread_deps_never_runEv
+EXPORT	2	2	0	12	_ZNSt6thread24_M_thread_deps_never_runEv
+DYNAMIC_SYMBOL	199	0x8bf1	type	2	bind	2	vis	0	ndx	12	name	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEjjPKcj
+EXPORT	2	2	0	12	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_replaceEjjPKcj
+DYNAMIC_SYMBOL	200	0xfd15	type	2	bind	2	vis	0	ndx	12	name	_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EED2Ev
+EXPORT	2	2	0	12	_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EED2Ev
+DYNAMIC_SYMBOL	201	0x10ce5	type	2	bind	2	vis	0	ndx	12	name	_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EE17_M_realloc_appendIJS7_EEEvDpOT_
+EXPORT	2	2	0	12	_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES6_ESaIS7_EE17_M_realloc_appendIJS7_EEEvDpOT_
+DYNAMIC_SYMBOL	202	0x7bed	type	2	bind	2	vis	0	ndx	12	name	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_
+EXPORT	2	2	0	12	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEC2IS3_EEPKcRKS3_
+DYNAMIC_SYMBOL	203	0x16338	type	0	bind	1	vis	0	ndx	24	name	_end
+EXPORT	0	1	0	24	_end
+DYNAMIC_SYMBOL	204	0x162f8	type	0	bind	2	vis	0	ndx	23	name	data_start
+EXPORT	0	2	0	23	data_start
+DYNAMIC_SYMBOL	205	0x913d	type	2	bind	2	vis	0	ndx	12	name	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_
+EXPORT	2	2	0	12	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_assignERKS4_
+DYNAMIC_SYMBOL	206	0xff51	type	2	bind	2	vis	0	ndx	12	name	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEj
+EXPORT	2	2	0	12	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE7reserveEj
+DYNAMIC_SYMBOL	207	0x16338	type	0	bind	1	vis	0	ndx	24	name	__bss_end__
+EXPORT	0	1	0	24	__bss_end__
+DYNAMIC_SYMBOL	208	0x4d74	type	2	bind	1	vis	0	ndx	12	name	_start
+EXPORT	2	1	0	12	_start
+DYNAMIC_SYMBOL	209	0x16300	type	0	bind	1	vis	0	ndx	24	name	__bss_start__
+EXPORT	0	1	0	24	__bss_start__
+DYNAMIC_SYMBOL	210	0xfdc1	type	2	bind	2	vis	0	ndx	12	name	_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiESaIS7_EED2Ev
+EXPORT	2	2	0	12	_ZNSt6vectorISt4pairINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiESaIS7_EED2Ev
+DYNAMIC_SYMBOL	211	0xef81	type	2	bind	2	vis	0	ndx	12	name	_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev
+EXPORT	2	2	0	12	_ZNSt6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EED2Ev
+DYNAMIC_SYMBOL	212	0x16300	type	0	bind	1	vis	0	ndx	24	name	__bss_start
+EXPORT	0	1	0	24	__bss_start
+DYNAMIC_SYMBOL	213	0x162f8	type	0	bind	1	vis	0	ndx	23	name	__data_start
+EXPORT	0	1	0	23	__data_start
+DYNAMIC_SYMBOL	214	0x10e79	type	2	bind	2	vis	0	ndx	12	name	_ZNSt6vectorISt5tupleIJNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS6_EESaIS7_EE17_M_realloc_appendIJS7_EEEvDpOT_
+EXPORT	2	2	0	12	_ZNSt6vectorISt5tupleIJNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEiS6_EESaIS7_EE17_M_realloc_appendIJS7_EEEvDpOT_
+DYNAMIC	0x1	0x23d2
+DYNAMIC	0x1	0x23f3
+DYNAMIC	0x1	0x2410
+DYNAMIC	0x1	0x2420
+DYNAMIC	0x1	0x242c
+DYNAMIC	0x1	0x243b
+DYNAMIC	0x1	0x2449
+DYNAMIC	0x1	0x2453
+DYNAMIC	0x1d	0x269b
+RUNPATH_VALUE	/usr/lib
+DYNAMIC	0xc	0x44f8
+DYNAMIC	0xd	0x11b08
+DYNAMIC	0x19	0x15000
+DYNAMIC	0x1b	0x8
+DYNAMIC	0x1a	0x15008
+DYNAMIC	0x1c	0x4
+DYNAMIC	0x6ffffef5	0x188
+DYNAMIC	0x5	0x105c
+DYNAMIC	0x6	0x2ec
+DYNAMIC	0xa	0x26a4
+DYNAMIC	0xb	0x10
+DYNAMIC	0x15	0x0
+DYNAMIC	0x3	0x16000
+DYNAMIC	0x2	0x510
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x3fe8
+DYNAMIC	0x11	0x3a70
+DYNAMIC	0x12	0x578
+DYNAMIC	0x13	0x8
+DYNAMIC	0x6ffffffb	0x8000000
+DYNAMIC	0x6ffffffe	0x38b0
+DYNAMIC	0x6fffffff	0x5
+DYNAMIC	0x6ffffff0	0x3700
+DYNAMIC	0x6ffffffa	0x81
+DYNAMIC	0x0	0x0
+FIELD	RELRO	Partial
+FIELD	NX	Enabled
+FIELD	PIE	Yes
+FIELD	canary	Detected(import)
+FIELD	FORTIFY	Detected(import)
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Present
+FIELD	dynamic_export_count_including_ABS	29
+FIELD	dynamic_export_non_ABS_count	29
+FIELD	dynamic_export_function_count	19
+METADATA_READER_SUCCESS
+
+
+RPM_LUA_EXIT_CODE: 0

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "vconftool",
+    "path": "/usr/bin/vconftool",
+    "kind": "executable",
+    "reason": "not an ELF file",
+    "resolved_path": "/usr/bin/vconftool",
+    "file_stat": "device=45826 inode=8869 bytes=7033 mode=750 type=regular file",
+    "raw_evidence": "raw/vconftool.txt"
+  }
+]

@@ -1,0 +1,1352 @@
+COMMAND: readelf -W -h -l -S -d --dyn-syms /usr/lib/libdbus-1.so.3
+sh: line 160: readelf: command not found
+READELF_EXIT_CODE: 127
+COMMAND: RPM4.14.1 embedded Lua5.1 direct read-only ELF metadata (/usr/lib/libdbus-1.so.3)
+METHOD	RPM_EMBEDDED_LUA_DIRECT_ELF_METADATA	Lua=Lua 5.1
+TARGET	/usr/lib/libdbus-1.so.3	shared-library
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	5	shoff	0x48ef4	shnum	26
+PROGRAM_HEADER	0	0x70000001	offset	0x45cb0	vaddr	0x45cb0	filesz	7520	memsz	7520	flags	4
+PROGRAM_HEADER	1	0x1	offset	0x0	vaddr	0x0	filesz	293396	memsz	293396	flags	5
+PROGRAM_HEADER	2	0x1	offset	0x48000	vaddr	0x48000	filesz	3544	memsz	3820	flags	6
+PROGRAM_HEADER	3	0x2	offset	0x48454	vaddr	0x48454	filesz	280	memsz	280	flags	6
+PROGRAM_HEADER	4	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.gnu.hash	1879048182	offset	0xd4	size	4868	link	2	entsize	4
+SECTION	2	.dynsym	11	offset	0x13d8	size	11264	link	3	entsize	16
+SECTION	3	.dynstr	3	offset	0x3fd8	size	16366	link	0	entsize	0
+SECTION	4	.gnu.version	1879048191	offset	0x7fc6	size	1408	link	2	entsize	2
+SECTION	5	.gnu.version_d	1879048189	offset	0x8548	size	84	link	3	entsize	0
+SECTION	6	.gnu.version_r	1879048190	offset	0x859c	size	304	link	3	entsize	0
+SECTION	7	.rel.dyn	9	offset	0x86cc	size	1856	link	2	entsize	8
+SECTION	8	.rel.plt	9	offset	0x8e0c	size	3848	link	2	entsize	8
+SECTION	9	.init	1	offset	0x9d14	size	12	link	0	entsize	0
+SECTION	10	.plt	1	offset	0x9d20	size	5792	link	0	entsize	4
+SECTION	11	.text	1	offset	0xb3c0	size	211956	link	0	entsize	0
+SECTION	12	.fini	1	offset	0x3efb4	size	8	link	0	entsize	0
+SECTION	13	.rodata	1	offset	0x3efc0	size	27708	link	0	entsize	0
+SECTION	14	.ARM.extab	1	offset	0x45bfc	size	180	link	0	entsize	0
+SECTION	15	.ARM.exidx	1879048193	offset	0x45cb0	size	7520	link	11	entsize	0
+SECTION	16	.eh_frame	1	offset	0x47a10	size	4	link	0	entsize	0
+SECTION	17	.init_array	14	offset	0x48000	size	4	link	0	entsize	4
+SECTION	18	.fini_array	15	offset	0x48004	size	4	link	0	entsize	4
+SECTION	19	.data.rel.ro	1	offset	0x48008	size	1100	link	0	entsize	0
+SECTION	20	.dynamic	6	offset	0x48454	size	280	link	3	entsize	8
+SECTION	21	.got	1	offset	0x4856c	size	2044	link	0	entsize	4
+SECTION	22	.data	1	offset	0x48d68	size	112	link	0	entsize	0
+SECTION	23	.bss	8	offset	0x48dd8	size	276	link	0	entsize	0
+SECTION	24	.gnu_debuglink	1	offset	0x48dd8	size	48	link	0	entsize	0
+SECTION	25	.shstrtab	3	offset	0x48e08	size	233	link	0	entsize	0
+DYNAMIC_SYMBOL	0	0x0	type	0	bind	0	vis	0	ndx	0	name	
+DYNAMIC_SYMBOL	1	0x9d14	type	3	bind	0	vis	0	ndx	9	name	
+DYNAMIC_SYMBOL	2	0x48d68	type	3	bind	0	vis	0	ndx	22	name	
+DYNAMIC_SYMBOL	3	0x0	type	2	bind	1	vis	0	ndx	0	name	getnameinfo
+DYNAMIC_SYMBOL	4	0x0	type	2	bind	1	vis	0	ndx	0	name	__vsprintf_chk
+DYNAMIC_SYMBOL	5	0x0	type	2	bind	1	vis	0	ndx	0	name	strerror
+DYNAMIC_SYMBOL	6	0x0	type	2	bind	1	vis	0	ndx	0	name	inet_ntop
+DYNAMIC_SYMBOL	7	0x0	type	2	bind	1	vis	0	ndx	0	name	getresgid
+DYNAMIC_SYMBOL	8	0x0	type	2	bind	1	vis	0	ndx	0	name	mkdir
+DYNAMIC_SYMBOL	9	0x0	type	2	bind	1	vis	0	ndx	0	name	unsetenv
+DYNAMIC_SYMBOL	10	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_condattr_setclock
+DYNAMIC_SYMBOL	11	0x0	type	2	bind	1	vis	0	ndx	0	name	geteuid
+DYNAMIC_SYMBOL	12	0x0	type	2	bind	1	vis	0	ndx	0	name	abort
+DYNAMIC_SYMBOL	13	0x0	type	2	bind	1	vis	0	ndx	0	name	connect
+DYNAMIC_SYMBOL	14	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutexattr_destroy
+DYNAMIC_SYMBOL	15	0x0	type	2	bind	1	vis	0	ndx	0	name	getsockname
+DYNAMIC_SYMBOL	16	0x0	type	2	bind	1	vis	0	ndx	0	name	opendir
+DYNAMIC_SYMBOL	17	0x0	type	2	bind	1	vis	0	ndx	0	name	sysconf
+DYNAMIC_SYMBOL	18	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr0
+DYNAMIC_SYMBOL	19	0x0	type	2	bind	1	vis	0	ndx	0	name	clock_gettime
+DYNAMIC_SYMBOL	20	0x0	type	2	bind	1	vis	0	ndx	0	name	signal
+DYNAMIC_SYMBOL	21	0x0	type	2	bind	1	vis	0	ndx	0	name	dbuspolicy1_set_cache_update_valid
+DYNAMIC_SYMBOL	22	0x0	type	2	bind	1	vis	0	ndx	0	name	getresuid
+DYNAMIC_SYMBOL	23	0x0	type	0	bind	2	vis	0	ndx	0	name	__gmon_start__
+DYNAMIC_SYMBOL	24	0x0	type	2	bind	1	vis	0	ndx	0	name	clearenv
+DYNAMIC_SYMBOL	25	0x0	type	2	bind	1	vis	0	ndx	0	name	socketpair
+DYNAMIC_SYMBOL	26	0x0	type	2	bind	1	vis	0	ndx	0	name	rename
+DYNAMIC_SYMBOL	27	0x0	type	2	bind	1	vis	0	ndx	0	name	strncpy
+DYNAMIC_SYMBOL	28	0x0	type	2	bind	1	vis	0	ndx	0	name	fclose
+DYNAMIC_SYMBOL	29	0x0	type	2	bind	1	vis	0	ndx	0	name	getenv
+DYNAMIC_SYMBOL	30	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_listen_fds
+DYNAMIC_SYMBOL	31	0x0	type	2	bind	1	vis	0	ndx	0	name	listen
+DYNAMIC_SYMBOL	32	0x0	type	2	bind	1	vis	0	ndx	0	name	calloc
+DYNAMIC_SYMBOL	33	0x0	type	2	bind	1	vis	0	ndx	0	name	getgrouplist
+DYNAMIC_SYMBOL	34	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_cond_wait
+DYNAMIC_SYMBOL	35	0x0	type	2	bind	1	vis	0	ndx	0	name	dbuspolicy1_init_shared
+DYNAMIC_SYMBOL	36	0x0	type	2	bind	1	vis	0	ndx	0	name	memset
+DYNAMIC_SYMBOL	37	0x0	type	2	bind	1	vis	0	ndx	0	name	gai_strerror
+DYNAMIC_SYMBOL	38	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_cond_timedwait
+DYNAMIC_SYMBOL	39	0x0	type	2	bind	1	vis	0	ndx	0	name	freeaddrinfo
+DYNAMIC_SYMBOL	40	0x0	type	2	bind	1	vis	0	ndx	0	name	strrchr
+DYNAMIC_SYMBOL	41	0x0	type	2	bind	1	vis	0	ndx	0	name	fsync
+DYNAMIC_SYMBOL	42	0x0	type	2	bind	1	vis	0	ndx	0	name	execvp
+DYNAMIC_SYMBOL	43	0x0	type	2	bind	1	vis	0	ndx	0	name	chmod
+DYNAMIC_SYMBOL	44	0x0	type	2	bind	1	vis	0	ndx	0	name	writev
+DYNAMIC_SYMBOL	45	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_deregisterTMCloneTable
+DYNAMIC_SYMBOL	46	0x0	type	2	bind	1	vis	0	ndx	0	name	_exit
+DYNAMIC_SYMBOL	47	0x0	type	2	bind	1	vis	0	ndx	0	name	dbuspolicy1_set_cache_supported
+DYNAMIC_SYMBOL	48	0x0	type	2	bind	1	vis	0	ndx	0	name	getuid
+DYNAMIC_SYMBOL	49	0x0	type	2	bind	1	vis	0	ndx	0	name	dbuspolicy1_set_cache_valid
+DYNAMIC_SYMBOL	50	0x0	type	2	bind	1	vis	0	ndx	0	name	free
+DYNAMIC_SYMBOL	51	0x0	type	2	bind	1	vis	0	ndx	0	name	sendmsg
+DYNAMIC_SYMBOL	52	0x0	type	2	bind	1	vis	0	ndx	0	name	read
+DYNAMIC_SYMBOL	53	0x0	type	2	bind	1	vis	0	ndx	0	name	write
+DYNAMIC_SYMBOL	54	0x0	type	2	bind	1	vis	0	ndx	0	name	access
+DYNAMIC_SYMBOL	55	0x0	type	2	bind	1	vis	0	ndx	0	name	openlog
+DYNAMIC_SYMBOL	56	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_registerTMCloneTable
+DYNAMIC_SYMBOL	57	0x0	type	2	bind	1	vis	0	ndx	0	name	gettimeofday
+DYNAMIC_SYMBOL	58	0x0	type	2	bind	1	vis	0	ndx	0	name	stat64
+DYNAMIC_SYMBOL	59	0x0	type	2	bind	1	vis	0	ndx	0	name	accept
+DYNAMIC_SYMBOL	60	0x0	type	2	bind	1	vis	0	ndx	0	name	dbuspolicy1_can_own
+DYNAMIC_SYMBOL	61	0x0	type	2	bind	1	vis	0	ndx	0	name	__memcpy_chk
+DYNAMIC_SYMBOL	62	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_unlock
+DYNAMIC_SYMBOL	63	0x0	type	2	bind	1	vis	0	ndx	0	name	socket
+DYNAMIC_SYMBOL	64	0x0	type	2	bind	1	vis	0	ndx	0	name	getaddrinfo
+DYNAMIC_SYMBOL	65	0x0	type	2	bind	1	vis	0	ndx	0	name	fflush
+DYNAMIC_SYMBOL	66	0x0	type	2	bind	1	vis	0	ndx	0	name	ioctl
+DYNAMIC_SYMBOL	67	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutexattr_init
+DYNAMIC_SYMBOL	68	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_lock
+DYNAMIC_SYMBOL	69	0x0	type	2	bind	1	vis	0	ndx	0	name	strlen
+DYNAMIC_SYMBOL	70	0x0	type	2	bind	1	vis	0	ndx	0	name	unlink
+DYNAMIC_SYMBOL	71	0x0	type	2	bind	1	vis	0	ndx	0	name	memcpy
+DYNAMIC_SYMBOL	72	0x0	type	2	bind	1	vis	0	ndx	0	name	fopen64
+DYNAMIC_SYMBOL	73	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_cond_signal
+DYNAMIC_SYMBOL	74	0x0	type	2	bind	1	vis	0	ndx	0	name	fstat64
+DYNAMIC_SYMBOL	75	0x0	type	2	bind	1	vis	0	ndx	0	name	bcmp
+DYNAMIC_SYMBOL	76	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_cond_destroy
+DYNAMIC_SYMBOL	77	0x0	type	2	bind	1	vis	0	ndx	0	name	__vsnprintf_chk
+DYNAMIC_SYMBOL	78	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_destroy
+DYNAMIC_SYMBOL	79	0x0	type	2	bind	1	vis	0	ndx	0	name	open64
+DYNAMIC_SYMBOL	80	0x0	type	1	bind	1	vis	0	ndx	0	name	__stack_chk_guard
+DYNAMIC_SYMBOL	81	0x0	type	2	bind	1	vis	0	ndx	0	name	__vfprintf_chk
+DYNAMIC_SYMBOL	82	0x0	type	2	bind	1	vis	0	ndx	0	name	raise
+DYNAMIC_SYMBOL	83	0x0	type	2	bind	1	vis	0	ndx	0	name	getegid
+DYNAMIC_SYMBOL	84	0x0	type	2	bind	1	vis	0	ndx	0	name	clock_getres
+DYNAMIC_SYMBOL	85	0x0	type	2	bind	1	vis	0	ndx	0	name	fcntl64
+DYNAMIC_SYMBOL	86	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_init
+DYNAMIC_SYMBOL	87	0x0	type	2	bind	1	vis	0	ndx	0	name	dirfd
+DYNAMIC_SYMBOL	88	0x0	type	2	bind	1	vis	0	ndx	0	name	bind
+DYNAMIC_SYMBOL	89	0x0	type	2	bind	1	vis	0	ndx	0	name	close
+DYNAMIC_SYMBOL	90	0x0	type	2	bind	1	vis	0	ndx	0	name	__isoc23_strtoull
+DYNAMIC_SYMBOL	91	0x0	type	2	bind	1	vis	0	ndx	0	name	closedir
+DYNAMIC_SYMBOL	92	0x0	type	2	bind	1	vis	0	ndx	0	name	__open64_2
+DYNAMIC_SYMBOL	93	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_is_socket
+DYNAMIC_SYMBOL	94	0x0	type	2	bind	1	vis	0	ndx	0	name	accept4
+DYNAMIC_SYMBOL	95	0x0	type	2	bind	1	vis	0	ndx	0	name	__vsyslog_chk
+DYNAMIC_SYMBOL	96	0x0	type	2	bind	1	vis	0	ndx	0	name	malloc
+DYNAMIC_SYMBOL	97	0x0	type	2	bind	1	vis	0	ndx	0	name	mmap64
+DYNAMIC_SYMBOL	98	0x0	type	2	bind	1	vis	0	ndx	0	name	__stack_chk_fail
+DYNAMIC_SYMBOL	99	0x0	type	2	bind	1	vis	0	ndx	0	name	__cmsg_nxthdr
+DYNAMIC_SYMBOL	100	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_condattr_destroy
+DYNAMIC_SYMBOL	101	0x0	type	2	bind	1	vis	0	ndx	0	name	poll
+DYNAMIC_SYMBOL	102	0x0	type	2	bind	1	vis	0	ndx	0	name	fputc
+DYNAMIC_SYMBOL	103	0x0	type	2	bind	1	vis	0	ndx	0	name	getpwnam_r
+DYNAMIC_SYMBOL	104	0x0	type	2	bind	1	vis	0	ndx	0	name	__isoc23_strtol
+DYNAMIC_SYMBOL	105	0x0	type	2	bind	1	vis	0	ndx	0	name	rmdir
+DYNAMIC_SYMBOL	106	0x0	type	2	bind	1	vis	0	ndx	0	name	lstat64
+DYNAMIC_SYMBOL	107	0x0	type	2	bind	1	vis	0	ndx	0	name	send
+DYNAMIC_SYMBOL	108	0x0	type	2	bind	1	vis	0	ndx	0	name	memmove
+DYNAMIC_SYMBOL	109	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutexattr_settype
+DYNAMIC_SYMBOL	110	0x0	type	2	bind	1	vis	0	ndx	0	name	dbuspolicy1_check_out
+DYNAMIC_SYMBOL	111	0x0	type	2	bind	1	vis	0	ndx	0	name	dup2
+DYNAMIC_SYMBOL	112	0x0	type	2	bind	1	vis	0	ndx	0	name	getpid
+DYNAMIC_SYMBOL	113	0x0	type	2	bind	1	vis	0	ndx	0	name	dbuspolicy1_free
+DYNAMIC_SYMBOL	114	0x0	type	2	bind	1	vis	0	ndx	0	name	fork
+DYNAMIC_SYMBOL	115	0x0	type	2	bind	1	vis	0	ndx	0	name	recvmsg
+DYNAMIC_SYMBOL	116	0x0	type	1	bind	1	vis	0	ndx	0	name	stderr
+DYNAMIC_SYMBOL	117	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_condattr_init
+DYNAMIC_SYMBOL	118	0x0	type	2	bind	1	vis	0	ndx	0	name	munmap
+DYNAMIC_SYMBOL	119	0x0	type	2	bind	1	vis	0	ndx	0	name	readdir64
+DYNAMIC_SYMBOL	120	0x0	type	2	bind	1	vis	0	ndx	0	name	dbuspolicy1_check_in
+DYNAMIC_SYMBOL	121	0x0	type	2	bind	1	vis	0	ndx	0	name	fread
+DYNAMIC_SYMBOL	122	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_cond_init
+DYNAMIC_SYMBOL	123	0x0	type	2	bind	1	vis	0	ndx	0	name	strncmp
+DYNAMIC_SYMBOL	124	0x0	type	2	bind	1	vis	0	ndx	0	name	nanosleep
+DYNAMIC_SYMBOL	125	0x0	type	2	bind	1	vis	0	ndx	0	name	realloc
+DYNAMIC_SYMBOL	126	0x0	type	2	bind	1	vis	0	ndx	0	name	__isoc23_strtoul
+DYNAMIC_SYMBOL	127	0x0	type	2	bind	1	vis	0	ndx	0	name	getsockopt
+DYNAMIC_SYMBOL	128	0x0	type	2	bind	1	vis	0	ndx	0	name	syscall
+DYNAMIC_SYMBOL	129	0x0	type	2	bind	1	vis	0	ndx	0	name	setsockopt
+DYNAMIC_SYMBOL	130	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr1
+DYNAMIC_SYMBOL	131	0x0	type	2	bind	1	vis	0	ndx	0	name	fchmod
+DYNAMIC_SYMBOL	132	0x0	type	2	bind	1	vis	0	ndx	0	name	setenv
+DYNAMIC_SYMBOL	133	0x0	type	2	bind	1	vis	0	ndx	0	name	strcmp
+DYNAMIC_SYMBOL	134	0x0	type	2	bind	1	vis	0	ndx	0	name	getpwuid_r
+DYNAMIC_SYMBOL	135	0x0	type	2	bind	1	vis	0	ndx	0	name	dbuspolicy1_init_set_pool
+DYNAMIC_SYMBOL	136	0x0	type	2	bind	1	vis	0	ndx	0	name	__vasprintf_chk
+DYNAMIC_SYMBOL	137	0x0	type	2	bind	1	vis	0	ndx	0	name	__errno_location
+DYNAMIC_SYMBOL	138	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_finalize
+DYNAMIC_SYMBOL	139	0x0	type	2	bind	1	vis	0	ndx	0	name	getgid
+DYNAMIC_SYMBOL	140	0x3238c	type	2	bind	1	vis	0	ndx	11	name	_dbus_concat_dir_and_file
+EXPORT	2	1	0	11	_dbus_concat_dir_and_file
+DYNAMIC_SYMBOL	141	0x1c6f8	type	2	bind	1	vis	0	ndx	11	name	dbus_message_new_error
+EXPORT	2	1	0	11	dbus_message_new_error
+DYNAMIC_SYMBOL	142	0x2b258	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_insert_string
+EXPORT	2	1	0	11	_dbus_hash_table_insert_string
+DYNAMIC_SYMBOL	143	0x2e5f0	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_replace_len
+EXPORT	2	1	0	11	_dbus_string_replace_len
+DYNAMIC_SYMBOL	144	0x2e310	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_append_printf_valist
+EXPORT	2	1	0	11	_dbus_string_append_printf_valist
+DYNAMIC_SYMBOL	145	0x2a3d0	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_list_new
+EXPORT	2	1	0	11	_dbus_watch_list_new
+DYNAMIC_SYMBOL	146	0x2c820	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_pop_first
+EXPORT	2	1	0	11	_dbus_list_pop_first
+DYNAMIC_SYMBOL	147	0x14cdc	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_max_message_unix_fds
+EXPORT	2	1	0	11	dbus_connection_set_max_message_unix_fds
+DYNAMIC_SYMBOL	148	0x1f00c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_has_interface
+EXPORT	2	1	0	11	dbus_message_has_interface
+DYNAMIC_SYMBOL	149	0x26f64	type	2	bind	1	vis	0	ndx	11	name	dbus_signature_iter_next
+EXPORT	2	1	0	11	dbus_signature_iter_next
+DYNAMIC_SYMBOL	150	0x2fa98	type	2	bind	1	vis	0	ndx	11	name	_dbus_pipe_write
+EXPORT	2	1	0	11	_dbus_pipe_write
+DYNAMIC_SYMBOL	151	0x2c870	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_copy
+EXPORT	2	1	0	11	_dbus_list_copy
+DYNAMIC_SYMBOL	152	0xf1e0	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_request_name
+EXPORT	2	1	0	11	dbus_bus_request_name
+DYNAMIC_SYMBOL	153	0x17bd0	type	2	bind	1	vis	0	ndx	11	name	_dbus_header_set_field_basic
+EXPORT	2	1	0	11	_dbus_header_set_field_basic
+DYNAMIC_SYMBOL	154	0x33be4	type	2	bind	1	vis	0	ndx	11	name	_dbus_is_a_number
+EXPORT	2	1	0	11	_dbus_is_a_number
+DYNAMIC_SYMBOL	155	0x24450	type	2	bind	1	vis	0	ndx	11	name	dbus_server_set_auth_mechanisms
+EXPORT	2	1	0	11	dbus_server_set_auth_mechanisms
+DYNAMIC_SYMBOL	156	0x3e790	type	2	bind	1	vis	0	ndx	11	name	_dbus_asv_abandon
+EXPORT	2	1	0	11	_dbus_asv_abandon
+DYNAMIC_SYMBOL	157	0x11e28	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_send
+EXPORT	2	1	0	11	dbus_connection_send
+DYNAMIC_SYMBOL	158	0x2d8d4	type	2	bind	1	vis	0	ndx	11	name	dbus_shutdown
+EXPORT	2	1	0	11	dbus_shutdown
+DYNAMIC_SYMBOL	159	0x2450c	type	2	bind	1	vis	0	ndx	11	name	dbus_server_allocate_data_slot
+EXPORT	2	1	0	11	dbus_server_allocate_data_slot
+DYNAMIC_SYMBOL	160	0x270f0	type	2	bind	1	vis	0	ndx	11	name	dbus_signature_validate
+EXPORT	2	1	0	11	dbus_signature_validate
+DYNAMIC_SYMBOL	161	0x2434c	type	2	bind	1	vis	0	ndx	11	name	dbus_server_set_timeout_functions
+EXPORT	2	1	0	11	dbus_server_set_timeout_functions
+DYNAMIC_SYMBOL	162	0x2a870	type	2	bind	1	vis	0	ndx	11	name	dbus_watch_handle
+EXPORT	2	1	0	11	dbus_watch_handle
+DYNAMIC_SYMBOL	163	0x1cdec	type	2	bind	1	vis	0	ndx	11	name	dbus_message_copy
+EXPORT	2	1	0	11	dbus_message_copy
+DYNAMIC_SYMBOL	164	0x232a4	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_steal_reply
+EXPORT	2	1	0	11	dbus_pending_call_steal_reply
+DYNAMIC_SYMBOL	165	0x25134	type	2	bind	1	vis	0	ndx	11	name	_dbus_create_uuid
+EXPORT	2	1	0	11	_dbus_create_uuid
+DYNAMIC_SYMBOL	166	0x2063c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_free_data_slot
+EXPORT	2	1	0	11	dbus_message_free_data_slot
+DYNAMIC_SYMBOL	167	0x48dc4	type	1	bind	1	vis	0	ndx	22	name	_dbus_no_memory_message
+EXPORT	1	1	0	22	_dbus_no_memory_message
+DYNAMIC_SYMBOL	168	0x278e8	type	2	bind	1	vis	0	ndx	11	name	_dbus_timeout_restart
+EXPORT	2	1	0	11	_dbus_timeout_restart
+DYNAMIC_SYMBOL	169	0x22f84	type	2	bind	1	vis	0	ndx	11	name	_dbus_pending_call_ref_unlocked
+EXPORT	2	1	0	11	_dbus_pending_call_ref_unlocked
+DYNAMIC_SYMBOL	170	0x23ef4	type	2	bind	1	vis	0	ndx	11	name	dbus_server_ref
+EXPORT	2	1	0	11	dbus_server_ref
+DYNAMIC_SYMBOL	171	0x2e810	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_find_eol
+EXPORT	2	1	0	11	_dbus_string_find_eol
+DYNAMIC_SYMBOL	172	0xb778	type	2	bind	1	vis	0	ndx	11	name	dbus_parse_address
+EXPORT	2	1	0	11	dbus_parse_address
+DYNAMIC_SYMBOL	173	0x2e90c	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_skip_blank
+EXPORT	2	1	0	11	_dbus_string_skip_blank
+DYNAMIC_SYMBOL	174	0x2dc58	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_init_const
+EXPORT	2	1	0	11	_dbus_string_init_const
+DYNAMIC_SYMBOL	175	0x2456c	type	2	bind	1	vis	0	ndx	11	name	dbus_server_set_data
+EXPORT	2	1	0	11	dbus_server_set_data
+DYNAMIC_SYMBOL	176	0x1ccc0	type	2	bind	1	vis	0	ndx	11	name	dbus_message_new_error_printf
+EXPORT	2	1	0	11	dbus_message_new_error_printf
+DYNAMIC_SYMBOL	177	0xc9b4	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_set_credentials
+EXPORT	2	1	0	11	_dbus_auth_set_credentials
+DYNAMIC_SYMBOL	178	0x33218	type	2	bind	1	vis	0	ndx	11	name	_dbus_logv
+EXPORT	2	1	0	11	_dbus_logv
+DYNAMIC_SYMBOL	179	0x27304	type	2	bind	1	vis	0	ndx	11	name	dbus_validate_path
+EXPORT	2	1	0	11	dbus_validate_path
+DYNAMIC_SYMBOL	180	0x180e4	type	2	bind	1	vis	0	ndx	11	name	_dbus_marshal_byteswap
+EXPORT	2	1	0	11	_dbus_marshal_byteswap
+DYNAMIC_SYMBOL	181	0x2dd50	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_compact
+EXPORT	2	1	0	11	_dbus_string_compact
+DYNAMIC_SYMBOL	182	0x2eb74	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_equal
+EXPORT	2	1	0	11	_dbus_string_equal
+DYNAMIC_SYMBOL	183	0x154f8	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_get_pid
+EXPORT	2	1	0	11	_dbus_credentials_get_pid
+DYNAMIC_SYMBOL	184	0x2ce08	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_to_string
+EXPORT	2	1	0	11	_dbus_type_to_string
+DYNAMIC_SYMBOL	185	0x110c0	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_set_pending_fds_function
+EXPORT	2	1	0	11	_dbus_connection_set_pending_fds_function
+DYNAMIC_SYMBOL	186	0x2c680	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_find_last
+EXPORT	2	1	0	11	_dbus_list_find_last
+DYNAMIC_SYMBOL	187	0x2b1c0	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_remove_int
+EXPORT	2	1	0	11	_dbus_hash_table_remove_int
+DYNAMIC_SYMBOL	188	0x1d188	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_type
+EXPORT	2	1	0	11	dbus_message_get_type
+DYNAMIC_SYMBOL	189	0x1253c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_read_write_dispatch
+EXPORT	2	1	0	11	dbus_connection_read_write_dispatch
+DYNAMIC_SYMBOL	190	0x3e794	type	2	bind	1	vis	0	ndx	11	name	_dbus_asv_add_uint32
+EXPORT	2	1	0	11	_dbus_asv_add_uint32
+DYNAMIC_SYMBOL	191	0x2ebc8	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_equal_len
+EXPORT	2	1	0	11	_dbus_string_equal_len
+DYNAMIC_SYMBOL	192	0xb3c0	type	2	bind	1	vis	0	ndx	11	name	_dbus_abort
+EXPORT	2	1	0	11	_dbus_abort
+DYNAMIC_SYMBOL	193	0x2ec38	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_equal_substring
+EXPORT	2	1	0	11	_dbus_string_equal_substring
+DYNAMIC_SYMBOL	194	0x32180	type	2	bind	1	vis	0	ndx	11	name	_dbus_atomic_dec
+EXPORT	2	1	0	11	_dbus_atomic_dec
+DYNAMIC_SYMBOL	195	0xea14	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_get_private
+EXPORT	2	1	0	11	dbus_bus_get_private
+DYNAMIC_SYMBOL	196	0x23c18	type	2	bind	1	vis	0	ndx	11	name	_dbus_server_ref_unlocked
+EXPORT	2	1	0	11	_dbus_server_ref_unlocked
+DYNAMIC_SYMBOL	197	0x140ec	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_try_register_object_path
+EXPORT	2	1	0	11	dbus_connection_try_register_object_path
+DYNAMIC_SYMBOL	198	0xe4d8	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_get
+EXPORT	2	1	0	11	dbus_bus_get
+DYNAMIC_SYMBOL	199	0xc798	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_bytes_sent
+EXPORT	2	1	0	11	_dbus_auth_bytes_sent
+DYNAMIC_SYMBOL	200	0x2a6c4	type	2	bind	1	vis	0	ndx	11	name	dbus_watch_get_fd
+EXPORT	2	1	0	11	dbus_watch_get_fd
+DYNAMIC_SYMBOL	201	0x327fc	type	2	bind	1	vis	0	ndx	11	name	_dbus_printf_string_upper_bound
+EXPORT	2	1	0	11	_dbus_printf_string_upper_bound
+DYNAMIC_SYMBOL	202	0x2b420	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_from_array
+EXPORT	2	1	0	11	_dbus_hash_table_from_array
+DYNAMIC_SYMBOL	203	0x1b798	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_init_closed
+EXPORT	2	1	0	11	dbus_message_iter_init_closed
+DYNAMIC_SYMBOL	204	0x2a828	type	2	bind	1	vis	0	ndx	11	name	dbus_watch_get_enabled
+EXPORT	2	1	0	11	dbus_watch_get_enabled
+DYNAMIC_SYMBOL	205	0x3401c	type	2	bind	1	vis	0	ndx	11	name	_dbus_username_from_current_process
+EXPORT	2	1	0	11	_dbus_username_from_current_process
+DYNAMIC_SYMBOL	206	0x32144	type	2	bind	1	vis	0	ndx	11	name	_dbus_atomic_inc
+EXPORT	2	1	0	11	_dbus_atomic_inc
+DYNAMIC_SYMBOL	207	0x2e558	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_copy
+EXPORT	2	1	0	11	_dbus_string_copy
+DYNAMIC_SYMBOL	208	0x2e8b8	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_find_blank
+EXPORT	2	1	0	11	_dbus_string_find_blank
+DYNAMIC_SYMBOL	209	0x2c90c	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_foreach
+EXPORT	2	1	0	11	_dbus_list_foreach
+DYNAMIC_SYMBOL	210	0x193f8	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_writer_write_basic
+EXPORT	2	1	0	11	_dbus_type_writer_write_basic
+DYNAMIC_SYMBOL	211	0x115cc	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_ref
+EXPORT	2	1	0	11	dbus_connection_ref
+DYNAMIC_SYMBOL	212	0x2bcb4	type	2	bind	1	vis	0	ndx	11	name	_dbus_uuid_encode
+EXPORT	2	1	0	11	_dbus_uuid_encode
+DYNAMIC_SYMBOL	213	0xc774	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_get_bytes_to_send
+EXPORT	2	1	0	11	_dbus_auth_get_bytes_to_send
+DYNAMIC_SYMBOL	214	0x186a0	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_read_fixed_multi
+EXPORT	2	1	0	11	_dbus_type_reader_read_fixed_multi
+DYNAMIC_SYMBOL	215	0x2e40c	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_delete
+EXPORT	2	1	0	11	_dbus_string_delete
+DYNAMIC_SYMBOL	216	0x20fb8	type	2	bind	1	vis	0	ndx	11	name	dbus_set_protocol_version
+EXPORT	2	1	0	11	dbus_set_protocol_version
+DYNAMIC_SYMBOL	217	0x24a84	type	2	bind	1	vis	0	ndx	11	name	_dbus_server_new_for_tcp_socket
+EXPORT	2	1	0	11	_dbus_server_new_for_tcp_socket
+DYNAMIC_SYMBOL	218	0x2b0d8	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_lookup_string
+EXPORT	2	1	0	11	_dbus_hash_table_lookup_string
+DYNAMIC_SYMBOL	219	0x1152c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_open_private
+EXPORT	2	1	0	11	dbus_connection_open_private
+DYNAMIC_SYMBOL	220	0x14e28	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_max_received_size
+EXPORT	2	1	0	11	dbus_connection_get_max_received_size
+DYNAMIC_SYMBOL	221	0x18c78	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_writer_init_values_only
+EXPORT	2	1	0	11	_dbus_type_writer_init_values_only
+DYNAMIC_SYMBOL	222	0x32600	type	2	bind	1	vis	0	ndx	11	name	_dbus_exit
+EXPORT	2	1	0	11	_dbus_exit
+DYNAMIC_SYMBOL	223	0x153b8	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_ref
+EXPORT	2	1	0	11	_dbus_credentials_ref
+DYNAMIC_SYMBOL	224	0x2bc30	type	2	bind	1	vis	0	ndx	11	name	_dbus_generate_uuid
+EXPORT	2	1	0	11	_dbus_generate_uuid
+DYNAMIC_SYMBOL	225	0x22e08	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_get_data
+EXPORT	2	1	0	11	dbus_pending_call_get_data
+DYNAMIC_SYMBOL	226	0x13634	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_wakeup_main_function
+EXPORT	2	1	0	11	dbus_connection_set_wakeup_main_function
+DYNAMIC_SYMBOL	227	0x23aac	type	2	bind	1	vis	0	ndx	11	name	_dbus_server_toggle_all_watches
+EXPORT	2	1	0	11	_dbus_server_toggle_all_watches
+DYNAMIC_SYMBOL	228	0x2c8e0	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_get_length
+EXPORT	2	1	0	11	_dbus_list_get_length
+DYNAMIC_SYMBOL	229	0xc2d4	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_unref
+EXPORT	2	1	0	11	_dbus_auth_unref
+DYNAMIC_SYMBOL	230	0x2a24c	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_new
+EXPORT	2	1	0	11	_dbus_watch_new
+DYNAMIC_SYMBOL	231	0x2d7a0	type	2	bind	1	vis	0	ndx	11	name	dbus_realloc
+EXPORT	2	1	0	11	dbus_realloc
+DYNAMIC_SYMBOL	232	0x11ef8	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_send_with_reply
+EXPORT	2	1	0	11	dbus_connection_send_with_reply
+DYNAMIC_SYMBOL	233	0x2decc	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_steal_data
+EXPORT	2	1	0	11	_dbus_string_steal_data
+DYNAMIC_SYMBOL	234	0x1d1d0	type	2	bind	1	vis	0	ndx	11	name	dbus_message_append_args
+EXPORT	2	1	0	11	dbus_message_append_args
+DYNAMIC_SYMBOL	235	0x11754	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_close
+EXPORT	2	1	0	11	dbus_connection_close
+DYNAMIC_SYMBOL	236	0x2d810	type	2	bind	1	vis	0	ndx	11	name	_dbus_register_shutdown_func
+EXPORT	2	1	0	11	_dbus_register_shutdown_func
+DYNAMIC_SYMBOL	237	0x326a4	type	2	bind	1	vis	0	ndx	11	name	_dbus_print_backtrace
+EXPORT	2	1	0	11	_dbus_print_backtrace
+DYNAMIC_SYMBOL	238	0x3e204	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_parse_int
+EXPORT	2	1	0	11	_dbus_string_parse_int
+DYNAMIC_SYMBOL	239	0x11a88	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_exit_on_disconnect
+EXPORT	2	1	0	11	dbus_connection_set_exit_on_disconnect
+DYNAMIC_SYMBOL	240	0x2e08c	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_set_length
+EXPORT	2	1	0	11	_dbus_string_set_length
+DYNAMIC_SYMBOL	241	0x21520	type	2	bind	1	vis	0	ndx	11	name	_dbus_variant_peek
+EXPORT	2	1	0	11	_dbus_variant_peek
+DYNAMIC_SYMBOL	242	0x1a4cc	type	2	bind	1	vis	0	ndx	11	name	_dbus_validate_signature_with_reason
+EXPORT	2	1	0	11	_dbus_validate_signature_with_reason
+DYNAMIC_SYMBOL	243	0x1fe98	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_return_unix_fds
+EXPORT	2	1	0	11	_dbus_message_loader_return_unix_fds
+DYNAMIC_SYMBOL	244	0x1bcbc	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_get_arg_type
+EXPORT	2	1	0	11	dbus_message_iter_get_arg_type
+DYNAMIC_SYMBOL	245	0x2b54c	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_to_array
+EXPORT	2	1	0	11	_dbus_hash_table_to_array
+DYNAMIC_SYMBOL	246	0xfb50	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_remove_match
+EXPORT	2	1	0	11	dbus_bus_remove_match
+DYNAMIC_SYMBOL	247	0xfd9c	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_unlock
+EXPORT	2	1	0	11	_dbus_connection_unlock
+DYNAMIC_SYMBOL	248	0x3e594	type	2	bind	1	vis	0	ndx	11	name	_dbus_error_from_system_errno
+EXPORT	2	1	0	11	_dbus_error_from_system_errno
+DYNAMIC_SYMBOL	249	0x1068c	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_ref_unlocked
+EXPORT	2	1	0	11	_dbus_connection_ref_unlocked
+DYNAMIC_SYMBOL	250	0x12b9c	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_putback_message
+EXPORT	2	1	0	11	_dbus_connection_putback_message
+DYNAMIC_SYMBOL	251	0x15318	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_new_from_current_process
+EXPORT	2	1	0	11	_dbus_credentials_new_from_current_process
+DYNAMIC_SYMBOL	252	0x1eb4c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_auto_start
+EXPORT	2	1	0	11	dbus_message_set_auto_start
+DYNAMIC_SYMBOL	253	0x1e4c0	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_get_element_count
+EXPORT	2	1	0	11	dbus_message_iter_get_element_count
+DYNAMIC_SYMBOL	254	0x1fca4	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_unref
+EXPORT	2	1	0	11	_dbus_message_loader_unref
+DYNAMIC_SYMBOL	255	0x2c184	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_get_stats
+EXPORT	2	1	0	11	_dbus_list_get_stats
+DYNAMIC_SYMBOL	256	0x2e080	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_shorten
+EXPORT	2	1	0	11	_dbus_string_shorten
+DYNAMIC_SYMBOL	257	0x2c62c	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_remove_last
+EXPORT	2	1	0	11	_dbus_list_remove_last
+DYNAMIC_SYMBOL	258	0xf61c	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_name_has_owner
+EXPORT	2	1	0	11	dbus_bus_name_has_owner
+DYNAMIC_SYMBOL	259	0x0	type	1	bind	1	vis	0	ndx	65521	name	LIBDBUS_PRIVATE_1.12.20
+EXPORT	1	1	0	65521	LIBDBUS_PRIVATE_1.12.20
+DYNAMIC_SYMBOL	260	0x17f14	type	2	bind	1	vis	0	ndx	11	name	_dbus_header_delete_field
+EXPORT	2	1	0	11	_dbus_header_delete_field
+DYNAMIC_SYMBOL	261	0x1488c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_list_registered
+EXPORT	2	1	0	11	dbus_connection_list_registered
+DYNAMIC_SYMBOL	262	0x230c8	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_ref
+EXPORT	2	1	0	11	dbus_pending_call_ref
+DYNAMIC_SYMBOL	263	0x1d41c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_open_container
+EXPORT	2	1	0	11	dbus_message_iter_open_container
+DYNAMIC_SYMBOL	264	0x1537c	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_unref
+EXPORT	2	1	0	11	_dbus_credentials_unref
+DYNAMIC_SYMBOL	265	0x2b8f0	type	2	bind	1	vis	0	ndx	11	name	_dbus_warn
+EXPORT	2	1	0	11	_dbus_warn
+DYNAMIC_SYMBOL	266	0x2dc8c	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_init_const_len
+EXPORT	2	1	0	11	_dbus_string_init_const_len
+DYNAMIC_SYMBOL	267	0x27b48	type	2	bind	1	vis	0	ndx	11	name	_dbus_timeout_needs_restart
+EXPORT	2	1	0	11	_dbus_timeout_needs_restart
+DYNAMIC_SYMBOL	268	0x2e458	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_move
+EXPORT	2	1	0	11	_dbus_string_move
+DYNAMIC_SYMBOL	269	0x27164	type	2	bind	1	vis	0	ndx	11	name	dbus_signature_validate_single
+EXPORT	2	1	0	11	dbus_signature_validate_single
+DYNAMIC_SYMBOL	270	0x15e50	type	2	bind	1	vis	0	ndx	11	name	dbus_move_error
+EXPORT	2	1	0	11	dbus_move_error
+DYNAMIC_SYMBOL	271	0x2f3dc	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_validate_nul
+EXPORT	2	1	0	11	_dbus_string_validate_nul
+DYNAMIC_SYMBOL	272	0x2aeb0	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_iter_init
+EXPORT	2	1	0	11	_dbus_hash_iter_init
+DYNAMIC_SYMBOL	273	0xf058	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_get_id
+EXPORT	2	1	0	11	dbus_bus_get_id
+DYNAMIC_SYMBOL	274	0x1fd08	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_get_buffer
+EXPORT	2	1	0	11	_dbus_message_loader_get_buffer
+DYNAMIC_SYMBOL	275	0x11b6c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_free_preallocated_send
+EXPORT	2	1	0	11	dbus_connection_free_preallocated_send
+DYNAMIC_SYMBOL	276	0xca58	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_is_supported_mechanism
+EXPORT	2	1	0	11	_dbus_auth_is_supported_mechanism
+DYNAMIC_SYMBOL	277	0x2147c	type	2	bind	1	vis	0	ndx	11	name	_dbus_variant_get_signature
+EXPORT	2	1	0	11	_dbus_variant_get_signature
+DYNAMIC_SYMBOL	278	0x3e764	type	2	bind	1	vis	0	ndx	11	name	_dbus_asv_close
+EXPORT	2	1	0	11	_dbus_asv_close
+DYNAMIC_SYMBOL	279	0x2a798	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_get_pollable
+EXPORT	2	1	0	11	_dbus_watch_get_pollable
+DYNAMIC_SYMBOL	280	0x149e0	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_allocate_data_slot
+EXPORT	2	1	0	11	dbus_connection_allocate_data_slot
+DYNAMIC_SYMBOL	281	0xbf30	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_server_new
+EXPORT	2	1	0	11	_dbus_auth_server_new
+DYNAMIC_SYMBOL	282	0x13de8	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_allow_anonymous
+EXPORT	2	1	0	11	dbus_connection_set_allow_anonymous
+DYNAMIC_SYMBOL	283	0x2a390	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_invalidate
+EXPORT	2	1	0	11	_dbus_watch_invalidate
+DYNAMIC_SYMBOL	284	0x1f12c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_member
+EXPORT	2	1	0	11	dbus_message_get_member
+DYNAMIC_SYMBOL	285	0x1f050	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_member
+EXPORT	2	1	0	11	dbus_message_set_member
+DYNAMIC_SYMBOL	286	0x20688	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_data
+EXPORT	2	1	0	11	dbus_message_set_data
+DYNAMIC_SYMBOL	287	0x2d950	type	2	bind	1	vis	0	ndx	11	name	_dbus_mem_pool_new
+EXPORT	2	1	0	11	_dbus_mem_pool_new
+DYNAMIC_SYMBOL	288	0x2dab0	type	2	bind	1	vis	0	ndx	11	name	_dbus_mem_pool_dealloc
+EXPORT	2	1	0	11	_dbus_mem_pool_dealloc
+DYNAMIC_SYMBOL	289	0x1fc94	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_ref
+EXPORT	2	1	0	11	_dbus_message_loader_ref
+DYNAMIC_SYMBOL	290	0x205bc	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_get_is_corrupted
+EXPORT	2	1	0	11	_dbus_message_loader_get_is_corrupted
+DYNAMIC_SYMBOL	291	0x2aec8	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_iter_next
+EXPORT	2	1	0	11	_dbus_hash_iter_next
+DYNAMIC_SYMBOL	292	0x1f970	type	2	bind	1	vis	0	ndx	11	name	dbus_message_has_sender
+EXPORT	2	1	0	11	dbus_message_has_sender
+DYNAMIC_SYMBOL	293	0x1ed34	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_path
+EXPORT	2	1	0	11	dbus_message_get_path
+DYNAMIC_SYMBOL	294	0x321ec	type	2	bind	1	vis	0	ndx	11	name	_dbus_poll
+EXPORT	2	1	0	11	_dbus_poll
+DYNAMIC_SYMBOL	295	0xbe64	type	2	bind	1	vis	0	ndx	11	name	dbus_address_unescape_value
+EXPORT	2	1	0	11	dbus_address_unescape_value
+DYNAMIC_SYMBOL	296	0x2b410	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_free_preallocated_entry
+EXPORT	2	1	0	11	_dbus_hash_table_free_preallocated_entry
+DYNAMIC_SYMBOL	297	0x2e948	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_skip_white
+EXPORT	2	1	0	11	_dbus_string_skip_white
+DYNAMIC_SYMBOL	298	0x1d0b4	type	2	bind	1	vis	0	ndx	11	name	dbus_message_ref
+EXPORT	2	1	0	11	dbus_message_ref
+DYNAMIC_SYMBOL	299	0x13ebc	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_add_filter
+EXPORT	2	1	0	11	dbus_connection_add_filter
+DYNAMIC_SYMBOL	300	0x136c8	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_dispatch_status_function
+EXPORT	2	1	0	11	dbus_connection_set_dispatch_status_function
+DYNAMIC_SYMBOL	301	0x2b174	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_remove_string
+EXPORT	2	1	0	11	_dbus_hash_table_remove_string
+DYNAMIC_SYMBOL	302	0x2b2a4	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_insert_string_preallocated
+EXPORT	2	1	0	11	_dbus_hash_table_insert_string_preallocated
+DYNAMIC_SYMBOL	303	0x23f7c	type	2	bind	1	vis	0	ndx	11	name	dbus_server_unref
+EXPORT	2	1	0	11	dbus_server_unref
+DYNAMIC_SYMBOL	304	0x14be0	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_change_sigpipe
+EXPORT	2	1	0	11	dbus_connection_set_change_sigpipe
+DYNAMIC_SYMBOL	305	0x14e9c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_max_received_unix_fds
+EXPORT	2	1	0	11	dbus_connection_set_max_received_unix_fds
+DYNAMIC_SYMBOL	306	0xc7a8	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_get_buffer
+EXPORT	2	1	0	11	_dbus_auth_get_buffer
+DYNAMIC_SYMBOL	307	0xc410	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_ref
+EXPORT	2	1	0	11	_dbus_auth_ref
+DYNAMIC_SYMBOL	308	0x2ef10	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_hex_decode
+EXPORT	2	1	0	11	_dbus_string_hex_decode
+DYNAMIC_SYMBOL	309	0x1da20	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_close_container
+EXPORT	2	1	0	11	dbus_message_iter_close_container
+DYNAMIC_SYMBOL	310	0x2dfcc	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_lengthen
+EXPORT	2	1	0	11	_dbus_string_lengthen
+DYNAMIC_SYMBOL	311	0x1c530	type	2	bind	1	vis	0	ndx	11	name	dbus_message_new_signal
+EXPORT	2	1	0	11	dbus_message_new_signal
+DYNAMIC_SYMBOL	312	0x2eac8	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_chop_white
+EXPORT	2	1	0	11	_dbus_string_chop_white
+DYNAMIC_SYMBOL	313	0x143e8	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_try_register_fallback
+EXPORT	2	1	0	11	dbus_connection_try_register_fallback
+DYNAMIC_SYMBOL	314	0x15638	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_are_anonymous
+EXPORT	2	1	0	11	_dbus_credentials_are_anonymous
+DYNAMIC_SYMBOL	315	0x12948	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_return_message
+EXPORT	2	1	0	11	dbus_connection_return_message
+DYNAMIC_SYMBOL	316	0x205e0	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_get_max_message_size
+EXPORT	2	1	0	11	_dbus_message_loader_get_max_message_size
+DYNAMIC_SYMBOL	317	0x3e5fc	type	2	bind	1	vis	0	ndx	11	name	_dbus_log
+EXPORT	2	1	0	11	_dbus_log
+DYNAMIC_SYMBOL	318	0x22bd8	type	2	bind	1	vis	0	ndx	11	name	_dbus_pending_call_new_unlocked
+EXPORT	2	1	0	11	_dbus_pending_call_new_unlocked
+DYNAMIC_SYMBOL	319	0x18850	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_get_signature
+EXPORT	2	1	0	11	_dbus_type_reader_get_signature
+DYNAMIC_SYMBOL	320	0x2a2b8	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_unref
+EXPORT	2	1	0	11	_dbus_watch_unref
+DYNAMIC_SYMBOL	321	0x1ede4	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_path_decomposed
+EXPORT	2	1	0	11	dbus_message_get_path_decomposed
+DYNAMIC_SYMBOL	322	0xb6f4	type	2	bind	1	vis	0	ndx	11	name	dbus_address_entry_get_value
+EXPORT	2	1	0	11	dbus_address_entry_get_value
+DYNAMIC_SYMBOL	323	0x185fc	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_read_basic
+EXPORT	2	1	0	11	_dbus_type_reader_read_basic
+DYNAMIC_SYMBOL	324	0x1c948	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_append_basic
+EXPORT	2	1	0	11	dbus_message_iter_append_basic
+DYNAMIC_SYMBOL	325	0x24640	type	2	bind	1	vis	0	ndx	11	name	dbus_server_get_data
+EXPORT	2	1	0	11	dbus_server_get_data
+DYNAMIC_SYMBOL	326	0x32918	type	2	bind	1	vis	0	ndx	11	name	_dbus_get_tmpdir
+EXPORT	2	1	0	11	_dbus_get_tmpdir
+DYNAMIC_SYMBOL	327	0xc9d8	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_get_identity
+EXPORT	2	1	0	11	_dbus_auth_get_identity
+DYNAMIC_SYMBOL	328	0x2b10c	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_lookup_int
+EXPORT	2	1	0	11	_dbus_hash_table_lookup_int
+DYNAMIC_SYMBOL	329	0x2e3d0	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_append_len
+EXPORT	2	1	0	11	_dbus_string_append_len
+DYNAMIC_SYMBOL	330	0x32284	type	2	bind	1	vis	0	ndx	11	name	_dbus_ensure_directory
+EXPORT	2	1	0	11	_dbus_ensure_directory
+DYNAMIC_SYMBOL	331	0x15ee0	type	2	bind	1	vis	0	ndx	11	name	dbus_error_has_name
+EXPORT	2	1	0	11	dbus_error_has_name
+DYNAMIC_SYMBOL	332	0x1eda0	type	2	bind	1	vis	0	ndx	11	name	dbus_message_has_path
+EXPORT	2	1	0	11	dbus_message_has_path
+DYNAMIC_SYMBOL	333	0x1db6c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_args
+EXPORT	2	1	0	11	dbus_message_get_args
+DYNAMIC_SYMBOL	334	0x2e730	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_find
+EXPORT	2	1	0	11	_dbus_string_find
+DYNAMIC_SYMBOL	335	0x1dc30	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_args_valist
+EXPORT	2	1	0	11	dbus_message_get_args_valist
+DYNAMIC_SYMBOL	336	0x2e6a4	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_split_on_byte
+EXPORT	2	1	0	11	_dbus_string_split_on_byte
+DYNAMIC_SYMBOL	337	0x1f7dc	type	2	bind	1	vis	0	ndx	11	name	dbus_message_is_error
+EXPORT	2	1	0	11	dbus_message_is_error
+DYNAMIC_SYMBOL	338	0x27b80	type	2	bind	1	vis	0	ndx	11	name	dbus_timeout_get_enabled
+EXPORT	2	1	0	11	dbus_timeout_get_enabled
+DYNAMIC_SYMBOL	339	0x14a40	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_data
+EXPORT	2	1	0	11	dbus_connection_set_data
+DYNAMIC_SYMBOL	340	0x3e718	type	2	bind	1	vis	0	ndx	11	name	_dbus_asv_close_entry
+EXPORT	2	1	0	11	_dbus_asv_close_entry
+DYNAMIC_SYMBOL	341	0x30054	type	2	bind	1	vis	0	ndx	11	name	_dbus_write_socket_with_unix_fds
+EXPORT	2	1	0	11	_dbus_write_socket_with_unix_fds
+DYNAMIC_SYMBOL	342	0x13d2c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_windows_user_function
+EXPORT	2	1	0	11	dbus_connection_set_windows_user_function
+DYNAMIC_SYMBOL	343	0x15508	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_get_windows_sid
+EXPORT	2	1	0	11	_dbus_credentials_get_windows_sid
+DYNAMIC_SYMBOL	344	0x2fc0c	type	2	bind	1	vis	0	ndx	11	name	_dbus_close
+EXPORT	2	1	0	11	_dbus_close
+DYNAMIC_SYMBOL	345	0x2ee6c	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_hex_encode
+EXPORT	2	1	0	11	_dbus_string_hex_encode
+DYNAMIC_SYMBOL	346	0x2fb1c	type	2	bind	1	vis	0	ndx	11	name	_dbus_ensure_standard_fds
+EXPORT	2	1	0	11	_dbus_ensure_standard_fds
+DYNAMIC_SYMBOL	347	0x2d77c	type	2	bind	1	vis	0	ndx	11	name	dbus_malloc
+EXPORT	2	1	0	11	dbus_malloc
+DYNAMIC_SYMBOL	348	0x2ad98	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_unref
+EXPORT	2	1	0	11	_dbus_hash_table_unref
+DYNAMIC_SYMBOL	349	0x2c2f0	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_append
+EXPORT	2	1	0	11	_dbus_list_append
+DYNAMIC_SYMBOL	350	0x1c128	type	2	bind	1	vis	0	ndx	11	name	dbus_message_new_method_return
+EXPORT	2	1	0	11	dbus_message_new_method_return
+DYNAMIC_SYMBOL	351	0x2d78c	type	2	bind	1	vis	0	ndx	11	name	dbus_malloc0
+EXPORT	2	1	0	11	dbus_malloc0
+DYNAMIC_SYMBOL	352	0x27bb4	type	2	bind	1	vis	0	ndx	11	name	dbus_threads_init_default
+EXPORT	2	1	0	11	dbus_threads_init_default
+DYNAMIC_SYMBOL	353	0x2db6c	type	2	bind	1	vis	0	ndx	11	name	_dbus_pipe_init_stdout
+EXPORT	2	1	0	11	_dbus_pipe_init_stdout
+DYNAMIC_SYMBOL	354	0x2c79c	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_get_last
+EXPORT	2	1	0	11	_dbus_list_get_last
+DYNAMIC_SYMBOL	355	0x2c490	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_insert_before_link
+EXPORT	2	1	0	11	_dbus_list_insert_before_link
+DYNAMIC_SYMBOL	356	0x329f8	type	2	bind	1	vis	0	ndx	11	name	_dbus_read_local_machine_uuid
+EXPORT	2	1	0	11	_dbus_read_local_machine_uuid
+DYNAMIC_SYMBOL	357	0x321bc	type	2	bind	1	vis	0	ndx	11	name	_dbus_atomic_get
+EXPORT	2	1	0	11	_dbus_atomic_get
+DYNAMIC_SYMBOL	358	0xcb08	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_dump_supported_mechanisms
+EXPORT	2	1	0	11	_dbus_auth_dump_supported_mechanisms
+DYNAMIC_SYMBOL	359	0x2c388	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_append_link
+EXPORT	2	1	0	11	_dbus_list_append_link
+DYNAMIC_SYMBOL	360	0x11820	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_is_connected
+EXPORT	2	1	0	11	dbus_connection_get_is_connected
+DYNAMIC_SYMBOL	361	0x14dbc	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_max_received_size
+EXPORT	2	1	0	11	dbus_connection_set_max_received_size
+DYNAMIC_SYMBOL	362	0x2cc54	type	2	bind	1	vis	0	ndx	11	name	_dbus_marshal_read_uint32
+EXPORT	2	1	0	11	_dbus_marshal_read_uint32
+DYNAMIC_SYMBOL	363	0x3e5e8	type	2	bind	1	vis	0	ndx	11	name	_dbus_strerror_from_errno
+EXPORT	2	1	0	11	_dbus_strerror_from_errno
+DYNAMIC_SYMBOL	364	0x3230c	type	2	bind	1	vis	0	ndx	11	name	_dbus_create_directory
+EXPORT	2	1	0	11	_dbus_create_directory
+DYNAMIC_SYMBOL	365	0x15494	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_include
+EXPORT	2	1	0	11	_dbus_credentials_include
+DYNAMIC_SYMBOL	366	0x24248	type	2	bind	1	vis	0	ndx	11	name	dbus_server_set_watch_functions
+EXPORT	2	1	0	11	dbus_server_set_watch_functions
+DYNAMIC_SYMBOL	367	0x27b74	type	2	bind	1	vis	0	ndx	11	name	dbus_timeout_handle
+EXPORT	2	1	0	11	dbus_timeout_handle
+DYNAMIC_SYMBOL	368	0x2d630	type	2	bind	1	vis	0	ndx	11	name	_dbus_verbose_bytes_of_string
+EXPORT	2	1	0	11	_dbus_verbose_bytes_of_string
+DYNAMIC_SYMBOL	369	0x33ba4	type	2	bind	1	vis	0	ndx	11	name	_dbus_group_info_unref
+EXPORT	2	1	0	11	_dbus_group_info_unref
+DYNAMIC_SYMBOL	370	0x110b8	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_get_pending_fds_count
+EXPORT	2	1	0	11	_dbus_connection_get_pending_fds_count
+DYNAMIC_SYMBOL	371	0x119f4	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_can_send_type
+EXPORT	2	1	0	11	dbus_connection_can_send_type
+DYNAMIC_SYMBOL	372	0x1f1dc	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_error_name
+EXPORT	2	1	0	11	dbus_message_set_error_name
+DYNAMIC_SYMBOL	373	0x195b0	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_writer_write_fixed_multi
+EXPORT	2	1	0	11	_dbus_type_writer_write_fixed_multi
+DYNAMIC_SYMBOL	374	0x15a54	type	2	bind	1	vis	0	ndx	11	name	dbus_set_error_const
+EXPORT	2	1	0	11	dbus_set_error_const
+DYNAMIC_SYMBOL	375	0x124d4	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_flush
+EXPORT	2	1	0	11	dbus_connection_flush
+DYNAMIC_SYMBOL	376	0x2dc50	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_init
+EXPORT	2	1	0	11	_dbus_string_init
+DYNAMIC_SYMBOL	377	0x10854	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_get_next_client_serial
+EXPORT	2	1	0	11	_dbus_connection_get_next_client_serial
+DYNAMIC_SYMBOL	378	0x21778	type	2	bind	1	vis	0	ndx	11	name	dbus_get_version
+EXPORT	2	1	0	11	dbus_get_version
+DYNAMIC_SYMBOL	379	0x2c700	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_get_last_link
+EXPORT	2	1	0	11	_dbus_list_get_last_link
+DYNAMIC_SYMBOL	380	0x12754	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_borrow_message
+EXPORT	2	1	0	11	dbus_connection_borrow_message
+DYNAMIC_SYMBOL	381	0x1e62c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_get_fixed_array
+EXPORT	2	1	0	11	dbus_message_iter_get_fixed_array
+DYNAMIC_SYMBOL	382	0x2c290	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_free_link
+EXPORT	2	1	0	11	_dbus_list_free_link
+DYNAMIC_SYMBOL	383	0x13c64	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_windows_user
+EXPORT	2	1	0	11	dbus_connection_get_windows_user
+DYNAMIC_SYMBOL	384	0x2f440	type	2	bind	1	vis	0	ndx	11	name	_dbus_file_get_contents
+EXPORT	2	1	0	11	_dbus_file_get_contents
+DYNAMIC_SYMBOL	385	0x278b8	type	2	bind	1	vis	0	ndx	11	name	dbus_timeout_set_data
+EXPORT	2	1	0	11	dbus_timeout_set_data
+DYNAMIC_SYMBOL	386	0x24038	type	2	bind	1	vis	0	ndx	11	name	dbus_server_disconnect
+EXPORT	2	1	0	11	dbus_server_disconnect
+DYNAMIC_SYMBOL	387	0x32420	type	2	bind	1	vis	0	ndx	11	name	_dbus_sleep_milliseconds
+EXPORT	2	1	0	11	_dbus_sleep_milliseconds
+DYNAMIC_SYMBOL	388	0x207b8	type	2	bind	1	vis	0	ndx	11	name	dbus_message_type_from_string
+EXPORT	2	1	0	11	dbus_message_type_from_string
+DYNAMIC_SYMBOL	389	0x144f0	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_register_fallback
+EXPORT	2	1	0	11	dbus_connection_register_fallback
+DYNAMIC_SYMBOL	390	0x15b0c	type	2	bind	1	vis	0	ndx	11	name	dbus_error_is_set
+EXPORT	2	1	0	11	dbus_error_is_set
+DYNAMIC_SYMBOL	391	0x12a68	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_steal_borrowed_message
+EXPORT	2	1	0	11	dbus_connection_steal_borrowed_message
+DYNAMIC_SYMBOL	392	0x3e3c4	type	2	bind	1	vis	0	ndx	11	name	_dbus_generate_random_ascii
+EXPORT	2	1	0	11	_dbus_generate_random_ascii
+DYNAMIC_SYMBOL	393	0x14f08	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_max_received_unix_fds
+EXPORT	2	1	0	11	dbus_connection_get_max_received_unix_fds
+DYNAMIC_SYMBOL	394	0x11af8	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_preallocate_send
+EXPORT	2	1	0	11	dbus_connection_preallocate_send
+DYNAMIC_SYMBOL	395	0x2a7a0	type	2	bind	1	vis	0	ndx	11	name	dbus_watch_get_flags
+EXPORT	2	1	0	11	dbus_watch_get_flags
+DYNAMIC_SYMBOL	396	0x2ac28	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_new
+EXPORT	2	1	0	11	_dbus_hash_table_new
+DYNAMIC_SYMBOL	397	0x14bfc	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_max_message_size
+EXPORT	2	1	0	11	dbus_connection_set_max_message_size
+DYNAMIC_SYMBOL	398	0x2b028	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_iter_get_uintptr_key
+EXPORT	2	1	0	11	_dbus_hash_iter_get_uintptr_key
+DYNAMIC_SYMBOL	399	0x15888	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_to_string_append
+EXPORT	2	1	0	11	_dbus_credentials_to_string_append
+DYNAMIC_SYMBOL	400	0x13590	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_timeout_functions
+EXPORT	2	1	0	11	dbus_connection_set_timeout_functions
+DYNAMIC_SYMBOL	401	0x2c97c	type	2	bind	1	vis	0	ndx	11	name	_dbus_marshal_set_uint32
+EXPORT	2	1	0	11	_dbus_marshal_set_uint32
+DYNAMIC_SYMBOL	402	0x2a2a8	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_ref
+EXPORT	2	1	0	11	_dbus_watch_ref
+DYNAMIC_SYMBOL	403	0x26e84	type	2	bind	1	vis	0	ndx	11	name	dbus_signature_iter_get_signature
+EXPORT	2	1	0	11	dbus_signature_iter_get_signature
+DYNAMIC_SYMBOL	404	0x2c714	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_unlink
+EXPORT	2	1	0	11	_dbus_list_unlink
+DYNAMIC_SYMBOL	405	0x274c4	type	2	bind	1	vis	0	ndx	11	name	dbus_validate_member
+EXPORT	2	1	0	11	dbus_validate_member
+DYNAMIC_SYMBOL	406	0x2c94c	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_length_is_one
+EXPORT	2	1	0	11	_dbus_list_length_is_one
+DYNAMIC_SYMBOL	407	0x2b310	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_insert_int
+EXPORT	2	1	0	11	_dbus_hash_table_insert_int
+DYNAMIC_SYMBOL	408	0x23118	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_unref
+EXPORT	2	1	0	11	dbus_pending_call_unref
+DYNAMIC_SYMBOL	409	0x2e5e4	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_copy_len
+EXPORT	2	1	0	11	_dbus_string_copy_len
+DYNAMIC_SYMBOL	410	0x2dfb0	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_copy_to_buffer_with_nul
+EXPORT	2	1	0	11	_dbus_string_copy_to_buffer_with_nul
+DYNAMIC_SYMBOL	411	0x27b64	type	2	bind	1	vis	0	ndx	11	name	dbus_timeout_get_interval
+EXPORT	2	1	0	11	dbus_timeout_get_interval
+DYNAMIC_SYMBOL	412	0x18894	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_set_basic
+EXPORT	2	1	0	11	_dbus_type_reader_set_basic
+DYNAMIC_SYMBOL	413	0x2c7c8	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_pop_first_link
+EXPORT	2	1	0	11	_dbus_list_pop_first_link
+DYNAMIC_SYMBOL	414	0x3e690	type	2	bind	1	vis	0	ndx	11	name	_dbus_asv_open_entry
+EXPORT	2	1	0	11	_dbus_asv_open_entry
+DYNAMIC_SYMBOL	415	0x134ec	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_watch_functions
+EXPORT	2	1	0	11	dbus_connection_set_watch_functions
+DYNAMIC_SYMBOL	416	0x1c87c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_init_append
+EXPORT	2	1	0	11	dbus_message_iter_init_append
+DYNAMIC_SYMBOL	417	0x27804	type	2	bind	1	vis	0	ndx	11	name	_dbus_timeout_new
+EXPORT	2	1	0	11	_dbus_timeout_new
+DYNAMIC_SYMBOL	418	0x1d23c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_append_args_valist
+EXPORT	2	1	0	11	dbus_message_append_args_valist
+DYNAMIC_SYMBOL	419	0x1fec8	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_queue_messages
+EXPORT	2	1	0	11	_dbus_message_loader_queue_messages
+DYNAMIC_SYMBOL	420	0x2f238	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_validate_utf8
+EXPORT	2	1	0	11	_dbus_string_validate_utf8
+DYNAMIC_SYMBOL	421	0x21518	type	2	bind	1	vis	0	ndx	11	name	_dbus_variant_get_length
+EXPORT	2	1	0	11	_dbus_variant_get_length
+DYNAMIC_SYMBOL	422	0x2ddcc	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_insert_bytes
+EXPORT	2	1	0	11	_dbus_string_insert_bytes
+DYNAMIC_SYMBOL	423	0xc11c	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_client_new
+EXPORT	2	1	0	11	_dbus_auth_client_new
+DYNAMIC_SYMBOL	424	0x2075c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_data
+EXPORT	2	1	0	11	dbus_message_get_data
+DYNAMIC_SYMBOL	425	0x2af44	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_iter_remove_entry
+EXPORT	2	1	0	11	_dbus_hash_iter_remove_entry
+DYNAMIC_SYMBOL	426	0x1f5b0	type	2	bind	1	vis	0	ndx	11	name	dbus_message_is_method_call
+EXPORT	2	1	0	11	dbus_message_is_method_call
+DYNAMIC_SYMBOL	427	0x15500	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_get_unix_uid
+EXPORT	2	1	0	11	_dbus_credentials_get_unix_uid
+DYNAMIC_SYMBOL	428	0x2d634	type	2	bind	1	vis	0	ndx	11	name	_dbus_first_type_in_signature
+EXPORT	2	1	0	11	_dbus_first_type_in_signature
+DYNAMIC_SYMBOL	429	0x14ff0	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_get_stats
+EXPORT	2	1	0	11	_dbus_connection_get_stats
+DYNAMIC_SYMBOL	430	0xc490	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_set_mechanisms
+EXPORT	2	1	0	11	_dbus_auth_set_mechanisms
+DYNAMIC_SYMBOL	431	0x1d6c8	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_append_fixed_array
+EXPORT	2	1	0	11	dbus_message_iter_append_fixed_array
+DYNAMIC_SYMBOL	432	0x14f7c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_outgoing_size
+EXPORT	2	1	0	11	dbus_connection_get_outgoing_size
+DYNAMIC_SYMBOL	433	0x0	type	1	bind	1	vis	0	ndx	65521	name	LIBDBUS_1_3
+EXPORT	1	1	0	65521	LIBDBUS_1_3
+DYNAMIC_SYMBOL	434	0x1b268	type	2	bind	1	vis	0	ndx	11	name	_dbus_validate_error_name
+EXPORT	2	1	0	11	_dbus_validate_error_name
+DYNAMIC_SYMBOL	435	0x2dcdc	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_append
+EXPORT	2	1	0	11	_dbus_string_append
+DYNAMIC_SYMBOL	436	0x1f8b0	type	2	bind	1	vis	0	ndx	11	name	dbus_message_has_destination
+EXPORT	2	1	0	11	dbus_message_has_destination
+DYNAMIC_SYMBOL	437	0x15780	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_clear
+EXPORT	2	1	0	11	_dbus_credentials_clear
+DYNAMIC_SYMBOL	438	0x20850	type	2	bind	1	vis	0	ndx	11	name	dbus_message_type_to_string
+EXPORT	2	1	0	11	dbus_message_type_to_string
+DYNAMIC_SYMBOL	439	0x15830	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_same_user
+EXPORT	2	1	0	11	_dbus_credentials_same_user
+DYNAMIC_SYMBOL	440	0x1ebcc	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_auto_start
+EXPORT	2	1	0	11	dbus_message_get_auto_start
+DYNAMIC_SYMBOL	441	0x320a4	type	2	bind	1	vis	0	ndx	11	name	_dbus_getpid
+EXPORT	2	1	0	11	_dbus_getpid
+DYNAMIC_SYMBOL	442	0x320a8	type	2	bind	1	vis	0	ndx	11	name	_dbus_geteuid
+EXPORT	2	1	0	11	_dbus_geteuid
+DYNAMIC_SYMBOL	443	0x110c8	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_open
+EXPORT	2	1	0	11	dbus_connection_open
+DYNAMIC_SYMBOL	444	0x21524	type	2	bind	1	vis	0	ndx	11	name	_dbus_variant_free
+EXPORT	2	1	0	11	_dbus_variant_free
+DYNAMIC_SYMBOL	445	0x1282c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_dispatch_status
+EXPORT	2	1	0	11	dbus_connection_get_dispatch_status
+DYNAMIC_SYMBOL	446	0x2e754	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_find_to
+EXPORT	2	1	0	11	_dbus_string_find_to
+DYNAMIC_SYMBOL	447	0xfe10	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_enable_dispatch
+EXPORT	2	1	0	11	_dbus_connection_enable_dispatch
+DYNAMIC_SYMBOL	448	0x2c114	type	2	bind	1	vis	0	ndx	11	name	_dbus_warn_return_if_fail
+EXPORT	2	1	0	11	_dbus_warn_return_if_fail
+DYNAMIC_SYMBOL	449	0x1b7f4	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_iter_get_args_valist
+EXPORT	2	1	0	11	_dbus_message_iter_get_args_valist
+DYNAMIC_SYMBOL	450	0x2b29c	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_preallocate_entry
+EXPORT	2	1	0	11	_dbus_hash_table_preallocate_entry
+DYNAMIC_SYMBOL	451	0x13fb4	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_remove_filter
+EXPORT	2	1	0	11	dbus_connection_remove_filter
+DYNAMIC_SYMBOL	452	0xc4d4	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_do_work
+EXPORT	2	1	0	11	_dbus_auth_do_work
+DYNAMIC_SYMBOL	453	0x19300	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_writer_unrecurse
+EXPORT	2	1	0	11	_dbus_type_writer_unrecurse
+DYNAMIC_SYMBOL	454	0x23170	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_set_notify
+EXPORT	2	1	0	11	dbus_pending_call_set_notify
+DYNAMIC_SYMBOL	455	0x2dd14	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_free
+EXPORT	2	1	0	11	_dbus_string_free
+DYNAMIC_SYMBOL	456	0x32ba4	type	2	bind	1	vis	0	ndx	11	name	_dbus_lookup_user_bus
+EXPORT	2	1	0	11	_dbus_lookup_user_bus
+DYNAMIC_SYMBOL	457	0x18588	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_get_current_type
+EXPORT	2	1	0	11	_dbus_type_reader_get_current_type
+DYNAMIC_SYMBOL	458	0x2c5e0	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_remove_link
+EXPORT	2	1	0	11	_dbus_list_remove_link
+DYNAMIC_SYMBOL	459	0x1afa8	type	2	bind	1	vis	0	ndx	11	name	_dbus_validate_path
+EXPORT	2	1	0	11	_dbus_validate_path
+DYNAMIC_SYMBOL	460	0x2fd10	type	2	bind	1	vis	0	ndx	11	name	_dbus_write_socket
+EXPORT	2	1	0	11	_dbus_write_socket
+DYNAMIC_SYMBOL	461	0xc7c0	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_return_buffer
+EXPORT	2	1	0	11	_dbus_auth_return_buffer
+DYNAMIC_SYMBOL	462	0x2c590	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_remove
+EXPORT	2	1	0	11	_dbus_list_remove
+DYNAMIC_SYMBOL	463	0x32dd0	type	2	bind	1	vis	0	ndx	11	name	_dbus_delete_directory
+EXPORT	2	1	0	11	_dbus_delete_directory
+DYNAMIC_SYMBOL	464	0x1f198	type	2	bind	1	vis	0	ndx	11	name	dbus_message_has_member
+EXPORT	2	1	0	11	dbus_message_has_member
+DYNAMIC_SYMBOL	465	0x2fc6c	type	2	bind	1	vis	0	ndx	11	name	_dbus_read
+EXPORT	2	1	0	11	_dbus_read
+DYNAMIC_SYMBOL	466	0x2337c	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_block
+EXPORT	2	1	0	11	dbus_pending_call_block
+DYNAMIC_SYMBOL	467	0x241b8	type	2	bind	1	vis	0	ndx	11	name	dbus_server_get_id
+EXPORT	2	1	0	11	dbus_server_get_id
+DYNAMIC_SYMBOL	468	0x33c2c	type	2	bind	1	vis	0	ndx	11	name	_dbus_user_database_lookup
+EXPORT	2	1	0	11	_dbus_user_database_lookup
+DYNAMIC_SYMBOL	469	0x2c1e0	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_alloc_link
+EXPORT	2	1	0	11	_dbus_list_alloc_link
+DYNAMIC_SYMBOL	470	0x1d8f4	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_abandon_container
+EXPORT	2	1	0	11	dbus_message_iter_abandon_container
+DYNAMIC_SYMBOL	471	0x2dca8	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_init_from_string
+EXPORT	2	1	0	11	_dbus_string_init_from_string
+DYNAMIC_SYMBOL	472	0x2fc68	type	2	bind	1	vis	0	ndx	11	name	_dbus_read_socket
+EXPORT	2	1	0	11	_dbus_read_socket
+DYNAMIC_SYMBOL	473	0xbe00	type	2	bind	1	vis	0	ndx	11	name	dbus_address_escape_value
+EXPORT	2	1	0	11	dbus_address_escape_value
+DYNAMIC_SYMBOL	474	0x209e4	type	2	bind	1	vis	0	ndx	11	name	dbus_message_demarshal
+EXPORT	2	1	0	11	dbus_message_demarshal
+DYNAMIC_SYMBOL	475	0x2bc14	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_array_length
+EXPORT	2	1	0	11	_dbus_string_array_length
+DYNAMIC_SYMBOL	476	0x13a4c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_adt_audit_session_data
+EXPORT	2	1	0	11	dbus_connection_get_adt_audit_session_data
+DYNAMIC_SYMBOL	477	0x2d7d4	type	2	bind	1	vis	0	ndx	11	name	dbus_free_string_array
+EXPORT	2	1	0	11	dbus_free_string_array
+DYNAMIC_SYMBOL	478	0x27860	type	2	bind	1	vis	0	ndx	11	name	_dbus_timeout_unref
+EXPORT	2	1	0	11	_dbus_timeout_unref
+DYNAMIC_SYMBOL	479	0xb618	type	2	bind	1	vis	0	ndx	11	name	dbus_address_entries_free
+EXPORT	2	1	0	11	dbus_address_entries_free
+DYNAMIC_SYMBOL	480	0xc7d0	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_get_unused_bytes
+EXPORT	2	1	0	11	_dbus_auth_get_unused_bytes
+DYNAMIC_SYMBOL	481	0x22f98	type	2	bind	1	vis	0	ndx	11	name	_dbus_pending_call_unref_and_unlock
+EXPORT	2	1	0	11	_dbus_pending_call_unref_and_unlock
+DYNAMIC_SYMBOL	482	0x1f720	type	2	bind	1	vis	0	ndx	11	name	dbus_message_is_signal
+EXPORT	2	1	0	11	dbus_message_is_signal
+DYNAMIC_SYMBOL	483	0x2a234	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_set_oom_last_time
+EXPORT	2	1	0	11	_dbus_watch_set_oom_last_time
+DYNAMIC_SYMBOL	484	0x2a434	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_list_set_functions
+EXPORT	2	1	0	11	_dbus_watch_list_set_functions
+DYNAMIC_SYMBOL	485	0x2087c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_marshal
+EXPORT	2	1	0	11	dbus_message_marshal
+DYNAMIC_SYMBOL	486	0x2d9a8	type	2	bind	1	vis	0	ndx	11	name	_dbus_mem_pool_free
+EXPORT	2	1	0	11	_dbus_mem_pool_free
+DYNAMIC_SYMBOL	487	0x3e2a0	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_parse_uint
+EXPORT	2	1	0	11	_dbus_string_parse_uint
+DYNAMIC_SYMBOL	488	0x1f400	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_destination
+EXPORT	2	1	0	11	dbus_message_get_destination
+DYNAMIC_SYMBOL	489	0x1e3d4	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_get_basic
+EXPORT	2	1	0	11	dbus_message_iter_get_basic
+DYNAMIC_SYMBOL	490	0x2c41c	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_insert_after
+EXPORT	2	1	0	11	_dbus_list_insert_after
+DYNAMIC_SYMBOL	491	0x20628	type	2	bind	1	vis	0	ndx	11	name	dbus_message_allocate_data_slot
+EXPORT	2	1	0	11	dbus_message_allocate_data_slot
+DYNAMIC_SYMBOL	492	0x1852c	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_init_types_only
+EXPORT	2	1	0	11	_dbus_type_reader_init_types_only
+DYNAMIC_SYMBOL	493	0x14b30	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_data
+EXPORT	2	1	0	11	dbus_connection_get_data
+DYNAMIC_SYMBOL	494	0x3e830	type	2	bind	1	vis	0	ndx	11	name	_dbus_asv_add_string
+EXPORT	2	1	0	11	_dbus_asv_add_string
+DYNAMIC_SYMBOL	495	0x2164c	type	2	bind	1	vis	0	ndx	11	name	dbus_try_get_local_machine_id
+EXPORT	2	1	0	11	dbus_try_get_local_machine_id
+DYNAMIC_SYMBOL	496	0x1428c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_register_object_path
+EXPORT	2	1	0	11	dbus_connection_register_object_path
+DYNAMIC_SYMBOL	497	0x2c318	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_prepend
+EXPORT	2	1	0	11	_dbus_list_prepend
+DYNAMIC_SYMBOL	498	0x3e0b4	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_append_int
+EXPORT	2	1	0	11	_dbus_string_append_int
+DYNAMIC_SYMBOL	499	0xf408	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_release_name
+EXPORT	2	1	0	11	dbus_bus_release_name
+DYNAMIC_SYMBOL	500	0x20b18	type	2	bind	1	vis	0	ndx	11	name	dbus_message_demarshal_bytes_needed
+EXPORT	2	1	0	11	dbus_message_demarshal_bytes_needed
+DYNAMIC_SYMBOL	501	0x17dc4	type	2	bind	1	vis	0	ndx	11	name	_dbus_header_get_field_raw
+EXPORT	2	1	0	11	_dbus_header_get_field_raw
+DYNAMIC_SYMBOL	502	0x2ec98	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_equal_c_str
+EXPORT	2	1	0	11	_dbus_string_equal_c_str
+DYNAMIC_SYMBOL	503	0xc38c	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_client_new_authenticated
+EXPORT	2	1	0	11	_dbus_auth_client_new_authenticated
+DYNAMIC_SYMBOL	504	0x12270	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_send_with_reply_and_block
+EXPORT	2	1	0	11	dbus_connection_send_with_reply_and_block
+DYNAMIC_SYMBOL	505	0x138bc	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_unix_user
+EXPORT	2	1	0	11	dbus_connection_get_unix_user
+DYNAMIC_SYMBOL	506	0x3e174	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_append_uint
+EXPORT	2	1	0	11	_dbus_string_append_uint
+DYNAMIC_SYMBOL	507	0x11c40	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_send_preallocated
+EXPORT	2	1	0	11	dbus_connection_send_preallocated
+DYNAMIC_SYMBOL	508	0x106a0	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_unref_unlocked
+EXPORT	2	1	0	11	_dbus_connection_unref_unlocked
+DYNAMIC_SYMBOL	509	0x2f200	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_toupper_ascii
+EXPORT	2	1	0	11	_dbus_string_toupper_ascii
+DYNAMIC_SYMBOL	510	0x11894	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_is_authenticated
+EXPORT	2	1	0	11	dbus_connection_get_is_authenticated
+DYNAMIC_SYMBOL	511	0x27764	type	2	bind	1	vis	0	ndx	11	name	dbus_validate_utf8
+EXPORT	2	1	0	11	dbus_validate_utf8
+DYNAMIC_SYMBOL	512	0xee48	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_get_unix_user
+EXPORT	2	1	0	11	dbus_bus_get_unix_user
+DYNAMIC_SYMBOL	513	0x1e198	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_get_element_type
+EXPORT	2	1	0	11	dbus_message_iter_get_element_type
+DYNAMIC_SYMBOL	514	0x2c014	type	2	bind	1	vis	0	ndx	11	name	_dbus_get_local_machine_uuid_encoded
+EXPORT	2	1	0	11	_dbus_get_local_machine_uuid_encoded
+DYNAMIC_SYMBOL	515	0x2a32c	type	2	bind	1	vis	0	ndx	11	name	dbus_watch_set_data
+EXPORT	2	1	0	11	dbus_watch_set_data
+DYNAMIC_SYMBOL	516	0x13e54	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_route_peer_messages
+EXPORT	2	1	0	11	dbus_connection_set_route_peer_messages
+DYNAMIC_SYMBOL	517	0x184c8	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_init
+EXPORT	2	1	0	11	_dbus_type_reader_init
+DYNAMIC_SYMBOL	518	0x331e4	type	2	bind	1	vis	0	ndx	11	name	_dbus_init_system_log
+EXPORT	2	1	0	11	_dbus_init_system_log
+DYNAMIC_SYMBOL	519	0x2dba0	type	2	bind	1	vis	0	ndx	11	name	_dbus_pipe_invalidate
+EXPORT	2	1	0	11	_dbus_pipe_invalidate
+DYNAMIC_SYMBOL	520	0x1e968	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_abandon_container_if_open
+EXPORT	2	1	0	11	dbus_message_iter_abandon_container_if_open
+DYNAMIC_SYMBOL	521	0x23204	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_cancel
+EXPORT	2	1	0	11	dbus_pending_call_cancel
+DYNAMIC_SYMBOL	522	0x24fe0	type	2	bind	1	vis	0	ndx	11	name	dbus_internal_do_not_use_get_uuid
+EXPORT	2	1	0	11	dbus_internal_do_not_use_get_uuid
+DYNAMIC_SYMBOL	523	0x1b0a8	type	2	bind	1	vis	0	ndx	11	name	_dbus_validate_interface
+EXPORT	2	1	0	11	_dbus_validate_interface
+DYNAMIC_SYMBOL	524	0x32248	type	2	bind	1	vis	0	ndx	11	name	_dbus_get_real_time
+EXPORT	2	1	0	11	_dbus_get_real_time
+DYNAMIC_SYMBOL	525	0x2c75c	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_clear
+EXPORT	2	1	0	11	_dbus_list_clear
+DYNAMIC_SYMBOL	526	0x26fe0	type	2	bind	1	vis	0	ndx	11	name	dbus_signature_iter_recurse
+EXPORT	2	1	0	11	dbus_signature_iter_recurse
+DYNAMIC_SYMBOL	527	0x2c6f8	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_get_first_link
+EXPORT	2	1	0	11	_dbus_list_get_first_link
+DYNAMIC_SYMBOL	528	0x187dc	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_next
+EXPORT	2	1	0	11	_dbus_type_reader_next
+DYNAMIC_SYMBOL	529	0x1f324	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_destination
+EXPORT	2	1	0	11	dbus_message_set_destination
+DYNAMIC_SYMBOL	530	0xed00	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_set_unique_name
+EXPORT	2	1	0	11	dbus_bus_set_unique_name
+DYNAMIC_SYMBOL	531	0x155f4	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_are_empty
+EXPORT	2	1	0	11	_dbus_credentials_are_empty
+DYNAMIC_SYMBOL	532	0x2a708	type	2	bind	1	vis	0	ndx	11	name	dbus_watch_get_unix_fd
+EXPORT	2	1	0	11	dbus_watch_get_unix_fd
+DYNAMIC_SYMBOL	533	0x1b26c	type	2	bind	1	vis	0	ndx	11	name	_dbus_validate_bus_name
+EXPORT	2	1	0	11	_dbus_validate_bus_name
+DYNAMIC_SYMBOL	534	0x2d9dc	type	2	bind	1	vis	0	ndx	11	name	_dbus_mem_pool_alloc
+EXPORT	2	1	0	11	_dbus_mem_pool_alloc
+DYNAMIC_SYMBOL	535	0x1c2fc	type	2	bind	1	vis	0	ndx	11	name	dbus_message_unref
+EXPORT	2	1	0	11	dbus_message_unref
+DYNAMIC_SYMBOL	536	0x1a874	type	2	bind	1	vis	0	ndx	11	name	_dbus_validate_body_with_reason
+EXPORT	2	1	0	11	_dbus_validate_body_with_reason
+DYNAMIC_SYMBOL	537	0x34240	type	2	bind	1	vis	0	ndx	11	name	_dbus_user_database_get_uid
+EXPORT	2	1	0	11	_dbus_user_database_get_uid
+DYNAMIC_SYMBOL	538	0x27b6c	type	2	bind	1	vis	0	ndx	11	name	dbus_timeout_get_data
+EXPORT	2	1	0	11	dbus_timeout_get_data
+DYNAMIC_SYMBOL	539	0x15990	type	2	bind	1	vis	0	ndx	11	name	dbus_error_init
+EXPORT	2	1	0	11	dbus_error_init
+DYNAMIC_SYMBOL	540	0x1fe24	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_get_unix_fds
+EXPORT	2	1	0	11	_dbus_message_loader_get_unix_fds
+DYNAMIC_SYMBOL	541	0x326c4	type	2	bind	1	vis	0	ndx	11	name	_dbus_socketpair
+EXPORT	2	1	0	11	_dbus_socketpair
+DYNAMIC_SYMBOL	542	0x1e264	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_recurse
+EXPORT	2	1	0	11	dbus_message_iter_recurse
+DYNAMIC_SYMBOL	543	0x16044	type	2	bind	1	vis	0	ndx	11	name	_dbus_set_error_valist
+EXPORT	2	1	0	11	_dbus_set_error_valist
+DYNAMIC_SYMBOL	544	0x185d0	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_get_element_type
+EXPORT	2	1	0	11	_dbus_type_reader_get_element_type
+DYNAMIC_SYMBOL	545	0x1c280	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_no_reply
+EXPORT	2	1	0	11	dbus_message_set_no_reply
+DYNAMIC_SYMBOL	546	0x13b50	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_set_unix_user_function
+EXPORT	2	1	0	11	dbus_connection_set_unix_user_function
+DYNAMIC_SYMBOL	547	0x19614	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_writer_write_reader
+EXPORT	2	1	0	11	_dbus_type_writer_write_reader
+DYNAMIC_SYMBOL	548	0x2a580	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_list_remove_watch
+EXPORT	2	1	0	11	_dbus_watch_list_remove_watch
+DYNAMIC_SYMBOL	549	0x18700	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_recurse
+EXPORT	2	1	0	11	_dbus_type_reader_recurse
+DYNAMIC_SYMBOL	550	0x23c1c	type	2	bind	1	vis	0	ndx	11	name	_dbus_server_unref_unlocked
+EXPORT	2	1	0	11	_dbus_server_unref_unlocked
+DYNAMIC_SYMBOL	551	0x30024	type	2	bind	1	vis	0	ndx	11	name	_dbus_fd_set_close_on_exec
+EXPORT	2	1	0	11	_dbus_fd_set_close_on_exec
+DYNAMIC_SYMBOL	552	0xc7e8	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_delete_unused_bytes
+EXPORT	2	1	0	11	_dbus_auth_delete_unused_bytes
+DYNAMIC_SYMBOL	553	0x21704	type	2	bind	1	vis	0	ndx	11	name	dbus_get_local_machine_id
+EXPORT	2	1	0	11	dbus_get_local_machine_id
+DYNAMIC_SYMBOL	554	0x1b5d4	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_get_unix_fds
+EXPORT	2	1	0	11	_dbus_message_get_unix_fds
+DYNAMIC_SYMBOL	555	0x3dea8	type	2	bind	1	vis	0	ndx	11	name	_dbus_clearenv
+EXPORT	2	1	0	11	_dbus_clearenv
+DYNAMIC_SYMBOL	556	0x27c20	type	2	bind	1	vis	0	ndx	11	name	_dbus_rmutex_unlock
+EXPORT	2	1	0	11	_dbus_rmutex_unlock
+DYNAMIC_SYMBOL	557	0x12d54	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_dispatch
+EXPORT	2	1	0	11	dbus_connection_dispatch
+DYNAMIC_SYMBOL	558	0x2ba48	type	2	bind	1	vis	0	ndx	11	name	_dbus_warn_check_failed
+EXPORT	2	1	0	11	_dbus_warn_check_failed
+DYNAMIC_SYMBOL	559	0x1bd94	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_reply_serial
+EXPORT	2	1	0	11	dbus_message_set_reply_serial
+DYNAMIC_SYMBOL	560	0x23244	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_get_completed
+EXPORT	2	1	0	11	dbus_pending_call_get_completed
+DYNAMIC_SYMBOL	561	0x2de88	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_insert_byte
+EXPORT	2	1	0	11	_dbus_string_insert_byte
+DYNAMIC_SYMBOL	562	0x16f20	type	2	bind	1	vis	0	ndx	11	name	_dbus_header_get_byte_order
+EXPORT	2	1	0	11	_dbus_header_get_byte_order
+DYNAMIC_SYMBOL	563	0x1f2b8	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_error_name
+EXPORT	2	1	0	11	dbus_message_get_error_name
+DYNAMIC_SYMBOL	564	0x138b4	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_is_overflowed
+EXPORT	2	1	0	11	_dbus_connection_is_overflowed
+DYNAMIC_SYMBOL	565	0x2db88	type	2	bind	1	vis	0	ndx	11	name	_dbus_pipe_is_stdout_or_stderr
+EXPORT	2	1	0	11	_dbus_pipe_is_stdout_or_stderr
+DYNAMIC_SYMBOL	566	0x2f1cc	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_tolower_ascii
+EXPORT	2	1	0	11	_dbus_string_tolower_ascii
+DYNAMIC_SYMBOL	567	0x2a3d8	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_list_free
+EXPORT	2	1	0	11	_dbus_watch_list_free
+DYNAMIC_SYMBOL	568	0x18b60	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_writer_init
+EXPORT	2	1	0	11	_dbus_type_writer_init
+DYNAMIC_SYMBOL	569	0x1fe14	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_return_buffer
+EXPORT	2	1	0	11	_dbus_message_loader_return_buffer
+DYNAMIC_SYMBOL	570	0xf9d8	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_add_match
+EXPORT	2	1	0	11	dbus_bus_add_match
+DYNAMIC_SYMBOL	571	0x27b54	type	2	bind	1	vis	0	ndx	11	name	_dbus_timeout_restarted
+EXPORT	2	1	0	11	_dbus_timeout_restarted
+DYNAMIC_SYMBOL	572	0x26e78	type	2	bind	1	vis	0	ndx	11	name	dbus_signature_iter_get_current_type
+EXPORT	2	1	0	11	dbus_signature_iter_get_current_type
+DYNAMIC_SYMBOL	573	0x1197c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_server_id
+EXPORT	2	1	0	11	dbus_connection_get_server_id
+DYNAMIC_SYMBOL	574	0x27068	type	2	bind	1	vis	0	ndx	11	name	dbus_type_is_container
+EXPORT	2	1	0	11	dbus_type_is_container
+DYNAMIC_SYMBOL	575	0x2b034	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_iter_get_string_key
+EXPORT	2	1	0	11	_dbus_hash_iter_get_string_key
+DYNAMIC_SYMBOL	576	0x1e5d8	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_get_array_len
+EXPORT	2	1	0	11	dbus_message_iter_get_array_len
+DYNAMIC_SYMBOL	577	0x2c7b4	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_get_first
+EXPORT	2	1	0	11	_dbus_list_get_first
+DYNAMIC_SYMBOL	578	0x27284	type	2	bind	1	vis	0	ndx	11	name	dbus_type_is_fixed
+EXPORT	2	1	0	11	dbus_type_is_fixed
+DYNAMIC_SYMBOL	579	0x2a228	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_get_oom_last_time
+EXPORT	2	1	0	11	_dbus_watch_get_oom_last_time
+DYNAMIC_SYMBOL	580	0x137dc	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_socket
+EXPORT	2	1	0	11	dbus_connection_get_socket
+DYNAMIC_SYMBOL	581	0x11668	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_unref
+EXPORT	2	1	0	11	dbus_connection_unref
+DYNAMIC_SYMBOL	582	0x32d08	type	2	bind	1	vis	0	ndx	11	name	_dbus_flush_caches
+EXPORT	2	1	0	11	_dbus_flush_caches
+DYNAMIC_SYMBOL	583	0x152e0	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_new
+EXPORT	2	1	0	11	_dbus_credentials_new
+DYNAMIC_SYMBOL	584	0x1df94	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_has_next
+EXPORT	2	1	0	11	dbus_message_iter_has_next
+DYNAMIC_SYMBOL	585	0x15f98	type	2	bind	1	vis	0	ndx	11	name	dbus_set_error
+EXPORT	2	1	0	11	dbus_set_error
+DYNAMIC_SYMBOL	586	0x1464c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_unregister_object_path
+EXPORT	2	1	0	11	dbus_connection_unregister_object_path
+DYNAMIC_SYMBOL	587	0x157c4	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_copy
+EXPORT	2	1	0	11	_dbus_credentials_copy
+DYNAMIC_SYMBOL	588	0x2b390	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_insert_uintptr
+EXPORT	2	1	0	11	_dbus_hash_table_insert_uintptr
+DYNAMIC_SYMBOL	589	0xf834	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_start_service_by_name
+EXPORT	2	1	0	11	dbus_bus_start_service_by_name
+DYNAMIC_SYMBOL	590	0x149f4	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_free_data_slot
+EXPORT	2	1	0	11	dbus_connection_free_data_slot
+DYNAMIC_SYMBOL	591	0x275a4	type	2	bind	1	vis	0	ndx	11	name	dbus_validate_error_name
+EXPORT	2	1	0	11	dbus_validate_error_name
+DYNAMIC_SYMBOL	592	0x23c58	type	2	bind	1	vis	0	ndx	11	name	dbus_server_listen
+EXPORT	2	1	0	11	dbus_server_listen
+DYNAMIC_SYMBOL	593	0x33de8	type	2	bind	1	vis	0	ndx	11	name	_dbus_user_database_unlock_system
+EXPORT	2	1	0	11	_dbus_user_database_unlock_system
+DYNAMIC_SYMBOL	594	0x2faec	type	2	bind	1	vis	0	ndx	11	name	_dbus_pipe_close
+EXPORT	2	1	0	11	_dbus_pipe_close
+DYNAMIC_SYMBOL	595	0x1f548	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_signature
+EXPORT	2	1	0	11	dbus_message_get_signature
+DYNAMIC_SYMBOL	596	0x2e3a0	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_append_printf
+EXPORT	2	1	0	11	_dbus_string_append_printf
+DYNAMIC_SYMBOL	597	0xffb0	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_has_messages_to_send
+EXPORT	2	1	0	11	dbus_connection_has_messages_to_send
+DYNAMIC_SYMBOL	598	0x27204	type	2	bind	1	vis	0	ndx	11	name	dbus_type_is_basic
+EXPORT	2	1	0	11	dbus_type_is_basic
+DYNAMIC_SYMBOL	599	0x2db78	type	2	bind	1	vis	0	ndx	11	name	_dbus_pipe_is_valid
+EXPORT	2	1	0	11	_dbus_pipe_is_valid
+DYNAMIC_SYMBOL	600	0xfd7c	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_lock
+EXPORT	2	1	0	11	_dbus_connection_lock
+DYNAMIC_SYMBOL	601	0x15528	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_are_superset
+EXPORT	2	1	0	11	_dbus_credentials_are_superset
+DYNAMIC_SYMBOL	602	0x240cc	type	2	bind	1	vis	0	ndx	11	name	dbus_server_get_is_connected
+EXPORT	2	1	0	11	dbus_server_get_is_connected
+DYNAMIC_SYMBOL	603	0x11908	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_is_anonymous
+EXPORT	2	1	0	11	dbus_connection_get_is_anonymous
+DYNAMIC_SYMBOL	604	0xedd0	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_get_unique_name
+EXPORT	2	1	0	11	dbus_bus_get_unique_name
+DYNAMIC_SYMBOL	605	0x2e9ec	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_pop_line
+EXPORT	2	1	0	11	_dbus_string_pop_line
+DYNAMIC_SYMBOL	606	0xca04	type	2	bind	1	vis	0	ndx	11	name	_dbus_auth_set_context
+EXPORT	2	1	0	11	_dbus_auth_set_context
+DYNAMIC_SYMBOL	607	0x321f4	type	2	bind	1	vis	0	ndx	11	name	_dbus_get_monotonic_time
+EXPORT	2	1	0	11	_dbus_get_monotonic_time
+DYNAMIC_SYMBOL	608	0x18cac	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_writer_recurse
+EXPORT	2	1	0	11	_dbus_type_writer_recurse
+DYNAMIC_SYMBOL	609	0x1efa0	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_interface
+EXPORT	2	1	0	11	dbus_message_get_interface
+DYNAMIC_SYMBOL	610	0x3e62c	type	2	bind	1	vis	0	ndx	11	name	_dbus_asv_new_method_return
+EXPORT	2	1	0	11	_dbus_asv_new_method_return
+DYNAMIC_SYMBOL	611	0x278fc	type	2	bind	1	vis	0	ndx	11	name	_dbus_timeout_disable
+EXPORT	2	1	0	11	_dbus_timeout_disable
+DYNAMIC_SYMBOL	612	0x21290	type	2	bind	1	vis	0	ndx	11	name	_dbus_variant_read
+EXPORT	2	1	0	11	_dbus_variant_read
+DYNAMIC_SYMBOL	613	0x126d4	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_read_write
+EXPORT	2	1	0	11	dbus_connection_read_write
+DYNAMIC_SYMBOL	614	0x1e310	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_get_signature
+EXPORT	2	1	0	11	dbus_message_iter_get_signature
+DYNAMIC_SYMBOL	615	0x1dcf4	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_init
+EXPORT	2	1	0	11	dbus_message_iter_init
+DYNAMIC_SYMBOL	616	0xb6ec	type	2	bind	1	vis	0	ndx	11	name	dbus_address_entry_get_method
+EXPORT	2	1	0	11	dbus_address_entry_get_method
+DYNAMIC_SYMBOL	617	0x1375c	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_unix_fd
+EXPORT	2	1	0	11	dbus_connection_get_unix_fd
+DYNAMIC_SYMBOL	618	0x3051c	type	2	bind	1	vis	0	ndx	11	name	_dbus_strerror
+EXPORT	2	1	0	11	_dbus_strerror
+DYNAMIC_SYMBOL	619	0x2392c	type	2	bind	1	vis	0	ndx	11	name	dbus_server_set_new_connection_function
+EXPORT	2	1	0	11	dbus_server_set_new_connection_function
+DYNAMIC_SYMBOL	620	0x153c8	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_add_pid
+EXPORT	2	1	0	11	_dbus_credentials_add_pid
+DYNAMIC_SYMBOL	621	0x159e0	type	2	bind	1	vis	0	ndx	11	name	dbus_error_free
+EXPORT	2	1	0	11	dbus_error_free
+DYNAMIC_SYMBOL	622	0x13984	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_unix_process_id
+EXPORT	2	1	0	11	dbus_connection_get_unix_process_id
+DYNAMIC_SYMBOL	623	0x233b4	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_set_data
+EXPORT	2	1	0	11	dbus_pending_call_set_data
+DYNAMIC_SYMBOL	624	0x1bf58	type	2	bind	1	vis	0	ndx	11	name	dbus_message_new_method_call
+EXPORT	2	1	0	11	dbus_message_new_method_call
+DYNAMIC_SYMBOL	625	0x153d4	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_add_unix_uid
+EXPORT	2	1	0	11	_dbus_credentials_add_unix_uid
+DYNAMIC_SYMBOL	626	0x1e108	type	2	bind	1	vis	0	ndx	11	name	dbus_message_iter_next
+EXPORT	2	1	0	11	dbus_message_iter_next
+DYNAMIC_SYMBOL	627	0x3e768	type	2	bind	1	vis	0	ndx	11	name	_dbus_asv_abandon_entry
+EXPORT	2	1	0	11	_dbus_asv_abandon_entry
+DYNAMIC_SYMBOL	628	0x1be80	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_reply_serial
+EXPORT	2	1	0	11	dbus_message_get_reply_serial
+DYNAMIC_SYMBOL	629	0x2e3d4	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_append_byte
+EXPORT	2	1	0	11	_dbus_string_append_byte
+DYNAMIC_SYMBOL	630	0x1897c	type	2	bind	1	vis	0	ndx	11	name	_dbus_type_reader_delete
+EXPORT	2	1	0	11	_dbus_type_reader_delete
+DYNAMIC_SYMBOL	631	0x2b140	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_lookup_uintptr
+EXPORT	2	1	0	11	_dbus_hash_table_lookup_uintptr
+DYNAMIC_SYMBOL	632	0x1b43c	type	2	bind	1	vis	0	ndx	11	name	_dbus_validate_bus_namespace
+EXPORT	2	1	0	11	_dbus_validate_bus_namespace
+DYNAMIC_SYMBOL	633	0x3e444	type	2	bind	1	vis	0	ndx	11	name	_dbus_error_from_errno
+EXPORT	2	1	0	11	_dbus_error_from_errno
+DYNAMIC_SYMBOL	634	0x3e8cc	type	2	bind	1	vis	0	ndx	11	name	_dbus_asv_add_byte_array
+EXPORT	2	1	0	11	_dbus_asv_add_byte_array
+DYNAMIC_SYMBOL	635	0x2bbc8	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_array_contains
+EXPORT	2	1	0	11	_dbus_string_array_contains
+DYNAMIC_SYMBOL	636	0x2d7c8	type	2	bind	1	vis	0	ndx	11	name	dbus_free
+EXPORT	2	1	0	11	dbus_free
+DYNAMIC_SYMBOL	637	0x2afd8	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_iter_get_value
+EXPORT	2	1	0	11	_dbus_hash_iter_get_value
+DYNAMIC_SYMBOL	638	0x22cb0	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_allocate_data_slot
+EXPORT	2	1	0	11	dbus_pending_call_allocate_data_slot
+DYNAMIC_SYMBOL	639	0x2c848	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_pop_last
+EXPORT	2	1	0	11	_dbus_list_pop_last
+DYNAMIC_SYMBOL	640	0x2bad8	type	2	bind	1	vis	0	ndx	11	name	_dbus_strdup
+EXPORT	2	1	0	11	_dbus_strdup
+DYNAMIC_SYMBOL	641	0x1f46c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_sender
+EXPORT	2	1	0	11	dbus_message_set_sender
+DYNAMIC_SYMBOL	642	0x1c200	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_sender
+EXPORT	2	1	0	11	dbus_message_get_sender
+DYNAMIC_SYMBOL	643	0x27c08	type	2	bind	1	vis	0	ndx	11	name	_dbus_rmutex_lock
+EXPORT	2	1	0	11	_dbus_rmutex_lock
+DYNAMIC_SYMBOL	644	0x3de1c	type	2	bind	1	vis	0	ndx	11	name	_dbus_getenv
+EXPORT	2	1	0	11	_dbus_getenv
+DYNAMIC_SYMBOL	645	0x2c524	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_insert_after_link
+EXPORT	2	1	0	11	_dbus_list_insert_after_link
+DYNAMIC_SYMBOL	646	0x2ecf0	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_starts_with_c_str
+EXPORT	2	1	0	11	_dbus_string_starts_with_c_str
+DYNAMIC_SYMBOL	647	0x205a4	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_pop_message
+EXPORT	2	1	0	11	_dbus_message_loader_pop_message
+DYNAMIC_SYMBOL	648	0x320ac	type	2	bind	1	vis	0	ndx	11	name	_dbus_append_user_from_current_process
+EXPORT	2	1	0	11	_dbus_append_user_from_current_process
+DYNAMIC_SYMBOL	649	0x1fbec	type	2	bind	1	vis	0	ndx	11	name	_dbus_message_loader_new
+EXPORT	2	1	0	11	_dbus_message_loader_new
+DYNAMIC_SYMBOL	650	0x2a514	type	2	bind	1	vis	0	ndx	11	name	_dbus_watch_list_add_watch
+EXPORT	2	1	0	11	_dbus_watch_list_add_watch
+DYNAMIC_SYMBOL	651	0x1b1d4	type	2	bind	1	vis	0	ndx	11	name	_dbus_validate_member
+EXPORT	2	1	0	11	_dbus_validate_member
+DYNAMIC_SYMBOL	652	0x3debc	type	2	bind	1	vis	0	ndx	11	name	_dbus_split_paths_and_append
+EXPORT	2	1	0	11	_dbus_split_paths_and_append
+DYNAMIC_SYMBOL	653	0x12cdc	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_pop_message
+EXPORT	2	1	0	11	dbus_connection_pop_message
+DYNAMIC_SYMBOL	654	0x34074	type	2	bind	1	vis	0	ndx	11	name	_dbus_homedir_from_current_process
+EXPORT	2	1	0	11	_dbus_homedir_from_current_process
+DYNAMIC_SYMBOL	655	0x13c0c	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_get_linux_security_label
+EXPORT	2	1	0	11	_dbus_connection_get_linux_security_label
+DYNAMIC_SYMBOL	656	0x1bf10	type	2	bind	1	vis	0	ndx	11	name	dbus_message_new
+EXPORT	2	1	0	11	dbus_message_new
+DYNAMIC_SYMBOL	657	0x24138	type	2	bind	1	vis	0	ndx	11	name	dbus_server_get_address
+EXPORT	2	1	0	11	dbus_server_get_address
+DYNAMIC_SYMBOL	658	0x14764	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_object_path_data
+EXPORT	2	1	0	11	dbus_connection_get_object_path_data
+DYNAMIC_SYMBOL	659	0x1fac8	type	2	bind	1	vis	0	ndx	11	name	dbus_set_error_from_message
+EXPORT	2	1	0	11	dbus_set_error_from_message
+DYNAMIC_SYMBOL	660	0x20fcc	type	2	bind	1	vis	0	ndx	11	name	dbus_set_default_protocol_strategy
+EXPORT	2	1	0	11	dbus_set_default_protocol_strategy
+DYNAMIC_SYMBOL	661	0x2b418	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_get_n_entries
+EXPORT	2	1	0	11	_dbus_hash_table_get_n_entries
+DYNAMIC_SYMBOL	662	0x307d8	type	2	bind	1	vis	0	ndx	11	name	_dbus_close_all
+EXPORT	2	1	0	11	_dbus_close_all
+DYNAMIC_SYMBOL	663	0x27684	type	2	bind	1	vis	0	ndx	11	name	dbus_validate_bus_name
+EXPORT	2	1	0	11	dbus_validate_bus_name
+DYNAMIC_SYMBOL	664	0x2b01c	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_iter_get_int_key
+EXPORT	2	1	0	11	_dbus_hash_iter_get_int_key
+DYNAMIC_SYMBOL	665	0x26f04	type	2	bind	1	vis	0	ndx	11	name	dbus_signature_iter_get_element_type
+EXPORT	2	1	0	11	dbus_signature_iter_get_element_type
+DYNAMIC_SYMBOL	666	0x2a7e4	type	2	bind	1	vis	0	ndx	11	name	dbus_watch_get_data
+EXPORT	2	1	0	11	dbus_watch_get_data
+DYNAMIC_SYMBOL	667	0x2c3d8	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_prepend_link
+EXPORT	2	1	0	11	_dbus_list_prepend_link
+DYNAMIC_SYMBOL	668	0x33df0	type	2	bind	1	vis	0	ndx	11	name	_dbus_user_database_get_system
+EXPORT	2	1	0	11	_dbus_user_database_get_system
+DYNAMIC_SYMBOL	669	0xea20	type	2	bind	1	vis	0	ndx	11	name	dbus_bus_register
+EXPORT	2	1	0	11	dbus_bus_register
+DYNAMIC_SYMBOL	670	0x22d04	type	2	bind	1	vis	0	ndx	11	name	dbus_pending_call_free_data_slot
+EXPORT	2	1	0	11	dbus_pending_call_free_data_slot
+DYNAMIC_SYMBOL	671	0x273e4	type	2	bind	1	vis	0	ndx	11	name	dbus_validate_interface
+EXPORT	2	1	0	11	dbus_validate_interface
+DYNAMIC_SYMBOL	672	0x2fc08	type	2	bind	1	vis	0	ndx	11	name	_dbus_close_socket
+EXPORT	2	1	0	11	_dbus_close_socket
+DYNAMIC_SYMBOL	673	0x2ed4c	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_starts_with_words_c_str
+EXPORT	2	1	0	11	_dbus_string_starts_with_words_c_str
+DYNAMIC_SYMBOL	674	0x1fbdc	type	2	bind	1	vis	0	ndx	11	name	dbus_message_contains_unix_fds
+EXPORT	2	1	0	11	dbus_message_contains_unix_fds
+DYNAMIC_SYMBOL	675	0xfe74	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_disable_dispatch
+EXPORT	2	1	0	11	_dbus_connection_disable_dispatch
+DYNAMIC_SYMBOL	676	0x33dd0	type	2	bind	1	vis	0	ndx	11	name	_dbus_user_database_lock_system
+EXPORT	2	1	0	11	_dbus_user_database_lock_system
+DYNAMIC_SYMBOL	677	0x24520	type	2	bind	1	vis	0	ndx	11	name	dbus_server_free_data_slot
+EXPORT	2	1	0	11	dbus_server_free_data_slot
+DYNAMIC_SYMBOL	678	0x2a74c	type	2	bind	1	vis	0	ndx	11	name	dbus_watch_get_socket
+EXPORT	2	1	0	11	dbus_watch_get_socket
+DYNAMIC_SYMBOL	679	0x2db64	type	2	bind	1	vis	0	ndx	11	name	_dbus_pipe_init
+EXPORT	2	1	0	11	_dbus_pipe_init
+DYNAMIC_SYMBOL	680	0x27d40	type	2	bind	1	vis	0	ndx	11	name	dbus_threads_init
+EXPORT	2	1	0	11	dbus_threads_init
+DYNAMIC_SYMBOL	681	0x1b74c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_lock
+EXPORT	2	1	0	11	dbus_message_lock
+DYNAMIC_SYMBOL	682	0x153e0	type	2	bind	1	vis	0	ndx	11	name	_dbus_credentials_add_windows_sid
+EXPORT	2	1	0	11	_dbus_credentials_add_windows_sid
+DYNAMIC_SYMBOL	683	0x32614	type	2	bind	1	vis	0	ndx	11	name	_dbus_dup
+EXPORT	2	1	0	11	_dbus_dup
+DYNAMIC_SYMBOL	684	0x1ec24	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_path
+EXPORT	2	1	0	11	dbus_message_set_path
+DYNAMIC_SYMBOL	685	0x2fa30	type	2	bind	1	vis	0	ndx	11	name	_dbus_delete_file
+EXPORT	2	1	0	11	_dbus_delete_file
+DYNAMIC_SYMBOL	686	0x2c6c0	type	2	bind	1	vis	0	ndx	11	name	_dbus_list_find_first
+EXPORT	2	1	0	11	_dbus_list_find_first
+DYNAMIC_SYMBOL	687	0x2b20c	type	2	bind	1	vis	0	ndx	11	name	_dbus_hash_table_remove_uintptr
+EXPORT	2	1	0	11	_dbus_hash_table_remove_uintptr
+DYNAMIC_SYMBOL	688	0x1eec4	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_interface
+EXPORT	2	1	0	11	dbus_message_set_interface
+DYNAMIC_SYMBOL	689	0x26e64	type	2	bind	1	vis	0	ndx	11	name	dbus_signature_iter_init
+EXPORT	2	1	0	11	dbus_signature_iter_init
+DYNAMIC_SYMBOL	690	0x14c68	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_max_message_size
+EXPORT	2	1	0	11	dbus_connection_get_max_message_size
+DYNAMIC_SYMBOL	691	0x21488	type	2	bind	1	vis	0	ndx	11	name	_dbus_variant_write
+EXPORT	2	1	0	11	_dbus_variant_write
+DYNAMIC_SYMBOL	692	0x12c64	type	2	bind	1	vis	0	ndx	11	name	_dbus_connection_remove_message
+EXPORT	2	1	0	11	_dbus_connection_remove_message
+DYNAMIC_SYMBOL	693	0x14d48	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_max_message_unix_fds
+EXPORT	2	1	0	11	dbus_connection_get_max_message_unix_fds
+DYNAMIC_SYMBOL	694	0x3de7c	type	2	bind	1	vis	0	ndx	11	name	dbus_setenv
+EXPORT	2	1	0	11	dbus_setenv
+DYNAMIC_SYMBOL	695	0x1fa0c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_has_signature
+EXPORT	2	1	0	11	dbus_message_has_signature
+DYNAMIC_SYMBOL	696	0x2df58	type	2	bind	1	vis	0	ndx	11	name	_dbus_string_copy_data
+EXPORT	2	1	0	11	_dbus_string_copy_data
+DYNAMIC_SYMBOL	697	0x150cc	type	2	bind	1	vis	0	ndx	11	name	dbus_connection_get_outgoing_unix_fds
+EXPORT	2	1	0	11	dbus_connection_get_outgoing_unix_fds
+DYNAMIC_SYMBOL	698	0x34154	type	2	bind	1	vis	0	ndx	11	name	_dbus_user_database_get_username
+EXPORT	2	1	0	11	_dbus_user_database_get_username
+DYNAMIC_SYMBOL	699	0x1bd4c	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_serial
+EXPORT	2	1	0	11	dbus_message_get_serial
+DYNAMIC_SYMBOL	700	0x1b5e8	type	2	bind	1	vis	0	ndx	11	name	dbus_message_set_serial
+EXPORT	2	1	0	11	dbus_message_set_serial
+DYNAMIC_SYMBOL	701	0x320c8	type	2	bind	1	vis	0	ndx	11	name	_dbus_getuid
+EXPORT	2	1	0	11	_dbus_getuid
+DYNAMIC_SYMBOL	702	0x271e4	type	2	bind	1	vis	0	ndx	11	name	dbus_type_is_valid
+EXPORT	2	1	0	11	dbus_type_is_valid
+DYNAMIC_SYMBOL	703	0x1eb00	type	2	bind	1	vis	0	ndx	11	name	dbus_message_get_no_reply
+EXPORT	2	1	0	11	dbus_message_get_no_reply
+DYNAMIC	0x1	0x3ed6
+DYNAMIC	0x1	0x3ee6
+DYNAMIC	0x1	0x3efa
+DYNAMIC	0x1	0x3f08
+DYNAMIC	0x1	0x3f12
+DYNAMIC	0xe	0x3f20
+DYNAMIC	0xc	0x9d14
+DYNAMIC	0xd	0x3efb4
+DYNAMIC	0x19	0x48000
+DYNAMIC	0x1b	0x4
+DYNAMIC	0x1a	0x48004
+DYNAMIC	0x1c	0x4
+DYNAMIC	0x6ffffef5	0xd4
+DYNAMIC	0x5	0x3fd8
+DYNAMIC	0x6	0x13d8
+DYNAMIC	0xa	0x3fee
+DYNAMIC	0xb	0x10
+DYNAMIC	0x3	0x4856c
+DYNAMIC	0x2	0xf08
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x8e0c
+DYNAMIC	0x11	0x86cc
+DYNAMIC	0x12	0x740
+DYNAMIC	0x13	0x8
+DYNAMIC	0x6ffffffc	0x8548
+DYNAMIC	0x6ffffffd	0x3
+DYNAMIC	0x6ffffffe	0x859c
+DYNAMIC	0x6fffffff	0x5
+DYNAMIC	0x6ffffff0	0x7fc6
+DYNAMIC	0x6ffffffa	0xd7
+DYNAMIC	0x0	0x0
+FIELD	RELRO	None
+FIELD	NX	Enabled
+FIELD	PIE	N/A(DSO)
+FIELD	canary	Detected(import)
+FIELD	FORTIFY	Detected(import)
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Absent
+FIELD	dynamic_export_count_including_ABS	564
+FIELD	dynamic_export_non_ABS_count	562
+FIELD	dynamic_export_function_count	561
+METADATA_READER_SUCCESS
+
+
+RPM_LUA_EXIT_CODE: 0

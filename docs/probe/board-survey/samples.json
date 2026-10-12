@@ -64,14 +64,6 @@
     "file_stat": "device=45826 inode=14889 bytes=329188 mode=755 type=regular file"
   },
   {
-    "id": "vconftool",
-    "path": "/usr/bin/vconftool",
-    "kind": "executable",
-    "reason": "平台配置工具",
-    "resolved_path": "/usr/bin/vconftool",
-    "file_stat": "device=45826 inode=8869 bytes=7033 mode=750 type=regular file"
-  },
-  {
     "id": "sqlite3",
     "path": "/usr/bin/sqlite3",
     "kind": "executable",

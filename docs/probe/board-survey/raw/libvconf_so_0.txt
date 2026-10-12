@@ -1,0 +1,234 @@
+COMMAND: readelf -W -h -l -S -d --dyn-syms /usr/lib/libvconf.so.0
+sh: line 160: readelf: command not found
+READELF_EXIT_CODE: 127
+COMMAND: RPM4.14.1 embedded Lua5.1 direct read-only ELF metadata (/usr/lib/libvconf.so.0)
+METHOD	RPM_EMBEDDED_LUA_DIRECT_ELF_METADATA	Lua=Lua 5.1
+TARGET	/usr/lib/libvconf.so.0	shared-library
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	6	shoff	0x7250	shnum	25
+PROGRAM_HEADER	0	0x70000001	offset	0x5ae4	vaddr	0x5ae4	filesz	360	memsz	360	flags	4
+PROGRAM_HEADER	1	0x1	offset	0x0	vaddr	0x0	filesz	23632	memsz	23632	flags	5
+PROGRAM_HEADER	2	0x1	offset	0x6000	vaddr	0x6000	filesz	4440	memsz	4520	flags	6
+PROGRAM_HEADER	3	0x2	offset	0x6010	vaddr	0x6010	filesz	280	memsz	280	flags	6
+PROGRAM_HEADER	4	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+PROGRAM_HEADER	5	0x6474e552	offset	0x6000	vaddr	0x6000	filesz	4096	memsz	4096	flags	4
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.gnu.hash	1879048182	offset	0xf4	size	456	link	2	entsize	4
+SECTION	2	.dynsym	11	offset	0x2bc	size	1840	link	3	entsize	16
+SECTION	3	.dynstr	3	offset	0x9ec	size	2200	link	0	entsize	0
+SECTION	4	.gnu.version	1879048191	offset	0x1284	size	230	link	2	entsize	2
+SECTION	5	.gnu.version_d	1879048189	offset	0x136c	size	56	link	3	entsize	0
+SECTION	6	.gnu.version_r	1879048190	offset	0x13a4	size	64	link	3	entsize	0
+SECTION	7	.rel.dyn	9	offset	0x13e4	size	104	link	2	entsize	8
+SECTION	8	.rel.plt	9	offset	0x144c	size	592	link	2	entsize	8
+SECTION	9	.init	1	offset	0x169c	size	12	link	0	entsize	0
+SECTION	10	.plt	1	offset	0x16a8	size	936	link	0	entsize	4
+SECTION	11	.text	1	offset	0x1a50	size	14720	link	0	entsize	0
+SECTION	12	.fini	1	offset	0x53d0	size	8	link	0	entsize	0
+SECTION	13	.rodata	1	offset	0x53d8	size	1791	link	0	entsize	1
+SECTION	14	.ARM.extab	1	offset	0x5ad8	size	12	link	0	entsize	0
+SECTION	15	.ARM.exidx	1879048193	offset	0x5ae4	size	360	link	11	entsize	0
+SECTION	16	.eh_frame	1	offset	0x5c4c	size	4	link	0	entsize	0
+SECTION	17	.init_array	14	offset	0x6000	size	8	link	0	entsize	4
+SECTION	18	.fini_array	15	offset	0x6008	size	8	link	0	entsize	4
+SECTION	19	.dynamic	6	offset	0x6010	size	280	link	3	entsize	8
+SECTION	20	.got	1	offset	0x7000	size	340	link	0	entsize	4
+SECTION	21	.data	1	offset	0x7154	size	4	link	0	entsize	0
+SECTION	22	.bss	8	offset	0x7158	size	80	link	0	entsize	0
+SECTION	23	.gnu_debuglink	1	offset	0x7158	size	28	link	0	entsize	0
+SECTION	24	.shstrtab	3	offset	0x7174	size	220	link	0	entsize	0
+DYNAMIC_SYMBOL	0	0x0	type	0	bind	0	vis	0	ndx	0	name	
+DYNAMIC_SYMBOL	1	0x169c	type	3	bind	0	vis	0	ndx	9	name	
+DYNAMIC_SYMBOL	2	0x7154	type	3	bind	0	vis	0	ndx	21	name	
+DYNAMIC_SYMBOL	3	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_get_string
+DYNAMIC_SYMBOL	4	0x0	type	2	bind	1	vis	0	ndx	0	name	g_source_set_priority
+DYNAMIC_SYMBOL	5	0x0	type	2	bind	1	vis	0	ndx	0	name	g_direct_equal
+DYNAMIC_SYMBOL	6	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_free
+DYNAMIC_SYMBOL	7	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_destroy
+DYNAMIC_SYMBOL	8	0x0	type	2	bind	1	vis	0	ndx	0	name	g_str_hash
+DYNAMIC_SYMBOL	9	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr0
+DYNAMIC_SYMBOL	10	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_create_string
+DYNAMIC_SYMBOL	11	0x0	type	0	bind	2	vis	0	ndx	0	name	__gmon_start__
+DYNAMIC_SYMBOL	12	0x0	type	2	bind	1	vis	0	ndx	0	name	g_source_set_callback
+DYNAMIC_SYMBOL	13	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_register_notification_sync
+DYNAMIC_SYMBOL	14	0x0	type	2	bind	1	vis	0	ndx	0	name	getenv
+DYNAMIC_SYMBOL	15	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_get_int64
+DYNAMIC_SYMBOL	16	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_insert
+DYNAMIC_SYMBOL	17	0x0	type	2	bind	1	vis	0	ndx	0	name	g_list_free
+DYNAMIC_SYMBOL	18	0x0	type	2	bind	1	vis	0	ndx	0	name	calloc
+DYNAMIC_SYMBOL	19	0x0	type	2	bind	1	vis	0	ndx	0	name	g_list_free_full
+DYNAMIC_SYMBOL	20	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_get_int32
+DYNAMIC_SYMBOL	21	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_err_get_errno
+DYNAMIC_SYMBOL	22	0x0	type	2	bind	1	vis	0	ndx	0	name	__dlog_print
+DYNAMIC_SYMBOL	23	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_remove
+DYNAMIC_SYMBOL	24	0x0	type	2	bind	1	vis	0	ndx	0	name	__assert_fail
+DYNAMIC_SYMBOL	25	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_get_double
+DYNAMIC_SYMBOL	26	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_deregisterTMCloneTable
+DYNAMIC_SYMBOL	27	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_err_get_str
+DYNAMIC_SYMBOL	28	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_unregister_notification_sync
+DYNAMIC_SYMBOL	29	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_remove_all
+DYNAMIC_SYMBOL	30	0x0	type	2	bind	1	vis	0	ndx	0	name	getuid
+DYNAMIC_SYMBOL	31	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_open
+DYNAMIC_SYMBOL	32	0x0	type	2	bind	1	vis	0	ndx	0	name	g_main_context_ref
+DYNAMIC_SYMBOL	33	0x0	type	2	bind	1	vis	0	ndx	0	name	free
+DYNAMIC_SYMBOL	34	0x0	type	2	bind	1	vis	0	ndx	0	name	g_list_length
+DYNAMIC_SYMBOL	35	0x0	type	2	bind	1	vis	0	ndx	0	name	g_rec_mutex_lock
+DYNAMIC_SYMBOL	36	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_unset_value_sync
+DYNAMIC_SYMBOL	37	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_registerTMCloneTable
+DYNAMIC_SYMBOL	38	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_create_layer
+DYNAMIC_SYMBOL	39	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_new_full
+DYNAMIC_SYMBOL	40	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_get_uint32
+DYNAMIC_SYMBOL	41	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_foreach
+DYNAMIC_SYMBOL	42	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_get_uint64
+DYNAMIC_SYMBOL	43	0x0	type	2	bind	1	vis	0	ndx	0	name	strlen
+DYNAMIC_SYMBOL	44	0x0	type	2	bind	1	vis	0	ndx	0	name	strtoul
+DYNAMIC_SYMBOL	45	0x0	type	2	bind	1	vis	0	ndx	0	name	g_idle_source_new
+DYNAMIC_SYMBOL	46	0x0	type	2	bind	1	vis	0	ndx	0	name	g_main_context_find_source_by_id
+DYNAMIC_SYMBOL	47	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_create_double
+DYNAMIC_SYMBOL	48	0x0	type	2	bind	1	vis	0	ndx	0	name	g_list_delete_link
+DYNAMIC_SYMBOL	49	0x0	type	2	bind	1	vis	0	ndx	0	name	g_list_last
+DYNAMIC_SYMBOL	50	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_list_keys_sync
+DYNAMIC_SYMBOL	51	0x0	type	2	bind	1	vis	0	ndx	0	name	g_list_append
+DYNAMIC_SYMBOL	52	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_get_type
+DYNAMIC_SYMBOL	53	0x0	type	2	bind	1	vis	0	ndx	0	name	strdup
+DYNAMIC_SYMBOL	54	0x0	type	2	bind	1	vis	0	ndx	0	name	g_main_context_unref
+DYNAMIC_SYMBOL	55	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_get_value_sync
+DYNAMIC_SYMBOL	56	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_create_int32
+DYNAMIC_SYMBOL	57	0x0	type	2	bind	1	vis	0	ndx	0	name	g_rec_mutex_clear
+DYNAMIC_SYMBOL	58	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_lookup
+DYNAMIC_SYMBOL	59	0x0	type	2	bind	1	vis	0	ndx	0	name	g_direct_hash
+DYNAMIC_SYMBOL	60	0x0	type	2	bind	1	vis	0	ndx	0	name	g_rec_mutex_trylock
+DYNAMIC_SYMBOL	61	0x0	type	2	bind	1	vis	0	ndx	0	name	g_source_destroy
+DYNAMIC_SYMBOL	62	0x0	type	2	bind	1	vis	0	ndx	0	name	g_rec_mutex_unlock
+DYNAMIC_SYMBOL	63	0x0	type	2	bind	1	vis	0	ndx	0	name	g_source_unref
+DYNAMIC_SYMBOL	64	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_free_layer
+DYNAMIC_SYMBOL	65	0x0	type	2	bind	1	vis	0	ndx	0	name	g_list_first
+DYNAMIC_SYMBOL	66	0x0	type	2	bind	1	vis	0	ndx	0	name	g_source_attach
+DYNAMIC_SYMBOL	67	0x0	type	2	bind	1	vis	0	ndx	0	name	g_source_is_destroyed
+DYNAMIC_SYMBOL	68	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_close
+DYNAMIC_SYMBOL	69	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_create_boolean
+DYNAMIC_SYMBOL	70	0x0	type	2	bind	1	vis	0	ndx	0	name	strncmp
+DYNAMIC_SYMBOL	71	0x0	type	2	bind	1	vis	0	ndx	0	name	g_list_remove
+DYNAMIC_SYMBOL	72	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr1
+DYNAMIC_SYMBOL	73	0x0	type	2	bind	1	vis	0	ndx	0	name	strcmp
+DYNAMIC_SYMBOL	74	0x0	type	2	bind	1	vis	0	ndx	0	name	g_str_equal
+DYNAMIC_SYMBOL	75	0x0	type	2	bind	1	vis	0	ndx	0	name	__errno_location
+DYNAMIC_SYMBOL	76	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_value_get_boolean
+DYNAMIC_SYMBOL	77	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_finalize
+DYNAMIC_SYMBOL	78	0x0	type	2	bind	1	vis	0	ndx	0	name	g_rec_mutex_init
+DYNAMIC_SYMBOL	79	0x0	type	2	bind	1	vis	0	ndx	0	name	buxton_set_value_sync
+DYNAMIC_SYMBOL	80	0x48f9	type	2	bind	1	vis	0	ndx	11	name	vconf_unset_recursive
+EXPORT	2	1	0	11	vconf_unset_recursive
+DYNAMIC_SYMBOL	81	0x36e1	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_free
+EXPORT	2	1	0	11	vconf_keylist_free
+DYNAMIC_SYMBOL	82	0x3675	type	2	bind	1	vis	0	ndx	11	name	vconf_get_ext_errno
+EXPORT	2	1	0	11	vconf_get_ext_errno
+DYNAMIC_SYMBOL	83	0x2951	type	2	bind	1	vis	0	ndx	11	name	vconf_set_int
+EXPORT	2	1	0	11	vconf_set_int
+DYNAMIC_SYMBOL	84	0x2f5d	type	2	bind	1	vis	0	ndx	11	name	vconf_get_int
+EXPORT	2	1	0	11	vconf_get_int
+DYNAMIC_SYMBOL	85	0x36d9	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_new
+EXPORT	2	1	0	11	vconf_keylist_new
+DYNAMIC_SYMBOL	86	0x3a95	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_add_dbl
+EXPORT	2	1	0	11	vconf_keylist_add_dbl
+DYNAMIC_SYMBOL	87	0x3d55	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_add_null
+EXPORT	2	1	0	11	vconf_keylist_add_null
+DYNAMIC_SYMBOL	88	0x1ce9	type	2	bind	1	vis	0	ndx	11	name	vconf_keynode_get_type
+EXPORT	2	1	0	11	vconf_keynode_get_type
+DYNAMIC_SYMBOL	89	0x2091	type	2	bind	1	vis	0	ndx	11	name	vconf_keynode_get_str
+EXPORT	2	1	0	11	vconf_keynode_get_str
+DYNAMIC_SYMBOL	90	0x3f91	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_nextnode
+EXPORT	2	1	0	11	vconf_keylist_nextnode
+DYNAMIC_SYMBOL	91	0x2b35	type	2	bind	1	vis	0	ndx	11	name	vconf_set_bool
+EXPORT	2	1	0	11	vconf_set_bool
+DYNAMIC_SYMBOL	92	0x31d9	type	2	bind	1	vis	0	ndx	11	name	vconf_get_bool
+EXPORT	2	1	0	11	vconf_get_bool
+DYNAMIC_SYMBOL	93	0x0	type	1	bind	1	vis	0	ndx	65521	name	VCONF_BUXTON_1.0
+EXPORT	1	1	0	65521	VCONF_BUXTON_1.0
+DYNAMIC_SYMBOL	94	0x1c4d	type	2	bind	1	vis	0	ndx	11	name	vconf_keynode_get_name
+EXPORT	2	1	0	11	vconf_keynode_get_name
+DYNAMIC_SYMBOL	95	0x3e5d	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_del
+EXPORT	2	1	0	11	vconf_keylist_del
+DYNAMIC_SYMBOL	96	0x37b5	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_add_int
+EXPORT	2	1	0	11	vconf_keylist_add_int
+DYNAMIC_SYMBOL	97	0x1e89	type	2	bind	1	vis	0	ndx	11	name	vconf_keynode_get_dbl
+EXPORT	2	1	0	11	vconf_keynode_get_dbl
+DYNAMIC_SYMBOL	98	0x2c89	type	2	bind	1	vis	0	ndx	11	name	vconf_set_str
+EXPORT	2	1	0	11	vconf_set_str
+DYNAMIC_SYMBOL	99	0x3365	type	2	bind	1	vis	0	ndx	11	name	vconf_get_str
+EXPORT	2	1	0	11	vconf_get_str
+DYNAMIC_SYMBOL	100	0x1f8d	type	2	bind	1	vis	0	ndx	11	name	vconf_keynode_get_bool
+EXPORT	2	1	0	11	vconf_keynode_get_bool
+DYNAMIC_SYMBOL	101	0x414d	type	2	bind	1	vis	0	ndx	11	name	vconf_get
+EXPORT	2	1	0	11	vconf_get
+DYNAMIC_SYMBOL	102	0x4045	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_rewind
+EXPORT	2	1	0	11	vconf_keylist_rewind
+DYNAMIC_SYMBOL	103	0x461d	type	2	bind	1	vis	0	ndx	11	name	vconf_set
+EXPORT	2	1	0	11	vconf_set
+DYNAMIC_SYMBOL	104	0x3975	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_add_bool
+EXPORT	2	1	0	11	vconf_keylist_add_bool
+DYNAMIC_SYMBOL	105	0x4ba5	type	2	bind	1	vis	0	ndx	11	name	vconf_sync_key
+EXPORT	2	1	0	11	vconf_sync_key
+DYNAMIC_SYMBOL	106	0x4779	type	2	bind	1	vis	0	ndx	11	name	vconf_unset
+EXPORT	2	1	0	11	vconf_unset
+DYNAMIC_SYMBOL	107	0x246d	type	2	bind	1	vis	0	ndx	11	name	vconf_notify_key_changed_for_ui_thread
+EXPORT	2	1	0	11	vconf_notify_key_changed_for_ui_thread
+DYNAMIC_SYMBOL	108	0x2de1	type	2	bind	1	vis	0	ndx	11	name	vconf_set_dbl
+EXPORT	2	1	0	11	vconf_set_dbl
+DYNAMIC_SYMBOL	109	0x1d8d	type	2	bind	1	vis	0	ndx	11	name	vconf_keynode_get_int
+EXPORT	2	1	0	11	vconf_keynode_get_int
+DYNAMIC_SYMBOL	110	0x34e5	type	2	bind	1	vis	0	ndx	11	name	vconf_get_dbl
+EXPORT	2	1	0	11	vconf_get_dbl
+DYNAMIC_SYMBOL	111	0x4d1d	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_lookup
+EXPORT	2	1	0	11	vconf_keylist_lookup
+DYNAMIC_SYMBOL	112	0x2471	type	2	bind	1	vis	0	ndx	11	name	vconf_ignore_key_changed
+EXPORT	2	1	0	11	vconf_ignore_key_changed
+DYNAMIC_SYMBOL	113	0x21b1	type	2	bind	1	vis	0	ndx	11	name	vconf_notify_key_changed
+EXPORT	2	1	0	11	vconf_notify_key_changed
+DYNAMIC_SYMBOL	114	0x3bc9	type	2	bind	1	vis	0	ndx	11	name	vconf_keylist_add_str
+EXPORT	2	1	0	11	vconf_keylist_add_str
+DYNAMIC	0x1	0x821
+DYNAMIC	0x1	0x831
+DYNAMIC	0x1	0x83e
+DYNAMIC	0x1	0x84f
+DYNAMIC	0x1	0x85d
+DYNAMIC	0xe	0x867
+DYNAMIC	0xc	0x169c
+DYNAMIC	0xd	0x53d0
+DYNAMIC	0x19	0x6000
+DYNAMIC	0x1b	0x8
+DYNAMIC	0x1a	0x6008
+DYNAMIC	0x1c	0x8
+DYNAMIC	0x6ffffef5	0xf4
+DYNAMIC	0x5	0x9ec
+DYNAMIC	0x6	0x2bc
+DYNAMIC	0xa	0x898
+DYNAMIC	0xb	0x10
+DYNAMIC	0x3	0x7000
+DYNAMIC	0x2	0x250
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x144c
+DYNAMIC	0x11	0x13e4
+DYNAMIC	0x12	0x68
+DYNAMIC	0x13	0x8
+DYNAMIC	0x6ffffffc	0x136c
+DYNAMIC	0x6ffffffd	0x2
+DYNAMIC	0x6ffffffe	0x13a4
+DYNAMIC	0x6fffffff	0x2
+DYNAMIC	0x6ffffff0	0x1284
+DYNAMIC	0x6ffffffa	0x5
+DYNAMIC	0x0	0x0
+FIELD	RELRO	Partial
+FIELD	NX	Enabled
+FIELD	PIE	N/A(DSO)
+FIELD	canary	No dynamic evidence
+FIELD	FORTIFY	No dynamic evidence
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Absent
+FIELD	dynamic_export_count_including_ABS	35
+FIELD	dynamic_export_non_ABS_count	34
+FIELD	dynamic_export_function_count	34
+METADATA_READER_SUCCESS
+
+
+RPM_LUA_EXIT_CODE: 0

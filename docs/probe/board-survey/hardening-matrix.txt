@@ -1,0 +1,32 @@
+METHOD: board existing RPM embedded Lua direct ELF metadata; readelf/nm/checksec unavailable. Actual failures and alternative output both preserved in raw/.
+id	path	kind	RELRO	canary	NX	PIE	RPATH	RUNPATH	stripped	FORTIFY
+bash	/usr/bin/bash	executable	Partial	Detected(import)	Enabled	Yes	Absent	Absent	Yes(no .symtab)	Detected(import)
+systemctl	/usr/bin/systemctl	executable	Full	Detected(import)	Enabled	Yes	Absent	Present	Yes(no .symtab)	Detected(import)
+dbus_daemon	/usr/bin/dbus-daemon	executable	Full	Detected(import)	Enabled	Yes	Absent	Absent	Yes(no .symtab)	Detected(import)
+connmand	/usr/bin/connmand	executable	Partial	Detected(import)	Enabled	Yes	Absent	Absent	Yes(no .symtab)	Detected(import)
+dlogutil	/usr/bin/dlogutil	executable	Partial	No dynamic evidence	Enabled	Yes	Absent	Absent	Yes(no .symtab)	No dynamic evidence
+cynara	/usr/bin/cynara	executable	Full	Detected(import)	Enabled	Yes	Absent	Present	Yes(no .symtab)	Detected(import)
+security_manager	/usr/bin/security-manager	executable	Partial	Detected(import)	Enabled	Yes	Absent	Present	Yes(no .symtab)	Detected(import)
+pkgmgr_server	/usr/bin/pkgmgr-server	executable	Full	No dynamic evidence	Enabled	Yes	Absent	Absent	Yes(no .symtab)	No dynamic evidence
+sqlite3	/usr/bin/sqlite3	executable	Partial	Detected(import)	Enabled	Yes	Absent	Present	Yes(no .symtab)	Detected(import)
+rpm	/usr/bin/rpm	executable	Partial	Detected(import)	Enabled	Yes	Absent	Absent	Yes(no .symtab)	No dynamic evidence
+find	/usr/bin/find	executable	Partial	Detected(import)	Enabled	Yes	Absent	Absent	Yes(no .symtab)	Detected(import)
+libc_so_6	/usr/lib/libc.so.6	shared-library	Full	Provider-definition-only	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	Provider-definition-only
+libstdc++_so_6	/usr/lib/libstdc++.so.6	shared-library	Partial	No dynamic evidence	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	No dynamic evidence
+libsystemd_so_0	/usr/lib/libsystemd.so.0	shared-library	Full	Detected(import)	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	Detected(import)
+libglib_2_0_so_0	/usr/lib/libglib-2.0.so.0	shared-library	Partial	Detected(import)	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	Detected(import)
+libdbus_1_so_3	/usr/lib/libdbus-1.so.3	shared-library	None	Detected(import)	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	Detected(import)
+libcrypto_so_3	/usr/lib/libcrypto.so.3	shared-library	Partial	Detected(import)	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	Detected(import)
+libssl_so_3	/usr/lib/libssl.so.3	shared-library	Partial	Detected(import)	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	Detected(import)
+libsqlite3_so_0	/usr/lib/libsqlite3.so.0	shared-library	Partial	Detected(import)	Enabled	N/A(DSO)	Absent	Present	Yes(no .symtab)	Detected(import)
+libdlog_so_0	/usr/lib/libdlog.so.0	shared-library	Partial	No dynamic evidence	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	No dynamic evidence
+libcynara_client_so_0	/usr/lib/libcynara-client.so.0	shared-library	Full	Detected(import)	Enabled	N/A(DSO)	Absent	Present	Yes(no .symtab)	No dynamic evidence
+libcynara_admin_so_0	/usr/lib/libcynara-admin.so.0	shared-library	Full	Detected(import)	Enabled	N/A(DSO)	Absent	Present	Yes(no .symtab)	No dynamic evidence
+libsecurity_manager_client_so_3	/usr/lib/libsecurity-manager-client.so.3	shared-library	Partial	Detected(import)	Enabled	N/A(DSO)	Absent	Present	Yes(no .symtab)	Detected(import)
+libnetwork_so_0	/usr/lib/libnetwork.so.0	shared-library	Partial	Detected(import)	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	No dynamic evidence
+libpkgmgr_client_so_0	/usr/lib/libpkgmgr-client.so.0	shared-library	Partial	Detected(import)	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	Detected(import)
+libpkgmgr_info_so_0	/usr/lib/libpkgmgr-info.so.0	shared-library	Partial	Detected(import)	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	Detected(import)
+libvconf_so_0	/usr/lib/libvconf.so.0	shared-library	Partial	No dynamic evidence	Enabled	N/A(DSO)	Absent	Absent	Yes(no .symtab)	No dynamic evidence
+
+LIMITATIONS: DSO PIE=N/A; dynamic helper imports are evidence only; definition-only libc does not prove FORTIFY/canary; NX is ELF request; .symtab removal does not remove .dynsym.
+EXCLUDED: [{"id": "vconftool", "path": "/usr/bin/vconftool", "kind": "executable", "reason": "not an ELF file", "resolved_path": "/usr/bin/vconftool", "file_stat": "device=45826 inode=8869 bytes=7033 mode=750 type=regular file", "raw_evidence": "raw/vconftool.txt"}]

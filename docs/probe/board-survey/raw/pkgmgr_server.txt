@@ -1,0 +1,322 @@
+COMMAND: readelf -W -h -l -S -d --dyn-syms /usr/bin/pkgmgr-server
+sh: line 160: readelf: command not found
+READELF_EXIT_CODE: 127
+COMMAND: RPM4.14.1 embedded Lua5.1 direct read-only ELF metadata (/usr/bin/pkgmgr-server)
+METHOD	RPM_EMBEDDED_LUA_DIRECT_ELF_METADATA	Lua=Lua 5.1
+TARGET	/usr/bin/pkgmgr-server	executable
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	9	shoff	0x50134	shnum	30
+PROGRAM_HEADER	0	0x70000001	offset	0x4acf4	vaddr	0x4acf4	filesz	1344	memsz	1344	flags	4
+PROGRAM_HEADER	1	0x6	offset	0x34	vaddr	0x34	filesz	288	memsz	288	flags	4
+PROGRAM_HEADER	2	0x3	offset	0x154	vaddr	0x154	filesz	19	memsz	19	flags	4
+INTERPRETER	/lib/ld-linux.so.3
+PROGRAM_HEADER	3	0x1	offset	0x0	vaddr	0x0	filesz	307768	memsz	307768	flags	5
+PROGRAM_HEADER	4	0x1	offset	0x4c000	vaddr	0x4c000	filesz	16388	memsz	16392	flags	6
+PROGRAM_HEADER	5	0x2	offset	0x4f478	vaddr	0x4f478	filesz	368	memsz	368	flags	6
+PROGRAM_HEADER	6	0x4	offset	0x168	vaddr	0x168	filesz	68	memsz	68	flags	4
+PROGRAM_HEADER	7	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+PROGRAM_HEADER	8	0x6474e552	offset	0x4c000	vaddr	0x4c000	filesz	16384	memsz	16384	flags	4
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.interp	1	offset	0x154	size	19	link	0	entsize	0
+SECTION	2	.note.gnu.build-id	7	offset	0x168	size	36	link	0	entsize	0
+SECTION	3	.note.ABI-tag	7	offset	0x18c	size	32	link	0	entsize	0
+SECTION	4	.hash	5	offset	0x1ac	size	2476	link	6	entsize	4
+SECTION	5	.gnu.hash	1879048182	offset	0xb58	size	24	link	6	entsize	4
+SECTION	6	.dynsym	11	offset	0xb70	size	3488	link	7	entsize	16
+SECTION	7	.dynstr	3	offset	0x1910	size	9790	link	0	entsize	0
+SECTION	8	.gnu.version	1879048191	offset	0x3f4e	size	436	link	6	entsize	2
+SECTION	9	.gnu.version_r	1879048190	offset	0x4104	size	144	link	7	entsize	0
+SECTION	10	.rel.dyn	9	offset	0x4194	size	9376	link	6	entsize	8
+SECTION	11	.rel.plt	9	offset	0x6634	size	1616	link	6	entsize	8
+SECTION	12	.init	1	offset	0x6c84	size	12	link	0	entsize	0
+SECTION	13	.plt	1	offset	0x6c90	size	2444	link	0	entsize	4
+SECTION	14	.text	1	offset	0x7620	size	247208	link	0	entsize	0
+SECTION	15	.fini	1	offset	0x43bc8	size	8	link	0	entsize	0
+SECTION	16	.rodata	1	offset	0x43bd0	size	14384	link	0	entsize	0
+SECTION	17	.debug_gdb_scripts	1	offset	0x47400	size	34	link	0	entsize	1
+SECTION	18	.ARM.extab	1	offset	0x47424	size	14544	link	0	entsize	0
+SECTION	19	.ARM.exidx	1879048193	offset	0x4acf4	size	1344	link	14	entsize	0
+SECTION	20	.eh_frame	1	offset	0x4b234	size	4	link	0	entsize	0
+SECTION	21	.init_array	14	offset	0x4c000	size	4	link	0	entsize	4
+SECTION	22	.fini_array	15	offset	0x4c004	size	4	link	0	entsize	4
+SECTION	23	.data.rel.ro	1	offset	0x4c008	size	13424	link	0	entsize	0
+SECTION	24	.dynamic	6	offset	0x4f478	size	368	link	7	entsize	8
+SECTION	25	.got	1	offset	0x4f5e8	size	896	link	0	entsize	4
+SECTION	26	.data	1	offset	0x50000	size	4	link	0	entsize	0
+SECTION	27	.bss	8	offset	0x50004	size	4	link	0	entsize	0
+SECTION	28	.gnu_debuglink	1	offset	0x50004	size	24	link	0	entsize	0
+SECTION	29	.shstrtab	3	offset	0x5001c	size	278	link	0	entsize	0
+DYNAMIC_SYMBOL	0	0x0	type	0	bind	0	vis	0	ndx	0	name	
+DYNAMIC_SYMBOL	1	0x6c84	type	3	bind	0	vis	0	ndx	12	name	
+DYNAMIC_SYMBOL	2	0x50000	type	3	bind	0	vis	0	ndx	26	name	
+DYNAMIC_SYMBOL	3	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt9Formatter25debug_tuple_field2_finish17h4cf6bfd3c822b79dE
+DYNAMIC_SYMBOL	4	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$i32$GT$3fmt17h4f9198530697f58eE
+DYNAMIC_SYMBOL	5	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN75_$LT$std..fs..ReadDir$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h9233c00ce1696adfE
+DYNAMIC_SYMBOL	6	0x0	type	2	bind	1	vis	0	ndx	0	name	g_main_loop_unref
+DYNAMIC_SYMBOL	7	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgr_GetSizeResult_clone
+DYNAMIC_SYMBOL	8	0x0	type	2	bind	1	vis	0	ndx	0	name	_RNvCsj4CZ6flxxfE_7___rustc35___rust_no_alloc_shim_is_unstable_v2
+DYNAMIC_SYMBOL	9	0x0	type	2	bind	1	vis	0	ndx	0	name	_RNvCsj4CZ6flxxfE_7___rustc14___rust_realloc
+DYNAMIC_SYMBOL	10	0x0	type	2	bind	1	vis	0	ndx	0	name	g_io_channel_set_close_on_unref
+DYNAMIC_SYMBOL	11	0x0	type	6	bind	1	vis	0	ndx	0	name	_ZN3std4hash6random11RandomState3new4KEYS29_$u7b$$u7b$constant$u7d$$u7d$28_$u7b$$u7b$closure$u7d$$u7d$3VAL17h59413d3b990e01feE
+DYNAMIC_SYMBOL	12	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std4path4Path9file_name17hfbf8f0946d968118E
+DYNAMIC_SYMBOL	13	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std4time10SystemTime3now17hfa1623a26778ff76E
+DYNAMIC_SYMBOL	14	0x0	type	2	bind	1	vis	0	ndx	0	name	sigprocmask
+DYNAMIC_SYMBOL	15	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt3num52_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$u8$GT$3fmt17h709a6c5cf3aa81a6E
+DYNAMIC_SYMBOL	16	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_archive_appinfo_foreach_metadata
+DYNAMIC_SYMBOL	17	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgrAdmin_OnReceivedResult_invoke
+DYNAMIC_SYMBOL	18	0x0	type	2	bind	1	vis	0	ndx	0	name	__dlog_print
+DYNAMIC_SYMBOL	19	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_deregisterTMCloneTable
+DYNAMIC_SYMBOL	20	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt9Formatter26debug_struct_field2_finish17h1633b5ad7a25d738E
+DYNAMIC_SYMBOL	21	0x0	type	2	bind	1	vis	0	ndx	0	name	strstr
+DYNAMIC_SYMBOL	22	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core6option13unwrap_failed17h82d43dfcddc64dddE
+DYNAMIC_SYMBOL	23	0x0	type	2	bind	1	vis	0	ndx	0	name	sigaddset
+DYNAMIC_SYMBOL	24	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_updateinfo_set_pkgid
+DYNAMIC_SYMBOL	25	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr0
+DYNAMIC_SYMBOL	26	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt8builders9DebugList6finish17he05377cabf1efd37E
+DYNAMIC_SYMBOL	27	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN58_$LT$std..process..Command$u20$as$u20$core..fmt..Debug$GT$3fmt17h8cc71445a1c56761E
+DYNAMIC_SYMBOL	28	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt8builders9DebugList5entry17h227b1c9f28acbf16E
+DYNAMIC_SYMBOL	29	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN5alloc3ffi5c_str40_$LT$impl$u20$core..ffi..c_str..CStr$GT$15to_string_lossy17hba39b880ab750ddfE
+DYNAMIC_SYMBOL	30	0x0	type	2	bind	1	vis	0	ndx	0	name	_RNvCsj4CZ6flxxfE_7___rustc19___rust_alloc_zeroed
+DYNAMIC_SYMBOL	31	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_appinfo_get_usr_appinfo
+DYNAMIC_SYMBOL	32	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgrAdmin_OnReceivedResult_clone
+DYNAMIC_SYMBOL	33	0x0	type	2	bind	1	vis	0	ndx	0	name	g_main_loop_new
+DYNAMIC_SYMBOL	34	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN100_$LT$alloc..ffi..c_str..CString$u20$as$u20$core..convert..From$LT$$RF$core..ffi..c_str..CStr$GT$$GT$4from17h548e53c726352aa0E
+DYNAMIC_SYMBOL	35	0x0	type	2	bind	1	vis	0	ndx	0	name	atoll
+DYNAMIC_SYMBOL	36	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN5alloc5alloc18handle_alloc_error17h47a8a4fc95ba322bE
+DYNAMIC_SYMBOL	37	0x0	type	2	bind	1	vis	0	ndx	0	name	aul_app_is_running_for_uid
+DYNAMIC_SYMBOL	38	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt3num3imp51_$LT$impl$u20$core..fmt..Display$u20$for$u20$u8$GT$3fmt17h42ca5805b66d3a00E
+DYNAMIC_SYMBOL	39	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN40_$LT$str$u20$as$u20$core..fmt..Debug$GT$3fmt17h63d06511de91971eE
+DYNAMIC_SYMBOL	40	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN57_$LT$std..path..Display$u20$as$u20$core..fmt..Display$GT$3fmt17h6776c58cc19b1d61E
+DYNAMIC_SYMBOL	41	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_archiveinfo_foreach_metadata
+DYNAMIC_SYMBOL	42	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_appinfo_is_global
+DYNAMIC_SYMBOL	43	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN5alloc6string6String15from_utf8_lossy17h92a3225ed4e0915eE
+DYNAMIC_SYMBOL	44	0x0	type	2	bind	1	vis	0	ndx	0	name	g_io_add_watch_full
+DYNAMIC_SYMBOL	45	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_pkginfo_get_usr_disabled_pkginfo
+DYNAMIC_SYMBOL	46	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std4time10SystemTime14duration_since17hd0d10f555091cdd4E
+DYNAMIC_SYMBOL	47	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core6result13unwrap_failed17h260edb1add79e85aE
+DYNAMIC_SYMBOL	48	0x0	type	2	bind	1	vis	0	ndx	0	name	g_source_remove
+DYNAMIC_SYMBOL	49	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_pkginfo_is_global
+DYNAMIC_SYMBOL	50	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_installer_new
+DYNAMIC_SYMBOL	51	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_appinfo_get_usr_all_appinfo
+DYNAMIC_SYMBOL	52	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std3sys7process4unix6common7Command3new17ha8debab026f3ce35E
+DYNAMIC_SYMBOL	53	0x0	type	0	bind	2	vis	0	ndx	0	name	__gmon_start__
+DYNAMIC_SYMBOL	54	0x0	type	2	bind	1	vis	0	ndx	0	name	g_error_free
+DYNAMIC_SYMBOL	55	0x0	type	2	bind	1	vis	0	ndx	0	name	__errno_location
+DYNAMIC_SYMBOL	56	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std2fs8DirEntry4path17h60094d35bbda6f78E
+DYNAMIC_SYMBOL	57	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt3num53_$LT$impl$u20$core..fmt..Display$u20$for$u20$u128$GT$3fmt17hbef01ef61e00f5afE
+DYNAMIC_SYMBOL	58	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_updateinfo_create
+DYNAMIC_SYMBOL	59	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgrAdmin_OnReceivedResult_destroy
+DYNAMIC_SYMBOL	60	0x0	type	2	bind	1	vis	0	ndx	0	name	sigemptyset
+DYNAMIC_SYMBOL	61	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std3sys6random5linux19hashmap_random_keys17h9623aba39ae2abfbE
+DYNAMIC_SYMBOL	62	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std3sys7process4unix6common7Command3arg17h8a9f34018a43c2a2E
+DYNAMIC_SYMBOL	63	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core5slice5index24slice_end_index_len_fail17h0c2b79804847a0e7E
+DYNAMIC_SYMBOL	64	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN60_$LT$alloc..string..String$u20$as$u20$core..clone..Clone$GT$5clone17hf3b683d07a05d807E
+DYNAMIC_SYMBOL	65	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgr_register
+DYNAMIC_SYMBOL	66	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3str16slice_error_fail17hcb212d923bdd5a80E
+DYNAMIC_SYMBOL	67	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt5write17hec13decc14b8eeb9E
+DYNAMIC_SYMBOL	68	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt3num3imp21_$LT$impl$u20$u32$GT$4_fmt17h99d1369f803f4dd9E
+DYNAMIC_SYMBOL	69	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN9hashbrown3raw11Fallibility17capacity_overflow17h7a6e03fc0a4d0c86E
+DYNAMIC_SYMBOL	70	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3str7pattern11StrSearcher3new17h8d532819949e8c43E
+DYNAMIC_SYMBOL	71	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN63_$LT$alloc..ffi..c_str..CString$u20$as$u20$core..fmt..Debug$GT$3fmt17hbadb3e540822b8dfE
+DYNAMIC_SYMBOL	72	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN9hashbrown3raw11Fallibility9alloc_err17hed1a71916d0183c3E
+DYNAMIC_SYMBOL	73	0x0	type	2	bind	1	vis	0	ndx	0	name	_RNvCsj4CZ6flxxfE_7___rustc14___rust_dealloc
+DYNAMIC_SYMBOL	74	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core9panicking11panic_const24panic_const_add_overflow17hbf8cc59b83c48382E
+DYNAMIC_SYMBOL	75	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_updateinfo_destroy
+DYNAMIC_SYMBOL	76	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgr_context_get_peer_info
+DYNAMIC_SYMBOL	77	0x0	type	2	bind	1	vis	0	ndx	0	name	g_main_context_default
+DYNAMIC_SYMBOL	78	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt3num55_$LT$impl$u20$core..fmt..UpperHex$u20$for$u20$usize$GT$3fmt17hd62659369eb6f5bdE
+DYNAMIC_SYMBOL	79	0x0	type	2	bind	1	vis	0	ndx	0	name	free
+DYNAMIC_SYMBOL	80	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std2rt19lang_start_internal17h1450bd652c9785f3E
+DYNAMIC_SYMBOL	81	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_updateinfo_set_type
+DYNAMIC_SYMBOL	82	0x0	type	2	bind	1	vis	0	ndx	0	name	close
+DYNAMIC_SYMBOL	83	0x0	type	2	bind	1	vis	0	ndx	0	name	g_io_add_watch
+DYNAMIC_SYMBOL	84	0x0	type	2	bind	1	vis	0	ndx	0	name	g_io_channel_set_encoding
+DYNAMIC_SYMBOL	85	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_installer_set_session_id
+DYNAMIC_SYMBOL	86	0x0	type	2	bind	1	vis	0	ndx	0	name	memcpy
+DYNAMIC_SYMBOL	87	0x0	type	2	bind	1	vis	0	ndx	0	name	memmove
+DYNAMIC_SYMBOL	88	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_archiveinfo_foreach_parser_plugin_tags
+DYNAMIC_SYMBOL	89	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3str8converts9from_utf817h1253ac80d5cbb401E
+DYNAMIC_SYMBOL	90	0x0	type	2	bind	1	vis	0	ndx	0	name	release_power_lock
+DYNAMIC_SYMBOL	91	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN42_$LT$str$u20$as$u20$core..fmt..Display$GT$3fmt17he4e9944156e5c07dE
+DYNAMIC_SYMBOL	92	0x0	type	2	bind	1	vis	0	ndx	0	name	access
+DYNAMIC_SYMBOL	93	0x0	type	2	bind	1	vis	0	ndx	0	name	open
+DYNAMIC_SYMBOL	94	0x0	type	2	bind	1	vis	0	ndx	0	name	g_io_channel_set_buffered
+DYNAMIC_SYMBOL	95	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std2fs14read_to_string5inner17he011acd9f9c733efE
+DYNAMIC_SYMBOL	96	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std7process7Command5spawn17h2b1058411377e038E
+DYNAMIC_SYMBOL	97	0x0	type	2	bind	1	vis	0	ndx	0	name	g_object_get
+DYNAMIC_SYMBOL	98	0x0	type	1	bind	1	vis	0	ndx	0	name	_ZN4core7unicode12unicode_data11white_space14WHITESPACE_MAP17h330b08f80362f739E
+DYNAMIC_SYMBOL	99	0x0	type	2	bind	1	vis	0	ndx	0	name	unlink
+DYNAMIC_SYMBOL	100	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_archiveinfo_get_pkgid
+DYNAMIC_SYMBOL	101	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_installer_set_uid
+DYNAMIC_SYMBOL	102	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN72_$LT$$RF$str$u20$as$u20$alloc..ffi..c_str..CString..new..SpecNewImpl$GT$13spec_new_impl17h58399802350c6819E
+DYNAMIC_SYMBOL	103	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core9panicking18panic_bounds_check17h785882c7983433caE
+DYNAMIC_SYMBOL	104	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_Resume
+DYNAMIC_SYMBOL	105	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN5alloc7raw_vec12handle_error17h12ef4d06af0a73e4E
+DYNAMIC_SYMBOL	106	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std4path4Path7is_file17hc73c2d715f437e62E
+DYNAMIC_SYMBOL	107	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_pkginfo_is_readonly
+DYNAMIC_SYMBOL	108	0x0	type	2	bind	1	vis	0	ndx	0	name	getpwuid_r
+DYNAMIC_SYMBOL	109	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std3sys7process4unix6common7Command8pre_exec17h36c55b66572cb1a2E
+DYNAMIC_SYMBOL	110	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_finalize
+DYNAMIC_SYMBOL	111	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3ffi5c_str4CStr6to_str17h3f12fe9c8c809b31E
+DYNAMIC_SYMBOL	112	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt9Formatter25debug_tuple_field1_finish17hc372a1b3f458cf95E
+DYNAMIC_SYMBOL	113	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgrForClearCache_register
+DYNAMIC_SYMBOL	114	0x0	type	2	bind	1	vis	0	ndx	0	name	g_main_loop_quit
+DYNAMIC_SYMBOL	115	0x0	type	2	bind	1	vis	0	ndx	0	name	aul_proc_register
+DYNAMIC_SYMBOL	116	0x0	type	2	bind	1	vis	0	ndx	0	name	_RNvMs0_NtCs9VdPp42pPpn_5alloc7raw_vecINtB5_6RawVecmE8grow_oneCs5lRpPioaZ4x_5regex
+DYNAMIC_SYMBOL	117	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std4path4Path6is_dir17he07a66e9b346650bE
+DYNAMIC_SYMBOL	118	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core9panicking16panic_in_cleanup17h83a4dc4749d8e353E
+DYNAMIC_SYMBOL	119	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN5alloc7raw_vec19RawVec$LT$T$C$A$GT$8grow_one17h2aa6465b48f58a28E
+DYNAMIC_SYMBOL	120	0x0	type	2	bind	1	vis	0	ndx	0	name	gum_user_get_sync
+DYNAMIC_SYMBOL	121	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_get_pkg_type_from_path
+DYNAMIC_SYMBOL	122	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN63_$LT$std..ffi..os_str..OsString$u20$as$u20$core..fmt..Debug$GT$3fmt17h3be105248657b48eE
+DYNAMIC_SYMBOL	123	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt3num3imp52_$LT$impl$u20$core..fmt..Display$u20$for$u20$u32$GT$3fmt17he2ca7092411ebd35E
+DYNAMIC_SYMBOL	124	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgrAdmin_register
+DYNAMIC_SYMBOL	125	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_archiveinfo_get_archiveinfo
+DYNAMIC_SYMBOL	126	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_installer_free
+DYNAMIC_SYMBOL	127	0x0	type	2	bind	1	vis	0	ndx	0	name	strlen
+DYNAMIC_SYMBOL	128	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN5alloc4sync16Arc$LT$T$C$A$GT$9drop_slow17h272f600bdfc1debeE
+DYNAMIC_SYMBOL	129	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_archive_appinfo_foreach_category
+DYNAMIC_SYMBOL	130	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt9Formatter9write_str17h5145a8f89b86ba5bE
+DYNAMIC_SYMBOL	131	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_archive_appinfo_get_appid
+DYNAMIC_SYMBOL	132	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgr_GetSizeResult_invoke
+DYNAMIC_SYMBOL	133	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std2fs8DirEntry9file_name17haaa934a964396d7eE
+DYNAMIC_SYMBOL	134	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt9Formatter10debug_list17hdffc4aabed3b3934E
+DYNAMIC_SYMBOL	135	0x0	type	2	bind	1	vis	0	ndx	0	name	g_io_channel_unix_new
+DYNAMIC_SYMBOL	136	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN5alloc3str21_$LT$impl$u20$str$GT$12to_lowercase17had6f540054f36936E
+DYNAMIC_SYMBOL	137	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN5alloc3fmt6format12format_inner17he45d40db295e635eE
+DYNAMIC_SYMBOL	138	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN60_$LT$std..io..error..Error$u20$as$u20$core..fmt..Display$GT$3fmt17h152b0dde434b3e32E
+DYNAMIC_SYMBOL	139	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN59_$LT$core..ffi..c_str..CStr$u20$as$u20$core..fmt..Debug$GT$3fmt17hf27b3d1990344b64E
+DYNAMIC_SYMBOL	140	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_pkginfo_get_usr_pkginfo
+DYNAMIC_SYMBOL	141	0x0	type	2	bind	1	vis	0	ndx	0	name	g_timeout_add_seconds_full
+DYNAMIC_SYMBOL	142	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std3sys2fs8read_dir17h03c76842b2fd6c66E
+DYNAMIC_SYMBOL	143	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_array_string_get
+DYNAMIC_SYMBOL	144	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_get_uids
+DYNAMIC_SYMBOL	145	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_appinfo_get_usr_list
+DYNAMIC_SYMBOL	146	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_pkginfo_destroy_pkginfo
+DYNAMIC_SYMBOL	147	0x0	type	2	bind	1	vis	0	ndx	0	name	get_adjusted_pkgpath
+DYNAMIC_SYMBOL	148	0x0	type	2	bind	1	vis	0	ndx	0	name	_RNvCsj4CZ6flxxfE_7___rustc12___rust_alloc
+DYNAMIC_SYMBOL	149	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN58_$LT$std..io..error..Error$u20$as$u20$core..fmt..Debug$GT$3fmt17h3e4e611a5556abe0E
+DYNAMIC_SYMBOL	150	0x0	type	2	bind	1	vis	0	ndx	0	name	g_main_loop_run
+DYNAMIC_SYMBOL	151	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgr_unregister
+DYNAMIC_SYMBOL	152	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgrAdmin_unregister
+DYNAMIC_SYMBOL	153	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_installer_send_app_signal_for_uid
+DYNAMIC_SYMBOL	154	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_archiveinfo_destroy_archiveinfo
+DYNAMIC_SYMBOL	155	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_appinfo_get_pkgid
+DYNAMIC_SYMBOL	156	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_pkginfo_foreach_plugin
+DYNAMIC_SYMBOL	157	0x0	type	2	bind	1	vis	0	ndx	0	name	signalfd
+DYNAMIC_SYMBOL	158	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN57_$LT$core..time..Duration$u20$as$u20$core..fmt..Debug$GT$3fmt17h41e726352e21d929E
+DYNAMIC_SYMBOL	159	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN102_$LT$std..sys..process..unix..common..cstring_array..CStringArray$u20$as$u20$core..ops..drop..Drop$GT$4drop17h34ceb57c69128e82E
+DYNAMIC_SYMBOL	160	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_notify
+DYNAMIC_SYMBOL	161	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core9panicking19panic_cannot_unwind17hba2616616ab1af0bE
+DYNAMIC_SYMBOL	162	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_parser_register_pkg_update_info_in_usr_db
+DYNAMIC_SYMBOL	163	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_parser_update_app_icon_info_in_usr_db
+DYNAMIC_SYMBOL	164	0x0	type	2	bind	1	vis	0	ndx	0	name	memset
+DYNAMIC_SYMBOL	165	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_parser_update_global_app_disable_for_uid_info_in_db
+DYNAMIC_SYMBOL	166	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_parser_update_app_label_info_in_usr_db
+DYNAMIC_SYMBOL	167	0x0	type	2	bind	1	vis	0	ndx	0	name	strncasecmp
+DYNAMIC_SYMBOL	168	0x0	type	2	bind	1	vis	0	ndx	0	name	mkfifo
+DYNAMIC_SYMBOL	169	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core5slice6memchr14memchr_aligned17hb61f4e0f77af6b59E
+DYNAMIC_SYMBOL	170	0x0	type	2	bind	1	vis	0	ndx	0	name	setgroups
+DYNAMIC_SYMBOL	171	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_pkginfo_get_usr_all_pkginfo
+DYNAMIC_SYMBOL	172	0x0	type	2	bind	1	vis	0	ndx	0	name	g_object_unref
+DYNAMIC_SYMBOL	173	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_registerTMCloneTable
+DYNAMIC_SYMBOL	174	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_ResPath_get_From
+DYNAMIC_SYMBOL	175	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_parser_unregister_all_pkg_update_info_in_usr_db
+DYNAMIC_SYMBOL	176	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt3num55_$LT$impl$u20$core..fmt..LowerHex$u20$for$u20$usize$GT$3fmt17h938069f0770c9b17E
+DYNAMIC_SYMBOL	177	0x0	type	2	bind	1	vis	0	ndx	0	name	check_valid_path
+DYNAMIC_SYMBOL	178	0x0	type	2	bind	1	vis	0	ndx	0	name	getgroups
+DYNAMIC_SYMBOL	179	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_appinfo_get_appid
+DYNAMIC_SYMBOL	180	0x0	type	2	bind	1	vis	0	ndx	0	name	abort
+DYNAMIC_SYMBOL	181	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN93_$LT$alloc..collections..btree..mem..replace..PanicGuard$u20$as$u20$core..ops..drop..Drop$GT$4drop17haa492fa3b7cdca96E
+DYNAMIC_SYMBOL	182	0x0	type	2	bind	1	vis	0	ndx	0	name	waitpid
+DYNAMIC_SYMBOL	183	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt3num52_$LT$impl$u20$core..fmt..LowerHex$u20$for$u20$u8$GT$3fmt17h7fef54cd662c5e77E
+DYNAMIC_SYMBOL	184	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core3fmt3num3imp54_$LT$impl$u20$core..fmt..Display$u20$for$u20$usize$GT$3fmt17h142215f41c2c8976E
+DYNAMIC_SYMBOL	185	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_appinfo_get_root_path
+DYNAMIC_SYMBOL	186	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_parser_update_global_app_splash_screen_display_info_in_usr_db
+DYNAMIC_SYMBOL	187	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN5alloc3ffi5c_str7CString19_from_vec_unchecked17h84142438e1e68ea0E
+DYNAMIC_SYMBOL	188	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std3sys2fs9read_link17hc6678a74d26ba29dE
+DYNAMIC_SYMBOL	189	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_parser_unregister_pkg_update_info_in_usr_db
+DYNAMIC_SYMBOL	190	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_array_ResPath_get
+DYNAMIC_SYMBOL	191	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_ResPath_get_To
+DYNAMIC_SYMBOL	192	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN4core4cell22panic_already_borrowed17h796ba7c547f37078E
+DYNAMIC_SYMBOL	193	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_installer_set_request_type
+DYNAMIC_SYMBOL	194	0x0	type	2	bind	1	vis	0	ndx	0	name	aul_terminate_pid_for_uid
+DYNAMIC_SYMBOL	195	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgrAdmin_context_get_peer_info
+DYNAMIC_SYMBOL	196	0x0	type	2	bind	1	vis	0	ndx	0	name	g_idle_add
+DYNAMIC_SYMBOL	197	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_parser_update_app_disable_info_in_usr_db
+DYNAMIC_SYMBOL	198	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgrForClearCache_context_get_peer_info
+DYNAMIC_SYMBOL	199	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_archiveinfo_foreach_appinfo
+DYNAMIC_SYMBOL	200	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_pkginfo_get_type
+DYNAMIC_SYMBOL	201	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_appinfo_destroy_appinfo
+DYNAMIC_SYMBOL	202	0x0	type	2	bind	1	vis	0	ndx	0	name	set_power_lock
+DYNAMIC_SYMBOL	203	0x0	type	2	bind	1	vis	0	ndx	0	name	usleep
+DYNAMIC_SYMBOL	204	0x0	type	2	bind	1	vis	0	ndx	0	name	g_io_channel_read_chars
+DYNAMIC_SYMBOL	205	0x0	type	2	bind	1	vis	0	ndx	0	name	aul_app_get_pid_for_uid
+DYNAMIC_SYMBOL	206	0x0	type	2	bind	1	vis	0	ndx	0	name	check_csr
+DYNAMIC_SYMBOL	207	0x0	type	2	bind	1	vis	0	ndx	0	name	__libc_start_main
+DYNAMIC_SYMBOL	208	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN3std4path4Path10is_symlink17h27059c093154a4efE
+DYNAMIC_SYMBOL	209	0x0	type	2	bind	1	vis	0	ndx	0	name	rust_eh_personality
+DYNAMIC_SYMBOL	210	0x0	type	2	bind	1	vis	0	ndx	0	name	aul_app_get_pkgid_bypid_for_uid
+DYNAMIC_SYMBOL	211	0x0	type	2	bind	1	vis	0	ndx	0	name	putenv
+DYNAMIC_SYMBOL	212	0x0	type	2	bind	1	vis	0	ndx	0	name	_ZN55_$LT$std..path..PathBuf$u20$as$u20$core..fmt..Debug$GT$3fmt17h75504951f64d65fbE
+DYNAMIC_SYMBOL	213	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgrinfo_updateinfo_set_version
+DYNAMIC_SYMBOL	214	0x0	type	2	bind	1	vis	0	ndx	0	name	bcmp
+DYNAMIC_SYMBOL	215	0x0	type	2	bind	1	vis	0	ndx	0	name	pkgmgr_installer_send_app_signal
+DYNAMIC_SYMBOL	216	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgrForClearCache_unregister
+DYNAMIC_SYMBOL	217	0x0	type	2	bind	1	vis	0	ndx	0	name	rpc_port_stub_PkgMgr_GetSizeResult_destroy
+DYNAMIC	0x1	0x24f2
+DYNAMIC	0x1	0x24ff
+DYNAMIC	0x1	0x2518
+DYNAMIC	0x1	0x2528
+DYNAMIC	0x1	0x2541
+DYNAMIC	0x1	0x2555
+DYNAMIC	0x1	0x2561
+DYNAMIC	0x1	0x2577
+DYNAMIC	0x1	0x258b
+DYNAMIC	0x1	0x2597
+DYNAMIC	0x1	0x25b0
+DYNAMIC	0x1	0x25bc
+DYNAMIC	0x1	0x25d7
+DYNAMIC	0x1	0x25e8
+DYNAMIC	0x1	0x25f2
+DYNAMIC	0xc	0x6c84
+DYNAMIC	0xd	0x43bc8
+DYNAMIC	0x19	0x4c000
+DYNAMIC	0x1b	0x4
+DYNAMIC	0x1a	0x4c004
+DYNAMIC	0x1c	0x4
+DYNAMIC	0x4	0x1ac
+DYNAMIC	0x6ffffef5	0xb58
+DYNAMIC	0x5	0x1910
+DYNAMIC	0x6	0xb70
+DYNAMIC	0xa	0x263e
+DYNAMIC	0xb	0x10
+DYNAMIC	0x15	0x0
+DYNAMIC	0x3	0x4f5e8
+DYNAMIC	0x2	0x650
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x6634
+DYNAMIC	0x11	0x4194
+DYNAMIC	0x12	0x24a0
+DYNAMIC	0x13	0x8
+DYNAMIC	0x1e	0x8
+DYNAMIC	0x6ffffffb	0x8000001
+DYNAMIC	0x6ffffffe	0x4104
+DYNAMIC	0x6fffffff	0x3
+DYNAMIC	0x6ffffff0	0x3f4e
+DYNAMIC	0x6ffffffa	0x481
+DYNAMIC	0x0	0x0
+FIELD	RELRO	Full
+FIELD	NX	Enabled
+FIELD	PIE	Yes
+FIELD	canary	No dynamic evidence
+FIELD	FORTIFY	No dynamic evidence
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Absent
+FIELD	dynamic_export_count_including_ABS	0
+FIELD	dynamic_export_non_ABS_count	0
+FIELD	dynamic_export_function_count	0
+METADATA_READER_SUCCESS
+
+
+RPM_LUA_EXIT_CODE: 0

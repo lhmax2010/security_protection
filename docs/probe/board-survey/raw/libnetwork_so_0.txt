@@ -1,0 +1,288 @@
+COMMAND: readelf -W -h -l -S -d --dyn-syms /usr/lib/libnetwork.so.0
+sh: line 160: readelf: command not found
+READELF_EXIT_CODE: 127
+COMMAND: RPM4.14.1 embedded Lua5.1 direct read-only ELF metadata (/usr/lib/libnetwork.so.0)
+METHOD	RPM_EMBEDDED_LUA_DIRECT_ELF_METADATA	Lua=Lua 5.1
+TARGET	/usr/lib/libnetwork.so.0	shared-library
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	6	shoff	0x14280	shnum	25
+PROGRAM_HEADER	0	0x70000001	offset	0x12afc	vaddr	0x12afc	filesz	1064	memsz	1064	flags	4
+PROGRAM_HEADER	1	0x1	offset	0x0	vaddr	0x0	filesz	77608	memsz	77608	flags	5
+PROGRAM_HEADER	2	0x1	offset	0x13000	vaddr	0x13000	filesz	4484	memsz	4528	flags	6
+PROGRAM_HEADER	3	0x2	offset	0x130b8	vaddr	0x130b8	filesz	288	memsz	288	flags	6
+PROGRAM_HEADER	4	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+PROGRAM_HEADER	5	0x6474e552	offset	0x13000	vaddr	0x13000	filesz	4096	memsz	4096	flags	4
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.gnu.hash	1879048182	offset	0xf4	size	672	link	2	entsize	4
+SECTION	2	.dynsym	11	offset	0x394	size	2368	link	3	entsize	16
+SECTION	3	.dynstr	3	offset	0xcd4	size	2899	link	0	entsize	0
+SECTION	4	.gnu.version	1879048191	offset	0x1828	size	296	link	2	entsize	2
+SECTION	5	.gnu.version_r	1879048190	offset	0x1950	size	96	link	3	entsize	0
+SECTION	6	.rel.dyn	9	offset	0x19b0	size	424	link	2	entsize	8
+SECTION	7	.rel.plt	9	offset	0x1b58	size	680	link	2	entsize	8
+SECTION	8	.init	1	offset	0x1e00	size	12	link	0	entsize	0
+SECTION	9	.plt	1	offset	0x1e0c	size	1048	link	0	entsize	4
+SECTION	10	.text	1	offset	0x2224	size	49100	link	0	entsize	0
+SECTION	11	.fini	1	offset	0xe1f0	size	8	link	0	entsize	0
+SECTION	12	.rodata	1	offset	0xe1f8	size	18568	link	0	entsize	0
+SECTION	13	.ARM.extab	1	offset	0x12a80	size	124	link	0	entsize	0
+SECTION	14	.ARM.exidx	1879048193	offset	0x12afc	size	1064	link	10	entsize	0
+SECTION	15	.eh_frame	1	offset	0x12f24	size	4	link	0	entsize	0
+SECTION	16	.init_array	14	offset	0x13000	size	4	link	0	entsize	4
+SECTION	17	.fini_array	15	offset	0x13004	size	8	link	0	entsize	4
+SECTION	18	.data.rel.ro	1	offset	0x1300c	size	172	link	0	entsize	0
+SECTION	19	.dynamic	6	offset	0x130b8	size	288	link	3	entsize	8
+SECTION	20	.got	1	offset	0x14000	size	384	link	0	entsize	4
+SECTION	21	.data	1	offset	0x14180	size	4	link	0	entsize	0
+SECTION	22	.bss	8	offset	0x14184	size	44	link	0	entsize	0
+SECTION	23	.gnu_debuglink	1	offset	0x14184	size	32	link	0	entsize	0
+SECTION	24	.shstrtab	3	offset	0x141a4	size	218	link	0	entsize	0
+DYNAMIC_SYMBOL	0	0x0	type	0	bind	0	vis	0	ndx	0	name	
+DYNAMIC_SYMBOL	1	0x1e00	type	3	bind	0	vis	0	ndx	8	name	
+DYNAMIC_SYMBOL	2	0x14180	type	3	bind	0	vis	0	ndx	21	name	
+DYNAMIC_SYMBOL	3	0x0	type	2	bind	1	vis	0	ndx	0	name	g_free
+DYNAMIC_SYMBOL	4	0x0	type	2	bind	1	vis	0	ndx	0	name	g_slist_remove
+DYNAMIC_SYMBOL	5	0x0	type	2	bind	1	vis	0	ndx	0	name	inet_ntop
+DYNAMIC_SYMBOL	6	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_get_uint16
+DYNAMIC_SYMBOL	7	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_get_byte
+DYNAMIC_SYMBOL	8	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_is_of_type
+DYNAMIC_SYMBOL	9	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_ref_sink
+DYNAMIC_SYMBOL	10	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_destroy
+DYNAMIC_SYMBOL	11	0x0	type	2	bind	1	vis	0	ndx	0	name	g_str_hash
+DYNAMIC_SYMBOL	12	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr0
+DYNAMIC_SYMBOL	13	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_get_int32
+DYNAMIC_SYMBOL	14	0x0	type	2	bind	1	vis	0	ndx	0	name	inet_ntoa
+DYNAMIC_SYMBOL	15	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_builder_add
+DYNAMIC_SYMBOL	16	0x0	type	2	bind	1	vis	0	ndx	0	name	inet_network
+DYNAMIC_SYMBOL	17	0x0	type	0	bind	2	vis	0	ndx	0	name	__gmon_start__
+DYNAMIC_SYMBOL	18	0x0	type	2	bind	1	vis	0	ndx	0	name	g_object_unref
+DYNAMIC_SYMBOL	19	0x0	type	2	bind	1	vis	0	ndx	0	name	g_strrstr
+DYNAMIC_SYMBOL	20	0x0	type	2	bind	1	vis	0	ndx	0	name	g_strcmp0
+DYNAMIC_SYMBOL	21	0x0	type	2	bind	1	vis	0	ndx	0	name	g_strdup
+DYNAMIC_SYMBOL	22	0x0	type	2	bind	1	vis	0	ndx	0	name	fclose
+DYNAMIC_SYMBOL	23	0x0	type	2	bind	1	vis	0	ndx	0	name	fgets
+DYNAMIC_SYMBOL	24	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_insert
+DYNAMIC_SYMBOL	25	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_print
+DYNAMIC_SYMBOL	26	0x0	type	2	bind	1	vis	0	ndx	0	name	memset
+DYNAMIC_SYMBOL	27	0x0	type	2	bind	1	vis	0	ndx	0	name	strrchr
+DYNAMIC_SYMBOL	28	0x0	type	2	bind	1	vis	0	ndx	0	name	__dlog_print
+DYNAMIC_SYMBOL	29	0x0	type	2	bind	1	vis	0	ndx	0	name	g_dbus_connection_call_sync
+DYNAMIC_SYMBOL	30	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_deregisterTMCloneTable
+DYNAMIC_SYMBOL	31	0x0	type	2	bind	1	vis	0	ndx	0	name	free
+DYNAMIC_SYMBOL	32	0x0	type	2	bind	1	vis	0	ndx	0	name	g_slist_append
+DYNAMIC_SYMBOL	33	0x0	type	2	bind	1	vis	0	ndx	0	name	access
+DYNAMIC_SYMBOL	34	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_new_string
+DYNAMIC_SYMBOL	35	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_registerTMCloneTable
+DYNAMIC_SYMBOL	36	0x0	type	2	bind	1	vis	0	ndx	0	name	inet_pton
+DYNAMIC_SYMBOL	37	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_unlock
+DYNAMIC_SYMBOL	38	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_type_checked_
+DYNAMIC_SYMBOL	39	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_new
+DYNAMIC_SYMBOL	40	0x0	type	2	bind	1	vis	0	ndx	0	name	__dlog_sec_print
+DYNAMIC_SYMBOL	41	0x0	type	2	bind	1	vis	0	ndx	0	name	g_dbus_connection_signal_unsubscribe
+DYNAMIC_SYMBOL	42	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_lock
+DYNAMIC_SYMBOL	43	0x0	type	2	bind	1	vis	0	ndx	0	name	strlen
+DYNAMIC_SYMBOL	44	0x0	type	2	bind	1	vis	0	ndx	0	name	g_slist_prepend
+DYNAMIC_SYMBOL	45	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_iter_loop
+DYNAMIC_SYMBOL	46	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_iter_free
+DYNAMIC_SYMBOL	47	0x0	type	2	bind	1	vis	0	ndx	0	name	memcpy
+DYNAMIC_SYMBOL	48	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_get_uint32
+DYNAMIC_SYMBOL	49	0x0	type	2	bind	1	vis	0	ndx	0	name	fopen64
+DYNAMIC_SYMBOL	50	0x0	type	2	bind	1	vis	0	ndx	0	name	g_snprintf
+DYNAMIC_SYMBOL	51	0x0	type	2	bind	1	vis	0	ndx	0	name	g_dbus_connection_new_for_address_sync
+DYNAMIC_SYMBOL	52	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_builder_end
+DYNAMIC_SYMBOL	53	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_get
+DYNAMIC_SYMBOL	54	0x0	type	2	bind	1	vis	0	ndx	0	name	bcmp
+DYNAMIC_SYMBOL	55	0x0	type	2	bind	1	vis	0	ndx	0	name	g_slist_find
+DYNAMIC_SYMBOL	56	0x0	type	2	bind	1	vis	0	ndx	0	name	g_try_malloc0_n
+DYNAMIC_SYMBOL	57	0x0	type	1	bind	1	vis	0	ndx	0	name	__stack_chk_guard
+DYNAMIC_SYMBOL	58	0x0	type	2	bind	1	vis	0	ndx	0	name	atoi
+DYNAMIC_SYMBOL	59	0x0	type	2	bind	1	vis	0	ndx	0	name	strstr
+DYNAMIC_SYMBOL	60	0x0	type	2	bind	1	vis	0	ndx	0	name	g_str_has_prefix
+DYNAMIC_SYMBOL	61	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_builder_new
+DYNAMIC_SYMBOL	62	0x0	type	2	bind	1	vis	0	ndx	0	name	g_source_remove
+DYNAMIC_SYMBOL	63	0x0	type	2	bind	1	vis	0	ndx	0	name	__ctype_b_loc
+DYNAMIC_SYMBOL	64	0x0	type	2	bind	1	vis	0	ndx	0	name	g_slist_length
+DYNAMIC_SYMBOL	65	0x0	type	2	bind	1	vis	0	ndx	0	name	malloc
+DYNAMIC_SYMBOL	66	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_get_boolean
+DYNAMIC_SYMBOL	67	0x0	type	2	bind	1	vis	0	ndx	0	name	__stack_chk_fail
+DYNAMIC_SYMBOL	68	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_unref
+DYNAMIC_SYMBOL	69	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_new_byte
+DYNAMIC_SYMBOL	70	0x0	type	2	bind	1	vis	0	ndx	0	name	strtok_r
+DYNAMIC_SYMBOL	71	0x0	type	2	bind	1	vis	0	ndx	0	name	g_slist_delete_link
+DYNAMIC_SYMBOL	72	0x0	type	2	bind	1	vis	0	ndx	0	name	g_hash_table_lookup
+DYNAMIC_SYMBOL	73	0x0	type	2	bind	1	vis	0	ndx	0	name	g_bus_get_sync
+DYNAMIC_SYMBOL	74	0x0	type	2	bind	1	vis	0	ndx	0	name	g_dbus_connection_call_finish
+DYNAMIC_SYMBOL	75	0x0	type	2	bind	1	vis	0	ndx	0	name	g_error_free
+DYNAMIC_SYMBOL	76	0x0	type	2	bind	1	vis	0	ndx	0	name	g_str_has_suffix
+DYNAMIC_SYMBOL	77	0x0	type	2	bind	1	vis	0	ndx	0	name	g_timeout_add
+DYNAMIC_SYMBOL	78	0x0	type	2	bind	1	vis	0	ndx	0	name	strncmp
+DYNAMIC_SYMBOL	79	0x0	type	2	bind	1	vis	0	ndx	0	name	realloc
+DYNAMIC_SYMBOL	80	0x0	type	2	bind	1	vis	0	ndx	0	name	g_dbus_connection_signal_subscribe
+DYNAMIC_SYMBOL	81	0x0	type	2	bind	1	vis	0	ndx	0	name	g_dbus_connection_call
+DYNAMIC_SYMBOL	82	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr1
+DYNAMIC_SYMBOL	83	0x0	type	2	bind	1	vis	0	ndx	0	name	g_cancellable_new
+DYNAMIC_SYMBOL	84	0x0	type	2	bind	1	vis	0	ndx	0	name	g_try_malloc0
+DYNAMIC_SYMBOL	85	0x0	type	2	bind	1	vis	0	ndx	0	name	g_slist_free_full
+DYNAMIC_SYMBOL	86	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_builder_unref
+DYNAMIC_SYMBOL	87	0x0	type	2	bind	1	vis	0	ndx	0	name	g_str_equal
+DYNAMIC_SYMBOL	88	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_new
+DYNAMIC_SYMBOL	89	0x0	type	2	bind	1	vis	0	ndx	0	name	g_variant_get_string
+DYNAMIC_SYMBOL	90	0x0	type	2	bind	1	vis	0	ndx	0	name	g_cancellable_cancel
+DYNAMIC_SYMBOL	91	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_finalize
+DYNAMIC_SYMBOL	92	0x0	type	2	bind	1	vis	0	ndx	0	name	g_strlcpy
+DYNAMIC_SYMBOL	93	0x2e19	type	2	bind	1	vis	0	ndx	10	name	net_get_metered_state
+EXPORT	2	1	0	10	net_get_metered_state
+DYNAMIC_SYMBOL	94	0x2735	type	2	bind	1	vis	0	ndx	10	name	net_get_active_net_info
+EXPORT	2	1	0	10	net_get_active_net_info
+DYNAMIC_SYMBOL	95	0xe0e1	type	2	bind	1	vis	0	ndx	10	name	net_mptcp_set_path_manager
+EXPORT	2	1	0	10	net_mptcp_set_path_manager
+DYNAMIC_SYMBOL	96	0xe1ad	type	2	bind	1	vis	0	ndx	10	name	net_mptcp_get_scheduler
+EXPORT	2	1	0	10	net_mptcp_get_scheduler
+DYNAMIC_SYMBOL	97	0xe015	type	2	bind	1	vis	0	ndx	10	name	net_mptcp_supported
+EXPORT	2	1	0	10	net_mptcp_supported
+DYNAMIC_SYMBOL	98	0x2ea1	type	2	bind	1	vis	0	ndx	10	name	net_ethernet_eap_enabled
+EXPORT	2	1	0	10	net_ethernet_eap_enabled
+DYNAMIC_SYMBOL	99	0x27c1	type	2	bind	1	vis	0	ndx	10	name	net_get_network_status
+EXPORT	2	1	0	10	net_get_network_status
+DYNAMIC_SYMBOL	100	0x7695	type	2	bind	1	vis	0	ndx	10	name	net_set_default_cellular_service_profile_async
+EXPORT	2	1	0	10	net_set_default_cellular_service_profile_async
+DYNAMIC_SYMBOL	101	0x2ee5	type	2	bind	1	vis	0	ndx	10	name	net_save_ethernet_eap_config
+EXPORT	2	1	0	10	net_save_ethernet_eap_config
+DYNAMIC_SYMBOL	102	0x36a1	type	2	bind	1	vis	0	ndx	10	name	net_get_ntp_server_info
+EXPORT	2	1	0	10	net_get_ntp_server_info
+DYNAMIC_SYMBOL	103	0x2c05	type	2	bind	1	vis	0	ndx	10	name	net_add_route_ipv6
+EXPORT	2	1	0	10	net_add_route_ipv6
+DYNAMIC_SYMBOL	104	0x2705	type	2	bind	1	vis	0	ndx	10	name	net_deregister_client
+EXPORT	2	1	0	10	net_deregister_client
+DYNAMIC_SYMBOL	105	0x2cc9	type	2	bind	1	vis	0	ndx	10	name	net_remove_route_ipv6
+EXPORT	2	1	0	10	net_remove_route_ipv6
+DYNAMIC_SYMBOL	106	0x2dd5	type	2	bind	1	vis	0	ndx	10	name	net_get_dhcp_state
+EXPORT	2	1	0	10	net_get_dhcp_state
+DYNAMIC_SYMBOL	107	0x6875	type	2	bind	1	vis	0	ndx	10	name	net_modify_profile
+EXPORT	2	1	0	10	net_modify_profile
+DYNAMIC_SYMBOL	108	0x22ed	type	2	bind	1	vis	0	ndx	10	name	net_get_wifi_state
+EXPORT	2	1	0	10	net_get_wifi_state
+DYNAMIC_SYMBOL	109	0x67d5	type	2	bind	1	vis	0	ndx	10	name	net_get_profile_info
+EXPORT	2	1	0	10	net_get_profile_info
+DYNAMIC_SYMBOL	110	0x2b3d	type	2	bind	1	vis	0	ndx	10	name	net_remove_route_entry
+EXPORT	2	1	0	10	net_remove_route_entry
+DYNAMIC_SYMBOL	111	0x29b5	type	2	bind	1	vis	0	ndx	10	name	net_remove_route
+EXPORT	2	1	0	10	net_remove_route
+DYNAMIC_SYMBOL	112	0x36e5	type	2	bind	1	vis	0	ndx	10	name	net_set_ntp_server
+EXPORT	2	1	0	10	net_set_ntp_server
+DYNAMIC_SYMBOL	113	0x3525	type	2	bind	1	vis	0	ndx	10	name	net_close_mesh_connection
+EXPORT	2	1	0	10	net_close_mesh_connection
+DYNAMIC_SYMBOL	114	0x34d9	type	2	bind	1	vis	0	ndx	10	name	net_get_vconf_value
+EXPORT	2	1	0	10	net_get_vconf_value
+DYNAMIC_SYMBOL	115	0x2339	type	2	bind	1	vis	0	ndx	10	name	net_get_wifi_interface_list
+EXPORT	2	1	0	10	net_get_wifi_interface_list
+DYNAMIC_SYMBOL	116	0xe125	type	2	bind	1	vis	0	ndx	10	name	net_mptcp_get_path_manager
+EXPORT	2	1	0	10	net_mptcp_get_path_manager
+DYNAMIC_SYMBOL	117	0x7291	type	2	bind	1	vis	0	ndx	10	name	net_get_cellular_modem_object_path
+EXPORT	2	1	0	10	net_get_cellular_modem_object_path
+DYNAMIC_SYMBOL	118	0x2d91	type	2	bind	1	vis	0	ndx	10	name	net_get_ethernet_cable_state
+EXPORT	2	1	0	10	net_get_ethernet_cable_state
+DYNAMIC_SYMBOL	119	0x2f95	type	2	bind	1	vis	0	ndx	10	name	net_open_mesh_connection_with_profile
+EXPORT	2	1	0	10	net_open_mesh_connection_with_profile
+DYNAMIC_SYMBOL	120	0xe169	type	2	bind	1	vis	0	ndx	10	name	net_mptcp_set_scheduler
+EXPORT	2	1	0	10	net_mptcp_set_scheduler
+DYNAMIC_SYMBOL	121	0x28a9	type	2	bind	1	vis	0	ndx	10	name	net_set_statistics
+EXPORT	2	1	0	10	net_set_statistics
+DYNAMIC_SYMBOL	122	0x2a75	type	2	bind	1	vis	0	ndx	10	name	net_add_route_entry
+EXPORT	2	1	0	10	net_add_route_entry
+DYNAMIC_SYMBOL	123	0x3771	type	2	bind	1	vis	0	ndx	10	name	net_unset_cs_tid
+EXPORT	2	1	0	10	net_unset_cs_tid
+DYNAMIC_SYMBOL	124	0x2501	type	2	bind	1	vis	0	ndx	10	name	net_check_profile_privilege
+EXPORT	2	1	0	10	net_check_profile_privilege
+DYNAMIC_SYMBOL	125	0x5d7d	type	2	bind	1	vis	0	ndx	10	name	net_add_profile
+EXPORT	2	1	0	10	net_add_profile
+DYNAMIC_SYMBOL	126	0x30b9	type	2	bind	1	vis	0	ndx	10	name	net_close_connection
+EXPORT	2	1	0	10	net_close_connection
+DYNAMIC_SYMBOL	127	0x376d	type	2	bind	1	vis	0	ndx	10	name	net_set_cs_tid
+EXPORT	2	1	0	10	net_set_cs_tid
+DYNAMIC_SYMBOL	128	0x25b1	type	2	bind	1	vis	0	ndx	10	name	net_register_client
+EXPORT	2	1	0	10	net_register_client
+DYNAMIC_SYMBOL	129	0xe09d	type	2	bind	1	vis	0	ndx	10	name	net_mptcp_get_enabled
+EXPORT	2	1	0	10	net_mptcp_get_enabled
+DYNAMIC_SYMBOL	130	0x33c9	type	2	bind	1	vis	0	ndx	10	name	net_stop_tcpdump
+EXPORT	2	1	0	10	net_stop_tcpdump
+DYNAMIC_SYMBOL	131	0x30b5	type	2	bind	1	vis	0	ndx	10	name	net_open_connection_with_profile
+EXPORT	2	1	0	10	net_open_connection_with_profile
+DYNAMIC_SYMBOL	132	0x365d	type	2	bind	1	vis	0	ndx	10	name	net_get_clock_update_info
+EXPORT	2	1	0	10	net_get_clock_update_info
+DYNAMIC_SYMBOL	133	0x79e5	type	2	bind	1	vis	0	ndx	10	name	net_get_preferred_ipv6_address
+EXPORT	2	1	0	10	net_get_preferred_ipv6_address
+DYNAMIC_SYMBOL	134	0x2451	type	2	bind	1	vis	0	ndx	10	name	net_check_get_privilege
+EXPORT	2	1	0	10	net_check_get_privilege
+DYNAMIC_SYMBOL	135	0x284d	type	2	bind	1	vis	0	ndx	10	name	net_get_statistics
+EXPORT	2	1	0	10	net_get_statistics
+DYNAMIC_SYMBOL	136	0x3441	type	2	bind	1	vis	0	ndx	10	name	net_get_tcpdump_state
+EXPORT	2	1	0	10	net_get_tcpdump_state
+DYNAMIC_SYMBOL	137	0x71e5	type	2	bind	1	vis	0	ndx	10	name	net_get_all_profile_list
+EXPORT	2	1	0	10	net_get_all_profile_list
+DYNAMIC_SYMBOL	138	0x5e4d	type	2	bind	1	vis	0	ndx	10	name	net_delete_profile
+EXPORT	2	1	0	10	net_delete_profile
+DYNAMIC_SYMBOL	139	0x70ed	type	2	bind	1	vis	0	ndx	10	name	net_get_profile_list
+EXPORT	2	1	0	10	net_get_profile_list
+DYNAMIC_SYMBOL	140	0x7819	type	2	bind	1	vis	0	ndx	10	name	net_foreach_ipv6_address
+EXPORT	2	1	0	10	net_foreach_ipv6_address
+DYNAMIC_SYMBOL	141	0xe059	type	2	bind	1	vis	0	ndx	10	name	net_mptcp_set_enabled
+EXPORT	2	1	0	10	net_mptcp_set_enabled
+DYNAMIC_SYMBOL	142	0x74bd	type	2	bind	1	vis	0	ndx	10	name	net_set_default_cellular_service_profile
+EXPORT	2	1	0	10	net_set_default_cellular_service_profile
+DYNAMIC_SYMBOL	143	0x3729	type	2	bind	1	vis	0	ndx	10	name	net_clear_ntp_server
+EXPORT	2	1	0	10	net_clear_ntp_server
+DYNAMIC_SYMBOL	144	0x2e5d	type	2	bind	1	vis	0	ndx	10	name	net_ethernet_eap_enable
+EXPORT	2	1	0	10	net_ethernet_eap_enable
+DYNAMIC_SYMBOL	145	0x5c01	type	2	bind	1	vis	0	ndx	10	name	net_reset_profile
+EXPORT	2	1	0	10	net_reset_profile
+DYNAMIC_SYMBOL	146	0x3351	type	2	bind	1	vis	0	ndx	10	name	net_start_tcpdump
+EXPORT	2	1	0	10	net_start_tcpdump
+DYNAMIC_SYMBOL	147	0x28f5	type	2	bind	1	vis	0	ndx	10	name	net_add_route
+EXPORT	2	1	0	10	net_add_route
+DYNAMIC	0x1	0xab9
+DYNAMIC	0x1	0xac9
+DYNAMIC	0x1	0xadd
+DYNAMIC	0x1	0xaee
+DYNAMIC	0x1	0xafb
+DYNAMIC	0x1	0xb09
+DYNAMIC	0x1	0xb19
+DYNAMIC	0x1	0xb23
+DYNAMIC	0xe	0xb31
+DYNAMIC	0xc	0x1e00
+DYNAMIC	0xd	0xe1f0
+DYNAMIC	0x19	0x13000
+DYNAMIC	0x1b	0x4
+DYNAMIC	0x1a	0x13004
+DYNAMIC	0x1c	0x8
+DYNAMIC	0x6ffffef5	0xf4
+DYNAMIC	0x5	0xcd4
+DYNAMIC	0x6	0x394
+DYNAMIC	0xa	0xb53
+DYNAMIC	0xb	0x10
+DYNAMIC	0x3	0x14000
+DYNAMIC	0x2	0x2a8
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x1b58
+DYNAMIC	0x11	0x19b0
+DYNAMIC	0x12	0x1a8
+DYNAMIC	0x13	0x8
+DYNAMIC	0x6ffffffe	0x1950
+DYNAMIC	0x6fffffff	0x3
+DYNAMIC	0x6ffffff0	0x1828
+DYNAMIC	0x6ffffffa	0x2d
+DYNAMIC	0x0	0x0
+FIELD	RELRO	Partial
+FIELD	NX	Enabled
+FIELD	PIE	N/A(DSO)
+FIELD	canary	Detected(import)
+FIELD	FORTIFY	No dynamic evidence
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Absent
+FIELD	dynamic_export_count_including_ABS	55
+FIELD	dynamic_export_non_ABS_count	55
+FIELD	dynamic_export_function_count	55
+METADATA_READER_SUCCESS
+
+
+RPM_LUA_EXIT_CODE: 0

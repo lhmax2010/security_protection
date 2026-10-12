@@ -1,0 +1,170 @@
+METHOD	RPM_EMBEDDED_LUA_DIRECT_ELF_METADATA	Lua=Lua 5.3
+TARGET	/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_rust_armv7l	executable
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	10	shoff	0x40829c	shnum	40
+PROGRAM_HEADER	0	0x70000001	offset	0x4b35c	vaddr	0x4b35c	filesz	3568	memsz	3568	flags	4
+PROGRAM_HEADER	1	0x6	offset	0x34	vaddr	0x34	filesz	320	memsz	320	flags	4
+PROGRAM_HEADER	2	0x3	offset	0x174	vaddr	0x174	filesz	25	memsz	25	flags	4
+INTERPRETER	/lib/ld-linux-armhf.so.3
+PROGRAM_HEADER	3	0x1	offset	0x0	vaddr	0x0	filesz	311632	memsz	311632	flags	5
+PROGRAM_HEADER	4	0x1	offset	0x4cc48	vaddr	0x4dc48	filesz	6600	memsz	6732	flags	6
+PROGRAM_HEADER	5	0x2	offset	0x4dd48	vaddr	0x4ed48	filesz	264	memsz	264	flags	6
+PROGRAM_HEADER	6	0x4	offset	0x190	vaddr	0x190	filesz	68	memsz	68	flags	4
+PROGRAM_HEADER	7	0x7	offset	0x4cc48	vaddr	0x4dc48	filesz	24	memsz	48	flags	4
+PROGRAM_HEADER	8	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+PROGRAM_HEADER	9	0x6474e552	offset	0x4cc48	vaddr	0x4dc48	filesz	5048	memsz	5048	flags	4
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.interp	1	offset	0x174	size	25	link	0	entsize	0
+SECTION	2	.note.gnu.build-id	7	offset	0x190	size	36	link	0	entsize	0
+SECTION	3	.note.ABI-tag	7	offset	0x1b4	size	32	link	0	entsize	0
+SECTION	4	.gnu.hash	1879048182	offset	0x1d4	size	24	link	5	entsize	4
+SECTION	5	.dynsym	11	offset	0x1ec	size	1152	link	6	entsize	16
+SECTION	6	.dynstr	3	offset	0x66c	size	1060	link	0	entsize	0
+SECTION	7	.gnu.version	1879048191	offset	0xa90	size	144	link	5	entsize	2
+SECTION	8	.gnu.version_r	1879048190	offset	0xb20	size	240	link	6	entsize	0
+SECTION	9	.rel.dyn	9	offset	0xc10	size	3384	link	5	entsize	8
+SECTION	10	.rel.plt	9	offset	0x1948	size	520	link	5	entsize	8
+SECTION	11	.init	1	offset	0x1b50	size	12	link	0	entsize	0
+SECTION	12	.plt	1	offset	0x1b5c	size	800	link	0	entsize	4
+SECTION	13	.text	1	offset	0x1e80	size	269228	link	0	entsize	0
+SECTION	14	.fini	1	offset	0x43a2c	size	8	link	0	entsize	0
+SECTION	15	.rodata	1	offset	0x43a38	size	23492	link	0	entsize	0
+SECTION	16	.ARM.extab	1	offset	0x495fc	size	7520	link	0	entsize	0
+SECTION	17	.ARM.exidx	1879048193	offset	0x4b35c	size	3568	link	13	entsize	0
+SECTION	18	.eh_frame	1	offset	0x4c14c	size	4	link	0	entsize	0
+SECTION	19	.tdata	1	offset	0x4cc48	size	24	link	0	entsize	0
+SECTION	20	.tbss	8	offset	0x4cc60	size	24	link	0	entsize	0
+SECTION	21	.init_array	14	offset	0x4cc60	size	8	link	0	entsize	4
+SECTION	22	.fini_array	15	offset	0x4cc68	size	4	link	0	entsize	4
+SECTION	23	.data.rel.ro	1	offset	0x4cc70	size	4312	link	0	entsize	0
+SECTION	24	.dynamic	6	offset	0x4dd48	size	264	link	6	entsize	8
+SECTION	25	.got	1	offset	0x4de50	size	432	link	0	entsize	4
+SECTION	26	.data	1	offset	0x4e000	size	1552	link	0	entsize	0
+SECTION	27	.bss	8	offset	0x4e610	size	132	link	0	entsize	0
+SECTION	28	.comment	1	offset	0x4e610	size	123	link	0	entsize	1
+SECTION	29	.ARM.attributes	1879048195	offset	0x4e68b	size	53	link	0	entsize	0
+SECTION	30	.debug_aranges	1	offset	0x4e6c0	size	15832	link	0	entsize	0
+SECTION	31	.debug_info	1	offset	0x52498	size	927349	link	0	entsize	0
+SECTION	32	.debug_abbrev	1	offset	0x134b0d	size	5406	link	0	entsize	0
+SECTION	33	.debug_line	1	offset	0x13602b	size	502615	link	0	entsize	0
+SECTION	34	.debug_frame	1	offset	0x1b0b84	size	61592	link	0	entsize	0
+SECTION	35	.debug_str	1	offset	0x1bfc1c	size	1888889	link	0	entsize	1
+SECTION	36	.debug_ranges	1	offset	0x38ce95	size	374768	link	0	entsize	0
+SECTION	37	.symtab	2	offset	0x3e8688	size	51856	link	38	entsize	16
+SECTION	38	.strtab	3	offset	0x3f5118	size	77820	link	0	entsize	0
+SECTION	39	.shstrtab	3	offset	0x408114	size	389	link	0	entsize	0
+DYNAMIC_SYMBOL	0	0x0	type	0	bind	0	vis	0	ndx	0	name	
+DYNAMIC_SYMBOL	1	0x1b50	type	3	bind	0	vis	0	ndx	11	name	
+DYNAMIC_SYMBOL	2	0x4f000	type	3	bind	0	vis	0	ndx	26	name	
+DYNAMIC_SYMBOL	3	0x0	type	2	bind	1	vis	0	ndx	0	name	abort
+DYNAMIC_SYMBOL	4	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_GetRegionStart
+DYNAMIC_SYMBOL	5	0x0	type	2	bind	1	vis	0	ndx	0	name	dl_iterate_phdr
+DYNAMIC_SYMBOL	6	0x0	type	2	bind	1	vis	0	ndx	0	name	getauxval
+DYNAMIC_SYMBOL	7	0x0	type	2	bind	1	vis	0	ndx	0	name	sysconf
+DYNAMIC_SYMBOL	8	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_GetDataRelBase
+DYNAMIC_SYMBOL	9	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_attr_getguardsize
+DYNAMIC_SYMBOL	10	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr0
+DYNAMIC_SYMBOL	11	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_setspecific
+DYNAMIC_SYMBOL	12	0x0	type	2	bind	1	vis	0	ndx	0	name	signal
+DYNAMIC_SYMBOL	13	0x0	type	0	bind	2	vis	0	ndx	0	name	__gmon_start__
+DYNAMIC_SYMBOL	14	0x0	type	2	bind	1	vis	0	ndx	0	name	getenv
+DYNAMIC_SYMBOL	15	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_VRS_Get
+DYNAMIC_SYMBOL	16	0x0	type	2	bind	1	vis	0	ndx	0	name	calloc
+DYNAMIC_SYMBOL	17	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_getattr_np
+DYNAMIC_SYMBOL	18	0x0	type	2	bind	1	vis	0	ndx	0	name	memset
+DYNAMIC_SYMBOL	19	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_DeleteException
+DYNAMIC_SYMBOL	20	0x0	type	2	bind	1	vis	0	ndx	0	name	sigaltstack
+DYNAMIC_SYMBOL	21	0x0	type	2	bind	1	vis	0	ndx	0	name	writev
+DYNAMIC_SYMBOL	22	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_deregisterTMCloneTable
+DYNAMIC_SYMBOL	23	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_GetLanguageSpecificData
+DYNAMIC_SYMBOL	24	0x0	type	2	bind	1	vis	0	ndx	0	name	free
+DYNAMIC_SYMBOL	25	0x0	type	2	bind	1	vis	0	ndx	0	name	read
+DYNAMIC_SYMBOL	26	0x0	type	2	bind	1	vis	0	ndx	0	name	write
+DYNAMIC_SYMBOL	27	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_registerTMCloneTable
+DYNAMIC_SYMBOL	28	0x0	type	2	bind	1	vis	0	ndx	0	name	stat64
+DYNAMIC_SYMBOL	29	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_thread_atexit_impl
+DYNAMIC_SYMBOL	30	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_RaiseException
+DYNAMIC_SYMBOL	31	0x0	type	2	bind	1	vis	0	ndx	0	name	__xpg_strerror_r
+DYNAMIC_SYMBOL	32	0x0	type	2	bind	1	vis	0	ndx	0	name	posix_memalign
+DYNAMIC_SYMBOL	33	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_key_create
+DYNAMIC_SYMBOL	34	0x0	type	2	bind	1	vis	0	ndx	0	name	strlen
+DYNAMIC_SYMBOL	35	0x0	type	2	bind	1	vis	0	ndx	0	name	memcpy
+DYNAMIC_SYMBOL	36	0x0	type	2	bind	1	vis	0	ndx	0	name	mprotect
+DYNAMIC_SYMBOL	37	0x0	type	2	bind	1	vis	0	ndx	0	name	fstat64
+DYNAMIC_SYMBOL	38	0x0	type	2	bind	1	vis	0	ndx	0	name	bcmp
+DYNAMIC_SYMBOL	39	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_attr_getstack
+DYNAMIC_SYMBOL	40	0x0	type	2	bind	1	vis	0	ndx	0	name	open64
+DYNAMIC_SYMBOL	41	0x0	type	2	bind	1	vis	0	ndx	0	name	__gnu_unwind_frame
+DYNAMIC_SYMBOL	42	0x0	type	2	bind	2	vis	0	ndx	0	name	gettid
+DYNAMIC_SYMBOL	43	0x0	type	2	bind	1	vis	0	ndx	0	name	realpath
+DYNAMIC_SYMBOL	44	0x0	type	2	bind	1	vis	0	ndx	0	name	close
+DYNAMIC_SYMBOL	45	0x0	type	2	bind	1	vis	0	ndx	0	name	lseek64
+DYNAMIC_SYMBOL	46	0x0	type	2	bind	1	vis	0	ndx	0	name	malloc
+DYNAMIC_SYMBOL	47	0x0	type	2	bind	1	vis	0	ndx	0	name	__tls_get_addr
+DYNAMIC_SYMBOL	48	0x0	type	2	bind	1	vis	0	ndx	0	name	mmap64
+DYNAMIC_SYMBOL	49	0x0	type	2	bind	1	vis	0	ndx	0	name	sigaction
+DYNAMIC_SYMBOL	50	0x0	type	2	bind	1	vis	0	ndx	0	name	poll
+DYNAMIC_SYMBOL	51	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_key_delete
+DYNAMIC_SYMBOL	52	0x0	type	2	bind	1	vis	0	ndx	0	name	getcwd
+DYNAMIC_SYMBOL	53	0x0	type	2	bind	1	vis	0	ndx	0	name	memmove
+DYNAMIC_SYMBOL	54	0x0	type	2	bind	1	vis	0	ndx	0	name	pause
+DYNAMIC_SYMBOL	55	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_Backtrace
+DYNAMIC_SYMBOL	56	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_VRS_Set
+DYNAMIC_SYMBOL	57	0x0	type	2	bind	1	vis	0	ndx	0	name	dup
+DYNAMIC_SYMBOL	58	0x0	type	2	bind	1	vis	0	ndx	0	name	readlink
+DYNAMIC_SYMBOL	59	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_GetTextRelBase
+DYNAMIC_SYMBOL	60	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_attr_destroy
+DYNAMIC_SYMBOL	61	0x0	type	2	bind	1	vis	0	ndx	0	name	munmap
+DYNAMIC_SYMBOL	62	0x0	type	2	bind	1	vis	0	ndx	0	name	fcntl
+DYNAMIC_SYMBOL	63	0x0	type	2	bind	1	vis	0	ndx	0	name	realloc
+DYNAMIC_SYMBOL	64	0x0	type	2	bind	1	vis	0	ndx	0	name	__libc_start_main
+DYNAMIC_SYMBOL	65	0x0	type	2	bind	2	vis	0	ndx	0	name	statx
+DYNAMIC_SYMBOL	66	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_Resume
+DYNAMIC_SYMBOL	67	0x0	type	2	bind	1	vis	0	ndx	0	name	syscall
+DYNAMIC_SYMBOL	68	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr1
+DYNAMIC_SYMBOL	69	0x0	type	2	bind	1	vis	0	ndx	0	name	__errno_location
+DYNAMIC_SYMBOL	70	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_self
+DYNAMIC_SYMBOL	71	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_finalize
+DYNAMIC	0x1	0x387
+DYNAMIC	0x1	0x395
+DYNAMIC	0x1	0x39f
+DYNAMIC	0xc	0x1b50
+DYNAMIC	0xd	0x43a2c
+DYNAMIC	0x19	0x4dc60
+DYNAMIC	0x1b	0x8
+DYNAMIC	0x1a	0x4dc68
+DYNAMIC	0x1c	0x4
+DYNAMIC	0x6ffffef5	0x1d4
+DYNAMIC	0x5	0x66c
+DYNAMIC	0x6	0x1ec
+DYNAMIC	0xa	0x424
+DYNAMIC	0xb	0x10
+DYNAMIC	0x15	0x0
+DYNAMIC	0x3	0x4ee50
+DYNAMIC	0x2	0x208
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x1948
+DYNAMIC	0x11	0xc10
+DYNAMIC	0x12	0xd38
+DYNAMIC	0x13	0x8
+DYNAMIC	0x1e	0x8
+DYNAMIC	0x6ffffffb	0x8000001
+DYNAMIC	0x6ffffffe	0xb20
+DYNAMIC	0x6fffffff	0x3
+DYNAMIC	0x6ffffff0	0xa90
+DYNAMIC	0x6ffffffa	0x19b
+DYNAMIC	0x0	0x0
+COMPILER_COMMENT	GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+COMPILER_COMMENT	rustc version 1.99.0 (b940084d7 2026-09-28)
+COMPILER_COMMENT	GCC: (crosstool-NG UNKNOWN) 8.5.0
+FIELD	RELRO	Full
+FIELD	NX	Enabled
+FIELD	PIE	Yes
+FIELD	canary	No dynamic evidence
+FIELD	FORTIFY	No dynamic evidence
+FIELD	stripped	No
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Absent
+FIELD	dynamic_export_count_including_ABS	0
+FIELD	dynamic_export_non_ABS_count	0
+FIELD	dynamic_export_function_count	0
+METADATA_READER_SUCCESS

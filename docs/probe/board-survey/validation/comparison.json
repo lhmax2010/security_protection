@@ -1,0 +1,78 @@
+{
+  "cases": [
+    {
+      "artifact": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_gcc_armv7l",
+      "elf32_or_64": "ELF32",
+      "expected_from_real_readelf": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "stripped": "No",
+        "RPATH": "Absent",
+        "RUNPATH": "Absent",
+        "canary": "No dynamic evidence",
+        "FORTIFY": "Detected(import)",
+        "dynamic_export_count_including_ABS": "0",
+        "dynamic_export_non_ABS_count": "0",
+        "dynamic_export_function_count": "0"
+      },
+      "mismatches": {}
+    },
+    {
+      "artifact": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l",
+      "elf32_or_64": "ELF32",
+      "expected_from_real_readelf": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "stripped": "No",
+        "RPATH": "Absent",
+        "RUNPATH": "Absent",
+        "canary": "No dynamic evidence",
+        "FORTIFY": "No dynamic evidence",
+        "dynamic_export_count_including_ABS": "0",
+        "dynamic_export_non_ABS_count": "0",
+        "dynamic_export_function_count": "0"
+      },
+      "mismatches": {}
+    },
+    {
+      "artifact": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_rust_armv7l",
+      "elf32_or_64": "ELF32",
+      "expected_from_real_readelf": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "stripped": "No",
+        "RPATH": "Absent",
+        "RUNPATH": "Absent",
+        "canary": "No dynamic evidence",
+        "FORTIFY": "No dynamic evidence",
+        "dynamic_export_count_including_ABS": "0",
+        "dynamic_export_non_ABS_count": "0",
+        "dynamic_export_function_count": "0"
+      },
+      "mismatches": {}
+    },
+    {
+      "artifact": "/usr/bin/ls",
+      "elf32_or_64": "ELF64",
+      "expected_from_real_readelf": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "stripped": "Yes(no .symtab)",
+        "RPATH": "Absent",
+        "RUNPATH": "Absent",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "dynamic_export_count_including_ABS": "7",
+        "dynamic_export_non_ABS_count": "7",
+        "dynamic_export_function_count": "6"
+      },
+      "mismatches": {}
+    }
+  ],
+  "all_agree": true,
+  "limitation": "Independent host readelf comparison on three existing ARM baselines plus host ELF64; board runtime separately verified on existing systemctl. Does not replace unavailable board readelf execution."
+}

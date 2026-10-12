@@ -1,6 +1,6 @@
-代表性定向样本：28份（12系统可执行、16平台共享库）；非随机全平台抽样。
-同一device+inode不重复计数，原路径均在/usr/bin或/usr/lib。
-id	路径	类别	选择理由	真实路径
+实际ELF样本：27份（11系统可执行、16平台共享库）。非随机全平台抽样。
+原先28候选中vconftool经板上魔数读取判为非ELF，排除但保留原始错误，不读取或回传其脚本正文。
+id	原路径	类别	选择理由	真实路径
 bash	/usr/bin/bash	executable	shell运行环境	/usr/bin/bash
 systemctl	/usr/bin/systemctl	executable	服务管理客户端	/usr/bin/systemctl
 dbus_daemon	/usr/bin/dbus-daemon	executable	系统IPC守护进程	/usr/bin/dbus-daemon
@@ -9,7 +9,6 @@ dlogutil	/usr/bin/dlogutil	executable	Tizen日志读取工具	/usr/bin/dlogutil
 cynara	/usr/bin/cynara	executable	Tizen访问控制守护进程	/usr/bin/cynara
 security_manager	/usr/bin/security-manager	executable	Tizen安全管理守护进程	/usr/bin/security-manager
 pkgmgr_server	/usr/bin/pkgmgr-server	executable	平台包管理服务	/usr/bin/pkgmgr-server
-vconftool	/usr/bin/vconftool	executable	平台配置工具	/usr/bin/vconftool
 sqlite3	/usr/bin/sqlite3	executable	数据库工具	/usr/bin/sqlite3
 rpm	/usr/bin/rpm	executable	系统包管理工具	/usr/bin/rpm
 find	/usr/bin/find	executable	基础系统工具	/usr/bin/find

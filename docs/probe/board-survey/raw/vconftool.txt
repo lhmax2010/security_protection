@@ -1,0 +1,7 @@
+COMMAND: readelf -W -h -l -S -d --dyn-syms /usr/bin/vconftool
+sh: line 160: readelf: command not found
+READELF_EXIT_CODE: 127
+COMMAND: RPM4.14.1 embedded Lua5.1 direct read-only ELF metadata (/usr/bin/vconftool)
+error: lua script failed: [string "<lua>"]:12: not an ELF file
+
+RPM_LUA_EXIT_CODE: 1

@@ -1,0 +1,198 @@
+COMMAND: readelf -W -h -l -S -d --dyn-syms /usr/lib/libdlog.so.0
+sh: line 160: readelf: command not found
+READELF_EXIT_CODE: 127
+COMMAND: RPM4.14.1 embedded Lua5.1 direct read-only ELF metadata (/usr/lib/libdlog.so.0)
+METHOD	RPM_EMBEDDED_LUA_DIRECT_ELF_METADATA	Lua=Lua 5.1
+TARGET	/usr/lib/libdlog.so.0	shared-library
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	7	shoff	0x1135c	shnum	25
+PROGRAM_HEADER	0	0x70000001	offset	0xfa28	vaddr	0xfa28	filesz	24	memsz	24	flags	4
+PROGRAM_HEADER	1	0x1	offset	0x0	vaddr	0x0	filesz	64068	memsz	64068	flags	5
+PROGRAM_HEADER	2	0x1	offset	0x10000	vaddr	0x10000	filesz	4712	memsz	29620	flags	6
+PROGRAM_HEADER	3	0x2	offset	0x10094	vaddr	0x10094	filesz	248	memsz	248	flags	6
+PROGRAM_HEADER	4	0x7	offset	0x10000	vaddr	0x10000	filesz	0	memsz	24	flags	4
+PROGRAM_HEADER	5	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+PROGRAM_HEADER	6	0x6474e552	offset	0x10000	vaddr	0x10000	filesz	4096	memsz	4096	flags	4
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.gnu.hash	1879048182	offset	0x114	size	144	link	2	entsize	4
+SECTION	2	.dynsym	11	offset	0x1a4	size	1696	link	3	entsize	16
+SECTION	3	.dynstr	3	offset	0x844	size	1211	link	0	entsize	0
+SECTION	4	.gnu.version	1879048191	offset	0xd00	size	212	link	2	entsize	2
+SECTION	5	.gnu.version_r	1879048190	offset	0xdd4	size	208	link	3	entsize	0
+SECTION	6	.rel.dyn	9	offset	0xea4	size	480	link	2	entsize	8
+SECTION	7	.rel.plt	9	offset	0x1084	size	720	link	2	entsize	8
+SECTION	8	.init	1	offset	0x1354	size	12	link	0	entsize	0
+SECTION	9	.plt	1	offset	0x1360	size	1100	link	0	entsize	4
+SECTION	10	.text	1	offset	0x17b0	size	50352	link	0	entsize	0
+SECTION	11	.fini	1	offset	0xdc60	size	8	link	0	entsize	0
+SECTION	12	.rodata	1	offset	0xdc68	size	7616	link	0	entsize	0
+SECTION	13	.ARM.exidx	1879048193	offset	0xfa28	size	24	link	10	entsize	0
+SECTION	14	.eh_frame	1	offset	0xfa40	size	4	link	0	entsize	0
+SECTION	15	.tbss	8	offset	0x10000	size	24	link	0	entsize	0
+SECTION	16	.init_array	14	offset	0x10000	size	12	link	0	entsize	4
+SECTION	17	.fini_array	15	offset	0x1000c	size	4	link	0	entsize	4
+SECTION	18	.data.rel.ro	1	offset	0x10010	size	132	link	0	entsize	0
+SECTION	19	.dynamic	6	offset	0x10094	size	248	link	3	entsize	8
+SECTION	20	.got	1	offset	0x11000	size	468	link	0	entsize	4
+SECTION	21	.data	1	offset	0x111d4	size	148	link	0	entsize	0
+SECTION	22	.bss	8	offset	0x11268	size	24908	link	0	entsize	0
+SECTION	23	.gnu_debuglink	1	offset	0x11268	size	28	link	0	entsize	0
+SECTION	24	.shstrtab	3	offset	0x11284	size	213	link	0	entsize	0
+DYNAMIC_SYMBOL	0	0x0	type	0	bind	0	vis	0	ndx	0	name	
+DYNAMIC_SYMBOL	1	0x1354	type	3	bind	0	vis	0	ndx	8	name	
+DYNAMIC_SYMBOL	2	0x111d4	type	3	bind	0	vis	0	ndx	21	name	
+DYNAMIC_SYMBOL	3	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_unlock
+DYNAMIC_SYMBOL	4	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr0
+DYNAMIC_SYMBOL	5	0x0	type	2	bind	1	vis	0	ndx	0	name	fdopen
+DYNAMIC_SYMBOL	6	0x0	type	2	bind	1	vis	0	ndx	0	name	calloc
+DYNAMIC_SYMBOL	7	0x0	type	2	bind	1	vis	0	ndx	0	name	raise
+DYNAMIC_SYMBOL	8	0x0	type	2	bind	1	vis	0	ndx	0	name	strcmp
+DYNAMIC_SYMBOL	9	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_finalize
+DYNAMIC_SYMBOL	10	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_deregisterTMCloneTable
+DYNAMIC_SYMBOL	11	0x0	type	2	bind	1	vis	0	ndx	0	name	__isoc23_strtoull
+DYNAMIC_SYMBOL	12	0x0	type	2	bind	1	vis	0	ndx	0	name	fopen
+DYNAMIC_SYMBOL	13	0x0	type	2	bind	1	vis	0	ndx	0	name	secure_getenv
+DYNAMIC_SYMBOL	14	0x0	type	2	bind	1	vis	0	ndx	0	name	read
+DYNAMIC_SYMBOL	15	0x0	type	2	bind	1	vis	0	ndx	0	name	mktime
+DYNAMIC_SYMBOL	16	0x0	type	2	bind	1	vis	0	ndx	0	name	gettid
+DYNAMIC_SYMBOL	17	0x0	type	2	bind	1	vis	0	ndx	0	name	memmove
+DYNAMIC_SYMBOL	18	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_rwlock_wrlock
+DYNAMIC_SYMBOL	19	0x0	type	2	bind	1	vis	0	ndx	0	name	free
+DYNAMIC_SYMBOL	20	0x0	type	2	bind	1	vis	0	ndx	0	name	vsyslog
+DYNAMIC_SYMBOL	21	0x0	type	2	bind	1	vis	0	ndx	0	name	fgets
+DYNAMIC_SYMBOL	22	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_lock
+DYNAMIC_SYMBOL	23	0x0	type	2	bind	1	vis	0	ndx	0	name	clock_gettime
+DYNAMIC_SYMBOL	24	0x0	type	2	bind	1	vis	0	ndx	0	name	_exit
+DYNAMIC_SYMBOL	25	0x0	type	2	bind	1	vis	0	ndx	0	name	memcpy
+DYNAMIC_SYMBOL	26	0x0	type	2	bind	1	vis	0	ndx	0	name	tolower
+DYNAMIC_SYMBOL	27	0x0	type	2	bind	1	vis	0	ndx	0	name	signal
+DYNAMIC_SYMBOL	28	0x0	type	2	bind	1	vis	0	ndx	0	name	time
+DYNAMIC_SYMBOL	29	0x0	type	2	bind	1	vis	0	ndx	0	name	sendmsg
+DYNAMIC_SYMBOL	30	0x0	type	2	bind	1	vis	0	ndx	0	name	memcmp
+DYNAMIC_SYMBOL	31	0x0	type	2	bind	1	vis	0	ndx	0	name	strdup
+DYNAMIC_SYMBOL	32	0x0	type	2	bind	1	vis	0	ndx	0	name	openat
+DYNAMIC_SYMBOL	33	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_setcancelstate
+DYNAMIC_SYMBOL	34	0x0	type	2	bind	1	vis	0	ndx	0	name	__register_atfork
+DYNAMIC_SYMBOL	35	0x0	type	2	bind	1	vis	0	ndx	0	name	unlink
+DYNAMIC_SYMBOL	36	0x0	type	2	bind	1	vis	0	ndx	0	name	dup2
+DYNAMIC_SYMBOL	37	0x0	type	2	bind	1	vis	0	ndx	0	name	realloc
+DYNAMIC_SYMBOL	38	0x0	type	2	bind	1	vis	0	ndx	0	name	strptime
+DYNAMIC_SYMBOL	39	0x0	type	2	bind	1	vis	0	ndx	0	name	localtime_r
+DYNAMIC_SYMBOL	40	0x0	type	2	bind	1	vis	0	ndx	0	name	scandirat
+DYNAMIC_SYMBOL	41	0x0	type	2	bind	1	vis	0	ndx	0	name	poll
+DYNAMIC_SYMBOL	42	0x0	type	1	bind	1	vis	0	ndx	0	name	stderr
+DYNAMIC_SYMBOL	43	0x0	type	2	bind	1	vis	0	ndx	0	name	ioctl
+DYNAMIC_SYMBOL	44	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_rwlock_rdlock
+DYNAMIC_SYMBOL	45	0x0	type	2	bind	1	vis	0	ndx	0	name	waitpid
+DYNAMIC_SYMBOL	46	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_trylock
+DYNAMIC_SYMBOL	47	0x0	type	2	bind	1	vis	0	ndx	0	name	strtok_r
+DYNAMIC_SYMBOL	48	0x0	type	2	bind	1	vis	0	ndx	0	name	getenv
+DYNAMIC_SYMBOL	49	0x0	type	2	bind	1	vis	0	ndx	0	name	malloc
+DYNAMIC_SYMBOL	50	0x0	type	2	bind	1	vis	0	ndx	0	name	strftime
+DYNAMIC_SYMBOL	51	0x0	type	2	bind	1	vis	0	ndx	0	name	mktemp
+DYNAMIC_SYMBOL	52	0x0	type	2	bind	1	vis	0	ndx	0	name	closelog
+DYNAMIC_SYMBOL	53	0x0	type	0	bind	2	vis	0	ndx	0	name	__gmon_start__
+DYNAMIC_SYMBOL	54	0x0	type	2	bind	1	vis	0	ndx	0	name	open
+DYNAMIC_SYMBOL	55	0x0	type	2	bind	1	vis	0	ndx	0	name	__ctype_b_loc
+DYNAMIC_SYMBOL	56	0x0	type	2	bind	1	vis	0	ndx	0	name	getpid
+DYNAMIC_SYMBOL	57	0x0	type	2	bind	1	vis	0	ndx	0	name	syscall
+DYNAMIC_SYMBOL	58	0x0	type	2	bind	1	vis	0	ndx	0	name	strlen
+DYNAMIC_SYMBOL	59	0x0	type	2	bind	1	vis	0	ndx	0	name	mmap
+DYNAMIC_SYMBOL	60	0x0	type	2	bind	1	vis	0	ndx	0	name	__isoc23_strtol
+DYNAMIC_SYMBOL	61	0x0	type	2	bind	1	vis	0	ndx	0	name	strchr
+DYNAMIC_SYMBOL	62	0x0	type	2	bind	1	vis	0	ndx	0	name	setlinebuf
+DYNAMIC_SYMBOL	63	0x0	type	2	bind	1	vis	0	ndx	0	name	inotify_add_watch
+DYNAMIC_SYMBOL	64	0x0	type	2	bind	1	vis	0	ndx	0	name	__errno_location
+DYNAMIC_SYMBOL	65	0x0	type	2	bind	1	vis	0	ndx	0	name	snprintf
+DYNAMIC_SYMBOL	66	0x0	type	2	bind	1	vis	0	ndx	0	name	fcntl
+DYNAMIC_SYMBOL	67	0x0	type	2	bind	1	vis	0	ndx	0	name	memset
+DYNAMIC_SYMBOL	68	0x0	type	2	bind	1	vis	0	ndx	0	name	strncpy
+DYNAMIC_SYMBOL	69	0x0	type	2	bind	1	vis	0	ndx	0	name	write
+DYNAMIC_SYMBOL	70	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_rwlock_unlock
+DYNAMIC_SYMBOL	71	0x0	type	2	bind	1	vis	0	ndx	0	name	access
+DYNAMIC_SYMBOL	72	0x0	type	1	bind	1	vis	0	ndx	0	name	stdout
+DYNAMIC_SYMBOL	73	0x0	type	2	bind	1	vis	0	ndx	0	name	writev
+DYNAMIC_SYMBOL	74	0x0	type	2	bind	1	vis	0	ndx	0	name	fclose
+DYNAMIC_SYMBOL	75	0x0	type	2	bind	1	vis	0	ndx	0	name	strnlen
+DYNAMIC_SYMBOL	76	0x0	type	2	bind	1	vis	0	ndx	0	name	fork
+DYNAMIC_SYMBOL	77	0x0	type	2	bind	1	vis	0	ndx	0	name	execl
+DYNAMIC_SYMBOL	78	0x0	type	2	bind	1	vis	0	ndx	0	name	toupper
+DYNAMIC_SYMBOL	79	0x0	type	2	bind	1	vis	0	ndx	0	name	alphasort
+DYNAMIC_SYMBOL	80	0x0	type	2	bind	1	vis	0	ndx	0	name	openlog
+DYNAMIC_SYMBOL	81	0x0	type	2	bind	1	vis	0	ndx	0	name	vsnprintf
+DYNAMIC_SYMBOL	82	0x0	type	2	bind	1	vis	0	ndx	0	name	atoi
+DYNAMIC_SYMBOL	83	0x0	type	2	bind	1	vis	0	ndx	0	name	recvmsg
+DYNAMIC_SYMBOL	84	0x0	type	2	bind	1	vis	0	ndx	0	name	socket
+DYNAMIC_SYMBOL	85	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_registerTMCloneTable
+DYNAMIC_SYMBOL	86	0x0	type	2	bind	1	vis	0	ndx	0	name	__tls_get_addr
+DYNAMIC_SYMBOL	87	0x0	type	2	bind	1	vis	0	ndx	0	name	__cmsg_nxthdr
+DYNAMIC_SYMBOL	88	0x0	type	2	bind	1	vis	0	ndx	0	name	strncat
+DYNAMIC_SYMBOL	89	0x0	type	2	bind	1	vis	0	ndx	0	name	strncmp
+DYNAMIC_SYMBOL	90	0x0	type	2	bind	1	vis	0	ndx	0	name	close
+DYNAMIC_SYMBOL	91	0x0	type	2	bind	1	vis	0	ndx	0	name	inotify_init1
+DYNAMIC_SYMBOL	92	0x0	type	2	bind	1	vis	0	ndx	0	name	mkfifo
+DYNAMIC_SYMBOL	93	0x0	type	2	bind	1	vis	0	ndx	0	name	connect
+DYNAMIC_SYMBOL	94	0x0	type	2	bind	1	vis	0	ndx	0	name	__assert_fail
+DYNAMIC_SYMBOL	95	0x27b8	type	2	bind	1	vis	0	ndx	10	name	dlog_print_dotnet
+EXPORT	2	1	0	10	dlog_print_dotnet
+DYNAMIC_SYMBOL	96	0x230c	type	2	bind	1	vis	0	ndx	10	name	dlog_set_minimum_priority
+EXPORT	2	1	0	10	dlog_set_minimum_priority
+DYNAMIC_SYMBOL	97	0x2768	type	2	bind	1	vis	0	ndx	10	name	dlog_vprint_dotnet
+EXPORT	2	1	0	10	dlog_vprint_dotnet
+DYNAMIC_SYMBOL	98	0x26c4	type	2	bind	1	vis	0	ndx	10	name	dlog_vprint
+EXPORT	2	1	0	10	dlog_vprint
+DYNAMIC_SYMBOL	99	0x2714	type	2	bind	1	vis	0	ndx	10	name	dlog_print
+EXPORT	2	1	0	10	dlog_print
+DYNAMIC_SYMBOL	100	0x25dc	type	2	bind	1	vis	0	ndx	10	name	__dlog_print
+EXPORT	2	1	0	10	__dlog_print
+DYNAMIC_SYMBOL	101	0x2220	type	2	bind	1	vis	0	ndx	10	name	__dlog_critical_print
+EXPORT	2	1	0	10	__dlog_critical_print
+DYNAMIC_SYMBOL	102	0x22a0	type	2	bind	1	vis	0	ndx	10	name	__dlog_vprint
+EXPORT	2	1	0	10	__dlog_vprint
+DYNAMIC_SYMBOL	103	0x280c	type	2	bind	1	vis	0	ndx	10	name	dlog_vprint_native
+EXPORT	2	1	0	10	dlog_vprint_native
+DYNAMIC_SYMBOL	104	0x2630	type	2	bind	1	vis	0	ndx	10	name	__dlog_sec_print
+EXPORT	2	1	0	10	__dlog_sec_print
+DYNAMIC_SYMBOL	105	0x285c	type	2	bind	1	vis	0	ndx	10	name	dlog_print_native
+EXPORT	2	1	0	10	dlog_print_native
+DYNAMIC	0x1	0x42a
+DYNAMIC	0x1	0x434
+DYNAMIC	0x1	0x442
+DYNAMIC	0xe	0x450
+DYNAMIC	0xc	0x1354
+DYNAMIC	0xd	0xdc60
+DYNAMIC	0x19	0x10000
+DYNAMIC	0x1b	0xc
+DYNAMIC	0x1a	0x1000c
+DYNAMIC	0x1c	0x4
+DYNAMIC	0x6ffffef5	0x114
+DYNAMIC	0x5	0x844
+DYNAMIC	0x6	0x1a4
+DYNAMIC	0xa	0x4bb
+DYNAMIC	0xb	0x10
+DYNAMIC	0x3	0x11000
+DYNAMIC	0x2	0x2d0
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x1084
+DYNAMIC	0x11	0xea4
+DYNAMIC	0x12	0x1e0
+DYNAMIC	0x13	0x8
+DYNAMIC	0x6ffffffe	0xdd4
+DYNAMIC	0x6fffffff	0x3
+DYNAMIC	0x6ffffff0	0xd00
+DYNAMIC	0x6ffffffa	0x32
+DYNAMIC	0x0	0x0
+FIELD	RELRO	Partial
+FIELD	NX	Enabled
+FIELD	PIE	N/A(DSO)
+FIELD	canary	No dynamic evidence
+FIELD	FORTIFY	No dynamic evidence
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Absent
+FIELD	dynamic_export_count_including_ABS	11
+FIELD	dynamic_export_non_ABS_count	11
+FIELD	dynamic_export_function_count	11
+METADATA_READER_SUCCESS
+
+
+RPM_LUA_EXIT_CODE: 0

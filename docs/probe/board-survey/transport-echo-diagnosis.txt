@@ -1,0 +1,2 @@
+Echo lengths only, no board binary payload:
+{'encoded_bytes': 11756, 'expected_encoded_bytes': 11852, 'decoded_source_matches': False}

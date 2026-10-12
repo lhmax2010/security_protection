@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "python3",
+    "docs/probe/board-survey/scripts/lua-host-run.py",
+    "docs/probe/board-survey/scripts/elf-reader-local-validation.lua"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.076
+}

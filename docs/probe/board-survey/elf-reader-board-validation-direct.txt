@@ -1,0 +1,558 @@
+unset HISTFILE; HISTSIZE=0; set +o history; set +o emacs; set +o vi; PS1=; PS2=;
+survey_source=$(printf '%s' \
+ IyEvYmluL3NoCmV4cG9ydCBMQ19BTEw9QwpwcmludGYgJ0BAQkVHSU5fU0FNUExFIHN5c3RlbWN0bFxuJwpwcmludGYgJ0NP \
+ TU1BTkQ6IHJlYWRlbGYgLVcgLWggLWwgLVMgLWQgLS1keW4tc3ltcyAvdXNyL2Jpbi9zeXN0ZW1jdGxcbicKcmVhZGVsZiAt \
+ VyAtaCAtbCAtUyAtZCAtLWR5bi1zeW1zIC91c3IvYmluL3N5c3RlbWN0bCAyPiYxCnByaW50ZiAnUkVBREVMRl9FWElUX0NP \
+ REU6ICVzXG4nICIkPyIKcHJpbnRmICdDT01NQU5EOiBleGlzdGluZyBSUE0gZW1iZWRkZWQgTHVhIHJlYWQtb25seSBkZWNv \
+ ZGVyXG4nCnJwbSAtLWV2YWwgJyV7bHVhOiBUQVJHRVRfUEFUSD0nIiciJy91c3IvYmluL3N5c3RlbWN0bCciJyInOyBUQVJH \
+ RVRfS0lORD0nIiciJ2V4ZWN1dGFibGUnIiciJzsKLS0gUmVhZC1vbmx5IEVMRiBtZXRhZGF0YSBkZWNvZGVyIGZvciBSUE0n \
+ IiciJ3MgYWxyZWFkeSBpbnN0YWxsZWQgTHVhIDUuMSBpbnRlcnByZXRlci4KLS0gTm8gdGFyZ2V0IGV4ZWN1dGlvbiwgZmls \
+ ZSB3cml0ZXMsIG5hdGl2ZSBjb2RlIGJ5dGVzIG9yIHJvZGF0YSBhcmUgZW1pdHRlZC4KLS0gQ2FsbGVyIHN1cHBsaWVzIFRB \
+ UkdFVF9QQVRIIGFuZCBUQVJHRVRfS0lORDsgb3V0cHV0IGlzIGV4cGxpY2l0bHkgbm90IHJlYWRlbGYuCmxvY2FsIGY9YXNz \
+root:~> unset HISTFILE; HISTSIZE=0; set +o history; set +o emacs; set +o vi; PS1 =; PS2=;
+ ZXJ0KGlvLm9wZW4oVEFSR0VUX1BBVEgsInJiIikpCmxvY2FsIGZpbGVzaXplPWFzc2VydChmOnNlZWsoImVuZCIpKQpsb2Nh \
+ bCBmdW5jdGlvbiByZWFkKG9mZixuKQogYXNzZXJ0KG9mZj49MCBhbmQgbj49MCBhbmQgb2ZmK248PWZpbGVzaXplLCJtZXRh \
+ ZGF0YSByYW5nZSBleGNlZWRzIGZpbGUiKQogYXNzZXJ0KGY6c2Vlaygic2V0IixvZmYpKQogbG9jYWwgcz1mOnJlYWQobik7 \
+ IGFzc2VydChzIGFuZCAjcz09biwic2hvcnQgbWV0YWRhdGEgcmVhZCIpOyByZXR1cm4gcwplbmQKbG9jYWwgaWRlbnQ9cmVh \
+ ZCgwLDE2KQphc3NlcnQoaWRlbnQ6c3ViKDEsNCk9PSJcMTI3RUxGIiwibm90IGFuIEVMRiBmaWxlIikKbG9jYWwgY2xhc3M9 \
+ aWRlbnQ6Ynl0ZSg1KTtsb2NhbCBlbmNvZGluZz1pZGVudDpieXRlKDYpCmFzc2VydChjbGFzcz09MSBvciBjbGFzcz09Miwi \
+ dW5zdXBwb3J0ZWQgRUxGIGNsYXNzIikKYXNzZXJ0KGVuY29kaW5nPT0xIG9yIGVuY29kaW5nPT0yLCJ1bnN1cHBvcnRlZCBF \
+ TEYgZW5jb2RpbmciKQpsb2NhbCBmdW5jdGlvbiB1aW50KG9mZixuKQogbG9jYWwgcz1yZWFkKG9mZixuKTtsb2NhbCByZXN1 \
+ bHQ9MAogaWYgZW5jb2Rpbmc9PTEgdGhlbiBmb3IgaT1uLDEsLTEgZG8gcmVzdWx0PXJlc3VsdCoyNTYrczpieXRlKGkpIGVu \
+ ZAogZWxzZSBmb3IgaT0xLG4gZG8gcmVzdWx0PXJlc3VsdCoyNTYrczpieXRlKGkpIGVuZCBlbmQKIGFzc2VydChyZXN1bHQ8 \
+ PTkwMDcxOTkyNTQ3NDA5OTEsIjY0LWJpdCBmaWVsZCBleGNlZWRzIGV4YWN0IEx1YSBpbnRlZ2VyIHJhbmdlIikKIHJldHVy \
+ biByZXN1bHQKZW5kCmxvY2FsIGZ1bmN0aW9uIGhleCh2KQogaWYgdj09MCB0aGVuIHJldHVybiAiMHgwIiBlbmQKIGxvY2Fs \
+ IGNoYXJzPSIwMTIzNDU2Nzg5YWJjZGVmIjtsb2NhbCBzPSIiCiB3aGlsZSB2PjAgZG8gbG9jYWwgcT1tYXRoLmZsb29yKHYv \
+ MTYpO2xvY2FsIGRpZ2l0PXYtcSoxNjtzPWNoYXJzOnN1YihkaWdpdCsxLGRpZ2l0KzEpLi5zO3Y9cSBlbmQKIHJldHVybiAi \
+ MHgiLi5zCmVuZApsb2NhbCBmdW5jdGlvbiBlbWl0KC4uLikKIGxvY2FsIGE9ey4uLn07Zm9yIGk9MSwjYSBkbyBhW2ldPXRv \
+ c3RyaW5nKGFbaV0pIGVuZDtpby53cml0ZSh0YWJsZS5jb25jYXQoYSwiXHQiKSwiXG4iKQplbmQKbG9jYWwgZnVuY3Rpb24g \
+ Yml0KHYsbWFzaykgcmV0dXJuIG1hdGguZmxvb3Iodi9tYXNrKS1tYXRoLmZsb29yKHYvKG1hc2sqMikpKjI9PTEgZW5kCmxv \
+ Y2FsIGZ1bmN0aW9uIGNzdHIob2ZmLGxpbWl0KQogYXNzZXJ0KGxpbWl0PjAsInN0cmluZyBvZmZzZXQgb3V0c2lkZSB0YWJs \
+ ZSIpCiBsb2NhbCBuPW1hdGgubWluKGxpbWl0LDQwOTYpO2xvY2FsIHM9cmVhZChvZmYsbik7bG9jYWwgZW5kaW5nPXM6Zmlu \
+ ZCgiXDAiLDEsdHJ1ZSkKIGFzc2VydChlbmRpbmcsIm1ldGFkYXRhIHN0cmluZyBub3QgdGVybWluYXRlZCB3aXRoaW4gNDA5 \
+ Ni1ieXRlIGxpbWl0IikKIGxvY2FsIHRleHQ9czpzdWIoMSxlbmRpbmctMSkKIGFzc2VydChub3QgdGV4dDpmaW5kKCJbXHJc \
+ blx0XSIpLCJtZXRhZGF0YSBzdHJpbmcgY29udGFpbnMgY29udHJvbCBzZXBhcmF0b3JzIikKIHJldHVybiB0ZXh0CmVuZAps \
+ b2NhbCB3b3JkPWNsYXNzPT0xIGFuZCA0IG9yIDgKbG9jYWwgZWxmX3R5cGU9dWludCgxNiwyKTtsb2NhbCBtYWNoaW5lPXVp \
+ bnQoMTgsMikKbG9jYWwgcGhvZmY9dWludChjbGFzcz09MSBhbmQgMjggb3IgMzIsd29yZCkKbG9jYWwgc2hvZmY9dWludChj \
+ bGFzcz09MSBhbmQgMzIgb3IgNDAsd29yZCkKbG9jYWwgcGhlbnQ9dWludChjbGFzcz09MSBhbmQgNDIgb3IgNTQsMikKbG9j \
+ YWwgcGhudW09dWludChjbGFzcz09MSBhbmQgNDQgb3IgNTYsMikKbG9jYWwgc2hlbnQ9dWludChjbGFzcz09MSBhbmQgNDYg \
+ b3IgNTgsMikKbG9jYWwgc2hudW09dWludChjbGFzcz09MSBhbmQgNDggb3IgNjAsMikKbG9jYWwgc2hzdHI9dWludChjbGFz \
+ cz09MSBhbmQgNTAgb3IgNjIsMikKbG9jYWwgZnVuY3Rpb24gc2VjdGlvbihpKQogbG9jYWwgbz1zaG9mZitpKnNoZW50CiBp \
+ ZiBjbGFzcz09MSB0aGVuIHJldHVybiB7aW5kZXg9aSxuYW1laWR4PXVpbnQobyw0KSx0eXBlPXVpbnQobys0LDQpLGZsYWdz \
+ PXVpbnQobys4LDQpLGFkZHI9dWludChvKzEyLDQpLG9mZnNldD11aW50KG8rMTYsNCksc2l6ZT11aW50KG8rMjAsNCksbGlu \
+ az11aW50KG8rMjQsNCksaW5mbz11aW50KG8rMjgsNCksZW50c2l6ZT11aW50KG8rMzYsNCl9IGVuZAogcmV0dXJuIHtpbmRl \
+ eD1pLG5hbWVpZHg9dWludChvLDQpLHR5cGU9dWludChvKzQsNCksZmxhZ3M9dWludChvKzgsOCksYWRkcj11aW50KG8rMTYs \
+ OCksb2Zmc2V0PXVpbnQobysyNCw4KSxzaXplPXVpbnQobyszMiw4KSxsaW5rPXVpbnQobys0MCw0KSxpbmZvPXVpbnQobys0 \
+ NCw0KSxlbnRzaXplPXVpbnQobys1Niw4KX0KZW5kCmlmIHNob2ZmPjAgdGhlbgogbG9jYWwgemVybz1zZWN0aW9uKDApCiBp \
+ ZiBzaG51bT09MCB0aGVuIHNobnVtPXplcm8uc2l6ZSBlbmQKIGlmIHNoc3RyPT02NTUzNSB0aGVuIHNoc3RyPXplcm8ubGlu \
+ ayBlbmQKIGlmIHBobnVtPT02NTUzNSB0aGVuIHBobnVtPXplcm8uaW5mbyBlbmQKZW5kCmFzc2VydChwaG51bTw9NDA5NiBh \
+ bmQgc2hudW08PTY1NTM2LCJtZXRhZGF0YSBjb3VudCBsaW1pdCBleGNlZWRlZCIpCmFzc2VydCgocGhudW09PTAgb3IgcGhl \
+ bnQ+PShjbGFzcz09MSBhbmQgMzIgb3IgNTYpKSBhbmQgKHNobnVtPT0wIG9yIHNoZW50Pj0oY2xhc3M9PTEgYW5kIDQwIG9y \
+ IDY0KSksImludmFsaWQgZW50cnkgc2l6ZXMiKQplbWl0KCJNRVRIT0QiLCJSUE1fRU1CRURERURfTFVBX0RJUkVDVF9FTEZf \
+ TUVUQURBVEEiLCJMdWE9Ii4uX1ZFUlNJT04pCmVtaXQoIlRBUkdFVCIsVEFSR0VUX1BBVEgsVEFSR0VUX0tJTkQpCmVtaXQo \
+ IkhFQURFUiIsImNsYXNzIixjbGFzcz09MSBhbmQgIkVMRjMyIiBvciAiRUxGNjQiLCJlbmNvZGluZyIsZW5jb2Rpbmc9PTEg \
+ YW5kICJMU0IiIG9yICJNU0IiLCJ0eXBlIixlbGZfdHlwZSwibWFjaGluZSIsbWFjaGluZSwicGhvZmYiLGhleChwaG9mZiks \
+ InBobnVtIixwaG51bSwic2hvZmYiLGhleChzaG9mZiksInNobnVtIixzaG51bSkKbG9jYWwgZ251X3JlbHJvPWZhbHNlO2xv \
+ Y2FsIGdudV9zdGFjaz1uaWw7bG9jYWwgaW50ZXJwcmV0ZXI9ZmFsc2UKZm9yIGk9MCxwaG51bS0xIGRvCiBsb2NhbCBvPXBo \
+ b2ZmK2kqcGhlbnQ7bG9jYWwgdD11aW50KG8sNCkKIGxvY2FsIG9mZnNldD11aW50KG8rKGNsYXNzPT0xIGFuZCA0IG9yIDgp \
+ LHdvcmQpCiBsb2NhbCB2YWRkcj11aW50KG8rKGNsYXNzPT0xIGFuZCA4IG9yIDE2KSx3b3JkKQogbG9jYWwgZmlsZXN6PXVp \
+ bnQobysoY2xhc3M9PTEgYW5kIDE2IG9yIDMyKSx3b3JkKQogbG9jYWwgbWVtc3o9dWludChvKyhjbGFzcz09MSBhbmQgMjAg \
+ b3IgNDApLHdvcmQpCiBsb2NhbCBmbGFncz11aW50KG8rKGNsYXNzPT0xIGFuZCAyNCBvciA0KSw0KQogZW1pdCgiUFJPR1JB \
+ TV9IRUFERVIiLGksaGV4KHQpLCJvZmZzZXQiLGhleChvZmZzZXQpLCJ2YWRkciIsaGV4KHZhZGRyKSwiZmlsZXN6IixmaWxl \
+ c3osIm1lbXN6IixtZW1zeiwiZmxhZ3MiLGZsYWdzKQogaWYgdD09MTY4NTM4MjQ4MiB0aGVuIGdudV9yZWxybz10cnVlIGVu \
+ ZAogaWYgdD09MTY4NTM4MjQ4MSB0aGVuIGdudV9zdGFjaz1mbGFncyBlbmQKIGlmIHQ9PTMgdGhlbiBpbnRlcnByZXRlcj10 \
+ cnVlO2VtaXQoIklOVEVSUFJFVEVSIixjc3RyKG9mZnNldCxmaWxlc3opKSBlbmQKZW5kCmxvY2FsIHNlY3Rpb25zPXt9O2xv \
+ Y2FsIHN0cmlwcGVkPXRydWUKZm9yIGk9MCxzaG51bS0xIGRvIHNlY3Rpb25zW2ldPXNlY3Rpb24oaSkgZW5kCmlmIHNobnVt \
+ PjAgdGhlbgogYXNzZXJ0KHNoc3RyPHNobnVtLCJpbnZhbGlkIHNoc3RyIGluZGV4Iik7bG9jYWwgbmFtZXM9c2VjdGlvbnNb \
+ c2hzdHJdCiBmb3IgaT0wLHNobnVtLTEgZG8KICBsb2NhbCBzPXNlY3Rpb25zW2ldO3MubmFtZT1jc3RyKG5hbWVzLm9mZnNl \
+ dCtzLm5hbWVpZHgsbmFtZXMuc2l6ZS1zLm5hbWVpZHgpCiAgZW1pdCgiU0VDVElPTiIsaSxzLm5hbWUscy50eXBlLCJvZmZz \
+ ZXQiLGhleChzLm9mZnNldCksInNpemUiLHMuc2l6ZSwibGluayIscy5saW5rLCJlbnRzaXplIixzLmVudHNpemUpCiAgaWYg \
+ cy5uYW1lPT0iLnN5bXRhYiIgdGhlbiBzdHJpcHBlZD1mYWxzZSBlbmQKIGVuZAplbmQKbG9jYWwgYmluZG5vdz1mYWxzZTts \
+ b2NhbCBwaWVmbGFnPWZhbHNlO2xvY2FsIHJwYXRoPW5pbDtsb2NhbCBydW5wYXRoPW5pbDtsb2NhbCBkeW5hbWljX3ByZXNl \
+ bnQ9ZmFsc2U7bG9jYWwgZHluc3ltX3ByZXNlbnQ9ZmFsc2UKbG9jYWwgY2FuYXJ5X2ltcG9ydD1mYWxzZTtsb2NhbCBjYW5h \
+ cnlfZGVmaW5pdGlvbj1mYWxzZTtsb2NhbCBmb3J0aWZ5X2ltcG9ydD1mYWxzZTtsb2NhbCBmb3J0aWZ5X2RlZmluaXRpb249 \
+ ZmFsc2UKbG9jYWwgZXhwb3J0cz0wO2xvY2FsIGV4cG9ydHNfbm9hYnM9MDtsb2NhbCBleHBvcnRlZF9mdW5jdGlvbnM9MApm \
+ b3IgaT0wLHNobnVtLTEgZG8KIGxvY2FsIHM9c2VjdGlvbnNbaV0KIGlmIHMudHlwZT09NiB0aGVuCiAgZHluYW1pY19wcmVz \
+ ZW50PXRydWU7bG9jYWwgZW50c2l6ZT1zLmVudHNpemU7YXNzZXJ0KGVudHNpemU+PXdvcmQqMiwiaW52YWxpZCBkeW5hbWlj \
+ IGVudHJ5IHNpemUiKQogIGxvY2FsIHN0cj1hc3NlcnQoc2VjdGlvbnNbcy5saW5rXSwiZHluYW1pYyBzdHJpbmcgdGFibGUg \
+ bWlzc2luZyIpCiAgZm9yIGo9MCxtYXRoLmZsb29yKHMuc2l6ZS9lbnRzaXplKS0xIGRvCiAgIGxvY2FsIG89cy5vZmZzZXQr \
+ aiplbnRzaXplO2xvY2FsIHRhZz11aW50KG8sd29yZCk7bG9jYWwgdmFsdWU9dWludChvK3dvcmQsd29yZCkKICAgZW1pdCgi \
+ RFlOQU1JQyIsaGV4KHRhZyksaGV4KHZhbHVlKSkKICAgaWYgdGFnPT0wIHRoZW4gYnJlYWsgZW5kCiAgIGlmIHRhZz09MjQg \
+ b3IgKHRhZz09MzAgYW5kIGJpdCh2YWx1ZSw4KSkgb3IgKHRhZz09MTg3OTA0ODE4NyBhbmQgYml0KHZhbHVlLDEpKSB0aGVu \
+ IGJpbmRub3c9dHJ1ZSBlbmQKICAgaWYgdGFnPT0xODc5MDQ4MTg3IGFuZCBiaXQodmFsdWUsMTM0MjE3NzI4KSB0aGVuIHBp \
+ ZWZsYWc9dHJ1ZSBlbmQKICAgaWYgdGFnPT0xNSB0aGVuIHJwYXRoPWNzdHIoc3RyLm9mZnNldCt2YWx1ZSxzdHIuc2l6ZS12 \
+ YWx1ZSk7ZW1pdCgiUlBBVEhfVkFMVUUiLHJwYXRoKSBlbmQKICAgaWYgdGFnPT0yOSB0aGVuIHJ1bnBhdGg9Y3N0cihzdHIu \
+ b2Zmc2V0K3ZhbHVlLHN0ci5zaXplLXZhbHVlKTtlbWl0KCJSVU5QQVRIX1ZBTFVFIixydW5wYXRoKSBlbmQKICBlbmQKIGVs \
+ c2VpZiBzLnR5cGU9PTExIHRoZW4KICBkeW5zeW1fcHJlc2VudD10cnVlO2xvY2FsIGVudHNpemU9cy5lbnRzaXplO2Fzc2Vy \
+ dChlbnRzaXplPj0oY2xhc3M9PTEgYW5kIDE2IG9yIDI0KSwiaW52YWxpZCBkeW5zeW0gZW50cnkgc2l6ZSIpCiAgbG9jYWwg \
+ c3RyaW5ncz1hc3NlcnQoc2VjdGlvbnNbcy5saW5rXSwiZHluc3ltIHN0cmluZyB0YWJsZSBtaXNzaW5nIikKICBmb3Igaj0w \
+ LG1hdGguZmxvb3Iocy5zaXplL2VudHNpemUpLTEgZG8KICAgbG9jYWwgbz1zLm9mZnNldCtqKmVudHNpemU7bG9jYWwgbmFt \
+ ZWlkeD11aW50KG8sNCkKICAgbG9jYWwgaW5mbz11aW50KG8rKGNsYXNzPT0xIGFuZCAxMiBvciA0KSwxKTtsb2NhbCBvdGhl \
+ cj11aW50KG8rKGNsYXNzPT0xIGFuZCAxMyBvciA1KSwxKQogICBsb2NhbCBuZHg9dWludChvKyhjbGFzcz09MSBhbmQgMTQg \
+ b3IgNiksMikKICAgbG9jYWwgYmluZD1tYXRoLmZsb29yKGluZm8vMTYpO2xvY2FsIGtpbmQ9aW5mby1iaW5kKjE2O2xvY2Fs \
+ IHZpcz1vdGhlci1tYXRoLmZsb29yKG90aGVyLzQpKjQKICAgbG9jYWwgbmFtZT1jc3RyKHN0cmluZ3Mub2Zmc2V0K25hbWVp \
+ ZHgsc3RyaW5ncy5zaXplLW5hbWVpZHgpCiAgIGxvY2FsIHZhbHVlPXVpbnQobysoY2xhc3M9PTEgYW5kIDQgb3IgOCksd29y \
+ ZCkKICAgZW1pdCgiRFlOQU1JQ19TWU1CT0wiLGosaGV4KHZhbHVlKSwidHlwZSIsa2luZCwiYmluZCIsYmluZCwidmlzIix2 \
+ aXMsIm5keCIsbmR4LCJuYW1lIixuYW1lKQogICBsb2NhbCBwbGFpbj1uYW1lOmdzdWIoIkAuKiIsIiIpCiAgIGxvY2FsIGNh \
+ bmFyeT1wbGFpbj09Il9fc3RhY2tfY2hrX2ZhaWwiIG9yIHBsYWluPT0iX19zdGFja19jaGtfZmFpbF9sb2NhbCIgb3IgcGxh \
+ aW49PSJfX3N0YWNrX2Noa19ndWFyZCIKICAgbG9jYWwgZm9ydGlmeT1wbGFpbjptYXRjaCgiXl9fW0EtWmEtejAtOV9dK19j \
+ aGskIil+PW5pbAogICBpZiBuZHg9PTAgdGhlbiBjYW5hcnlfaW1wb3J0PWNhbmFyeV9pbXBvcnQgb3IgY2FuYXJ5O2ZvcnRp \
+ ZnlfaW1wb3J0PWZvcnRpZnlfaW1wb3J0IG9yIGZvcnRpZnkKICAgZWxzZQogICAgY2FuYXJ5X2RlZmluaXRpb249Y2FuYXJ5 \
+ X2RlZmluaXRpb24gb3IgY2FuYXJ5O2ZvcnRpZnlfZGVmaW5pdGlvbj1mb3J0aWZ5X2RlZmluaXRpb24gb3IgZm9ydGlmeQog \
+ ICAgaWYgKGJpbmQ9PTEgb3IgYmluZD09MikgYW5kICh2aXM9PTAgb3IgdmlzPT0zKSBhbmQgbmFtZX49IiIgdGhlbgogICAg \
+ IGV4cG9ydHM9ZXhwb3J0cysxO2lmIG5keH49NjU1MjEgdGhlbiBleHBvcnRzX25vYWJzPWV4cG9ydHNfbm9hYnMrMSBlbmQK \
+ ICAgICBpZiBraW5kPT0yIG9yIGtpbmQ9PTEwIHRoZW4gZXhwb3J0ZWRfZnVuY3Rpb25zPWV4cG9ydGVkX2Z1bmN0aW9ucysx \
+ IGVuZAogICAgIGVtaXQoIkVYUE9SVCIsa2luZCxiaW5kLHZpcyxuZHgsbmFtZSkKICAgIGVuZAogICBlbmQKICBlbmQKIGVs \
+ c2VpZiBzLm5hbWU9PSIuY29tbWVudCIgYW5kIHMuc2l6ZTw9MTYzODQgdGhlbgogIGxvY2FsIHRleHQ9cmVhZChzLm9mZnNl \
+ dCxzLnNpemUpO2ZvciBsaW5lIGluIHRleHQ6Z21hdGNoKCJbXlwwXSsiKSBkbyBlbWl0KCJDT01QSUxFUl9DT01NRU5UIixs \
+ aW5lKSBlbmQKIGVuZAplbmQKbG9jYWwgZnVuY3Rpb24gaW5kaWNhdG9yKGltcG9ydGVkLGRlZmluZWQpCiBpZiBub3QgZHlu \
+ c3ltX3ByZXNlbnQgdGhlbiByZXR1cm4gIlVua25vd24obm8gZHluc3ltKSIgZW5kCiBpZiBpbXBvcnRlZCB0aGVuIHJldHVy \
+ biAiRGV0ZWN0ZWQoaW1wb3J0KSIgZW5kCiBpZiBkZWZpbmVkIHRoZW4gcmV0dXJuICJQcm92aWRlci1kZWZpbml0aW9uLW9u \
+ bHkiIGVuZAogcmV0dXJuICJObyBkeW5hbWljIGV2aWRlbmNlIgplbmQKbG9jYWwgcmVscm89Z251X3JlbHJvIGFuZCAoYmlu \
+ ZG5vdyBhbmQgIkZ1bGwiIG9yICJQYXJ0aWFsIikgb3IgIk5vbmUiCmxvY2FsIG54PWdudV9zdGFjaz09bmlsIGFuZCAiVW5r \
+ bm93bihubyBHTlVfU1RBQ0spIiBvciAoYml0KGdudV9zdGFjaywxKSBhbmQgIkRpc2FibGVkIiBvciAiRW5hYmxlZCIpCmxv \
+ Y2FsIHBpZT0iVW5rbm93biIKaWYgVEFSR0VUX0tJTkQ9PSJzaGFyZWQtbGlicmFyeSIgdGhlbiBwaWU9Ik4vQShEU08pIgpl \
+ bHNlaWYgZWxmX3R5cGU9PTIgdGhlbiBwaWU9Ik5vIgplbHNlaWYgZWxmX3R5cGU9PTMgYW5kIChpbnRlcnByZXRlciBvciBw \
+ aWVmbGFnKSB0aGVuIHBpZT0iWWVzIiBlbmQKZW1pdCgiRklFTEQiLCJSRUxSTyIscmVscm8pO2VtaXQoIkZJRUxEIiwiTlgi \
+ LG54KTtlbWl0KCJGSUVMRCIsIlBJRSIscGllKQplbWl0KCJGSUVMRCIsImNhbmFyeSIsaW5kaWNhdG9yKGNhbmFyeV9pbXBv \
+ cnQsY2FuYXJ5X2RlZmluaXRpb24pKTtlbWl0KCJGSUVMRCIsIkZPUlRJRlkiLGluZGljYXRvcihmb3J0aWZ5X2ltcG9ydCxm \
+ b3J0aWZ5X2RlZmluaXRpb24pKQplbWl0KCJGSUVMRCIsInN0cmlwcGVkIixzaG51bT09MCBhbmQgIlVua25vd24obm8gc2Vj \
+ dGlvbiB0YWJsZSkiIG9yIChzdHJpcHBlZCBhbmQgIlllcyhubyAuc3ltdGFiKSIgb3IgIk5vIikpCmVtaXQoIkZJRUxEIiwi \
+ UlBBVEgiLHJwYXRoIGFuZCAiUHJlc2VudCIgb3IgIkFic2VudCIpO2VtaXQoIkZJRUxEIiwiUlVOUEFUSCIscnVucGF0aCBh \
+ bmQgIlByZXNlbnQiIG9yICJBYnNlbnQiKQplbWl0KCJGSUVMRCIsImR5bmFtaWNfZXhwb3J0X2NvdW50X2luY2x1ZGluZ19B \
+ QlMiLGV4cG9ydHMpO2VtaXQoIkZJRUxEIiwiZHluYW1pY19leHBvcnRfbm9uX0FCU19jb3VudCIsZXhwb3J0c19ub2Ficyk7 \
+ ZW1pdCgiRklFTEQiLCJkeW5hbWljX2V4cG9ydF9mdW5jdGlvbl9jb3VudCIsZXhwb3J0ZWRfZnVuY3Rpb25zKQpmOmNsb3Nl \
+ KCkKZW1pdCgiTUVUQURBVEFfUkVBREVSX1NVQ0NFU1MiKQoKfScKcHJpbnRmICdcblJQTV9MVUFfRVhJVF9DT0RFOiAlc1xu \
+ JyAiJD8iCnByaW50ZiAnQEBFTkRfU0FNUExFIHN5c3RlbWN0bFxuJwo= | base64 -d)
+survey_hash=$(printf '%s' "$survey_source" | sha256sum); survey_hash=${survey_hash%% *}
+if [ "$survey_hash" != fcb457abd5816bb6f0e9d931f8276d26d85dade3e9b294975adc5a38d9959298 ]; then printf 'SOURCE_INTEGRITY_FAILURE\n'; exit 8; fi
+printf 'SOURCE_INTEGRITY_VERIFIED %s\n' "$survey_hash"
+SOURCE_INTEGRITY_VERIFIED fcb457abd5816bb6f0e9d931f8276d26d85dade3e9b294975adc5a38d9959298
+printf '%s\n' "$survey_source" | sh
+@@BEGIN_SAMPLE systemctl
+COMMAND: readelf -W -h -l -S -d --dyn-syms /usr/bin/systemctl
+sh: line 5: readelf: command not found
+READELF_EXIT_CODE: 127
+COMMAND: existing RPM embedded Lua read-only decoder
+exit
+METHOD	RPM_EMBEDDED_LUA_DIRECT_ELF_METADATA	Lua=Lua 5.1
+TARGET	/usr/bin/systemctl	executable
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	9	shoff	0x27164	shnum	28
+PROGRAM_HEADER	0	0x70000001	offset	0x24440	vaddr	0x24440	filesz	824	memsz	824	flags	4
+PROGRAM_HEADER	1	0x6	offset	0x34	vaddr	0x34	filesz	288	memsz	288	flags	4
+PROGRAM_HEADER	2	0x3	offset	0x154	vaddr	0x154	filesz	19	memsz	19	flags	4
+INTERPRETER	/lib/ld-linux.so.3
+PROGRAM_HEADER	3	0x1	offset	0x0	vaddr	0x0	filesz	149372	memsz	149372	flags	5
+PROGRAM_HEADER	4	0x1	offset	0x25000	vaddr	0x25000	filesz	8264	memsz	8392	flags	6
+PROGRAM_HEADER	5	0x2	offset	0x26454	vaddr	0x26454	filesz	288	memsz	288	flags	6
+PROGRAM_HEADER	6	0x4	offset	0x168	vaddr	0x168	filesz	32	memsz	32	flags	4
+PROGRAM_HEADER	7	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+PROGRAM_HEADER	8	0x6474e552	offset	0x25000	vaddr	0x25000	filesz	8192	memsz	8192	flags	4
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.interp	1	offset	0x154	size	19	link	0	entsize	0
+SECTION	2	.note.ABI-tag	7	offset	0x168	size	32	link	0	entsize	0
+SECTION	3	.gnu.hash	1879048182	offset	0x188	size	24	link	4	entsize	4
+SECTION	4	.dynsym	11	offset	0x1a0	size	5280	link	5	entsize	16
+SECTION	5	.dynstr	3	offset	0x1640	size	5946	link	0	entsize	0
+SECTION	6	.gnu.version	1879048191	offset	0x2d7a	size	660	link	4	entsize	2
+SECTION	7	.gnu.version_r	1879048190	offset	0x3010	size	224	link	5	entsize	0
+SECTION	8	.rel.dyn	9	offset	0x30f0	size	4720	link	4	entsize	8
+SECTION	9	.rel.plt	9	offset	0x4360	size	2472	link	4	entsize	8
+SECTION	10	.init	1	offset	0x4d08	size	12	link	0	entsize	0
+SECTION	11	.plt	1	offset	0x4d14	size	3756	link	0	entsize	4
+SECTION	12	.text	1	offset	0x5bc0	size	82500	link	0	entsize	0
+SECTION	13	.fini	1	offset	0x19e04	size	8	link	0	entsize	0
+SECTION	14	.rodata	1	offset	0x19e10	size	35482	link	0	entsize	0
+SECTION	15	.ARM.extab	1	offset	0x228ac	size	7060	link	0	entsize	0
+SECTION	16	.ARM.exidx	1879048193	offset	0x24440	size	824	link	12	entsize	0
+SECTION	17	.eh_frame	1	offset	0x24778	size	4	link	0	entsize	0
+SECTION	18	.init_array	14	offset	0x25000	size	4	link	0	entsize	4
+SECTION	19	.fini_array	15	offset	0x25004	size	4	link	0	entsize	4
+SECTION	20	.data.rel.ro	1	offset	0x25008	size	5196	link	0	entsize	0
+SECTION	21	.dynamic	6	offset	0x26454	size	288	link	5	entsize	8
+SECTION	22	.got	1	offset	0x26574	size	1320	link	0	entsize	4
+SECTION	23	.data	1	offset	0x27000	size	24	link	0	entsize	0
+SECTION	24	SYSTEMD_STATIC_DESTRUCT	1	offset	0x27018	size	48	link	0	entsize	0
+SECTION	25	.bss	8	offset	0x27048	size	128	link	0	entsize	0
+SECTION	26	.gnu_debuglink	1	offset	0x27048	size	20	link	0	entsize	0
+SECTION	27	.shstrtab	3	offset	0x2705c	size	264	link	0	entsize	0
+DYNAMIC_SYMBOL	0	0x0	type	0	bind	0	vis	0	ndx	0	name	
+DYNAMIC_SYMBOL	1	0x4d08	type	3	bind	0	vis	0	ndx	10	name	
+DYNAMIC_SYMBOL	2	0x27000	type	3	bind	0	vis	0	ndx	23	name	
+DYNAMIC_SYMBOL	3	0x0	type	2	bind	1	vis	0	ndx	0	name	output_mode_to_string
+DYNAMIC_SYMBOL	4	0x0	type	2	bind	1	vis	0	ndx	0	name	rlimit_nofile_safe
+DYNAMIC_SYMBOL	5	0x0	type	2	bind	1	vis	0	ndx	0	name	free_and_strdup
+DYNAMIC_SYMBOL	6	0x0	type	2	bind	1	vis	0	ndx	0	name	localtime_r
+DYNAMIC_SYMBOL	7	0x0	type	2	bind	1	vis	0	ndx	0	name	must_be_root
+DYNAMIC_SYMBOL	8	0x0	type	2	bind	1	vis	0	ndx	0	name	path_is_absolute
+DYNAMIC_SYMBOL	9	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_set_default
+DYNAMIC_SYMBOL	10	0x0	type	2	bind	1	vis	0	ndx	0	name	sync
+DYNAMIC_SYMBOL	11	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_wait_for_units_new
+DYNAMIC_SYMBOL	12	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_set_allow_interactive_authorization
+DYNAMIC_SYMBOL	13	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_find
+DYNAMIC_SYMBOL	14	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_error_has_name
+DYNAMIC_SYMBOL	15	0x0	type	2	bind	1	vis	0	ndx	0	name	env_name_is_valid
+DYNAMIC_SYMBOL	16	0x0	type	2	bind	1	vis	0	ndx	0	name	running_in_chroot
+DYNAMIC_SYMBOL	17	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_load_state_to_string
+DYNAMIC_SYMBOL	18	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_get_list
+DYNAMIC_SYMBOL	19	0x0	type	2	bind	1	vis	0	ndx	0	name	utmp_put_shutdown
+DYNAMIC_SYMBOL	20	0x0	type	2	bind	1	vis	0	ndx	0	name	version
+DYNAMIC_SYMBOL	21	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_event_loop
+DYNAMIC_SYMBOL	22	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_get_sessions
+DYNAMIC_SYMBOL	23	0x0	type	2	bind	1	vis	0	ndx	0	name	strcasecmp
+DYNAMIC_SYMBOL	24	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_wait_for_units_free
+DYNAMIC_SYMBOL	25	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_remove
+DYNAMIC_SYMBOL	26	0x0	type	2	bind	1	vis	0	ndx	0	name	shell_maybe_quote
+DYNAMIC_SYMBOL	27	0x0	type	2	bind	1	vis	0	ndx	0	name	free
+DYNAMIC_SYMBOL	28	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_match_signal_async
+DYNAMIC_SYMBOL	29	0x0	type	1	bind	1	vis	0	ndx	0	name	string_hash_ops
+DYNAMIC_SYMBOL	30	0x0	type	2	bind	1	vis	0	ndx	0	name	gethostname_malloc
+DYNAMIC_SYMBOL	31	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_state_to_string
+DYNAMIC_SYMBOL	32	0x0	type	2	bind	1	vis	0	ndx	0	name	sigbus_install
+DYNAMIC_SYMBOL	33	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_extend_strv
+DYNAMIC_SYMBOL	34	0x0	type	2	bind	1	vis	0	ndx	0	name	log_open
+DYNAMIC_SYMBOL	35	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_unmask
+DYNAMIC_SYMBOL	36	0x0	type	1	bind	1	vis	0	ndx	0	name	__stack_chk_guard
+DYNAMIC_SYMBOL	37	0x0	type	1	bind	1	vis	0	ndx	0	name	__progname_full
+DYNAMIC_SYMBOL	38	0x0	type	2	bind	1	vis	0	ndx	0	name	cpu_set_from_dbus
+DYNAMIC_SYMBOL	39	0x0	type	2	bind	1	vis	0	ndx	0	name	__gcc_personality_v0
+DYNAMIC_SYMBOL	40	0x0	type	2	bind	1	vis	0	ndx	0	name	output_mode_from_string
+DYNAMIC_SYMBOL	41	0x0	type	2	bind	1	vis	0	ndx	0	name	qsort
+DYNAMIC_SYMBOL	42	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_name_to_type
+DYNAMIC_SYMBOL	43	0x0	type	2	bind	1	vis	0	ndx	0	name	log_assert_failed_unreachable_realm
+DYNAMIC_SYMBOL	44	0x0	type	2	bind	1	vis	0	ndx	0	name	slice_state_to_string
+DYNAMIC_SYMBOL	45	0x0	type	2	bind	1	vis	0	ndx	0	name	kexec_loaded
+DYNAMIC_SYMBOL	46	0x0	type	2	bind	1	vis	0	ndx	0	name	strncmp
+DYNAMIC_SYMBOL	47	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_append_unit_property_assignment_many
+DYNAMIC_SYMBOL	48	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_active_state_from_string
+DYNAMIC_SYMBOL	49	0x0	type	2	bind	1	vis	0	ndx	0	name	parse_path_argument_and_warn
+DYNAMIC_SYMBOL	50	0x0	type	2	bind	1	vis	0	ndx	0	name	boot_entries_load_config_auto
+DYNAMIC_SYMBOL	51	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_get_property
+DYNAMIC_SYMBOL	52	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_get_event
+DYNAMIC_SYMBOL	53	0x0	type	1	bind	1	vis	0	ndx	0	name	__progname
+DYNAMIC_SYMBOL	54	0x0	type	1	bind	1	vis	0	ndx	0	name	optind
+DYNAMIC_SYMBOL	55	0x0	type	2	bind	1	vis	0	ndx	0	name	path_join_internal
+DYNAMIC_SYMBOL	56	0x0	type	2	bind	1	vis	0	ndx	0	name	path_make_absolute_cwd
+DYNAMIC_SYMBOL	57	0x0	type	2	bind	1	vis	0	ndx	0	name	internal_hashmap_iterate
+DYNAMIC_SYMBOL	58	0x0	type	1	bind	1	vis	0	ndx	0	name	saved_argv
+DYNAMIC_SYMBOL	59	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_call_method_async
+DYNAMIC_SYMBOL	60	0x0	type	2	bind	1	vis	0	ndx	0	name	polkit_agent_open_if_enabled
+DYNAMIC_SYMBOL	61	0x0	type	2	bind	1	vis	0	ndx	0	name	strcmp_ptr
+DYNAMIC_SYMBOL	62	0x0	type	2	bind	1	vis	0	ndx	0	name	ask_password_agent_close
+DYNAMIC_SYMBOL	63	0x0	type	2	bind	1	vis	0	ndx	0	name	polkit_agent_close
+DYNAMIC_SYMBOL	64	0x0	type	2	bind	1	vis	0	ndx	0	name	strextend_with_separator
+DYNAMIC_SYMBOL	65	0x0	type	2	bind	1	vis	0	ndx	0	name	mac_selinux_finish
+DYNAMIC_SYMBOL	66	0x0	type	2	bind	1	vis	0	ndx	0	name	strerror
+DYNAMIC_SYMBOL	67	0x0	type	2	bind	1	vis	0	ndx	0	name	utmp_get_runlevel
+DYNAMIC_SYMBOL	68	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_preset
+DYNAMIC_SYMBOL	69	0x0	type	2	bind	1	vis	0	ndx	0	name	stpcpy
+DYNAMIC_SYMBOL	70	0x0	type	2	bind	1	vis	0	ndx	0	name	reboot
+DYNAMIC_SYMBOL	71	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_event_exit
+DYNAMIC_SYMBOL	72	0x0	type	2	bind	1	vis	0	ndx	0	name	cat_files
+DYNAMIC_SYMBOL	73	0x0	type	2	bind	1	vis	0	ndx	0	name	safe_atollu
+DYNAMIC_SYMBOL	74	0x0	type	2	bind	1	vis	0	ndx	0	name	puts
+DYNAMIC_SYMBOL	75	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_type_from_string
+DYNAMIC_SYMBOL	76	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_reenable
+DYNAMIC_SYMBOL	77	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_session_get_tty
+DYNAMIC_SYMBOL	78	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_name_to_instance
+DYNAMIC_SYMBOL	79	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_dbus_path_from_name
+DYNAMIC_SYMBOL	80	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_name_is_valid
+DYNAMIC_SYMBOL	81	0x0	type	2	bind	1	vis	0	ndx	0	name	internal_set_new
+DYNAMIC_SYMBOL	82	0x0	type	2	bind	1	vis	0	ndx	0	name	reboot_with_parameter
+DYNAMIC_SYMBOL	83	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_event_default
+DYNAMIC_SYMBOL	84	0x0	type	2	bind	1	vis	0	ndx	0	name	dirname_malloc
+DYNAMIC_SYMBOL	85	0x0	type	2	bind	1	vis	0	ndx	0	name	is_path
+DYNAMIC_SYMBOL	86	0x0	type	2	bind	1	vis	0	ndx	0	name	getenv_bool
+DYNAMIC_SYMBOL	87	0x0	type	2	bind	1	vis	0	ndx	0	name	internal_hashmap_new
+DYNAMIC_SYMBOL	88	0x0	type	2	bind	1	vis	0	ndx	0	name	set_put
+DYNAMIC_SYMBOL	89	0x0	type	2	bind	1	vis	0	ndx	0	name	update_reboot_parameter_and_warn
+DYNAMIC_SYMBOL	90	0x0	type	2	bind	1	vis	0	ndx	0	name	putchar
+DYNAMIC_SYMBOL	91	0x0	type	2	bind	1	vis	0	ndx	0	name	journal_field_valid
+DYNAMIC_SYMBOL	92	0x0	type	2	bind	1	vis	0	ndx	0	name	get_process_comm
+DYNAMIC_SYMBOL	93	0x0	type	2	bind	1	vis	0	ndx	0	name	columns
+DYNAMIC_SYMBOL	94	0x0	type	2	bind	1	vis	0	ndx	0	name	memset
+DYNAMIC_SYMBOL	95	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_fnmatch
+DYNAMIC_SYMBOL	96	0x0	type	1	bind	1	vis	0	ndx	0	name	program_invocation_name
+DYNAMIC_SYMBOL	97	0x0	type	2	bind	1	vis	0	ndx	0	name	internal_hashmap_first_key_and_value
+DYNAMIC_SYMBOL	98	0x0	type	2	bind	1	vis	0	ndx	0	name	path_equal
+DYNAMIC_SYMBOL	99	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_print_property_valuef
+DYNAMIC_SYMBOL	100	0x0	type	2	bind	1	vis	0	ndx	0	name	endswith
+DYNAMIC_SYMBOL	101	0x0	type	2	bind	1	vis	0	ndx	0	name	log_get_max_level_realm
+DYNAMIC_SYMBOL	102	0x0	type	2	bind	1	vis	0	ndx	0	name	base64mem
+DYNAMIC_SYMBOL	103	0x0	type	2	bind	1	vis	0	ndx	0	name	__libc_start_main
+DYNAMIC_SYMBOL	104	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_push
+DYNAMIC_SYMBOL	105	0x0	type	2	bind	1	vis	0	ndx	0	name	mount_state_to_string
+DYNAMIC_SYMBOL	106	0x0	type	2	bind	1	vis	0	ndx	0	name	boot_config_free
+DYNAMIC_SYMBOL	107	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_wait_for_jobs_free
+DYNAMIC_SYMBOL	108	0x0	type	2	bind	1	vis	0	ndx	0	name	greedy_realloc0
+DYNAMIC_SYMBOL	109	0x0	type	2	bind	1	vis	0	ndx	0	name	null_or_empty_path
+DYNAMIC_SYMBOL	110	0x0	type	2	bind	1	vis	0	ndx	0	name	proc_cmdline_get_key
+DYNAMIC_SYMBOL	111	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_find_dropin_paths
+DYNAMIC_SYMBOL	112	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_new_internal
+DYNAMIC_SYMBOL	113	0x0	type	1	bind	1	vis	0	ndx	0	name	optarg
+DYNAMIC_SYMBOL	114	0x0	type	2	bind	1	vis	0	ndx	0	name	dual_timestamp_get
+DYNAMIC_SYMBOL	115	0x0	type	2	bind	1	vis	0	ndx	0	name	abort
+DYNAMIC_SYMBOL	116	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_session_get_service
+DYNAMIC_SYMBOL	117	0x0	type	2	bind	1	vis	0	ndx	0	name	target_state_to_string
+DYNAMIC_SYMBOL	118	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_wait_for_jobs_add
+DYNAMIC_SYMBOL	119	0x0	type	2	bind	1	vis	0	ndx	0	name	pause
+DYNAMIC_SYMBOL	120	0x0	type	2	bind	1	vis	0	ndx	0	name	ask_char
+DYNAMIC_SYMBOL	121	0x0	type	1	bind	1	vis	0	ndx	0	name	__environ
+DYNAMIC_SYMBOL	122	0x0	type	2	bind	1	vis	0	ndx	0	name	dispatch_verb
+DYNAMIC_SYMBOL	123	0x0	type	2	bind	1	vis	0	ndx	0	name	string_table_lookup
+DYNAMIC_SYMBOL	124	0x0	type	1	bind	1	vis	0	ndx	0	name	saved_argc
+DYNAMIC_SYMBOL	125	0x0	type	2	bind	1	vis	0	ndx	0	name	safe_fork_full
+DYNAMIC_SYMBOL	126	0x0	type	2	bind	1	vis	0	ndx	0	name	files_same
+DYNAMIC_SYMBOL	127	0x0	type	2	bind	1	vis	0	ndx	0	name	strpbrk
+DYNAMIC_SYMBOL	128	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_load_state
+DYNAMIC_SYMBOL	129	0x0	type	2	bind	1	vis	0	ndx	0	name	rmdir
+DYNAMIC_SYMBOL	130	0x0	type	2	bind	1	vis	0	ndx	0	name	unlink
+DYNAMIC_SYMBOL	131	0x0	type	2	bind	1	vis	0	ndx	0	name	format_timestamp_relative
+DYNAMIC_SYMBOL	132	0x0	type	2	bind	1	vis	0	ndx	0	name	swap_state_to_string
+DYNAMIC_SYMBOL	133	0x0	type	2	bind	1	vis	0	ndx	0	name	kill
+DYNAMIC_SYMBOL	134	0x0	type	2	bind	1	vis	0	ndx	0	name	signal_from_string
+DYNAMIC_SYMBOL	135	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_error_free
+DYNAMIC_SYMBOL	136	0x0	type	2	bind	1	vis	0	ndx	0	name	strcpy
+DYNAMIC_SYMBOL	137	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_message_print_all_properties
+DYNAMIC_SYMBOL	138	0x0	type	2	bind	1	vis	0	ndx	0	name	cpu_set_to_range_string
+DYNAMIC_SYMBOL	139	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_type_to_string
+DYNAMIC_SYMBOL	140	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_name_template
+DYNAMIC_SYMBOL	141	0x0	type	2	bind	1	vis	0	ndx	0	name	utf8_is_valid
+DYNAMIC_SYMBOL	142	0x0	type	2	bind	1	vis	0	ndx	0	name	timer_state_to_string
+DYNAMIC_SYMBOL	143	0x0	type	2	bind	1	vis	0	ndx	0	name	ellipsize_mem
+DYNAMIC_SYMBOL	144	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_flush_close_unref
+DYNAMIC_SYMBOL	145	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_disable
+DYNAMIC_SYMBOL	146	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_skip
+DYNAMIC_SYMBOL	147	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_exit_container
+DYNAMIC_SYMBOL	148	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_get_machine_names
+DYNAMIC_SYMBOL	149	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_map_all_properties
+DYNAMIC_SYMBOL	150	0x0	type	2	bind	1	vis	0	ndx	0	name	safe_atou8
+DYNAMIC_SYMBOL	151	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_consume
+DYNAMIC_SYMBOL	152	0x0	type	2	bind	1	vis	0	ndx	0	name	ask_password_agent_open_if_enabled
+DYNAMIC_SYMBOL	153	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_enter_container
+DYNAMIC_SYMBOL	154	0x0	type	2	bind	1	vis	0	ndx	0	name	lookup_paths_free
+DYNAMIC_SYMBOL	155	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_wait_for_jobs_new
+DYNAMIC_SYMBOL	156	0x0	type	1	bind	1	vis	0	ndx	0	name	stderr
+DYNAMIC_SYMBOL	157	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_get_property_strv
+DYNAMIC_SYMBOL	158	0x0	type	2	bind	1	vis	0	ndx	0	name	greedy_realloc
+DYNAMIC_SYMBOL	159	0x0	type	2	bind	1	vis	0	ndx	0	name	underline_enabled
+DYNAMIC_SYMBOL	160	0x0	type	2	bind	1	vis	0	ndx	0	name	scope_state_to_string
+DYNAMIC_SYMBOL	161	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_new_method_call
+DYNAMIC_SYMBOL	162	0x0	type	2	bind	1	vis	0	ndx	0	name	__stack_chk_fail
+DYNAMIC_SYMBOL	163	0x0	type	2	bind	1	vis	0	ndx	0	name	terminal_urlify_man
+DYNAMIC_SYMBOL	164	0x0	type	2	bind	1	vis	0	ndx	0	name	device_state_to_string
+DYNAMIC_SYMBOL	165	0x0	type	2	bind	1	vis	0	ndx	0	name	internal_hashmap_free
+DYNAMIC_SYMBOL	166	0x0	type	2	bind	1	vis	0	ndx	0	name	internal_hashmap_contains
+DYNAMIC_SYMBOL	167	0x0	type	2	bind	1	vis	0	ndx	0	name	access
+DYNAMIC_SYMBOL	168	0x0	type	2	bind	1	vis	0	ndx	0	name	extract_first_word
+DYNAMIC_SYMBOL	169	0x0	type	2	bind	1	vis	0	ndx	0	name	isatty
+DYNAMIC_SYMBOL	170	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_preset_mode_from_string
+DYNAMIC_SYMBOL	171	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_enable
+DYNAMIC_SYMBOL	172	0x0	type	2	bind	1	vis	0	ndx	0	name	parse_sec
+DYNAMIC_SYMBOL	173	0x0	type	2	bind	1	vis	0	ndx	0	name	show_cgroup
+DYNAMIC_SYMBOL	174	0x0	type	2	bind	1	vis	0	ndx	0	name	internal_hashmap_size
+DYNAMIC_SYMBOL	175	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_error_move
+DYNAMIC_SYMBOL	176	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_session_get_seat
+DYNAMIC_SYMBOL	177	0x0	type	2	bind	1	vis	0	ndx	0	name	exec_command_flags_to_strv
+DYNAMIC_SYMBOL	178	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_length
+DYNAMIC_SYMBOL	179	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_append_strv
+DYNAMIC_SYMBOL	180	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_rewind
+DYNAMIC_SYMBOL	181	0x0	type	2	bind	1	vis	0	ndx	0	name	special_glyph
+DYNAMIC_SYMBOL	182	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_attach_event
+DYNAMIC_SYMBOL	183	0x0	type	2	bind	1	vis	0	ndx	0	name	strstr
+DYNAMIC_SYMBOL	184	0x0	type	2	bind	1	vis	0	ndx	0	name	format_timestamp
+DYNAMIC_SYMBOL	185	0x0	type	2	bind	1	vis	0	ndx	0	name	mpol_to_string
+DYNAMIC_SYMBOL	186	0x0	type	2	bind	1	vis	0	ndx	0	name	__vprintf_chk
+DYNAMIC_SYMBOL	187	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_connect_transport_systemd
+DYNAMIC_SYMBOL	188	0x0	type	2	bind	1	vis	0	ndx	0	name	parse_boolean
+DYNAMIC_SYMBOL	189	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_peek_type
+DYNAMIC_SYMBOL	190	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_deserialize_and_dump_unit_file_changes
+DYNAMIC_SYMBOL	191	0x0	type	2	bind	1	vis	0	ndx	0	name	busname_state_to_string
+DYNAMIC_SYMBOL	192	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_open_container
+DYNAMIC_SYMBOL	193	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_preset_all
+DYNAMIC_SYMBOL	194	0x0	type	2	bind	1	vis	0	ndx	0	name	signal_to_string
+DYNAMIC_SYMBOL	195	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_get_state
+DYNAMIC_SYMBOL	196	0x0	type	2	bind	1	vis	0	ndx	0	name	basename
+DYNAMIC_SYMBOL	197	0x0	type	2	bind	1	vis	0	ndx	0	name	getopt_long
+DYNAMIC_SYMBOL	198	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_list_free
+DYNAMIC_SYMBOL	199	0x0	type	2	bind	1	vis	0	ndx	0	name	running_in_chroot_or_offline
+DYNAMIC_SYMBOL	200	0x0	type	2	bind	1	vis	0	ndx	0	name	mkdir_parents
+DYNAMIC_SYMBOL	201	0x0	type	2	bind	1	vis	0	ndx	0	name	raise
+DYNAMIC_SYMBOL	202	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_unref
+DYNAMIC_SYMBOL	203	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_wait_for_units_run
+DYNAMIC_SYMBOL	204	0x0	type	2	bind	1	vis	0	ndx	0	name	getuid
+DYNAMIC_SYMBOL	205	0x0	type	2	bind	1	vis	0	ndx	0	name	pager_close
+DYNAMIC_SYMBOL	206	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_session_get_uid
+DYNAMIC_SYMBOL	207	0x0	type	2	bind	1	vis	0	ndx	0	name	automount_state_to_string
+DYNAMIC_SYMBOL	208	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_show_processes
+DYNAMIC_SYMBOL	209	0x0	type	2	bind	1	vis	0	ndx	0	name	service_state_to_string
+DYNAMIC_SYMBOL	210	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_set_property
+DYNAMIC_SYMBOL	211	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_close_container
+DYNAMIC_SYMBOL	212	0x0	type	1	bind	1	vis	0	ndx	0	name	environ
+DYNAMIC_SYMBOL	213	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_wait_for_units_add_unit
+DYNAMIC_SYMBOL	214	0x0	type	2	bind	1	vis	0	ndx	0	name	calloc
+DYNAMIC_SYMBOL	215	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_read
+DYNAMIC_SYMBOL	216	0x0	type	2	bind	1	vis	0	ndx	0	name	terminal_urlify
+DYNAMIC_SYMBOL	217	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_read_strv
+DYNAMIC_SYMBOL	218	0x0	type	2	bind	1	vis	0	ndx	0	name	__sched_cpufree
+DYNAMIC_SYMBOL	219	0x0	type	2	bind	1	vis	0	ndx	0	name	__vfprintf_chk
+DYNAMIC_SYMBOL	220	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_add_dependency
+DYNAMIC_SYMBOL	221	0x0	type	2	bind	1	vis	0	ndx	0	name	setlocale
+DYNAMIC_SYMBOL	222	0x0	type	2	bind	1	vis	0	ndx	0	name	show_cgroup_and_extra
+DYNAMIC_SYMBOL	223	0x0	type	2	bind	1	vis	0	ndx	0	name	terminal_urlify_path
+DYNAMIC_SYMBOL	224	0x0	type	2	bind	1	vis	0	ndx	0	name	exit_status_to_string
+DYNAMIC_SYMBOL	225	0x0	type	2	bind	1	vis	0	ndx	0	name	strjoin_real
+DYNAMIC_SYMBOL	226	0x0	type	2	bind	1	vis	0	ndx	0	name	flockfile
+DYNAMIC_SYMBOL	227	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_name_mangle_with_suffix
+DYNAMIC_SYMBOL	228	0x0	type	2	bind	1	vis	0	ndx	0	name	fputc
+DYNAMIC_SYMBOL	229	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_open_system_machine
+DYNAMIC_SYMBOL	230	0x0	type	2	bind	1	vis	0	ndx	0	name	safe_atou_full
+DYNAMIC_SYMBOL	231	0x0	type	2	bind	1	vis	0	ndx	0	name	chase_symlinks
+DYNAMIC_SYMBOL	232	0x0	type	2	bind	1	vis	0	ndx	0	name	memcpy
+DYNAMIC_SYMBOL	233	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_extend
+DYNAMIC_SYMBOL	234	0x0	type	2	bind	1	vis	0	ndx	0	name	on_tty
+DYNAMIC_SYMBOL	235	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_read_array
+DYNAMIC_SYMBOL	236	0x0	type	2	bind	1	vis	0	ndx	0	name	geteuid
+DYNAMIC_SYMBOL	237	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_session_get_type
+DYNAMIC_SYMBOL	238	0x0	type	2	bind	1	vis	0	ndx	0	name	malloc
+DYNAMIC_SYMBOL	239	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_mask
+DYNAMIC_SYMBOL	240	0x0	type	2	bind	1	vis	0	ndx	0	name	strlen
+DYNAMIC_SYMBOL	241	0x0	type	2	bind	1	vis	0	ndx	0	name	cgroup_io_limit_type_from_string
+DYNAMIC_SYMBOL	242	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_name_replace_instance
+DYNAMIC_SYMBOL	243	0x0	type	2	bind	1	vis	0	ndx	0	name	tempfn_random
+DYNAMIC_SYMBOL	244	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_push_pair
+DYNAMIC_SYMBOL	245	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_machine_get_class
+DYNAMIC_SYMBOL	246	0x0	type	2	bind	1	vis	0	ndx	0	name	format_bytes_full
+DYNAMIC_SYMBOL	247	0x0	type	2	bind	1	vis	0	ndx	0	name	is_clean_exit
+DYNAMIC_SYMBOL	248	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_link
+DYNAMIC_SYMBOL	249	0x0	type	2	bind	1	vis	0	ndx	0	name	copy_file_full
+DYNAMIC_SYMBOL	250	0x0	type	2	bind	1	vis	0	ndx	0	name	fputc_unlocked
+DYNAMIC_SYMBOL	251	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_load_state_from_string
+DYNAMIC_SYMBOL	252	0x0	type	2	bind	1	vis	0	ndx	0	name	rlimit_nofile_bump
+DYNAMIC_SYMBOL	253	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_slot_unref
+DYNAMIC_SYMBOL	254	0x0	type	2	bind	1	vis	0	ndx	0	name	now
+DYNAMIC_SYMBOL	255	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr1
+DYNAMIC_SYMBOL	256	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_copy
+DYNAMIC_SYMBOL	257	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_get_property_trivial
+DYNAMIC_SYMBOL	258	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_get_bus
+DYNAMIC_SYMBOL	259	0x0	type	1	bind	1	vis	0	ndx	0	name	stdout
+DYNAMIC_SYMBOL	260	0x0	type	2	bind	1	vis	0	ndx	0	name	exec_command_flags_from_strv
+DYNAMIC_SYMBOL	261	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_error_is_set
+DYNAMIC_SYMBOL	262	0x0	type	2	bind	1	vis	0	ndx	0	name	path_state_to_string
+DYNAMIC_SYMBOL	263	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_split_full
+DYNAMIC_SYMBOL	264	0x0	type	2	bind	1	vis	0	ndx	0	name	execv
+DYNAMIC_SYMBOL	265	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_revert
+DYNAMIC_SYMBOL	266	0x0	type	2	bind	1	vis	0	ndx	0	name	in_addr_prefix_to_string
+DYNAMIC_SYMBOL	267	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_error_message
+DYNAMIC_SYMBOL	268	0x0	type	2	bind	1	vis	0	ndx	0	name	_exit
+DYNAMIC_SYMBOL	269	0x0	type	2	bind	1	vis	0	ndx	0	name	strcmp
+DYNAMIC_SYMBOL	270	0x0	type	2	bind	1	vis	0	ndx	0	name	pager_have
+DYNAMIC_SYMBOL	271	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_read_basic
+DYNAMIC_SYMBOL	272	0x0	type	2	bind	1	vis	0	ndx	0	name	log_parse_environment_realm
+DYNAMIC_SYMBOL	273	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_event_unref
+DYNAMIC_SYMBOL	274	0x0	type	2	bind	1	vis	0	ndx	0	name	show_man_page
+DYNAMIC_SYMBOL	275	0x0	type	2	bind	1	vis	0	ndx	0	name	uid_to_name
+DYNAMIC_SYMBOL	276	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_call_method
+DYNAMIC_SYMBOL	277	0x0	type	2	bind	1	vis	0	ndx	0	name	__errno_location
+DYNAMIC_SYMBOL	278	0x0	type	2	bind	1	vis	0	ndx	0	name	sigchld_code_to_string
+DYNAMIC_SYMBOL	279	0x0	type	2	bind	1	vis	0	ndx	0	name	fputs_unlocked
+DYNAMIC_SYMBOL	280	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_call
+DYNAMIC_SYMBOL	281	0x0	type	2	bind	1	vis	0	ndx	0	name	memchr
+DYNAMIC_SYMBOL	282	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_deregisterTMCloneTable
+DYNAMIC_SYMBOL	283	0x0	type	2	bind	1	vis	0	ndx	0	name	socket_state_to_string
+DYNAMIC_SYMBOL	284	0x0	type	2	bind	1	vis	0	ndx	0	name	_Unwind_Resume
+DYNAMIC_SYMBOL	285	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_dependency_to_string
+DYNAMIC_SYMBOL	286	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_session_get_class
+DYNAMIC_SYMBOL	287	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_active_state_to_string
+DYNAMIC_SYMBOL	288	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr0
+DYNAMIC_SYMBOL	289	0x0	type	2	bind	1	vis	0	ndx	0	name	log_assert_failed_realm
+DYNAMIC_SYMBOL	290	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_dump_changes
+DYNAMIC_SYMBOL	291	0x0	type	2	bind	1	vis	0	ndx	0	name	log_internal_realm
+DYNAMIC_SYMBOL	292	0x0	type	2	bind	1	vis	0	ndx	0	name	lookup_paths_init
+DYNAMIC_SYMBOL	293	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_changes_free
+DYNAMIC_SYMBOL	294	0x0	type	2	bind	1	vis	0	ndx	0	name	format_timespan
+DYNAMIC_SYMBOL	295	0x0	type	2	bind	1	vis	0	ndx	0	name	strrchr
+DYNAMIC_SYMBOL	296	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_get_property_string
+DYNAMIC_SYMBOL	297	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_free
+DYNAMIC_SYMBOL	298	0x0	type	2	bind	1	vis	0	ndx	0	name	__vasprintf_chk
+DYNAMIC_SYMBOL	299	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_print_property_value
+DYNAMIC_SYMBOL	300	0x0	type	2	bind	1	vis	0	ndx	0	name	funlockfile
+DYNAMIC_SYMBOL	301	0x0	type	2	bind	1	vis	0	ndx	0	name	mktime
+DYNAMIC_SYMBOL	302	0x0	type	2	bind	1	vis	0	ndx	0	name	pager_open
+DYNAMIC_SYMBOL	303	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_state_from_string
+DYNAMIC_SYMBOL	304	0x0	type	2	bind	1	vis	0	ndx	0	name	default_signals
+DYNAMIC_SYMBOL	305	0x0	type	1	bind	1	vis	0	ndx	0	name	program_invocation_short_name
+DYNAMIC_SYMBOL	306	0x0	type	2	bind	1	vis	0	ndx	0	name	fputs
+DYNAMIC_SYMBOL	307	0x0	type	2	bind	1	vis	0	ndx	0	name	getenv
+DYNAMIC_SYMBOL	308	0x0	type	2	bind	1	vis	0	ndx	0	name	ignore_signals
+DYNAMIC_SYMBOL	309	0x0	type	2	bind	1	vis	0	ndx	0	name	colors_enabled
+DYNAMIC_SYMBOL	310	0x0	type	2	bind	1	vis	0	ndx	0	name	execvp
+DYNAMIC_SYMBOL	311	0x0	type	0	bind	2	vis	0	ndx	0	name	__gmon_start__
+DYNAMIC_SYMBOL	312	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_bus_message_append
+DYNAMIC_SYMBOL	313	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_get_default
+DYNAMIC_SYMBOL	314	0x0	type	2	bind	1	vis	0	ndx	0	name	rename
+DYNAMIC_SYMBOL	315	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_registerTMCloneTable
+DYNAMIC_SYMBOL	316	0x0	type	2	bind	1	vis	0	ndx	0	name	sd_booted
+DYNAMIC_SYMBOL	317	0x0	type	2	bind	1	vis	0	ndx	0	name	strchr
+DYNAMIC_SYMBOL	318	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_finalize
+DYNAMIC_SYMBOL	319	0x0	type	2	bind	1	vis	0	ndx	0	name	strv_join_prefix
+DYNAMIC_SYMBOL	320	0x0	type	2	bind	1	vis	0	ndx	0	name	show_journal_by_unit
+DYNAMIC_SYMBOL	321	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_wait_for_jobs
+DYNAMIC_SYMBOL	322	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_name_from_dbus_path
+DYNAMIC_SYMBOL	323	0x0	type	2	bind	1	vis	0	ndx	0	name	strdup
+DYNAMIC_SYMBOL	324	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_connect_transport
+DYNAMIC_SYMBOL	325	0x0	type	2	bind	1	vis	0	ndx	0	name	bus_parse_unit_info
+DYNAMIC_SYMBOL	326	0x0	type	2	bind	1	vis	0	ndx	0	name	__isoc23_strtol
+DYNAMIC_SYMBOL	327	0x0	type	2	bind	1	vis	0	ndx	0	name	touch
+DYNAMIC_SYMBOL	328	0x0	type	2	bind	1	vis	0	ndx	0	name	unit_file_preset_mode_to_string
+DYNAMIC_SYMBOL	329	0x0	type	2	bind	1	vis	0	ndx	0	name	log_oom_internal
+DYNAMIC	0x1	0x1676
+DYNAMIC	0x1	0x168f
+DYNAMIC	0x1	0x169d
+DYNAMIC	0x1	0x16ad
+DYNAMIC	0x1	0x16b7
+DYNAMIC	0x1d	0x171d
+RUNPATH_VALUE	/usr/lib/systemd
+DYNAMIC	0xc	0x4d08
+DYNAMIC	0xd	0x19e04
+DYNAMIC	0x19	0x25000
+DYNAMIC	0x1b	0x4
+DYNAMIC	0x1a	0x25004
+DYNAMIC	0x1c	0x4
+DYNAMIC	0x6ffffef5	0x188
+DYNAMIC	0x5	0x1640
+DYNAMIC	0x6	0x1a0
+DYNAMIC	0xa	0x173a
+DYNAMIC	0xb	0x10
+DYNAMIC	0x15	0x0
+DYNAMIC	0x3	0x26574
+DYNAMIC	0x2	0x9a8
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x4360
+DYNAMIC	0x11	0x30f0
+DYNAMIC	0x12	0x1270
+DYNAMIC	0x13	0x8
+DYNAMIC	0x1e	0x8
+DYNAMIC	0x6ffffffb	0x8000001
+DYNAMIC	0x6ffffffe	0x3010
+DYNAMIC	0x6fffffff	0x4
+DYNAMIC	0x6ffffff0	0x2d7a
+DYNAMIC	0x6ffffffa	0x23f
+DYNAMIC	0x0	0x0
+FIELD	RELRO	Full
+FIELD	NX	Enabled
+FIELD	PIE	Yes
+FIELD	canary	Detected(import)
+FIELD	FORTIFY	Detected(import)
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Present
+FIELD	dynamic_export_count_including_ABS	0
+FIELD	dynamic_export_non_ABS_count	0
+FIELD	dynamic_export_function_count	0
+METADATA_READER_SUCCESS
+
+
+RPM_LUA_EXIT_CODE: 0
+@@END_SAMPLE systemctl
+logout

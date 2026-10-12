@@ -1,0 +1,867 @@
+COMMAND: readelf -W -h -l -S -d --dyn-syms /usr/lib/libsqlite3.so.0
+sh: line 160: readelf: command not found
+READELF_EXIT_CODE: 127
+COMMAND: RPM4.14.1 embedded Lua5.1 direct read-only ELF metadata (/usr/lib/libsqlite3.so.0)
+METHOD	RPM_EMBEDDED_LUA_DIRECT_ELF_METADATA	Lua=Lua 5.1
+TARGET	/usr/lib/libsqlite3.so.0	shared-library
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	6	shoff	0xc75cc	shnum	25
+PROGRAM_HEADER	0	0x70000001	offset	0xbe188	vaddr	0xbe188	filesz	17448	memsz	17448	flags	4
+PROGRAM_HEADER	1	0x1	offset	0x0	vaddr	0x0	filesz	796084	memsz	796084	flags	5
+PROGRAM_HEADER	2	0x1	offset	0xc3000	vaddr	0xc3000	filesz	17616	memsz	18596	flags	6
+PROGRAM_HEADER	3	0x2	offset	0xc49a4	vaddr	0xc49a4	filesz	264	memsz	264	flags	6
+PROGRAM_HEADER	4	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+PROGRAM_HEADER	5	0x6474e552	offset	0xc3000	vaddr	0xc3000	filesz	8192	memsz	8192	flags	4
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.gnu.hash	1879048182	offset	0xf4	size	4268	link	2	entsize	4
+SECTION	2	.dynsym	11	offset	0x11a0	size	7088	link	3	entsize	16
+SECTION	3	.dynstr	3	offset	0x2d50	size	8427	link	0	entsize	0
+SECTION	4	.gnu.version	1879048191	offset	0x4e3c	size	886	link	2	entsize	2
+SECTION	5	.gnu.version_r	1879048190	offset	0x51b4	size	208	link	3	entsize	0
+SECTION	6	.rel.dyn	9	offset	0x5284	size	15416	link	2	entsize	8
+SECTION	7	.rel.plt	9	offset	0x8ebc	size	1192	link	2	entsize	8
+SECTION	8	.init	1	offset	0x9364	size	12	link	0	entsize	0
+SECTION	9	.plt	1	offset	0x9370	size	1952	link	0	entsize	4
+SECTION	10	.text	1	offset	0x9b10	size	667496	link	0	entsize	0
+SECTION	11	.fini	1	offset	0xaca78	size	8	link	0	entsize	0
+SECTION	12	.rodata	1	offset	0xaca80	size	70328	link	0	entsize	0
+SECTION	13	.ARM.extab	1	offset	0xbdd38	size	1104	link	0	entsize	0
+SECTION	14	.ARM.exidx	1879048193	offset	0xbe188	size	17448	link	10	entsize	0
+SECTION	15	.eh_frame	1	offset	0xc25b0	size	4	link	0	entsize	0
+SECTION	16	.init_array	14	offset	0xc3000	size	4	link	0	entsize	4
+SECTION	17	.fini_array	15	offset	0xc3004	size	4	link	0	entsize	4
+SECTION	18	.data.rel.ro	1	offset	0xc3008	size	6556	link	0	entsize	0
+SECTION	19	.dynamic	6	offset	0xc49a4	size	264	link	3	entsize	8
+SECTION	20	.got	1	offset	0xc5000	size	652	link	0	entsize	4
+SECTION	21	.data	1	offset	0xc5290	size	8768	link	0	entsize	0
+SECTION	22	.bss	8	offset	0xc74d0	size	980	link	0	entsize	0
+SECTION	23	.gnu_debuglink	1	offset	0xc74d0	size	32	link	0	entsize	0
+SECTION	24	.shstrtab	3	offset	0xc74f0	size	218	link	0	entsize	0
+DYNAMIC_SYMBOL	0	0x0	type	0	bind	0	vis	0	ndx	0	name	
+DYNAMIC_SYMBOL	1	0x9364	type	3	bind	0	vis	0	ndx	8	name	
+DYNAMIC_SYMBOL	2	0xc5290	type	3	bind	0	vis	0	ndx	21	name	
+DYNAMIC_SYMBOL	3	0x0	type	2	bind	1	vis	0	ndx	0	name	sinh
+DYNAMIC_SYMBOL	4	0x0	type	2	bind	1	vis	0	ndx	0	name	qsort
+DYNAMIC_SYMBOL	5	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_join
+DYNAMIC_SYMBOL	6	0x0	type	2	bind	1	vis	0	ndx	0	name	mkdir
+DYNAMIC_SYMBOL	7	0x0	type	2	bind	1	vis	0	ndx	0	name	dlerror
+DYNAMIC_SYMBOL	8	0x0	type	2	bind	1	vis	0	ndx	0	name	geteuid
+DYNAMIC_SYMBOL	9	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutexattr_destroy
+DYNAMIC_SYMBOL	10	0x0	type	2	bind	1	vis	0	ndx	0	name	localtime
+DYNAMIC_SYMBOL	11	0x0	type	2	bind	1	vis	0	ndx	0	name	memcmp
+DYNAMIC_SYMBOL	12	0x0	type	2	bind	1	vis	0	ndx	0	name	sysconf
+DYNAMIC_SYMBOL	13	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr0
+DYNAMIC_SYMBOL	14	0x0	type	2	bind	1	vis	0	ndx	0	name	mremap
+DYNAMIC_SYMBOL	15	0x0	type	2	bind	1	vis	0	ndx	0	name	exp
+DYNAMIC_SYMBOL	16	0x0	type	2	bind	1	vis	0	ndx	0	name	asin
+DYNAMIC_SYMBOL	17	0x0	type	0	bind	2	vis	0	ndx	0	name	__gmon_start__
+DYNAMIC_SYMBOL	18	0x0	type	2	bind	1	vis	0	ndx	0	name	getenv
+DYNAMIC_SYMBOL	19	0x0	type	2	bind	1	vis	0	ndx	0	name	strchr
+DYNAMIC_SYMBOL	20	0x0	type	2	bind	1	vis	0	ndx	0	name	fchown
+DYNAMIC_SYMBOL	21	0x0	type	2	bind	1	vis	0	ndx	0	name	memset
+DYNAMIC_SYMBOL	22	0x0	type	2	bind	1	vis	0	ndx	0	name	strrchr
+DYNAMIC_SYMBOL	23	0x0	type	2	bind	1	vis	0	ndx	0	name	floor
+DYNAMIC_SYMBOL	24	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_deregisterTMCloneTable
+DYNAMIC_SYMBOL	25	0x0	type	2	bind	1	vis	0	ndx	0	name	sqrt
+DYNAMIC_SYMBOL	26	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_create
+DYNAMIC_SYMBOL	27	0x0	type	2	bind	1	vis	0	ndx	0	name	log
+DYNAMIC_SYMBOL	28	0x0	type	2	bind	1	vis	0	ndx	0	name	free
+DYNAMIC_SYMBOL	29	0x0	type	2	bind	1	vis	0	ndx	0	name	read
+DYNAMIC_SYMBOL	30	0x0	type	2	bind	1	vis	0	ndx	0	name	write
+DYNAMIC_SYMBOL	31	0x0	type	2	bind	1	vis	0	ndx	0	name	atan
+DYNAMIC_SYMBOL	32	0x0	type	2	bind	1	vis	0	ndx	0	name	access
+DYNAMIC_SYMBOL	33	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_registerTMCloneTable
+DYNAMIC_SYMBOL	34	0x0	type	2	bind	1	vis	0	ndx	0	name	gettimeofday
+DYNAMIC_SYMBOL	35	0x0	type	2	bind	1	vis	0	ndx	0	name	stat64
+DYNAMIC_SYMBOL	36	0x0	type	2	bind	1	vis	0	ndx	0	name	__memcpy_chk
+DYNAMIC_SYMBOL	37	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_unlock
+DYNAMIC_SYMBOL	38	0x0	type	2	bind	1	vis	0	ndx	0	name	pread64
+DYNAMIC_SYMBOL	39	0x0	type	2	bind	1	vis	0	ndx	0	name	atanh
+DYNAMIC_SYMBOL	40	0x0	type	2	bind	1	vis	0	ndx	0	name	tanh
+DYNAMIC_SYMBOL	41	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutexattr_init
+DYNAMIC_SYMBOL	42	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_lock
+DYNAMIC_SYMBOL	43	0x0	type	2	bind	1	vis	0	ndx	0	name	cos
+DYNAMIC_SYMBOL	44	0x0	type	2	bind	1	vis	0	ndx	0	name	strlen
+DYNAMIC_SYMBOL	45	0x0	type	2	bind	1	vis	0	ndx	0	name	unlink
+DYNAMIC_SYMBOL	46	0x0	type	2	bind	1	vis	0	ndx	0	name	fdatasync
+DYNAMIC_SYMBOL	47	0x0	type	2	bind	1	vis	0	ndx	0	name	memcpy
+DYNAMIC_SYMBOL	48	0x0	type	2	bind	1	vis	0	ndx	0	name	acos
+DYNAMIC_SYMBOL	49	0x0	type	2	bind	1	vis	0	ndx	0	name	fstat64
+DYNAMIC_SYMBOL	50	0x0	type	2	bind	1	vis	0	ndx	0	name	bcmp
+DYNAMIC_SYMBOL	51	0x0	type	2	bind	1	vis	0	ndx	0	name	dlopen
+DYNAMIC_SYMBOL	52	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_destroy
+DYNAMIC_SYMBOL	53	0x0	type	2	bind	1	vis	0	ndx	0	name	open64
+DYNAMIC_SYMBOL	54	0x0	type	1	bind	1	vis	0	ndx	0	name	__stack_chk_guard
+DYNAMIC_SYMBOL	55	0x0	type	2	bind	1	vis	0	ndx	0	name	raise
+DYNAMIC_SYMBOL	56	0x0	type	2	bind	1	vis	0	ndx	0	name	pwrite64
+DYNAMIC_SYMBOL	57	0x0	type	2	bind	1	vis	0	ndx	0	name	fcntl64
+DYNAMIC_SYMBOL	58	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_init
+DYNAMIC_SYMBOL	59	0x0	type	2	bind	1	vis	0	ndx	0	name	close
+DYNAMIC_SYMBOL	60	0x0	type	2	bind	1	vis	0	ndx	0	name	trunc
+DYNAMIC_SYMBOL	61	0x0	type	2	bind	1	vis	0	ndx	0	name	time
+DYNAMIC_SYMBOL	62	0x0	type	2	bind	1	vis	0	ndx	0	name	log10
+DYNAMIC_SYMBOL	63	0x0	type	2	bind	1	vis	0	ndx	0	name	malloc
+DYNAMIC_SYMBOL	64	0x0	type	2	bind	1	vis	0	ndx	0	name	mmap64
+DYNAMIC_SYMBOL	65	0x0	type	2	bind	1	vis	0	ndx	0	name	__stack_chk_fail
+DYNAMIC_SYMBOL	66	0x0	type	2	bind	1	vis	0	ndx	0	name	asinh
+DYNAMIC_SYMBOL	67	0x0	type	2	bind	1	vis	0	ndx	0	name	atan2
+DYNAMIC_SYMBOL	68	0x0	type	2	bind	1	vis	0	ndx	0	name	acosh
+DYNAMIC_SYMBOL	69	0x0	type	2	bind	1	vis	0	ndx	0	name	getcwd
+DYNAMIC_SYMBOL	70	0x0	type	2	bind	1	vis	0	ndx	0	name	rmdir
+DYNAMIC_SYMBOL	71	0x0	type	2	bind	1	vis	0	ndx	0	name	lstat64
+DYNAMIC_SYMBOL	72	0x0	type	2	bind	1	vis	0	ndx	0	name	memmove
+DYNAMIC_SYMBOL	73	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutexattr_settype
+DYNAMIC_SYMBOL	74	0x0	type	2	bind	1	vis	0	ndx	0	name	getpid
+DYNAMIC_SYMBOL	75	0x0	type	2	bind	1	vis	0	ndx	0	name	fmod
+DYNAMIC_SYMBOL	76	0x0	type	2	bind	1	vis	0	ndx	0	name	readlink
+DYNAMIC_SYMBOL	77	0x0	type	2	bind	1	vis	0	ndx	0	name	sin
+DYNAMIC_SYMBOL	78	0x0	type	2	bind	1	vis	0	ndx	0	name	log2
+DYNAMIC_SYMBOL	79	0x0	type	2	bind	1	vis	0	ndx	0	name	munmap
+DYNAMIC_SYMBOL	80	0x0	type	2	bind	1	vis	0	ndx	0	name	strspn
+DYNAMIC_SYMBOL	81	0x0	type	2	bind	1	vis	0	ndx	0	name	tan
+DYNAMIC_SYMBOL	82	0x0	type	2	bind	1	vis	0	ndx	0	name	cosh
+DYNAMIC_SYMBOL	83	0x0	type	2	bind	1	vis	0	ndx	0	name	dlsym
+DYNAMIC_SYMBOL	84	0x0	type	2	bind	1	vis	0	ndx	0	name	strcspn
+DYNAMIC_SYMBOL	85	0x0	type	2	bind	1	vis	0	ndx	0	name	strncmp
+DYNAMIC_SYMBOL	86	0x0	type	2	bind	1	vis	0	ndx	0	name	nanosleep
+DYNAMIC_SYMBOL	87	0x0	type	2	bind	1	vis	0	ndx	0	name	__memmove_chk
+DYNAMIC_SYMBOL	88	0x0	type	2	bind	1	vis	0	ndx	0	name	utimes
+DYNAMIC_SYMBOL	89	0x0	type	2	bind	1	vis	0	ndx	0	name	realloc
+DYNAMIC_SYMBOL	90	0x0	type	2	bind	1	vis	0	ndx	0	name	ftruncate64
+DYNAMIC_SYMBOL	91	0x0	type	2	bind	1	vis	0	ndx	0	name	__aeabi_unwind_cpp_pr1
+DYNAMIC_SYMBOL	92	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_trylock
+DYNAMIC_SYMBOL	93	0x0	type	2	bind	1	vis	0	ndx	0	name	pow
+DYNAMIC_SYMBOL	94	0x0	type	2	bind	1	vis	0	ndx	0	name	memchr
+DYNAMIC_SYMBOL	95	0x0	type	2	bind	1	vis	0	ndx	0	name	fchmod
+DYNAMIC_SYMBOL	96	0x0	type	2	bind	1	vis	0	ndx	0	name	strcmp
+DYNAMIC_SYMBOL	97	0x0	type	2	bind	1	vis	0	ndx	0	name	__errno_location
+DYNAMIC_SYMBOL	98	0x0	type	2	bind	1	vis	0	ndx	0	name	__memset_chk
+DYNAMIC_SYMBOL	99	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_finalize
+DYNAMIC_SYMBOL	100	0x0	type	2	bind	1	vis	0	ndx	0	name	ceil
+DYNAMIC_SYMBOL	101	0x0	type	2	bind	1	vis	0	ndx	0	name	dlclose
+DYNAMIC_SYMBOL	102	0x1a35f	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_start_v2
+EXPORT	2	1	0	10	sqlite3changeset_start_v2
+DYNAMIC_SYMBOL	103	0x16909	type	2	bind	1	vis	0	ndx	10	name	sqlite3_error_offset
+EXPORT	2	1	0	10	sqlite3_error_offset
+DYNAMIC_SYMBOL	104	0xfac9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_backup_remaining
+EXPORT	2	1	0	10	sqlite3_backup_remaining
+DYNAMIC_SYMBOL	105	0x1b5e3	type	2	bind	1	vis	0	ndx	10	name	sqlite3changegroup_add_change
+EXPORT	2	1	0	10	sqlite3changegroup_add_change
+DYNAMIC_SYMBOL	106	0x9bd9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_status64
+EXPORT	2	1	0	10	sqlite3_status64
+DYNAMIC_SYMBOL	107	0x1a7c7	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_new
+EXPORT	2	1	0	10	sqlite3changeset_new
+DYNAMIC_SYMBOL	108	0xc6c3	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_reset
+EXPORT	2	1	0	10	sqlite3_str_reset
+DYNAMIC_SYMBOL	109	0x15997	type	2	bind	1	vis	0	ndx	10	name	sqlite3_total_changes64
+EXPORT	2	1	0	10	sqlite3_total_changes64
+DYNAMIC_SYMBOL	110	0xc825	type	2	bind	1	vis	0	ndx	10	name	sqlite3_log
+EXPORT	2	1	0	10	sqlite3_log
+DYNAMIC_SYMBOL	111	0x11161	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_text16
+EXPORT	2	1	0	10	sqlite3_bind_text16
+DYNAMIC_SYMBOL	112	0x11541	type	2	bind	1	vis	0	ndx	10	name	sqlite3_stmt_status
+EXPORT	2	1	0	10	sqlite3_stmt_status
+DYNAMIC_SYMBOL	113	0xa20b	type	2	bind	1	vis	0	ndx	10	name	sqlite3_db_status
+EXPORT	2	1	0	10	sqlite3_db_status
+DYNAMIC_SYMBOL	114	0x15a09	type	2	bind	1	vis	0	ndx	10	name	sqlite3_close
+EXPORT	2	1	0	10	sqlite3_close
+DYNAMIC_SYMBOL	115	0x14b69	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vtab_config
+EXPORT	2	1	0	10	sqlite3_vtab_config
+DYNAMIC_SYMBOL	116	0x10e3d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_double
+EXPORT	2	1	0	10	sqlite3_bind_double
+DYNAMIC_SYMBOL	117	0x10d55	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_table_name16
+EXPORT	2	1	0	10	sqlite3_column_table_name16
+DYNAMIC_SYMBOL	118	0xe8b1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_database_file_object
+EXPORT	2	1	0	10	sqlite3_database_file_object
+DYNAMIC_SYMBOL	119	0x12f97	type	2	bind	1	vis	0	ndx	10	name	sqlite3_blob_bytes
+EXPORT	2	1	0	10	sqlite3_blob_bytes
+DYNAMIC_SYMBOL	120	0x109cb	type	2	bind	1	vis	0	ndx	10	name	sqlite3_get_auxdata
+EXPORT	2	1	0	10	sqlite3_get_auxdata
+DYNAMIC_SYMBOL	121	0x162cd	type	2	bind	1	vis	0	ndx	10	name	sqlite3_trace
+EXPORT	2	1	0	10	sqlite3_trace
+DYNAMIC_SYMBOL	122	0x14d8d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vtab_distinct
+EXPORT	2	1	0	10	sqlite3_vtab_distinct
+DYNAMIC_SYMBOL	123	0x18799	type	2	bind	1	vis	0	ndx	10	name	sqlite3_compileoption_used
+EXPORT	2	1	0	10	sqlite3_compileoption_used
+DYNAMIC_SYMBOL	124	0x1a1d7	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_patchset
+EXPORT	2	1	0	10	sqlite3session_patchset
+DYNAMIC_SYMBOL	125	0x1111d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_text
+EXPORT	2	1	0	10	sqlite3_bind_text
+DYNAMIC_SYMBOL	126	0x10e21	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_blob64
+EXPORT	2	1	0	10	sqlite3_bind_blob64
+DYNAMIC_SYMBOL	127	0x13839	type	2	bind	1	vis	0	ndx	10	name	sqlite3_auto_extension
+EXPORT	2	1	0	10	sqlite3_auto_extension
+DYNAMIC_SYMBOL	128	0x1140d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_db_handle
+EXPORT	2	1	0	10	sqlite3_db_handle
+DYNAMIC_SYMBOL	129	0x186e5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_filename_wal
+EXPORT	2	1	0	10	sqlite3_filename_wal
+DYNAMIC_SYMBOL	130	0x19961	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_attach
+EXPORT	2	1	0	10	sqlite3session_attach
+DYNAMIC_SYMBOL	131	0x11427	type	2	bind	1	vis	0	ndx	10	name	sqlite3_stmt_isexplain
+EXPORT	2	1	0	10	sqlite3_stmt_isexplain
+DYNAMIC_SYMBOL	132	0x15d85	type	2	bind	1	vis	0	ndx	10	name	sqlite3_create_function_v2
+EXPORT	2	1	0	10	sqlite3_create_function_v2
+DYNAMIC_SYMBOL	133	0xe8e1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_backup_init
+EXPORT	2	1	0	10	sqlite3_backup_init
+DYNAMIC_SYMBOL	134	0x10d67	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_blob
+EXPORT	2	1	0	10	sqlite3_bind_blob
+DYNAMIC_SYMBOL	135	0x10315	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_null
+EXPORT	2	1	0	10	sqlite3_result_null
+DYNAMIC_SYMBOL	136	0x15c85	type	2	bind	1	vis	0	ndx	10	name	sqlite3_create_function
+EXPORT	2	1	0	10	sqlite3_create_function
+DYNAMIC_SYMBOL	137	0x1095d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vtab_in_next
+EXPORT	2	1	0	10	sqlite3_vtab_in_next
+DYNAMIC_SYMBOL	138	0x15dab	type	2	bind	1	vis	0	ndx	10	name	sqlite3_create_window_function
+EXPORT	2	1	0	10	sqlite3_create_window_function
+DYNAMIC_SYMBOL	139	0x1a391	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_start_v2_strm
+EXPORT	2	1	0	10	sqlite3changeset_start_v2_strm
+DYNAMIC_SYMBOL	140	0xfcdd	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_bytes16
+EXPORT	2	1	0	10	sqlite3_value_bytes16
+DYNAMIC_SYMBOL	141	0x15b55	type	2	bind	1	vis	0	ndx	10	name	sqlite3_close_v2
+EXPORT	2	1	0	10	sqlite3_close_v2
+DYNAMIC_SYMBOL	142	0x112e5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_parameter_name
+EXPORT	2	1	0	10	sqlite3_bind_parameter_name
+DYNAMIC_SYMBOL	143	0x172c1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_collation_needed16
+EXPORT	2	1	0	10	sqlite3_collation_needed16
+DYNAMIC_SYMBOL	144	0x10d61	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_origin_name16
+EXPORT	2	1	0	10	sqlite3_column_origin_name16
+DYNAMIC_SYMBOL	145	0xc651	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_finish
+EXPORT	2	1	0	10	sqlite3_str_finish
+DYNAMIC_SYMBOL	146	0x11095	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_pointer
+EXPORT	2	1	0	10	sqlite3_bind_pointer
+DYNAMIC_SYMBOL	147	0x10d5b	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_origin_name
+EXPORT	2	1	0	10	sqlite3_column_origin_name
+DYNAMIC_SYMBOL	148	0x115b1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_expanded_sql
+EXPORT	2	1	0	10	sqlite3_expanded_sql
+DYNAMIC_SYMBOL	149	0x179d1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_extended_result_codes
+EXPORT	2	1	0	10	sqlite3_extended_result_codes
+DYNAMIC_SYMBOL	150	0xd7c5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_os_end
+EXPORT	2	1	0	10	sqlite3_os_end
+DYNAMIC_SYMBOL	151	0x13061	type	2	bind	1	vis	0	ndx	10	name	sqlite3_set_authorizer
+EXPORT	2	1	0	10	sqlite3_set_authorizer
+DYNAMIC_SYMBOL	152	0x1bf99	type	2	bind	1	vis	0	ndx	10	name	sqlite3changegroup_delete
+EXPORT	2	1	0	10	sqlite3changegroup_delete
+DYNAMIC_SYMBOL	153	0xc75c0	type	1	bind	1	vis	0	ndx	22	name	sqlite3_temp_directory
+EXPORT	1	1	0	22	sqlite3_temp_directory
+DYNAMIC_SYMBOL	154	0x1c565	type	2	bind	1	vis	0	ndx	10	name	sqlite3rebaser_rebase_strm
+EXPORT	2	1	0	10	sqlite3rebaser_rebase_strm
+DYNAMIC_SYMBOL	155	0x16fa5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_open_v2
+EXPORT	2	1	0	10	sqlite3_open_v2
+DYNAMIC_SYMBOL	156	0x15285	type	2	bind	1	vis	0	ndx	10	name	sqlite3_config
+EXPORT	2	1	0	10	sqlite3_config
+DYNAMIC_SYMBOL	157	0x1a295	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_memory_used
+EXPORT	2	1	0	10	sqlite3session_memory_used
+DYNAMIC_SYMBOL	158	0x11275	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_zeroblob64
+EXPORT	2	1	0	10	sqlite3_bind_zeroblob64
+DYNAMIC_SYMBOL	159	0x1704d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_create_collation
+EXPORT	2	1	0	10	sqlite3_create_collation
+DYNAMIC_SYMBOL	160	0x16a89	type	2	bind	1	vis	0	ndx	10	name	sqlite3_extended_errcode
+EXPORT	2	1	0	10	sqlite3_extended_errcode
+DYNAMIC_SYMBOL	161	0xf79d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_backup_finish
+EXPORT	2	1	0	10	sqlite3_backup_finish
+DYNAMIC_SYMBOL	162	0x15959	type	2	bind	1	vis	0	ndx	10	name	sqlite3_set_last_insert_rowid
+EXPORT	2	1	0	10	sqlite3_set_last_insert_rowid
+DYNAMIC_SYMBOL	163	0x17301	type	2	bind	1	vis	0	ndx	10	name	sqlite3_get_clientdata
+EXPORT	2	1	0	10	sqlite3_get_clientdata
+DYNAMIC_SYMBOL	164	0x17c69	type	2	bind	1	vis	0	ndx	10	name	sqlite3_test_control
+EXPORT	2	1	0	10	sqlite3_test_control
+DYNAMIC_SYMBOL	165	0x15675	type	2	bind	1	vis	0	ndx	10	name	sqlite3_db_config
+EXPORT	2	1	0	10	sqlite3_db_config
+DYNAMIC_SYMBOL	166	0x1a2ef	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_start
+EXPORT	2	1	0	10	sqlite3changeset_start
+DYNAMIC_SYMBOL	167	0x11e35	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_numeric_type
+EXPORT	2	1	0	10	sqlite3_value_numeric_type
+DYNAMIC_SYMBOL	168	0x18981	type	2	bind	1	vis	0	ndx	10	name	sqlite3_rtree_query_callback
+EXPORT	2	1	0	10	sqlite3_rtree_query_callback
+DYNAMIC_SYMBOL	169	0x15be9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_busy_timeout
+EXPORT	2	1	0	10	sqlite3_busy_timeout
+DYNAMIC_SYMBOL	170	0x16ae5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_errstr
+EXPORT	2	1	0	10	sqlite3_errstr
+DYNAMIC_SYMBOL	171	0x133b9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_errmsg
+EXPORT	2	1	0	10	sqlite3_errmsg
+DYNAMIC_SYMBOL	172	0x10381	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_subtype
+EXPORT	2	1	0	10	sqlite3_result_subtype
+DYNAMIC_SYMBOL	173	0x13fbf	type	2	bind	1	vis	0	ndx	10	name	sqlite3_drop_modules
+EXPORT	2	1	0	10	sqlite3_drop_modules
+DYNAMIC_SYMBOL	174	0x16b3d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_limit
+EXPORT	2	1	0	10	sqlite3_limit
+DYNAMIC_SYMBOL	175	0x150a1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_complete16
+EXPORT	2	1	0	10	sqlite3_complete16
+DYNAMIC_SYMBOL	176	0x189e9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_carray_bind
+EXPORT	2	1	0	10	sqlite3_carray_bind
+DYNAMIC_SYMBOL	177	0x16b81	type	2	bind	1	vis	0	ndx	10	name	sqlite3_open
+EXPORT	2	1	0	10	sqlite3_open
+DYNAMIC_SYMBOL	178	0x15b59	type	2	bind	1	vis	0	ndx	10	name	sqlite3_busy_handler
+EXPORT	2	1	0	10	sqlite3_busy_handler
+DYNAMIC_SYMBOL	179	0x14ce9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vtab_rhs_value
+EXPORT	2	1	0	10	sqlite3_vtab_rhs_value
+DYNAMIC_SYMBOL	180	0xc495	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_appendchar
+EXPORT	2	1	0	10	sqlite3_str_appendchar
+DYNAMIC_SYMBOL	181	0x11071	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_null
+EXPORT	2	1	0	10	sqlite3_bind_null
+DYNAMIC_SYMBOL	182	0xa4bd	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vfs_register
+EXPORT	2	1	0	10	sqlite3_vfs_register
+DYNAMIC_SYMBOL	183	0x14dc9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_keyword_check
+EXPORT	2	1	0	10	sqlite3_keyword_check
+DYNAMIC_SYMBOL	184	0x102bd	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_error16
+EXPORT	2	1	0	10	sqlite3_result_error16
+DYNAMIC_SYMBOL	185	0x163e5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_update_hook
+EXPORT	2	1	0	10	sqlite3_update_hook
+DYNAMIC_SYMBOL	186	0x18685	type	2	bind	1	vis	0	ndx	10	name	sqlite3_filename_journal
+EXPORT	2	1	0	10	sqlite3_filename_journal
+DYNAMIC_SYMBOL	187	0x16941	type	2	bind	1	vis	0	ndx	10	name	sqlite3_errmsg16
+EXPORT	2	1	0	10	sqlite3_errmsg16
+DYNAMIC_SYMBOL	188	0x18447	type	2	bind	1	vis	0	ndx	10	name	sqlite3_free_filename
+EXPORT	2	1	0	10	sqlite3_free_filename
+DYNAMIC_SYMBOL	189	0xa691	type	2	bind	1	vis	0	ndx	10	name	sqlite3_mutex_free
+EXPORT	2	1	0	10	sqlite3_mutex_free
+DYNAMIC_SYMBOL	190	0xc8a5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_randomness
+EXPORT	2	1	0	10	sqlite3_randomness
+DYNAMIC_SYMBOL	191	0x10575	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_error_toobig
+EXPORT	2	1	0	10	sqlite3_result_error_toobig
+DYNAMIC_SYMBOL	192	0xc3a5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_append
+EXPORT	2	1	0	10	sqlite3_str_append
+DYNAMIC_SYMBOL	193	0x14c39	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vtab_collation
+EXPORT	2	1	0	10	sqlite3_vtab_collation
+DYNAMIC_SYMBOL	194	0x10625	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_error_code
+EXPORT	2	1	0	10	sqlite3_result_error_code
+DYNAMIC_SYMBOL	195	0xa5a1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_mutex_alloc
+EXPORT	2	1	0	10	sqlite3_mutex_alloc
+DYNAMIC_SYMBOL	196	0x1c05f	type	2	bind	1	vis	0	ndx	10	name	sqlite3rebaser_create
+EXPORT	2	1	0	10	sqlite3rebaser_create
+DYNAMIC_SYMBOL	197	0x14cad	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vtab_in
+EXPORT	2	1	0	10	sqlite3_vtab_in
+DYNAMIC_SYMBOL	198	0x12d61	type	2	bind	1	vis	0	ndx	10	name	sqlite3_blob_read
+EXPORT	2	1	0	10	sqlite3_blob_read
+DYNAMIC_SYMBOL	199	0x11137	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_text64
+EXPORT	2	1	0	10	sqlite3_bind_text64
+DYNAMIC_SYMBOL	200	0xa745	type	2	bind	1	vis	0	ndx	10	name	sqlite3_memory_alarm
+EXPORT	2	1	0	10	sqlite3_memory_alarm
+DYNAMIC_SYMBOL	201	0x1a3af	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_next
+EXPORT	2	1	0	10	sqlite3changeset_next
+DYNAMIC_SYMBOL	202	0xe441	type	2	bind	1	vis	0	ndx	10	name	sqlite3_exec
+EXPORT	2	1	0	10	sqlite3_exec
+DYNAMIC_SYMBOL	203	0x10329	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_pointer
+EXPORT	2	1	0	10	sqlite3_result_pointer
+DYNAMIC_SYMBOL	204	0x10d31	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_name16
+EXPORT	2	1	0	10	sqlite3_column_name16
+DYNAMIC_SYMBOL	205	0xfb95	type	2	bind	1	vis	0	ndx	10	name	sqlite3_clear_bindings
+EXPORT	2	1	0	10	sqlite3_clear_bindings
+DYNAMIC_SYMBOL	206	0xdaa1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_step
+EXPORT	2	1	0	10	sqlite3_step
+DYNAMIC_SYMBOL	207	0xa6a1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_mutex_try
+EXPORT	2	1	0	10	sqlite3_mutex_try
+DYNAMIC_SYMBOL	208	0xc7e9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_snprintf
+EXPORT	2	1	0	10	sqlite3_snprintf
+DYNAMIC_SYMBOL	209	0x16311	type	2	bind	1	vis	0	ndx	10	name	sqlite3_trace_v2
+EXPORT	2	1	0	10	sqlite3_trace_v2
+DYNAMIC_SYMBOL	210	0xfe11	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_type
+EXPORT	2	1	0	10	sqlite3_value_type
+DYNAMIC_SYMBOL	211	0xa749	type	2	bind	1	vis	0	ndx	10	name	sqlite3_soft_heap_limit64
+EXPORT	2	1	0	10	sqlite3_soft_heap_limit64
+DYNAMIC_SYMBOL	212	0xfda1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_int64
+EXPORT	2	1	0	10	sqlite3_value_int64
+DYNAMIC_SYMBOL	213	0x160ad	type	2	bind	1	vis	0	ndx	10	name	sqlite3_overload_function
+EXPORT	2	1	0	10	sqlite3_overload_function
+DYNAMIC_SYMBOL	214	0xa241	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vfs_find
+EXPORT	2	1	0	10	sqlite3_vfs_find
+DYNAMIC_SYMBOL	215	0x151f5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_shutdown
+EXPORT	2	1	0	10	sqlite3_shutdown
+DYNAMIC_SYMBOL	216	0x10c0d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_type
+EXPORT	2	1	0	10	sqlite3_column_type
+DYNAMIC_SYMBOL	217	0x134a5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_load_extension
+EXPORT	2	1	0	10	sqlite3_load_extension
+DYNAMIC_SYMBOL	218	0x105ad	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_zeroblob64
+EXPORT	2	1	0	10	sqlite3_result_zeroblob64
+DYNAMIC_SYMBOL	219	0xe3c5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_reset
+EXPORT	2	1	0	10	sqlite3_reset
+DYNAMIC_SYMBOL	220	0xe6ed	type	2	bind	1	vis	0	ndx	10	name	sqlite3_finalize
+EXPORT	2	1	0	10	sqlite3_finalize
+DYNAMIC_SYMBOL	221	0x1bfbf	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_concat
+EXPORT	2	1	0	10	sqlite3changeset_concat
+DYNAMIC_SYMBOL	222	0x10d3d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_decltype16
+EXPORT	2	1	0	10	sqlite3_column_decltype16
+DYNAMIC_SYMBOL	223	0x1559d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_db_cacheflush
+EXPORT	2	1	0	10	sqlite3_db_cacheflush
+DYNAMIC_SYMBOL	224	0x11505	type	2	bind	1	vis	0	ndx	10	name	sqlite3_next_stmt
+EXPORT	2	1	0	10	sqlite3_next_stmt
+DYNAMIC_SYMBOL	225	0xa8ed	type	2	bind	1	vis	0	ndx	10	name	sqlite3_memory_highwater
+EXPORT	2	1	0	10	sqlite3_memory_highwater
+DYNAMIC_SYMBOL	226	0xfca3	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_bytes
+EXPORT	2	1	0	10	sqlite3_value_bytes
+DYNAMIC_SYMBOL	227	0xfe3b	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_frombind
+EXPORT	2	1	0	10	sqlite3_value_frombind
+DYNAMIC_SYMBOL	228	0xc791	type	2	bind	1	vis	0	ndx	10	name	sqlite3_mprintf
+EXPORT	2	1	0	10	sqlite3_mprintf
+DYNAMIC_SYMBOL	229	0xc69f	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_length
+EXPORT	2	1	0	10	sqlite3_str_length
+DYNAMIC_SYMBOL	230	0x104ad	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_text16le
+EXPORT	2	1	0	10	sqlite3_result_text16le
+DYNAMIC_SYMBOL	231	0x1101d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_int64
+EXPORT	2	1	0	10	sqlite3_bind_int64
+DYNAMIC_SYMBOL	232	0x10d37	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_decltype
+EXPORT	2	1	0	10	sqlite3_column_decltype
+DYNAMIC_SYMBOL	233	0x16355	type	2	bind	1	vis	0	ndx	10	name	sqlite3_profile
+EXPORT	2	1	0	10	sqlite3_profile
+DYNAMIC_SYMBOL	234	0x19a65	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_changeset
+EXPORT	2	1	0	10	sqlite3session_changeset
+DYNAMIC_SYMBOL	235	0xcc8d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_os_init
+EXPORT	2	1	0	10	sqlite3_os_init
+DYNAMIC_SYMBOL	236	0x1a255	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_isempty
+EXPORT	2	1	0	10	sqlite3session_isempty
+DYNAMIC_SYMBOL	237	0x15119	type	2	bind	1	vis	0	ndx	10	name	sqlite3_libversion_number
+EXPORT	2	1	0	10	sqlite3_libversion_number
+DYNAMIC_SYMBOL	238	0x1be1b	type	2	bind	1	vis	0	ndx	10	name	sqlite3changegroup_output
+EXPORT	2	1	0	10	sqlite3changegroup_output
+DYNAMIC_SYMBOL	239	0x10841	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vtab_nochange
+EXPORT	2	1	0	10	sqlite3_vtab_nochange
+DYNAMIC_SYMBOL	240	0x1b505	type	2	bind	1	vis	0	ndx	10	name	sqlite3changegroup_new
+EXPORT	2	1	0	10	sqlite3changegroup_new
+DYNAMIC_SYMBOL	241	0x1c59f	type	2	bind	1	vis	0	ndx	10	name	sqlite3rebaser_delete
+EXPORT	2	1	0	10	sqlite3rebaser_delete
+DYNAMIC_SYMBOL	242	0x10485	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_text16
+EXPORT	2	1	0	10	sqlite3_result_text16
+DYNAMIC_SYMBOL	243	0x11181	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_value
+EXPORT	2	1	0	10	sqlite3_bind_value
+DYNAMIC_SYMBOL	244	0x11c1d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_preupdate_count
+EXPORT	2	1	0	10	sqlite3_preupdate_count
+DYNAMIC_SYMBOL	245	0x1646d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_preupdate_hook
+EXPORT	2	1	0	10	sqlite3_preupdate_hook
+DYNAMIC_SYMBOL	246	0x10835	type	2	bind	1	vis	0	ndx	10	name	sqlite3_user_data
+EXPORT	2	1	0	10	sqlite3_user_data
+DYNAMIC_SYMBOL	247	0x10011	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_double
+EXPORT	2	1	0	10	sqlite3_result_double
+DYNAMIC_SYMBOL	248	0x10d49	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_database_name16
+EXPORT	2	1	0	10	sqlite3_column_database_name16
+DYNAMIC_SYMBOL	249	0xa835	type	2	bind	1	vis	0	ndx	10	name	sqlite3_memory_used
+EXPORT	2	1	0	10	sqlite3_memory_used
+DYNAMIC_SYMBOL	250	0x13361	type	2	bind	1	vis	0	ndx	10	name	sqlite3_strlike
+EXPORT	2	1	0	10	sqlite3_strlike
+DYNAMIC_SYMBOL	251	0xc6e9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_new
+EXPORT	2	1	0	10	sqlite3_str_new
+DYNAMIC_SYMBOL	252	0xfe09	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_text16be
+EXPORT	2	1	0	10	sqlite3_value_text16be
+DYNAMIC_SYMBOL	253	0x1833d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_create_filename
+EXPORT	2	1	0	10	sqlite3_create_filename
+DYNAMIC_SYMBOL	254	0x18bf9	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_diff
+EXPORT	2	1	0	10	sqlite3session_diff
+DYNAMIC_SYMBOL	255	0x138e9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_cancel_auto_extension
+EXPORT	2	1	0	10	sqlite3_cancel_auto_extension
+DYNAMIC_SYMBOL	256	0x1bf89	type	2	bind	1	vis	0	ndx	10	name	sqlite3changegroup_output_strm
+EXPORT	2	1	0	10	sqlite3changegroup_output_strm
+DYNAMIC_SYMBOL	257	0xffbd	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_blob64
+EXPORT	2	1	0	10	sqlite3_result_blob64
+DYNAMIC_SYMBOL	258	0x1a225	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_indirect
+EXPORT	2	1	0	10	sqlite3session_indirect
+DYNAMIC_SYMBOL	259	0x1a82b	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_finalize
+EXPORT	2	1	0	10	sqlite3changeset_finalize
+DYNAMIC_SYMBOL	260	0x1131b	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_parameter_index
+EXPORT	2	1	0	10	sqlite3_bind_parameter_index
+DYNAMIC_SYMBOL	261	0xfad1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_expired
+EXPORT	2	1	0	10	sqlite3_expired
+DYNAMIC_SYMBOL	262	0xc695	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_errcode
+EXPORT	2	1	0	10	sqlite3_str_errcode
+DYNAMIC_SYMBOL	263	0x139c9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_prepare
+EXPORT	2	1	0	10	sqlite3_prepare
+DYNAMIC_SYMBOL	264	0xfe29	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_nochange
+EXPORT	2	1	0	10	sqlite3_value_nochange
+DYNAMIC_SYMBOL	265	0xe3a9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_int64
+EXPORT	2	1	0	10	sqlite3_column_int64
+DYNAMIC_SYMBOL	266	0xa55d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vfs_unregister
+EXPORT	2	1	0	10	sqlite3_vfs_unregister
+DYNAMIC_SYMBOL	267	0x9c7d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_mutex_enter
+EXPORT	2	1	0	10	sqlite3_mutex_enter
+DYNAMIC_SYMBOL	268	0x1ac0d	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_invert_strm
+EXPORT	2	1	0	10	sqlite3changeset_invert_strm
+DYNAMIC_SYMBOL	269	0x9cc5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_db_status64
+EXPORT	2	1	0	10	sqlite3_db_status64
+DYNAMIC_SYMBOL	270	0x18661	type	2	bind	1	vis	0	ndx	10	name	sqlite3_filename_database
+EXPORT	2	1	0	10	sqlite3_filename_database
+DYNAMIC_SYMBOL	271	0x130ad	type	2	bind	1	vis	0	ndx	10	name	sqlite3_strglob
+EXPORT	2	1	0	10	sqlite3_strglob
+DYNAMIC_SYMBOL	272	0x9c8d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_mutex_leave
+EXPORT	2	1	0	10	sqlite3_mutex_leave
+DYNAMIC_SYMBOL	273	0x11343	type	2	bind	1	vis	0	ndx	10	name	sqlite3_transfer_bindings
+EXPORT	2	1	0	10	sqlite3_transfer_bindings
+DYNAMIC_SYMBOL	274	0x1c0cd	type	2	bind	1	vis	0	ndx	10	name	sqlite3rebaser_rebase
+EXPORT	2	1	0	10	sqlite3rebaser_rebase
+DYNAMIC_SYMBOL	275	0x10b5d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_bytes
+EXPORT	2	1	0	10	sqlite3_column_bytes
+DYNAMIC_SYMBOL	276	0x10bcf	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_value
+EXPORT	2	1	0	10	sqlite3_column_value
+DYNAMIC_SYMBOL	277	0x16869	type	2	bind	1	vis	0	ndx	10	name	sqlite3_set_errmsg
+EXPORT	2	1	0	10	sqlite3_set_errmsg
+DYNAMIC_SYMBOL	278	0x15ba1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_progress_handler
+EXPORT	2	1	0	10	sqlite3_progress_handler
+DYNAMIC_SYMBOL	279	0x15531	type	2	bind	1	vis	0	ndx	10	name	sqlite3_db_mutex
+EXPORT	2	1	0	10	sqlite3_db_mutex
+DYNAMIC_SYMBOL	280	0x1b4af	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_apply_v2_strm
+EXPORT	2	1	0	10	sqlite3changeset_apply_v2_strm
+DYNAMIC_SYMBOL	281	0x15535	type	2	bind	1	vis	0	ndx	10	name	sqlite3_db_release_memory
+EXPORT	2	1	0	10	sqlite3_db_release_memory
+DYNAMIC_SYMBOL	282	0x105a1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_zeroblob
+EXPORT	2	1	0	10	sqlite3_result_zeroblob
+DYNAMIC_SYMBOL	283	0x18465	type	2	bind	1	vis	0	ndx	10	name	sqlite3_uri_parameter
+EXPORT	2	1	0	10	sqlite3_uri_parameter
+DYNAMIC_SYMBOL	284	0x13b25	type	2	bind	1	vis	0	ndx	10	name	sqlite3_prepare16
+EXPORT	2	1	0	10	sqlite3_prepare16
+DYNAMIC_SYMBOL	285	0xff29	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_free
+EXPORT	2	1	0	10	sqlite3_value_free
+DYNAMIC_SYMBOL	286	0x13f3d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_create_module
+EXPORT	2	1	0	10	sqlite3_create_module
+DYNAMIC_SYMBOL	287	0xfacd	type	2	bind	1	vis	0	ndx	10	name	sqlite3_backup_pagecount
+EXPORT	2	1	0	10	sqlite3_backup_pagecount
+DYNAMIC_SYMBOL	288	0x15993	type	2	bind	1	vis	0	ndx	10	name	sqlite3_changes
+EXPORT	2	1	0	10	sqlite3_changes
+DYNAMIC_SYMBOL	289	0x17401	type	2	bind	1	vis	0	ndx	10	name	sqlite3_get_autocommit
+EXPORT	2	1	0	10	sqlite3_get_autocommit
+DYNAMIC_SYMBOL	290	0x15c79	type	2	bind	1	vis	0	ndx	10	name	sqlite3_is_interrupted
+EXPORT	2	1	0	10	sqlite3_is_interrupted
+DYNAMIC_SYMBOL	291	0x17281	type	2	bind	1	vis	0	ndx	10	name	sqlite3_collation_needed
+EXPORT	2	1	0	10	sqlite3_collation_needed
+DYNAMIC_SYMBOL	292	0x165e1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_wal_checkpoint_v2
+EXPORT	2	1	0	10	sqlite3_wal_checkpoint_v2
+DYNAMIC_SYMBOL	293	0x13f11	type	2	bind	1	vis	0	ndx	10	name	sqlite3_free_table
+EXPORT	2	1	0	10	sqlite3_free_table
+DYNAMIC_SYMBOL	294	0xe8d1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_enable_shared_cache
+EXPORT	2	1	0	10	sqlite3_enable_shared_cache
+DYNAMIC_SYMBOL	295	0xfd1f	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_int
+EXPORT	2	1	0	10	sqlite3_value_int
+DYNAMIC_SYMBOL	296	0x14dc5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_keyword_count
+EXPORT	2	1	0	10	sqlite3_keyword_count
+DYNAMIC_SYMBOL	297	0x11c2d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_preupdate_depth
+EXPORT	2	1	0	10	sqlite3_preupdate_depth
+DYNAMIC_SYMBOL	298	0xa92d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_malloc
+EXPORT	2	1	0	10	sqlite3_malloc
+DYNAMIC_SYMBOL	299	0xa881	type	2	bind	1	vis	0	ndx	10	name	sqlite3_hard_heap_limit64
+EXPORT	2	1	0	10	sqlite3_hard_heap_limit64
+DYNAMIC_SYMBOL	300	0x102df	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_int
+EXPORT	2	1	0	10	sqlite3_result_int
+DYNAMIC_SYMBOL	301	0x106a9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_error_nomem
+EXPORT	2	1	0	10	sqlite3_result_error_nomem
+DYNAMIC_SYMBOL	302	0x10049	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_error
+EXPORT	2	1	0	10	sqlite3_result_error
+DYNAMIC_SYMBOL	303	0x10a9b	type	2	bind	1	vis	0	ndx	10	name	sqlite3_aggregate_count
+EXPORT	2	1	0	10	sqlite3_aggregate_count
+DYNAMIC_SYMBOL	304	0x1969d	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_create
+EXPORT	2	1	0	10	sqlite3session_create
+DYNAMIC_SYMBOL	305	0x15951	type	2	bind	1	vis	0	ndx	10	name	sqlite3_last_insert_rowid
+EXPORT	2	1	0	10	sqlite3_last_insert_rowid
+DYNAMIC_SYMBOL	306	0x1599d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_total_changes
+EXPORT	2	1	0	10	sqlite3_total_changes
+DYNAMIC_SYMBOL	307	0x10d43	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_database_name
+EXPORT	2	1	0	10	sqlite3_column_database_name
+DYNAMIC_SYMBOL	308	0xfc9f	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_text
+EXPORT	2	1	0	10	sqlite3_value_text
+DYNAMIC_SYMBOL	309	0x1191d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_preupdate_old
+EXPORT	2	1	0	10	sqlite3_preupdate_old
+DYNAMIC_SYMBOL	310	0xe6d5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_int
+EXPORT	2	1	0	10	sqlite3_column_int
+DYNAMIC_SYMBOL	311	0xfe05	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_text16
+EXPORT	2	1	0	10	sqlite3_value_text16
+DYNAMIC_SYMBOL	312	0x13fb5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_create_module_v2
+EXPORT	2	1	0	10	sqlite3_create_module_v2
+DYNAMIC_SYMBOL	313	0xfce1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_double
+EXPORT	2	1	0	10	sqlite3_value_double
+DYNAMIC_SYMBOL	314	0xa6b5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_release_memory
+EXPORT	2	1	0	10	sqlite3_release_memory
+DYNAMIC_SYMBOL	315	0x1b45b	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_apply
+EXPORT	2	1	0	10	sqlite3changeset_apply
+DYNAMIC_SYMBOL	316	0x109f3	type	2	bind	1	vis	0	ndx	10	name	sqlite3_set_auxdata
+EXPORT	2	1	0	10	sqlite3_set_auxdata
+DYNAMIC_SYMBOL	317	0x13cf9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_get_table
+EXPORT	2	1	0	10	sqlite3_get_table
+DYNAMIC_SYMBOL	318	0x10bb5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_text
+EXPORT	2	1	0	10	sqlite3_column_text
+DYNAMIC_SYMBOL	319	0xfe43	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_dup
+EXPORT	2	1	0	10	sqlite3_value_dup
+DYNAMIC_SYMBOL	320	0x16fa9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_open16
+EXPORT	2	1	0	10	sqlite3_open16
+DYNAMIC_SYMBOL	321	0x11c51	type	2	bind	1	vis	0	ndx	10	name	sqlite3_preupdate_new
+EXPORT	2	1	0	10	sqlite3_preupdate_new
+DYNAMIC_SYMBOL	322	0xfc1d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_blob
+EXPORT	2	1	0	10	sqlite3_value_blob
+DYNAMIC_SYMBOL	323	0x16ad9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_system_errno
+EXPORT	2	1	0	10	sqlite3_system_errno
+DYNAMIC_SYMBOL	324	0xaca80	type	1	bind	1	vis	0	ndx	12	name	sqlite3_version
+EXPORT	1	1	0	12	sqlite3_version
+DYNAMIC_SYMBOL	325	0x19955	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_table_filter
+EXPORT	2	1	0	10	sqlite3session_table_filter
+DYNAMIC_SYMBOL	326	0x14b55	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vtab_on_conflict
+EXPORT	2	1	0	10	sqlite3_vtab_on_conflict
+DYNAMIC_SYMBOL	327	0x12fa5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_blob_reopen
+EXPORT	2	1	0	10	sqlite3_blob_reopen
+DYNAMIC_SYMBOL	328	0x13805	type	2	bind	1	vis	0	ndx	10	name	sqlite3_enable_load_extension
+EXPORT	2	1	0	10	sqlite3_enable_load_extension
+DYNAMIC_SYMBOL	329	0x184d3	type	2	bind	1	vis	0	ndx	10	name	sqlite3_uri_key
+EXPORT	2	1	0	10	sqlite3_uri_key
+DYNAMIC_SYMBOL	330	0x1083b	type	2	bind	1	vis	0	ndx	10	name	sqlite3_context_db_handle
+EXPORT	2	1	0	10	sqlite3_context_db_handle
+DYNAMIC_SYMBOL	331	0x103a1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_text64
+EXPORT	2	1	0	10	sqlite3_result_text64
+DYNAMIC_SYMBOL	332	0x10abd	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_blob
+EXPORT	2	1	0	10	sqlite3_column_blob
+DYNAMIC_SYMBOL	333	0xc603	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_appendf
+EXPORT	2	1	0	10	sqlite3_str_appendf
+DYNAMIC_SYMBOL	334	0xfe25	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_encoding
+EXPORT	2	1	0	10	sqlite3_value_encoding
+DYNAMIC_SYMBOL	335	0x11417	type	2	bind	1	vis	0	ndx	10	name	sqlite3_stmt_readonly
+EXPORT	2	1	0	10	sqlite3_stmt_readonly
+DYNAMIC_SYMBOL	336	0x1510d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_libversion
+EXPORT	2	1	0	10	sqlite3_libversion
+DYNAMIC_SYMBOL	337	0x114ed	type	2	bind	1	vis	0	ndx	10	name	sqlite3_stmt_busy
+EXPORT	2	1	0	10	sqlite3_stmt_busy
+DYNAMIC_SYMBOL	338	0x16a35	type	2	bind	1	vis	0	ndx	10	name	sqlite3_errcode
+EXPORT	2	1	0	10	sqlite3_errcode
+DYNAMIC_SYMBOL	339	0x11c3f	type	2	bind	1	vis	0	ndx	10	name	sqlite3_preupdate_blobwrite
+EXPORT	2	1	0	10	sqlite3_preupdate_blobwrite
+DYNAMIC_SYMBOL	340	0x115a5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_sql
+EXPORT	2	1	0	10	sqlite3_sql
+DYNAMIC_SYMBOL	341	0x15dd9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_create_function16
+EXPORT	2	1	0	10	sqlite3_create_function16
+DYNAMIC_SYMBOL	342	0x10855	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vtab_in_first
+EXPORT	2	1	0	10	sqlite3_vtab_in_first
+DYNAMIC_SYMBOL	343	0xaad1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_realloc
+EXPORT	2	1	0	10	sqlite3_realloc
+DYNAMIC_SYMBOL	344	0x1a1f5	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_enable
+EXPORT	2	1	0	10	sqlite3session_enable
+DYNAMIC_SYMBOL	345	0x14ded	type	2	bind	1	vis	0	ndx	10	name	sqlite3_complete
+EXPORT	2	1	0	10	sqlite3_complete
+DYNAMIC_SYMBOL	346	0x15c65	type	2	bind	1	vis	0	ndx	10	name	sqlite3_setlk_timeout
+EXPORT	2	1	0	10	sqlite3_setlk_timeout
+DYNAMIC_SYMBOL	347	0xac39	type	2	bind	1	vis	0	ndx	10	name	sqlite3_realloc64
+EXPORT	2	1	0	10	sqlite3_realloc64
+DYNAMIC_SYMBOL	348	0x102fd	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_int64
+EXPORT	2	1	0	10	sqlite3_result_int64
+DYNAMIC_SYMBOL	349	0x1a76d	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_op
+EXPORT	2	1	0	10	sqlite3changeset_op
+DYNAMIC_SYMBOL	350	0x10c2d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_name
+EXPORT	2	1	0	10	sqlite3_column_name
+DYNAMIC_SYMBOL	351	0x12d25	type	2	bind	1	vis	0	ndx	10	name	sqlite3_blob_close
+EXPORT	2	1	0	10	sqlite3_blob_close
+DYNAMIC_SYMBOL	352	0x164b1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_autovacuum_pages
+EXPORT	2	1	0	10	sqlite3_autovacuum_pages
+DYNAMIC_SYMBOL	353	0x17345	type	2	bind	1	vis	0	ndx	10	name	sqlite3_set_clientdata
+EXPORT	2	1	0	10	sqlite3_set_clientdata
+DYNAMIC_SYMBOL	354	0x1598d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_changes64
+EXPORT	2	1	0	10	sqlite3_changes64
+DYNAMIC_SYMBOL	355	0x1799d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_sleep
+EXPORT	2	1	0	10	sqlite3_sleep
+DYNAMIC_SYMBOL	356	0xcbf5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_stricmp
+EXPORT	2	1	0	10	sqlite3_stricmp
+DYNAMIC_SYMBOL	357	0x19801	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_delete
+EXPORT	2	1	0	10	sqlite3session_delete
+DYNAMIC_SYMBOL	358	0xa2a9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_initialize
+EXPORT	2	1	0	10	sqlite3_initialize
+DYNAMIC_SYMBOL	359	0x104c1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_value
+EXPORT	2	1	0	10	sqlite3_result_value
+DYNAMIC_SYMBOL	360	0x13cc5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_prepare16_v2
+EXPORT	2	1	0	10	sqlite3_prepare16_v2
+DYNAMIC_SYMBOL	361	0x11239	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_zeroblob
+EXPORT	2	1	0	10	sqlite3_bind_zeroblob
+DYNAMIC_SYMBOL	362	0x112d9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_parameter_count
+EXPORT	2	1	0	10	sqlite3_bind_parameter_count
+DYNAMIC_SYMBOL	363	0x13cdb	type	2	bind	1	vis	0	ndx	10	name	sqlite3_prepare16_v3
+EXPORT	2	1	0	10	sqlite3_prepare16_v3
+DYNAMIC_SYMBOL	364	0x1a19d	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_changeset_strm
+EXPORT	2	1	0	10	sqlite3session_changeset_strm
+DYNAMIC_SYMBOL	365	0x10aa1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_count
+EXPORT	2	1	0	10	sqlite3_column_count
+DYNAMIC_SYMBOL	366	0x1a793	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_pk
+EXPORT	2	1	0	10	sqlite3changeset_pk
+DYNAMIC_SYMBOL	367	0x1a37d	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_start_strm
+EXPORT	2	1	0	10	sqlite3changeset_start_strm
+DYNAMIC_SYMBOL	368	0x10aad	type	2	bind	1	vis	0	ndx	10	name	sqlite3_data_count
+EXPORT	2	1	0	10	sqlite3_data_count
+DYNAMIC_SYMBOL	369	0x1a86d	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_invert
+EXPORT	2	1	0	10	sqlite3changeset_invert
+DYNAMIC_SYMBOL	370	0x12f35	type	2	bind	1	vis	0	ndx	10	name	sqlite3_blob_write
+EXPORT	2	1	0	10	sqlite3_blob_write
+DYNAMIC_SYMBOL	371	0x16429	type	2	bind	1	vis	0	ndx	10	name	sqlite3_rollback_hook
+EXPORT	2	1	0	10	sqlite3_rollback_hook
+DYNAMIC_SYMBOL	372	0x1a7f1	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_conflict
+EXPORT	2	1	0	10	sqlite3changeset_conflict
+DYNAMIC_SYMBOL	373	0x1c095	type	2	bind	1	vis	0	ndx	10	name	sqlite3rebaser_configure
+EXPORT	2	1	0	10	sqlite3rebaser_configure
+DYNAMIC_SYMBOL	374	0x10bf3	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_text16
+EXPORT	2	1	0	10	sqlite3_column_text16
+DYNAMIC_SYMBOL	375	0x11015	type	2	bind	1	vis	0	ndx	10	name	sqlite3_bind_int
+EXPORT	2	1	0	10	sqlite3_bind_int
+DYNAMIC_SYMBOL	376	0x1b47f	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_apply_v3_strm
+EXPORT	2	1	0	10	sqlite3changeset_apply_v3_strm
+DYNAMIC_SYMBOL	377	0x173fd	type	2	bind	1	vis	0	ndx	10	name	sqlite3_global_recover
+EXPORT	2	1	0	10	sqlite3_global_recover
+DYNAMIC_SYMBOL	378	0x10b77	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_bytes16
+EXPORT	2	1	0	10	sqlite3_column_bytes16
+DYNAMIC_SYMBOL	379	0x1853f	type	2	bind	1	vis	0	ndx	10	name	sqlite3_uri_boolean
+EXPORT	2	1	0	10	sqlite3_uri_boolean
+DYNAMIC_SYMBOL	380	0x1681d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_wal_checkpoint
+EXPORT	2	1	0	10	sqlite3_wal_checkpoint
+DYNAMIC_SYMBOL	381	0x1b56d	type	2	bind	1	vis	0	ndx	10	name	sqlite3changegroup_add
+EXPORT	2	1	0	10	sqlite3changegroup_add
+DYNAMIC_SYMBOL	382	0x10b91	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_double
+EXPORT	2	1	0	10	sqlite3_column_double
+DYNAMIC_SYMBOL	383	0x1c00f	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_concat_strm
+EXPORT	2	1	0	10	sqlite3changeset_concat_strm
+DYNAMIC_SYMBOL	384	0x1b4dd	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_apply_strm
+EXPORT	2	1	0	10	sqlite3changeset_apply_strm
+DYNAMIC_SYMBOL	385	0x164f1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_wal_autocheckpoint
+EXPORT	2	1	0	10	sqlite3_wal_autocheckpoint
+DYNAMIC_SYMBOL	386	0xc7bb	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vsnprintf
+EXPORT	2	1	0	10	sqlite3_vsnprintf
+DYNAMIC_SYMBOL	387	0x11f31	type	2	bind	1	vis	0	ndx	10	name	sqlite3_blob_open
+EXPORT	2	1	0	10	sqlite3_blob_open
+DYNAMIC_SYMBOL	388	0x1856f	type	2	bind	1	vis	0	ndx	10	name	sqlite3_uri_int64
+EXPORT	2	1	0	10	sqlite3_uri_int64
+DYNAMIC_SYMBOL	389	0x1a29b	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_object_config
+EXPORT	2	1	0	10	sqlite3session_object_config
+DYNAMIC_SYMBOL	390	0x15123	type	2	bind	1	vis	0	ndx	10	name	sqlite3_threadsafe
+EXPORT	2	1	0	10	sqlite3_threadsafe
+DYNAMIC_SYMBOL	391	0x18719	type	2	bind	1	vis	0	ndx	10	name	sqlite3_db_filename
+EXPORT	2	1	0	10	sqlite3_db_filename
+DYNAMIC_SYMBOL	392	0x17407	type	2	bind	1	vis	0	ndx	10	name	sqlite3_thread_cleanup
+EXPORT	2	1	0	10	sqlite3_thread_cleanup
+DYNAMIC_SYMBOL	393	0xa0f5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_msize
+EXPORT	2	1	0	10	sqlite3_msize
+DYNAMIC_SYMBOL	394	0xda81	type	2	bind	1	vis	0	ndx	10	name	sqlite3_prepare_v2
+EXPORT	2	1	0	10	sqlite3_prepare_v2
+DYNAMIC_SYMBOL	395	0x13b09	type	2	bind	1	vis	0	ndx	10	name	sqlite3_prepare_v3
+EXPORT	2	1	0	10	sqlite3_prepare_v3
+DYNAMIC_SYMBOL	396	0x10499	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_text16be
+EXPORT	2	1	0	10	sqlite3_result_text16be
+DYNAMIC_SYMBOL	397	0xfda3	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_subtype
+EXPORT	2	1	0	10	sqlite3_value_subtype
+DYNAMIC_SYMBOL	398	0x10961	type	2	bind	1	vis	0	ndx	10	name	sqlite3_aggregate_context
+EXPORT	2	1	0	10	sqlite3_aggregate_context
+DYNAMIC_SYMBOL	399	0x159a1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_txn_state
+EXPORT	2	1	0	10	sqlite3_txn_state
+DYNAMIC_SYMBOL	400	0x163a1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_commit_hook
+EXPORT	2	1	0	10	sqlite3_commit_hook
+DYNAMIC_SYMBOL	401	0x1ac51	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_apply_v2
+EXPORT	2	1	0	10	sqlite3changeset_apply_v2
+DYNAMIC_SYMBOL	402	0x14d91	type	2	bind	1	vis	0	ndx	10	name	sqlite3_keyword_name
+EXPORT	2	1	0	10	sqlite3_keyword_name
+DYNAMIC_SYMBOL	403	0x1b431	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_apply_v3
+EXPORT	2	1	0	10	sqlite3changeset_apply_v3
+DYNAMIC_SYMBOL	404	0x14021	type	2	bind	1	vis	0	ndx	10	name	sqlite3_declare_vtab
+EXPORT	2	1	0	10	sqlite3_declare_vtab
+DYNAMIC_SYMBOL	405	0xcc39	type	2	bind	1	vis	0	ndx	10	name	sqlite3_strnicmp
+EXPORT	2	1	0	10	sqlite3_strnicmp
+DYNAMIC_SYMBOL	406	0x1b53d	type	2	bind	1	vis	0	ndx	10	name	sqlite3changegroup_schema
+EXPORT	2	1	0	10	sqlite3changegroup_schema
+DYNAMIC_SYMBOL	407	0x1a1b9	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_patchset_strm
+EXPORT	2	1	0	10	sqlite3session_patchset_strm
+DYNAMIC_SYMBOL	408	0x1038f	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_text
+EXPORT	2	1	0	10	sqlite3_result_text
+DYNAMIC_SYMBOL	409	0x17209	type	2	bind	1	vis	0	ndx	10	name	sqlite3_create_collation16
+EXPORT	2	1	0	10	sqlite3_create_collation16
+DYNAMIC_SYMBOL	410	0x18769	type	2	bind	1	vis	0	ndx	10	name	sqlite3_db_readonly
+EXPORT	2	1	0	10	sqlite3_db_readonly
+DYNAMIC_SYMBOL	411	0x18849	type	2	bind	1	vis	0	ndx	10	name	sqlite3_rtree_geometry_callback
+EXPORT	2	1	0	10	sqlite3_rtree_geometry_callback
+DYNAMIC_SYMBOL	412	0xa875	type	2	bind	1	vis	0	ndx	10	name	sqlite3_soft_heap_limit
+EXPORT	2	1	0	10	sqlite3_soft_heap_limit
+DYNAMIC_SYMBOL	413	0x1c5ed	type	2	bind	1	vis	0	ndx	10	name	sqlite3_sourceid
+EXPORT	2	1	0	10	sqlite3_sourceid
+DYNAMIC_SYMBOL	414	0xc729	type	2	bind	1	vis	0	ndx	10	name	sqlite3_vmprintf
+EXPORT	2	1	0	10	sqlite3_vmprintf
+DYNAMIC_SYMBOL	415	0xc75c4	type	1	bind	1	vis	0	ndx	22	name	sqlite3_data_directory
+EXPORT	1	1	0	22	sqlite3_data_directory
+DYNAMIC_SYMBOL	416	0xe78d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_deserialize
+EXPORT	2	1	0	10	sqlite3_deserialize
+DYNAMIC_SYMBOL	417	0x1a817	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_fk_conflicts
+EXPORT	2	1	0	10	sqlite3changeset_fk_conflicts
+DYNAMIC_SYMBOL	418	0xff2b	type	2	bind	1	vis	0	ndx	10	name	sqlite3_result_blob
+EXPORT	2	1	0	10	sqlite3_result_blob
+DYNAMIC_SYMBOL	419	0x17065	type	2	bind	1	vis	0	ndx	10	name	sqlite3_create_collation_v2
+EXPORT	2	1	0	10	sqlite3_create_collation_v2
+DYNAMIC_SYMBOL	420	0xac59	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_vappendf
+EXPORT	2	1	0	10	sqlite3_str_vappendf
+DYNAMIC_SYMBOL	421	0x13961	type	2	bind	1	vis	0	ndx	10	name	sqlite3_reset_auto_extension
+EXPORT	2	1	0	10	sqlite3_reset_auto_extension
+DYNAMIC_SYMBOL	422	0xfe0d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_text16le
+EXPORT	2	1	0	10	sqlite3_value_text16le
+DYNAMIC_SYMBOL	423	0xaa59	type	2	bind	1	vis	0	ndx	10	name	sqlite3_malloc64
+EXPORT	2	1	0	10	sqlite3_malloc64
+DYNAMIC_SYMBOL	424	0xd7d5	type	2	bind	1	vis	0	ndx	10	name	sqlite3_serialize
+EXPORT	2	1	0	10	sqlite3_serialize
+DYNAMIC_SYMBOL	425	0x1c5c1	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_config
+EXPORT	2	1	0	10	sqlite3session_config
+DYNAMIC_SYMBOL	426	0xeb3d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_backup_step
+EXPORT	2	1	0	10	sqlite3_backup_step
+DYNAMIC_SYMBOL	427	0x18831	type	2	bind	1	vis	0	ndx	10	name	sqlite3_compileoption_get
+EXPORT	2	1	0	10	sqlite3_compileoption_get
+DYNAMIC_SYMBOL	428	0xfdaf	type	2	bind	1	vis	0	ndx	10	name	sqlite3_value_pointer
+EXPORT	2	1	0	10	sqlite3_value_pointer
+DYNAMIC_SYMBOL	429	0xc5e1	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_appendall
+EXPORT	2	1	0	10	sqlite3_str_appendall
+DYNAMIC_SYMBOL	430	0xaa75	type	2	bind	1	vis	0	ndx	10	name	sqlite3_free
+EXPORT	2	1	0	10	sqlite3_free
+DYNAMIC_SYMBOL	431	0x17409	type	2	bind	1	vis	0	ndx	10	name	sqlite3_table_column_metadata
+EXPORT	2	1	0	10	sqlite3_table_column_metadata
+DYNAMIC_SYMBOL	432	0x1bf55	type	2	bind	1	vis	0	ndx	10	name	sqlite3changegroup_add_strm
+EXPORT	2	1	0	10	sqlite3changegroup_add_strm
+DYNAMIC_SYMBOL	433	0x15c71	type	2	bind	1	vis	0	ndx	10	name	sqlite3_interrupt
+EXPORT	2	1	0	10	sqlite3_interrupt
+DYNAMIC_SYMBOL	434	0x17a0d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_file_control
+EXPORT	2	1	0	10	sqlite3_file_control
+DYNAMIC_SYMBOL	435	0x1a2e9	type	2	bind	1	vis	0	ndx	10	name	sqlite3session_changeset_size
+EXPORT	2	1	0	10	sqlite3session_changeset_size
+DYNAMIC_SYMBOL	436	0x18701	type	2	bind	1	vis	0	ndx	10	name	sqlite3_db_name
+EXPORT	2	1	0	10	sqlite3_db_name
+DYNAMIC_SYMBOL	437	0x1a7a1	type	2	bind	1	vis	0	ndx	10	name	sqlite3changeset_old
+EXPORT	2	1	0	10	sqlite3changeset_old
+DYNAMIC_SYMBOL	438	0xc6a9	type	2	bind	1	vis	0	ndx	10	name	sqlite3_str_value
+EXPORT	2	1	0	10	sqlite3_str_value
+DYNAMIC_SYMBOL	439	0x11439	type	2	bind	1	vis	0	ndx	10	name	sqlite3_stmt_explain
+EXPORT	2	1	0	10	sqlite3_stmt_explain
+DYNAMIC_SYMBOL	440	0x10d4f	type	2	bind	1	vis	0	ndx	10	name	sqlite3_column_table_name
+EXPORT	2	1	0	10	sqlite3_column_table_name
+DYNAMIC_SYMBOL	441	0x9c9d	type	2	bind	1	vis	0	ndx	10	name	sqlite3_status
+EXPORT	2	1	0	10	sqlite3_status
+DYNAMIC_SYMBOL	442	0x16559	type	2	bind	1	vis	0	ndx	10	name	sqlite3_wal_hook
+EXPORT	2	1	0	10	sqlite3_wal_hook
+DYNAMIC	0x1	0x2059
+DYNAMIC	0x1	0x2063
+DYNAMIC	0x1	0x2071
+DYNAMIC	0x1	0x207b
+DYNAMIC	0xe	0x2089
+DYNAMIC	0x1d	0x20e2
+RUNPATH_VALUE	/usr/lib
+DYNAMIC	0xc	0x9364
+DYNAMIC	0xd	0xaca78
+DYNAMIC	0x19	0xc3000
+DYNAMIC	0x1b	0x4
+DYNAMIC	0x1a	0xc3004
+DYNAMIC	0x1c	0x4
+DYNAMIC	0x6ffffef5	0xf4
+DYNAMIC	0x5	0x2d50
+DYNAMIC	0x6	0x11a0
+DYNAMIC	0xa	0x20eb
+DYNAMIC	0xb	0x10
+DYNAMIC	0x3	0xc5000
+DYNAMIC	0x2	0x4a8
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x8ebc
+DYNAMIC	0x11	0x5284
+DYNAMIC	0x12	0x3c38
+DYNAMIC	0x13	0x8
+DYNAMIC	0x6ffffffe	0x51b4
+DYNAMIC	0x6fffffff	0x4
+DYNAMIC	0x6ffffff0	0x4e3c
+DYNAMIC	0x6ffffffa	0x645
+DYNAMIC	0x0	0x0
+FIELD	RELRO	Partial
+FIELD	NX	Enabled
+FIELD	PIE	N/A(DSO)
+FIELD	canary	Detected(import)
+FIELD	FORTIFY	Detected(import)
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Present
+FIELD	dynamic_export_count_including_ABS	341
+FIELD	dynamic_export_non_ABS_count	341
+FIELD	dynamic_export_function_count	338
+METADATA_READER_SUCCESS
+
+
+RPM_LUA_EXIT_CODE: 0

@@ -1,0 +1,10 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/collect-elf-metadata.sh",
+  "script_sha256": "247cc53d29b659e98b5171d27997b174a94a70827342760e9d8d859f72d7eaf0",
+  "normalized_source_sha256": "f5df5cf0af57b9eb703bbcb523fb2923eecf19d2f2ca551677b88f3c8a084a69",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 9.309,
+  "transport": "paced SDB stdin: authored shell source decoded and SHA256 checked in memory before noninteractive sh; no board file created; history/readline disabled",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}

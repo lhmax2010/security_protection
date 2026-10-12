@@ -1,0 +1,10 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/elf-board-validation.sh",
+  "script_sha256": "7b230eef3b4b1efff3849dd6eb106a0ee6b243ec000d32154f518a8d957de179",
+  "normalized_source_sha256": "1bf6344114faa54c5acec0ed24306a184b0545010a071a9c66b817abcb9c383d",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 2.636,
+  "transport": "paced SDB stdin: authored shell source decoded and SHA256 checked in memory before noninteractive sh; no board file created; history/readline disabled",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}
