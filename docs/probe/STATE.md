@@ -101,3 +101,16 @@ npx --prefix .local-tools/rea --no-install rea-agents function "$PWD/docs/probe/
 ## 最终审计与同步
 
 最终静态审计25项通过、0失败，检查了所有STATE证据链接、产物hash、三个ARM后端profile、样本会话关闭、JS恢复锚点、.NET推断导入、Rust明文字节及必须保留的失败记录。证据：[最终审计](evidence/final-audit.json)。执行等价性已有30次真实运行证据，不重复重跑无变更样本。所有子步骤以独立commit推送，最后本台账、AGENTS会话规则、固定版本补充安装脚本与证据清单一并推送；不使用文件上传或GitHub写入API。
+
+## board-survey 进度与结论
+
+本轮目标：只读调查 Tizen 开发板 `192.168.108.26` 上20~40份平台ELF的现有加固与平台机制。所有新审计文件只写 `docs/probe/board-survey/`；板上不安装、不编译、不执行选中二进制、不写入任何文件；不取回二进制/固件/源码，仅采集版本、ELF符号/头部、加固表等文本元数据。只用普通 git push 同步。
+
+- 开场已执行 `git pull --ff-only`，已核对上一轮STATE：REA/Ghidra ARM基线完成，Python pyc不支持等限制保留。当前基点48710eb。证据：[会话开始](board-survey/session-start.txt)。
+- [进行中] 步骤1 SSH连接与板子身份；本机没有针对该IP的SSH账号配置，等待PM提供**用户名**。密码/私钥口令若需要，只通过本机zenity密码窗口传给OpenSSH，不经聊天、不进脚本或日志。未尝试猜测账号。
+- [待执行] 步骤2 选择20~40个/usr/bin、/usr/lib样本并说明选择理由。
+- [待执行] 步骤3 每样本只读readelf原输出与加固矩阵。
+- [待执行] 步骤4 属性比例（共享库不误判为可执行PIE，未知项显式保留）。
+- [待执行] 步骤5 共享库动态符号暴露。
+- [待执行] 步骤6 SMACK、ASLR、只读根/verity痕迹。
+- 人工前提：SSH用户名尚未提供；“LLVM开源板”必须以实测身份/构建元数据或PM映射确认，不能单凭IP或内核clang字符串作结论。
