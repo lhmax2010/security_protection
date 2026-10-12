@@ -1,0 +1,77 @@
+
+Smart Development Bridge 4.2.25
+
+Syntax:
+  sdb [target] <command> [parameters]
+
+Targets:
+  -d, --device              Send the <command> to a connected device and returns
+                            an error if there are other devices.
+  -e, --emulator            Send the <command> to a running emulator instance
+                            and returns an error if there are other instances.
+  -s, --serial <serial_number>
+                            Send the <command> to a target through <serial
+                            number>.
+
+Command & Parameters:
+  wait-for-device           Waits indefinitely for the target to come to
+                            'device' state.
+  devices                   Display a list of all connected target instances.
+  connect [<ip>[:<port>]]   Connect to a target through TCP/IP.
+  disconnect [<ip>[:<port>]]
+                            Disconnect from a TCP/IP device. By default, the
+                            port 26101 is used if there is no specified port
+                            number. If you use this command with no additional
+                            arguments, all connected TCP/IP devices are
+                            disconnected.
+  push <local> <remote> [--with-utf8]
+                            Copy a file or directory recursively from the host
+                            computer to the target.
+  pull <remote> [<local>]   Copy a file or directory recursively from the target
+                            to the host computer.
+  shell [command]           Launch the shell on the target instance if the
+                            <command> is not specified. If the <command> is
+                            specified, this runs the <command> without entering
+                            the SDB remote shell on the target instance.
+  install <pkg_path>        Push the tpk package file in the <pkg_path> to the
+                            device and install it.
+  uninstall <pkg_id>        Uninstall the application from the device by using
+                            its pkg-id. The <pkg_id> is a 10-digit unique
+                            identifier for the application.
+  forward <local> <remote>  Set up requests' arbitrary port forwarding from the
+                            host's local port to the target's remote port.
+  forward --list            Display a list of all forwarded socket connections.
+  forward --remove <local>  Remove the <local> forward socket connection.
+  forward --remove-all      Remove all forwarded socket connections.
+  dlog [-f <filename>] [-r <Kbytes>] [-n <count>] [-v <format>]
+                            Monitor the content of the device log buffers.
+                            [-f <filename>] writes the log to the <filename>
+                            file. The default file is stdout.
+                            [-r <Kbytes>] rotates the log file every <Kbytes> of
+                            output. The default value is 16. This option also
+                            requires the -f option.
+                            [-n <count>] sets the maximum number of rotated logs
+                            to <count>. The default value is 4. This option also
+                            requires the -r option.
+                            [-v <format>] sets the output format
+                            (brief/process/tag/thread/raw/time/long) for log
+                            messages. The default value of <format> is 'brief'.
+  encryption {on|off|status}
+                            Set encryption modes for got/sent data.
+  start-server [--only-detect-tizen]
+                            Start the server. If [--only-detect-tizen] is
+                            specified, the SDB detects only Tizen devices.
+  kill-server               Stop the running server.
+  get-state                 Print the connection status with the target device:
+                            device/offline/locked.
+  get-serialno              Print the serial number for connecting the target
+                            device.
+  status-window             Print the connection status for a specified device
+                            continuously.
+  root {on|off}             Switch between the root and developer account mode.
+                            The 'on' value sets the root mode and the 'off'
+                            value sets the developer account mode.
+  version                   Show the version number.
+  help                      Show the help message.
+
+Specify the serial id to get the list of plugin supported daemon specific commands

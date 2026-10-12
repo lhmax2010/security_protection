@@ -1,0 +1,5 @@
+/home/linhao/.local/bin/sdb
+/home/linhao/tizen-studio/tools/sdb
+Smart Development Bridge version 4.2.25
+
+Installation: existing Tizen Studio tools/sdb; no installation performed in this survey.
