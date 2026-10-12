@@ -142,3 +142,6 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 
 - [完成] 新步骤4：采集到eth0=192.168.108.26/24，网关192.168.108.1；/etc/resolv.conf指向/opt/etc/resolv.conf，内容由ConnMan生成、nameserver=127.0.0.1（本地DNS代理，不能误设成上游DNS）。ConnMan active、systemd unit显示disabled，需进一步核对开机启动链与上游DNS。证据：[网络原现状](board-survey/net-before.txt)。
 - 已保留缺失记录：systemd-networkd单位、NetworkManager/ifupdown目录及所有标准ELF工具均未找到。未安装板上工具；尚未得出加固比例。证据：[现状与工具查询](board-survey/net-before.txt)。
+
+- 网络持久化写入前备份完成：原文件`/var/lib/connman/ethernet_2ccf67a072b5_cable/settings`已按原路径保存到board-survey/net-config-backup/；原权限0600，network_fw所有，当前手动IP/24、网关192.168.108.1、AutoConnect=true、上游DNS221.131.143.69。未在备份前改网络。证据：[原配置](board-survey/net-config-backup/var/lib/connman/ethernet_2ccf67a072b5_cable/settings)、[备份清单](board-survey/net-config-backup/manifest.json)、[采集及启动链](board-survey/net-backup-capture.txt)。
+- 配置探查首次systemctl cat触发SDB终端pager，日志保留；后续显式禁用pager，全部只读查询已完成。证据：[首次](board-survey/net-manager-inspection.txt)、[无pager复查](board-survey/net-manager-inspection-no-pager.txt)。

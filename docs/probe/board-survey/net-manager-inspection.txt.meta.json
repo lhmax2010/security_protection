@@ -1,0 +1,9 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/net-inspect.sh",
+  "script_sha256": "066655f4e30ca5967ed0c1d81696ef2c6059a3f72f37483934465bdfcb287bc3",
+  "sdb_exit_code": 124,
+  "elapsed_seconds": 60.002,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}

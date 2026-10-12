@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "board_path": "/var/lib/connman/ethernet_2ccf67a072b5_cable/settings",
+      "local_path": "docs/probe/board-survey/net-config-backup/var/lib/connman/ethernet_2ccf67a072b5_cable/settings",
+      "sha256_normalized_text": "7bbe350f0cd12f0d514e0312789c2f928dc9bdaad208ff7e287d3ff0ec5b1662",
+      "original_mode": "0600",
+      "original_owner": "network_fw:network_fw"
+    }
+  ],
+  "normalization": "SDB terminal CRLF normalized to LF; config text retained, including original path. No board binary or credential included."
+}

@@ -1,0 +1,366 @@
+
+COMMAND: connmanctl services ethernet_2ccf67a072b5_cable
+/net/connman/service/ethernet_2ccf67a072b5_cable
+  Frequency = 0
+  Type = ethernet
+  Security = [  ]
+  State = ready
+  StateIPv6 = configuration
+  Favorite = True
+  Immutable = False
+  AutoConnect = True
+  Name = Wired
+  EapOverEthernet = [ UseEapol=False ]
+  Ethernet = [ Method=auto, Interface=eth0, Address=2C:CF:67:A0:72:B5, MTU=1500 ]
+  IPv4 = [ Method=manual, Address=192.168.108.26, Netmask=255.255.255.0, Gateway=192.168.108.1 ]
+  IPv4.Configuration = [ Method=manual, Address=192.168.108.26, Netmask=255.255.255.0, Gateway=192.168.108.1 ]
+  IPv6 = [  ]
+  IPv6.Configuration = [ Method=auto, Privacy=prefered ]
+  Nameservers = [ ipv4.unknown, ipv6.unknown ]
+  Nameservers.Configuration = [ ipv4.unknown, ipv6.unknown ]
+  Timeservers = [ pool.ntp.org, time.google.com, time.cloudflare.com, time.windows.com ]
+  Timeservers.Configuration = [  ]
+  Domains = [  ]
+  Domains.Configuration = [  ]
+  Proxy = [ Method=direct ]
+  Proxy.Configuration = [  ]
+  mDNS = False
+  mDNS.Configuration = False
+  Provider = [  ]
+
+EXIT_CODE: 0
+
+COMMAND: connmanctl help
+Usage: connmanctl [[command] [args]]
+state                                 Shows if the system is online or offline
+technologies                          Display technologies
+clock                                 Get System Clock Properties
+enable          <technology>|offline  Enables given technology or offline mode
+disable         <technology>|offline  Disables given technology or offline mode
+tether          <technology> on|off
+            wifi [on|off] <ssid> <passphrase> [<freq>] Enable, disable tethering, set SSID and passphrase for wifi
+tethering_clients                      Display tethering clients
+services        [<service>]           Display services
+   --properties      [<service>]      (obsolete)
+ins                                   Display intelligent network selection
+   --all             
+   --filter-ssid     ssid
+   --filter-name     [<service_name>]
+peers           [peer]                Display peers
+scan            <technology>          Scans for new services for given technology
+connect         <service/peer>        Connect a given service or peer
+disconnect      <service/peer>        Disconnect a given service or peer
+move-before     <service> <target service>	Move <service> before <target service>
+move-after      <service> <target service>	Move <service> after <target service>
+config          <service>             Set service configuration options
+   --nameservers     ipv4.manual|ipv4.dhcp|ipv6.manual|ipv6.dhcp
+			<dns1> [<dns2>] [<dns3>]
+   --timeservers     <ntp1> [<ntp2>] [...]
+   --domains         <domain1> [<domain2>] [...]
+   --mdns            yes|no
+   --ipv6            off|auto [enable|disable|preferred]|
+			manual <address> <prefixlength> <gateway>
+   --proxy           direct|auto <URL>|manual <URL1> [<URL2>] [...]
+			[exclude <exclude1> [<exclude2>] [...]]
+   --autoconnect     yes|no
+   --ipv4            off|dhcp|manual <address> <netmask> <gateway>
+   --remove                           Remove service
+monitor         [off]                 Monitor signals from interfaces
+   --services        [off]            Monitor only services
+   --tech            [off]            Monitor only technologies
+   --manager         [off]            Monitor only manager interface
+   --vpnmanager      [off]            Monitor only VPN manager interface
+   --vpnconnection   [off]            Monitor only VPN connections
+agent           on|off                Agent mode
+vpnconnections  [<connection>]        Display VPN connections
+vpnagent        on|off                VPN Agent mode
+session         on|off|connect|disconnect|configEnable or disable a session
+   --bearers         <technology1> [<technology2> [...]]
+   --type            local|internet|any
+   --ifname          [<interface_name>]
+   --srciprule       yes|no
+   --ctxid           <context_identifier>
+peer_service    register|unregister <specs> <master>
+Where specs are:
+	bjr_query <query> bjr_response <response>
+	upnp_service <service> upnp_version <version>
+	wfd_ies <ies>
+(Un)Register a Peer Service
+help                                  Show help
+exit                                  Exit
+quit                                  Quit
+
+Note: arguments and output are considered EXPERIMENTAL for now.
+
+EXIT_CODE: 0
+
+COMMAND: cat /var/lib/connman/ethernet_2ccf67a072b5_cable/settings
+[ethernet_2ccf67a072b5_cable]
+Name=Wired
+AutoConnect=true
+UseEapol=false
+Modified=2026-10-12T16:22:39Z
+IPv4.method=manual
+IPv4.netmask_prefixlen=24
+IPv4.local_address=192.168.108.26
+IPv4.gateway=192.168.108.1
+IPv6.method=auto
+IPv6.privacy=prefered
+Nameservers=221.131.143.69;
+
+EXIT_CODE: 0
+
+COMMAND: ls -l /etc/connman
+total 16
+-rw-r--r-- 1 network_fw network_fw 12632 Oct  3 20:39 main.conf
+
+EXIT_CODE: 0
+
+COMMAND: systemctl cat connman
+# /usr/lib/systemd/system/connman.service
+[Unit]
+Description=Connection service
+Conflicts=shutdown.target
+RequiresMountsFor=/var/lib/connman
+After=dbus.service network-pre.target systemd-sysusers.service net-config.service
+Before=network.target multi-user.target shutdown.target
+Wants=network.target
+
+[Service]
+Type=dbus
+User=network_fw
+Group=network_fw
+BusName=net.connman
+Restart=on-failure
+SmackProcessLabel=System
+ExecStart=/usr/bin/connmand -n --nobacktrace --noplugin vpn
+StandardOutput=null
+Capabilities=cap_setgid,cap_net_admin,cap_net_bind_service,cap_net_broadcast,cap_net_raw,cap_dac_override=i
+SecureBits=keep-caps
+
+[Install]
+WantedBy=multi-user.target
+
+EXIT_CODE: 0
+
+COMMAND: systemctl show connman --property=WantedBy,RequiredBy,TriggeredBy,Before,After
+RequiredBy=setup-adaptor.service
+WantedBy=multi-user.target
+Before=shutdown.target multi-user.target setup-adaptor.service network.target
+After=dbus.service system.slice net-config.service connman.socket systemd-sysusers.service basic.target dbus.socket net.connman.busname network-pre.target sysinit.target -.mount
+TriggeredBy=connman.socket net.connman.busname
+
+EXIT_CODE: 0
+
+COMMAND: systemctl list-dependencies multi-user.target
+multi-user.target
+* |-bluetooth-frwk.service
+* |-boot-animation.path
+* |-central-key-manager.service
+* |-chromium-efl-update.service
+* |-chromium-efl.service
+* |-clone_partitions.service
+* |-connman.service
+* |-contextd.service
+* |-cynara.service
+* |-deviced.service
+* |-lightweight-web-engine-update.service
+* |-media-server.service
+* |-net-config.service
+* |-nsjail.service
+* |-package-recovery.service
+* |-pipewire.service
+* |-pushd.service
+* |-resourced.service
+* |-security-config.service
+* |-sensord.service
+* |-sessiond.service
+* |-setup-adaptor.service
+* |-stability-monitor.service
+* |-stc-manager.service
+* |-systemd-logind.service
+* |-systemd-user-sessions.service
+* |-tlm.service
+* |-update-manager.service
+* |-webappenc-initializer.service
+* |-wifi-tethering-manager.service
+* |-basic.target
+* | |-ac.service
+* | |-actd.service
+* | |-buxton2.service
+* | |-dlog_logger.service
+* | |-esd.service
+* | |-hal-backend-service.service
+* | |-pkg-db-recovery.service
+* | |-pkgmgr-info.service
+* | |-privilege-checker-integrity.service
+* | |-rscmgr-msgq.service
+* | |-rscmgr-service.service
+* | |-security-manager-cleanup.service
+* | |-security-manager-rules-loader.service
+* | |-tizen-system-env.service
+* | |-tmp.mount
+* | |-busnames.target
+* | | |-net.asp.busname
+* | | |-net.connman.busname
+* | | |-net.connman.vpn.busname
+* | | |-net.inm_manager.busname
+* | | |-net.nan.busname
+* | | |-net.netconfig.busname
+* | | |-net.stc.busname
+* | | |-net.stc.iptables.busname
+* | | |-net.uamd.busname
+* | | |-net.wifidirect.busname
+* | | |-net.wifitetheringExt.busname
+* | | |-org.bluez.ag_agent.busname
+* | | |-org.bluez.obex.busname
+* | | |-org.freedesktop.locale1.busname
+* | | |-org.freedesktop.login1.busname
+* | | |-org.freedesktop.systemd1.busname
+* | | |-org.O1.SecurityAccounts.gUserManagement.busname
+* | | |-org.projectx.bt.busname
+* | | |-org.projectx.bt_core.busname
+* | | |-org.tizen.account.manager.busname
+* | | |-org.tizen.activationd.busname
+* | | |-org.tizen.app2sd.busname
+* | | |-org.tizen.clatd.busname
+* | | |-org.tizen.data_provider_service.busname
+* | | |-org.tizen.dumpsys.providers.org.tizen.bugreport-service.busname
+* | | |-org.tizen.dumpsys.providers.org.tizen.systemstate.busname
+* | | |-org.tizen.dumpsys.service.busname
+* | | |-org.tizen.engine-loader.busname
+* | | |-org.tizen.factoryreset.busname
+* | | |-org.tizen.lbs.Providers.LbsServer.busname
+* | | |-org.tizen.machinelearning.service.busname
+* | | |-org.tizen.MobileapAgent.busname
+* | | |-org.tizen.PhonenumberUtils.dbus.busname
+* | | |-org.tizen.pkgdir_tool.busname
+* | | |-org.tizen.scmirroring.server.busname
+* | | |-org.tizen.sessiond.busname
+* | | |-org.tizen.sticker.server.busname
+* | | |-org.tizen.system.crash.livedump.busname
+* | | |-org.tizen.system.deviced.busname
+* | | |-org.tizen.system.diagnostics.busname
+* | | |-org.tizen.system.isu.busname
+* | | |-org.tizen.system.pass.busname
+* | | |-org.tizen.system.popup.busname
+* | | |-org.tizen.system.storage.busname
+* | | |-org.tizen.system.thermal.busname
+* | | |-org.tizen.system.vibrator.busname
+* | | |-org.tizen.voice.sttserver.busname
+* | | |-org.tizen.voice.sttservercustom.busname
+* | | |-org.tizen.voice.ttsinterruptserver.busname
+* | | |-org.tizen.voice.ttsnotiserver.busname
+* | | |-org.tizen.voice.ttsserver.busname
+* | | `-org.tizen.voice.ttssrserver.busname
+* | |-paths.target
+* | | |-dlog_cleanup.path
+* | | |-focus-server.path
+* | | `-muse-server.path
+* | |-slices.target
+* | | |--.slice
+* | | `-system.slice
+* | |-sockets.target
+* | | |-ac.socket
+* | | |-alarm-server.socket
+* | | |-amd-tizen-action-service.socket
+* | | |-askuser-notification-stream.socket
+* | | |-buxton2.socket
+* | | |-central-key-manager-api-control.socket
+* | | |-central-key-manager-api-encryption.socket
+* | | |-central-key-manager-api-extended.socket
+* | | |-central-key-manager-api-ocsp.socket
+* | | |-central-key-manager-api-storage.socket
+* | | |-connman.socket
+* | | |-cynara-admin.socket
+* | | |-cynara-agent.socket
+* | | |-cynara-monitor-get.socket
+* | | |-cynara.socket
+* | | |-dbus.socket
+* | | |-device-certificate-manager.socket
+* | | |-download-provider.socket
+* | | |-esd-badge.socket
+* | | |-esd-cion.socket
+* | | |-esd-dpm.socket
+* | | |-esd-group.socket
+* | | |-hal-backend-service.socket
+* | | |-mdnsd.socket
+* | | |-mediacontroller.socket
+* | | |-package-manager.socket
+* | | |-pass-resource-monitor.socket
+* | | |-pkgmgr-info.socket
+* | | |-resourced.socket
+* | | |-sdbd_tcp.socket
+* | | |-security-manager.socket
+* | | |-sensord.socket
+* | | |-systemd-initctl.socket
+* | | |-systemd-journald-audit.socket
+* | | |-systemd-journald-dev-log.socket
+* | | |-systemd-journald.socket
+* | | |-systemd-udevd-control.socket
+* | | |-systemd-udevd-kernel.socket
+* | | |-tizen-action-plugin-launcher.socket
+* | | |-tizen-theme-manager.socket
+* | | |-tizen-watcherd.socket
+* | | `-webauthn.socket
+* | |-sysinit.target
+* | | |-dev-mqueue.mount
+* | | |-hal-compatibility-checker.service
+* | | |-kmod-static-nodes.service
+* | | |-platform-extension-config.service
+* | | |-proc-sys-fs-binfmt_misc.automount
+* | | |-sys-kernel-config.mount
+* | | |-sys-kernel-debug-tracing.mount
+* | | |-sys-kernel-debug.mount
+* | | |-systemd-boot-system-token.service
+* | | |-systemd-journal-catalog-update.service
+* | | |-systemd-journal-flush.service
+* | | |-systemd-journald.service
+* | | |-systemd-machine-id-commit.service
+* | | |-systemd-sysctl.service
+* | | |-systemd-tmpfiles-setup-dev.service
+* | | |-systemd-tmpfiles-setup.service
+* | | |-systemd-udev-trigger.service
+* | | |-systemd-udevd.service
+* | | |-systemd-update-done.service
+* | | |-systemd-vconsole-setup.service
+* | | |-tizen-watcherd.service
+* | | |-tizenid.service
+* | | |-ttrace-marker.service
+* | | |-local-fs.target
+* | | | |-data-checkpoint.service
+* | | | |-dlconf.service
+* | | | |-mnt-inform.mount
+* | | | |-opt-usr.mount
+* | | | |-platform-extension-config.service
+* | | | |-platform-extension-migration.service
+* | | | `-tmp.mount
+* | | `-swap.target
+* | `-timers.target
+* `-getty.target
+*   `-serial-getty@ttyS0.service
+
+EXIT_CODE: 0
+
+COMMAND: systemctl get-default
+graphical.target
+
+EXIT_CODE: 0
+
+EXISTING_STREAMED_METADATA_READER_PREREQUISITES
+
+COMMAND: rpm --version
+RPM version 4.14.1
+
+EXIT_CODE: 0
+
+COMMAND: rpm --eval %{lua:print(_VERSION); print(type(string.unpack))}
+Lua 5.1nil
+
+EXIT_CODE: 0
+/usr/bin/od
+TOOL_LOOKUP_EXIT_CODE od: 0
+/usr/bin/dd
+TOOL_LOOKUP_EXIT_CODE dd: 0
+/usr/bin/tr
+TOOL_LOOKUP_EXIT_CODE tr: 0

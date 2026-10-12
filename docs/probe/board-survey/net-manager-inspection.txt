@@ -1,0 +1,144 @@
+
+COMMAND: connmanctl services ethernet_2ccf67a072b5_cable
+/net/connman/service/ethernet_2ccf67a072b5_cable
+  Frequency = 0
+  Type = ethernet
+  Security = [  ]
+  State = ready
+  StateIPv6 = configuration
+  Favorite = True
+  Immutable = False
+  AutoConnect = True
+  Name = Wired
+  EapOverEthernet = [ UseEapol=False ]
+  Ethernet = [ Method=auto, Interface=eth0, Address=2C:CF:67:A0:72:B5, MTU=1500 ]
+  IPv4 = [ Method=manual, Address=192.168.108.26, Netmask=255.255.255.0, Gateway=192.168.108.1 ]
+  IPv4.Configuration = [ Method=manual, Address=192.168.108.26, Netmask=255.255.255.0, Gateway=192.168.108.1 ]
+  IPv6 = [  ]
+  IPv6.Configuration = [ Method=auto, Privacy=prefered ]
+  Nameservers = [ ipv4.unknown, ipv6.unknown ]
+  Nameservers.Configuration = [ ipv4.unknown, ipv6.unknown ]
+  Timeservers = [ pool.ntp.org, time.google.com, time.cloudflare.com, time.windows.com ]
+  Timeservers.Configuration = [  ]
+  Domains = [  ]
+  Domains.Configuration = [  ]
+  Proxy = [ Method=direct ]
+  Proxy.Configuration = [  ]
+  mDNS = False
+  mDNS.Configuration = False
+  Provider = [  ]
+
+EXIT_CODE: 0
+
+COMMAND: connmanctl help
+Usage: connmanctl [[command] [args]]
+state                                 Shows if the system is online or offline
+technologies                          Display technologies
+clock                                 Get System Clock Properties
+enable          <technology>|offline  Enables given technology or offline mode
+disable         <technology>|offline  Disables given technology or offline mode
+tether          <technology> on|off
+            wifi [on|off] <ssid> <passphrase> [<freq>] Enable, disable tethering, set SSID and passphrase for wifi
+tethering_clients                      Display tethering clients
+services        [<service>]           Display services
+   --properties      [<service>]      (obsolete)
+ins                                   Display intelligent network selection
+   --all             
+   --filter-ssid     ssid
+   --filter-name     [<service_name>]
+peers           [peer]                Display peers
+scan            <technology>          Scans for new services for given technology
+connect         <service/peer>        Connect a given service or peer
+disconnect      <service/peer>        Disconnect a given service or peer
+move-before     <service> <target service>	Move <service> before <target service>
+move-after      <service> <target service>	Move <service> after <target service>
+config          <service>             Set service configuration options
+   --nameservers     ipv4.manual|ipv4.dhcp|ipv6.manual|ipv6.dhcp
+			<dns1> [<dns2>] [<dns3>]
+   --timeservers     <ntp1> [<ntp2>] [...]
+   --domains         <domain1> [<domain2>] [...]
+   --mdns            yes|no
+   --ipv6            off|auto [enable|disable|preferred]|
+			manual <address> <prefixlength> <gateway>
+   --proxy           direct|auto <URL>|manual <URL1> [<URL2>] [...]
+			[exclude <exclude1> [<exclude2>] [...]]
+   --autoconnect     yes|no
+   --ipv4            off|dhcp|manual <address> <netmask> <gateway>
+   --remove                           Remove service
+monitor         [off]                 Monitor signals from interfaces
+   --services        [off]            Monitor only services
+   --tech            [off]            Monitor only technologies
+   --manager         [off]            Monitor only manager interface
+   --vpnmanager      [off]            Monitor only VPN manager interface
+   --vpnconnection   [off]            Monitor only VPN connections
+agent           on|off                Agent mode
+vpnconnections  [<connection>]        Display VPN connections
+vpnagent        on|off                VPN Agent mode
+session         on|off|connect|disconnect|configEnable or disable a session
+   --bearers         <technology1> [<technology2> [...]]
+   --type            local|internet|any
+   --ifname          [<interface_name>]
+   --srciprule       yes|no
+   --ctxid           <context_identifier>
+peer_service    register|unregister <specs> <master>
+Where specs are:
+	bjr_query <query> bjr_response <response>
+	upnp_service <service> upnp_version <version>
+	wfd_ies <ies>
+(Un)Register a Peer Service
+help                                  Show help
+exit                                  Exit
+quit                                  Quit
+
+Note: arguments and output are considered EXPERIMENTAL for now.
+
+EXIT_CODE: 0
+
+COMMAND: cat /var/lib/connman/ethernet_2ccf67a072b5_cable/settings
+[ethernet_2ccf67a072b5_cable]
+Name=Wired
+AutoConnect=true
+UseEapol=false
+Modified=2026-10-12T16:22:39Z
+IPv4.method=manual
+IPv4.netmask_prefixlen=24
+IPv4.local_address=192.168.108.26
+IPv4.gateway=192.168.108.1
+IPv6.method=auto
+IPv6.privacy=prefered
+Nameservers=221.131.143.69;
+
+EXIT_CODE: 0
+
+COMMAND: ls -l /etc/connman
+total 16
+-rw-r--r-- 1 network_fw network_fw 12632 Oct  3 20:39 main.conf
+
+EXIT_CODE: 0
+
+COMMAND: systemctl cat connman
+[0;1;34m# /usr/lib/systemd/system/connman.service[0m
+[Unit]
+Description=Connection service
+Conflicts=shutdown.target
+RequiresMountsFor=/var/lib/connman
+After=dbus.service network-pre.target systemd-sysusers.service net-config.servic
+e
+Before=network.target multi-user.target shutdown.target
+Wants=network.target
+
+[Service]
+Type=dbus
+User=network_fw
+Group=network_fw
+BusName=net.connman
+Restart=on-failure
+SmackProcessLabel=System
+ExecStart=/usr/bin/connmand -n --nobacktrace --noplugin vpn
+StandardOutput=null
+Capabilities=cap_setgid,cap_net_admin,cap_net_bind_service,cap_net_broadcast,cap
+_net_raw,cap_dac_override=i
+SecureBits=keep-caps
+
+[7m--More--[27m
+LOCAL_TIMEOUT: sdb shell deadline exceeded

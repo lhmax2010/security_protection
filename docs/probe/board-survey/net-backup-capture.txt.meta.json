@@ -1,0 +1,9 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/net-backup.sh",
+  "script_sha256": "21f6c8b5b9303ff4b7816db1bdd4b958220977208fcaa6fcb84b35c0ba419392",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 0.265,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}

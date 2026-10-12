@@ -1,0 +1,72 @@
+@@BEGIN_CONFIG /var/lib/connman/ethernet_2ccf67a072b5_cable/settings
+[ethernet_2ccf67a072b5_cable]
+Name=Wired
+AutoConnect=true
+UseEapol=false
+Modified=2026-10-12T16:22:39Z
+IPv4.method=manual
+IPv4.netmask_prefixlen=24
+IPv4.local_address=192.168.108.26
+IPv4.gateway=192.168.108.1
+IPv6.method=auto
+IPv6.privacy=prefered
+Nameservers=221.131.143.69;
+
+@@END_CONFIG EXIT_CODE=0
+
+COMMAND: stat -c %a %u %g %n /var/lib/connman/ethernet_2ccf67a072b5_cable/settings
+600 551 551 /var/lib/connman/ethernet_2ccf67a072b5_cable/settings
+
+EXIT_CODE: 0
+
+COMMAND: readlink -f /var/lib/connman/ethernet_2ccf67a072b5_cable/settings
+/opt/var/lib/connman/ethernet_2ccf67a072b5_cable/settings
+
+EXIT_CODE: 0
+
+COMMAND: systemctl cat net-config
+# /usr/lib/systemd/system/net-config.service
+[Unit]
+Description=Network Configuration service
+Requires=dbus.socket
+After=dbus.socket
+
+[Service]
+Type=forking
+User=network_fw
+Group=network_fw
+SmackProcessLabel=System
+ExecStart=/usr/bin/net-config
+Restart=on-failure
+Capabilities=cap_dac_override,cap_net_admin,cap_net_raw,cap_sys_module=i
+SecureBits=keep-caps
+
+[Install]
+WantedBy=multi-user.target
+
+EXIT_CODE: 0
+
+COMMAND: systemctl show net-config --property=ActiveState,UnitFileState,FragmentPath,WantedBy,RequiredBy
+RequiredBy=
+WantedBy=multi-user.target
+ActiveState=active
+FragmentPath=/usr/lib/systemd/system/net-config.service
+UnitFileState=disabled
+
+EXIT_CODE: 0
+
+COMMAND: ls -l /etc/systemd/system/multi-user.target.wants/connman.service /usr/lib/systemd/system/multi-user.target.wants/connman.service
+ls: cannot access /etc/systemd/system/multi-user.target.wants/connman.service: No such file or directory
+lrwxrwxrwx 1 root root 18 Oct  3 20:39 /usr/lib/systemd/system/multi-user.target.wants/connman.service -> ../connman.service
+
+EXIT_CODE: 2
+
+COMMAND: busctl get-property net.connman /net/connman/service/ethernet_2ccf67a072b5_cable net.connman.Service Nameservers
+[0;1;31mFailed to get property Nameservers on interface net.connman.Service: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist[0m
+
+EXIT_CODE: 1
+
+COMMAND: busctl get-property net.connman /net/connman/service/ethernet_2ccf67a072b5_cable net.connman.Service Nameservers.Configuration
+[0;1;31mFailed to get property Nameservers.Configuration on interface net.connman.Service: Method "Get" with signature "ss" on interface "org.freedesktop.DBus.Properties" doesn't exist[0m
+
+EXIT_CODE: 1
