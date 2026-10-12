@@ -1,0 +1,2 @@
+ilspycmd: 9.1.0.7988
+ICSharpCode.Decompiler: 9.1.0.7988

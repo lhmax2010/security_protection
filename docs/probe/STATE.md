@@ -60,3 +60,5 @@
 - Python pyc REA 实测拒绝 unsupported binary format，后续 overview 因无 active target 报错；未用 Python dis 或外部反编译器充当 REA 成功。三锚点恢复均 N/A，不代表 pyc 有保护。证据 evidence/target_py.pyc/{open.decoded.json,overview.decoded.json,capability-names.json,requests.json}。
 
 - JS application 目录分析成功；single .js 路由拒绝保留原错。REA recover_javascript_sources 缺 Wakaru 的原错保留，安装官方 Wakaru1.14.0、hash 与文档一致后成功恢复完整源码，两个函数/字符串/算法清晰。证据 evidence/target_js.js/{application.decoded.json,single-file-analysis.decoded.json,recovery.json,recovery-with-wakaru.json,recovered/}，evidence/wakaru-install.txt。
+
+- .NET 内置 parser 完整读取3个方法及CIL统计/常量/ldstr token/调用边；不自动输出C#或ldstr全文。补装 ilspycmd9.1.0.7988，实际 C#/全IL 输出已存，再经 REA import_managed_reconstruction 按真实 token、signature_sha256、normalized_il_sha256 导入3方法为推断证据；三锚点在此补充路线可读。证据 evidence/target_dotnet.dll/{members.decoded.json,ilspy-decompiled.cs,ilspy-full-il.txt,supplemental/imported-reconstruction.decoded.json}，evidence/ilspy-install.txt。

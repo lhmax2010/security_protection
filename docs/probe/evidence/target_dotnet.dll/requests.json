@@ -1,0 +1,32 @@
+[
+  {
+    "label": "artifact",
+    "tool": "inspect_managed_artifact",
+    "arguments": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll"
+    },
+    "elapsed_ms": 1885,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "members",
+    "tool": "inspect_managed_members",
+    "arguments": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll"
+    },
+    "elapsed_ms": 15,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "native-boundaries",
+    "tool": "inspect_managed_native_boundaries",
+    "arguments": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll"
+    },
+    "elapsed_ms": 7,
+    "isError": false,
+    "transport_error": null
+  }
+]

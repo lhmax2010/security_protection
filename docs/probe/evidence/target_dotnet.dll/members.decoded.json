@@ -1,0 +1,1049 @@
+{
+  "evidence_id": "ev_180a383e8c00c4b47e1d59b0b606902cc03baf5e5e5e5660295dd1924063facb",
+  "subject": {
+    "name": "target_dotnet.dll",
+    "digest": {
+      "sha256": "49965c46a639c75ac597c900351cc43059d41ceec6a9dcd6c50b5e448d76555e"
+    },
+    "format": "pe",
+    "architecture": "x86",
+    "local_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll"
+  },
+  "provider": {
+    "id": "rea-dotnet-static",
+    "name": "REA managed static analysis provider",
+    "version": "1"
+  },
+  "analysis_profile": null,
+  "predicate_type": "rea.analysis",
+  "operation": "inspect_managed_members",
+  "parameters": {
+    "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll"
+  },
+  "raw_result": null,
+  "normalized_result": {
+    "artifact": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll",
+      "sha256": "49965c46a639c75ac597c900351cc43059d41ceec6a9dcd6c50b5e448d76555e",
+      "byte_length": 5120,
+      "format": "pe"
+    },
+    "module": {
+      "name": "target_dotnet.dll",
+      "generation": 0,
+      "mvid": "cc52bda2-ace3-4a2c-a72d-806e8b194da2",
+      "enc_id": null,
+      "enc_base_id": null,
+      "token": "0x00000001",
+      "row_offset": 968
+    },
+    "metadata": {
+      "status": "complete",
+      "version": "v4.0.30319",
+      "table_row_counts": {
+        "Module": 1,
+        "TypeRef": 17,
+        "TypeDef": 2,
+        "MethodDef": 3,
+        "Param": 3,
+        "MemberRef": 20,
+        "CustomAttribute": 11,
+        "StandAloneSig": 2,
+        "Assembly": 1,
+        "AssemblyRef": 2,
+        "MethodSpec": 1
+      }
+    },
+    "identity_scope": {
+      "token_identity": "build-local",
+      "requires_artifact_sha256": "49965c46a639c75ac597c900351cc43059d41ceec6a9dcd6c50b5e448d76555e",
+      "requires_mvid": "cc52bda2-ace3-4a2c-a72d-806e8b194da2"
+    },
+    "types": [
+      {
+        "token": "0x02000001",
+        "row_offset": 1080,
+        "namespace": "",
+        "name": "<Module>",
+        "full_name": "<Module>",
+        "flags": 0,
+        "extends_token": null,
+        "field_list": {
+          "first_row": null,
+          "last_row": null,
+          "count": 0
+        },
+        "method_list": {
+          "first_row": null,
+          "last_row": null,
+          "count": 0
+        }
+      },
+      {
+        "token": "0x02000002",
+        "row_offset": 1094,
+        "namespace": "",
+        "name": "BareBaseline",
+        "full_name": "BareBaseline",
+        "flags": 1048961,
+        "extends_token": "0x0100000d",
+        "field_list": {
+          "first_row": null,
+          "last_row": null,
+          "count": 0
+        },
+        "method_list": {
+          "first_row": 1,
+          "last_row": 3,
+          "count": 3
+        }
+      }
+    ],
+    "fields": [],
+    "methods": [
+      {
+        "token": "0x06000001",
+        "row_offset": 1108,
+        "declaring_type_token": "0x02000002",
+        "declaring_type": "BareBaseline",
+        "name": "secret_transform",
+        "rva": 8272,
+        "impl_flags": 8,
+        "flags": 150,
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "55d3a380d3023f658e30e45e21d1622670ada3fe8d80c8930f2a6b77aad56ee8",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "u4",
+          "parameter_types": [
+            "u4"
+          ],
+          "field_type": null,
+          "issue": null
+        },
+        "body": {
+          "status": "present",
+          "header_format": "tiny",
+          "rva": 8272,
+          "file_offset": 592,
+          "max_stack": 8,
+          "init_locals": false,
+          "local_var_sig_token": null,
+          "il_size": 19,
+          "il_sha256": "7dd71d514db4d6474d4c51dccdf856d926c077753c51dd6b6c670e1984d32297",
+          "normalized_il_sha256": "9b38627776ee36aaec53bfd5f742f9e53638513b715a3b386f4002e44ac5e0b7",
+          "instruction_count": 10,
+          "decoded_instruction_count": 10,
+          "truncated_instructions": 0,
+          "opcode_counts": {
+            "ldarg.0": 1,
+            "ldc.i4": 2,
+            "xor": 1,
+            "ldc.i4.s": 1,
+            "mul": 1,
+            "ldc.i4.7": 1,
+            "add": 1,
+            "and": 1,
+            "ret": 1
+          },
+          "anchors": [
+            {
+              "il_offset": 1,
+              "opcode": "ldc.i4",
+              "operand_kind": "constant",
+              "operand": "23063"
+            },
+            {
+              "il_offset": 7,
+              "opcode": "ldc.i4.s",
+              "operand_kind": "constant",
+              "operand": "33"
+            },
+            {
+              "il_offset": 12,
+              "opcode": "ldc.i4",
+              "operand_kind": "constant",
+              "operand": "65535"
+            }
+          ],
+          "exception_regions": [],
+          "issue": null
+        }
+      },
+      {
+        "token": "0x06000002",
+        "row_offset": 1122,
+        "declaring_type_token": "0x02000002",
+        "declaring_type": "BareBaseline",
+        "name": "simple_checksum",
+        "rva": 8292,
+        "impl_flags": 8,
+        "flags": 150,
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c5afaa5198a8f9479b385d39a65e684c135797e6ef70a51282df8254b0bb22a7",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "u4",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        },
+        "body": {
+          "status": "present",
+          "header_format": "fat",
+          "rva": 8292,
+          "file_offset": 612,
+          "max_stack": 2,
+          "init_locals": true,
+          "local_var_sig_token": "0x11000001",
+          "il_size": 45,
+          "il_sha256": "a0c343144c9d448425d0e02f07174c021692c35732569294e72a7f794b1cfd76",
+          "normalized_il_sha256": "2e5df0062437973b64db6bec5da7c0a685680e3a8229ee2220c3ebae919ddeed",
+          "instruction_count": 30,
+          "decoded_instruction_count": 30,
+          "truncated_instructions": 0,
+          "opcode_counts": {
+            "ldc.i4.0": 2,
+            "stloc.0": 2,
+            "ldarg.0": 1,
+            "stloc.1": 1,
+            "stloc.2": 2,
+            "br.s": 1,
+            "ldloc.1": 2,
+            "ldloc.2": 3,
+            "callvirt": 2,
+            "stloc.3": 1,
+            "ldloc.0": 2,
+            "ldc.i4.s": 1,
+            "mul": 1,
+            "ldloc.3": 1,
+            "conv.u1": 1,
+            "add": 2,
+            "ldc.i4": 1,
+            "and": 1,
+            "ldc.i4.1": 1,
+            "blt.s": 1,
+            "ret": 1
+          },
+          "anchors": [
+            {
+              "il_offset": 6,
+              "opcode": "br.s",
+              "operand_kind": "branch",
+              "operand": "34"
+            },
+            {
+              "il_offset": 10,
+              "opcode": "callvirt",
+              "operand_kind": "method",
+              "operand": "0x0a00000c"
+            },
+            {
+              "il_offset": 17,
+              "opcode": "ldc.i4.s",
+              "operand_kind": "constant",
+              "operand": "31"
+            },
+            {
+              "il_offset": 23,
+              "opcode": "ldc.i4",
+              "operand_kind": "constant",
+              "operand": "65535"
+            },
+            {
+              "il_offset": 36,
+              "opcode": "callvirt",
+              "operand_kind": "method",
+              "operand": "0x0a00000d"
+            },
+            {
+              "il_offset": 41,
+              "opcode": "blt.s",
+              "operand_kind": "branch",
+              "operand": "8"
+            }
+          ],
+          "exception_regions": [],
+          "issue": null
+        }
+      },
+      {
+        "token": "0x06000003",
+        "row_offset": 1136,
+        "declaring_type_token": "0x02000002",
+        "declaring_type": "BareBaseline",
+        "name": "Main",
+        "rva": 8352,
+        "impl_flags": 0,
+        "flags": 150,
+        "signature": {
+          "raw_length": 5,
+          "raw_sha256": "807699fcdf98b6674a8081ad707088ec859d5d71737ad4ea8bb251d224f73869",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string[]"
+          ],
+          "field_type": null,
+          "issue": null
+        },
+        "body": {
+          "status": "present",
+          "header_format": "fat",
+          "rva": 8352,
+          "file_offset": 672,
+          "max_stack": 3,
+          "init_locals": true,
+          "local_var_sig_token": "0x11000002",
+          "il_size": 106,
+          "il_sha256": "a9b9d699690e356345f34fd8dd926cef2c6e174427e9c69e97753527130b1fb1",
+          "normalized_il_sha256": "dbf95b441987b45da6c69035301812c640c8f97434f475fe6846ac4ff4d141e6",
+          "instruction_count": 37,
+          "decoded_instruction_count": 37,
+          "truncated_instructions": 0,
+          "opcode_counts": {
+            "ldstr": 3,
+            "stloc.0": 1,
+            "ldarg.0": 2,
+            "ldlen": 1,
+            "brtrue.s": 1,
+            "ldc.i4": 1,
+            "br.s": 1,
+            "ldc.i4.0": 1,
+            "ldelem.ref": 1,
+            "call": 11,
+            "stloc.1": 1,
+            "ldloca.s": 7,
+            "ldc.i4.2": 1,
+            "ldc.i4.3": 1,
+            "ldloc.0": 2,
+            "ldloc.1": 1,
+            "ret": 1
+          },
+          "anchors": [
+            {
+              "il_offset": 0,
+              "opcode": "ldstr",
+              "operand_kind": "string",
+              "operand": "0x70000001"
+            },
+            {
+              "il_offset": 8,
+              "opcode": "brtrue.s",
+              "operand_kind": "branch",
+              "operand": "17"
+            },
+            {
+              "il_offset": 10,
+              "opcode": "ldc.i4",
+              "operand_kind": "constant",
+              "operand": "1234"
+            },
+            {
+              "il_offset": 15,
+              "opcode": "br.s",
+              "operand_kind": "branch",
+              "operand": "25"
+            },
+            {
+              "il_offset": 20,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x0a00000e"
+            },
+            {
+              "il_offset": 26,
+              "opcode": "ldloca.s",
+              "operand_kind": "variable",
+              "operand": "2"
+            },
+            {
+              "il_offset": 30,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x0a00000f"
+            },
+            {
+              "il_offset": 35,
+              "opcode": "ldloca.s",
+              "operand_kind": "variable",
+              "operand": "2"
+            },
+            {
+              "il_offset": 38,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x0a000010"
+            },
+            {
+              "il_offset": 43,
+              "opcode": "ldloca.s",
+              "operand_kind": "variable",
+              "operand": "2"
+            },
+            {
+              "il_offset": 45,
+              "opcode": "ldstr",
+              "operand_kind": "string",
+              "operand": "0x7000002b"
+            },
+            {
+              "il_offset": 50,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x0a000011"
+            },
+            {
+              "il_offset": 55,
+              "opcode": "ldloca.s",
+              "operand_kind": "variable",
+              "operand": "2"
+            },
+            {
+              "il_offset": 58,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x06000001"
+            },
+            {
+              "il_offset": 63,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x2b000001"
+            },
+            {
+              "il_offset": 68,
+              "opcode": "ldloca.s",
+              "operand_kind": "variable",
+              "operand": "2"
+            },
+            {
+              "il_offset": 70,
+              "opcode": "ldstr",
+              "operand_kind": "string",
+              "operand": "0x7000002b"
+            },
+            {
+              "il_offset": 75,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x0a000011"
+            },
+            {
+              "il_offset": 80,
+              "opcode": "ldloca.s",
+              "operand_kind": "variable",
+              "operand": "2"
+            },
+            {
+              "il_offset": 83,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x06000002"
+            },
+            {
+              "il_offset": 88,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x2b000001"
+            },
+            {
+              "il_offset": 93,
+              "opcode": "ldloca.s",
+              "operand_kind": "variable",
+              "operand": "2"
+            },
+            {
+              "il_offset": 95,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x0a000013"
+            },
+            {
+              "il_offset": 100,
+              "opcode": "call",
+              "operand_kind": "method",
+              "operand": "0x0a000014"
+            }
+          ],
+          "exception_regions": [],
+          "issue": null
+        }
+      }
+    ],
+    "member_refs": [
+      {
+        "token": "0x0a000001",
+        "row_offset": 1168,
+        "parent_token": "0x01000001",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c889396c66b535112cb33472b6ecf61ad5f09860a1ea642fb8c31a4ed004296a",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "i4"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000002",
+        "row_offset": 1174,
+        "parent_token": "0x01000002",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 3,
+          "raw_sha256": "0c9373898d2dd1c85902837a9e979cb88484e2548a008ad2b2176cc7119d09df",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 0,
+          "return_type": "void",
+          "parameter_types": [],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000003",
+        "row_offset": 1180,
+        "parent_token": "0x01000003",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 5,
+          "raw_sha256": "1d2049d945c66d5b9530552d2369938d1dd811d391633d9b8a2c9fad0e908844",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "valuetype:17"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000004",
+        "row_offset": 1186,
+        "parent_token": "0x01000005",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c65dc7d303e94729245de0fa4db4b80ac687af6d0bb38c5c884bc9c11f01e005",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000005",
+        "row_offset": 1192,
+        "parent_token": "0x01000006",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c65dc7d303e94729245de0fa4db4b80ac687af6d0bb38c5c884bc9c11f01e005",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000006",
+        "row_offset": 1198,
+        "parent_token": "0x01000007",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c65dc7d303e94729245de0fa4db4b80ac687af6d0bb38c5c884bc9c11f01e005",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000007",
+        "row_offset": 1204,
+        "parent_token": "0x01000008",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c65dc7d303e94729245de0fa4db4b80ac687af6d0bb38c5c884bc9c11f01e005",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000008",
+        "row_offset": 1210,
+        "parent_token": "0x01000009",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c65dc7d303e94729245de0fa4db4b80ac687af6d0bb38c5c884bc9c11f01e005",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000009",
+        "row_offset": 1216,
+        "parent_token": "0x0100000a",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c65dc7d303e94729245de0fa4db4b80ac687af6d0bb38c5c884bc9c11f01e005",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a00000a",
+        "row_offset": 1222,
+        "parent_token": "0x0100000b",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c65dc7d303e94729245de0fa4db4b80ac687af6d0bb38c5c884bc9c11f01e005",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a00000b",
+        "row_offset": 1228,
+        "parent_token": "0x0100000c",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c889396c66b535112cb33472b6ecf61ad5f09860a1ea642fb8c31a4ed004296a",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "i4"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a00000c",
+        "row_offset": 1234,
+        "parent_token": "0x0100000f",
+        "name": "get_Chars",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "adce4eb5a5b5757525c79f327cd2bf409c5e02ea6fa1bfaf4c03edb9a4aff858",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "char",
+          "parameter_types": [
+            "i4"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a00000d",
+        "row_offset": 1240,
+        "parent_token": "0x0100000f",
+        "name": "get_Length",
+        "signature": {
+          "raw_length": 3,
+          "raw_sha256": "19e1bd1daf2ae492b895802f55c905ef2d25aea509c6010868e218adb408c010",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 0,
+          "return_type": "i4",
+          "parameter_types": [],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a00000e",
+        "row_offset": 1246,
+        "parent_token": "0x01000010",
+        "name": "Parse",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c5afaa5198a8f9479b385d39a65e684c135797e6ef70a51282df8254b0bb22a7",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "u4",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a00000f",
+        "row_offset": 1252,
+        "parent_token": "0x0100000e",
+        "name": ".ctor",
+        "signature": {
+          "raw_length": 5,
+          "raw_sha256": "b8f2f531aa5a002bd4f03f64a8784890b813b6fc461576872a98958629b8e249",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 2,
+          "return_type": "void",
+          "parameter_types": [
+            "i4",
+            "i4"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000010",
+        "row_offset": 1258,
+        "parent_token": "0x0100000e",
+        "name": "AppendFormatted",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c65dc7d303e94729245de0fa4db4b80ac687af6d0bb38c5c884bc9c11f01e005",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000011",
+        "row_offset": 1264,
+        "parent_token": "0x0100000e",
+        "name": "AppendLiteral",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "c65dc7d303e94729245de0fa4db4b80ac687af6d0bb38c5c884bc9c11f01e005",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000012",
+        "row_offset": 1270,
+        "parent_token": "0x0100000e",
+        "name": "AppendFormatted",
+        "signature": {
+          "raw_length": 6,
+          "raw_sha256": "e04422fd1b3c4643f59d337ce579531a1aaf7673716bf958890070a7ad90bce7",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this generic",
+          "generic_parameter_count": 1,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "mvar:0"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000013",
+        "row_offset": 1276,
+        "parent_token": "0x0100000e",
+        "name": "ToStringAndClear",
+        "signature": {
+          "raw_length": 3,
+          "raw_sha256": "df29f5ab2554df47369dafce3bc8630f16eabc3f72c21bbd24c5e73c286f650f",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default has-this",
+          "generic_parameter_count": null,
+          "parameter_count": 0,
+          "return_type": "string",
+          "parameter_types": [],
+          "field_type": null,
+          "issue": null
+        }
+      },
+      {
+        "token": "0x0a000014",
+        "row_offset": 1282,
+        "parent_token": "0x01000011",
+        "name": "WriteLine",
+        "signature": {
+          "raw_length": 4,
+          "raw_sha256": "250d91037dcedea60ffbb7aec99c8f9d09cfc2b1928dc36a3deca0c261a8ac18",
+          "kind": "method",
+          "parse_status": "decoded",
+          "calling_convention": "default",
+          "generic_parameter_count": null,
+          "parameter_count": 1,
+          "return_type": "void",
+          "parameter_types": [
+            "string"
+          ],
+          "field_type": null,
+          "issue": null
+        }
+      }
+    ],
+    "call_edges": [
+      {
+        "caller_token": "0x06000002",
+        "caller": "BareBaseline.simple_checksum",
+        "opcode": "callvirt",
+        "target_token": "0x0a00000c",
+        "target_kind": "member-ref",
+        "target_name": "get_Chars"
+      },
+      {
+        "caller_token": "0x06000002",
+        "caller": "BareBaseline.simple_checksum",
+        "opcode": "callvirt",
+        "target_token": "0x0a00000d",
+        "target_kind": "member-ref",
+        "target_name": "get_Length"
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x0a00000e",
+        "target_kind": "member-ref",
+        "target_name": "Parse"
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x0a00000f",
+        "target_kind": "member-ref",
+        "target_name": ".ctor"
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x0a000010",
+        "target_kind": "member-ref",
+        "target_name": "AppendFormatted"
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x0a000011",
+        "target_kind": "member-ref",
+        "target_name": "AppendLiteral"
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x06000001",
+        "target_kind": "method-def",
+        "target_name": "secret_transform"
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x2b000001",
+        "target_kind": "method-spec",
+        "target_name": null
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x0a000011",
+        "target_kind": "member-ref",
+        "target_name": "AppendLiteral"
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x06000002",
+        "target_kind": "method-def",
+        "target_name": "simple_checksum"
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x2b000001",
+        "target_kind": "method-spec",
+        "target_name": null
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x0a000013",
+        "target_kind": "member-ref",
+        "target_name": "ToStringAndClear"
+      },
+      {
+        "caller_token": "0x06000003",
+        "caller": "BareBaseline.Main",
+        "opcode": "call",
+        "target_token": "0x0a000014",
+        "target_kind": "member-ref",
+        "target_name": "WriteLine"
+      }
+    ],
+    "field_accesses": [],
+    "coverage": {
+      "state": "complete",
+      "issues": []
+    },
+    "limitations": [
+      "Metadata tokens are build-local coordinates and are only meaningful with the reported artifact SHA-256 and MVID.",
+      "CIL instruction anchors are decoded from file-backed method bodies only; no target assembly is loaded or executed.",
+      "Signatures are decoded for common ECMA-335 primitive, class, valuetype, pointer, byref, array, and generic variable forms; unsupported forms retain raw signature hashes."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "Metadata tokens are build-local coordinates and are only meaningful with the reported artifact SHA-256 and MVID.",
+    "CIL instruction anchors are decoded from file-backed method bodies only; no target assembly is loaded or executed.",
+    "Signatures are decoded for common ECMA-335 primitive, class, valuetype, pointer, byref, array, and generic variable forms; unsupported forms retain raw signature hashes."
+  ],
+  "locations": [
+    {
+      "kind": "file-offset",
+      "offset": 968
+    },
+    {
+      "kind": "file-offset",
+      "offset": 592
+    },
+    {
+      "kind": "file-offset",
+      "offset": 612
+    },
+    {
+      "kind": "file-offset",
+      "offset": 672
+    }
+  ],
+  "evidence_links": []
+}

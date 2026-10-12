@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "curl",
+    "-fL",
+    "https://api.nuget.org/v3-flatcontainer/ilspycmd/index.json",
+    "-o",
+    ".local-tools/ilspy-versions.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.917
+}

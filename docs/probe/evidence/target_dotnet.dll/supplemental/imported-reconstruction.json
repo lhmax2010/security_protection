@@ -1,0 +1,205 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_61e430652dbe9057d40c365ad4df2e8a620ff90a01446a3dc84c4478a492999f\",\"subject\":{\"name\":\"target_dotnet.dll\",\"digest\":{\"sha256\":\"49965c46a639c75ac597c900351cc43059d41ceec6a9dcd6c50b5e448d76555e\"},\"format\":\"pe\",\"architecture\":null,\"local_path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll\"},\"provider\":{\"id\":\"rea-dotnet-workflows\",\"name\":\"REA managed-code workflows\",\"version\":\"1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.managed-reconstruction-import\",\"operation\":\"import_managed_reconstruction\",\"parameters\":{\"static_members_evidence_id\":\"ev_180a383e8c00c4b47e1d59b0b606902cc03baf5e5e5e5660295dd1924063facb\",\"decompiler\":{\"name\":\"ilspycmd\",\"version\":\"9.1.0.7988\",\"family\":\"ilspy\",\"executable_sha256\":\"05719300e1fc8c04b02f245d26118792f642e12f0a2530a26d7ed233847765a4\",\"options\":[\"-t\",\"BareBaseline\"],\"options_sha256\":\"8610b677acdcf8b7e53d6defa0437232495e88db3d20aea7eaa8e7c0b04236e8\"},\"method_locks\":[{\"token\":\"0x06000001\",\"signature_sha256\":\"55d3a380d3023f658e30e45e21d1622670ada3fe8d80c8930f2a6b77aad56ee8\",\"normalized_il_sha256\":\"9b38627776ee36aaec53bfd5f742f9e53638513b715a3b386f4002e44ac5e0b7\"},{\"token\":\"0x06000002\",\"signature_sha256\":\"c5afaa5198a8f9479b385d39a65e684c135797e6ef70a51282df8254b0bb22a7\",\"normalized_il_sha256\":\"2e5df0062437973b64db6bec5da7c0a685680e3a8229ee2220c3ebae919ddeed\"},{\"token\":\"0x06000003\",\"signature_sha256\":\"807699fcdf98b6674a8081ad707088ec859d5d71737ad4ea8bb251d224f73869\",\"normalized_il_sha256\":\"dbf95b441987b45da6c69035301812c640c8f97434f475fe6846ac4ff4d141e6\"}],\"notes\":[\"External ILSpy C# is imported as reconstruction inference, not REA canonical parser source recovery. Original combined stdout/stderr log retained; method text sliced from actual ILSpy output.\"]},\"raw_result\":null,\"normalized_result\":{\"reconstruction_id\":\"mre_c97088ac589bcfa3c1d80d8e40ccf67f77d03bc32f226d5fb2971532c868f020\",\"phase\":\"reconstruction-import\",\"executed\":false,\"static_observation\":{\"evidence_id\":\"ev_180a383e8c00c4b47e1d59b0b606902cc03baf5e5e5e5660295dd1924063facb\",\"artifact_sha256\":\"49965c46a639c75ac597c900351cc43059d41ceec6a9dcd6c50b5e448d76555e\",\"artifact_path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll\",\"byte_length\":5120,\"module_name\":\"target_dotnet.dll\",\"mvid\":\"cc52bda2-ace3-4a2c-a72d-806e8b194da2\",\"metadata_status\":\"complete\"},\"decompiler\":{\"name\":\"ilspycmd\",\"version\":\"9.1.0.7988\",\"family\":\"ilspy\",\"executable_sha256\":\"05719300e1fc8c04b02f245d26118792f642e12f0a2530a26d7ed233847765a4\",\"options\":[\"-t\",\"BareBaseline\"],\"options_sha256\":\"8610b677acdcf8b7e53d6defa0437232495e88db3d20aea7eaa8e7c0b04236e8\"},\"summary\":{\"imported_methods\":3,\"decompiled_csharp_methods\":3,\"decompiled_il_methods\":0,\"pseudocode_methods\":0,\"total_text_bytes\":474},\"methods\":[{\"token\":\"0x06000001\",\"declaring_type\":\"BareBaseline\",\"name\":\"secret_transform\",\"signature_sha256\":\"55d3a380d3023f658e30e45e21d1622670ada3fe8d80c8930f2a6b77aad56ee8\",\"normalized_il_sha256\":\"9b38627776ee36aaec53bfd5f742f9e53638513b715a3b386f4002e44ac5e0b7\",\"body_sha256\":\"7dd71d514db4d6474d4c51dccdf856d926c077753c51dd6b6c670e1984d32297\",\"il_size\":19,\"reconstruction\":{\"kind\":\"decompiled-csharp\",\"language\":\"csharp\",\"text\":\"\\tpublic static uint secret_transform(uint x)\\n\\t{\\n\\t\\treturn ((x ^ 0x5A17) * 33 + 7) & 0xFFFF;\\n\\t}\",\"text_sha256\":\"a696c921b79896728eb09500c0293897ed21e8d583352a52f96eb417abf21274\",\"text_length\":93,\"line_count\":4,\"source_path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_dotnet.dll/ilspy-decompiled.cs\",\"start_line\":7,\"end_line\":10},\"validation\":{\"matched_static_member\":true,\"exact_build_required\":true,\"canonical_observation\":false,\"confidence_floor\":\"inference\"}},{\"token\":\"0x06000002\",\"declaring_type\":\"BareBaseline\",\"name\":\"simple_checksum\",\"signature_sha256\":\"c5afaa5198a8f9479b385d39a65e684c135797e6ef70a51282df8254b0bb22a7\",\"normalized_il_sha256\":\"2e5df0062437973b64db6bec5da7c0a685680e3a8229ee2220c3ebae919ddeed\",\"body_sha256\":\"a0c343144c9d448425d0e02f07174c021692c35732569294e72a7f794b1cfd76\",\"il_size\":45,\"reconstruction\":{\"kind\":\"decompiled-csharp\",\"language\":\"csharp\",\"text\":\"\\tpublic static uint simple_checksum(string s)\\n\\t{\\n\\t\\tuint num = 0u;\\n\\t\\tforeach (char c in s)\\n\\t\\t{\\n\\t\\t\\tnum = (num * 31 + (byte)c) & 0xFFFF;\\n\\t\\t}\\n\\t\\treturn num;\\n\\t}\",\"text_sha256\":\"29debc5c5720ab0f415ba9f55cd12289391f585e612927cfa570f8b0d9493b2d\",\"text_length\":154,\"line_count\":9,\"source_path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_dotnet.dll/ilspy-decompiled.cs\",\"start_line\":13,\"end_line\":21},\"validation\":{\"matched_static_member\":true,\"exact_build_required\":true,\"canonical_observation\":false,\"confidence_floor\":\"inference\"}},{\"token\":\"0x06000003\",\"declaring_type\":\"BareBaseline\",\"name\":\"Main\",\"signature_sha256\":\"807699fcdf98b6674a8081ad707088ec859d5d71737ad4ea8bb251d224f73869\",\"normalized_il_sha256\":\"dbf95b441987b45da6c69035301812c640c8f97434f475fe6846ac4ff4d141e6\",\"body_sha256\":\"a9b9d699690e356345f34fd8dd926cef2c6e174427e9c69e97753527130b1fb1\",\"il_size\":106,\"reconstruction\":{\"kind\":\"decompiled-csharp\",\"language\":\"csharp\",\"text\":\"\\n\\tpublic static void Main(string[] args)\\n\\t{\\n\\t\\tstring text = \\\"LICENSE_KEY_CHECK_V1\\\";\\n\\t\\tuint x = ((args.Length != 0) ? uint.Parse(args[0]) : 1234u);\\n\\t\\tConsole.WriteLine($\\\"{text} {secret_transform(x)} {simple_checksum(text)}\\\");\\n\\t}\",\"text_sha256\":\"68a0a01891fe305f38b61ff2135e74c82e436078fac0656c837fee4c59b87f7c\",\"text_length\":227,\"line_count\":7,\"source_path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_dotnet.dll/ilspy-decompiled.cs\",\"start_line\":22,\"end_line\":28},\"validation\":{\"matched_static_member\":true,\"exact_build_required\":true,\"canonical_observation\":false,\"confidence_floor\":\"inference\"}}],\"notes\":[\"External ILSpy C# is imported as reconstruction inference, not REA canonical parser source recovery. Original combined stdout/stderr log retained; method text sliced from actual ILSpy output.\"],\"evidence_links\":[\"ev_180a383e8c00c4b47e1d59b0b606902cc03baf5e5e5e5660295dd1924063facb\"],\"limitations\":[\"Decompiler output is imported as reconstruction evidence and analyst inference; metadata and IL observations remain canonical.\",\"This operation did not execute, load, reflect over, debug, instrument, patch, or decompile the target artifact.\",\"The imported reconstruction is valid only for the exact artifact SHA-256, MVID, method signature, and normalized IL shape recorded here.\",\"Obfuscated names, decompiler variables, and control-flow restructuring are not treated as proof without separate validation.\"]},\"confidence\":\"inferred\",\"authority\":\"analyst-inference\",\"environment\":null,\"limitations\":[\"Decompiler output is imported as reconstruction evidence and analyst inference; metadata and IL observations remain canonical.\",\"This operation did not execute, load, reflect over, debug, instrument, patch, or decompile the target artifact.\",\"The imported reconstruction is valid only for the exact artifact SHA-256, MVID, method signature, and normalized IL shape recorded here.\",\"Obfuscated names, decompiler variables, and control-flow restructuring are not treated as proof without separate validation.\"],\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll\"}],\"evidence_links\":[\"ev_180a383e8c00c4b47e1d59b0b606902cc03baf5e5e5e5660295dd1924063facb\"]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_61e430652dbe9057d40c365ad4df2e8a620ff90a01446a3dc84c4478a492999f",
+    "subject": {
+      "name": "target_dotnet.dll",
+      "digest": {
+        "sha256": "49965c46a639c75ac597c900351cc43059d41ceec6a9dcd6c50b5e448d76555e"
+      },
+      "format": "pe",
+      "architecture": null,
+      "local_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll"
+    },
+    "provider": {
+      "id": "rea-dotnet-workflows",
+      "name": "REA managed-code workflows",
+      "version": "1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.managed-reconstruction-import",
+    "operation": "import_managed_reconstruction",
+    "parameters": {
+      "static_members_evidence_id": "ev_180a383e8c00c4b47e1d59b0b606902cc03baf5e5e5e5660295dd1924063facb",
+      "decompiler": {
+        "name": "ilspycmd",
+        "version": "9.1.0.7988",
+        "family": "ilspy",
+        "executable_sha256": "05719300e1fc8c04b02f245d26118792f642e12f0a2530a26d7ed233847765a4",
+        "options": [
+          "-t",
+          "BareBaseline"
+        ],
+        "options_sha256": "8610b677acdcf8b7e53d6defa0437232495e88db3d20aea7eaa8e7c0b04236e8"
+      },
+      "method_locks": [
+        {
+          "token": "0x06000001",
+          "signature_sha256": "55d3a380d3023f658e30e45e21d1622670ada3fe8d80c8930f2a6b77aad56ee8",
+          "normalized_il_sha256": "9b38627776ee36aaec53bfd5f742f9e53638513b715a3b386f4002e44ac5e0b7"
+        },
+        {
+          "token": "0x06000002",
+          "signature_sha256": "c5afaa5198a8f9479b385d39a65e684c135797e6ef70a51282df8254b0bb22a7",
+          "normalized_il_sha256": "2e5df0062437973b64db6bec5da7c0a685680e3a8229ee2220c3ebae919ddeed"
+        },
+        {
+          "token": "0x06000003",
+          "signature_sha256": "807699fcdf98b6674a8081ad707088ec859d5d71737ad4ea8bb251d224f73869",
+          "normalized_il_sha256": "dbf95b441987b45da6c69035301812c640c8f97434f475fe6846ac4ff4d141e6"
+        }
+      ],
+      "notes": [
+        "External ILSpy C# is imported as reconstruction inference, not REA canonical parser source recovery. Original combined stdout/stderr log retained; method text sliced from actual ILSpy output."
+      ]
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "reconstruction_id": "mre_c97088ac589bcfa3c1d80d8e40ccf67f77d03bc32f226d5fb2971532c868f020",
+      "phase": "reconstruction-import",
+      "executed": false,
+      "static_observation": {
+        "evidence_id": "ev_180a383e8c00c4b47e1d59b0b606902cc03baf5e5e5e5660295dd1924063facb",
+        "artifact_sha256": "49965c46a639c75ac597c900351cc43059d41ceec6a9dcd6c50b5e448d76555e",
+        "artifact_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll",
+        "byte_length": 5120,
+        "module_name": "target_dotnet.dll",
+        "mvid": "cc52bda2-ace3-4a2c-a72d-806e8b194da2",
+        "metadata_status": "complete"
+      },
+      "decompiler": {
+        "name": "ilspycmd",
+        "version": "9.1.0.7988",
+        "family": "ilspy",
+        "executable_sha256": "05719300e1fc8c04b02f245d26118792f642e12f0a2530a26d7ed233847765a4",
+        "options": [
+          "-t",
+          "BareBaseline"
+        ],
+        "options_sha256": "8610b677acdcf8b7e53d6defa0437232495e88db3d20aea7eaa8e7c0b04236e8"
+      },
+      "summary": {
+        "imported_methods": 3,
+        "decompiled_csharp_methods": 3,
+        "decompiled_il_methods": 0,
+        "pseudocode_methods": 0,
+        "total_text_bytes": 474
+      },
+      "methods": [
+        {
+          "token": "0x06000001",
+          "declaring_type": "BareBaseline",
+          "name": "secret_transform",
+          "signature_sha256": "55d3a380d3023f658e30e45e21d1622670ada3fe8d80c8930f2a6b77aad56ee8",
+          "normalized_il_sha256": "9b38627776ee36aaec53bfd5f742f9e53638513b715a3b386f4002e44ac5e0b7",
+          "body_sha256": "7dd71d514db4d6474d4c51dccdf856d926c077753c51dd6b6c670e1984d32297",
+          "il_size": 19,
+          "reconstruction": {
+            "kind": "decompiled-csharp",
+            "language": "csharp",
+            "text": "\tpublic static uint secret_transform(uint x)\n\t{\n\t\treturn ((x ^ 0x5A17) * 33 + 7) & 0xFFFF;\n\t}",
+            "text_sha256": "a696c921b79896728eb09500c0293897ed21e8d583352a52f96eb417abf21274",
+            "text_length": 93,
+            "line_count": 4,
+            "source_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_dotnet.dll/ilspy-decompiled.cs",
+            "start_line": 7,
+            "end_line": 10
+          },
+          "validation": {
+            "matched_static_member": true,
+            "exact_build_required": true,
+            "canonical_observation": false,
+            "confidence_floor": "inference"
+          }
+        },
+        {
+          "token": "0x06000002",
+          "declaring_type": "BareBaseline",
+          "name": "simple_checksum",
+          "signature_sha256": "c5afaa5198a8f9479b385d39a65e684c135797e6ef70a51282df8254b0bb22a7",
+          "normalized_il_sha256": "2e5df0062437973b64db6bec5da7c0a685680e3a8229ee2220c3ebae919ddeed",
+          "body_sha256": "a0c343144c9d448425d0e02f07174c021692c35732569294e72a7f794b1cfd76",
+          "il_size": 45,
+          "reconstruction": {
+            "kind": "decompiled-csharp",
+            "language": "csharp",
+            "text": "\tpublic static uint simple_checksum(string s)\n\t{\n\t\tuint num = 0u;\n\t\tforeach (char c in s)\n\t\t{\n\t\t\tnum = (num * 31 + (byte)c) & 0xFFFF;\n\t\t}\n\t\treturn num;\n\t}",
+            "text_sha256": "29debc5c5720ab0f415ba9f55cd12289391f585e612927cfa570f8b0d9493b2d",
+            "text_length": 154,
+            "line_count": 9,
+            "source_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_dotnet.dll/ilspy-decompiled.cs",
+            "start_line": 13,
+            "end_line": 21
+          },
+          "validation": {
+            "matched_static_member": true,
+            "exact_build_required": true,
+            "canonical_observation": false,
+            "confidence_floor": "inference"
+          }
+        },
+        {
+          "token": "0x06000003",
+          "declaring_type": "BareBaseline",
+          "name": "Main",
+          "signature_sha256": "807699fcdf98b6674a8081ad707088ec859d5d71737ad4ea8bb251d224f73869",
+          "normalized_il_sha256": "dbf95b441987b45da6c69035301812c640c8f97434f475fe6846ac4ff4d141e6",
+          "body_sha256": "a9b9d699690e356345f34fd8dd926cef2c6e174427e9c69e97753527130b1fb1",
+          "il_size": 106,
+          "reconstruction": {
+            "kind": "decompiled-csharp",
+            "language": "csharp",
+            "text": "\n\tpublic static void Main(string[] args)\n\t{\n\t\tstring text = \"LICENSE_KEY_CHECK_V1\";\n\t\tuint x = ((args.Length != 0) ? uint.Parse(args[0]) : 1234u);\n\t\tConsole.WriteLine($\"{text} {secret_transform(x)} {simple_checksum(text)}\");\n\t}",
+            "text_sha256": "68a0a01891fe305f38b61ff2135e74c82e436078fac0656c837fee4c59b87f7c",
+            "text_length": 227,
+            "line_count": 7,
+            "source_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_dotnet.dll/ilspy-decompiled.cs",
+            "start_line": 22,
+            "end_line": 28
+          },
+          "validation": {
+            "matched_static_member": true,
+            "exact_build_required": true,
+            "canonical_observation": false,
+            "confidence_floor": "inference"
+          }
+        }
+      ],
+      "notes": [
+        "External ILSpy C# is imported as reconstruction inference, not REA canonical parser source recovery. Original combined stdout/stderr log retained; method text sliced from actual ILSpy output."
+      ],
+      "evidence_links": [
+        "ev_180a383e8c00c4b47e1d59b0b606902cc03baf5e5e5e5660295dd1924063facb"
+      ],
+      "limitations": [
+        "Decompiler output is imported as reconstruction evidence and analyst inference; metadata and IL observations remain canonical.",
+        "This operation did not execute, load, reflect over, debug, instrument, patch, or decompile the target artifact.",
+        "The imported reconstruction is valid only for the exact artifact SHA-256, MVID, method signature, and normalized IL shape recorded here.",
+        "Obfuscated names, decompiler variables, and control-flow restructuring are not treated as proof without separate validation."
+      ]
+    },
+    "confidence": "inferred",
+    "authority": "analyst-inference",
+    "environment": null,
+    "limitations": [
+      "Decompiler output is imported as reconstruction evidence and analyst inference; metadata and IL observations remain canonical.",
+      "This operation did not execute, load, reflect over, debug, instrument, patch, or decompile the target artifact.",
+      "The imported reconstruction is valid only for the exact artifact SHA-256, MVID, method signature, and normalized IL shape recorded here.",
+      "Obfuscated names, decompiler variables, and control-flow restructuring are not treated as proof without separate validation."
+    ],
+    "locations": [
+      {
+        "kind": "artifact-path",
+        "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_dotnet.dll"
+      }
+    ],
+    "evidence_links": [
+      "ev_180a383e8c00c4b47e1d59b0b606902cc03baf5e5e5e5660295dd1924063facb"
+    ]
+  }
+}

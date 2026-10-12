@@ -1,0 +1,60 @@
+{
+  "artifact_sha256": "49965c46a639c75ac597c900351cc43059d41ceec6a9dcd6c50b5e448d76555e",
+  "executed_artifact_sha256": "49965c46a639c75ac597c900351cc43059d41ceec6a9dcd6c50b5e448d76555e",
+  "cases": [
+    {
+      "argv": [
+        "dotnet",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/dotnet-out/target_dotnet.dll"
+      ],
+      "input": null,
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 14188 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "dotnet",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/dotnet-out/target_dotnet.dll",
+        "0"
+      ],
+      "input": "0",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40190 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "dotnet",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/dotnet-out/target_dotnet.dll",
+        "1"
+      ],
+      "input": "1",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40157 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "dotnet",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/dotnet-out/target_dotnet.dll",
+        "65535"
+      ],
+      "input": "65535",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "dotnet",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/dotnet-out/target_dotnet.dll",
+        "4294967295"
+      ],
+      "input": "4294967295",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    }
+  ]
+}

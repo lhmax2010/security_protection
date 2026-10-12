@@ -1,0 +1,145 @@
+// IL code: target_dotnet
+.class private auto ansi '<Module>'
+{
+} // end of class <Module>
+
+.class public auto ansi abstract sealed beforefieldinit BareBaseline
+	extends [System.Runtime]System.Object
+{
+	// Methods
+	.method public hidebysig static 
+		uint32 secret_transform (
+			uint32 x
+		) cil managed noinlining 
+	{
+		// Method begins at RVA 0x2050
+		// Header size: 1
+		// Code size: 19 (0x13)
+		.maxstack 8
+
+		IL_0000: ldarg.0
+		IL_0001: ldc.i4 23063
+		IL_0006: xor
+		IL_0007: ldc.i4.s 33
+		IL_0009: mul
+		IL_000a: ldc.i4.7
+		IL_000b: add
+		IL_000c: ldc.i4 65535
+		IL_0011: and
+		IL_0012: ret
+	} // end of method BareBaseline::secret_transform
+
+	.method public hidebysig static 
+		uint32 simple_checksum (
+			string s
+		) cil managed noinlining 
+	{
+		// Method begins at RVA 0x2064
+		// Header size: 12
+		// Code size: 45 (0x2d)
+		.maxstack 2
+		.locals init (
+			[0] uint32,
+			[1] string,
+			[2] int32,
+			[3] char
+		)
+
+		IL_0000: ldc.i4.0
+		IL_0001: stloc.0
+		IL_0002: ldarg.0
+		IL_0003: stloc.1
+		IL_0004: ldc.i4.0
+		IL_0005: stloc.2
+		IL_0006: br.s IL_0022
+		// loop start (head: IL_0022)
+			IL_0008: ldloc.1
+			IL_0009: ldloc.2
+			IL_000a: callvirt instance char [System.Runtime]System.String::get_Chars(int32)
+			IL_000f: stloc.3
+			IL_0010: ldloc.0
+			IL_0011: ldc.i4.s 31
+			IL_0013: mul
+			IL_0014: ldloc.3
+			IL_0015: conv.u1
+			IL_0016: add
+			IL_0017: ldc.i4 65535
+			IL_001c: and
+			IL_001d: stloc.0
+			IL_001e: ldloc.2
+			IL_001f: ldc.i4.1
+			IL_0020: add
+			IL_0021: stloc.2
+
+			IL_0022: ldloc.2
+			IL_0023: ldloc.1
+			IL_0024: callvirt instance int32 [System.Runtime]System.String::get_Length()
+			IL_0029: blt.s IL_0008
+		// end loop
+
+		IL_002b: ldloc.0
+		IL_002c: ret
+	} // end of method BareBaseline::simple_checksum
+
+	.method public hidebysig static 
+		void Main (
+			string[] args
+		) cil managed 
+	{
+		// Method begins at RVA 0x20a0
+		// Header size: 12
+		// Code size: 106 (0x6a)
+		.maxstack 3
+		.entrypoint
+		.locals init (
+			[0] string,
+			[1] uint32,
+			[2] valuetype [System.Runtime]System.Runtime.CompilerServices.DefaultInterpolatedStringHandler
+		)
+
+		IL_0000: ldstr "LICENSE_KEY_CHECK_V1"
+		IL_0005: stloc.0
+		IL_0006: ldarg.0
+		IL_0007: ldlen
+		IL_0008: brtrue.s IL_0011
+
+		IL_000a: ldc.i4 1234
+		IL_000f: br.s IL_0019
+
+		IL_0011: ldarg.0
+		IL_0012: ldc.i4.0
+		IL_0013: ldelem.ref
+		IL_0014: call uint32 [System.Runtime]System.UInt32::Parse(string)
+
+		IL_0019: stloc.1
+		IL_001a: ldloca.s 2
+		IL_001c: ldc.i4.2
+		IL_001d: ldc.i4.3
+		IL_001e: call instance void [System.Runtime]System.Runtime.CompilerServices.DefaultInterpolatedStringHandler::.ctor(int32, int32)
+		IL_0023: ldloca.s 2
+		IL_0025: ldloc.0
+		IL_0026: call instance void [System.Runtime]System.Runtime.CompilerServices.DefaultInterpolatedStringHandler::AppendFormatted(string)
+		IL_002b: ldloca.s 2
+		IL_002d: ldstr " "
+		IL_0032: call instance void [System.Runtime]System.Runtime.CompilerServices.DefaultInterpolatedStringHandler::AppendLiteral(string)
+		IL_0037: ldloca.s 2
+		IL_0039: ldloc.1
+		IL_003a: call uint32 BareBaseline::secret_transform(uint32)
+		IL_003f: call instance void [System.Runtime]System.Runtime.CompilerServices.DefaultInterpolatedStringHandler::AppendFormatted<uint32>(!!0)
+		IL_0044: ldloca.s 2
+		IL_0046: ldstr " "
+		IL_004b: call instance void [System.Runtime]System.Runtime.CompilerServices.DefaultInterpolatedStringHandler::AppendLiteral(string)
+		IL_0050: ldloca.s 2
+		IL_0052: ldloc.0
+		IL_0053: call uint32 BareBaseline::simple_checksum(string)
+		IL_0058: call instance void [System.Runtime]System.Runtime.CompilerServices.DefaultInterpolatedStringHandler::AppendFormatted<uint32>(!!0)
+		IL_005d: ldloca.s 2
+		IL_005f: call instance string [System.Runtime]System.Runtime.CompilerServices.DefaultInterpolatedStringHandler::ToStringAndClear()
+		IL_0064: call void [System.Console]System.Console::WriteLine(string)
+		IL_0069: ret
+	} // end of method BareBaseline::Main
+
+} // end of class BareBaseline
+
+You are not using the latest version of the tool, please update.
+Latest version is '11.1.0.9782' (yours is '9.1.0.7988')

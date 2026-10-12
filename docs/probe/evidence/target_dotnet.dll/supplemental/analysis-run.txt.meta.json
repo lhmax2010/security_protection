@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "node",
+    "docs/probe/scripts/analyze-one.mjs",
+    "followup",
+    "target_dotnet.dll",
+    "docs/probe/evidence/target_dotnet.dll/followup-plan.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 2.493
+}

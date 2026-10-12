@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "dotnet",
+    "tool",
+    "install",
+    "ilspycmd",
+    "--version",
+    "9.1.0.7988",
+    "--tool-path",
+    "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/dotnet-tools"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 2.159
+}

@@ -1,0 +1,3 @@
+{"level":30,"time":1791786153124,"application":"rea","mode":"mcp","layer":"server","tool":"inspect_managed_artifact","durationMs":19.11,"status":"ok","msg":"MCP tool execution completed"}
+{"level":30,"time":1791786153138,"application":"rea","mode":"mcp","layer":"server","tool":"inspect_managed_members","durationMs":5.81,"status":"ok","msg":"MCP tool execution completed"}
+{"level":30,"time":1791786153150,"application":"rea","mode":"mcp","layer":"server","tool":"inspect_managed_native_boundaries","durationMs":2.4,"status":"ok","msg":"MCP tool execution completed"}

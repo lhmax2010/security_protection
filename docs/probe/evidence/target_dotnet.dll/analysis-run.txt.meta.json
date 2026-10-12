@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "node",
+    "docs/probe/scripts/analyze-one.mjs",
+    "managed",
+    "target_dotnet.dll"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 3.133
+}

@@ -6,7 +6,7 @@ const {Client}=await import(path.join(root,'.local-tools/rea/node_modules/@model
 const {StdioClientTransport}=await import(path.join(root,'.local-tools/rea/node_modules/@modelcontextprotocol/client/dist/stdio.mjs'));
 const [mode,name]=process.argv.slice(2);
 const target=path.join(root,'docs/probe/samples/bin',name);
-const dir=path.join(root,'docs/probe/evidence',name);fs.mkdirSync(dir,{recursive:true});
+const dir=path.join(root,'docs/probe/evidence',name,...(mode==='followup'?['supplemental']:[]));fs.mkdirSync(dir,{recursive:true});
 const client=new Client({name:'bare-baseline-audit',version:'1.0.0'});
 const transport=new StdioClientTransport({command:path.join(root,'.local-tools/node-v24.21.0-linux-x64/bin/node'),args:[path.join(root,'.local-tools/rea/node_modules/rea-agents/scripts/rea.mjs'),'mcp'],env:{...process.env},stderr:'pipe'});
 const records=[];
@@ -29,7 +29,9 @@ try {
  const catalog=await client.listTools();
  save('capability-names',catalog.tools.map(t=>t.name));
  save('target-identity',{name,mode,path:target,sha256:crypto.createHash('sha256').update(fs.readFileSync(target)).digest('hex')});
- if(mode==='native') {
+ if(mode==='followup') {
+  for(const r of JSON.parse(fs.readFileSync(process.argv[4],'utf8')))await call(r.label,r.tool,r.arguments);
+ } else if(mode==='native') {
   await call('open','open_binary',{path:target,provider_id:'ghidra'});
   const overview=await call('overview','binary_overview');
   if(overview.status==='error'||overview.error) {await call('session','binary_session');}

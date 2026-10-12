@@ -1,0 +1,1 @@
+{"level":30,"time":1791786574581,"application":"rea","mode":"mcp","layer":"server","tool":"import_managed_reconstruction","durationMs":4.71,"status":"ok","msg":"MCP tool execution completed"}

@@ -1,0 +1,8 @@
+{
+  "argv": [
+    ".local-tools/dotnet-tools/ilspycmd",
+    "--version"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.13
+}
