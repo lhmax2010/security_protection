@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "-ec",
+    "sha256sum docs/probe/samples/bin/target_c_gcc_armv7l docs/probe/samples/bin/target_c_llvm_armv7l docs/probe/samples/bin/target_rust_armv7l docs/probe/samples/bin/target_py.pyc docs/probe/samples/bin/target_js.js docs/probe/samples/bin/target_dotnet.dll docs/probe/samples/bin/dotnet-out/target_dotnet.dll; qemu-arm --version; python3 --version; checksec --version"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.03
+}

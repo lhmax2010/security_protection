@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "-ec",
+    "mkdir -p \"$HOME/.local/bin\"; for name in node npm npx; do dest=\"$HOME/.local/bin/$name\"; if [ ! -e \"$dest\" ] && [ ! -L \"$dest\" ]; then ln -s \"$PROBE_ROOT/.local-tools/node-v24.21.0-linux-x64/bin/$name\" \"$dest\"; fi; ls -l \"$dest\"; done"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.037
+}

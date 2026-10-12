@@ -1,0 +1,45 @@
+{
+  "codex_scope": {
+    "clients": [
+      "codex"
+    ],
+    "identity": {
+      "canonical": true,
+      "version": "37",
+      "toolCount": 170
+    },
+    "destinations": [
+      {
+        "client": "shared",
+        "path": "/home/linhao/.agents/skills/reverse-engineer-anything",
+        "skill_file_exists": true
+      }
+    ]
+  },
+  "audit_scope": {
+    "clients": [
+      "claude_code",
+      "codex",
+      "copilot_cli",
+      "gemini_cli",
+      "vscode"
+    ],
+    "identity": {
+      "canonical": false,
+      "version": "37",
+      "toolCount": 170
+    },
+    "destinations": [
+      {
+        "client": "shared",
+        "path": "/home/linhao/.agents/skills/reverse-engineer-anything",
+        "skill_file_exists": true
+      },
+      {
+        "client": "claude_code",
+        "path": "/home/linhao/.claude/skills/reverse-engineer-anything",
+        "skill_file_exists": false
+      }
+    ]
+  }
+}

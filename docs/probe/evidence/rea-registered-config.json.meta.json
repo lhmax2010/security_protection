@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "python3",
+    "-c",
+    "import tomllib,json,pathlib; j=tomllib.loads((pathlib.Path.home()/\".codex/config.toml\").read_text()); print(json.dumps(j[\"mcp_servers\"][\"rea\"],indent=2))"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.027
+}

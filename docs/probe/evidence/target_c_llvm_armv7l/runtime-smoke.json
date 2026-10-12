@@ -1,0 +1,70 @@
+{
+  "artifact_sha256": "4a08f9e874b23446695be329b13e9cd102d733cefcf9d7fcafd56302afcd6d5e",
+  "executed_artifact_sha256": "4a08f9e874b23446695be329b13e9cd102d733cefcf9d7fcafd56302afcd6d5e",
+  "cases": [
+    {
+      "argv": [
+        "qemu-arm",
+        "-L",
+        "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l"
+      ],
+      "input": null,
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 14188 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "qemu-arm",
+        "-L",
+        "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l",
+        "0"
+      ],
+      "input": "0",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40190 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "qemu-arm",
+        "-L",
+        "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l",
+        "1"
+      ],
+      "input": "1",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40157 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "qemu-arm",
+        "-L",
+        "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l",
+        "65535"
+      ],
+      "input": "65535",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "qemu-arm",
+        "-L",
+        "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l",
+        "4294967295"
+      ],
+      "input": "4294967295",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    }
+  ]
+}

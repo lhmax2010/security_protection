@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "-ec",
+    "for p in .local-tools/debs/*.deb; do dpkg-deb -f \"$p\" Package Version Architecture; done"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.125
+}

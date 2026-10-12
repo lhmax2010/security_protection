@@ -1,0 +1,13 @@
+{
+  "command": "npx",
+  "args": [
+    "-y",
+    "rea-agents@6.4.0",
+    "mcp"
+  ],
+  "startup_timeout_sec": 30,
+  "env": {
+    "GHIDRA_INSTALL_DIR": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/ghidra_12.1.4_PUBLIC",
+    "JAVA_HOME": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/jvm/java-21-openjdk-amd64"
+  }
+}

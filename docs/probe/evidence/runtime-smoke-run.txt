@@ -1,0 +1,1 @@
+{"tested_inputs": [null, "0", "1", "65535", "4294967295"], "case_count": 30, "all_six_artifacts_equal_stdout_and_zero_exit": true, "failures": [], "limitation": "This corroborates baseline equivalence for these five inputs only; does not establish all-input equivalence of source or decompiled pseudocode."}

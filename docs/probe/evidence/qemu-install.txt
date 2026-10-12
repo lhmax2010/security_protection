@@ -1,0 +1,13 @@
+++ dirname docs/probe/scripts/install-qemu.sh
++ cd docs/probe/scripts/../../../.local-tools/debs
++ apt-get download qemu-user libcapstone4 liburing2
+Get:1 https://mirrors.xtom.com/ubuntu noble/main amd64 liburing2 amd64 2.5-1build1 [21.1 kB]
+Get:2 https://mirrors.xtom.com/ubuntu noble/universe amd64 libcapstone4 amd64 4.0.2-5.1build1 [656 kB]
+Get:3 https://mirrors.xtom.com/ubuntu noble-updates/universe amd64 qemu-user amd64 1:8.2.2+ds-0ubuntu1.18 [9635 kB]
+Fetched 10.3 MB in 2s (4224 kB/s)
++ for p in qemu-user_*.deb libcapstone4_*.deb liburing2_*.deb
++ dpkg-deb -x qemu-user_1%3a8.2.2+ds-0ubuntu1.18_amd64.deb ../sysroot
++ for p in qemu-user_*.deb libcapstone4_*.deb liburing2_*.deb
++ dpkg-deb -x libcapstone4_4.0.2-5.1build1_amd64.deb ../sysroot
++ for p in qemu-user_*.deb libcapstone4_*.deb liburing2_*.deb
++ dpkg-deb -x liburing2_2.5-1build1_amd64.deb ../sysroot

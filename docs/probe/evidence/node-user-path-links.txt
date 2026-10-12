@@ -1,0 +1,3 @@
+lrwxrwxrwx 1 linhao linhao 106 Oct 12 14:28 /home/linhao/.local/bin/node -> /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/node-v24.21.0-linux-x64/bin/node
+lrwxrwxrwx 1 linhao linhao 105 Oct 12 14:28 /home/linhao/.local/bin/npm -> /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/node-v24.21.0-linux-x64/bin/npm
+lrwxrwxrwx 1 linhao linhao 105 Oct 12 14:28 /home/linhao/.local/bin/npx -> /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/node-v24.21.0-linux-x64/bin/npx

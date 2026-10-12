@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "npx",
+    "--prefix",
+    ".local-tools/rea",
+    "--no-install",
+    "rea-agents",
+    "doctor"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 1.214
+}

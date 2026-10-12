@@ -1,0 +1,60 @@
+{
+  "artifact_sha256": "7dc3f0708e36c8e6da8896383a00a72305f819b9445040a577e59c4d803ba682",
+  "executed_artifact_sha256": "7dc3f0708e36c8e6da8896383a00a72305f819b9445040a577e59c4d803ba682",
+  "cases": [
+    {
+      "argv": [
+        "python3",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_py.pyc"
+      ],
+      "input": null,
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 14188 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_py.pyc",
+        "0"
+      ],
+      "input": "0",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40190 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_py.pyc",
+        "1"
+      ],
+      "input": "1",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40157 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_py.pyc",
+        "65535"
+      ],
+      "input": "65535",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_py.pyc",
+        "4294967295"
+      ],
+      "input": "4294967295",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    }
+  ]
+}

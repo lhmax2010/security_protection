@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "-ec",
+    "PATH=/home/linhao/.local/bin:/usr/bin:/bin npx -y rea-agents@6.4.0 --version"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 8.63
+}
