@@ -1,0 +1,120 @@
+{
+  "method": "unique defined ELF STT_FUNC (entry with ARM Thumb low bit cleared, symbol name); UND/ABS excluded; duplicate dynsym/symtab rows deduplicated; Ghidra image slide measured from secret_transform. Exact name is stricter than demangled-name recovery; aliases count separately. This is not all data-symbol recovery.",
+  "image_slide": "0x10000",
+  "denominator": 11,
+  "entry_recovered": 11,
+  "exact_name_recovered": 11,
+  "rea_procedure_count_including_imports_thunks": 32,
+  "rows": [
+    {
+      "elf_address": "0x3d4",
+      "ghidra_address": "0x103d4",
+      "elf_name": "_init",
+      "observed_names": [
+        "_init"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    },
+    {
+      "elf_address": "0x43c",
+      "ghidra_address": "0x1043c",
+      "elf_name": "main",
+      "observed_names": [
+        "main"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    },
+    {
+      "elf_address": "0x484",
+      "ghidra_address": "0x10484",
+      "elf_name": "_start",
+      "observed_names": [
+        "_start"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    },
+    {
+      "elf_address": "0x4b8",
+      "ghidra_address": "0x104b8",
+      "elf_name": "call_weak_fn",
+      "observed_names": [
+        "call_weak_fn"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    },
+    {
+      "elf_address": "0x4dc",
+      "ghidra_address": "0x104dc",
+      "elf_name": "deregister_tm_clones",
+      "observed_names": [
+        "deregister_tm_clones"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    },
+    {
+      "elf_address": "0x508",
+      "ghidra_address": "0x10508",
+      "elf_name": "register_tm_clones",
+      "observed_names": [
+        "register_tm_clones"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    },
+    {
+      "elf_address": "0x53c",
+      "ghidra_address": "0x1053c",
+      "elf_name": "__do_global_dtors_aux",
+      "observed_names": [
+        "__do_global_dtors_aux"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    },
+    {
+      "elf_address": "0x57c",
+      "ghidra_address": "0x1057c",
+      "elf_name": "frame_dummy",
+      "observed_names": [
+        "frame_dummy"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    },
+    {
+      "elf_address": "0x580",
+      "ghidra_address": "0x10580",
+      "elf_name": "secret_transform",
+      "observed_names": [
+        "secret_transform"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    },
+    {
+      "elf_address": "0x594",
+      "ghidra_address": "0x10594",
+      "elf_name": "simple_checksum",
+      "observed_names": [
+        "simple_checksum"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    },
+    {
+      "elf_address": "0x5b4",
+      "ghidra_address": "0x105b4",
+      "elf_name": "_fini",
+      "observed_names": [
+        "_fini"
+      ],
+      "entry_recovered": true,
+      "exact_name_recovered": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "node",
+    "docs/probe/scripts/analyze-one.mjs",
+    "native",
+    "target_c_gcc_armv7l"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 9.146
+}

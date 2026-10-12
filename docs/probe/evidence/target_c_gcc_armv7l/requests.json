@@ -1,0 +1,313 @@
+[
+  {
+    "label": "open",
+    "tool": "open_binary",
+    "arguments": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_gcc_armv7l",
+      "provider_id": "ghidra"
+    },
+    "elapsed_ms": 1416,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "overview",
+    "tool": "binary_overview",
+    "arguments": {},
+    "elapsed_ms": 5821,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "procedures",
+    "tool": "list_procedures",
+    "arguments": {},
+    "elapsed_ms": 8,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "strings",
+    "tool": "list_strings",
+    "arguments": {},
+    "elapsed_ms": 8,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "marker-search",
+    "tool": "search_strings",
+    "arguments": {
+      "pattern": "LICENSE_KEY_CHECK_V1"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "function-search",
+    "tool": "search_procedures",
+    "arguments": {
+      "pattern": "secret_transform"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-info",
+    "tool": "procedure_info",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 8,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-pseudocode",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 18,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-assembly",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 5,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-instructions",
+    "tool": "read_function_instructions",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 5,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-callees",
+    "tool": "procedure_callees",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-callers",
+    "tool": "procedure_callers",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 3,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-references",
+    "tool": "procedure_references",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 6,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-dossier",
+    "tool": "analyze_function",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 25,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-info",
+    "tool": "procedure_info",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 5,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-pseudocode",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 7,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-assembly",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 3,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-instructions",
+    "tool": "read_function_instructions",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 2,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-callees",
+    "tool": "procedure_callees",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 3,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-callers",
+    "tool": "procedure_callers",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 3,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-references",
+    "tool": "procedure_references",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-dossier",
+    "tool": "analyze_function",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 20,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-info",
+    "tool": "procedure_info",
+    "arguments": {
+      "procedure": "main"
+    },
+    "elapsed_ms": 3,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-pseudocode",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "main"
+    },
+    "elapsed_ms": 8,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-assembly",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "main"
+    },
+    "elapsed_ms": 1,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-instructions",
+    "tool": "read_function_instructions",
+    "arguments": {
+      "procedure": "main"
+    },
+    "elapsed_ms": 2,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-callees",
+    "tool": "procedure_callees",
+    "arguments": {
+      "procedure": "main"
+    },
+    "elapsed_ms": 1,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-callers",
+    "tool": "procedure_callers",
+    "arguments": {
+      "procedure": "main"
+    },
+    "elapsed_ms": 1,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-references",
+    "tool": "procedure_references",
+    "arguments": {
+      "procedure": "main"
+    },
+    "elapsed_ms": 5,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-dossier",
+    "tool": "analyze_function",
+    "arguments": {
+      "procedure": "main"
+    },
+    "elapsed_ms": 22,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "session",
+    "tool": "binary_session",
+    "arguments": {},
+    "elapsed_ms": 174,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "close",
+    "tool": "close_binary",
+    "arguments": {},
+    "elapsed_ms": 370,
+    "isError": false,
+    "transport_error": null
+  }
+]

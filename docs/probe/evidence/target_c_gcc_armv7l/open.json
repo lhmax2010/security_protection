@@ -1,0 +1,17 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_gcc_armv7l\",\"format\":\"elf\",\"kind\":\"executable\",\"sha256\":\"62b70c64d669b73bdac1bc0c9cc006073f6cf94c6b12a9dfa923ec2e6bb5ac41\",\"architecture\":\"arm\"}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_gcc_armv7l",
+      "format": "elf",
+      "kind": "executable",
+      "sha256": "62b70c64d669b73bdac1bc0c9cc006073f6cf94c6b12a9dfa923ec2e6bb5ac41",
+      "architecture": "arm"
+    }
+  }
+}

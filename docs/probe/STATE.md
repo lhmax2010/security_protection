@@ -50,3 +50,5 @@
 - JS 原始源码已保存，并提供仅含该样本的目录 package.json 包装用于 REA application 工作流；证据 evidence/target_js-build.txt、evidence/target_js.js-file.txt；无转译/混淆。
 
 - .NET Release Optimize=true（无原生 -O2 对应项）、保留元数据与 PDB，DLL 已生成；证据 evidence/target_dotnet-build.txt、evidence/target_dotnet.dll-file.txt。
+
+- GCC ARM32 REA 完成，32 项 procedure 库存，两锚点函数及明文均可见，核心伪代码清晰；main 出现错误签名/参数推断。证据 evidence/target_c_gcc_armv7l/{requests.json,marker-search.decoded.json,secret_transform-pseudocode.c,simple_checksum-pseudocode.c,main-pseudocode.c,secret_transform-assembly.asm,symbol-recovery-metrics.json}。

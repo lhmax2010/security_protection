@@ -1,0 +1,189 @@
+{
+  "evidence_id": "ev_f1cca8a6577a791a1f598344fe3f1db0736191342e7db30f3c16fffb8a6f0acf",
+  "subject": {
+    "name": "target_c_gcc_armv7l",
+    "digest": {
+      "sha256": "62b70c64d669b73bdac1bc0c9cc006073f6cf94c6b12a9dfa923ec2e6bb5ac41"
+    },
+    "format": "elf",
+    "architecture": "arm",
+    "local_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_gcc_armv7l"
+  },
+  "provider": {
+    "id": "ghidra",
+    "name": "Ghidra",
+    "version": "12.1.4"
+  },
+  "analysis_profile": {
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "elf",
+      "architecture": "arm",
+      "available_architectures": [
+        "arm"
+      ],
+      "import_mode": "ephemeral-source-immutable",
+      "annotation_policy": "atomic-function-entry-metadata-v1",
+      "load_image_observations": "source-mappings-entry-context-v2",
+      "function_body_evidence": "complete-inclusive-ranges-v1",
+      "function_references": "complete-body-and-entry-reference-manager-v2",
+      "string_inventory_evidence": "defined-data-coverage-v1",
+      "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+      "instruction_flow_evidence": "decoded-return-pcode-v1",
+      "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+      "no_return_repair": "returning-imports-decoded-return-v2",
+      "process_launch": "inspected-jvm-launch-support-v1",
+      "jump_table_evidence": "typed-case-default-blocks-v1",
+      "decompiler_jump_loads": true,
+      "loader": "auto-from-header",
+      "language_id": "auto-from-header",
+      "compiler_spec_id": "auto-default",
+      "analyzer_preset": "ghidra-default"
+    },
+    "digest": "e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "read_function_instructions",
+  "parameters": {
+    "procedure": "main"
+  },
+  "raw_result": {
+    "value": {
+      "procedure": {
+        "address": "0x1043c",
+        "name": "main",
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        },
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x1043c",
+              "end": "0x1047b"
+            }
+          ],
+          "total_bytes": 64,
+          "span_bytes": 64,
+          "non_contiguous": false,
+          "contains_entry": true
+        }
+      },
+      "instructions": [
+        "0x1043c: cmp r0, #0x1",
+        "0x1043e: push {r4,r5,r6,lr}",
+        "0x10440: it le",
+        "0x10442: movw.le r0, #0x4d2",
+        "0x10446: sub sp, #0x8",
+        "0x10448: ble 0x00010454",
+        "0x1044a: ldr r0, [r1,#0x4]",
+        "0x1044c: movs r2, #0xa",
+        "0x1044e: movs r1, #0x0",
+        "0x10450: blx 0x00010418",
+        "0x10454: ldr r4, [0x0001047c]",
+        "0x10456: bl 0x00010580",
+        "0x1045a: ldr r1, [0x00010480]",
+        "0x1045c: mov r5, r0",
+        "0x1045e: add r4, pc",
+        "0x10460: mov r0, r4",
+        "0x10462: add r1, pc",
+        "0x10464: bl 0x00010594",
+        "0x10468: mov r3, r5",
+        "0x1046a: mov r6, r0",
+        "0x1046c: mov r2, r4",
+        "0x1046e: str r6, [sp,#0x0]",
+        "0x10470: movs r0, #0x2",
+        "0x10472: blx 0x00010424",
+        "0x10476: movs r0, #0x0",
+        "0x10478: add sp, #0x8",
+        "0x1047a: pop {r4,r5,r6,pc}"
+      ],
+      "limitations": [
+        "Instruction text and ordering are Ghidra-specific representations.",
+        "The fast path does not invoke the decompiler or scan whole-program names and strings."
+      ]
+    },
+    "limitations": []
+  },
+  "normalized_result": {
+    "procedure": {
+      "address": "0x1043c",
+      "name": "main",
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x1043c",
+            "end": "0x1047b"
+          }
+        ],
+        "total_bytes": 64,
+        "span_bytes": 64,
+        "non_contiguous": false,
+        "contains_entry": true
+      }
+    },
+    "instructions": [
+      "0x1043c: cmp r0, #0x1",
+      "0x1043e: push {r4,r5,r6,lr}",
+      "0x10440: it le",
+      "0x10442: movw.le r0, #0x4d2",
+      "0x10446: sub sp, #0x8",
+      "0x10448: ble 0x00010454",
+      "0x1044a: ldr r0, [r1,#0x4]",
+      "0x1044c: movs r2, #0xa",
+      "0x1044e: movs r1, #0x0",
+      "0x10450: blx 0x00010418",
+      "0x10454: ldr r4, [0x0001047c]",
+      "0x10456: bl 0x00010580",
+      "0x1045a: ldr r1, [0x00010480]",
+      "0x1045c: mov r5, r0",
+      "0x1045e: add r4, pc",
+      "0x10460: mov r0, r4",
+      "0x10462: add r1, pc",
+      "0x10464: bl 0x00010594",
+      "0x10468: mov r3, r5",
+      "0x1046a: mov r6, r0",
+      "0x1046c: mov r2, r4",
+      "0x1046e: str r6, [sp,#0x0]",
+      "0x10470: movs r0, #0x2",
+      "0x10472: blx 0x00010424",
+      "0x10476: movs r0, #0x0",
+      "0x10478: add sp, #0x8",
+      "0x1047a: pop {r4,r5,r6,pc}"
+    ],
+    "limitations": [
+      "Instruction text and ordering are Ghidra-specific representations.",
+      "The fast path does not invoke the decompiler or scan whole-program names and strings."
+    ]
+  },
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+    "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+    "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+    "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+    "This fast path reads only the requested function and does not invoke the decompiler or whole-program string/name inventories.",
+    "Instruction text is Ghidra-specific and does not claim textual equivalence with Hopper output."
+  ],
+  "locations": [],
+  "evidence_links": []
+}
