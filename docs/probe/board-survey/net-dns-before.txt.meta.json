@@ -1,0 +1,9 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/net-dns-read.sh",
+  "script_sha256": "f2d7fd7bf5f02459aa94f0977ef221c238cbd81ae9436174374ddf4a51820730",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 0.164,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}

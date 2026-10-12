@@ -1,0 +1,9 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/net-persist.sh",
+  "script_sha256": "f486063ceb4c76badace1d7c838b4da73bd69259ea7a3c9c70b6fa518533cce6",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 0.315,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}

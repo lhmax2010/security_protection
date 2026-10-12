@@ -1,0 +1,12 @@
+[ethernet_2ccf67a072b5_cable]
+Name=Wired
+AutoConnect=true
+UseEapol=false
+Modified=2026-10-12T16:38:59Z
+IPv4.method=manual
+IPv4.netmask_prefixlen=24
+IPv4.local_address=192.168.108.26
+IPv4.gateway=192.168.108.1
+IPv6.method=auto
+IPv6.privacy=prefered
+Nameservers=221.131.143.69;
