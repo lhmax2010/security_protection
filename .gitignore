@@ -1,3 +1,5 @@
 .local-tools/
 node_modules/
 .rea/
+docs/probe/samples/dotnet/obj/
+docs/probe/samples/dotnet/bin/

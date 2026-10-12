@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "docs/probe/scripts/build-one.sh",
+    "gcc"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 0.048
+}

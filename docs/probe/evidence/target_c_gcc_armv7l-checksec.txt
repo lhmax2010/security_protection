@@ -1,0 +1,2 @@
+RELRO           STACK CANARY      NX            PIE             RPATH      RUNPATH	Symbols		FORTIFY	Fortified	Fortifiable	FILE
+[32mFull RELRO   [m   [31mNo canary found[m   [32mNX enabled [m   [32mPIE enabled  [m   [32mNo RPATH [m  [32mNo RUNPATH [m  [31m106 Symbols	[m  [32mYes[m	1		1		docs/probe/samples/bin/target_c_gcc_armv7l

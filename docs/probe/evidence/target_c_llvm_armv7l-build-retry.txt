@@ -1,0 +1,33 @@
+++ dirname docs/probe/scripts/build-one.sh
++ source docs/probe/scripts/env.sh
+++++ dirname docs/probe/scripts/env.sh
++++ cd docs/probe/scripts/../../..
++++ pwd
+++ PROBE_ROOT=/home/linhao/Toolchain/development/security_optimization_rea
+++ export PROBE_ROOT
+++ export JAVA_HOME=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/jvm/java-21-openjdk-amd64
+++ JAVA_HOME=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/jvm/java-21-openjdk-amd64
+++ export GHIDRA_INSTALL_DIR=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/ghidra_12.1.4_PUBLIC
+++ GHIDRA_INSTALL_DIR=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/ghidra_12.1.4_PUBLIC
+++ export REA_ANALYSIS_PROVIDER=ghidra
+++ REA_ANALYSIS_PROVIDER=ghidra
+++ export RUSTUP_HOME=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/rustup
+++ RUSTUP_HOME=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/rustup
+++ export CARGO_HOME=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo
+++ CARGO_HOME=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo
+++ export DOTNET_ROOT=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/dotnet
+++ DOTNET_ROOT=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/dotnet
+++ export DOTNET_CLI_TELEMETRY_OPTOUT=1
+++ DOTNET_CLI_TELEMETRY_OPTOUT=1
+++ export DOTNET_NOLOGO=1
+++ DOTNET_NOLOGO=1
+++ export LD_LIBRARY_PATH=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/x86_64-linux-gnu:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/x86_64-linux-gnu
+++ LD_LIBRARY_PATH=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/x86_64-linux-gnu:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/x86_64-linux-gnu
+++ export PATH=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/node-v24.21.0-linux-x64/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/jvm/java-21-openjdk-amd64/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/dotnet:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/node-v24.21.0-linux-x64/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/jvm/java-21-openjdk-amd64/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/dotnet:/home/linhao/.bun/bin:/home/linhao/.local/bin:/home/linhao/.local/bin:/home/linhao/.bun/bin:/home/linhao/.local/bin:/home/linhao/.codex/tmp/arg0/codex-arg05rgm4e:/home/linhao/.local/bin:/home/linhao/.bun/bin:/home/linhao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/linhao/.vscode/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64
+++ PATH=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/node-v24.21.0-linux-x64/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/jvm/java-21-openjdk-amd64/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/dotnet:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/node-v24.21.0-linux-x64/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/jvm/java-21-openjdk-amd64/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo/bin:/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/dotnet:/home/linhao/.bun/bin:/home/linhao/.local/bin:/home/linhao/.local/bin:/home/linhao/.bun/bin:/home/linhao/.local/bin:/home/linhao/.codex/tmp/arg0/codex-arg05rgm4e:/home/linhao/.local/bin:/home/linhao/.bun/bin:/home/linhao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/linhao/.vscode/extensions/openai.chatgpt-26.1007.21434-linux-x64/bin/linux-x86_64
++ cd /home/linhao/Toolchain/development/security_optimization_rea
++ S=docs/probe/samples
++ T=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr
++ mkdir -p docs/probe/samples/bin
++ case "$1" in
++ clang-18 --target=arm-linux-gnueabihf --sysroot=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/.. --gcc-toolchain=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr -isystem /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf/include -L/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf/lib -O2 -march=armv7-a -mfpu=vfpv3-d16 docs/probe/samples/target.c -o docs/probe/samples/bin/target_c_llvm_armv7l
