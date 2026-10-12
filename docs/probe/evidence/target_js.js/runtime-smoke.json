@@ -1,0 +1,60 @@
+{
+  "artifact_sha256": "c914aef177e22fc4450fe6258486fca5f23cc82a1476d35e431f7eae043152bc",
+  "executed_artifact_sha256": "c914aef177e22fc4450fe6258486fca5f23cc82a1476d35e431f7eae043152bc",
+  "cases": [
+    {
+      "argv": [
+        "node",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_js.js"
+      ],
+      "input": null,
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 14188 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_js.js",
+        "0"
+      ],
+      "input": "0",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40190 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_js.js",
+        "1"
+      ],
+      "input": "1",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40157 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_js.js",
+        "65535"
+      ],
+      "input": "65535",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "node",
+        "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_js.js",
+        "4294967295"
+      ],
+      "input": "4294967295",
+      "exit_code": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    }
+  ]
+}

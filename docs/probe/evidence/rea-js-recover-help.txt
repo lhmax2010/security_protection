@@ -1,0 +1,22 @@
+rea recover-javascript-sources — Recover readable JavaScript modules with source provenance and verified files
+
+Usage: rea recover-javascript-sources <path> <outputDirectory> [options]
+
+Arguments:
+  path             Absolute UTF-8 JavaScript input; never executed
+  outputDirectory  Absolute absent output directory
+
+Options:
+  --extraction-mode <structural|heuristic|inspection>  Structural boundaries, heuristic fallback, or inspection-only regions
+  --rewrite-level <minimal|standard|aggressive>        Upstream syntax recovery level; runtime equivalence remains unknown
+
+Global Options:
+  --filter-output <keys>              Filter output by key paths (e.g. foo,bar.baz,a[0,3])
+  --format <toon|json|yaml|md|jsonl>  Output format
+  --full-output                       Show full output envelope
+  --help                              Show help
+  --llms, --llms-full                 Print LLM-readable manifest
+  --schema                            Show JSON Schema for command
+  --token-count                       Print token count of output (instead of output)
+  --token-limit <n>                   Limit output to n tokens
+  --token-offset <n>                  Skip first n tokens of output

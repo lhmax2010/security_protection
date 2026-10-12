@@ -1,0 +1,2 @@
+single-file-analysis 1848 true 
+application 380 false 

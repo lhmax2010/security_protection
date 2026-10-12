@@ -1,0 +1,23 @@
+[
+  {
+    "label": "single-file-analysis",
+    "tool": "analyze_javascript_application",
+    "arguments": {
+      "input_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_js.js"
+    },
+    "elapsed_ms": 1848,
+    "isError": true,
+    "transport_error": null
+  },
+  {
+    "label": "application",
+    "tool": "analyze_javascript_application",
+    "arguments": {
+      "input_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_js_app",
+      "format": "directory"
+    },
+    "elapsed_ms": 380,
+    "isError": false,
+    "transport_error": null
+  }
+]

@@ -11,3 +11,4 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export DOTNET_NOLOGO=1
 export LD_LIBRARY_PATH="$PROBE_ROOT/.local-tools/sysroot/usr/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
 export PATH="$PROBE_ROOT/.local-tools/node-v24.21.0-linux-x64/bin:$JAVA_HOME/bin:$PROBE_ROOT/.local-tools/sysroot/usr/bin:$CARGO_HOME/bin:$DOTNET_ROOT:$PATH"
+export REA_WAKARU_COMMAND="$PROBE_ROOT/.local-tools/wakaru"

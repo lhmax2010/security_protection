@@ -58,3 +58,5 @@
 - Rust ARM32 REA 主分析完成，768 项 procedure 库存，两个锚点算法可反编译；字符串搜索为 []（仅 Ghidra 已定义 string data 库存），main 名称歧义导致8项聚焦调用报错，待地址选择补查。证据 evidence/target_rust_armv7l/{requests.json,marker-search.decoded.json,main-info.decoded.json,secret_transform-pseudocode.c,simple_checksum-pseudocode.c,symbol-recovery-metrics.json}。
 
 - Python pyc REA 实测拒绝 unsupported binary format，后续 overview 因无 active target 报错；未用 Python dis 或外部反编译器充当 REA 成功。三锚点恢复均 N/A，不代表 pyc 有保护。证据 evidence/target_py.pyc/{open.decoded.json,overview.decoded.json,capability-names.json,requests.json}。
+
+- JS application 目录分析成功；single .js 路由拒绝保留原错。REA recover_javascript_sources 缺 Wakaru 的原错保留，安装官方 Wakaru1.14.0、hash 与文档一致后成功恢复完整源码，两个函数/字符串/算法清晰。证据 evidence/target_js.js/{application.decoded.json,single-file-analysis.decoded.json,recovery.json,recovery-with-wakaru.json,recovered/}，evidence/wakaru-install.txt。

@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "node",
+    "docs/probe/scripts/analyze-one.mjs",
+    "js",
+    "target_js.js"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 3.48
+}

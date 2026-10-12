@@ -1,0 +1,88 @@
+{
+  "source": {
+    "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_js.js",
+    "snapshot_path": "/tmp/rea-wakaru-7uQ12P/inputs/bundle.js",
+    "sha256": "c914aef177e22fc4450fe6258486fca5f23cc82a1476d35e431f7eae043152bc",
+    "bytes": 471,
+    "published_copy": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_js.js/recovered/inputs/bundle.js",
+      "sha256": "c914aef177e22fc4450fe6258486fca5f23cc82a1476d35e431f7eae043152bc",
+      "bytes": 471
+    }
+  },
+  "engine": {
+    "id": "wakaru",
+    "version": "1.14.0",
+    "executable": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/wakaru",
+      "sha256": "664fa06782a61eda7ed15885134b52525fd565dd77607e642062ceb6cd927c38",
+      "bytes": 26793296
+    },
+    "audited_source_revision": "8219bf5016a063d7fb215101a8c45d5959ec733f",
+    "executed_source_revision": null
+  },
+  "options": {
+    "extraction_mode": "structural",
+    "rewrite_level": "standard"
+  },
+  "status": "complete",
+  "detected_formats": [],
+  "reported_safety": "normal",
+  "reported_strategy": "structural",
+  "reported_format": "unknown",
+  "total": 1,
+  "failed": 0,
+  "modules": [
+    {
+      "reported_filename": "bundle.js",
+      "reported_status": "decompiled",
+      "artifact": {
+        "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_js.js/recovered/modules/bundle.js",
+        "sha256": "17cc44d5cb076bad5de7bd48d513413e7d730ab9764de882315456feff5031e8",
+        "bytes": 477
+      },
+      "source_map": {
+        "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_js.js/recovered/modules/bundle.js.map",
+        "sha256": "5144fd4da57c0072605d59415084e5d8f7fa194efac129e73f36e6dd76a4ee73",
+        "bytes": 453
+      },
+      "provenance": {
+        "reported_input": "/tmp/rea-wakaru-7uQ12P/inputs/bundle.js",
+        "original_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_js.js",
+        "original_sha256": "c914aef177e22fc4450fe6258486fca5f23cc82a1476d35e431f7eae043152bc",
+        "extraction": "structural",
+        "byte_ranges": [
+          {
+            "start": 0,
+            "end": 471
+          }
+        ],
+        "context_byte_ranges": [],
+        "range_semantics": "half-open-utf8-bytes"
+      }
+    }
+  ],
+  "warnings": [],
+  "report": {
+    "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_js.js/recovered/reports/stdout.json",
+    "sha256": "b3f5b354a5e81dfbaaba3d56dcb92e4f2bc26311659c73d26022826ff24d21b3",
+    "bytes": 171
+  },
+  "provenance": {
+    "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_js.js/recovered/reports/provenance.json",
+    "sha256": "c1c488cfd3eb682eb69aabd98159e42a730c2386a79f828fce5e3fc404d7e3d5",
+    "bytes": 193
+  },
+  "analysis_input": {
+    "input_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_js.js/recovered/modules",
+    "format": "directory"
+  },
+  "runtime_equivalence": "unknown",
+  "limitations": [
+    "Recovered sources are derived artifacts; original variable names and runtime equivalence are not established.",
+    "Extraction ranges refer to half-open UTF-8 byte offsets in the original input, not rewritten line positions or whole-bundle coverage.",
+    "Emitted source maps are preserved as reported by the engine; their mapping accuracy is not independently established.",
+    "Inspection mode may produce non-executable regions. No input or recovered application code is executed.",
+    "Linux adapter: one worker, 1 GiB address-space ceiling, 120-second deadline, 64 MiB input, 128 MiB output, 10000 output entries and 8 MiB per diagnostic/report stream. Resource limits are per operation, not aggregate host containment."
+  ]
+}

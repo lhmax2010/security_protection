@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "-ec",
+    "curl -fL --retry 2 https://github.com/pionxzh/wakaru/releases/download/v1.14.0/wakaru-linux-x64.tar.gz -o .local-tools/wakaru.tar.gz; tar -xzf .local-tools/wakaru.tar.gz -C .local-tools wakaru; .local-tools/wakaru --version; sha256sum .local-tools/wakaru"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 2.624
+}

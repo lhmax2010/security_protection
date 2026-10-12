@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "npx",
+    "--prefix",
+    ".local-tools/rea",
+    "--no-install",
+    "rea-agents",
+    "recover-javascript-sources",
+    "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_js.js",
+    "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_js.js/recovered",
+    "--json"
+  ],
+  "exit_code": 1,
+  "elapsed_seconds": 0.935
+}
