@@ -134,3 +134,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [待执行] 新步骤3：sdb root on与身份确认。前轮board-identity.txt保留为SSH失败历史，新身份另存归档后使用要求的固定路径。
 - [待执行] 新步骤4~6：现状采集、识别管理器、备份、持久化当前IP/网关/DNS、只验证落盘语法；不重启。
 - [待执行] 新步骤7~11：20~40个样本加固表、比例、动态符号、SMACK/ASLR/根挂载痕迹。
+
+- [完成] 新步骤2：`sdb connect 192.168.108.26` 首次即成功，SDB实际使用默认端口26101；devices为`192.168.108.26:26101 device rpi4`。无需执行失败回退尝试，SSH超时历史不改写。证据：[连接原输出](board-survey/sdb-connect.txt)、[连接状态](board-survey/sdb-connect.txt.meta.json)、[明确目标](board-survey/sdb-target.json)。

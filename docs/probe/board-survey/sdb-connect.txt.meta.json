@@ -1,0 +1,21 @@
+{
+  "attempts": [
+    {
+      "argv": [
+        "sdb",
+        "connect",
+        "192.168.108.26"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.007
+    },
+    {
+      "argv": [
+        "sdb",
+        "devices"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "online_serial": "192.168.108.26:26101"
+}

@@ -1,0 +1,11 @@
+COMMAND: sdb connect 192.168.108.26
+connecting to 192.168.108.26:26101 ...
+connected to 192.168.108.26:26101
+
+EXIT_CODE: 0
+
+COMMAND: sdb devices
+List of devices attached 
+192.168.108.26:26101	device    	rpi4
+
+EXIT_CODE: 0
