@@ -139,3 +139,6 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 
 - [完成] 新步骤3：sdb root on成功，id确认uid=0；板子为Raspberry Pi4 ModelB Rev1.5、Tizen11.0.0 Unified、armv7l，build_id=tizen-unified-toolchain_20261007.084717_tizen-headed-armv7l；内核6.12.80-arm-rpi4-v7l由clang22.1.8/LLD22.1.8构建。PM称其LLVM开源板；实测硬件/内核LLVM构建信息吻合，尚不能把内核编译器等同全部用户态编译器。证据：[SDB root](board-survey/sdb-root.txt)、[当前身份](board-survey/board-identity.txt)。旧SSH超时证据已归档board-identity-ssh-timeout.txt，未删除。
 - 新挂账：板子PATH中checksec、readelf、llvm-readelf、nm、llvm-nm、file均不可用（command-v返回1）。后续只读检查既有等价工具/路径，不在板上安装工具、不取回二进制。证据：[身份中的工具查询](board-survey/board-identity.txt)。
+
+- [完成] 新步骤4：采集到eth0=192.168.108.26/24，网关192.168.108.1；/etc/resolv.conf指向/opt/etc/resolv.conf，内容由ConnMan生成、nameserver=127.0.0.1（本地DNS代理，不能误设成上游DNS）。ConnMan active、systemd unit显示disabled，需进一步核对开机启动链与上游DNS。证据：[网络原现状](board-survey/net-before.txt)。
+- 已保留缺失记录：systemd-networkd单位、NetworkManager/ifupdown目录及所有标准ELF工具均未找到。未安装板上工具；尚未得出加固比例。证据：[现状与工具查询](board-survey/net-before.txt)。

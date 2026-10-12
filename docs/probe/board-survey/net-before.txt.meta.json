@@ -1,0 +1,9 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/net-before.sh",
+  "script_sha256": "3d55f49a3af7b4bbf823dfe389a7145287d4f194c03f1defc44b70e375f64f23",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 2.572,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}
