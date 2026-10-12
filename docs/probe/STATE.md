@@ -151,3 +151,8 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - D-Bus初次使用标准Properties.Get不被此ConnMan实现支持，错误完整保留；改用其真实GetProperties只读API，实际读回成功。证据：[Get错误](board-survey/net-backup-capture.txt)、[GetProperties](board-survey/net-dns-before.txt)。
 
 - [独立复验完成] 新步骤6：另一次只读SDB查询再次检查六个磁盘配置字段、vendor启动链接、实时eth0/route/ConnMan服务，均满足预期并输出PERSISTENCE_VERIFY_SUCCESS_NO_REBOOT。没有重启验证，重启后的实际连通性继续由PM决定。证据：[独立复验](board-survey/net-verification.txt)。
+
+- [完成] 新步骤7：按真实/usr/bin、/usr/lib库存选28份代表样本（12可执行、16共享库），覆盖服务/IPC/日志/安全/网络/包管理/数据库/基础库；只读readlink/stat确认均为文件且底层device+inode不重复。非随机普查，比例只适用于本批。证据：[样本理由清单](board-survey/sample-list.txt)、[解析路径及stat](board-survey/sample-resolution.txt)、[原目录库存](board-survey/platform-file-inventory.txt)。
+- 采集方式明确挂账：readelf/nm/checksec/等价工具均不存在，不能生成这些工具的成功原输出。为继续只读摸底，使用已存在RPM4.14.1内嵌Lua5.1直接读取ELF头/动态表/符号元数据；代码通过sdb命令传入内存，不安装、不保存板上脚本、不读出指令或二进制本体。标准工具缺失继续作为限制；后续raw会明确区分失败的readelf命令与替代解码器输出。证据：[工具实际缺失](board-survey/net-before.txt)、[RPM/Lua能力](board-survey/net-manager-inspection-no-pager.txt)。
+
+- 采集执行器遇到SDB内联命令长度限制：首次样本解析返回`error: service name too long`，真实失败保留。改为既有SDB stdin流式执行，禁用shell history，未在板上落脚本文件；样本路径/stat采集已成功。证据：[长度错误](board-survey/sample-resolution.txt)、[stdin验证](board-survey/sdb-stdin-test.txt)、[成功路径采集](board-survey/sample-resolution-streamed.txt)。

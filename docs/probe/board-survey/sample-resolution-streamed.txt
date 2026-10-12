@@ -1,0 +1,282 @@
+unset HISTFILE; HISTSIZE=0; set +o history; PS1=; PS2=;
+#!/bin/sh
+export LC_ALL=C
+printf 'SAMPLE	bash	/usr/bin/bash
+'
+readlink -f /usr/bin/bash
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/bash
+printf 'SAMPLE	systemctl	/usr/bin/systemctl
+'
+readlink -f /usr/bin/systemctl
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/systemctl
+printf 'SAMPLE	dbus_daemon	/usr/bin/dbus-daemon
+'
+readlink -f /usr/bin/dbus-daemon
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/dbus-daemon
+printf 'SAMPLE	connmand	/usr/bin/connmand
+'
+readlink -f /usr/bin/connmand
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/connmand
+printf 'SAMPLE	dlogutil	/usr/bin/dlogutil
+'
+readlink -f /usr/bin/dlogutil
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/dlogutil
+printf 'SAMPLE	cynara	/usr/bin/cynara
+'
+readlink -f /usr/bin/cynara
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/cynara
+printf 'SAMPLE	security_manager	/usr/bin/security-manager
+'
+readlinksh-3.2# unset HISTFILE; HISTSIZE=0; set +o history; PS1=; PS2=;
+#!/bin/sh
+export LC_ALL=C
+printf 'SAMPLEbash/usr/bin/bash
+'
+SAMPLEbash/usr/bin/bash
+readlink -f /usr/bin/bash
+ -f /usr/bin/security-manager
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/security-manager
+printf 'SAMPLE	pkgmgr_server	/usr/bin/pkgmgr-server
+'
+readlink -f /usr/bin/pkgmgr-server
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/pkgmgr-server
+printf 'SAMPLE	vconftool	/usr/bin/vconftool
+'
+readlink -f /usr/bin/vconftool
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/vconftool
+printf 'SAMPLE	sqlite3	/usr/bin/sqlite3
+'
+readlink -f /usr/bin/sqlite3
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/sqlite3
+printf 'SAMPLE	rpm	/usr/bin/rpm
+'
+readlink -f /usr/bin/rpm
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/rpm
+printf 'SAMPLE	find	/usr/bin/find
+'
+readlink -f /usr/bin/find
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/find
+printf 'SAMPLE	libc_so_6	/usr/lib/libc.so.6
+'
+readlink -f /usr/lib/libc.so.6
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libc.so.6
+printf 'SAMPLE	libstdc++_so_6	/usr/lib/libstdc++.so.6
+'
+readlink -f /usr/lib/libstdc++.so.6
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libstdc++.so.6
+printf 'SAMPLE	libsystemd_so_0	/usr/lib/libsystemd.so.0
+'
+readlink -f /usr/lib/libsystemd.so.0
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libsystemd.so.0
+printf 'SAMPLE	libglib_2_0_so_0	/usr/lib/libglib-2.0.so.0
+'
+readlink -f /usr/lib/libglib-2.0.so.0
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libglib-2.0.so.0
+printf 'SAMPLE	libdbus_1_so_3	/usr/lib/libdbus-1.so.3
+'
+readlink -f /usr/lib/libdbus-1.so.3
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libdbus-1.so.3
+printf 'SAMPLE	libcrypto_so_3/usr/bin/bash
+	/usr/lib/libcrypto.so.3
+'
+readlink -f /usr/lib/libcrypto.so.3
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libcrypto.so.3
+printf 'SAMPLE	libssl_so_3	/usr/lib/libssl.so.3
+'
+readlink -f /usr/lib/libssl.so.3
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libssl.so.3
+printf 'SAMPLE	libsqlite3_so_0	/usr/lib/lstat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/bash
+device=45826 inode=1136 bytes=447272 mode=755 type=regular file
+printf 'SAMPLEsystemctl/usr/bin/systemctl
+'
+SAMPLEsystemctl/usr/bin/systemctl
+readlink -f /usr/bin/systemctl
+/usr/bin/systemctl
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/systemctl
+device=45826 inode=8916 bytes=161220 mode=755 type=regular file
+printf 'SAMPLEdbus_daemon/usr/bin/dbus-daemon
+'
+SAMPLEdbus_daemon/usr/bin/dbus-daemon
+readlink -f /usr/bin/dbus-daemon
+lib/libpkgmgr-info.so.0
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/usr/bin/dbus-daemon
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/dbus-daemon
+device=45826 inode=9375 bytes=177688 mode=755 type=regular file
+printf 'SAMPLEconnmand/usr/bin/connmand
+'
+SAMPLEconnmand/usr/bin/connmand
+readlink -f /usr/bin/connmand
+=%/usr/bin/connmand
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/connmand
+device=45826 inode=9500 bytes=606892 mode=500 type=regular file
+printf 'SAMPLEdlogutil/usr/bin/dlogutil
+'
+SAMPLEdlogutil/usr/bin/dlogutil
+readlink -f /usr/bin/dlogutil
+/usr/bin/dlogutil
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/dlogutil
+device=45826 inode=5345 bytes=71388 mode=750 type=regular file
+printf 'SAMPLEcynara/usr/bin/cynara
+'
+SAMPLEcynara/usr/bin/cynara
+readlink -f /usr/bin/cynara
+/usr/bin/cynara
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/cynara
+device=45826 inode=10267 bytes=181572 mode=755 type=regular file
+printf 'SAMPLEsecurity_manager/usr/bin/security-manager
+'
+SAMPLEsecurity_manager/usr/bin/security-manager
+readlink -f /usr/bin/security-manager
+/usr/bin/security-manager
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/security-manager [Astat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/security-manage[Kr
+device=45826 inode=13138 bytes=92228 mode=755 type=regular file
+printf 'SAMPLEpkgmgr_server/usr/bin/pkgmgr-server
+'
+SAMPLEpkgmgr_server/usr/bin/pkgmgr-server
+readlink -f /usr/bin/pkgmgr-server
+/usr/bin/pkgmgr-server
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/pkgmgr-server
+device=45826 inode=14889 bytes=329188 mode=755 type=regular file
+printf 'SAMPLEvconftool/usr/bin/vconftool
+'
+SAMPLEvconftool/usr/bin/vconftool
+readlink -f /usr/bin/vconftool
+/usr/bin/vconftool
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/vconftool
+device=45826 inode=8869 bytes=7033 mode=750 type=regular file
+printf 'SAMPLEsqlite3/usr/bin/sqlite3
+'
+SAMPLEsqlite3/usr/bin/sqlite3
+readlink -f /usr/bin/sqlite3
+/usr/bin/sqlite3
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/sqlite3
+device=45826 inode=1618 bytes=1023476 mode=755 type=regular file
+printf 'SAMPLErpm/usr/bin/rpm
+'
+SAMPLErpm/usr/bin/rpm
+readlink -f /usr/bin/rpm
+/usr/bin/rpm
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/rpm
+device=45826 inode=8633 bytes=18096 mode=755 type=regular file
+printf 'SAMPLEfind/usr/bin/find
+'
+SAMPLEfind/usr/bin/find
+readlink -f /usr/bin/find
+/usr/bin/find
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/bin/find
+device=45826 inode=3829 bytes=101052 mode=755 type=regular file
+printf 'SAMPLElibc_so_6/usr/lib/libc.so.6
+'
+SAMPLElibc_so_6/usr/lib/libc.so.6
+readlink -f /usr/lib/libc.so.6
+/usr/lib/libc.so.6
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libc.so.6
+device=45826 inode=1073 bytes=1433628 mode=755 type=regular file
+printf 'SAMPLElibstdc++_so_6/usr/lib/libstdc++.so.6
+'
+SAMPLElibstdc++_so_6/usr/lib/libstdc++.so.6
+readlink -f /usr/lib/libstdc++.so.6
+/usr/lib/libstdc++.so.6.0.33
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libstdc++.so.6
+device=45826 inode=1141 bytes=1683800 mode=755 type=regular file
+printf 'SAMPLElibsystemd_so_0/usr/lib/libsystemd.so.0
+'
+SAMPLElibsystemd_so_0/usr/lib/libsystemd.so.0
+readlink -f /usr/lib/libsystemd.so.0
+/usr/lib/libsystemd.so.0.27.1
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libsystemd.so.0
+device=45826 inode=1621 bytes=584176 mode=755 type=regular file
+printf 'SAMPLElibglib_2_0_so_0/usr/lib/libglib-2.0.so.0
+'
+SAMPLElibglib_2_0_so_0/usr/lib/libglib-2.0.so.0
+readlink -f /usr/lib/libglib-2.0.so.0
+/usr/lib/libglib-2.0.so.0.8000.5
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libglib-2.0.so.0 [Astat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libglib-2.0.so.[K0
+device=45826 inode=5224 bytes=932888 mode=755 type=regular file
+printf 'SAMPLElibdbus_1_so_3/usr/lib/libdbus-1.so.3
+'
+SAMPLElibdbus_1_so_3/usr/lib/libdbus-1.so.3
+readlink -f /usr/lib/libdbus-1.so.3
+/usr/lib/libdbus-1.so.3.19.13
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libdbus-1.so.3
+device=45826 inode=14898 bytes=299780 mode=755 type=regular file
+printf 'SAMPLElibcrypto_so_3/usr/lib/libcrypto.so.3
+'
+SAMPLElibcrypto_so_3/usr/lib/libcrypto.so.3
+readlink -f /usr/lib/libcrypto.so.3
+/usr/lib/libcrypto.so.3
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libcrypto.so.3
+device=45826 inode=1160 bytes=2599832 mode=755 type=regular file
+printf 'SAMPLElibssl_so_3/usr/lib/libssl.so.3
+'
+SAMPLElibssl_so_3/usr/lib/libssl.so.3
+readlink -f /usr/lib/libssl.so.3
+/usr/lib/libssl.so.3
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libssl.so.3
+device=45826 inode=1161 bytes=422008 mode=755 type=regular file
+printf 'SAMPLElibsqlite3_so_0/usr/lib/libsqlite3.so.0
+'
+SAMPLElibsqlite3_so_0/usr/lib/libsqlite3.so.0
+readlink -f /usr/lib/libsqlite3.so.0
+/usr/lib/libsqlite3.so.3.51.0
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libsqlite3.so.0
+device=45826 inode=1150 bytes=817588 mode=755 type=regular file
+printf 'SAMPLElibdlog_so_0/usr/lib/libdlog.so.0
+'
+SAMPLElibdlog_so_0/usr/lib/libdlog.so.0
+readlink -f /usr/lib/libdlog.so.0
+/usr/lib/libdlog.so.0.0.0
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libdlog.so.0
+device=45826 inode=4683 bytes=71492 mode=755 type=regular file
+printf 'SAMPLElibcynara_client_so_0/usr/lib/libcynara-client.so.0
+'
+SAMPLElibcynara_client_so_0/usr/lib/libcynara-client.so.0
+readlink -f /usr/lib/libcynara-client.so.0
+/usr/lib/libcynara-client.so.0.27.0
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libcynara-client .so.0
+device=45826 inode=4830 bytes=38128 mode=755 type=regular file
+printf 'SAMPLElibcynara_admin_so_0/usr/lib/libcynara-admin.so.0
+'
+SAMPLElibcynara_admin_so_0/usr/lib/libcynara-admin.so.0
+readlink -f /usr/lib/libcynara-admin.so.0
+/usr/lib/libcynara-admin.so.0.27.0
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libcynara-admin. so.0
+device=45826 inode=5075 bytes=87276 mode=755 type=regular file
+printf 'SAMPLElibsecurity_manager_client_so_3/usr/lib/libsecurity-manager-client .so.3
+'
+SAMPLElibsecurity_manager_client_so_3/usr/lib/libsecurity-manager-client.so.3
+readlink -f /usr/lib/libsecurity-manager-client.so.3
+/usr/lib/libsecurity-manager-client.so.3.0.0
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libsecurity-mana ger-client.so.3
+device=45826 inode=13129 bytes=190548 mode=755 type=regular file
+printf 'SAMPLElibnetwork_so_0/usr/lib/libnetwork.so.0
+'
+SAMPLElibnetwork_so_0/usr/lib/libnetwork.so.0
+readlink -f /usr/lib/libnetwork.so.0
+/usr/lib/libnetwork.so.0.0.0
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libnetwork.so.0
+device=45826 inode=5333 bytes=83560 mode=755 type=regular file
+printf 'SAMPLElibpkgmgr_client_so_0/usr/lib/libpkgmgr-client.so.0
+'
+SAMPLElibpkgmgr_client_so_0/usr/lib/libpkgmgr-client.so.0
+readlink -f /usr/lib/libpkgmgr-client.so.0
+/usr/lib/libpkgmgr-client.so.0.23.4
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libpkgmgr-client .so.0
+device=45826 inode=9695 bytes=178672 mode=755 type=regular file
+printf 'SAMPLElibpkgmgr_info_so_0/usr/lib/libpkgmgr-info.so.0
+'
+SAMPLElibpkgmgr_info_so_0/usr/lib/libpkgmgr-info.so.0
+readlink -f /usr/lib/libpkgmgr-info.so.0
+/usr/lib/libpkgmgr-info.so.0.37.5
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libpkgmgr-info.s o.0
+device=45826 inode=9554 bytes=492636 mode=755 type=regular file
+printf 'SAMPLElibvconf_so_0/usr/lib/libvconf.so.0
+'
+SAMPLElibvconf_so_0/usr/lib/libvconf.so.0
+readlink -f /usr/lib/libvconf.so.0
+/usr/lib/libvconf.so.0.3.1
+stat -Lc 'device=%d inode=%i bytes=%s mode=%a type=%F' /usr/lib/libvconf.so.0
+device=45826 inode=9528 bytes=30264 mode=755 type=regular file
+
+exit
+exit

@@ -1,0 +1,31 @@
+代表性定向样本：28份（12系统可执行、16平台共享库）；非随机全平台抽样。
+同一device+inode不重复计数，原路径均在/usr/bin或/usr/lib。
+id	路径	类别	选择理由	真实路径
+bash	/usr/bin/bash	executable	shell运行环境	/usr/bin/bash
+systemctl	/usr/bin/systemctl	executable	服务管理客户端	/usr/bin/systemctl
+dbus_daemon	/usr/bin/dbus-daemon	executable	系统IPC守护进程	/usr/bin/dbus-daemon
+connmand	/usr/bin/connmand	executable	网络管理守护进程	/usr/bin/connmand
+dlogutil	/usr/bin/dlogutil	executable	Tizen日志读取工具	/usr/bin/dlogutil
+cynara	/usr/bin/cynara	executable	Tizen访问控制守护进程	/usr/bin/cynara
+security_manager	/usr/bin/security-manager	executable	Tizen安全管理守护进程	/usr/bin/security-manager
+pkgmgr_server	/usr/bin/pkgmgr-server	executable	平台包管理服务	/usr/bin/pkgmgr-server
+vconftool	/usr/bin/vconftool	executable	平台配置工具	/usr/bin/vconftool
+sqlite3	/usr/bin/sqlite3	executable	数据库工具	/usr/bin/sqlite3
+rpm	/usr/bin/rpm	executable	系统包管理工具	/usr/bin/rpm
+find	/usr/bin/find	executable	基础系统工具	/usr/bin/find
+libc_so_6	/usr/lib/libc.so.6	shared-library	C运行库/保护helper提供者	/usr/lib/libc.so.6
+libstdc++_so_6	/usr/lib/libstdc++.so.6	shared-library	C++运行库	/usr/lib/libstdc++.so.6.0.33
+libsystemd_so_0	/usr/lib/libsystemd.so.0	shared-library	服务/系统管理公共库	/usr/lib/libsystemd.so.0.27.1
+libglib_2_0_so_0	/usr/lib/libglib-2.0.so.0	shared-library	GLib基础平台库	/usr/lib/libglib-2.0.so.0.8000.5
+libdbus_1_so_3	/usr/lib/libdbus-1.so.3	shared-library	IPC公共库	/usr/lib/libdbus-1.so.3.19.13
+libcrypto_so_3	/usr/lib/libcrypto.so.3	shared-library	加密公共库	/usr/lib/libcrypto.so.3
+libssl_so_3	/usr/lib/libssl.so.3	shared-library	TLS公共库	/usr/lib/libssl.so.3
+libsqlite3_so_0	/usr/lib/libsqlite3.so.0	shared-library	平台数据库公共库	/usr/lib/libsqlite3.so.3.51.0
+libdlog_so_0	/usr/lib/libdlog.so.0	shared-library	Tizen日志API	/usr/lib/libdlog.so.0.0.0
+libcynara_client_so_0	/usr/lib/libcynara-client.so.0	shared-library	访问控制客户端API	/usr/lib/libcynara-client.so.0.27.0
+libcynara_admin_so_0	/usr/lib/libcynara-admin.so.0	shared-library	访问控制管理API	/usr/lib/libcynara-admin.so.0.27.0
+libsecurity_manager_client_so_3	/usr/lib/libsecurity-manager-client.so.3	shared-library	安全管理客户端API	/usr/lib/libsecurity-manager-client.so.3.0.0
+libnetwork_so_0	/usr/lib/libnetwork.so.0	shared-library	Tizen网络API	/usr/lib/libnetwork.so.0.0.0
+libpkgmgr_client_so_0	/usr/lib/libpkgmgr-client.so.0	shared-library	包管理客户端API	/usr/lib/libpkgmgr-client.so.0.23.4
+libpkgmgr_info_so_0	/usr/lib/libpkgmgr-info.so.0	shared-library	包信息查询API	/usr/lib/libpkgmgr-info.so.0.37.5
+libvconf_so_0	/usr/lib/libvconf.so.0	shared-library	平台配置存储API	/usr/lib/libvconf.so.0.3.1

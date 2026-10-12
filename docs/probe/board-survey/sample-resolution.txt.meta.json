@@ -1,0 +1,9 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/sample-resolve.sh",
+  "script_sha256": "f8ab889827a4cd2131b0d51d4a30e607f4e14bcd922f6d33643711cc15c9969c",
+  "sdb_exit_code": 1,
+  "elapsed_seconds": 0.064,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}

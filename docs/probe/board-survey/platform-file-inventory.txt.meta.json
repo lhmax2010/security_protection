@@ -1,0 +1,9 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/inventory.sh",
+  "script_sha256": "730da2ad049ecb7f960fa47aa6c3aa27c5913c9e3f53e361ba616f56bc51ae9f",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 0.365,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}

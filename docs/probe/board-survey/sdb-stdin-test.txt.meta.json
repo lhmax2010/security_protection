@@ -1,0 +1,9 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/stream-test.sh",
+  "script_sha256": "472c683f72621fe2662c95efa20e4f6536241bd808f1243aa1b891f2f8eefd0e",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 0.165,
+  "transport": "sdb shell sh -s streamed stdin",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}
