@@ -48,3 +48,5 @@
 - Python 3.12 pyc 已生成（Python 无 -O2 对应选项；optimize=0、无混淆）；证据 evidence/target_py-build.txt、evidence/target_py.pyc-file.txt。
 
 - JS 原始源码已保存，并提供仅含该样本的目录 package.json 包装用于 REA application 工作流；证据 evidence/target_js-build.txt、evidence/target_js.js-file.txt；无转译/混淆。
+
+- .NET Release Optimize=true（无原生 -O2 对应项）、保留元数据与 PDB，DLL 已生成；证据 evidence/target_dotnet-build.txt、evidence/target_dotnet.dll-file.txt。
