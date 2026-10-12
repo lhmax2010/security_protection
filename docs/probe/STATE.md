@@ -62,3 +62,5 @@
 - JS application 目录分析成功；single .js 路由拒绝保留原错。REA recover_javascript_sources 缺 Wakaru 的原错保留，安装官方 Wakaru1.14.0、hash 与文档一致后成功恢复完整源码，两个函数/字符串/算法清晰。证据 evidence/target_js.js/{application.decoded.json,single-file-analysis.decoded.json,recovery.json,recovery-with-wakaru.json,recovered/}，evidence/wakaru-install.txt。
 
 - .NET 内置 parser 完整读取3个方法及CIL统计/常量/ldstr token/调用边；不自动输出C#或ldstr全文。补装 ilspycmd9.1.0.7988，实际 C#/全IL 输出已存，再经 REA import_managed_reconstruction 按真实 token、signature_sha256、normalized_il_sha256 导入3方法为推断证据；三锚点在此补充路线可读。证据 evidence/target_dotnet.dll/{members.decoded.json,ilspy-decompiled.cs,ilspy-full-il.txt,supplemental/imported-reconstruction.decoded.json}，evidence/ilspy-install.txt。
+
+- Rust 补查闭合：按 REA 返回的两入口地址成功获得 Rust main 与 C wrapper 伪代码、汇编/调用；REA read_bytes 在映射 .rodata 0x53a38 返回明文 hex 且 complete=true，main 使用DAT地址+长度0x14。string inventory搜索仍为[]，不改写为搜索成功；Rust main约数百行且__rustcall未知，读取负担明显高。证据 evidence/target_rust_armv7l/{marker-offset-mapping.json,supplemental/requests.json,supplemental/marker-bytes.decoded.json,supplemental/rust-main-pseudocode.c,supplemental/wrapper-main-pseudocode.c}，evidence/target_rust_armv7l-sections.txt。

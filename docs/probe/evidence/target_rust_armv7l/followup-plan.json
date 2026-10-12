@@ -1,0 +1,114 @@
+[
+  {
+    "label": "open",
+    "tool": "open_binary",
+    "arguments": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_rust_armv7l",
+      "provider_id": "ghidra"
+    }
+  },
+  {
+    "label": "rust-main-info",
+    "tool": "procedure_info",
+    "arguments": {
+      "procedure": "0x17798"
+    }
+  },
+  {
+    "label": "rust-main-pseudocode",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x17798"
+    }
+  },
+  {
+    "label": "rust-main-assembly",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "0x17798"
+    }
+  },
+  {
+    "label": "rust-main-instructions",
+    "tool": "read_function_instructions",
+    "arguments": {
+      "procedure": "0x17798"
+    }
+  },
+  {
+    "label": "rust-main-callees",
+    "tool": "procedure_callees",
+    "arguments": {
+      "procedure": "0x17798"
+    }
+  },
+  {
+    "label": "rust-main-dossier",
+    "tool": "analyze_function",
+    "arguments": {
+      "procedure": "0x17798"
+    }
+  },
+  {
+    "label": "wrapper-main-info",
+    "tool": "procedure_info",
+    "arguments": {
+      "procedure": "0x17b18"
+    }
+  },
+  {
+    "label": "wrapper-main-pseudocode",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x17b18"
+    }
+  },
+  {
+    "label": "wrapper-main-assembly",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "0x17b18"
+    }
+  },
+  {
+    "label": "wrapper-main-instructions",
+    "tool": "read_function_instructions",
+    "arguments": {
+      "procedure": "0x17b18"
+    }
+  },
+  {
+    "label": "wrapper-main-callees",
+    "tool": "procedure_callees",
+    "arguments": {
+      "procedure": "0x17b18"
+    }
+  },
+  {
+    "label": "wrapper-main-dossier",
+    "tool": "analyze_function",
+    "arguments": {
+      "procedure": "0x17b18"
+    }
+  },
+  {
+    "label": "marker-bytes",
+    "tool": "read_bytes",
+    "arguments": {
+      "address": "0x53a38",
+      "length": 20
+    }
+  },
+  {
+    "label": "marker-xrefs",
+    "tool": "xrefs",
+    "arguments": {
+      "address": "0x53a38"
+    }
+  },
+  {
+    "label": "close",
+    "tool": "close_binary",
+    "arguments": {}
+  }
+]

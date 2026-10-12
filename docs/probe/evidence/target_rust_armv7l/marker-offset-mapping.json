@@ -1,0 +1,7 @@
+{
+  "file_offset": "0x43a38",
+  "section": ".rodata",
+  "mapped_address": "0x53a38",
+  "length": 20,
+  "method": "Locate literal bytes in binary file, map through readelf -SW .rodata, apply measured Ghidra slide from symbol-recovery-metrics; REA read_bytes is corroborating follow-up, not a successful string search."
+}
