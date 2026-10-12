@@ -1,0 +1,17 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_rust_armv7l\",\"format\":\"elf\",\"kind\":\"executable\",\"sha256\":\"4f20d94d9e18bb493d3674b0fbed67e18b7231dfce8251ba8cab3524c28c470f\",\"architecture\":\"arm\"}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_rust_armv7l",
+      "format": "elf",
+      "kind": "executable",
+      "sha256": "4f20d94d9e18bb493d3674b0fbed67e18b7231dfce8251ba8cab3524c28c470f",
+      "architecture": "arm"
+    }
+  }
+}

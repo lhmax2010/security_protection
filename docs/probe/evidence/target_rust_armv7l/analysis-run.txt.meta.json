@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "node",
+    "docs/probe/scripts/analyze-one.mjs",
+    "native",
+    "target_rust_armv7l"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 34.475
+}

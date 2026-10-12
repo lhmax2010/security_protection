@@ -1,0 +1,335 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_e8aa21e091773a8e09a71bfa518348110275dee03cdb32c14fae28a0e683cc37\",\"subject\":{\"name\":\"target_rust_armv7l\",\"digest\":{\"sha256\":\"4f20d94d9e18bb493d3674b0fbed67e18b7231dfce8251ba8cab3524c28c470f\"},\"format\":\"elf\",\"architecture\":\"arm\",\"local_path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_rust_armv7l\"},\"provider\":{\"id\":\"rea-workflow\",\"name\":\"REA composed investigation workflow\",\"version\":\"1\"},\"analysis_profile\":{\"provider\":{\"id\":\"rea-workflow\",\"name\":\"REA composed investigation workflow\",\"version\":\"1\"},\"parameters\":{\"upstream_analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"elf\",\"architecture\":\"arm\",\"available_architectures\":[\"arm\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac\"},\"workflow_revision\":2},\"digest\":\"d17eb7f7834bcb15c683d2046bf7b579955f68fcb9bb8646c93e925c81ed7a69\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"binary_overview\",\"parameters\":{},\"raw_result\":null,\"normalized_result\":{\"document\":\"target-4f20d94d9e18.bin\",\"segments\":[{\"name\":\"segment_3.1\",\"start\":\"0x10000\",\"end\":\"0x10174\",\"length\":372},{\"name\":\".interp\",\"start\":\"0x10174\",\"end\":\"0x1018d\",\"length\":25},{\"name\":\".note.gnu.build-id\",\"start\":\"0x10190\",\"end\":\"0x101b4\",\"length\":36},{\"name\":\".note.ABI-tag\",\"start\":\"0x101b4\",\"end\":\"0x101d4\",\"length\":32},{\"name\":\".gnu.hash\",\"start\":\"0x101d4\",\"end\":\"0x101ec\",\"length\":24},{\"name\":\".dynsym\",\"start\":\"0x101ec\",\"end\":\"0x1066c\",\"length\":1152},{\"name\":\".dynstr\",\"start\":\"0x1066c\",\"end\":\"0x10a90\",\"length\":1060},{\"name\":\".gnu.version\",\"start\":\"0x10a90\",\"end\":\"0x10b20\",\"length\":144},{\"name\":\".gnu.version_r\",\"start\":\"0x10b20\",\"end\":\"0x10c10\",\"length\":240},{\"name\":\".rel.dyn\",\"start\":\"0x10c10\",\"end\":\"0x11948\",\"length\":3384},{\"name\":\".rel.plt\",\"start\":\"0x11948\",\"end\":\"0x11b50\",\"length\":520},{\"name\":\".init\",\"start\":\"0x11b50\",\"end\":\"0x11b5c\",\"length\":12},{\"name\":\".plt\",\"start\":\"0x11b5c\",\"end\":\"0x11e7c\",\"length\":800},{\"name\":\".text\",\"start\":\"0x11e80\",\"end\":\"0x53a2c\",\"length\":269228},{\"name\":\".fini\",\"start\":\"0x53a2c\",\"end\":\"0x53a34\",\"length\":8},{\"name\":\".rodata\",\"start\":\"0x53a38\",\"end\":\"0x595fc\",\"length\":23492},{\"name\":\".ARM.extab\",\"start\":\"0x595fc\",\"end\":\"0x5b35c\",\"length\":7520},{\"name\":\".ARM.exidx\",\"start\":\"0x5b35c\",\"end\":\"0x5c14c\",\"length\":3568},{\"name\":\".eh_frame\",\"start\":\"0x5c14c\",\"end\":\"0x5c150\",\"length\":4},{\"name\":\".tdata\",\"start\":\"0x5dc48\",\"end\":\"0x5dc60\",\"length\":24},{\"name\":\".init_array\",\"start\":\"0x5dc60\",\"end\":\"0x5dc68\",\"length\":8},{\"name\":\".fini_array\",\"start\":\"0x5dc68\",\"end\":\"0x5dc6c\",\"length\":4},{\"name\":\".data.rel.ro\",\"start\":\"0x5dc70\",\"end\":\"0x5ed48\",\"length\":4312},{\"name\":\".dynamic\",\"start\":\"0x5ed48\",\"end\":\"0x5ee50\",\"length\":264},{\"name\":\".got\",\"start\":\"0x5ee50\",\"end\":\"0x5f000\",\"length\":432},{\"name\":\".data\",\"start\":\"0x5f000\",\"end\":\"0x5f610\",\"length\":1552},{\"name\":\".bss\",\"start\":\"0x5f610\",\"end\":\"0x5f694\",\"length\":132},{\"name\":\"EXTERNAL\",\"start\":\"0x60000\",\"end\":\"0x60114\",\"length\":276},{\"name\":\".ARM.attributes\",\"start\":\".ARM.attributes:0x0\",\"end\":\".ARM.attributes:0x35\",\"length\":53},{\"name\":\".comment\",\"start\":\".comment:0x0\",\"end\":\".comment:0x7b\",\"length\":123},{\"name\":\".debug_abbrev\",\"start\":\".debug_abbrev:0x0\",\"end\":\".debug_abbrev:0x151e\",\"length\":5406},{\"name\":\".debug_aranges\",\"start\":\".debug_aranges:0x0\",\"end\":\".debug_aranges:0x3dd8\",\"length\":15832},{\"name\":\".debug_frame\",\"start\":\".debug_frame:0x0\",\"end\":\".debug_frame:0xf098\",\"length\":61592},{\"name\":\".debug_info\",\"start\":\".debug_info:0x0\",\"end\":\".debug_info:0xe2675\",\"length\":927349},{\"name\":\".debug_line\",\"start\":\".debug_line:0x0\",\"end\":\".debug_line:0x7ab57\",\"length\":502615},{\"name\":\".debug_ranges\",\"start\":\".debug_ranges:0x0\",\"end\":\".debug_ranges:0x5b7f0\",\"length\":374768},{\"name\":\".debug_str\",\"start\":\".debug_str:0x0\",\"end\":\".debug_str:0x1cd279\",\"length\":1888889},{\"name\":\".shstrtab\",\"start\":\".shstrtab:0x0\",\"end\":\".shstrtab:0x185\",\"length\":389},{\"name\":\".strtab\",\"start\":\".strtab:0x0\",\"end\":\".strtab:0x12ffc\",\"length\":77820},{\"name\":\".symtab\",\"start\":\".symtab:0x0\",\"end\":\".symtab:0xca90\",\"length\":51856},{\"name\":\"_elfSectionHeaders\",\"start\":\"_elfSectionHeaders:0x0\",\"end\":\"_elfSectionHeaders:0x640\",\"length\":1600}],\"segment_count\":41,\"procedure_count\":768,\"string_count\":1176},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Derived by an REA composed workflow.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_e8aa21e091773a8e09a71bfa518348110275dee03cdb32c14fae28a0e683cc37",
+    "subject": {
+      "name": "target_rust_armv7l",
+      "digest": {
+        "sha256": "4f20d94d9e18bb493d3674b0fbed67e18b7231dfce8251ba8cab3524c28c470f"
+      },
+      "format": "elf",
+      "architecture": "arm",
+      "local_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_rust_armv7l"
+    },
+    "provider": {
+      "id": "rea-workflow",
+      "name": "REA composed investigation workflow",
+      "version": "1"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "rea-workflow",
+        "name": "REA composed investigation workflow",
+        "version": "1"
+      },
+      "parameters": {
+        "upstream_analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "elf",
+            "architecture": "arm",
+            "available_architectures": [
+              "arm"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "function_references": "complete-body-and-entry-reference-manager-v2",
+            "string_inventory_evidence": "defined-data-coverage-v1",
+            "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+            "instruction_flow_evidence": "decoded-return-pcode-v1",
+            "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+            "no_return_repair": "returning-imports-decoded-return-v2",
+            "process_launch": "inspected-jvm-launch-support-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default"
+          },
+          "digest": "e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac"
+        },
+        "workflow_revision": 2
+      },
+      "digest": "d17eb7f7834bcb15c683d2046bf7b579955f68fcb9bb8646c93e925c81ed7a69"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "binary_overview",
+    "parameters": {},
+    "raw_result": null,
+    "normalized_result": {
+      "document": "target-4f20d94d9e18.bin",
+      "segments": [
+        {
+          "name": "segment_3.1",
+          "start": "0x10000",
+          "end": "0x10174",
+          "length": 372
+        },
+        {
+          "name": ".interp",
+          "start": "0x10174",
+          "end": "0x1018d",
+          "length": 25
+        },
+        {
+          "name": ".note.gnu.build-id",
+          "start": "0x10190",
+          "end": "0x101b4",
+          "length": 36
+        },
+        {
+          "name": ".note.ABI-tag",
+          "start": "0x101b4",
+          "end": "0x101d4",
+          "length": 32
+        },
+        {
+          "name": ".gnu.hash",
+          "start": "0x101d4",
+          "end": "0x101ec",
+          "length": 24
+        },
+        {
+          "name": ".dynsym",
+          "start": "0x101ec",
+          "end": "0x1066c",
+          "length": 1152
+        },
+        {
+          "name": ".dynstr",
+          "start": "0x1066c",
+          "end": "0x10a90",
+          "length": 1060
+        },
+        {
+          "name": ".gnu.version",
+          "start": "0x10a90",
+          "end": "0x10b20",
+          "length": 144
+        },
+        {
+          "name": ".gnu.version_r",
+          "start": "0x10b20",
+          "end": "0x10c10",
+          "length": 240
+        },
+        {
+          "name": ".rel.dyn",
+          "start": "0x10c10",
+          "end": "0x11948",
+          "length": 3384
+        },
+        {
+          "name": ".rel.plt",
+          "start": "0x11948",
+          "end": "0x11b50",
+          "length": 520
+        },
+        {
+          "name": ".init",
+          "start": "0x11b50",
+          "end": "0x11b5c",
+          "length": 12
+        },
+        {
+          "name": ".plt",
+          "start": "0x11b5c",
+          "end": "0x11e7c",
+          "length": 800
+        },
+        {
+          "name": ".text",
+          "start": "0x11e80",
+          "end": "0x53a2c",
+          "length": 269228
+        },
+        {
+          "name": ".fini",
+          "start": "0x53a2c",
+          "end": "0x53a34",
+          "length": 8
+        },
+        {
+          "name": ".rodata",
+          "start": "0x53a38",
+          "end": "0x595fc",
+          "length": 23492
+        },
+        {
+          "name": ".ARM.extab",
+          "start": "0x595fc",
+          "end": "0x5b35c",
+          "length": 7520
+        },
+        {
+          "name": ".ARM.exidx",
+          "start": "0x5b35c",
+          "end": "0x5c14c",
+          "length": 3568
+        },
+        {
+          "name": ".eh_frame",
+          "start": "0x5c14c",
+          "end": "0x5c150",
+          "length": 4
+        },
+        {
+          "name": ".tdata",
+          "start": "0x5dc48",
+          "end": "0x5dc60",
+          "length": 24
+        },
+        {
+          "name": ".init_array",
+          "start": "0x5dc60",
+          "end": "0x5dc68",
+          "length": 8
+        },
+        {
+          "name": ".fini_array",
+          "start": "0x5dc68",
+          "end": "0x5dc6c",
+          "length": 4
+        },
+        {
+          "name": ".data.rel.ro",
+          "start": "0x5dc70",
+          "end": "0x5ed48",
+          "length": 4312
+        },
+        {
+          "name": ".dynamic",
+          "start": "0x5ed48",
+          "end": "0x5ee50",
+          "length": 264
+        },
+        {
+          "name": ".got",
+          "start": "0x5ee50",
+          "end": "0x5f000",
+          "length": 432
+        },
+        {
+          "name": ".data",
+          "start": "0x5f000",
+          "end": "0x5f610",
+          "length": 1552
+        },
+        {
+          "name": ".bss",
+          "start": "0x5f610",
+          "end": "0x5f694",
+          "length": 132
+        },
+        {
+          "name": "EXTERNAL",
+          "start": "0x60000",
+          "end": "0x60114",
+          "length": 276
+        },
+        {
+          "name": ".ARM.attributes",
+          "start": ".ARM.attributes:0x0",
+          "end": ".ARM.attributes:0x35",
+          "length": 53
+        },
+        {
+          "name": ".comment",
+          "start": ".comment:0x0",
+          "end": ".comment:0x7b",
+          "length": 123
+        },
+        {
+          "name": ".debug_abbrev",
+          "start": ".debug_abbrev:0x0",
+          "end": ".debug_abbrev:0x151e",
+          "length": 5406
+        },
+        {
+          "name": ".debug_aranges",
+          "start": ".debug_aranges:0x0",
+          "end": ".debug_aranges:0x3dd8",
+          "length": 15832
+        },
+        {
+          "name": ".debug_frame",
+          "start": ".debug_frame:0x0",
+          "end": ".debug_frame:0xf098",
+          "length": 61592
+        },
+        {
+          "name": ".debug_info",
+          "start": ".debug_info:0x0",
+          "end": ".debug_info:0xe2675",
+          "length": 927349
+        },
+        {
+          "name": ".debug_line",
+          "start": ".debug_line:0x0",
+          "end": ".debug_line:0x7ab57",
+          "length": 502615
+        },
+        {
+          "name": ".debug_ranges",
+          "start": ".debug_ranges:0x0",
+          "end": ".debug_ranges:0x5b7f0",
+          "length": 374768
+        },
+        {
+          "name": ".debug_str",
+          "start": ".debug_str:0x0",
+          "end": ".debug_str:0x1cd279",
+          "length": 1888889
+        },
+        {
+          "name": ".shstrtab",
+          "start": ".shstrtab:0x0",
+          "end": ".shstrtab:0x185",
+          "length": 389
+        },
+        {
+          "name": ".strtab",
+          "start": ".strtab:0x0",
+          "end": ".strtab:0x12ffc",
+          "length": 77820
+        },
+        {
+          "name": ".symtab",
+          "start": ".symtab:0x0",
+          "end": ".symtab:0xca90",
+          "length": 51856
+        },
+        {
+          "name": "_elfSectionHeaders",
+          "start": "_elfSectionHeaders:0x0",
+          "end": "_elfSectionHeaders:0x640",
+          "length": 1600
+        }
+      ],
+      "segment_count": 41,
+      "procedure_count": 768,
+      "string_count": 1176
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Derived by an REA composed workflow."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}
