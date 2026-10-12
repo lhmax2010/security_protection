@@ -1,0 +1,13 @@
+import fs from 'node:fs';
+import path from 'node:path';
+const root=process.env.PROBE_ROOT;
+const {Client}=await import(path.join(root,'.local-tools/rea/node_modules/@modelcontextprotocol/client/dist/index.mjs'));
+const {StdioClientTransport}=await import(path.join(root,'.local-tools/rea/node_modules/@modelcontextprotocol/client/dist/stdio.mjs'));
+const dir=path.resolve(process.argv[2]); fs.mkdirSync(dir,{recursive:true});
+const client=new Client({name:'bare-baseline-audit',version:'1.0.0'});
+const transport=new StdioClientTransport({command:path.join(root,'.local-tools/node-v24.21.0-linux-x64/bin/node'),args:[path.join(root,'.local-tools/rea/node_modules/rea-agents/scripts/rea.mjs'),'mcp'],env:{...process.env},stderr:'pipe'});
+transport.stderr?.on('data',d=>fs.appendFileSync(path.join(dir,'mcp-stderr.txt'),d));
+await client.connect(transport);
+fs.writeFileSync(path.join(dir,'server-version.json'),JSON.stringify(client.getServerVersion(),null,2));
+fs.writeFileSync(path.join(dir,'tools-list.json'),JSON.stringify(await client.listTools(),null,2));
+await client.close();

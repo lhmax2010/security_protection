@@ -1,0 +1,8 @@
+{
+  "argv": [
+    "python3",
+    "docs/probe/scripts/relocate-jdk.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.021
+}

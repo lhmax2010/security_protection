@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "curl",
+    "-fL",
+    "https://api.adoptium.net/v3/assets/latest/21/hotspot?architecture=x64&image_type=jdk&os=linux",
+    "-o",
+    ".local-tools/adoptium.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.63
+}

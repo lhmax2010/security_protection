@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "npx",
+    "--prefix",
+    ".local-tools/rea",
+    "--no-install",
+    "rea-agents",
+    "analyze-javascript-application",
+    "--help"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.968
+}

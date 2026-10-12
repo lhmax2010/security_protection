@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "npm",
+    "install",
+    "--prefix",
+    ".local-tools/rea",
+    "rea-agents"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 12.592
+}

@@ -1,0 +1,74 @@
+++ dirname docs/probe/scripts/install-rust-dotnet.sh
++ cd docs/probe/scripts/../../..
++ export RUSTUP_HOME=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/rustup
++ RUSTUP_HOME=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/rustup
++ export CARGO_HOME=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo
++ CARGO_HOME=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo
++ curl -fL --retry 2 https://sh.rustup.rs -o .local-tools/rustup-init.sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 29915  100 29915    0     0  44696      0 --:--:-- --:--:-- --:--:-- 44649
++ bash .local-tools/rustup-init.sh -y --no-modify-path --profile minimal
+info: downloading installer
+info: profile set to minimal
+info: default host tuple is x86_64-unknown-linux-gnu
+info: syncing channel updates for stable-x86_64-unknown-linux-gnu
+info: latest update on 2026-10-01 for version 1.99.0 (b940084d7 2026-09-28)
+info: downloading 3 components
+info: default toolchain set to stable-x86_64-unknown-linux-gnu
+
+  stable-x86_64-unknown-linux-gnu installed - rustc 1.99.0 (b940084d7 2026-09-28)
+
+
+Rust is installed now. Great!
+
+To get started you need Cargo's bin directory 
+(/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo/bin)
+in your PATH
+environment variable. This has not been done automatically.
+
+To configure your current shell, you need to source
+the corresponding env file under 
+/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo.
+
+Consider running the right command for your shell (note the leading DOT):
+. 
+"/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/cargo/env"
+# For sh/ash/dash/pdksh/bash
+cargo:rerun-if-env-changed=CC_x86_64-unknown-linux-gnu
+CC_x86_64-unknown-linux-gnu = None
+cargo:rerun-if-env-changed=CC_x86_64_unknown_linux_gnu
+CC_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=HOST_CC
+HOST_CC = None
+cargo:rerun-if-env-changed=CC
+CC = None
+cargo:rerun-if-env-changed=CC_ENABLE_DEBUG_OUTPUT
+cargo:rerun-if-env-changed=CRATE_CC_NO_DEFAULTS
+CRATE_CC_NO_DEFAULTS = None
+cargo:rerun-if-env-changed=CFLAGS
+CFLAGS = None
+cargo:rerun-if-env-changed=HOST_CFLAGS
+HOST_CFLAGS = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64_unknown_linux_gnu
+CFLAGS_x86_64_unknown_linux_gnu = None
+cargo:rerun-if-env-changed=CFLAGS_x86_64-unknown-linux-gnu
+CFLAGS_x86_64-unknown-linux-gnu = None
++ .local-tools/cargo/bin/rustup target add armv7-unknown-linux-gnueabihf
+info: downloading component rust-std
++ curl -fL --retry 2 https://dot.net/v1/dotnet-install.sh -o .local-tools/dotnet-install.sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100 63563    0 63563    0     0  36572      0 --:--:--  0:00:01 --:--:--  144k
++ bash .local-tools/dotnet-install.sh --channel 8.0 --install-dir /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/dotnet
+dotnet-install: Attempting to download using aka.ms link https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.425/dotnet-sdk-8.0.425-linux-x64.tar.gz
+dotnet-install: Remote file https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.425/dotnet-sdk-8.0.425-linux-x64.tar.gz size is 216833108 bytes.
+dotnet-install: Extracting archive from https://builds.dotnet.microsoft.com/dotnet/Sdk/8.0.425/dotnet-sdk-8.0.425-linux-x64.tar.gz
+dotnet-install: Downloaded file size is 216833108 bytes.
+dotnet-install: The remote and local file sizes are equal.
+dotnet-install: Installed version is 8.0.425
+dotnet-install: Adding to current process PATH: `/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/dotnet`. Note: This change will be visible only when sourcing script.
+dotnet-install: Note that the script does not resolve dependencies during installation.
+dotnet-install: To check the list of dependencies, go to https://learn.microsoft.com/dotnet/core/install, select your operating system and check the "Dependencies" section.
+dotnet-install: Installation finished successfully.

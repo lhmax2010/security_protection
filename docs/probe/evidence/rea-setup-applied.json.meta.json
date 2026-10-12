@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "npx",
+    "--prefix",
+    ".local-tools/rea",
+    "--no-install",
+    "rea-agents",
+    "setup",
+    "--client",
+    "codex",
+    "--yes",
+    "--json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 3.427
+}

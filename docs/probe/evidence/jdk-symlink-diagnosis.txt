@@ -1,0 +1,4 @@
+lrwxrwxrwx 1 linhao linhao 43 Sep  4 14:14 /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/lib/jvm/java-21-openjdk-amd64/conf/security/java.security -> /etc/java-21-openjdk/security/java.security
+/etc/java-21-openjdk/security/java.security
+original_target_exists=1
+-rw-r--r-- 1 linhao linhao 71428 Sep  4 14:14 /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/etc/java-21-openjdk/security/java.security

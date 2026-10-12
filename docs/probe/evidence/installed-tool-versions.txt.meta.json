@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "-c",
+    "node --version; npm --version; java -version; javac -version; arm-linux-gnueabihf-gcc-13 --version; clang-18 --version; rustc --version; rustup target list --installed; dotnet --info; cat \"$GHIDRA_INSTALL_DIR/Ghidra/application.properties\""
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.358
+}

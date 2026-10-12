@@ -1,0 +1,8 @@
+{
+  "argv": [
+    "bash",
+    "docs/probe/scripts/install-runtime.sh"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 159.437
+}

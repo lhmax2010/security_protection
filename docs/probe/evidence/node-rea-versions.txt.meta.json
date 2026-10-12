@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "-c",
+    "node --version; npm --version; npx --prefix .local-tools/rea --no-install rea-agents --version; npm --prefix .local-tools/rea ls rea-agents"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.294
+}

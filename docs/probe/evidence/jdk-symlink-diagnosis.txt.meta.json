@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "-c",
+    "ls -l \"$JAVA_HOME/conf/security/java.security\"; readlink \"$JAVA_HOME/conf/security/java.security\"; test -f \"$JAVA_HOME/conf/security/java.security\"; echo original_target_exists=$?; ls -l \"$PROBE_ROOT/.local-tools/sysroot/etc/java-21-openjdk/security/java.security\""
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.008
+}

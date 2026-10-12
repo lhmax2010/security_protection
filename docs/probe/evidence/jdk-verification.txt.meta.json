@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "-ec",
+    "java -version; javac -version; test -f \"$JAVA_HOME/conf/security/java.security\""
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.116
+}
