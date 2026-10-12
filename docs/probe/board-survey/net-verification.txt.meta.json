@@ -1,0 +1,9 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/net-verify.sh",
+  "script_sha256": "1fb21d1ee0650abe2197575252127de895e4cd987fde63d46fb25b6730746d68",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 0.215,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}

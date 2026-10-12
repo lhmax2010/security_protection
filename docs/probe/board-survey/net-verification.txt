@@ -1,0 +1,59 @@
+READONLY_PERSISTENCE_VERIFICATION
+[ethernet_2ccf67a072b5_cable]
+Name=Wired
+AutoConnect=true
+UseEapol=false
+Modified=2026-10-12T16:38:59Z
+IPv4.method=manual
+IPv4.netmask_prefixlen=24
+IPv4.local_address=192.168.108.26
+IPv4.gateway=192.168.108.1
+IPv6.method=auto
+IPv6.privacy=prefered
+Nameservers=221.131.143.69;
+Nameservers.IPv4method=manual
+CONFIG_FIELD_VERIFIED: AutoConnect=true
+CONFIG_FIELD_VERIFIED: IPv4.method=manual
+CONFIG_FIELD_VERIFIED: IPv4.netmask_prefixlen=24
+CONFIG_FIELD_VERIFIED: IPv4.local_address=192.168.108.26
+CONFIG_FIELD_VERIFIED: IPv4.gateway=192.168.108.1
+CONFIG_FIELD_VERIFIED: Nameservers=221.131.143.69;
+../connman.service
+2: eth0: <BROADCAST,MULTICAST,DYNAMIC,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether 2c:cf:67:a0:72:b5 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.108.26/24 brd 192.168.108.255 scope global eth0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::2ecf:67ff:fea0:72b5/64 scope link 
+       valid_lft forever preferred_lft forever
+default via 192.168.108.1 dev eth0 
+192.168.108.0/24 dev eth0 proto kernel scope link src 192.168.108.26 
+192.168.108.1 dev eth0 scope link 
+221.131.143.69 via 192.168.108.1 dev eth0 
+/net/connman/service/ethernet_2ccf67a072b5_cable
+  Frequency = 0
+  Type = ethernet
+  Security = [  ]
+  State = ready
+  StateIPv6 = configuration
+  Favorite = True
+  Immutable = False
+  AutoConnect = True
+  Name = Wired
+  EapOverEthernet = [ UseEapol=False ]
+  Ethernet = [ Method=auto, Interface=eth0, Address=2C:CF:67:A0:72:B5, MTU=1500 ]
+  IPv4 = [ Method=manual, Address=192.168.108.26, Netmask=255.255.255.0, Gateway=192.168.108.1 ]
+  IPv4.Configuration = [ Method=manual, Address=192.168.108.26, Netmask=255.255.255.0, Gateway=192.168.108.1 ]
+  IPv6 = [  ]
+  IPv6.Configuration = [ Method=auto, Privacy=prefered ]
+  Nameservers = [ ipv4.manual, ipv6.unknown, 221.131.143.69 ]
+  Nameservers.Configuration = [ ipv4.manual, ipv6.unknown, 221.131.143.69 ]
+  Timeservers = [ pool.ntp.org, time.google.com, time.cloudflare.com, time.windows.com ]
+  Timeservers.Configuration = [  ]
+  Domains = [  ]
+  Domains.Configuration = [  ]
+  Proxy = [ Method=direct ]
+  Proxy.Configuration = [  ]
+  mDNS = False
+  mDNS.Configuration = False
+  Provider = [  ]
+PERSISTENCE_VERIFY_SUCCESS_NO_REBOOT
