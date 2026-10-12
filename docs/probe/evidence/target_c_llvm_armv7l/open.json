@@ -1,0 +1,17 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l\",\"format\":\"elf\",\"kind\":\"executable\",\"sha256\":\"4a08f9e874b23446695be329b13e9cd102d733cefcf9d7fcafd56302afcd6d5e\",\"architecture\":\"arm\"}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l",
+      "format": "elf",
+      "kind": "executable",
+      "sha256": "4a08f9e874b23446695be329b13e9cd102d733cefcf9d7fcafd56302afcd6d5e",
+      "architecture": "arm"
+    }
+  }
+}

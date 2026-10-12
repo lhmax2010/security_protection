@@ -52,3 +52,5 @@
 - .NET Release Optimize=true（无原生 -O2 对应项）、保留元数据与 PDB，DLL 已生成；证据 evidence/target_dotnet-build.txt、evidence/target_dotnet.dll-file.txt。
 
 - GCC ARM32 REA 完成，32 项 procedure 库存，两锚点函数及明文均可见，核心伪代码清晰；main 出现错误签名/参数推断。证据 evidence/target_c_gcc_armv7l/{requests.json,marker-search.decoded.json,secret_transform-pseudocode.c,simple_checksum-pseudocode.c,main-pseudocode.c,secret_transform-assembly.asm,symbol-recovery-metrics.json}。
+
+- LLVM ARM32 REA 完成，32 项 procedure 库存，函数/明文/算法可见，main 调用清晰；返回/参数被缩窄为 short/ushort。证据 evidence/target_c_llvm_armv7l/{requests.json,marker-search.decoded.json,secret_transform-pseudocode.c,simple_checksum-pseudocode.c,main-pseudocode.c,secret_transform-assembly.asm,symbol-recovery-metrics.json}。

@@ -1,0 +1,1662 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_acc51e5cea776f7ff69f2f690fa369e4bff3ed7f6f8f6c754235b15e6fb98ea1\",\"subject\":{\"name\":\"target_c_llvm_armv7l\",\"digest\":{\"sha256\":\"4a08f9e874b23446695be329b13e9cd102d733cefcf9d7fcafd56302afcd6d5e\"},\"format\":\"elf\",\"architecture\":\"arm\",\"local_path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"elf\",\"architecture\":\"arm\",\"available_architectures\":[\"arm\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"list_strings\",\"parameters\":{},\"raw_result\":[{\"address\":\"0x10154\",\"value\":\"/lib/ld-linux-armhf.so.3\",\"string\":{\"encoding\":\"US-ASCII\",\"termination\":\"present_or_not_required\",\"byte_length\":25}},{\"address\":\"0x1027d\",\"value\":\"__libc_start_main\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":18}},{\"address\":\"0x1028f\",\"value\":\"__cxa_finalize\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":15}},{\"address\":\"0x1029e\",\"value\":\"printf\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":7}},{\"address\":\"0x102a5\",\"value\":\"strtoul\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\"0x102ad\",\"value\":\"abort\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\"0x102b3\",\"value\":\"libc.so.6\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\"0x102bd\",\"value\":\"GLIBC_2.4\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\"0x102c7\",\"value\":\"GLIBC_2.34\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":11}},{\"address\":\"0x102d2\",\"value\":\"_ITM_deregisterTMCloneTable\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":28}},{\"address\":\"0x102ee\",\"value\":\"__gmon_start__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":15}},{\"address\":\"0x102fd\",\"value\":\"_ITM_registerTMCloneTable\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":26}},{\"address\":\"0x10688\",\"value\":\"LICENSE_KEY_CHECK_V1\",\"string\":{\"encoding\":\"US-ASCII\",\"termination\":\"present_or_not_required\",\"byte_length\":21}},{\"address\":\"0x1069d\",\"value\":\"%s %u %u\\n\",\"string\":{\"encoding\":\"US-ASCII\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\".comment:0x0\",\"value\":\"GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":45}},{\"address\":\".comment:0x2d\",\"value\":\"Ubuntu clang version 18.1.3 (1ubuntu1)\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":39}},{\"address\":\".shstrtab:0x1\",\"value\":\".symtab\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0x9\",\"value\":\".strtab\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0x11\",\"value\":\".shstrtab\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\".shstrtab:0x1b\",\"value\":\".interp\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0x23\",\"value\":\".note.gnu.build-id\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":19}},{\"address\":\".shstrtab:0x36\",\"value\":\".note.ABI-tag\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":14}},{\"address\":\".shstrtab:0x44\",\"value\":\".gnu.hash\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\".shstrtab:0x4e\",\"value\":\".dynsym\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0x56\",\"value\":\".dynstr\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0x5e\",\"value\":\".gnu.version\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":13}},{\"address\":\".shstrtab:0x6b\",\"value\":\".gnu.version_r\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":15}},{\"address\":\".shstrtab:0x7a\",\"value\":\".rel.dyn\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".shstrtab:0x83\",\"value\":\".rel.plt\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".shstrtab:0x8c\",\"value\":\".init\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\".shstrtab:0x92\",\"value\":\".text\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\".shstrtab:0x98\",\"value\":\".fini\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\".shstrtab:0x9e\",\"value\":\".rodata\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0xa6\",\"value\":\".ARM.exidx\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":11}},{\"address\":\".shstrtab:0xb1\",\"value\":\".eh_frame\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\".shstrtab:0xbb\",\"value\":\".init_array\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".shstrtab:0xc7\",\"value\":\".fini_array\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".shstrtab:0xd3\",\"value\":\".dynamic\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".shstrtab:0xdc\",\"value\":\".got\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".shstrtab:0xe1\",\"value\":\".data\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\".shstrtab:0xe7\",\"value\":\".bss\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".shstrtab:0xec\",\"value\":\".comment\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".shstrtab:0xf5\",\"value\":\".ARM.attributes\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":16}},{\"address\":\".strtab:0x1\",\"value\":\"Scrt1.o\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".strtab:0x9\",\"value\":\"$d\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":3}},{\"address\":\".strtab:0xc\",\"value\":\"__abi_tag\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\".strtab:0x16\",\"value\":\"$t\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":3}},{\"address\":\".strtab:0x19\",\"value\":\"crti.o\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":7}},{\"address\":\".strtab:0x20\",\"value\":\"$a\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":3}},{\"address\":\".strtab:0x23\",\"value\":\"call_weak_fn\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":13}},{\"address\":\".strtab:0x30\",\"value\":\"crtn.o\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":7}},{\"address\":\".strtab:0x37\",\"value\":\"crtstuff.c\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":11}},{\"address\":\".strtab:0x42\",\"value\":\"all_implied_fbits\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":18}},{\"address\":\".strtab:0x54\",\"value\":\"deregister_tm_clones\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":21}},{\"address\":\".strtab:0x69\",\"value\":\"__do_global_dtors_aux\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":22}},{\"address\":\".strtab:0x7f\",\"value\":\"completed.0\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".strtab:0x8b\",\"value\":\"__do_global_dtors_aux_fini_array_entry\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":39}},{\"address\":\".strtab:0xb2\",\"value\":\"frame_dummy\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".strtab:0xbe\",\"value\":\"__frame_dummy_init_array_entry\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":31}},{\"address\":\".strtab:0xdd\",\"value\":\"target.c\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".strtab:0xe6\",\"value\":\"$a.0\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".strtab:0xeb\",\"value\":\"$d.1\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".strtab:0xf0\",\"value\":\"__FRAME_END__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":14}},{\"address\":\".strtab:0xfe\",\"value\":\"_DYNAMIC\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".strtab:0x107\",\"value\":\"_GLOBAL_OFFSET_TABLE_\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":22}},{\"address\":\".strtab:0x11d\",\"value\":\"__libc_start_main@GLIBC_2.34\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":29}},{\"address\":\".strtab:0x13a\",\"value\":\"__cxa_finalize@GLIBC_2.4\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":25}},{\"address\":\".strtab:0x153\",\"value\":\"_ITM_deregisterTMCloneTable\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":28}},{\"address\":\".strtab:0x16f\",\"value\":\"printf@GLIBC_2.4\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":17}},{\"address\":\".strtab:0x180\",\"value\":\"__bss_start__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":14}},{\"address\":\".strtab:0x18e\",\"value\":\"_edata\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":7}},{\"address\":\".strtab:0x195\",\"value\":\"_fini\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\".strtab:0x19b\",\"value\":\"__bss_end__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".strtab:0x1a7\",\"value\":\"__data_start\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":13}},{\"address\":\".strtab:0x1b4\",\"value\":\"__gmon_start__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":15}},{\"address\":\".strtab:0x1c3\",\"value\":\"__dso_handle\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":13}},{\"address\":\".strtab:0x1d0\",\"value\":\"_IO_stdin_used\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":15}},{\"address\":\".strtab:0x1df\",\"value\":\"strtoul@GLIBC_2.4\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":18}},{\"address\":\".strtab:0x1f1\",\"value\":\"simple_checksum\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":16}},{\"address\":\".strtab:0x201\",\"value\":\"_end\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".strtab:0x206\",\"value\":\"__end__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".strtab:0x20e\",\"value\":\"__bss_start\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".strtab:0x21a\",\"value\":\"main\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".strtab:0x21f\",\"value\":\"secret_transform\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":17}},{\"address\":\".strtab:0x230\",\"value\":\"__TMC_END__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".strtab:0x23c\",\"value\":\"_ITM_registerTMCloneTable\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":26}},{\"address\":\".strtab:0x256\",\"value\":\"abort@GLIBC_2.4\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":16}},{\"address\":\".strtab:0x266\",\"value\":\"_init\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}}],\"normalized_result\":[{\"address\":\"0x10154\",\"value\":\"/lib/ld-linux-armhf.so.3\",\"string\":{\"encoding\":\"US-ASCII\",\"termination\":\"present_or_not_required\",\"byte_length\":25}},{\"address\":\"0x1027d\",\"value\":\"__libc_start_main\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":18}},{\"address\":\"0x1028f\",\"value\":\"__cxa_finalize\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":15}},{\"address\":\"0x1029e\",\"value\":\"printf\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":7}},{\"address\":\"0x102a5\",\"value\":\"strtoul\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\"0x102ad\",\"value\":\"abort\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\"0x102b3\",\"value\":\"libc.so.6\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\"0x102bd\",\"value\":\"GLIBC_2.4\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\"0x102c7\",\"value\":\"GLIBC_2.34\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":11}},{\"address\":\"0x102d2\",\"value\":\"_ITM_deregisterTMCloneTable\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":28}},{\"address\":\"0x102ee\",\"value\":\"__gmon_start__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":15}},{\"address\":\"0x102fd\",\"value\":\"_ITM_registerTMCloneTable\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":26}},{\"address\":\"0x10688\",\"value\":\"LICENSE_KEY_CHECK_V1\",\"string\":{\"encoding\":\"US-ASCII\",\"termination\":\"present_or_not_required\",\"byte_length\":21}},{\"address\":\"0x1069d\",\"value\":\"%s %u %u\\n\",\"string\":{\"encoding\":\"US-ASCII\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\".comment:0x0\",\"value\":\"GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":45}},{\"address\":\".comment:0x2d\",\"value\":\"Ubuntu clang version 18.1.3 (1ubuntu1)\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":39}},{\"address\":\".shstrtab:0x1\",\"value\":\".symtab\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0x9\",\"value\":\".strtab\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0x11\",\"value\":\".shstrtab\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\".shstrtab:0x1b\",\"value\":\".interp\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0x23\",\"value\":\".note.gnu.build-id\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":19}},{\"address\":\".shstrtab:0x36\",\"value\":\".note.ABI-tag\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":14}},{\"address\":\".shstrtab:0x44\",\"value\":\".gnu.hash\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\".shstrtab:0x4e\",\"value\":\".dynsym\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0x56\",\"value\":\".dynstr\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0x5e\",\"value\":\".gnu.version\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":13}},{\"address\":\".shstrtab:0x6b\",\"value\":\".gnu.version_r\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":15}},{\"address\":\".shstrtab:0x7a\",\"value\":\".rel.dyn\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".shstrtab:0x83\",\"value\":\".rel.plt\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".shstrtab:0x8c\",\"value\":\".init\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\".shstrtab:0x92\",\"value\":\".text\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\".shstrtab:0x98\",\"value\":\".fini\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\".shstrtab:0x9e\",\"value\":\".rodata\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".shstrtab:0xa6\",\"value\":\".ARM.exidx\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":11}},{\"address\":\".shstrtab:0xb1\",\"value\":\".eh_frame\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\".shstrtab:0xbb\",\"value\":\".init_array\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".shstrtab:0xc7\",\"value\":\".fini_array\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".shstrtab:0xd3\",\"value\":\".dynamic\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".shstrtab:0xdc\",\"value\":\".got\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".shstrtab:0xe1\",\"value\":\".data\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\".shstrtab:0xe7\",\"value\":\".bss\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".shstrtab:0xec\",\"value\":\".comment\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".shstrtab:0xf5\",\"value\":\".ARM.attributes\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":16}},{\"address\":\".strtab:0x1\",\"value\":\"Scrt1.o\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".strtab:0x9\",\"value\":\"$d\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":3}},{\"address\":\".strtab:0xc\",\"value\":\"__abi_tag\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":10}},{\"address\":\".strtab:0x16\",\"value\":\"$t\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":3}},{\"address\":\".strtab:0x19\",\"value\":\"crti.o\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":7}},{\"address\":\".strtab:0x20\",\"value\":\"$a\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":3}},{\"address\":\".strtab:0x23\",\"value\":\"call_weak_fn\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":13}},{\"address\":\".strtab:0x30\",\"value\":\"crtn.o\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":7}},{\"address\":\".strtab:0x37\",\"value\":\"crtstuff.c\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":11}},{\"address\":\".strtab:0x42\",\"value\":\"all_implied_fbits\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":18}},{\"address\":\".strtab:0x54\",\"value\":\"deregister_tm_clones\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":21}},{\"address\":\".strtab:0x69\",\"value\":\"__do_global_dtors_aux\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":22}},{\"address\":\".strtab:0x7f\",\"value\":\"completed.0\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".strtab:0x8b\",\"value\":\"__do_global_dtors_aux_fini_array_entry\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":39}},{\"address\":\".strtab:0xb2\",\"value\":\"frame_dummy\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".strtab:0xbe\",\"value\":\"__frame_dummy_init_array_entry\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":31}},{\"address\":\".strtab:0xdd\",\"value\":\"target.c\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".strtab:0xe6\",\"value\":\"$a.0\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".strtab:0xeb\",\"value\":\"$d.1\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".strtab:0xf0\",\"value\":\"__FRAME_END__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":14}},{\"address\":\".strtab:0xfe\",\"value\":\"_DYNAMIC\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":9}},{\"address\":\".strtab:0x107\",\"value\":\"_GLOBAL_OFFSET_TABLE_\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":22}},{\"address\":\".strtab:0x11d\",\"value\":\"__libc_start_main@GLIBC_2.34\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":29}},{\"address\":\".strtab:0x13a\",\"value\":\"__cxa_finalize@GLIBC_2.4\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":25}},{\"address\":\".strtab:0x153\",\"value\":\"_ITM_deregisterTMCloneTable\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":28}},{\"address\":\".strtab:0x16f\",\"value\":\"printf@GLIBC_2.4\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":17}},{\"address\":\".strtab:0x180\",\"value\":\"__bss_start__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":14}},{\"address\":\".strtab:0x18e\",\"value\":\"_edata\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":7}},{\"address\":\".strtab:0x195\",\"value\":\"_fini\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}},{\"address\":\".strtab:0x19b\",\"value\":\"__bss_end__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".strtab:0x1a7\",\"value\":\"__data_start\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":13}},{\"address\":\".strtab:0x1b4\",\"value\":\"__gmon_start__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":15}},{\"address\":\".strtab:0x1c3\",\"value\":\"__dso_handle\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":13}},{\"address\":\".strtab:0x1d0\",\"value\":\"_IO_stdin_used\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":15}},{\"address\":\".strtab:0x1df\",\"value\":\"strtoul@GLIBC_2.4\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":18}},{\"address\":\".strtab:0x1f1\",\"value\":\"simple_checksum\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":16}},{\"address\":\".strtab:0x201\",\"value\":\"_end\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".strtab:0x206\",\"value\":\"__end__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":8}},{\"address\":\".strtab:0x20e\",\"value\":\"__bss_start\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".strtab:0x21a\",\"value\":\"main\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":5}},{\"address\":\".strtab:0x21f\",\"value\":\"secret_transform\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":17}},{\"address\":\".strtab:0x230\",\"value\":\"__TMC_END__\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":12}},{\"address\":\".strtab:0x23c\",\"value\":\"_ITM_registerTMCloneTable\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":26}},{\"address\":\".strtab:0x256\",\"value\":\"abort@GLIBC_2.4\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":16}},{\"address\":\".strtab:0x266\",\"value\":\"_init\",\"string\":{\"encoding\":\"UTF-8\",\"termination\":\"present_or_not_required\",\"byte_length\":6}}],\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Only Ghidra-defined string Data is observed; packed or undefined string bytes may be absent. Completeness applies to that inventory, and an empty search does not establish that text is absent from the artifact. If an address is known, use read_bytes and xrefs to inspect bytes and references.\",\"Charset is reported, while a non-missing terminator cannot distinguish a present terminator from a fixed or Pascal layout.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_acc51e5cea776f7ff69f2f690fa369e4bff3ed7f6f8f6c754235b15e6fb98ea1",
+    "subject": {
+      "name": "target_c_llvm_armv7l",
+      "digest": {
+        "sha256": "4a08f9e874b23446695be329b13e9cd102d733cefcf9d7fcafd56302afcd6d5e"
+      },
+      "format": "elf",
+      "architecture": "arm",
+      "local_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "elf",
+        "architecture": "arm",
+        "available_architectures": [
+          "arm"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "returning-imports-decoded-return-v2",
+        "process_launch": "inspected-jvm-launch-support-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "list_strings",
+    "parameters": {},
+    "raw_result": [
+      {
+        "address": "0x10154",
+        "value": "/lib/ld-linux-armhf.so.3",
+        "string": {
+          "encoding": "US-ASCII",
+          "termination": "present_or_not_required",
+          "byte_length": 25
+        }
+      },
+      {
+        "address": "0x1027d",
+        "value": "__libc_start_main",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 18
+        }
+      },
+      {
+        "address": "0x1028f",
+        "value": "__cxa_finalize",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 15
+        }
+      },
+      {
+        "address": "0x1029e",
+        "value": "printf",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 7
+        }
+      },
+      {
+        "address": "0x102a5",
+        "value": "strtoul",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": "0x102ad",
+        "value": "abort",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": "0x102b3",
+        "value": "libc.so.6",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": "0x102bd",
+        "value": "GLIBC_2.4",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": "0x102c7",
+        "value": "GLIBC_2.34",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 11
+        }
+      },
+      {
+        "address": "0x102d2",
+        "value": "_ITM_deregisterTMCloneTable",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 28
+        }
+      },
+      {
+        "address": "0x102ee",
+        "value": "__gmon_start__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 15
+        }
+      },
+      {
+        "address": "0x102fd",
+        "value": "_ITM_registerTMCloneTable",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 26
+        }
+      },
+      {
+        "address": "0x10688",
+        "value": "LICENSE_KEY_CHECK_V1",
+        "string": {
+          "encoding": "US-ASCII",
+          "termination": "present_or_not_required",
+          "byte_length": 21
+        }
+      },
+      {
+        "address": "0x1069d",
+        "value": "%s %u %u\n",
+        "string": {
+          "encoding": "US-ASCII",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": ".comment:0x0",
+        "value": "GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 45
+        }
+      },
+      {
+        "address": ".comment:0x2d",
+        "value": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 39
+        }
+      },
+      {
+        "address": ".shstrtab:0x1",
+        "value": ".symtab",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0x9",
+        "value": ".strtab",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0x11",
+        "value": ".shstrtab",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": ".shstrtab:0x1b",
+        "value": ".interp",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0x23",
+        "value": ".note.gnu.build-id",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 19
+        }
+      },
+      {
+        "address": ".shstrtab:0x36",
+        "value": ".note.ABI-tag",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 14
+        }
+      },
+      {
+        "address": ".shstrtab:0x44",
+        "value": ".gnu.hash",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": ".shstrtab:0x4e",
+        "value": ".dynsym",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0x56",
+        "value": ".dynstr",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0x5e",
+        "value": ".gnu.version",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 13
+        }
+      },
+      {
+        "address": ".shstrtab:0x6b",
+        "value": ".gnu.version_r",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 15
+        }
+      },
+      {
+        "address": ".shstrtab:0x7a",
+        "value": ".rel.dyn",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".shstrtab:0x83",
+        "value": ".rel.plt",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".shstrtab:0x8c",
+        "value": ".init",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": ".shstrtab:0x92",
+        "value": ".text",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": ".shstrtab:0x98",
+        "value": ".fini",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": ".shstrtab:0x9e",
+        "value": ".rodata",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0xa6",
+        "value": ".ARM.exidx",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 11
+        }
+      },
+      {
+        "address": ".shstrtab:0xb1",
+        "value": ".eh_frame",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": ".shstrtab:0xbb",
+        "value": ".init_array",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".shstrtab:0xc7",
+        "value": ".fini_array",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".shstrtab:0xd3",
+        "value": ".dynamic",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".shstrtab:0xdc",
+        "value": ".got",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".shstrtab:0xe1",
+        "value": ".data",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": ".shstrtab:0xe7",
+        "value": ".bss",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".shstrtab:0xec",
+        "value": ".comment",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".shstrtab:0xf5",
+        "value": ".ARM.attributes",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 16
+        }
+      },
+      {
+        "address": ".strtab:0x1",
+        "value": "Scrt1.o",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".strtab:0x9",
+        "value": "$d",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 3
+        }
+      },
+      {
+        "address": ".strtab:0xc",
+        "value": "__abi_tag",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": ".strtab:0x16",
+        "value": "$t",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 3
+        }
+      },
+      {
+        "address": ".strtab:0x19",
+        "value": "crti.o",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 7
+        }
+      },
+      {
+        "address": ".strtab:0x20",
+        "value": "$a",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 3
+        }
+      },
+      {
+        "address": ".strtab:0x23",
+        "value": "call_weak_fn",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 13
+        }
+      },
+      {
+        "address": ".strtab:0x30",
+        "value": "crtn.o",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 7
+        }
+      },
+      {
+        "address": ".strtab:0x37",
+        "value": "crtstuff.c",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 11
+        }
+      },
+      {
+        "address": ".strtab:0x42",
+        "value": "all_implied_fbits",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 18
+        }
+      },
+      {
+        "address": ".strtab:0x54",
+        "value": "deregister_tm_clones",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 21
+        }
+      },
+      {
+        "address": ".strtab:0x69",
+        "value": "__do_global_dtors_aux",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 22
+        }
+      },
+      {
+        "address": ".strtab:0x7f",
+        "value": "completed.0",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".strtab:0x8b",
+        "value": "__do_global_dtors_aux_fini_array_entry",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 39
+        }
+      },
+      {
+        "address": ".strtab:0xb2",
+        "value": "frame_dummy",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".strtab:0xbe",
+        "value": "__frame_dummy_init_array_entry",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 31
+        }
+      },
+      {
+        "address": ".strtab:0xdd",
+        "value": "target.c",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".strtab:0xe6",
+        "value": "$a.0",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".strtab:0xeb",
+        "value": "$d.1",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".strtab:0xf0",
+        "value": "__FRAME_END__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 14
+        }
+      },
+      {
+        "address": ".strtab:0xfe",
+        "value": "_DYNAMIC",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".strtab:0x107",
+        "value": "_GLOBAL_OFFSET_TABLE_",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 22
+        }
+      },
+      {
+        "address": ".strtab:0x11d",
+        "value": "__libc_start_main@GLIBC_2.34",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 29
+        }
+      },
+      {
+        "address": ".strtab:0x13a",
+        "value": "__cxa_finalize@GLIBC_2.4",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 25
+        }
+      },
+      {
+        "address": ".strtab:0x153",
+        "value": "_ITM_deregisterTMCloneTable",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 28
+        }
+      },
+      {
+        "address": ".strtab:0x16f",
+        "value": "printf@GLIBC_2.4",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 17
+        }
+      },
+      {
+        "address": ".strtab:0x180",
+        "value": "__bss_start__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 14
+        }
+      },
+      {
+        "address": ".strtab:0x18e",
+        "value": "_edata",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 7
+        }
+      },
+      {
+        "address": ".strtab:0x195",
+        "value": "_fini",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": ".strtab:0x19b",
+        "value": "__bss_end__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".strtab:0x1a7",
+        "value": "__data_start",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 13
+        }
+      },
+      {
+        "address": ".strtab:0x1b4",
+        "value": "__gmon_start__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 15
+        }
+      },
+      {
+        "address": ".strtab:0x1c3",
+        "value": "__dso_handle",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 13
+        }
+      },
+      {
+        "address": ".strtab:0x1d0",
+        "value": "_IO_stdin_used",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 15
+        }
+      },
+      {
+        "address": ".strtab:0x1df",
+        "value": "strtoul@GLIBC_2.4",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 18
+        }
+      },
+      {
+        "address": ".strtab:0x1f1",
+        "value": "simple_checksum",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 16
+        }
+      },
+      {
+        "address": ".strtab:0x201",
+        "value": "_end",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".strtab:0x206",
+        "value": "__end__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".strtab:0x20e",
+        "value": "__bss_start",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".strtab:0x21a",
+        "value": "main",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".strtab:0x21f",
+        "value": "secret_transform",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 17
+        }
+      },
+      {
+        "address": ".strtab:0x230",
+        "value": "__TMC_END__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".strtab:0x23c",
+        "value": "_ITM_registerTMCloneTable",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 26
+        }
+      },
+      {
+        "address": ".strtab:0x256",
+        "value": "abort@GLIBC_2.4",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 16
+        }
+      },
+      {
+        "address": ".strtab:0x266",
+        "value": "_init",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      }
+    ],
+    "normalized_result": [
+      {
+        "address": "0x10154",
+        "value": "/lib/ld-linux-armhf.so.3",
+        "string": {
+          "encoding": "US-ASCII",
+          "termination": "present_or_not_required",
+          "byte_length": 25
+        }
+      },
+      {
+        "address": "0x1027d",
+        "value": "__libc_start_main",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 18
+        }
+      },
+      {
+        "address": "0x1028f",
+        "value": "__cxa_finalize",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 15
+        }
+      },
+      {
+        "address": "0x1029e",
+        "value": "printf",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 7
+        }
+      },
+      {
+        "address": "0x102a5",
+        "value": "strtoul",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": "0x102ad",
+        "value": "abort",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": "0x102b3",
+        "value": "libc.so.6",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": "0x102bd",
+        "value": "GLIBC_2.4",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": "0x102c7",
+        "value": "GLIBC_2.34",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 11
+        }
+      },
+      {
+        "address": "0x102d2",
+        "value": "_ITM_deregisterTMCloneTable",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 28
+        }
+      },
+      {
+        "address": "0x102ee",
+        "value": "__gmon_start__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 15
+        }
+      },
+      {
+        "address": "0x102fd",
+        "value": "_ITM_registerTMCloneTable",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 26
+        }
+      },
+      {
+        "address": "0x10688",
+        "value": "LICENSE_KEY_CHECK_V1",
+        "string": {
+          "encoding": "US-ASCII",
+          "termination": "present_or_not_required",
+          "byte_length": 21
+        }
+      },
+      {
+        "address": "0x1069d",
+        "value": "%s %u %u\n",
+        "string": {
+          "encoding": "US-ASCII",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": ".comment:0x0",
+        "value": "GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 45
+        }
+      },
+      {
+        "address": ".comment:0x2d",
+        "value": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 39
+        }
+      },
+      {
+        "address": ".shstrtab:0x1",
+        "value": ".symtab",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0x9",
+        "value": ".strtab",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0x11",
+        "value": ".shstrtab",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": ".shstrtab:0x1b",
+        "value": ".interp",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0x23",
+        "value": ".note.gnu.build-id",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 19
+        }
+      },
+      {
+        "address": ".shstrtab:0x36",
+        "value": ".note.ABI-tag",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 14
+        }
+      },
+      {
+        "address": ".shstrtab:0x44",
+        "value": ".gnu.hash",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": ".shstrtab:0x4e",
+        "value": ".dynsym",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0x56",
+        "value": ".dynstr",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0x5e",
+        "value": ".gnu.version",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 13
+        }
+      },
+      {
+        "address": ".shstrtab:0x6b",
+        "value": ".gnu.version_r",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 15
+        }
+      },
+      {
+        "address": ".shstrtab:0x7a",
+        "value": ".rel.dyn",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".shstrtab:0x83",
+        "value": ".rel.plt",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".shstrtab:0x8c",
+        "value": ".init",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": ".shstrtab:0x92",
+        "value": ".text",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": ".shstrtab:0x98",
+        "value": ".fini",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": ".shstrtab:0x9e",
+        "value": ".rodata",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".shstrtab:0xa6",
+        "value": ".ARM.exidx",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 11
+        }
+      },
+      {
+        "address": ".shstrtab:0xb1",
+        "value": ".eh_frame",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": ".shstrtab:0xbb",
+        "value": ".init_array",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".shstrtab:0xc7",
+        "value": ".fini_array",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".shstrtab:0xd3",
+        "value": ".dynamic",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".shstrtab:0xdc",
+        "value": ".got",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".shstrtab:0xe1",
+        "value": ".data",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": ".shstrtab:0xe7",
+        "value": ".bss",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".shstrtab:0xec",
+        "value": ".comment",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".shstrtab:0xf5",
+        "value": ".ARM.attributes",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 16
+        }
+      },
+      {
+        "address": ".strtab:0x1",
+        "value": "Scrt1.o",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".strtab:0x9",
+        "value": "$d",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 3
+        }
+      },
+      {
+        "address": ".strtab:0xc",
+        "value": "__abi_tag",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 10
+        }
+      },
+      {
+        "address": ".strtab:0x16",
+        "value": "$t",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 3
+        }
+      },
+      {
+        "address": ".strtab:0x19",
+        "value": "crti.o",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 7
+        }
+      },
+      {
+        "address": ".strtab:0x20",
+        "value": "$a",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 3
+        }
+      },
+      {
+        "address": ".strtab:0x23",
+        "value": "call_weak_fn",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 13
+        }
+      },
+      {
+        "address": ".strtab:0x30",
+        "value": "crtn.o",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 7
+        }
+      },
+      {
+        "address": ".strtab:0x37",
+        "value": "crtstuff.c",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 11
+        }
+      },
+      {
+        "address": ".strtab:0x42",
+        "value": "all_implied_fbits",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 18
+        }
+      },
+      {
+        "address": ".strtab:0x54",
+        "value": "deregister_tm_clones",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 21
+        }
+      },
+      {
+        "address": ".strtab:0x69",
+        "value": "__do_global_dtors_aux",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 22
+        }
+      },
+      {
+        "address": ".strtab:0x7f",
+        "value": "completed.0",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".strtab:0x8b",
+        "value": "__do_global_dtors_aux_fini_array_entry",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 39
+        }
+      },
+      {
+        "address": ".strtab:0xb2",
+        "value": "frame_dummy",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".strtab:0xbe",
+        "value": "__frame_dummy_init_array_entry",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 31
+        }
+      },
+      {
+        "address": ".strtab:0xdd",
+        "value": "target.c",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".strtab:0xe6",
+        "value": "$a.0",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".strtab:0xeb",
+        "value": "$d.1",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".strtab:0xf0",
+        "value": "__FRAME_END__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 14
+        }
+      },
+      {
+        "address": ".strtab:0xfe",
+        "value": "_DYNAMIC",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 9
+        }
+      },
+      {
+        "address": ".strtab:0x107",
+        "value": "_GLOBAL_OFFSET_TABLE_",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 22
+        }
+      },
+      {
+        "address": ".strtab:0x11d",
+        "value": "__libc_start_main@GLIBC_2.34",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 29
+        }
+      },
+      {
+        "address": ".strtab:0x13a",
+        "value": "__cxa_finalize@GLIBC_2.4",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 25
+        }
+      },
+      {
+        "address": ".strtab:0x153",
+        "value": "_ITM_deregisterTMCloneTable",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 28
+        }
+      },
+      {
+        "address": ".strtab:0x16f",
+        "value": "printf@GLIBC_2.4",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 17
+        }
+      },
+      {
+        "address": ".strtab:0x180",
+        "value": "__bss_start__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 14
+        }
+      },
+      {
+        "address": ".strtab:0x18e",
+        "value": "_edata",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 7
+        }
+      },
+      {
+        "address": ".strtab:0x195",
+        "value": "_fini",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      },
+      {
+        "address": ".strtab:0x19b",
+        "value": "__bss_end__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".strtab:0x1a7",
+        "value": "__data_start",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 13
+        }
+      },
+      {
+        "address": ".strtab:0x1b4",
+        "value": "__gmon_start__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 15
+        }
+      },
+      {
+        "address": ".strtab:0x1c3",
+        "value": "__dso_handle",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 13
+        }
+      },
+      {
+        "address": ".strtab:0x1d0",
+        "value": "_IO_stdin_used",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 15
+        }
+      },
+      {
+        "address": ".strtab:0x1df",
+        "value": "strtoul@GLIBC_2.4",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 18
+        }
+      },
+      {
+        "address": ".strtab:0x1f1",
+        "value": "simple_checksum",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 16
+        }
+      },
+      {
+        "address": ".strtab:0x201",
+        "value": "_end",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".strtab:0x206",
+        "value": "__end__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 8
+        }
+      },
+      {
+        "address": ".strtab:0x20e",
+        "value": "__bss_start",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".strtab:0x21a",
+        "value": "main",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 5
+        }
+      },
+      {
+        "address": ".strtab:0x21f",
+        "value": "secret_transform",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 17
+        }
+      },
+      {
+        "address": ".strtab:0x230",
+        "value": "__TMC_END__",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 12
+        }
+      },
+      {
+        "address": ".strtab:0x23c",
+        "value": "_ITM_registerTMCloneTable",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 26
+        }
+      },
+      {
+        "address": ".strtab:0x256",
+        "value": "abort@GLIBC_2.4",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 16
+        }
+      },
+      {
+        "address": ".strtab:0x266",
+        "value": "_init",
+        "string": {
+          "encoding": "UTF-8",
+          "termination": "present_or_not_required",
+          "byte_length": 6
+        }
+      }
+    ],
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Only Ghidra-defined string Data is observed; packed or undefined string bytes may be absent. Completeness applies to that inventory, and an empty search does not establish that text is absent from the artifact. If an address is known, use read_bytes and xrefs to inspect bytes and references.",
+      "Charset is reported, while a non-missing terminator cannot distinguish a present terminator from a fixed or Pascal layout."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}
