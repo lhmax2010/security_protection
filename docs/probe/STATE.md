@@ -107,7 +107,7 @@ npx --prefix .local-tools/rea --no-install rea-agents function "$PWD/docs/probe/
 本轮目标：只读调查 Tizen 开发板 `192.168.108.26` 上20~40份平台ELF的现有加固与平台机制。所有新审计文件只写 `docs/probe/board-survey/`；板上不安装、不编译、不执行选中二进制、不写入任何文件；不取回二进制/固件/源码，仅采集版本、ELF符号/头部、加固表等文本元数据。只用普通 git push 同步。
 
 - 开场已执行 `git pull --ff-only`，已核对上一轮STATE：REA/Ghidra ARM基线完成，Python pyc不支持等限制保留。当前基点48710eb。证据：[会话开始](board-survey/session-start.txt)。
-- [阻塞] 步骤1 SSH连接与板子身份；PM已提供用户名root，实际连接192.168.108.26:22超时（SSH exit255），未进入认证、未执行板上命令。证据：[原始SSH错误](board-survey/board-identity.txt)、[命令及退出状态](board-survey/board-identity.txt.meta.json)。
+- [阻塞] 步骤1 SSH连接与板子身份；PM已提供用户名root，实际连接192.168.108.26:22超时（SSH exit255），未进入认证、未执行板上命令。证据：[原始SSH错误](board-survey/board-identity-ssh-timeout.txt)、[命令及退出状态](board-survey/board-identity-ssh-timeout.txt.meta.json)。
 - [待执行] 步骤2 选择20~40个/usr/bin、/usr/lib样本并说明选择理由。
 - [待执行] 步骤3 每样本只读readelf原输出与加固矩阵。
 - [待执行] 步骤4 属性比例（共享库不误判为可执行PIE，未知项显式保留）。
@@ -120,7 +120,7 @@ board-survey 上一次连接前暂停（历史记录）：当时用户名提示�
 ### board-survey 当前挂账：SSH连接失败，按PM要求停止
 
 - PM已提供SSH账号`root`，本次开场再次`git pull --ff-only`，仓库已是最新。
-- 已执行一次SSH连接：`root@192.168.108.26`，端口22，ConnectTimeout=10、ConnectionAttempts=1；返回255。原始错误为`ssh: connect to host 192.168.108.26 port 22: Connection timed out`。证据：[board-identity.txt](board-survey/board-identity.txt)、[执行元数据](board-survey/board-identity.txt.meta.json)。
+- 已执行一次SSH连接：`root@192.168.108.26`，端口22，ConnectTimeout=10、ConnectionAttempts=1；返回255。原始错误为`ssh: connect to host 192.168.108.26 port 22: Connection timed out`。证据：[board-identity.txt](board-survey/board-identity-ssh-timeout.txt)、[执行元数据](board-survey/board-identity-ssh-timeout.txt.meta.json)。
 - 身份信息尚未取得；Tizen版本、CPU架构、是否LLVM开源板全部未知。密码窗口没有进入认证流程；没有把任何凭据写入脚本或仓库。
 - 按任务原文“如果连不上或登录失败，原样记录错误、在STATE.md挂账、停下等我处理”，停止后续连接/采样/统计。步骤2~6均未执行，样本数为0；不生成假样本表或加固比例，不把网络超时解释成具体板子故障。
 - 本次只新增本机SSH文本错误及执行元数据，均位于`docs/probe/board-survey/`；未执行板上命令，未取回二进制/固件/源码。后续等待PM处理连接并通知继续；再次尝试应保存新证据文件，不覆盖首次错误。
@@ -136,3 +136,6 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [待执行] 新步骤7~11：20~40个样本加固表、比例、动态符号、SMACK/ASLR/根挂载痕迹。
 
 - [完成] 新步骤2：`sdb connect 192.168.108.26` 首次即成功，SDB实际使用默认端口26101；devices为`192.168.108.26:26101 device rpi4`。无需执行失败回退尝试，SSH超时历史不改写。证据：[连接原输出](board-survey/sdb-connect.txt)、[连接状态](board-survey/sdb-connect.txt.meta.json)、[明确目标](board-survey/sdb-target.json)。
+
+- [完成] 新步骤3：sdb root on成功，id确认uid=0；板子为Raspberry Pi4 ModelB Rev1.5、Tizen11.0.0 Unified、armv7l，build_id=tizen-unified-toolchain_20261007.084717_tizen-headed-armv7l；内核6.12.80-arm-rpi4-v7l由clang22.1.8/LLD22.1.8构建。PM称其LLVM开源板；实测硬件/内核LLVM构建信息吻合，尚不能把内核编译器等同全部用户态编译器。证据：[SDB root](board-survey/sdb-root.txt)、[当前身份](board-survey/board-identity.txt)。旧SSH超时证据已归档board-identity-ssh-timeout.txt，未删除。
+- 新挂账：板子PATH中checksec、readelf、llvm-readelf、nm、llvm-nm、file均不可用（command-v返回1）。后续只读检查既有等价工具/路径，不在板上安装工具、不取回二进制。证据：[身份中的工具查询](board-survey/board-identity.txt)。

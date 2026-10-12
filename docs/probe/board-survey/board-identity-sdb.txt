@@ -1,0 +1,73 @@
+
+COMMAND: id
+uid=0(root) gid=0(root) groups=0(root),29(audio),44(video),201(display),1901(log),6505(pulse-access),6506(pulse-rt),6525(usb_device),10001(priv_externalstorage),10013(priv_tee_client),10014(priv_peripheralio),10212(priv_platform),10501(priv_camera),10502(priv_mediastorage),10503(priv_recorder),10704(priv_internet),10705(priv_network_get),10711(priv_tethering_admin),10901(priv_email),10903(priv_message_read),11103(priv_mapservice),11201(priv_appdebugging) context="User::Shell"
+EXIT_CODE: 0
+
+COMMAND: uname -a
+Linux localhost 6.12.80-arm-rpi4-v7l #1 SMP Sat Oct  3 11:31:51 UTC 2026 armv7l GNU/Linux
+EXIT_CODE: 0
+
+COMMAND: uname -m
+armv7l
+EXIT_CODE: 0
+
+COMMAND: cat /etc/tizen-release
+Tizen11.0/Unified 11.0.0 (arm)
+VERSION = 11.0.0
+CODENAME = TELEVEN
+BUILD_ID=tizen-unified-toolchain_20261007.084717_tizen-headed-armv7l
+EXIT_CODE: 0
+
+COMMAND: cat /etc/os-release
+NAME=Tizen
+VERSION="11.0.0 (Tizen11.0/Unified)"
+ID=tizen
+VERSION_ID=11.0.0
+PRETTY_NAME="Tizen 11.0.0 (Tizen11.0/Unified)"
+ANSI_COLOR="0;36"
+CPE_NAME="cpe:/o:tizen:tizen:11.0.0"
+BUILD_ID=tizen-unified-toolchain_20261007.084717_tizen-headed-armv7l
+EXIT_CODE: 0
+
+COMMAND: cat /proc/version
+Linux version 6.12.80-arm-rpi4-v7l (abuild@ip-192-168-56-194) (clang version 22.1.8, LLD 22.1.8) #1 SMP Sat Oct  3 11:31:51 UTC 2026
+EXIT_CODE: 0
+
+COMMAND: tr NUL to newline < /proc/device-tree/model
+Raspberry Pi 4 Model B Rev 1.5
+
+EXIT_CODE: 0
+
+COMMAND: tr NUL to newline < /proc/device-tree/compatible
+raspberrypi,4-model-b
+brcm,bcm2711
+
+EXIT_CODE: 0
+
+EXISTING_TOOL_PATHS
+TOOL_LOOKUP_EXIT_CODE checksec: 1
+TOOL_LOOKUP_EXIT_CODE readelf: 1
+TOOL_LOOKUP_EXIT_CODE llvm-readelf: 1
+TOOL_LOOKUP_EXIT_CODE nm: 1
+TOOL_LOOKUP_EXIT_CODE llvm-nm: 1
+TOOL_LOOKUP_EXIT_CODE file: 1
+/usr/bin/find
+TOOL_LOOKUP_EXIT_CODE find: 0
+/usr/bin/awk
+TOOL_LOOKUP_EXIT_CODE awk: 0
+/usr/bin/sed
+TOOL_LOOKUP_EXIT_CODE sed: 0
+/usr/bin/sort
+TOOL_LOOKUP_EXIT_CODE sort: 0
+/usr/bin/head
+TOOL_LOOKUP_EXIT_CODE head: 0
+/usr/bin/readlink
+TOOL_LOOKUP_EXIT_CODE readlink: 0
+/usr/bin/mount
+TOOL_LOOKUP_EXIT_CODE mount: 0
+/usr/bin/stat
+TOOL_LOOKUP_EXIT_CODE stat: 0
+/usr/bin/rpm
+TOOL_LOOKUP_EXIT_CODE rpm: 0
+
+COMPILER_IDENTIFIER_SCOPE: /proc/version is kernel build provenance only; not proof of userspace compiler or LLVM open-board model.
