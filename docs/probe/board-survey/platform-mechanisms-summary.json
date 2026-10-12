@@ -1,0 +1,24 @@
+{
+  "smackfs_directory_observed": true,
+  "smackfs_mounted": true,
+  "smack_mount": "smackfs on /sys/fs/smackfs type smackfs (rw,nosuid,nodev,noexec,relatime)",
+  "smack_rule_contents_dumped": false,
+  "ASLR_randomize_va_space": 2,
+  "root_device": "/dev/mmcblk0p2",
+  "root_filesystem": "ext4",
+  "root_mount_options": [
+    "ro",
+    "relatime"
+  ],
+  "root_readonly": true,
+  "opt_writable_observed": true,
+  "verity_keyword_observed_in_mounts": false,
+  "dm_block_sysfs_directory_observed": false,
+  "lsm_listing_unavailable": true,
+  "limits": [
+    "SMACK presence/mount/context observed; rules/enforcement exceptions not audited.",
+    "ASLR kernel setting observed; no runtime address sampling.",
+    "No dm/verity trace in this bounded mount/sysfs query does not establish absence of all firmware integrity or verified boot.",
+    "Read-only root and writable /opt are compatible with persisting ConnMan settings in /opt."
+  ]
+}

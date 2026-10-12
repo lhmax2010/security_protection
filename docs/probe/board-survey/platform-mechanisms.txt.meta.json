@@ -1,0 +1,10 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/platform-mechanisms.sh",
+  "script_sha256": "2bf1d85f709169a3fe4d30266ed12ad8e38a0fd32afca916a98963c08ed3c88d",
+  "normalized_source_sha256": "c640cb9775046c6683d5568460b80dbf7949987fc423434e80be38f79211acda",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 0.216,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly_except_explicit_network_persistence": true
+}

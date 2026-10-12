@@ -1,0 +1,102 @@
+
+COMMAND: cat /proc/sys/kernel/randomize_va_space
+2
+
+EXIT_CODE: 0
+
+COMMAND: ls -ld /sys/fs/smackfs
+drwxr-xr-x 2 root root 0 Jan  1  1970 /sys/fs/smackfs
+
+EXIT_CODE: 0
+
+COMMAND: ls -la /sys/fs/smackfs
+total 0
+drwxr-xr-x  2 root root 0 Jan  1  1970 .
+drwxr-xr-x 12 root root 0 Jan  1  1970 ..
+-rw-rw-rw-  1 root root 0 Jan  1  1970 access
+-rw-rw-rw-  1 root root 0 Jan  1  1970 access2
+-rw-r--r--  1 root root 0 Jan  1  1970 ambient
+-rw-r--r--  1 root root 0 Jan  1  1970 change-rule
+-rw-r--r--  1 root root 0 Jan  1  1970 cipso
+-rw-r--r--  1 root root 0 Jan  1  1970 cipso2
+-rw-r--r--  1 root root 0 Jan  1  1970 direct
+-rw-r--r--  1 root root 0 Jan  1  1970 doi
+-rw-r--r--  1 root root 0 Jan  1  1970 ipv6host
+-rw-r--r--  1 root root 0 Jan  1  1970 load
+-rw-rw-rw-  1 root root 0 Jan  1  1970 load-self
+-rw-rw-rw-  1 root root 0 Jan  1  1970 load-self2
+-rw-r--r--  1 root root 0 Jan  1  1970 load2
+-rw-r--r--  1 root root 0 Jan  1  1970 logging
+-rw-r--r--  1 root root 0 Jan  1  1970 mapped
+-rw-r--r--  1 root root 0 Jan  1  1970 netlabel
+-rw-r--r--  1 root root 0 Jan  1  1970 onlycap
+-rw-r--r--  1 root root 0 Jan  1  1970 ptrace
+-rw-rw-rw-  1 root root 0 Jan  1  1970 relabel-self
+-rw-r--r--  1 root root 0 Jan  1  1970 revoke-subject
+-rw-r--r--  1 root root 0 Jan  1  1970 syslog
+
+EXIT_CODE: 0
+
+COMMAND: cat /sys/kernel/security/lsm
+cat: /sys/kernel/security/lsm: No such file or directory
+
+EXIT_CODE: 1
+
+MOUNTS: full mount listing (metadata only; no dmsetup table or filesystem contents)
+
+COMMAND: mount
+devtmpfs on /dev type devtmpfs (rw,nosuid,size=1815944k,nr_inodes=91845,mode=755)
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+/dev/mmcblk0p6 on /usr/lib/modules type ext4 (ro,relatime)
+/dev/mmcblk0p2 on / type ext4 (ro,relatime)
+/dev/mmcblk0p3 on /opt type ext4 (rw,relatime)
+/dev/mmcblk0p10 on /hal type ext4 (ro,relatime)
+overlay on /apps type overlay (ro,relatime,lowerdir=/sysroot/product/apps:/sysroot/apps,redirect_dir=on)
+smackfs on /sys/fs/smackfs type smackfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,noexec)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,mode=755)
+tmpfs on /sys/fs/cgroup type tmpfs (ro,nosuid,nodev,noexec,mode=755)
+cgroup on /sys/fs/cgroup/systemd type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/systemd/systemd-cgroups-agent,name=systemd)
+kdbusfs on /sys/fs/kdbus type kdbusfs (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+cgroup on /sys/fs/cgroup/memory type cgroup (rw,nosuid,nodev,noexec,relatime,memory)
+cgroup on /sys/fs/cgroup/cpuset type cgroup (rw,nosuid,nodev,noexec,relatime,cpuset)
+cgroup on /sys/fs/cgroup/freezer type cgroup (rw,nosuid,nodev,noexec,relatime,freezer)
+cgroup on /sys/fs/cgroup/devices type cgroup (rw,nosuid,nodev,noexec,relatime,devices)
+cgroup on /sys/fs/cgroup/blkio type cgroup (rw,nosuid,nodev,noexec,relatime,blkio)
+cgroup on /sys/fs/cgroup/cpu,cpuacct type cgroup (rw,nosuid,nodev,noexec,relatime,cpu,cpuacct)
+cgroup on /sys/fs/cgroup/net_cls type cgroup (rw,nosuid,nodev,noexec,relatime,net_cls,release_agent=/usr/bin/net-cls-release)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=25,pgrp=1,timeout=0,minproto=5,maxproto=5,direct)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /tmp type tmpfs (rw,nosuid,nodev,noexec)
+/dev/mmcblk0p9 on /mnt/inform type ext4 (rw,relatime)
+tracefs on /sys/kernel/debug/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+/dev/mmcblk0p5 on /opt/usr type f2fs (rw,relatime,lazytime,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,alloc_mode=default,checkpoint_merge,fsync_mode=posix,memory=normal,errors=continue)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+/dev/loop0 on /opt/usr/home/owner/subsession/__templ_acct_fix__ type ext4 (rw,relatime,loop)
+cgroup on /sys/fs/cgroup/watchdog type cgroup (rw,nosuid,nodev,noexec,relatime,release_agent=/usr/bin/resourced-watchdog-handler.sh,name=watchdog)
+/dev/loop1 on /opt/usr/home/owner/subsession/__templ_prof_fix__ type ext4 (rw,relatime,loop)
+tmpfs on /opt/media type tmpfs (rw,relatime)
+tmpfs on /run/user/5001 type tmpfs (rw,nosuid,nodev,noexec,relatime,size=397644k,mode=700,uid=5001,gid=100)
+sdb.default on /dev/usb-funcs/sdb/default type functionfs (rw,relatime)
+mtp.default on /dev/usb-funcs/mtp/default type functionfs (rw,relatime)
+/dev/mmcblk0p5 on /opt/usr/home/owner/media type f2fs (rw,relatime,lazytime,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,alloc_mode=default,checkpoint_merge,fsync_mode=posix,memory=normal,errors=continue)
+
+EXIT_CODE: 0
+
+ROOT_AND_VERITY_MOUNT_METADATA
+
+COMMAND: awk $2=="/" || $0 ~ /verity/ {print} /proc/mounts
+/dev/mmcblk0p2 / ext4 ro,relatime 0 0
+
+EXIT_CODE: 0
+
+DM_NAME_AND_UUID_METADATA_ONLY
+
+DM_DEVICE_DIRECTORY_OBSERVED: no
+
+SMACK_POLICY_CONTENTS_NOT_READ
