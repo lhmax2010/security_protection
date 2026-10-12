@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import json,collections
+r=Path(__file__).resolve().parents[1];rows=json.loads((r/'hardening-matrix.json').read_text())['rows'];total=len(rows);executables=[x for x in rows if x['kind']=='executable'];libs=[x for x in rows if x['kind']=='shared-library']
+stats={}
+for key,value,label,data in [('PIE','Yes','PIE (executables only)',executables),('RELRO','Full','Full RELRO',rows),('NX','Enabled','NX ELF GNU_STACK request',rows),('stripped','Yes(no .symtab)','stripped (.symtab absent)',rows),('FORTIFY','Detected(import)','FORTIFY imported-helper evidence',rows),('canary','Detected(import)','canary imported-helper evidence',rows)]:
+ count=sum(x[key]==value for x in data);stats[label]={'numerator':count,'denominator':len(data),'percent':round(100*count/len(data),2),'distribution':dict(collections.Counter(x[key] for x in data))}
+report={'ELF_samples':total,'executable_samples':len(executables),'shared_library_samples':len(libs),'stats':stats,'RELRO_distribution':dict(collections.Counter(x['RELRO'] for x in rows)),'RUNPATH_present_samples':[x['path'] for x in rows if x['RUNPATH']=='Present'],'RPATH_present_samples':[x['path'] for x in rows if x['RPATH']=='Present'],'method':'All underlying metadata was read on the board by preexisting RPM Lua; aggregation of returned text is local. Not successful readelf/checksec output.','limits':['Targeted representative sample, not random or complete factory population.','DSOs excluded from PIE denominator; ET_DYN DSO is not a PIE executable.','FORTIFY and canary positive rates are import-based evidence, not exact build flags or all-function coverage; provider-only libc counted separately.','NX is requested ELF stack policy; no runtime memory probing was performed.']}
+(r/'hardening-summary.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
+lines=[f'Tizen 11 ARMv7 sample survey: {total} ELF ({len(executables)} executable, {len(libs)} DSO).','Board standard readelf/nm/checksec unavailable; validated existing RPM/Lua metadata decoder used.','Property\tDetected/denominator\tPercent\tDistribution']
+for key,v in stats.items():lines.append(f'{key}\t{v["numerator"]}/{v["denominator"]}\t{v["percent"]:.2f}%\t{json.dumps(v["distribution"],ensure_ascii=False)}')
+lines += ['RELRO all: '+json.dumps(report['RELRO_distribution']),'RUNPATH present: '+', '.join(report['RUNPATH_present_samples']),'RPATH present: '+str(len(report['RPATH_present_samples'])),'','LIMITATIONS: '+json.dumps(report['limits'],ensure_ascii=False)]
+(r/'hardening-summary.txt').write_text('\n'.join(lines)+'\n');print('\n'.join(lines))

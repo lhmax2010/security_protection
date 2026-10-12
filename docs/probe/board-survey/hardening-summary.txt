@@ -1,0 +1,14 @@
+Tizen 11 ARMv7 sample survey: 27 ELF (11 executable, 16 DSO).
+Board standard readelf/nm/checksec unavailable; validated existing RPM/Lua metadata decoder used.
+Property	Detected/denominator	Percent	Distribution
+PIE (executables only)	11/11	100.00%	{"Yes": 11}
+Full RELRO	8/27	29.63%	{"Partial": 18, "Full": 8, "None": 1}
+NX ELF GNU_STACK request	27/27	100.00%	{"Enabled": 27}
+stripped (.symtab absent)	27/27	100.00%	{"Yes(no .symtab)": 27}
+FORTIFY imported-helper evidence	17/27	62.96%	{"Detected(import)": 17, "No dynamic evidence": 9, "Provider-definition-only": 1}
+canary imported-helper evidence	21/27	77.78%	{"Detected(import)": 21, "No dynamic evidence": 5, "Provider-definition-only": 1}
+RELRO all: {"Partial": 18, "Full": 8, "None": 1}
+RUNPATH present: /usr/bin/systemctl, /usr/bin/cynara, /usr/bin/security-manager, /usr/bin/sqlite3, /usr/lib/libsqlite3.so.0, /usr/lib/libcynara-client.so.0, /usr/lib/libcynara-admin.so.0, /usr/lib/libsecurity-manager-client.so.3
+RPATH present: 0
+
+LIMITATIONS: ["Targeted representative sample, not random or complete factory population.", "DSOs excluded from PIE denominator; ET_DYN DSO is not a PIE executable.", "FORTIFY and canary positive rates are import-based evidence, not exact build flags or all-function coverage; provider-only libc counted separately.", "NX is requested ELF stack policy; no runtime memory probing was performed."]
