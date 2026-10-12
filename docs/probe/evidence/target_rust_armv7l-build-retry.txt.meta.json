@@ -1,0 +1,9 @@
+{
+  "argv": [
+    "bash",
+    "docs/probe/scripts/build-one.sh",
+    "rust"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.2
+}

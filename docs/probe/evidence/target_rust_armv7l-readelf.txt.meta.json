@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "arm-linux-gnueabihf-readelf",
+    "-h",
+    "-A",
+    "-Ws",
+    "docs/probe/samples/bin/target_rust_armv7l"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.003
+}

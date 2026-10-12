@@ -42,3 +42,5 @@
 ## 子步骤提交日志
 
 - C GCC/LLVM 两份 ARM32 ELF 已构建；不 strip、-O2，ARMv7 hard-float。证据：evidence/target_c_gcc_armv7l-file.txt、evidence/target_c_llvm_armv7l-file.txt 及各自 build-retry/readelf/nm/strings/checksec；初次 sysroot 链接错误保留在 build.txt，根因证据 evidence/arm-libc-linker-script.txt。
+
+- Rust 1.99.0 armv7-unknown-linux-gnueabihf 构建成功，opt-level=2、strip=none；证据 evidence/target_rust_armv7l-file.txt、build-retry/readelf/nm/strings/checksec。Rust ABI 的校验函数用指针+长度，ASCII 样本算法与 C 一致。
