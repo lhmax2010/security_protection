@@ -114,3 +114,5 @@ npx --prefix .local-tools/rea --no-install rea-agents function "$PWD/docs/probe/
 - [待执行] 步骤5 共享库动态符号暴露。
 - [待执行] 步骤6 SMACK、ASLR、只读根/verity痕迹。
 - 人工前提：SSH用户名尚未提供；“LLVM开源板”必须以实测身份/构建元数据或PM映射确认，不能单凭IP或内核clang字符串作结论。
+
+board-survey 本次连接前暂停：用户名提示已发出但尚未收到答复；未尝试用本机默认账号linhao或root猜测登录，尚无板上身份/加固数据，不将准备脚本记为实测结果。只读身份、readelf采集、文本判定与平台机制脚本已准备并通过语法检查。后续由执行器将脚本直接通过SSH stdin送入`sh -s`，原输出只落本机board-survey；共享库PIE为N/A，helper仅定义不算canary/FORTIFY已启用。需PM输入仅为SSH用户名；凭据走本机密码窗口。
