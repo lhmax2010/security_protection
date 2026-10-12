@@ -1,0 +1,182 @@
+{
+  "checks": [
+    {
+      "check": "STATE evidence links exist",
+      "pass": true,
+      "detail": {
+        "count": 139,
+        "missing": []
+      }
+    },
+    {
+      "check": "manifest bytes and hashes",
+      "pass": true,
+      "detail": {
+        "file_count": 505
+      }
+    },
+    {
+      "check": "target_c_gcc_armv7l identity",
+      "pass": true,
+      "detail": {
+        "name": "target_c_gcc_armv7l",
+        "mode": "native",
+        "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_gcc_armv7l",
+        "sha256": "62b70c64d669b73bdac1bc0c9cc006073f6cf94c6b12a9dfa923ec2e6bb5ac41"
+      }
+    },
+    {
+      "check": "target_c_gcc_armv7l secret_transform actual Ghidra pseudocode",
+      "pass": true,
+      "detail": {
+        "evidence_id": "ev_4a070c2e34959e92ab45651232260ac99732c4cd6de307a2d473089939807b0f"
+      }
+    },
+    {
+      "check": "target_c_gcc_armv7l simple_checksum actual Ghidra pseudocode",
+      "pass": true,
+      "detail": {
+        "evidence_id": "ev_9c30688a151eaf8bcdac67f49d2758903eadb34970cd7324321c6baa44e8b576"
+      }
+    },
+    {
+      "check": "target_c_gcc_armv7l ARM32 unstripped",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_c_gcc_armv7l-file.txt"
+    },
+    {
+      "check": "target_c_gcc_armv7l session closed",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_c_gcc_armv7l/close.json"
+    },
+    {
+      "check": "target_c_llvm_armv7l identity",
+      "pass": true,
+      "detail": {
+        "name": "target_c_llvm_armv7l",
+        "mode": "native",
+        "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l",
+        "sha256": "4a08f9e874b23446695be329b13e9cd102d733cefcf9d7fcafd56302afcd6d5e"
+      }
+    },
+    {
+      "check": "target_c_llvm_armv7l secret_transform actual Ghidra pseudocode",
+      "pass": true,
+      "detail": {
+        "evidence_id": "ev_edbaaa7922f762b74cd80ba7639b64c602a76fee35d1e686e5a1a38c0164f6dd"
+      }
+    },
+    {
+      "check": "target_c_llvm_armv7l simple_checksum actual Ghidra pseudocode",
+      "pass": true,
+      "detail": {
+        "evidence_id": "ev_96288e826d3e6a1d55248c919451d35a4d29945b0cbfacf0da9532644b8dcdb8"
+      }
+    },
+    {
+      "check": "target_c_llvm_armv7l ARM32 unstripped",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_c_llvm_armv7l-file.txt"
+    },
+    {
+      "check": "target_c_llvm_armv7l session closed",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_c_llvm_armv7l/close.json"
+    },
+    {
+      "check": "target_rust_armv7l identity",
+      "pass": true,
+      "detail": {
+        "name": "target_rust_armv7l",
+        "mode": "native",
+        "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_rust_armv7l",
+        "sha256": "4f20d94d9e18bb493d3674b0fbed67e18b7231dfce8251ba8cab3524c28c470f"
+      }
+    },
+    {
+      "check": "target_rust_armv7l secret_transform actual Ghidra pseudocode",
+      "pass": true,
+      "detail": {
+        "evidence_id": "ev_a576cffd7c2e4a4c1c4ad5ef158436a70678cd00fd3b04782747e2c3c2f6d7a7"
+      }
+    },
+    {
+      "check": "target_rust_armv7l simple_checksum actual Ghidra pseudocode",
+      "pass": true,
+      "detail": {
+        "evidence_id": "ev_42bda527e3c375c76146d2729e009f9339b254f352134c276ea3ef1e4d94d223"
+      }
+    },
+    {
+      "check": "target_rust_armv7l ARM32 unstripped",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_rust_armv7l-file.txt"
+    },
+    {
+      "check": "target_rust_armv7l session closed",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_rust_armv7l/close.json"
+    },
+    {
+      "check": "Python rejection preserved",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_py.pyc/open.json"
+    },
+    {
+      "check": "Codex Ghidra scoped readiness",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/doctor-codex.json"
+    },
+    {
+      "check": "unscoped doctor failure preserved",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/doctor.txt"
+    },
+    {
+      "check": "Ghidra official archive hash",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/ghidra-archive-hash.json"
+    },
+    {
+      "check": "JS recovered anchors",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_js.js/recovered/modules/bundle.js"
+    },
+    {
+      "check": "NET REA import inference retained",
+      "pass": true,
+      "detail": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/evidence/target_dotnet.dll/supplemental/imported-reconstruction.decoded.json"
+    },
+    {
+      "check": "Rust REA marker bytes",
+      "pass": true,
+      "detail": {
+        "address": "0x53a38",
+        "requested_bytes": 20,
+        "returned_bytes": 20,
+        "bytes_hex": "4c4943454e53455f4b45595f434845434b5f5631",
+        "complete": true
+      }
+    },
+    {
+      "check": "30 runtime cases agree",
+      "pass": true,
+      "detail": {
+        "tested_inputs": [
+          null,
+          "0",
+          "1",
+          "65535",
+          "4294967295"
+        ],
+        "case_count": 30,
+        "all_six_artifacts_equal_stdout_and_zero_exit": true,
+        "failures": [],
+        "limitation": "This corroborates baseline equivalence for these five inputs only; does not establish all-input equivalence of source or decompiled pseudocode."
+      }
+    }
+  ],
+  "passed": 25,
+  "failed": 0,
+  "scope": "Artifact integrity, references, required measured results and preserved known failures; not all-input proof of reconstructed code."
+}
