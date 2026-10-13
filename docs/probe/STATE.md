@@ -210,3 +210,6 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 
 - 已闭合步骤 8：三列逐函数对比见 `ffmpeg-demo/comparison.md`；两处公开 API 在上游 strip 前后伪代码逐字相同，上游 .text/.rodata/.dynsym/.dynstr 块哈希完全相同，独立审计见 `verification.json` 与脚本 `scripts/audit-results.py`。实际观察支持“所选函数在 strip 后仍易于定位/恢复”，不把它泛化为全库/另一 SR 产品镜像无保护。板子是 PM 明确确认的 RPi4 LLVM 开源开发板。
 - 编译器查询范围补充见 `ffmpeg-demo/board-compiler-search.txt`；有 .gnu_debuglink 但限定 debug 路径检索没有匹配文件，编译器继续未知。ABI、构建组件与发行版 patch 差异、类型误推、无运行等价验证等限制保留；无需要等待 PM 才能完成的步骤。
+
+- 已闭合步骤 9：报告节选选 `av_packet_rescale_ts`，两份完整原样 REA 伪代码置于 `ffmpeg-demo/report/board-av_packet_rescale_ts.c`、`report/upstream-av_packet_rescale_ts.c`；Evidence ID/目标哈希/节选哈希见 `report/provenance.json`，注释与报告图注见 `report/README.md`。逐字段名称是与上游定义对照的解释，不冒称 REA 自动恢复。
+- 本轮完成：步骤1–9均有真实文本/产物证据；索引 `ffmpeg-demo/README.md`，未决限于板库 compiler/发行版 patch 不明、ABI/组件差异、静态类型缺失与无运行验证。已保留真实失败并修复客户端超时。没有 board 安装/编译/写文件/重启操作；公开 ELF 仅上游本机产物，board binary 与缓存保持 gitignored。
