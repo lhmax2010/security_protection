@@ -1,0 +1,14 @@
+{
+  "docs/probe/samples/bin/target_c_llvm_armv7l": {
+    "sha256": "4a08f9e874b23446695be329b13e9cd102d733cefcf9d7fcafd56302afcd6d5e",
+    "bytes": 8024
+  },
+  "docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected": {
+    "sha256": "b7e6e7bcd1faf053beda7f1566d2699ca30c6fcdb875cea7b8486c5744ba9e77",
+    "bytes": 5568
+  },
+  "docs/probe/protection-demo/src/target_protected.c": {
+    "sha256": "d3765770c7dac72b75f7538eacfd9f2469c9de3ad3144fdf09a9c3b5b718cb58",
+    "bytes": 1158
+  }
+}

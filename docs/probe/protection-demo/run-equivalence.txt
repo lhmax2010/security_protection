@@ -1,0 +1,14 @@
+QEMU ARM user-mode; existing baseline reused without rebuild.
+Equality: exit=0, identical stdout, empty stderr in both runs.
+args=[]: MATCH LICENSE_KEY_CHECK_V1 14188 63152
+args=['0']: MATCH LICENSE_KEY_CHECK_V1 40190 63152
+args=['1']: MATCH LICENSE_KEY_CHECK_V1 40157 63152
+args=['1234']: MATCH LICENSE_KEY_CHECK_V1 14188 63152
+args=['65535']: MATCH LICENSE_KEY_CHECK_V1 25327 63152
+args=['65536']: MATCH LICENSE_KEY_CHECK_V1 40190 63152
+args=['4294967295']: MATCH LICENSE_KEY_CHECK_V1 25327 63152
+args=['4294967296']: MATCH LICENSE_KEY_CHECK_V1 25327 63152
+args=['-1']: MATCH LICENSE_KEY_CHECK_V1 25327 63152
+args=['not-a-number']: MATCH LICENSE_KEY_CHECK_V1 40190 63152
+args=['42', 'extra']: MATCH LICENSE_KEY_CHECK_V1 41444 63152
+Coverage: 11 cases including defaults, boundaries, invalid/overflow input, extra args; not exhaustive equivalence proof.

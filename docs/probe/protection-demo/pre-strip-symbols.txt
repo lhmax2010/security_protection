@@ -1,0 +1,131 @@
+$ /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/arm-linux-gnueabihf-readelf -Ws /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected
+
+Symbol table '.dynsym' contains 13 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000460     0 SECTION LOCAL  DEFAULT   11 .init
+     2: 00002000     0 SECTION LOCAL  DEFAULT   22 .data
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __libc_start_main@GLIBC_2.34 (2)
+     4: 00000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.4 (3)
+     5: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTable
+     6: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@GLIBC_2.4 (4)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@GLIBC_2.4 (3)
+     8: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND strtoul@GLIBC_2.4 (3)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND __printf_chk@GLIBC_2.4 (3)
+    11: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@GLIBC_2.4 (3)
+
+Symbol table '.symtab' contains 109 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000154     0 SECTION LOCAL  DEFAULT    1 .interp
+     2: 00000170     0 SECTION LOCAL  DEFAULT    2 .note.gnu.build-id
+     3: 00000194     0 SECTION LOCAL  DEFAULT    3 .note.ABI-tag
+     4: 000001b4     0 SECTION LOCAL  DEFAULT    4 .gnu.hash
+     5: 000001cc     0 SECTION LOCAL  DEFAULT    5 .dynsym
+     6: 0000029c     0 SECTION LOCAL  DEFAULT    6 .dynstr
+     7: 00000374     0 SECTION LOCAL  DEFAULT    7 .gnu.version
+     8: 00000390     0 SECTION LOCAL  DEFAULT    8 .gnu.version_r
+     9: 000003e0     0 SECTION LOCAL  DEFAULT    9 .rel.dyn
+    10: 00000428     0 SECTION LOCAL  DEFAULT   10 .rel.plt
+    11: 00000460     0 SECTION LOCAL  DEFAULT   11 .init
+    12: 0000046c     0 SECTION LOCAL  DEFAULT   12 .plt
+    13: 000004d4     0 SECTION LOCAL  DEFAULT   13 .text
+    14: 000007cc     0 SECTION LOCAL  DEFAULT   14 .fini
+    15: 000007d4     0 SECTION LOCAL  DEFAULT   15 .rodata
+    16: 00000918     0 SECTION LOCAL  DEFAULT   16 .ARM.exidx
+    17: 00000920     0 SECTION LOCAL  DEFAULT   17 .eh_frame
+    18: 00001eb8     0 SECTION LOCAL  DEFAULT   18 .init_array
+    19: 00001ebc     0 SECTION LOCAL  DEFAULT   19 .fini_array
+    20: 00001ec0     0 SECTION LOCAL  DEFAULT   20 .dynamic
+    21: 00001fc0     0 SECTION LOCAL  DEFAULT   21 .got
+    22: 00002000     0 SECTION LOCAL  DEFAULT   22 .data
+    23: 00002008     0 SECTION LOCAL  DEFAULT   23 .bss
+    24: 00000000     0 SECTION LOCAL  DEFAULT   24 .comment
+    25: 00000000     0 SECTION LOCAL  DEFAULT   25 .ARM.attributes
+    26: 00000000     0 FILE    LOCAL  DEFAULT  ABS Scrt1.o
+    27: 00000194     0 NOTYPE  LOCAL  DEFAULT    3 $d
+    28: 00000194    32 OBJECT  LOCAL  DEFAULT    3 __abi_tag
+    29: 000004d4     0 NOTYPE  LOCAL  DEFAULT   13 $t
+    30: 00000500     0 NOTYPE  LOCAL  DEFAULT   13 $d
+    31: 00000918     0 NOTYPE  LOCAL  DEFAULT   16 $d
+    32: 000007d4     0 NOTYPE  LOCAL  DEFAULT   15 $d
+    33: 00002000     0 NOTYPE  LOCAL  DEFAULT   22 $d
+    34: 00000000     0 FILE    LOCAL  DEFAULT  ABS crti.o
+    35: 00000508     0 NOTYPE  LOCAL  DEFAULT   13 $a
+    36: 00000508     0 FUNC    LOCAL  DEFAULT   13 call_weak_fn
+    37: 00000524     0 NOTYPE  LOCAL  DEFAULT   13 $d
+    38: 00000460     0 NOTYPE  LOCAL  DEFAULT   11 $a
+    39: 000007cc     0 NOTYPE  LOCAL  DEFAULT   14 $a
+    40: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtn.o
+    41: 00000468     0 NOTYPE  LOCAL  DEFAULT   11 $a
+    42: 000007d0     0 NOTYPE  LOCAL  DEFAULT   14 $a
+    43: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    44: 000007d8     0 NOTYPE  LOCAL  DEFAULT   15 $d
+    45: 000007d8     0 OBJECT  LOCAL  DEFAULT   15 all_implied_fbits
+    46: 0000052d     0 FUNC    LOCAL  DEFAULT   13 deregister_tm_clones
+    47: 0000052c     0 NOTYPE  LOCAL  DEFAULT   13 $t
+    48: 00000548     0 NOTYPE  LOCAL  DEFAULT   13 $d
+    49: 00000558     0 NOTYPE  LOCAL  DEFAULT   13 $t
+    50: 00000559     0 FUNC    LOCAL  DEFAULT   13 register_tm_clones
+    51: 0000057c     0 NOTYPE  LOCAL  DEFAULT   13 $d
+    52: 00002004     0 NOTYPE  LOCAL  DEFAULT   22 $d
+    53: 0000058c     0 NOTYPE  LOCAL  DEFAULT   13 $t
+    54: 0000058d     0 FUNC    LOCAL  DEFAULT   13 __do_global_dtors_aux
+    55: 000005b8     0 NOTYPE  LOCAL  DEFAULT   13 $d
+    56: 00002008     1 OBJECT  LOCAL  DEFAULT   23 completed.0
+    57: 00001ebc     0 NOTYPE  LOCAL  DEFAULT   19 $d
+    58: 00001ebc     0 OBJECT  LOCAL  DEFAULT   19 __do_global_dtors_aux_fini_array_entry
+    59: 000005cc     0 NOTYPE  LOCAL  DEFAULT   13 $t
+    60: 000005cd     0 FUNC    LOCAL  DEFAULT   13 frame_dummy
+    61: 00001eb8     0 NOTYPE  LOCAL  DEFAULT   18 $d
+    62: 00001eb8     0 OBJECT  LOCAL  DEFAULT   18 __frame_dummy_init_array_entry
+    63: 00002008     0 NOTYPE  LOCAL  DEFAULT   23 $d
+    64: 00000000     0 FILE    LOCAL  DEFAULT  ABS target_protected.c
+    65: 000005d0    24 FUNC    LOCAL  DEFAULT   13 secret_transform
+    66: 000005d0     0 NOTYPE  LOCAL  DEFAULT   13 $a.0
+    67: 000005e8    60 FUNC    LOCAL  DEFAULT   13 simple_checksum
+    68: 000007bc     0 NOTYPE  LOCAL  DEFAULT   13 $d.1
+    69: 00000868    20 OBJECT  LOCAL  DEFAULT   15 main.encoded_marker
+    70: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    71: 00000888     0 NOTYPE  LOCAL  DEFAULT   15 $d
+    72: 00000888     0 OBJECT  LOCAL  DEFAULT   15 all_implied_fbits
+    73: 00000920     0 NOTYPE  LOCAL  DEFAULT   17 $d
+    74: 00000920     0 OBJECT  LOCAL  DEFAULT   17 __FRAME_END__
+    75: 00000000     0 FILE    LOCAL  DEFAULT  ABS 
+    76: 00001ec0     0 OBJECT  LOCAL  DEFAULT  ABS _DYNAMIC
+    77: 00001fc0     0 OBJECT  LOCAL  DEFAULT  ABS _GLOBAL_OFFSET_TABLE_
+    78: 00000868     0 NOTYPE  LOCAL  DEFAULT   15 $d
+    79: 0000087c     0 NOTYPE  LOCAL  DEFAULT   15 $d
+    80: 0000046c     0 NOTYPE  LOCAL  DEFAULT   12 $a
+    81: 0000047c     0 NOTYPE  LOCAL  DEFAULT   12 $d
+    82: 00000480     0 NOTYPE  LOCAL  DEFAULT   12 $a
+    83: 00000000     0 FUNC    GLOBAL DEFAULT  UND __libc_start_main@GLIBC_2.34
+    84: 00000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.4
+    85: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTable
+    86: 00002000     0 NOTYPE  WEAK   DEFAULT   22 data_start
+    87: 00002008     0 NOTYPE  GLOBAL DEFAULT   23 __bss_start__
+    88: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@GLIBC_2.4
+    89: 0000200c     0 NOTYPE  GLOBAL DEFAULT   23 _bss_end__
+    90: 00002008     0 NOTYPE  GLOBAL DEFAULT   22 _edata
+    91: 000007cc     0 FUNC    GLOBAL HIDDEN    14 _fini
+    92: 0000200c     0 NOTYPE  GLOBAL DEFAULT   23 __bss_end__
+    93: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@GLIBC_2.4
+    94: 00002000     0 NOTYPE  GLOBAL DEFAULT   22 __data_start
+    95: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+    96: 00002004     0 OBJECT  GLOBAL HIDDEN    22 __dso_handle
+    97: 000007d4     4 OBJECT  GLOBAL DEFAULT   15 _IO_stdin_used
+    98: 00000000     0 FUNC    GLOBAL DEFAULT  UND strtoul@GLIBC_2.4
+    99: 0000200c     0 NOTYPE  GLOBAL DEFAULT   23 _end
+   100: 000004d5     0 FUNC    GLOBAL DEFAULT   13 _start
+   101: 00000000     0 FUNC    GLOBAL DEFAULT  UND __printf_chk@GLIBC_2.4
+   102: 0000200c     0 NOTYPE  GLOBAL DEFAULT   23 __end__
+   103: 00002008     0 NOTYPE  GLOBAL DEFAULT   23 __bss_start
+   104: 00000624   424 FUNC    GLOBAL HIDDEN    13 main
+   105: 00002008     0 OBJECT  GLOBAL HIDDEN    22 __TMC_END__
+   106: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+   107: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@GLIBC_2.4
+   108: 00000460     0 FUNC    GLOBAL HIDDEN    11 _init
+
+exit=0

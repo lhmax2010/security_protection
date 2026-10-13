@@ -1,0 +1,199 @@
+[
+  {
+    "args": [],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 14188 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 14188 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  },
+  {
+    "args": [
+      "0"
+    ],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l 0",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40190 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected 0",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40190 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  },
+  {
+    "args": [
+      "1"
+    ],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l 1",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40157 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected 1",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40157 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  },
+  {
+    "args": [
+      "1234"
+    ],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l 1234",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 14188 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected 1234",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 14188 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  },
+  {
+    "args": [
+      "65535"
+    ],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l 65535",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected 65535",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  },
+  {
+    "args": [
+      "65536"
+    ],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l 65536",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40190 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected 65536",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40190 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  },
+  {
+    "args": [
+      "4294967295"
+    ],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l 4294967295",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected 4294967295",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  },
+  {
+    "args": [
+      "4294967296"
+    ],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l 4294967296",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected 4294967296",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  },
+  {
+    "args": [
+      "-1"
+    ],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l -1",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected -1",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 25327 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  },
+  {
+    "args": [
+      "not-a-number"
+    ],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l not-a-number",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40190 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected not-a-number",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 40190 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  },
+  {
+    "args": [
+      "42",
+      "extra"
+    ],
+    "baseline": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/bin/target_c_llvm_armv7l 42 extra",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 41444 63152\n",
+      "stderr": ""
+    },
+    "protected": {
+      "command": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/qemu-arm -L /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected 42 extra",
+      "exit": 0,
+      "stdout": "LICENSE_KEY_CHECK_V1 41444 63152\n",
+      "stderr": ""
+    },
+    "equal": true
+  }
+]

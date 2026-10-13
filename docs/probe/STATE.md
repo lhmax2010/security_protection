@@ -253,3 +253,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - 未决：保护flag接受情况、QEMU等价、REA定位/明文/算法、实际ELF画像待验证。常见混淆器命令未发现，仅已有普通Clang；后续检查既有能力，不现编或手搓混淆。
 
 - [完成步骤1] protection-demo/src/target_protected.c 复用原算法与校验，辅助函数static、marker按0xa7编码并在局部缓冲区解码；volatile读防优化折回静态明文，运行等价待步骤2实测。
+
+- [完成步骤2] protection-demo：全部指定flag被Clang18接受（exit0无警告），另显式-fPIE；--strip-all后玩具ELF5568字节，QEMU11/11输入stdout/exit完全一致、stderr为空，二进制无marker明文字节。完整命令/build-log/run-equivalence与哈希已保存。pre-strip-symbols/function-addresses仅作为下一步地址定位真值，不能冒充盲逆向。

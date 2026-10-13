@@ -1,0 +1,4 @@
+$ file /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected
+/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected: ELF 32-bit LSB pie executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-armhf.so.3, BuildID[sha1]=ed58c6e4a6ce04e343098e0fd397df4f4f8e3596, for GNU/Linux 3.2.0, stripped
+
+exit=0
