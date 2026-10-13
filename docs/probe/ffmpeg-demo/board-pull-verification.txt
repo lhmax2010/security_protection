@@ -1,0 +1,4 @@
+SDB pull successful; target remains local and gitignored.
+Size: 3062768
+SHA256: 9c72c8cc96dbfd101a03414ff772fe1c6f2f41b4014234869de1be03d6ea5f56
+Board sha256sum matches the local bytes (see board-target-info.txt).

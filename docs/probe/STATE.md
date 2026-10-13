@@ -194,3 +194,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 
 - 已闭合步骤 3：选 libavcodec 62.11.100（FFmpeg 8.0.1，约 3 MB），见 `ffmpeg-demo/board-target-info.txt`。板上 RPM Lua ELF 实测：RELRO None、NX Enabled、无 .symtab、canary/FORTIFY 有导入证据、RPATH/RUNPATH 无、DSO 的 PIE 不适用；定义动态符号 145（排除 ABS），144 函数。原始解码见 `ffmpeg-demo/board-target-elf-metadata.txt`，汇总见 `board-target-hardening.txt`。
 - 挂账：用户态库编译器无法确认（.comment/DWARF producer 均缺失；真实 readelf 错误见 `ffmpeg-demo/board-target-local-readelf.txt`）；按授权上游用 GCC 回退，不能用内核 LLVM 版本替代库编译器证据。板上无 readelf/nm/checksec，继续使用上一轮已验证 RPM Lua 元数据读取方式。
+
+- 已闭合步骤 4：SDB 只读抽取到 `docs/probe/ffmpeg-demo/private/board-libavcodec.so`，不提交本体；哈希核对见 `ffmpeg-demo/board-pull-verification.txt`，忽略规则见该目录 `.gitignore`。
