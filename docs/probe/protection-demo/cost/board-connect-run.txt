@@ -1,0 +1,1 @@
+Verified root connection: 192.168.108.26:26101 Raspberry Pi4 / ARMv7 / Tizen; see board-identity.txt.

@@ -1,0 +1,35 @@
+$ sdb -s 192.168.108.26:26101 shell 'sh -c '"'"'id; uname -a; cat /etc/tizen-release; cat /proc/version; tr "\000" "\n" < /proc/device-tree/model; cat /proc/cpuinfo | head -n 18; df -k /opt; cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor; command -v date; date +%s.%N; command -v sha256sum; command -v timeout'"'"''
+uid=0(root) gid=0(root) groups=0(root),29(audio),44(video),201(display),1901(log),6505(pulse-access),6506(pulse-rt),6525(usb_device),10001(priv_externalstorage),10013(priv_tee_client),10014(priv_peripheralio),10212(priv_platform),10501(priv_camera),10502(priv_mediastorage),10503(priv_recorder),10704(priv_internet),10705(priv_network_get),10711(priv_tethering_admin),10901(priv_email),10903(priv_message_read),11103(priv_mapservice),11201(priv_appdebugging) context="User::Shell"
+Linux localhost 6.12.80-arm-rpi4-v7l #1 SMP Sat Oct  3 11:31:51 UTC 2026 armv7l GNU/Linux
+Tizen11.0/Unified 11.0.0 (arm)
+VERSION = 11.0.0
+CODENAME = TELEVEN
+BUILD_ID=tizen-unified-toolchain_20261007.084717_tizen-headed-armv7l
+Linux version 6.12.80-arm-rpi4-v7l (abuild@ip-192-168-56-194) (clang version 22.1.8, LLD 22.1.8) #1 SMP Sat Oct  3 11:31:51 UTC 2026
+Raspberry Pi 4 Model B Rev 1.5
+processor	: 0
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 270.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd08
+CPU revision	: 3
+
+processor	: 1
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 270.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xd08
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/mmcblk0p3         1335696     41016   1264576   4% /opt
+schedutil
+/usr/bin/date
+1791900624.974091355
+/usr/bin/sha256sum
+
+exit=0

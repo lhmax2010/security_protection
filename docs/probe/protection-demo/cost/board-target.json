@@ -1,0 +1,6 @@
+{
+  "serial": "192.168.108.26:26101",
+  "verified_open_board": "Raspberry Pi 4 Model B",
+  "architecture": "armv7l",
+  "target_directory": "/opt/protection-cost-20261013"
+}
