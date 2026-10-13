@@ -235,3 +235,6 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - 已闭合步骤3：GNU readelf 与 Lua16样本解码/导出计数交叉复验完成，矩阵 `gcc-vs-llvm/gcc-hardening-matrix.txt/json`。参考libavcodec亦完成REA6.4.0+Ghidra12.1.4分析，见 `rea/upstream/`（此目录指参考GCC发行库，不是上轮裸编译）；只取overview及两公开API的info/pseudocode/assembly/callers/callees，不调用或公开完整函数/字符串清单。公开所有新raw不含完整动态符号清单，完整原输出留private。
 - 关键GCC加固证据：参考FFmpeg configure明文含 --toolchain=hardened（`raw/libavcodec-config-string.txt`），匹配producer有 -fstack-protector-all/strong；两选API的REA伪代码均有guard/fail检查。历史板库这两同名函数未见guard/fail，原库整体仍有canary导入，不能说板侧完全没栈保护。双方算法主要逻辑均可读，保护攻击面没有自动遮蔽算法。
 - 期间聊天响应反复断流：本机Codex日志已定位为HTTP200后模型采样流处理失败并自动重试，非shell命令timeout；RPM/ELF/REA结果保存完整。本机私有诊断留private，request ID和应用日志不上传。尚不能确定服务端内部根因；不改代理/凭据/模型配置、不冒称已修复。
+
+- 已闭合步骤4：`gcc-vs-llvm/compare.md` 分开攻击面加固与反逆向，并同时列同名16配对、历史27、历史+codec28；数据/分母 `comparison-data.json`，板侧raw哈希与复用来源 `raw/llvm-evidence-reuse.json`。同名16两侧NX/strip16/16、PIE6/6、FORTIFY12/16、canary13/16相同；Full RELRO参考4/16 vs板3/16，存在5个双向RELRO差异，不称“所有GCC强于LLVM”。15/16导出总数相同，pkgmgr-info存在不同。
+- 反逆向观察：两侧codec均144公开函数，REA两API主逻辑均可读；GCC更强的RELRO/SSP不掩盖算法。GCC7样本CU明确hidden旗标，但pkgmgr仍千级C++名；判内外接口需API白名单，不能按条目多直接认“内部泄漏”。GCC.rodata明文计数真实存在，LLVM大多数旧样本无同口径字符串计数且禁止重测，已记未知不伪造。

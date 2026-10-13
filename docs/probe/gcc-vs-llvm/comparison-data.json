@@ -1,0 +1,783 @@
+{
+  "GCC16": {
+    "Full RELRO": {
+      "numerator": 4,
+      "denominator": 16,
+      "percent": 25.0,
+      "distribution": {
+        "Full": 4,
+        "Partial": 9,
+        "None": 3
+      }
+    },
+    "NX": {
+      "numerator": 16,
+      "denominator": 16,
+      "percent": 100.0,
+      "distribution": {
+        "Enabled": 16
+      }
+    },
+    "stripped": {
+      "numerator": 16,
+      "denominator": 16,
+      "percent": 100.0,
+      "distribution": {
+        "Yes(no .symtab)": 16
+      }
+    },
+    "FORTIFY import": {
+      "numerator": 12,
+      "denominator": 16,
+      "percent": 75.0,
+      "distribution": {
+        "Detected(import)": 12,
+        "Provider-definition-only": 1,
+        "No dynamic evidence": 3
+      }
+    },
+    "canary / stack-protector import": {
+      "numerator": 13,
+      "denominator": 16,
+      "percent": 81.25,
+      "distribution": {
+        "Detected(import)": 13,
+        "Provider-definition-only": 1,
+        "No dynamic evidence": 2
+      }
+    },
+    "PIE executable": {
+      "numerator": 6,
+      "denominator": 6,
+      "percent": 100.0,
+      "distribution": {
+        "Yes": 6
+      }
+    }
+  },
+  "LLVM_board_27_historical": {
+    "Full RELRO": {
+      "numerator": 8,
+      "denominator": 27,
+      "percent": 29.63,
+      "distribution": {
+        "Partial": 18,
+        "Full": 8,
+        "None": 1
+      }
+    },
+    "NX": {
+      "numerator": 27,
+      "denominator": 27,
+      "percent": 100.0,
+      "distribution": {
+        "Enabled": 27
+      }
+    },
+    "stripped": {
+      "numerator": 27,
+      "denominator": 27,
+      "percent": 100.0,
+      "distribution": {
+        "Yes(no .symtab)": 27
+      }
+    },
+    "FORTIFY import": {
+      "numerator": 17,
+      "denominator": 27,
+      "percent": 62.96,
+      "distribution": {
+        "Detected(import)": 17,
+        "No dynamic evidence": 9,
+        "Provider-definition-only": 1
+      }
+    },
+    "canary / stack-protector import": {
+      "numerator": 21,
+      "denominator": 27,
+      "percent": 77.78,
+      "distribution": {
+        "Detected(import)": 21,
+        "No dynamic evidence": 5,
+        "Provider-definition-only": 1
+      }
+    },
+    "PIE executable": {
+      "numerator": 11,
+      "denominator": 11,
+      "percent": 100.0,
+      "distribution": {
+        "Yes": 11
+      }
+    }
+  },
+  "LLVM_board_28_with_codec": {
+    "Full RELRO": {
+      "numerator": 8,
+      "denominator": 28,
+      "percent": 28.57,
+      "distribution": {
+        "Partial": 18,
+        "Full": 8,
+        "None": 2
+      }
+    },
+    "NX": {
+      "numerator": 28,
+      "denominator": 28,
+      "percent": 100.0,
+      "distribution": {
+        "Enabled": 28
+      }
+    },
+    "stripped": {
+      "numerator": 28,
+      "denominator": 28,
+      "percent": 100.0,
+      "distribution": {
+        "Yes(no .symtab)": 28
+      }
+    },
+    "FORTIFY import": {
+      "numerator": 18,
+      "denominator": 28,
+      "percent": 64.29,
+      "distribution": {
+        "Detected(import)": 18,
+        "No dynamic evidence": 9,
+        "Provider-definition-only": 1
+      }
+    },
+    "canary / stack-protector import": {
+      "numerator": 22,
+      "denominator": 28,
+      "percent": 78.57,
+      "distribution": {
+        "Detected(import)": 22,
+        "No dynamic evidence": 5,
+        "Provider-definition-only": 1
+      }
+    },
+    "PIE executable": {
+      "numerator": 11,
+      "denominator": 11,
+      "percent": 100.0,
+      "distribution": {
+        "Yes": 11
+      }
+    }
+  },
+  "LLVM_board_matched16": {
+    "Full RELRO": {
+      "numerator": 3,
+      "denominator": 16,
+      "percent": 18.75,
+      "distribution": {
+        "None": 2,
+        "Full": 3,
+        "Partial": 11
+      }
+    },
+    "NX": {
+      "numerator": 16,
+      "denominator": 16,
+      "percent": 100.0,
+      "distribution": {
+        "Enabled": 16
+      }
+    },
+    "stripped": {
+      "numerator": 16,
+      "denominator": 16,
+      "percent": 100.0,
+      "distribution": {
+        "Yes(no .symtab)": 16
+      }
+    },
+    "FORTIFY import": {
+      "numerator": 12,
+      "denominator": 16,
+      "percent": 75.0,
+      "distribution": {
+        "Detected(import)": 12,
+        "Provider-definition-only": 1,
+        "No dynamic evidence": 3
+      }
+    },
+    "canary / stack-protector import": {
+      "numerator": 13,
+      "denominator": 16,
+      "percent": 81.25,
+      "distribution": {
+        "Detected(import)": 13,
+        "Provider-definition-only": 1,
+        "No dynamic evidence": 2
+      }
+    },
+    "PIE executable": {
+      "numerator": 6,
+      "denominator": 6,
+      "percent": 100.0,
+      "distribution": {
+        "Yes": 6
+      }
+    }
+  },
+  "matched_pairs": [
+    {
+      "id": "libavcodec",
+      "GCC": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "145",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 5642,
+        "raw_evidence": "raw/libavcodec-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fstack-protector-all",
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": []
+      },
+      "LLVM_board": {
+        "RELRO": "None",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "145",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "ffmpeg-demo/board-target-elf-metadata.txt",
+        "source_sha256": "8fb68e37fe4e0df2ebbf930f80cf711344caa9bc8d9736f2cbfbb9e8aa7f06d5"
+      }
+    },
+    {
+      "id": "libc_so_6",
+      "GCC": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Provider-definition-only",
+        "FORTIFY": "Provider-definition-only",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "3149",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 1609,
+        "raw_evidence": "raw/libc_so_6-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fno-stack-protector"
+        ],
+        "producer_visibility_flags": []
+      },
+      "LLVM_board": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Provider-definition-only",
+        "FORTIFY": "Provider-definition-only",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "3149",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/libc_so_6.txt",
+        "source_sha256": "f1c47bd33478d2763f856603e916577fa00127e5ea4be6ce48805513c0d9405f"
+      }
+    },
+    {
+      "id": "libstdc++_so_6",
+      "GCC": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "No dynamic evidence",
+        "FORTIFY": "No dynamic evidence",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "5898",
+        "export_Cpp_mangled": 5816,
+        "rodata_ascii_min8_runs": 4928,
+        "raw_evidence": "raw/libstdc++_so_6-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [],
+        "producer_visibility_flags": []
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "No dynamic evidence",
+        "FORTIFY": "No dynamic evidence",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "5898",
+        "export_Cpp_mangled": 5816,
+        "raw_evidence_source": "board-survey/raw/libstdc++_so_6.txt",
+        "source_sha256": "085fb4dbc360aaaca81ca34785a63a61a6a5a1c452e65845af99203bb7d9cb9f"
+      }
+    },
+    {
+      "id": "libcrypto_so_3",
+      "GCC": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "5790",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 7824,
+        "raw_evidence": "raw/libcrypto_so_3-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": []
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "5790",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/libcrypto_so_3.txt",
+        "source_sha256": "5fa4fe2d7b0cd5bd5cb60cb44c205475237031c74faded6c50dbfd53156adc17"
+      }
+    },
+    {
+      "id": "libssl_so_3",
+      "GCC": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "599",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 1616,
+        "raw_evidence": "raw/libssl_so_3-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": []
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "599",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/libssl_so_3.txt",
+        "source_sha256": "a516e2e5cd3ec0b3244129091b6e032eb71943696d74df6420586001df5c8df9"
+      }
+    },
+    {
+      "id": "dbus_daemon",
+      "GCC": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "0",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 538,
+        "raw_evidence": "raw/dbus_daemon-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fno-stack-protector",
+          "-fstack-protector",
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": [
+          "-fvisibility=hidden"
+        ]
+      },
+      "LLVM_board": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "0",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/dbus_daemon.txt",
+        "source_sha256": "fe4e1cbbeeaf531da90b78b9b3905af17491bc6b2727d624231ba4a75b7e27dc"
+      }
+    },
+    {
+      "id": "libdbus_1_so_3",
+      "GCC": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "562",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 689,
+        "raw_evidence": "raw/libdbus_1_so_3-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fstack-protector",
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": [
+          "-fvisibility=hidden"
+        ]
+      },
+      "LLVM_board": {
+        "RELRO": "None",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "562",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/libdbus_1_so_3.txt",
+        "source_sha256": "30cc4ad1f7d6c45471db34f436cf757f0aeecd43e23cdbbef9eda69492a44199"
+      }
+    },
+    {
+      "id": "libglib_2_0_so_0",
+      "GCC": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "1879",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 3079,
+        "raw_evidence": "raw/libglib_2_0_so_0-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": [
+          "-fvisibility=hidden"
+        ]
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "1879",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/libglib_2_0_so_0.txt",
+        "source_sha256": "304473c3b987b521fc099c7189c384aeaf363dc652fd9245491e0eb4c3aebd53"
+      }
+    },
+    {
+      "id": "sqlite3",
+      "GCC": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "0",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 2996,
+        "raw_evidence": "raw/sqlite3-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fno-stack-protector",
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": []
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "0",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/sqlite3.txt",
+        "source_sha256": "a2f9179871f7a8410e4ff9800ec6ec6fb22be16f181f4e1b5be74b4252064c8f"
+      }
+    },
+    {
+      "id": "libsqlite3_so_0",
+      "GCC": {
+        "RELRO": "None",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "341",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 1273,
+        "raw_evidence": "raw/libsqlite3_so_0-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": []
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "341",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/libsqlite3_so_0.txt",
+        "source_sha256": "25be28a46f836691dcdc7e06304ef5ffb090668da097a1f64a356ea2441aa667"
+      }
+    },
+    {
+      "id": "bash",
+      "GCC": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "11",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 1620,
+        "raw_evidence": "raw/bash-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fno-stack-protector",
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": [
+          "-fvisibility=hidden"
+        ]
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "11",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/bash.txt",
+        "source_sha256": "b2db6d755047441384b26a1720419dff0623f14f22fd88bd31d7b8f9af62f83f"
+      }
+    },
+    {
+      "id": "systemctl",
+      "GCC": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "0",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 1069,
+        "raw_evidence": "raw/systemctl-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fno-stack-protector",
+          "-fstack-protector",
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": [
+          "-fvisibility=hidden"
+        ]
+      },
+      "LLVM_board": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "0",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/systemctl.txt",
+        "source_sha256": "d8d422632bd192edbef563e0c760025f286de462c0e19a390ce5f17c03b7987e"
+      }
+    },
+    {
+      "id": "rpm",
+      "GCC": {
+        "RELRO": "None",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "No dynamic evidence",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "0",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 48,
+        "raw_evidence": "raw/rpm-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fno-stack-protector"
+        ],
+        "producer_visibility_flags": []
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "No dynamic evidence",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "0",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/rpm.txt",
+        "source_sha256": "c9562b17526ff13f5ea0025d39509625c93ef5866050e42520935282aba4648f"
+      }
+    },
+    {
+      "id": "find",
+      "GCC": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "5",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 373,
+        "raw_evidence": "raw/find-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fno-stack-protector",
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": []
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "5",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/find.txt",
+        "source_sha256": "05daad931c1e6a82b6823928af6baa2bb33c6e44b6807dc88fedcb244f0890ce"
+      }
+    },
+    {
+      "id": "libdlog_so_0",
+      "GCC": {
+        "RELRO": "None",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "No dynamic evidence",
+        "FORTIFY": "No dynamic evidence",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "11",
+        "export_Cpp_mangled": 0,
+        "rodata_ascii_min8_runs": 216,
+        "raw_evidence": "raw/libdlog_so_0-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [],
+        "producer_visibility_flags": [
+          "-fvisibility=hidden"
+        ]
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "No dynamic evidence",
+        "FORTIFY": "No dynamic evidence",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "11",
+        "export_Cpp_mangled": 0,
+        "raw_evidence_source": "board-survey/raw/libdlog_so_0.txt",
+        "source_sha256": "5f102be25c9160283f12c5748b961f9e47e3aa2812f1ef857beced5639440652"
+      }
+    },
+    {
+      "id": "libpkgmgr_info_so_0",
+      "GCC": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "1371",
+        "export_Cpp_mangled": 1073,
+        "rodata_ascii_min8_runs": 859,
+        "raw_evidence": "raw/libpkgmgr_info_so_0-elf.txt",
+        "compiler": "GCC",
+        "compiler_version": "14.2.0",
+        "producer_stack_protector_flags": [
+          "-fstack-protector-strong"
+        ],
+        "producer_visibility_flags": [
+          "-fvisibility=hidden"
+        ]
+      },
+      "LLVM_board": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "N/A(DSO)",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "dynamic_export_non_ABS_count": "1456",
+        "export_Cpp_mangled": 1158,
+        "raw_evidence_source": "board-survey/raw/libpkgmgr_info_so_0.txt",
+        "source_sha256": "e4ae88dd03fc73895aabd5c577a5b5737be1f250bc66914f6dc6ad8fd4032b7c"
+      }
+    }
+  ],
+  "cohort_limits": [
+    "Non-random, targeted samples; package versions/releases/config differ",
+    "Reference GCC16 confirmed from matching debug; LLVM board userland compilers unconfirmed, no new board commands",
+    "DSOs excluded from PIE denominator",
+    "canary and stack protector share one import-evidence axis",
+    "provider-only libc excluded from positive FORTIFY/canary numerators",
+    "historical board .rodata min8 count unavailable; never invent same-metric counts"
+  ]
+}

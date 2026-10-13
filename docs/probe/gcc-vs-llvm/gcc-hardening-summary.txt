@@ -1,0 +1,7 @@
+GCC verified reference sample: 16 ELF (6 executable, 10 DSO).
+Full RELRO: 4/16 = 25.0%; {'Full': 4, 'Partial': 9, 'None': 3}
+NX: 16/16 = 100.0%; {'Enabled': 16}
+stripped: 16/16 = 100.0%; {'Yes(no .symtab)': 16}
+FORTIFY import: 12/16 = 75.0%; {'Detected(import)': 12, 'Provider-definition-only': 1, 'No dynamic evidence': 3}
+canary / stack-protector import: 13/16 = 81.25%; {'Detected(import)': 13, 'Provider-definition-only': 1, 'No dynamic evidence': 2}
+PIE executable: 6/6 = 100.0%; {'Yes': 6}
