@@ -207,3 +207,6 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 
 - 已闭合步骤 7：最终明确关闭默认加固的两份上游产物已各完成 REA+Ghidra 查询，三个同名 API 及唯一音频助手的 info/pseudocode/assembly/callees/callers 全部真实成功；见 `ffmpeg-demo/upstream/`、`ffmpeg-demo/upstream-stripped/`。未 strip 库内部助手名字保留，strip 后为 FUN 地址；两个公开 API 的伪代码逐字相同（待步骤8独立核对），三组均没有自动恢复结构体字段名。
 - 新样本统计：未 strip 本地非 thunk 函数389/非 FUN标签389；strip 后305/143；这是 Ghidra 命名标签代理和识别边界的变化，不是完整函数恢复率。真实 Evidence 见各目录 `procedures.decoded.json`、`symbol-string-statistics.json`；字符串只公开标注为投影的白名单样本，完整原始记录本地保留。
+
+- 已闭合步骤 8：三列逐函数对比见 `ffmpeg-demo/comparison.md`；两处公开 API 在上游 strip 前后伪代码逐字相同，上游 .text/.rodata/.dynsym/.dynstr 块哈希完全相同，独立审计见 `verification.json` 与脚本 `scripts/audit-results.py`。实际观察支持“所选函数在 strip 后仍易于定位/恢复”，不把它泛化为全库/另一 SR 产品镜像无保护。板子是 PM 明确确认的 RPi4 LLVM 开源开发板。
+- 编译器查询范围补充见 `ffmpeg-demo/board-compiler-search.txt`；有 .gnu_debuglink 但限定 debug 路径检索没有匹配文件，编译器继续未知。ABI、构建组件与发行版 patch 差异、类型误推、无运行等价验证等限制保留；无需要等待 PM 才能完成的步骤。

@@ -1,3 +1,4 @@
+INITIAL DEFAULTS PROBE, before final no-hardening rebuild. Symbol excerpt below refers to locally built first-attempt artifact, not the final published baseline.
 #define __SSP_STRONG__ 3
 #define _FORTIFY_SOURCE 3
 #define __PIE__ 2

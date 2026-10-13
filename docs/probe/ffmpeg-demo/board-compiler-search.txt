@@ -1,0 +1,3 @@
+Bounded board debug-file search: find /usr/lib/debug -maxdepth 4 -name "*avcodec*" -print
+
+RPM installed debug-package query (ffmpeg/libavcodec) had no matches. No .comment/.debug_info inside selected library; .gnu_debuglink exists but matching companion was not found in this bounded search. Compiler remains UNKNOWN.

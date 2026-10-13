@@ -1,0 +1,216 @@
+{
+  "variants": {
+    "board": {
+      "variant": "board",
+      "sha256": "9c72c8cc96dbfd101a03414ff772fe1c6f2f41b4014234869de1be03d6ea5f56",
+      "bytes": 3062768,
+      "metrics": {
+        "variant": "board",
+        "procedure_evidence_id": "ev_c25db25cc5650b3b2cd9bec90d54f5acb800c8be8266bc631b7ffba83ec4e091",
+        "all_procedures_including_imports_and_thunks": 4007,
+        "local_non_thunk_procedures": 3156,
+        "local_non_FUN_labels": 147,
+        "non_FUN_label_ratio_percent": 4.66,
+        "ratio_limit": "Provider label proxy, not ground-truth original name recovery rate; synthetic entry/runtime labels can be included. Auto-analysis detects fewer boundaries after stripping.",
+        "string_evidence_id": "ev_72880244fcbe3e8efe2be4d8b0afc41d56e32fdab0bc9926354ebd984fa2a2de",
+        "defined_strings": 5386,
+        "selected_string_samples": 5
+      },
+      "functions": {
+        "avcodec_align_dimensions2": {
+          "search_evidence_id": "ev_a2afe7a6b92f6e9d683c4edea036330c917d603ddfa4f38b27319d0902e439b4",
+          "info_evidence_id": "ev_ccf1109712c08ec664184fce83e76d2d4e0b7d8ee0e3359c2fc1890f6ffd05d0",
+          "address": "0x23d15c",
+          "pseudocode_evidence_id": "ev_c6e227192d0b50c21dc3358823a4b242f892aa1945c43028a21adecf7bfb3c30",
+          "assembly_evidence_id": "ev_7f64528fa0bfc6492549256cbca22f4bc226cad0ceb87ba8bec276226b16800c",
+          "callees_evidence_id": "ev_435c3258c8f32b75b667f0c463b40ab73828aa969e783e11b1ddff1356570c80",
+          "callers_evidence_id": "ev_9298e9100e725320d7142798525aaade9b555647c2770bd1c62d532f558fe2e5"
+        },
+        "av_get_audio_frame_duration2": {
+          "search_evidence_id": "ev_543578614bc1077bdfc76491d6b08dd489fd99083de89541258c49ff89ef2a15",
+          "info_evidence_id": "ev_4aba519d443aadb08380eaaad77805b930c03e2fbc512481a14143bde15d983c",
+          "address": "0x23e09a",
+          "pseudocode_evidence_id": "ev_dfb27080a2f12c62cd015cc49ff765d30b73a0afe0d64e2c8cc0b8f2828ac82d",
+          "assembly_evidence_id": "ev_c0b80aed8ac01888583e2b4460f6daac920bc2b2a560f81befa8ab6ae182e9ef",
+          "callees_evidence_id": "ev_bf0d95b1cdba87e3b3e3a09993df068691b66837c2649179e11ec96d773d0a8e",
+          "callers_evidence_id": "ev_36219ab4316a4a6f981236a4b897b5970d6cf2d59219262ac62ff998d442dc42",
+          "helper_evidence_id": "ev_69e3b5dadbf651a7708c33b7388732e6b7282818d389ed16210178fc3a2c1580"
+        },
+        "av_packet_rescale_ts": {
+          "search_evidence_id": "ev_4ba5d55f98a293836baa36d0bf34389b9fad95057f2ccd031c5a744b156c634b",
+          "info_evidence_id": "ev_b9b1fdc234f41f105fb3a275a35111c079548deef46c9865fe0043851bc859c7",
+          "address": "0x20fae8",
+          "pseudocode_evidence_id": "ev_a3b68a67e90433e0d2b53006a99e88151c42581d6f7d240c50e5160cfd379732",
+          "assembly_evidence_id": "ev_ee12a281cdbf77fbd747f63f67a6eceaaf7d309426dbb631c5e7d882e324c8fa",
+          "callees_evidence_id": "ev_e8dfb2b40e08ec0db6f61ce2e97c5e28c569ab2ad63a739c5e27481a2d7ce467",
+          "callers_evidence_id": "ev_bbdf1d3a9c2d004b6b3e0273e86bec3478f9efc161dd6abc1b749b1896d8a52e"
+        }
+      }
+    },
+    "upstream": {
+      "variant": "upstream",
+      "sha256": "800f421db012547e5386156410cb8fb842b97367b84241e6793b857708d1668c",
+      "bytes": 248940,
+      "metrics": {
+        "variant": "upstream",
+        "procedure_evidence_id": "ev_fbb87934686fc5915aea2d259752eb61214104d5276fa9c50f0bd043ee1f7815",
+        "all_procedures_including_imports_and_thunks": 852,
+        "local_non_thunk_procedures": 389,
+        "local_non_FUN_labels": 389,
+        "non_FUN_label_ratio_percent": 100.0,
+        "ratio_limit": "Provider label proxy, not ground-truth original name recovery rate; synthetic entry/runtime labels can be included. Auto-analysis detects fewer boundaries after stripping.",
+        "string_evidence_id": "ev_1324144993dd2280d2d4bd2fa9fbd099cf342475bff17ce6087c7e2ce1ee771e",
+        "defined_strings": 2412,
+        "selected_string_samples": 7
+      },
+      "functions": {
+        "avcodec_align_dimensions2": {
+          "search_evidence_id": "ev_24791f258f9643cb2396d53c32943cf55fb657c90e9accac547f903313a4f987",
+          "info_evidence_id": "ev_60df6209335692f8c069bec75c608c7044f4c57f521b51ae864a03121453a1c8",
+          "address": "0x2bbb0",
+          "pseudocode_evidence_id": "ev_deab351a060ea61359b6723465838575883a7aaed25cb968514e0c8cd818b25d",
+          "assembly_evidence_id": "ev_3ef535dc22ba31e640771cef119d22c3faa128e6fd05ccc7b2e6fb9a0db05bc5",
+          "callees_evidence_id": "ev_7e861a4f4f21be2b91fff305adf284b1c7d8012fbe82456f709bd76eff7ba475",
+          "callers_evidence_id": "ev_222edefcca251054e22b36a93203ab3a08c504f07d08a2da6c955c2aac17d198"
+        },
+        "av_get_audio_frame_duration2": {
+          "search_evidence_id": "ev_7fe216b3313eeb87afb70c6071985f5b437a97488e78b83f3ad116fc807fc309",
+          "info_evidence_id": "ev_2230b9eeb20493039d1e20aa5fa3d2d3a82032e4ea1ea0a5a880e3c12dc406da",
+          "address": "0x2cbf4",
+          "pseudocode_evidence_id": "ev_cdec75202bdfff233bf6b20c01da4a4226c0f38a99d09250e22add4af5cb687e",
+          "assembly_evidence_id": "ev_a032dfe28a9cf5b2ee1e12298c5fb10131947bf5873cd08957a2826629bc20db",
+          "callees_evidence_id": "ev_2fccd3c8c37bca5cb8b29deeffaef18bed79185bb39e137c1b2b12e9ffa1e16a",
+          "callers_evidence_id": "ev_b589c3626f8dcdb78492178a6e7d4429b8101f6ea11aadd221d21a7b8cc46201",
+          "helper_evidence_id": "ev_fb3a0a2bd3d5967662a240a3db8247badb4ce22aaaa064d57ee539b0e0c2236e"
+        },
+        "av_packet_rescale_ts": {
+          "search_evidence_id": "ev_0077bca7dd7784a996e8924fea7b602091cf88f3b1048d46ed879a621b45b198",
+          "info_evidence_id": "ev_03c9f7853ddea6adf6c1cfe6cb426c2797d14b5c33a1f75b0c8d8cef72baa7a6",
+          "address": "0x26f28",
+          "pseudocode_evidence_id": "ev_3b96c77bf30443a32d749a0d417fe3ed04611a071fa25c5dc71217298c83fa36",
+          "assembly_evidence_id": "ev_044d5a0e582267bfc0d711296afb8cb280a81f48e67954dbe71a8d1ead0cddfc",
+          "callees_evidence_id": "ev_58fc71a4aa399386f872bc543df12712b52d169b458fa7dd6c03981ac385c51c",
+          "callers_evidence_id": "ev_69683cb3c7d14b66a1b14bbc9fdca79f4ee3780ead5827bf7c10fc1b6f05a002"
+        }
+      }
+    },
+    "upstream-stripped": {
+      "variant": "upstream-stripped",
+      "sha256": "2bed47a34655adf02394acfe06e04c38d6e88b111a24141f4780454d4b209d3c",
+      "bytes": 213528,
+      "metrics": {
+        "variant": "upstream-stripped",
+        "procedure_evidence_id": "ev_52009bb80c056557e62b2d63324d4d429f5e4f6310803c3f49ff55c7d5b6b380",
+        "all_procedures_including_imports_and_thunks": 767,
+        "local_non_thunk_procedures": 305,
+        "local_non_FUN_labels": 143,
+        "non_FUN_label_ratio_percent": 46.89,
+        "ratio_limit": "Provider label proxy, not ground-truth original name recovery rate; synthetic entry/runtime labels can be included. Auto-analysis detects fewer boundaries after stripping.",
+        "string_evidence_id": "ev_db7763a8fae917674acb1604a38312f7464a82bc4f5d7b3d42608ad90140da72",
+        "defined_strings": 1742,
+        "selected_string_samples": 4
+      },
+      "functions": {
+        "avcodec_align_dimensions2": {
+          "search_evidence_id": "ev_efa1fd76d2c1f271332eb1c0cf3b0e7eda095d1eeef788bda841f60b7c0c36f4",
+          "info_evidence_id": "ev_4212ed21da7309f7523fe88c2dd7e96504f4e6fc25ab8f14034cfd79259adc4d",
+          "address": "0x2bbb0",
+          "pseudocode_evidence_id": "ev_ab7a5f089a3414c19b1182d5ce3c690266a3872e9e1294680f992a39cf9332c1",
+          "assembly_evidence_id": "ev_be7b90ce162f9dd4410a883fece4f255562aeeb569aab59e407a9e8823b659e5",
+          "callees_evidence_id": "ev_0dd6eacfa05c1fd21a52032f32378481d8a838578b4bd2805865a76538edacae",
+          "callers_evidence_id": "ev_26a3dd71cfa75a58a70b2d639c5092549078a2fa09dc61b362a8466c590e6e91"
+        },
+        "av_get_audio_frame_duration2": {
+          "search_evidence_id": "ev_1c37dab0614bccf295f219a82c04e120a29ed4e18fb0235aaca906f67d00ea4b",
+          "info_evidence_id": "ev_9dd4bf40f7823adc55deda8a61f9bed07476f52e783329872f4574ced46a9d7e",
+          "address": "0x2cbf4",
+          "pseudocode_evidence_id": "ev_22b1ef3fcec3ce8a4699acfb4199f8e8af024c1f659cb9585f69276ecaa47af0",
+          "assembly_evidence_id": "ev_7255892b9446221c709be993fe12e605341a24828a3c56beab46e50c6592c42d",
+          "callees_evidence_id": "ev_5f9e6299fed0d81886649fd345f64226b6ba09b818c6b45aa232e2fd60f7ab09",
+          "callers_evidence_id": "ev_cc2436418cec57bdad05b8e96281bace6912389afc20d5e295af7ae83171c900",
+          "helper_evidence_id": "ev_03fc7096e5ec844e063aea0c4aa088911275459ad984dfba7e009c566be1c699"
+        },
+        "av_packet_rescale_ts": {
+          "search_evidence_id": "ev_3ece07c2e468cdf9b6b3f5a7c99822fe7162acb9636917b7f20450b38afded09",
+          "info_evidence_id": "ev_b84bc847ed34b9049c65ebbf4cc3212e8948ac670884fd0d3235b75ebfafd698",
+          "address": "0x26f28",
+          "pseudocode_evidence_id": "ev_ee01740b19d64c44932ebb00575379d3d5bb59b832f4df9885f2d7be6b4ed0a3",
+          "assembly_evidence_id": "ev_a720eac00025e13dfedd20f5c7bdfbbfb2b98029470b49ed1c0d6ff48cec9f08",
+          "callees_evidence_id": "ev_62cd8cac64525c41ca0b380be1f1bc8b6f5c33d1118adfc7c614e46328cb461e",
+          "callers_evidence_id": "ev_fc0881188c0ca4b9fb9311a500369f356af9fb61b9c536b8331c2584d591f20f"
+        }
+      }
+    }
+  },
+  "unstripped_vs_stripped_pseudocode_identical": {
+    "avcodec_align_dimensions2": true,
+    "av_get_audio_frame_duration2": false,
+    "av_packet_rescale_ts": true
+  },
+  "strip_section_identity": {
+    "identical": true,
+    "unstripped": {
+      ".dynsym": {
+        "bytes": 4816,
+        "sha256": "c8ab5e0ac1842d13ba53ec4a7b0c99b4f00deab804a98a7ca404df0904b65795"
+      },
+      ".dynstr": {
+        "bytes": 6138,
+        "sha256": "a9d3d7862501145f3700517ac854e18b3467b71b8d622895c77718f3e0aa3f37"
+      },
+      ".text": {
+        "bytes": 90960,
+        "sha256": "93d83a24fd6f8302ee1971552b56928911539e19d09254e5c597f61117a5c47b"
+      },
+      ".rodata": {
+        "bytes": 49992,
+        "sha256": "fb0f792ce5018036c7a36da80b4c6eeedc6e92b607c7f2ccac605a06679b4d62"
+      }
+    },
+    "stripped": {
+      ".dynsym": {
+        "bytes": 4816,
+        "sha256": "c8ab5e0ac1842d13ba53ec4a7b0c99b4f00deab804a98a7ca404df0904b65795"
+      },
+      ".dynstr": {
+        "bytes": 6138,
+        "sha256": "a9d3d7862501145f3700517ac854e18b3467b71b8d622895c77718f3e0aa3f37"
+      },
+      ".text": {
+        "bytes": 90960,
+        "sha256": "93d83a24fd6f8302ee1971552b56928911539e19d09254e5c597f61117a5c47b"
+      },
+      ".rodata": {
+        "bytes": 49992,
+        "sha256": "fb0f792ce5018036c7a36da80b4c6eeedc6e92b607c7f2ccac605a06679b4d62"
+      }
+    }
+  },
+  "public_binary_provenance": {
+    "libavcodec-stripped.so": {
+      "sha256": "2bed47a34655adf02394acfe06e04c38d6e88b111a24141f4780454d4b209d3c",
+      "size": 213528,
+      "origin": "locally built unmodified official FFmpeg 8.0.1, never from board"
+    },
+    "libavutil-unstripped.so": {
+      "sha256": "da9976424ccf0f37c431c1bd76c6531e96eb3d6e70599f02be6d72683b6ef3a7",
+      "size": 545200,
+      "origin": "locally built unmodified official FFmpeg 8.0.1, never from board"
+    },
+    "libavcodec-unstripped.so": {
+      "sha256": "800f421db012547e5386156410cb8fb842b97367b84241e6793b857708d1668c",
+      "size": 248940,
+      "origin": "locally built unmodified official FFmpeg 8.0.1, never from board"
+    }
+  },
+  "limits": "Static-only audit; no original source parameter names recovered; no dynamic testing or full-library code-equivalence proof.",
+  "git_audit": {
+    "private_or_runtime_files_tracked": false,
+    "tracked_ELF_files": [
+      "libavcodec-stripped.so",
+      "libavutil-unstripped.so",
+      "libavcodec-unstripped.so"
+    ],
+    "board_binary_gitignored": true
+  }
+}
