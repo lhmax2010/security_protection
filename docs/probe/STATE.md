@@ -277,3 +277,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [验收记录纠正] obfuscation：辅助断言因为opt --print-passes未列自定义扩展而AssertionError；原trace在toolchain-validation-error.txt。该shell未设失败即停，后续checkpoint提前提交了pass注册结论，已纠正其证据范围。真实opt -passes=obfuscation -disable-output空IR调用exit0确认pipeline可被解析，ARM/X86和22.1.8实际版本已复核。尚不等于两函数被转换，下一步以真实pass报告验证；本错误不隐藏、不改写原始opt输出。
 
 - [完成混淆构建/运行] obfuscation：原target.c仅给两助手加真实xollvm annotate，substitution(prob100,loop2)、bcf(prob100,loop1)、flattening(minBlocks2)，-O2/固定seed1/-obf-verify，保留noinline与名字、未strip以隔离混淆效果；LLVM22无pass控制亦构建。旧18裸版/22控制/22混淆三者QEMU11/11输入stdout/exit一致、stderr空；checksum运行覆盖仅既有marker，非全输入证明。实际pass-report：checksum三pass均changed，IR24→1834；secret sub8→313，bcf标changed但无指令增量，fla因too few blocks skipped，不伪称三pass都有效。最终机器码/REA可读性待后续，IR score不当逆向难度实测。
+
+- [完成REA采集] obfuscation：LLVM22控制与混淆目标各13次真实REA调用全部成功，Ghidra12.1.4原响应/decoded、两函数伪代码/汇编/info/指令、目标身份均在control22/和obfuscated/保存，会话已关闭。混淆secret伪代码42行（原7行），checksum311行（原20行），观察有复杂位运算/状态分派与冗余条件；不是恢复失败。控制22仍与旧18原式/循环相同，下一步核对字节/基本块/静态直接分支并做报告。名字保留，按名字定位仍可用，变化归于代码混淆而非strip。

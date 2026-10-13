@@ -1,0 +1,9 @@
+{
+  "result": {
+    "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_obfuscated",
+    "format": "elf",
+    "kind": "executable",
+    "sha256": "80501259c6b23bc9feffea2a497daf19b05c388756c99a2d24b44c185674c805",
+    "architecture": "arm"
+  }
+}

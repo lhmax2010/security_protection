@@ -1,0 +1,17 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_control\",\"format\":\"elf\",\"kind\":\"executable\",\"sha256\":\"37e1634214fd917f19c72a711eed5fc420fcdc7af6d879f3c4c683bde6edd387\",\"architecture\":\"arm\"}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_control",
+      "format": "elf",
+      "kind": "executable",
+      "sha256": "37e1634214fd917f19c72a711eed5fc420fcdc7af6d879f3c4c683bde6edd387",
+      "architecture": "arm"
+    }
+  }
+}

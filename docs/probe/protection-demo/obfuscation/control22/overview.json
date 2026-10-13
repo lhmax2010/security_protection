@@ -1,0 +1,269 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_8ef197f86328b671003db3cbdb1467c0470592ab43b8774111b2ac22e2feb75c\",\"subject\":{\"name\":\"target_c_llvm22_control\",\"digest\":{\"sha256\":\"37e1634214fd917f19c72a711eed5fc420fcdc7af6d879f3c4c683bde6edd387\"},\"format\":\"elf\",\"architecture\":\"arm\",\"local_path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_control\"},\"provider\":{\"id\":\"rea-workflow\",\"name\":\"REA composed investigation workflow\",\"version\":\"1\"},\"analysis_profile\":{\"provider\":{\"id\":\"rea-workflow\",\"name\":\"REA composed investigation workflow\",\"version\":\"1\"},\"parameters\":{\"upstream_analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"elf\",\"architecture\":\"arm\",\"available_architectures\":[\"arm\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac\"},\"workflow_revision\":2},\"digest\":\"d17eb7f7834bcb15c683d2046bf7b579955f68fcb9bb8646c93e925c81ed7a69\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"binary_overview\",\"parameters\":{},\"raw_result\":null,\"normalized_result\":{\"document\":\"target-37e1634214fd.bin\",\"segments\":[{\"name\":\"segment_3.1\",\"start\":\"0x10000\",\"end\":\"0x10154\",\"length\":340},{\"name\":\".interp\",\"start\":\"0x10154\",\"end\":\"0x1016d\",\"length\":25},{\"name\":\".note.ABI-tag\",\"start\":\"0x10170\",\"end\":\"0x10190\",\"length\":32},{\"name\":\".gnu.hash\",\"start\":\"0x10190\",\"end\":\"0x101a8\",\"length\":24},{\"name\":\".dynsym\",\"start\":\"0x101a8\",\"end\":\"0x10258\",\"length\":176},{\"name\":\".dynstr\",\"start\":\"0x10258\",\"end\":\"0x102f3\",\"length\":155},{\"name\":\".gnu.version\",\"start\":\"0x102f4\",\"end\":\"0x1030a\",\"length\":22},{\"name\":\".gnu.version_r\",\"start\":\"0x1030c\",\"end\":\"0x1033c\",\"length\":48},{\"name\":\".rel.dyn\",\"start\":\"0x1033c\",\"end\":\"0x1037c\",\"length\":64},{\"name\":\".rel.plt\",\"start\":\"0x1037c\",\"end\":\"0x103ac\",\"length\":48},{\"name\":\".init\",\"start\":\"0x103ac\",\"end\":\"0x103b8\",\"length\":12},{\"name\":\".plt\",\"start\":\"0x103b8\",\"end\":\"0x10414\",\"length\":92},{\"name\":\".text\",\"start\":\"0x10414\",\"end\":\"0x105c8\",\"length\":436},{\"name\":\".fini\",\"start\":\"0x105c8\",\"end\":\"0x105d0\",\"length\":8},{\"name\":\".rodata\",\"start\":\"0x105d0\",\"end\":\"0x10714\",\"length\":324},{\"name\":\".ARM.exidx\",\"start\":\"0x10714\",\"end\":\"0x1071c\",\"length\":8},{\"name\":\".eh_frame\",\"start\":\"0x1071c\",\"end\":\"0x10720\",\"length\":4},{\"name\":\".init_array\",\"start\":\"0x11f08\",\"end\":\"0x11f0c\",\"length\":4},{\"name\":\".fini_array\",\"start\":\"0x11f0c\",\"end\":\"0x11f10\",\"length\":4},{\"name\":\".dynamic\",\"start\":\"0x11f10\",\"end\":\"0x12000\",\"length\":240},{\"name\":\".got\",\"start\":\"0x12000\",\"end\":\"0x12038\",\"length\":56},{\"name\":\".data\",\"start\":\"0x12038\",\"end\":\"0x12040\",\"length\":8},{\"name\":\".bss\",\"start\":\"0x12040\",\"end\":\"0x12044\",\"length\":4},{\"name\":\"EXTERNAL\",\"start\":\"0x13000\",\"end\":\"0x13020\",\"length\":32},{\"name\":\".ARM.attributes\",\"start\":\".ARM.attributes:0x0\",\"end\":\".ARM.attributes:0x37\",\"length\":55},{\"name\":\".comment\",\"start\":\".comment:0x0\",\"end\":\".comment:0x92\",\"length\":146},{\"name\":\".shstrtab\",\"start\":\".shstrtab:0x0\",\"end\":\".shstrtab:0xf2\",\"length\":242},{\"name\":\".strtab\",\"start\":\".strtab:0x0\",\"end\":\".strtab:0x262\",\"length\":610},{\"name\":\".symtab\",\"start\":\".symtab:0x0\",\"end\":\".symtab:0x680\",\"length\":1664},{\"name\":\"_elfSectionHeaders\",\"start\":\"_elfSectionHeaders:0x0\",\"end\":\"_elfSectionHeaders:0x460\",\"length\":1120}],\"segment_count\":30,\"procedure_count\":32,\"string_count\":85},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Derived by an REA composed workflow.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_8ef197f86328b671003db3cbdb1467c0470592ab43b8774111b2ac22e2feb75c",
+    "subject": {
+      "name": "target_c_llvm22_control",
+      "digest": {
+        "sha256": "37e1634214fd917f19c72a711eed5fc420fcdc7af6d879f3c4c683bde6edd387"
+      },
+      "format": "elf",
+      "architecture": "arm",
+      "local_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_control"
+    },
+    "provider": {
+      "id": "rea-workflow",
+      "name": "REA composed investigation workflow",
+      "version": "1"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "rea-workflow",
+        "name": "REA composed investigation workflow",
+        "version": "1"
+      },
+      "parameters": {
+        "upstream_analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "elf",
+            "architecture": "arm",
+            "available_architectures": [
+              "arm"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "function_references": "complete-body-and-entry-reference-manager-v2",
+            "string_inventory_evidence": "defined-data-coverage-v1",
+            "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+            "instruction_flow_evidence": "decoded-return-pcode-v1",
+            "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+            "no_return_repair": "returning-imports-decoded-return-v2",
+            "process_launch": "inspected-jvm-launch-support-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default"
+          },
+          "digest": "e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac"
+        },
+        "workflow_revision": 2
+      },
+      "digest": "d17eb7f7834bcb15c683d2046bf7b579955f68fcb9bb8646c93e925c81ed7a69"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "binary_overview",
+    "parameters": {},
+    "raw_result": null,
+    "normalized_result": {
+      "document": "target-37e1634214fd.bin",
+      "segments": [
+        {
+          "name": "segment_3.1",
+          "start": "0x10000",
+          "end": "0x10154",
+          "length": 340
+        },
+        {
+          "name": ".interp",
+          "start": "0x10154",
+          "end": "0x1016d",
+          "length": 25
+        },
+        {
+          "name": ".note.ABI-tag",
+          "start": "0x10170",
+          "end": "0x10190",
+          "length": 32
+        },
+        {
+          "name": ".gnu.hash",
+          "start": "0x10190",
+          "end": "0x101a8",
+          "length": 24
+        },
+        {
+          "name": ".dynsym",
+          "start": "0x101a8",
+          "end": "0x10258",
+          "length": 176
+        },
+        {
+          "name": ".dynstr",
+          "start": "0x10258",
+          "end": "0x102f3",
+          "length": 155
+        },
+        {
+          "name": ".gnu.version",
+          "start": "0x102f4",
+          "end": "0x1030a",
+          "length": 22
+        },
+        {
+          "name": ".gnu.version_r",
+          "start": "0x1030c",
+          "end": "0x1033c",
+          "length": 48
+        },
+        {
+          "name": ".rel.dyn",
+          "start": "0x1033c",
+          "end": "0x1037c",
+          "length": 64
+        },
+        {
+          "name": ".rel.plt",
+          "start": "0x1037c",
+          "end": "0x103ac",
+          "length": 48
+        },
+        {
+          "name": ".init",
+          "start": "0x103ac",
+          "end": "0x103b8",
+          "length": 12
+        },
+        {
+          "name": ".plt",
+          "start": "0x103b8",
+          "end": "0x10414",
+          "length": 92
+        },
+        {
+          "name": ".text",
+          "start": "0x10414",
+          "end": "0x105c8",
+          "length": 436
+        },
+        {
+          "name": ".fini",
+          "start": "0x105c8",
+          "end": "0x105d0",
+          "length": 8
+        },
+        {
+          "name": ".rodata",
+          "start": "0x105d0",
+          "end": "0x10714",
+          "length": 324
+        },
+        {
+          "name": ".ARM.exidx",
+          "start": "0x10714",
+          "end": "0x1071c",
+          "length": 8
+        },
+        {
+          "name": ".eh_frame",
+          "start": "0x1071c",
+          "end": "0x10720",
+          "length": 4
+        },
+        {
+          "name": ".init_array",
+          "start": "0x11f08",
+          "end": "0x11f0c",
+          "length": 4
+        },
+        {
+          "name": ".fini_array",
+          "start": "0x11f0c",
+          "end": "0x11f10",
+          "length": 4
+        },
+        {
+          "name": ".dynamic",
+          "start": "0x11f10",
+          "end": "0x12000",
+          "length": 240
+        },
+        {
+          "name": ".got",
+          "start": "0x12000",
+          "end": "0x12038",
+          "length": 56
+        },
+        {
+          "name": ".data",
+          "start": "0x12038",
+          "end": "0x12040",
+          "length": 8
+        },
+        {
+          "name": ".bss",
+          "start": "0x12040",
+          "end": "0x12044",
+          "length": 4
+        },
+        {
+          "name": "EXTERNAL",
+          "start": "0x13000",
+          "end": "0x13020",
+          "length": 32
+        },
+        {
+          "name": ".ARM.attributes",
+          "start": ".ARM.attributes:0x0",
+          "end": ".ARM.attributes:0x37",
+          "length": 55
+        },
+        {
+          "name": ".comment",
+          "start": ".comment:0x0",
+          "end": ".comment:0x92",
+          "length": 146
+        },
+        {
+          "name": ".shstrtab",
+          "start": ".shstrtab:0x0",
+          "end": ".shstrtab:0xf2",
+          "length": 242
+        },
+        {
+          "name": ".strtab",
+          "start": ".strtab:0x0",
+          "end": ".strtab:0x262",
+          "length": 610
+        },
+        {
+          "name": ".symtab",
+          "start": ".symtab:0x0",
+          "end": ".symtab:0x680",
+          "length": 1664
+        },
+        {
+          "name": "_elfSectionHeaders",
+          "start": "_elfSectionHeaders:0x0",
+          "end": "_elfSectionHeaders:0x460",
+          "length": 1120
+        }
+      ],
+      "segment_count": 30,
+      "procedure_count": 32,
+      "string_count": 85
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Derived by an REA composed workflow."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}

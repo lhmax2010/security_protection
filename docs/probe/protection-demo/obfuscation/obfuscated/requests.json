@@ -1,0 +1,129 @@
+[
+  {
+    "label": "open",
+    "tool": "open_binary",
+    "arguments": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_obfuscated",
+      "provider_id": "ghidra"
+    },
+    "elapsed_ms": 2,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "overview",
+    "tool": "binary_overview",
+    "arguments": {},
+    "elapsed_ms": 5716,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-search",
+    "tool": "search_procedures",
+    "arguments": {
+      "pattern": "secret_transform"
+    },
+    "elapsed_ms": 5,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-info",
+    "tool": "procedure_info",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 11,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-pseudocode",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 25,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-assembly",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 5,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-instructions",
+    "tool": "read_function_instructions",
+    "arguments": {
+      "procedure": "secret_transform"
+    },
+    "elapsed_ms": 5,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-search",
+    "tool": "search_procedures",
+    "arguments": {
+      "pattern": "simple_checksum"
+    },
+    "elapsed_ms": 2,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-info",
+    "tool": "procedure_info",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 8,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-pseudocode",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 63,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-assembly",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 9,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-instructions",
+    "tool": "read_function_instructions",
+    "arguments": {
+      "procedure": "simple_checksum"
+    },
+    "elapsed_ms": 10,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "close",
+    "tool": "close_binary",
+    "arguments": {},
+    "elapsed_ms": 372,
+    "isError": false,
+    "transport_error": null
+  }
+]
