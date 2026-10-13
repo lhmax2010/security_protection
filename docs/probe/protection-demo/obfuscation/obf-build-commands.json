@@ -1,0 +1,66 @@
+[
+  {
+    "label": "llvm22-control",
+    "command": [
+      "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/obfuscation/xollvm-v0.11.1/bin/clang",
+      "--target=arm-linux-gnueabihf",
+      "--sysroot=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot",
+      "--gcc-toolchain=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr",
+      "-isystem",
+      "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf/include",
+      "-L/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf/lib",
+      "-O2",
+      "-march=armv7-a",
+      "-mfpu=vfpv3-d16",
+      "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/samples/target.c",
+      "-o",
+      "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_control"
+    ]
+  },
+  {
+    "label": "llvm22-obfuscated",
+    "command": [
+      "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/obfuscation/xollvm-v0.11.1/bin/clang",
+      "--target=arm-linux-gnueabihf",
+      "--sysroot=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot",
+      "--gcc-toolchain=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr",
+      "-isystem",
+      "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf/include",
+      "-L/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/arm-linux-gnueabihf/lib",
+      "-O2",
+      "-march=armv7-a",
+      "-mfpu=vfpv3-d16",
+      "-mllvm",
+      "-enable-obfuscation",
+      "-mllvm",
+      "-obf-seed=1",
+      "-mllvm",
+      "-obf-deterministic",
+      "-mllvm",
+      "-obf-verify",
+      "-mllvm",
+      "-obf-report-json=/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/pass-report.json",
+      "-mllvm",
+      "-obf-report-dir=/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/pass-report",
+      "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/src/target_obfuscated.c",
+      "-o",
+      "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_obfuscated"
+    ]
+  },
+  {
+    "label": "elf-file",
+    "command": [
+      "file",
+      "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_control",
+      "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_obfuscated"
+    ]
+  },
+  {
+    "label": "obfuscated-symbols",
+    "command": [
+      "readelf",
+      "-Ws",
+      "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_obfuscated"
+    ]
+  }
+]

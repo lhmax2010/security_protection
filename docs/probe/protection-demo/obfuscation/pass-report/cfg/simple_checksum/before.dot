@@ -1,0 +1,15 @@
+digraph "cfg." {
+  graph [fontname="monospace", labelloc=t, label="CFG: simple_checksum"];
+  node  [shape=box, style="rounded,filled", fontname="monospace"];
+  edge  [fontname="monospace"];
+
+  bb0 [label="bb0\ninsts: 6", fillcolor="white", color="gray50", penwidth=1];
+  bb1 [label="bb1\ninsts: 4", fillcolor="white", color="gray50", penwidth=1];
+  bb2 [label="bb2\ninsts: 11", fillcolor="white", color="gray50", penwidth=1];
+  bb3 [label="bb3\ninsts: 3", fillcolor="white", color="gray50", penwidth=1];
+
+  bb0 -> bb1;
+  bb1 -> bb2;
+  bb1 -> bb3;
+  bb2 -> bb1;
+}

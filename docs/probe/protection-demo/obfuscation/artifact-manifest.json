@@ -1,0 +1,22 @@
+{
+  "docs/probe/samples/target.c": {
+    "sha256": "8a220ba54bf9d04fdf2992c1a8365f17651395967969ca8d7688d9e48c336996",
+    "bytes": 610
+  },
+  "docs/probe/protection-demo/obfuscation/src/target_obfuscated.c": {
+    "sha256": "f3029ec147019d3006110466231a176faa744210112cc0c723e1e761dba5c0be",
+    "bytes": 854
+  },
+  "docs/probe/samples/bin/target_c_llvm_armv7l": {
+    "sha256": "4a08f9e874b23446695be329b13e9cd102d733cefcf9d7fcafd56302afcd6d5e",
+    "bytes": 8024
+  },
+  "docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_control": {
+    "sha256": "37e1634214fd917f19c72a711eed5fc420fcdc7af6d879f3c4c683bde6edd387",
+    "bytes": 8000
+  },
+  "docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_obfuscated": {
+    "sha256": "80501259c6b23bc9feffea2a497daf19b05c388756c99a2d24b44c185674c805",
+    "bytes": 12108
+  }
+}

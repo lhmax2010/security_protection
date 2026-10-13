@@ -1,0 +1,124 @@
+{
+  "source": "pass-report.json",
+  "limitation": "Compiler IR report; final machine-code/Ghidra effects not yet confirmed. Changed=true is not by itself proof of obfuscation strength.",
+  "functions": [
+    {
+      "name": "secret_transform",
+      "passes": [
+        {
+          "budget_util_after": 0.7825,
+          "changed": true,
+          "delta_insts": 305,
+          "id": "substitution",
+          "insts_after": 313,
+          "insts_before": 8,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.7825,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 313,
+          "insts_before": 313,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.7825,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 313,
+          "insts_before": 313,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "insts": {
+        "after": 313,
+        "before": 8
+      },
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "budget": {
+        "enabled": true,
+        "limit": 400,
+        "remaining": 87,
+        "utilization": 0.7825
+      }
+    },
+    {
+      "name": "simple_checksum",
+      "passes": [
+        {
+          "budget_util_after": 0.18083333333333335,
+          "changed": true,
+          "delta_insts": 193,
+          "id": "substitution",
+          "insts_after": 217,
+          "insts_before": 24,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.705,
+          "changed": true,
+          "delta_insts": 629,
+          "id": "bcf",
+          "insts_after": 846,
+          "insts_before": 217,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 1.5283333333333333,
+          "changed": true,
+          "delta_insts": 988,
+          "id": "flattening",
+          "insts_after": 1834,
+          "insts_before": 846,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "insts": {
+        "after": 1834,
+        "before": 24
+      },
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 17,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 15,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 11.249999999999998
+      },
+      "budget": {
+        "enabled": true,
+        "limit": 1200,
+        "remaining": 0,
+        "utilization": 1.5283333333333333
+      }
+    }
+  ]
+}

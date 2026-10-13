@@ -1,0 +1,190 @@
+{
+  "functions": [
+    {
+      "artifacts": {
+        "cfg": {
+          "after_dot": "cfg/secret_transform/after.dot",
+          "before_dot": "cfg/secret_transform/before.dot",
+          "per_pass": [
+            {
+              "after_dot": "cfg/secret_transform/pass_0_substitution.dot",
+              "diff_dot": "cfg/secret_transform/pass_0_substitution.dot",
+              "pass": "substitution"
+            },
+            {
+              "after_dot": "cfg/secret_transform/pass_1_bcf.dot",
+              "diff_dot": "cfg/secret_transform/pass_1_bcf.dot",
+              "pass": "bcf"
+            },
+            {
+              "after_dot": "cfg/secret_transform/pass_2_flattening.dot",
+              "diff_dot": "cfg/secret_transform/pass_2_flattening.dot",
+              "pass": "flattening"
+            }
+          ]
+        }
+      },
+      "budget": {
+        "enabled": true,
+        "limit": 400,
+        "remaining": 87,
+        "utilization": 0.78249999999999997
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 313,
+        "before": 8
+      },
+      "name": "secret_transform",
+      "passes": [
+        {
+          "budget_util_after": 0.78249999999999997,
+          "changed": true,
+          "delta_insts": 305,
+          "id": "substitution",
+          "insts_after": 313,
+          "insts_before": 8,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.78249999999999997,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 313,
+          "insts_before": 313,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.78249999999999997,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 313,
+          "insts_before": 313,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 5623010153228621094,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "artifacts": {
+        "cfg": {
+          "after_dot": "cfg/simple_checksum/after.dot",
+          "before_dot": "cfg/simple_checksum/before.dot",
+          "per_pass": [
+            {
+              "after_dot": "cfg/simple_checksum/pass_0_substitution.dot",
+              "diff_dot": "cfg/simple_checksum/pass_0_substitution.dot",
+              "pass": "substitution"
+            },
+            {
+              "after_dot": "cfg/simple_checksum/pass_1_bcf.dot",
+              "diff_dot": "cfg/simple_checksum/pass_1_bcf.dot",
+              "pass": "bcf"
+            },
+            {
+              "after_dot": "cfg/simple_checksum/pass_2_flattening.dot",
+              "diff_dot": "cfg/simple_checksum/pass_2_flattening.dot",
+              "pass": "flattening"
+            }
+          ]
+        }
+      },
+      "budget": {
+        "enabled": true,
+        "limit": 1200,
+        "remaining": 0,
+        "utilization": 1.5283333333333333
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 17,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 15,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 11.249999999999998
+      },
+      "insts": {
+        "after": 1834,
+        "before": 24
+      },
+      "name": "simple_checksum",
+      "passes": [
+        {
+          "budget_util_after": 0.18083333333333335,
+          "changed": true,
+          "delta_insts": 193,
+          "id": "substitution",
+          "insts_after": 217,
+          "insts_before": 24,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.70499999999999996,
+          "changed": true,
+          "delta_insts": 629,
+          "id": "bcf",
+          "insts_after": 846,
+          "insts_before": 217,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 1.5283333333333333,
+          "changed": true,
+          "delta_insts": 988,
+          "id": "flattening",
+          "insts_after": 1834,
+          "insts_before": 846,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -7117235345458364384,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/src/target_obfuscated.c",
+    "source_file": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/src/target_obfuscated.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

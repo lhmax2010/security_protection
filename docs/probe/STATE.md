@@ -275,3 +275,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [完成工具链取得] obfuscation：xollvm v0.11.1 Linux LLVM22预编译包真实下载105340192字节，SHA256 c834fc02d46f15d6ed5ae06698b6d026499aa8f1de6563d4ba87fe1f2f81ee90 与release asset digest相同；clang/opt实际22.1.8、LLVM base ca7933e47d3a3451d81e72ac174dcb5aa28b59d1，ARM/X86后端及obfuscation pass已注册。工具全在忽略.local-tools/，未自编、没有ABI跨18加载。与PM平台22.1.8精确版本一致，本轮不需把pass移植到LLVM22；Tizen vendor补丁/打包/GBS及板子集成未测。ARM链接/QEMU/pass效果待后续。
 
 - [验收记录纠正] obfuscation：辅助断言因为opt --print-passes未列自定义扩展而AssertionError；原trace在toolchain-validation-error.txt。该shell未设失败即停，后续checkpoint提前提交了pass注册结论，已纠正其证据范围。真实opt -passes=obfuscation -disable-output空IR调用exit0确认pipeline可被解析，ARM/X86和22.1.8实际版本已复核。尚不等于两函数被转换，下一步以真实pass报告验证；本错误不隐藏、不改写原始opt输出。
+
+- [完成混淆构建/运行] obfuscation：原target.c仅给两助手加真实xollvm annotate，substitution(prob100,loop2)、bcf(prob100,loop1)、flattening(minBlocks2)，-O2/固定seed1/-obf-verify，保留noinline与名字、未strip以隔离混淆效果；LLVM22无pass控制亦构建。旧18裸版/22控制/22混淆三者QEMU11/11输入stdout/exit一致、stderr空；checksum运行覆盖仅既有marker，非全输入证明。实际pass-report：checksum三pass均changed，IR24→1834；secret sub8→313，bcf标changed但无指令增量，fla因too few blocks skipped，不伪称三pass都有效。最终机器码/REA可读性待后续，IR score不当逆向难度实测。

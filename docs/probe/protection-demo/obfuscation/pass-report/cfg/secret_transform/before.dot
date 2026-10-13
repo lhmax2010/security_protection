@@ -1,0 +1,8 @@
+digraph "cfg." {
+  graph [fontname="monospace", labelloc=t, label="CFG: secret_transform"];
+  node  [shape=box, style="rounded,filled", fontname="monospace"];
+  edge  [fontname="monospace"];
+
+  bb0 [label="bb0\ninsts: 8", fillcolor="white", color="gray50", penwidth=1];
+
+}

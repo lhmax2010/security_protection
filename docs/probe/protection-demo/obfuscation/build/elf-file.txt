@@ -1,0 +1,5 @@
+$ file /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_control /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_obfuscated
+/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_control:    ELF 32-bit LSB pie executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-armhf.so.3, for GNU/Linux 3.2.0, not stripped
+/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_obfuscated: ELF 32-bit LSB pie executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-armhf.so.3, for GNU/Linux 3.2.0, not stripped
+
+exit=0
