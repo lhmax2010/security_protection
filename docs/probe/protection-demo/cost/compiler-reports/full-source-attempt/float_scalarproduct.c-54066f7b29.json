@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1900,
+        "remaining": 1476,
+        "utilization": 0.22315789473684211
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 6,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 4,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 3
+      },
+      "insts": {
+        "after": 424,
+        "before": 38
+      },
+      "name": "ff_scalarproduct_float_c",
+      "passes": [
+        {
+          "budget_util_after": 0.021578947368421052,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 41,
+          "insts_before": 38,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.021578947368421052,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 41,
+          "insts_before": 41,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.22315789473684211,
+          "changed": true,
+          "delta_insts": 383,
+          "id": "flattening",
+          "insts_after": 424,
+          "insts_before": 41,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 2876005574754116977,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/float_scalarproduct.c",
+    "source_file": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/float_scalarproduct.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

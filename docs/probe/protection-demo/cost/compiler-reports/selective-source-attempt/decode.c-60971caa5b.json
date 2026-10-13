@@ -1,0 +1,210 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 7250,
+        "remaining": 2800,
+        "utilization": 0.61379310344827587
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 57,
+        "cyclomatic_before": 18,
+        "cyclomatic_delta": 39,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 29.25
+      },
+      "insts": {
+        "after": 4450,
+        "before": 145
+      },
+      "name": "avcodec_send_packet",
+      "passes": [
+        {
+          "budget_util_after": 0.020413793103448277,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 148,
+          "insts_before": 145,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.18013793103448275,
+          "changed": true,
+          "delta_insts": 1158,
+          "id": "bcf",
+          "insts_after": 1306,
+          "insts_before": 148,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.61379310344827587,
+          "changed": true,
+          "delta_insts": 3144,
+          "id": "flattening",
+          "insts_after": 4450,
+          "insts_before": 1306,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 821999842814573258,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 8950,
+        "remaining": 7646,
+        "utilization": 0.14569832402234636
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 27,
+        "cyclomatic_before": 13,
+        "cyclomatic_delta": 14,
+        "indirect_branches": 0,
+        "indirect_calls": 1,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 10.5
+      },
+      "insts": {
+        "after": 1304,
+        "before": 179
+      },
+      "name": "decode_receive_frame_internal",
+      "passes": [
+        {
+          "budget_util_after": 0.021899441340782123,
+          "changed": true,
+          "delta_insts": 17,
+          "id": "substitution",
+          "insts_after": 196,
+          "insts_before": 179,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.14569832402234636,
+          "changed": true,
+          "delta_insts": 1108,
+          "id": "bcf",
+          "insts_after": 1304,
+          "insts_before": 196,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.14569832402234636,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 1304,
+          "insts_before": 1304,
+          "seed": 0,
+          "skip_reason": "indirect calls",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -8255244228954174893,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 6000,
+        "remaining": 4823,
+        "utilization": 0.19616666666666666
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 17,
+        "cyclomatic_before": 7,
+        "cyclomatic_delta": 10,
+        "indirect_branches": 0,
+        "indirect_calls": 1,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 7.5
+      },
+      "insts": {
+        "after": 1177,
+        "before": 120
+      },
+      "name": "ff_decode_receive_frame_internal",
+      "passes": [
+        {
+          "budget_util_after": 0.028333333333333332,
+          "changed": true,
+          "delta_insts": 50,
+          "id": "substitution",
+          "insts_after": 170,
+          "insts_before": 120,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.19616666666666666,
+          "changed": true,
+          "delta_insts": 1007,
+          "id": "bcf",
+          "insts_after": 1177,
+          "insts_before": 170,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.19616666666666666,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 1177,
+          "insts_before": 1177,
+          "seed": 0,
+          "skip_reason": "indirect calls",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -5032602693183054730,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "src/libavcodec/decode.c",
+    "source_file": "src/libavcodec/decode.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

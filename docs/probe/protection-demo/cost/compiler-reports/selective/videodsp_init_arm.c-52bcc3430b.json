@@ -1,0 +1,11 @@
+{
+  "functions": [],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/selective/ir/videodsp_init_arm.c-52bcc3430b.annotated.ll",
+    "source_file": "src/libavcodec/arm/videodsp_init_arm.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

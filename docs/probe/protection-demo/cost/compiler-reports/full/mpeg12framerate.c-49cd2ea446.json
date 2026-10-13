@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 8950,
+        "remaining": 1738,
+        "utilization": 0.8058100558659218
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 80,
+        "cyclomatic_before": 19,
+        "cyclomatic_delta": 61,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.4542429284525791,
+        "opaque_predicates": 177,
+        "score": 37.66950915141431
+      },
+      "insts": {
+        "after": 7212,
+        "before": 179
+      },
+      "name": "ff_mpeg12_find_best_frame_rate",
+      "passes": [
+        {
+          "budget_util_after": 0.042458100558659215,
+          "changed": true,
+          "delta_insts": 201,
+          "id": "substitution",
+          "insts_after": 380,
+          "insts_before": 179,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.28569832402234635,
+          "changed": true,
+          "delta_insts": 2177,
+          "id": "bcf",
+          "insts_after": 2557,
+          "insts_before": 380,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.8058100558659218,
+          "changed": true,
+          "delta_insts": 4655,
+          "id": "flattening",
+          "insts_after": 7212,
+          "insts_before": 2557,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 3683203942369688834,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/mpeg12framerate.c-49cd2ea446.annotated.ll",
+    "source_file": "src/libavcodec/mpeg12framerate.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

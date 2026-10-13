@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 2450,
+        "remaining": 1657,
+        "utilization": 0.3236734693877551
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 8,
+        "cyclomatic_before": 3,
+        "cyclomatic_delta": 5,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 3.75
+      },
+      "insts": {
+        "after": 793,
+        "before": 49
+      },
+      "name": "ff_h264chroma_init_arm",
+      "passes": [
+        {
+          "budget_util_after": 0.024081632653061225,
+          "changed": true,
+          "delta_insts": 10,
+          "id": "substitution",
+          "insts_after": 59,
+          "insts_before": 49,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.11224489795918367,
+          "changed": true,
+          "delta_insts": 216,
+          "id": "bcf",
+          "insts_after": 275,
+          "insts_before": 59,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.3236734693877551,
+          "changed": true,
+          "delta_insts": 518,
+          "id": "flattening",
+          "insts_after": 793,
+          "insts_before": 275,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 3203777233291027726,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/h264chroma_init_arm.c",
+    "source_file": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/h264chroma_init_arm.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

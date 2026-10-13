@@ -1,0 +1,3 @@
+rg: docs/probe/ffmpeg-demo/private/ffmpeg-8.0.1/libavcodec/mpegvideo_motion.h: No such file or directory (os error 2)
+exit=2
+Source location subsequently inspected at existing mpegvideo_motion.c; no analysis result fabricated.

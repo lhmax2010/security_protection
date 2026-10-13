@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 750,
+        "remaining": 407,
+        "utilization": 0.45733333333333331
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 5,
+        "cyclomatic_before": 3,
+        "cyclomatic_delta": 2,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 1.749271137026239,
+        "opaque_predicates": 6,
+        "score": 6.9664723032069968
+      },
+      "insts": {
+        "after": 343,
+        "before": 15
+      },
+      "name": "ff_mpv_unquantize_init_arm",
+      "passes": [
+        {
+          "budget_util_after": 0.041333333333333333,
+          "changed": true,
+          "delta_insts": 16,
+          "id": "substitution",
+          "insts_after": 31,
+          "insts_before": 15,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.041333333333333333,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 31,
+          "insts_before": 31,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.45733333333333331,
+          "changed": true,
+          "delta_insts": 312,
+          "id": "flattening",
+          "insts_after": 343,
+          "insts_before": 31,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -6718869354553064609,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/mpegvideo_arm.c-df4dd212d4.annotated.ll",
+    "source_file": "src/libavcodec/arm/mpegvideo_arm.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

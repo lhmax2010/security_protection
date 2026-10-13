@@ -1,0 +1,18 @@
+$ ffmpeg -hide_banner -y -f lavfi -i testsrc2=size=640x360:rate=30 -frames:v 600 -an -c:v mpeg2video -threads 1 -pix_fmt yuv420p -g 15 -bf 2 -b:v 4M -flags +bitexact -fflags +bitexact -f mpeg2video docs/probe/protection-demo/cost/private/fixed-640x360-600frames.m2v
+Input #0, lavfi, from 'testsrc2=size=640x360:rate=30':
+  Duration: N/A, start: 0.000000, bitrate: N/A
+  Stream #0:0: Video: wrapped_avframe, yuv420p, 640x360 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 30 tbn
+Stream mapping:
+  Stream #0:0 -> #0:0 (wrapped_avframe (native) -> mpeg2video (native))
+Press [q] to stop, [?] for help
+Output #0, mpeg2video, to 'docs/probe/protection-demo/cost/private/fixed-640x360-600frames.m2v':
+  Stream #0:0: Video: mpeg2video (Main), yuv420p(progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 4000 kb/s, 30 fps, 30 tbn
+    Metadata:
+      encoder         : Lavc mpeg2video
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/4000000 buffer size: 0 vbv_delay: N/A
+frame=    0 fps=0.0 q=0.0 size=       0kB time=N/A bitrate=N/A speed=N/A    
+[out#0/mpeg2video @ 0x639b566c77c0] video:8187kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.000000%
+frame=  600 fps=0.0 q=2.5 Lsize=    8187kB time=00:00:19.93 bitrate=3364.8kbits/s speed=55.3x    
+
+exit=0

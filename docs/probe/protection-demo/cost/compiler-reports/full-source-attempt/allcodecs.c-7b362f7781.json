@@ -1,0 +1,804 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 4600,
+        "remaining": 3259,
+        "utilization": 0.29152173913043478
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 19,
+        "cyclomatic_before": 7,
+        "cyclomatic_delta": 12,
+        "indirect_branches": 0,
+        "indirect_calls": 4,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 9
+      },
+      "insts": {
+        "after": 1341,
+        "before": 92
+      },
+      "name": "av_codec_init_static",
+      "passes": [
+        {
+          "budget_util_after": 0.020652173913043477,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 95,
+          "insts_before": 92,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.29152173913043478,
+          "changed": true,
+          "delta_insts": 1246,
+          "id": "bcf",
+          "insts_after": 1341,
+          "insts_before": 95,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.29152173913043478,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 1341,
+          "insts_before": 1341,
+          "seed": 0,
+          "skip_reason": "indirect calls",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -6890899488955401803,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1850,
+        "remaining": 1113,
+        "utilization": 0.39837837837837836
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 8,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 6,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 4.5
+      },
+      "insts": {
+        "after": 737,
+        "before": 37
+      },
+      "name": "av_codec_iterate",
+      "passes": [
+        {
+          "budget_util_after": 0.03027027027027027,
+          "changed": true,
+          "delta_insts": 19,
+          "id": "substitution",
+          "insts_after": 56,
+          "insts_before": 37,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.12378378378378378,
+          "changed": true,
+          "delta_insts": 173,
+          "id": "bcf",
+          "insts_after": 229,
+          "insts_before": 56,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.39837837837837836,
+          "changed": true,
+          "delta_insts": 508,
+          "id": "flattening",
+          "insts_after": 737,
+          "insts_before": 229,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -108938573415765222,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 256,
+        "remaining": 248,
+        "utilization": 0.03125
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 8,
+        "before": 5
+      },
+      "name": "avcodec_find_decoder",
+      "passes": [
+        {
+          "budget_util_after": 0.03125,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 8,
+          "insts_before": 5,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03125,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 8,
+          "insts_before": 8,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03125,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 8,
+          "insts_before": 8,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 5753501803199931845,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 256,
+        "remaining": 248,
+        "utilization": 0.03125
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 8,
+        "before": 5
+      },
+      "name": "avcodec_find_decoder_by_name",
+      "passes": [
+        {
+          "budget_util_after": 0.03125,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 8,
+          "insts_before": 5,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03125,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 8,
+          "insts_before": 8,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03125,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 8,
+          "insts_before": 8,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 4585048762962869713,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 256,
+        "remaining": 248,
+        "utilization": 0.03125
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 8,
+        "before": 5
+      },
+      "name": "avcodec_find_encoder",
+      "passes": [
+        {
+          "budget_util_after": 0.03125,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 8,
+          "insts_before": 5,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03125,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 8,
+          "insts_before": 8,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03125,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 8,
+          "insts_before": 8,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 6340115937602147106,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 256,
+        "remaining": 248,
+        "utilization": 0.03125
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 8,
+        "before": 5
+      },
+      "name": "avcodec_find_encoder_by_name",
+      "passes": [
+        {
+          "budget_util_after": 0.03125,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 8,
+          "insts_before": 5,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03125,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 8,
+          "insts_before": 8,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03125,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 8,
+          "insts_before": 8,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 8832996567623799752,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 700,
+        "remaining": 676,
+        "utilization": 0.034285714285714287
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 24,
+        "before": 14
+      },
+      "name": "ff_codec_is_decoder",
+      "passes": [
+        {
+          "budget_util_after": 0.034285714285714287,
+          "changed": true,
+          "delta_insts": 10,
+          "id": "substitution",
+          "insts_after": 24,
+          "insts_before": 14,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.034285714285714287,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 24,
+          "insts_before": 24,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.034285714285714287,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 24,
+          "insts_before": 24,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 3099130377021956840,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 850,
+        "remaining": 799,
+        "utilization": 0.059999999999999998
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 51,
+        "before": 17
+      },
+      "name": "ff_codec_is_encoder",
+      "passes": [
+        {
+          "budget_util_after": 0.059999999999999998,
+          "changed": true,
+          "delta_insts": 34,
+          "id": "substitution",
+          "insts_after": 51,
+          "insts_before": 17,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.059999999999999998,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 51,
+          "insts_before": 51,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.059999999999999998,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 51,
+          "insts_before": 51,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 469387001227524605,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 256,
+        "remaining": 249,
+        "utilization": 0.02734375
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 7,
+        "before": 4
+      },
+      "name": "ffcodec",
+      "passes": [
+        {
+          "budget_util_after": 0.02734375,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 7,
+          "insts_before": 4,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.02734375,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 7,
+          "insts_before": 7,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.02734375,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 7,
+          "insts_before": 7,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -6647456354925693458,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 3050,
+        "remaining": 2214,
+        "utilization": 0.27409836065573773
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 14,
+        "cyclomatic_before": 6,
+        "cyclomatic_delta": 8,
+        "indirect_branches": 0,
+        "indirect_calls": 1,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 6
+      },
+      "insts": {
+        "after": 836,
+        "before": 61
+      },
+      "name": "find_codec",
+      "passes": [
+        {
+          "budget_util_after": 0.025245901639344263,
+          "changed": true,
+          "delta_insts": 16,
+          "id": "substitution",
+          "insts_after": 77,
+          "insts_before": 61,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.27409836065573773,
+          "changed": true,
+          "delta_insts": 759,
+          "id": "bcf",
+          "insts_after": 836,
+          "insts_before": 77,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.27409836065573773,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 836,
+          "insts_before": 836,
+          "seed": 0,
+          "skip_reason": "indirect calls",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 4802917425855841111,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 2350,
+        "remaining": 1968,
+        "utilization": 0.1625531914893617
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 9,
+        "cyclomatic_before": 5,
+        "cyclomatic_delta": 4,
+        "indirect_branches": 0,
+        "indirect_calls": 1,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 3
+      },
+      "insts": {
+        "after": 382,
+        "before": 47
+      },
+      "name": "find_codec_by_name",
+      "passes": [
+        {
+          "budget_util_after": 0.021276595744680851,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 50,
+          "insts_before": 47,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.1625531914893617,
+          "changed": true,
+          "delta_insts": 332,
+          "id": "bcf",
+          "insts_after": 382,
+          "insts_before": 50,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.1625531914893617,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 382,
+          "insts_before": 382,
+          "seed": 0,
+          "skip_reason": "indirect calls",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -6865707745848330256,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 300,
+        "remaining": 0,
+        "utilization": 2.2533333333333334
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 6,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 5,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 3.75
+      },
+      "insts": {
+        "after": 676,
+        "before": 6
+      },
+      "name": "remap_deprecated_codec_id",
+      "passes": [
+        {
+          "budget_util_after": 0.029999999999999999,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 9,
+          "insts_before": 6,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.90000000000000002,
+          "changed": true,
+          "delta_insts": 261,
+          "id": "bcf",
+          "insts_after": 270,
+          "insts_before": 9,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 2.2533333333333334,
+          "changed": true,
+          "delta_insts": 406,
+          "id": "flattening",
+          "insts_after": 676,
+          "insts_before": 270,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 7157314407542998820,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/allcodecs.c",
+    "source_file": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/allcodecs.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

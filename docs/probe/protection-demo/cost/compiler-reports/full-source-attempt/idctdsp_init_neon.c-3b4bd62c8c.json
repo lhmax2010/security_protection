@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 2650,
+        "remaining": 1594,
+        "utilization": 0.39849056603773586
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 12,
+        "cyclomatic_before": 6,
+        "cyclomatic_delta": 6,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 4.5
+      },
+      "insts": {
+        "after": 1056,
+        "before": 53
+      },
+      "name": "ff_idctdsp_init_neon",
+      "passes": [
+        {
+          "budget_util_after": 0.021132075471698115,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 56,
+          "insts_before": 53,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.11924528301886793,
+          "changed": true,
+          "delta_insts": 260,
+          "id": "bcf",
+          "insts_after": 316,
+          "insts_before": 56,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.39849056603773586,
+          "changed": true,
+          "delta_insts": 740,
+          "id": "flattening",
+          "insts_after": 1056,
+          "insts_before": 316,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -2729037045734786006,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/idctdsp_init_neon.c",
+    "source_file": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/idctdsp_init_neon.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

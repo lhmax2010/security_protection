@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 350,
+        "remaining": 0,
+        "utilization": 2.1114285714285712
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 8,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 6,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.7063599458728009,
+        "opaque_predicates": 20,
+        "score": 12.957374830852503
+      },
+      "insts": {
+        "after": 739,
+        "before": 7
+      },
+      "name": "ff_videodsp_init_arm",
+      "passes": [
+        {
+          "budget_util_after": 0.071428571428571425,
+          "changed": true,
+          "delta_insts": 18,
+          "id": "substitution",
+          "insts_after": 25,
+          "insts_before": 7,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.78285714285714281,
+          "changed": true,
+          "delta_insts": 249,
+          "id": "bcf",
+          "insts_after": 274,
+          "insts_before": 25,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 2.1114285714285712,
+          "changed": true,
+          "delta_insts": 465,
+          "id": "flattening",
+          "insts_after": 739,
+          "insts_before": 274,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -8190012553607349251,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/videodsp_init_arm.c-5d7919299f.annotated.ll",
+    "source_file": "src/libavcodec/arm/videodsp_init_arm.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

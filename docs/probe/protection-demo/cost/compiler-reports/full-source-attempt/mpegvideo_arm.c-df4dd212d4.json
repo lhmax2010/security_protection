@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1400,
+        "remaining": 1048,
+        "utilization": 0.25142857142857145
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 4,
+        "cyclomatic_before": 3,
+        "cyclomatic_delta": 1,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0.75
+      },
+      "insts": {
+        "after": 352,
+        "before": 28
+      },
+      "name": "ff_mpv_unquantize_init_arm",
+      "passes": [
+        {
+          "budget_util_after": 0.03214285714285714,
+          "changed": true,
+          "delta_insts": 17,
+          "id": "substitution",
+          "insts_after": 45,
+          "insts_before": 28,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03214285714285714,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 45,
+          "insts_before": 45,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.25142857142857145,
+          "changed": true,
+          "delta_insts": 307,
+          "id": "flattening",
+          "insts_after": 352,
+          "insts_before": 45,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -6718869354553064609,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/mpegvideo_arm.c",
+    "source_file": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/mpegvideo_arm.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

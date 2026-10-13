@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 700,
+        "remaining": 0,
+        "utilization": 1.082857142857143
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 8,
+        "cyclomatic_before": 3,
+        "cyclomatic_delta": 5,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.6385224274406331,
+        "opaque_predicates": 20,
+        "score": 11.99538258575198
+      },
+      "insts": {
+        "after": 758,
+        "before": 14
+      },
+      "name": "ff_scalarproduct_float_c",
+      "passes": [
+        {
+          "budget_util_after": 0.024285714285714285,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 17,
+          "insts_before": 14,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.37857142857142856,
+          "changed": true,
+          "delta_insts": 248,
+          "id": "bcf",
+          "insts_after": 265,
+          "insts_before": 17,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 1.082857142857143,
+          "changed": true,
+          "delta_insts": 493,
+          "id": "flattening",
+          "insts_after": 758,
+          "insts_before": 265,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 2876005574754116977,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/float_scalarproduct.c-54066f7b29.annotated.ll",
+    "source_file": "src/libavcodec/float_scalarproduct.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

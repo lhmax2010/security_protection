@@ -1,0 +1,4 @@
+baseline completed artifact hashes verified; no rebuild
+selective completed artifact hashes verified; no rebuild
+full building
+full complete 23.7 seconds

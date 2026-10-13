@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 350,
+        "remaining": 0,
+        "utilization": 2.1314285714285712
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 8,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 6,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.6809651474530831,
+        "opaque_predicates": 20,
+        "score": 12.878016085790883
+      },
+      "insts": {
+        "after": 746,
+        "before": 7
+      },
+      "name": "ff_blockdsp_init_arm",
+      "passes": [
+        {
+          "budget_util_after": 0.088571428571428565,
+          "changed": true,
+          "delta_insts": 24,
+          "id": "substitution",
+          "insts_after": 31,
+          "insts_before": 7,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.80285714285714282,
+          "changed": true,
+          "delta_insts": 250,
+          "id": "bcf",
+          "insts_after": 281,
+          "insts_before": 31,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 2.1314285714285712,
+          "changed": true,
+          "delta_insts": 465,
+          "id": "flattening",
+          "insts_after": 746,
+          "insts_before": 281,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 1571884929264246614,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/blockdsp_init_arm.c-9e4fa1a914.annotated.ll",
+    "source_file": "src/libavcodec/arm/blockdsp_init_arm.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

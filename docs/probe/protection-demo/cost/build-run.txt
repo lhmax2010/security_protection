@@ -1,0 +1,5 @@
+baseline building
+baseline complete 17.6 seconds
+selective building
+selective complete 18.5 seconds
+full completed artifact hashes verified; no rebuild

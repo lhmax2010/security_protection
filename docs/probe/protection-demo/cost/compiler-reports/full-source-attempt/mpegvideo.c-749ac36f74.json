@@ -1,0 +1,1266 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 256,
+        "remaining": 248,
+        "utilization": 0.03125
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 8,
+        "before": 5
+      },
+      "name": "av_refstruct_pool_uninit",
+      "passes": [
+        {
+          "budget_util_after": 0.03125,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 8,
+          "insts_before": 5,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03125,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 8,
+          "insts_before": 8,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.03125,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 8,
+          "insts_before": 8,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -678952407970123294,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 4300,
+        "remaining": 2470,
+        "utilization": 0.42558139534883721
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 20,
+        "cyclomatic_before": 3,
+        "cyclomatic_delta": 17,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 12.75
+      },
+      "insts": {
+        "after": 1830,
+        "before": 86
+      },
+      "name": "dsp_init",
+      "passes": [
+        {
+          "budget_util_after": 0.026511627906976743,
+          "changed": true,
+          "delta_insts": 28,
+          "id": "substitution",
+          "insts_after": 114,
+          "insts_before": 86,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.16116279069767442,
+          "changed": true,
+          "delta_insts": 579,
+          "id": "bcf",
+          "insts_after": 693,
+          "insts_before": 114,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.42558139534883721,
+          "changed": true,
+          "delta_insts": 1137,
+          "id": "flattening",
+          "insts_after": 1830,
+          "insts_before": 693,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 4360421720143771649,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 4750,
+        "remaining": 4642,
+        "utilization": 0.022736842105263159
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 108,
+        "before": 95
+      },
+      "name": "ff_clean_intra_table_entries",
+      "passes": [
+        {
+          "budget_util_after": 0.022736842105263159,
+          "changed": true,
+          "delta_insts": 13,
+          "id": "substitution",
+          "insts_after": 108,
+          "insts_before": 95,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.022736842105263159,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 108,
+          "insts_before": 108,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.022736842105263159,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 108,
+          "insts_before": 108,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -1865596463156031248,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 12000,
+        "remaining": 11370,
+        "utilization": 0.052499999999999998
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 3,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 1,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0.75
+      },
+      "insts": {
+        "after": 630,
+        "before": 339
+      },
+      "name": "ff_init_block_index",
+      "passes": [
+        {
+          "budget_util_after": 0.032000000000000001,
+          "changed": true,
+          "delta_insts": 45,
+          "id": "substitution",
+          "insts_after": 384,
+          "insts_before": 339,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.032000000000000001,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 384,
+          "insts_before": 384,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.052499999999999998,
+          "changed": true,
+          "delta_insts": 246,
+          "id": "flattening",
+          "insts_after": 630,
+          "insts_before": 384,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -6449468385604687057,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 3450,
+        "remaining": 2460,
+        "utilization": 0.28695652173913044
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 12,
+        "cyclomatic_before": 3,
+        "cyclomatic_delta": 9,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 6.75
+      },
+      "insts": {
+        "after": 990,
+        "before": 69
+      },
+      "name": "ff_init_scantable",
+      "passes": [
+        {
+          "budget_util_after": 0.020869565217391306,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 72,
+          "insts_before": 69,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.082898550724637685,
+          "changed": true,
+          "delta_insts": 214,
+          "id": "bcf",
+          "insts_after": 286,
+          "insts_before": 72,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.28695652173913044,
+          "changed": true,
+          "delta_insts": 704,
+          "id": "flattening",
+          "insts_after": 990,
+          "insts_before": 286,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 6589026103034444854,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 900,
+        "remaining": 879,
+        "utilization": 0.023333333333333334
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 21,
+        "before": 18
+      },
+      "name": "ff_mpv_common_defaults",
+      "passes": [
+        {
+          "budget_util_after": 0.023333333333333334,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 21,
+          "insts_before": 18,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.023333333333333334,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 21,
+          "insts_before": 21,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.023333333333333334,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 21,
+          "insts_before": 21,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 2777478090985109964,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1750,
+        "remaining": 1029,
+        "utilization": 0.41199999999999998
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 7,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 5,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 3.75
+      },
+      "insts": {
+        "after": 721,
+        "before": 35
+      },
+      "name": "ff_mpv_common_end",
+      "passes": [
+        {
+          "budget_util_after": 0.021714285714285714,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 38,
+          "insts_before": 35,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.14399999999999999,
+          "changed": true,
+          "delta_insts": 214,
+          "id": "bcf",
+          "insts_after": 252,
+          "insts_before": 38,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.41199999999999998,
+          "changed": true,
+          "delta_insts": 469,
+          "id": "flattening",
+          "insts_after": 721,
+          "insts_before": 252,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -2868381805053564287,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 5200,
+        "remaining": 1428,
+        "utilization": 0.72538461538461541
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 46,
+        "cyclomatic_before": 9,
+        "cyclomatic_delta": 37,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 27.750000000000004
+      },
+      "insts": {
+        "after": 3772,
+        "before": 104
+      },
+      "name": "ff_mpv_common_init",
+      "passes": [
+        {
+          "budget_util_after": 0.020576923076923076,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 107,
+          "insts_before": 104,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.24134615384615385,
+          "changed": true,
+          "delta_insts": 1148,
+          "id": "bcf",
+          "insts_after": 1255,
+          "insts_before": 107,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.72538461538461541,
+          "changed": true,
+          "delta_insts": 2517,
+          "id": "flattening",
+          "insts_after": 3772,
+          "insts_before": 1255,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -328487848500755212,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 4350,
+        "remaining": 1979,
+        "utilization": 0.54505747126436777
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 28,
+        "cyclomatic_before": 3,
+        "cyclomatic_delta": 25,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 18.75
+      },
+      "insts": {
+        "after": 2371,
+        "before": 87
+      },
+      "name": "ff_mpv_free_context_frame",
+      "passes": [
+        {
+          "budget_util_after": 0.020689655172413793,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 90,
+          "insts_before": 87,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.19241379310344828,
+          "changed": true,
+          "delta_insts": 747,
+          "id": "bcf",
+          "insts_after": 837,
+          "insts_before": 90,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.54505747126436777,
+          "changed": true,
+          "delta_insts": 1534,
+          "id": "flattening",
+          "insts_after": 2371,
+          "insts_before": 837,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 2762777472550208682,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 3650,
+        "remaining": 2320,
+        "utilization": 0.36438356164383562
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 14,
+        "cyclomatic_before": 3,
+        "cyclomatic_delta": 11,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 8.25
+      },
+      "insts": {
+        "after": 1330,
+        "before": 73
+      },
+      "name": "ff_mpv_idct_init",
+      "passes": [
+        {
+          "budget_util_after": 0.020821917808219178,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 76,
+          "insts_before": 73,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.13671232876712328,
+          "changed": true,
+          "delta_insts": 423,
+          "id": "bcf",
+          "insts_after": 499,
+          "insts_before": 76,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.36438356164383562,
+          "changed": true,
+          "delta_insts": 831,
+          "id": "flattening",
+          "insts_after": 1330,
+          "insts_before": 499,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 4497972644459151156,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 12000,
+        "remaining": 5057,
+        "utilization": 0.57858333333333334
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 118,
+        "cyclomatic_before": 48,
+        "cyclomatic_delta": 70,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 30
+      },
+      "insts": {
+        "after": 6943,
+        "before": 803
+      },
+      "name": "ff_mpv_init_context_frame",
+      "passes": [
+        {
+          "budget_util_after": 0.072499999999999995,
+          "changed": true,
+          "delta_insts": 67,
+          "id": "substitution",
+          "insts_after": 870,
+          "insts_before": 803,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.57858333333333334,
+          "changed": true,
+          "delta_insts": 6073,
+          "id": "bcf",
+          "insts_after": 6943,
+          "insts_before": 870,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.57858333333333334,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 6943,
+          "insts_before": 6943,
+          "seed": 0,
+          "skip_reason": "too many blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -8256146755224483996,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 5850,
+        "remaining": 4073,
+        "utilization": 0.30376068376068377
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 23,
+        "cyclomatic_before": 5,
+        "cyclomatic_delta": 18,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 13.5
+      },
+      "insts": {
+        "after": 1777,
+        "before": 117
+      },
+      "name": "ff_mpv_init_duplicate_contexts",
+      "passes": [
+        {
+          "budget_util_after": 0.020512820512820513,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 120,
+          "insts_before": 117,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.084444444444444447,
+          "changed": true,
+          "delta_insts": 374,
+          "id": "bcf",
+          "insts_after": 494,
+          "insts_before": 120,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.30376068376068377,
+          "changed": true,
+          "delta_insts": 1283,
+          "id": "flattening",
+          "insts_after": 1777,
+          "insts_before": 494,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -7624769053167569353,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 2600,
+        "remaining": 820,
+        "utilization": 0.68461538461538463
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 19,
+        "cyclomatic_before": 3,
+        "cyclomatic_delta": 16,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 12
+      },
+      "insts": {
+        "after": 1780,
+        "before": 52
+      },
+      "name": "ff_set_qscale",
+      "passes": [
+        {
+          "budget_util_after": 0.021153846153846155,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 55,
+          "insts_before": 52,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.2630769230769231,
+          "changed": true,
+          "delta_insts": 629,
+          "id": "bcf",
+          "insts_after": 684,
+          "insts_before": 55,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.68461538461538463,
+          "changed": true,
+          "delta_insts": 1096,
+          "id": "flattening",
+          "insts_after": 1780,
+          "insts_before": 684,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 1407716019112243923,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 4550,
+        "remaining": 3727,
+        "utilization": 0.18087912087912089
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 8,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 6,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 4.5
+      },
+      "insts": {
+        "after": 823,
+        "before": 91
+      },
+      "name": "ff_update_duplicate_context",
+      "passes": [
+        {
+          "budget_util_after": 0.02065934065934066,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 94,
+          "insts_before": 91,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.067912087912087915,
+          "changed": true,
+          "delta_insts": 215,
+          "id": "bcf",
+          "insts_after": 309,
+          "insts_before": 94,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.18087912087912089,
+          "changed": true,
+          "delta_insts": 514,
+          "id": "flattening",
+          "insts_after": 823,
+          "insts_before": 309,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -103188366259601660,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1350,
+        "remaining": 1320,
+        "utilization": 0.022222222222222223
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 30,
+        "before": 27
+      },
+      "name": "free_buffer_pools",
+      "passes": [
+        {
+          "budget_util_after": 0.022222222222222223,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 30,
+          "insts_before": 27,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.022222222222222223,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 30,
+          "insts_before": 30,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.022222222222222223,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 30,
+          "insts_before": 30,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 8638896117413413162,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1200,
+        "remaining": 921,
+        "utilization": 0.23250000000000001
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 3,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 1,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0.75
+      },
+      "insts": {
+        "after": 279,
+        "before": 24
+      },
+      "name": "free_duplicate_context",
+      "passes": [
+        {
+          "budget_util_after": 0.022499999999999999,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 27,
+          "insts_before": 24,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.022499999999999999,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 27,
+          "insts_before": 27,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.23250000000000001,
+          "changed": true,
+          "delta_insts": 252,
+          "id": "flattening",
+          "insts_after": 279,
+          "insts_before": 27,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -4094650157774978938,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1650,
+        "remaining": 1229,
+        "utilization": 0.25515151515151513
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 6,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 4,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 3
+      },
+      "insts": {
+        "after": 421,
+        "before": 33
+      },
+      "name": "free_duplicate_contexts",
+      "passes": [
+        {
+          "budget_util_after": 0.02181818181818182,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 36,
+          "insts_before": 33,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.02181818181818182,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 36,
+          "insts_before": 36,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.25515151515151513,
+          "changed": true,
+          "delta_insts": 385,
+          "id": "flattening",
+          "insts_after": 421,
+          "insts_before": 36,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 2354703541159947857,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1100,
+        "remaining": 827,
+        "utilization": 0.24818181818181817
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 3,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 1,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0.75
+      },
+      "insts": {
+        "after": 273,
+        "before": 22
+      },
+      "name": "gray16",
+      "passes": [
+        {
+          "budget_util_after": 0.022727272727272728,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 25,
+          "insts_before": 22,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.022727272727272728,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 25,
+          "insts_before": 25,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.24818181818181817,
+          "changed": true,
+          "delta_insts": 248,
+          "id": "flattening",
+          "insts_after": 273,
+          "insts_before": 25,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -4831518248729581455,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1100,
+        "remaining": 0,
+        "utilization": 1.03
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 12,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 10,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 7.5
+      },
+      "insts": {
+        "after": 1133,
+        "before": 22
+      },
+      "name": "gray8",
+      "passes": [
+        {
+          "budget_util_after": 0.022727272727272728,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 25,
+          "insts_before": 22,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.36909090909090908,
+          "changed": true,
+          "delta_insts": 381,
+          "id": "bcf",
+          "insts_after": 406,
+          "insts_before": 25,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 1.03,
+          "changed": true,
+          "delta_insts": 727,
+          "id": "flattening",
+          "insts_after": 1133,
+          "insts_before": 406,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -5376034316004361754,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/mpegvideo.c",
+    "source_file": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/generated/mpegvideo.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

@@ -1,0 +1,6 @@
+baseline building
+baseline complete 17.1 seconds
+selective building
+selective complete 17.3 seconds
+full building
+full make exit 2

@@ -1,0 +1,210 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 350,
+        "remaining": 0,
+        "utilization": 1.8428571428571427
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 8,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 6,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.4806201550387597,
+        "opaque_predicates": 16,
+        "score": 12.251937984496124
+      },
+      "insts": {
+        "after": 645,
+        "before": 7
+      },
+      "name": "avcodec_dct_alloc",
+      "passes": [
+        {
+          "budget_util_after": 0.028571428571428571,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 10,
+          "insts_before": 7,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.5,
+          "changed": true,
+          "delta_insts": 165,
+          "id": "bcf",
+          "insts_after": 175,
+          "insts_before": 10,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 1.8428571428571427,
+          "changed": true,
+          "delta_insts": 470,
+          "id": "flattening",
+          "insts_after": 645,
+          "insts_before": 175,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 4682508543280204937,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 256,
+        "remaining": 252,
+        "utilization": 0.015625
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 4,
+        "before": 1
+      },
+      "name": "avcodec_dct_get_class",
+      "passes": [
+        {
+          "budget_util_after": 0.015625,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 4,
+          "insts_before": 1,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.015625,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 4,
+          "insts_before": 4,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.015625,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 4,
+          "insts_before": 4,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -4656680790035284746,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 2100,
+        "remaining": 1844,
+        "utilization": 0.1219047619047619
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 3,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 1,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 1.5625,
+        "opaque_predicates": 4,
+        "score": 5.6328125
+      },
+      "insts": {
+        "after": 256,
+        "before": 42
+      },
+      "name": "avcodec_dct_init",
+      "passes": [
+        {
+          "budget_util_after": 0.021428571428571429,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 45,
+          "insts_before": 42,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.021428571428571429,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 45,
+          "insts_before": 45,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.1219047619047619,
+          "changed": true,
+          "delta_insts": 211,
+          "id": "flattening",
+          "insts_after": 256,
+          "insts_before": 45,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -3603437227606943941,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/avdct.c-0acf4afaf2.annotated.ll",
+    "source_file": "src/libavcodec/avdct.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

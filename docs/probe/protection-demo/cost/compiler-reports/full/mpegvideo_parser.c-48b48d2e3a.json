@@ -1,0 +1,144 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 12000,
+        "remaining": 0,
+        "utilization": 1.3471666666666666
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 199,
+        "cyclomatic_before": 56,
+        "cyclomatic_delta": 143,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.3320549301002105,
+        "opaque_predicates": 377,
+        "score": 37.287671656563163
+      },
+      "insts": {
+        "after": 16166,
+        "before": 465
+      },
+      "name": "mpegvideo_parse",
+      "passes": [
+        {
+          "budget_util_after": 0.074666666666666673,
+          "changed": true,
+          "delta_insts": 431,
+          "id": "substitution",
+          "insts_after": 896,
+          "insts_before": 465,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.40766666666666668,
+          "changed": true,
+          "delta_insts": 3996,
+          "id": "bcf",
+          "insts_after": 4892,
+          "insts_before": 896,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 1.3471666666666666,
+          "changed": true,
+          "delta_insts": 11274,
+          "id": "flattening",
+          "insts_after": 16166,
+          "insts_before": 4892,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 4267596832007819350,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 256,
+        "remaining": 250,
+        "utilization": 0.0234375
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 6,
+        "before": 3
+      },
+      "name": "mpegvideo_parse_init",
+      "passes": [
+        {
+          "budget_util_after": 0.0234375,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 6,
+          "insts_before": 3,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.0234375,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 6,
+          "insts_before": 6,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.0234375,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 6,
+          "insts_before": 6,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -2602314445965504209,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/mpegvideo_parser.c-48b48d2e3a.annotated.ll",
+    "source_file": "src/libavcodec/mpegvideo_parser.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

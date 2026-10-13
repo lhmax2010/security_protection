@@ -11,15 +11,15 @@ selected={
  'libavcodec/avcodec.c':{'avcodec_receive_frame':'Public output API / frame handoff'},
  'libavcodec/decode.c':{'avcodec_send_packet':'Public input/API validation',
     'ff_decode_receive_frame_internal':'Decode dispatch and buffer/error handling',
-    'decode_receive_frame_internal':'Frame properties/error/discard checks'},
+    'decode_receive_frame_internal':'Frame properties/error/discard checks',
+    'ff_decode_get_packet':'Packet retrieval and input pipeline checks',
+    'ff_decode_frame_props':'Decoded frame metadata/side data validation',
+    'ff_decode_frame_props_from_pkt':'Packet to frame property propagation'},
  'libavcodec/mpeg12dec.c':{'mpeg_decode_frame':'MPEG2 frame dispatch',
-    'mpeg_decode_postinit':'Sequence properties and decoder reinitialization',
-    'mpeg1_decode_picture':'Picture header validation',
-    'mpeg1_decode_sequence':'Sequence header validation',
-    'mpeg_decode_sequence_extension':'MPEG2 profile/dimension extension',
-    'mpeg_decode_picture_coding_extension':'Picture coding extension/flags'}}
-(base/'selected-functions.json').write_text(json.dumps({'annotation':annotation,'functions':selected,'rationale':'10 real pipeline/header parsing functions; avoids inner pixel/IDCT/macroblock kernels. Source annotations may be inlined before pass execution; actual reports decide surviving scope. This selection does not protect the whole decoder algorithm.'},indent=2)+'\n')
-(base/'build-variants.txt').write_text('FFmpeg8.0.1; xollvm22.1.8; identical minimal MPEG2 decoder, parser, mpegvideo demuxer, null/framemd5 muxers, file protocol, wrapped_avframe/rawvideo encoders; -O2 ARMv7 hard-float PIC, NEON/assembly retained, no debug/strip.\nBaseline: no pass. Selective: annotate10 pipeline/header functions; full: balanced pragma on all libavcodec C source TUs, including header functions that survive inlining; assembly and other FFmpeg libraries not obfuscated.\n'+annotation+'\nFixed seed1, verify; IR hard cap12000 per function and default advisory multiplier50; fla maxBlocks200; actual skipped/rollback/function reports will be aggregated. Full build deadline1200s, per affected C TU180s; builds use -j2.\nSelf-contained ffmpeg statically relinked from these same PIC objects; shared .so kept for size measurement. All binaries/source trees/media private/.\n')
+    'mpeg_decode_init':'Decoder initialization and resource checks',
+    'mpeg_decode_end':'Decoder shutdown and resource cleanup'}}
+(base/'selected-functions.json').write_text(json.dumps({'annotation':annotation,'functions':selected,'rationale':'10 real emitted pipeline/API/property and decoder lifecycle functions; avoids inner pixel/IDCT/macroblock kernels. Post-O2 IR annotation prevents retaining otherwise unused helper functions. This selection does not protect the whole decoder algorithm.'},indent=2)+'\n')
+(base/'build-variants.txt').write_text('FFmpeg8.0.1; xollvm22.1.8; identical minimal MPEG2 decoder, parser, mpegvideo demuxer, null/framemd5 muxers, file protocol, wrapped_avframe/rawvideo encoders; -O2 ARMv7 hard-float PIC, NEON/assembly retained, no debug/strip.\nBaseline: no pass. Selective: annotate10 actually emitted pipeline/API/property/lifecycle functions. Full: annotate every actual post-O2 definition in libavcodec C TUs. All three use the same optimized IR/clang backend pipeline; baseline skips opt obfuscation, protected variants use real xollvm opt. Backend -O2 -disable-llvm-passes preserves input IR. Assembly and other FFmpeg libraries not obfuscated.\n'+annotation+'\nFixed seed1, verify; IR hard cap12000 per function and default advisory multiplier50; fla maxBlocks200; actual skipped/rollback/function reports will be aggregated. Full build deadline1200s, each pipeline stage deadline180s; builds use -j2.\nSelf-contained ffmpeg statically relinked from these same PIC objects; shared .so kept for size measurement. All binaries/source trees/media private/.\nInitial source-level full annotation failed on disabled-codec reference retention; preserved as full_source_attempt. Initial source selective and direct baseline are preserved as source attempts, not used for final comparison. No body is hand-obfuscated: own script only attaches metadata; real xollvm passes do all transforms.\n')
 records={}
 statuspath=base/'build-status.json'
 if statuspath.exists():records=json.loads(statuspath.read_text())
@@ -33,15 +33,6 @@ for variant in ['baseline','selective','full']:
         if all(Path(p).is_file() and hashlib.sha256(Path(p).read_bytes()).hexdigest()==h for p,h in complete['hashes'].items()):
             print(variant,'completed artifact hashes verified; no rebuild',flush=True);continue
     if not source.exists():subprocess.run(['tar','-xf',str(archive),'-C',str(work)],check=True)
-    if variant=='selective' and not (work/'annotated.marker').exists():
-        for rel,functions in selected.items():
-            p=source/rel;text=p.read_text()
-            for name in functions:
-                pattern=r'(?m)^([^\n;{}]*\b'+re.escape(name)+r'\s*\([^;{}]*?\)\s*)(\{)'
-                matches=list(re.finditer(pattern,text));assert len(matches)==1,(rel,name,len(matches))
-                m=matches[0];text=text[:m.start()]+'__attribute__((annotate("'+annotation+'")))\n'+text[m.start():]
-            p.write_text(text)
-        (work/'annotated.marker').write_text(annotation+'\n')
     cc=work/'cc';cc.write_text('#!/bin/sh\nexec python3 '+shlex.quote(str(wrapper))+' '+variant+' "$@"\n');cc.chmod(0o755)
     config=[str(source/'configure'),'--prefix='+str(work/'install'),'--arch=arm','--cpu=cortex-a7','--target-os=linux','--enable-cross-compile',
        '--cross-prefix=arm-linux-gnueabihf-','--cc='+str(cc),'--sysroot='+str(root/'.local-tools/sysroot'),

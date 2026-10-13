@@ -1,0 +1,41 @@
+{
+  "method": "Existing validated read-only Lua ELF decoder; .text size independently agrees with GNU readelf; identical unstripped release/PIC libraries (no debug), not executable total PT_LOAD size.",
+  "rows": [
+    {
+      "variant": "baseline",
+      "measured": true,
+      "so_file_bytes": 449904,
+      "text_bytes": 263236,
+      "so_sha256": "020a7a4f0a359b2e0246669ec2127045c8f9bbb5beca29441135a31508d61ac1",
+      "ffmpeg_static_bytes": 2063188,
+      "ffmpeg_static_sha256": "705e76051c2901d153ea331178581e5d28bf5db1f35da6f2e5e89ceaded47121",
+      "library_stripped": false,
+      "so_file_bytes_growth_percent": 0.0,
+      "text_bytes_growth_percent": 0.0
+    },
+    {
+      "variant": "selective",
+      "measured": true,
+      "so_file_bytes": 507488,
+      "text_bytes": 318820,
+      "so_sha256": "7166a200b20fae75fcef6a210aef46acfbf0620c026a0570cb1ed9ad69b71f4a",
+      "ffmpeg_static_bytes": 2120804,
+      "ffmpeg_static_sha256": "3a3fcaee7cdbc457646a539cbd7c384ff2e52823ac57d27e13758cc023c04fbd",
+      "library_stripped": false,
+      "so_file_bytes_growth_percent": 12.799174935097257,
+      "text_bytes_growth_percent": 21.11565287422692
+    },
+    {
+      "variant": "full",
+      "measured": true,
+      "so_file_bytes": 2265168,
+      "text_bytes": 2072916,
+      "so_sha256": "ce097dc2fa5748522a067e5f634fc022527986a8763c45d97e620b70113e2320",
+      "ffmpeg_static_bytes": 3750884,
+      "ffmpeg_static_sha256": "bf8d39f6453252790457b27d1590925156fa16bf8cb0e0e46b07cb4ed292d791",
+      "library_stripped": false,
+      "so_file_bytes_growth_percent": 403.4780753227355,
+      "text_bytes_growth_percent": 687.4743576106612
+    }
+  ]
+}

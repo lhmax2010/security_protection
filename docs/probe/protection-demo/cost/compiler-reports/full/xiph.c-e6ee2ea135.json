@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 5850,
+        "remaining": 4738,
+        "utilization": 0.19008547008547008
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 25,
+        "cyclomatic_before": 15,
+        "cyclomatic_delta": 10,
+        "indirect_branches": 0,
+        "indirect_calls": 3,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 3.8669064748201438,
+        "opaque_predicates": 43,
+        "score": 19.584082733812949
+      },
+      "insts": {
+        "after": 1112,
+        "before": 117
+      },
+      "name": "avpriv_split_xiph_headers",
+      "passes": [
+        {
+          "budget_util_after": 0.022735042735042735,
+          "changed": true,
+          "delta_insts": 16,
+          "id": "substitution",
+          "insts_after": 133,
+          "insts_before": 117,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.19008547008547008,
+          "changed": true,
+          "delta_insts": 979,
+          "id": "bcf",
+          "insts_after": 1112,
+          "insts_before": 133,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.19008547008547008,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 1112,
+          "insts_before": 1112,
+          "seed": 0,
+          "skip_reason": "indirect calls",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -8144947453218620338,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/xiph.c-e6ee2ea135.annotated.ll",
+    "source_file": "src/libavcodec/xiph.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

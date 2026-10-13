@@ -7,16 +7,16 @@
     "libavcodec/decode.c": {
       "avcodec_send_packet": "Public input/API validation",
       "ff_decode_receive_frame_internal": "Decode dispatch and buffer/error handling",
-      "decode_receive_frame_internal": "Frame properties/error/discard checks"
+      "decode_receive_frame_internal": "Frame properties/error/discard checks",
+      "ff_decode_get_packet": "Packet retrieval and input pipeline checks",
+      "ff_decode_frame_props": "Decoded frame metadata/side data validation",
+      "ff_decode_frame_props_from_pkt": "Packet to frame property propagation"
     },
     "libavcodec/mpeg12dec.c": {
       "mpeg_decode_frame": "MPEG2 frame dispatch",
-      "mpeg_decode_postinit": "Sequence properties and decoder reinitialization",
-      "mpeg1_decode_picture": "Picture header validation",
-      "mpeg1_decode_sequence": "Sequence header validation",
-      "mpeg_decode_sequence_extension": "MPEG2 profile/dimension extension",
-      "mpeg_decode_picture_coding_extension": "Picture coding extension/flags"
+      "mpeg_decode_init": "Decoder initialization and resource checks",
+      "mpeg_decode_end": "Decoder shutdown and resource cleanup"
     }
   },
-  "rationale": "10 real pipeline/header parsing functions; avoids inner pixel/IDCT/macroblock kernels. Source annotations may be inlined before pass execution; actual reports decide surviving scope. This selection does not protect the whole decoder algorithm."
+  "rationale": "10 real emitted pipeline/API/property and decoder lifecycle functions; avoids inner pixel/IDCT/macroblock kernels. Post-O2 IR annotation prevents retaining otherwise unused helper functions. This selection does not protect the whole decoder algorithm."
 }

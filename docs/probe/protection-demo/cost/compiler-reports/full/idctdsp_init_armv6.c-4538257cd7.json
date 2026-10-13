@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1250,
+        "remaining": 246,
+        "utilization": 0.80320000000000003
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 13,
+        "cyclomatic_before": 5,
+        "cyclomatic_delta": 8,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.2908366533864544,
+        "opaque_predicates": 23,
+        "score": 13.158864541832671
+      },
+      "insts": {
+        "after": 1004,
+        "before": 25
+      },
+      "name": "ff_idctdsp_init_armv6",
+      "passes": [
+        {
+          "budget_util_after": 0.033599999999999998,
+          "changed": true,
+          "delta_insts": 17,
+          "id": "substitution",
+          "insts_after": 42,
+          "insts_before": 25,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.20000000000000001,
+          "changed": true,
+          "delta_insts": 208,
+          "id": "bcf",
+          "insts_after": 250,
+          "insts_before": 42,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.80320000000000003,
+          "changed": true,
+          "delta_insts": 754,
+          "id": "flattening",
+          "insts_after": 1004,
+          "insts_before": 250,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -8779153356450291526,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/idctdsp_init_armv6.c-4538257cd7.annotated.ll",
+    "source_file": "src/libavcodec/arm/idctdsp_init_armv6.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

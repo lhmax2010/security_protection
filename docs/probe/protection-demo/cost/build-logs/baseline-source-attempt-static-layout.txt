@@ -1,0 +1,24 @@
+
+Elf file type is EXEC (Executable file)
+Entry point 0x15835
+There are 7 program headers, starting at offset 52
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  EXIDX          0x193df0 0x001a3df0 0x001a3df0 0x00808 0x00808 R   0x4
+  LOAD           0x000000 0x00010000 0x00010000 0x1945fc 0x1945fc R E 0x1000
+  LOAD           0x194e68 0x001a5e68 0x001a5e68 0x1d0cc 0x2c7cc RW  0x1000
+  NOTE           0x000114 0x00010114 0x00010114 0x00020 0x00020 R   0x4
+  TLS            0x194e68 0x001a5e68 0x001a5e68 0x00010 0x00034 R   0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10
+  GNU_RELRO      0x194e68 0x001a5e68 0x001a5e68 0x1b198 0x1b198 R   0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .ARM.exidx 
+   01     .note.ABI-tag .rel.dyn .init .iplt .text .fini .rodata .ARM.extab .ARM.exidx .eh_frame 
+   02     .tdata .init_array .fini_array .data.rel.ro .got .data .bss 
+   03     .note.ABI-tag 
+   04     .tdata .tbss 
+   05     
+   06     .tdata .init_array .fini_array .data.rel.ro 

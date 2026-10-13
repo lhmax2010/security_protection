@@ -1,0 +1,14 @@
+[
+  {
+    "variant": "baseline",
+    "nm_exit": 0,
+    "ff_mspel_motion_refs": []
+  },
+  {
+    "variant": "full",
+    "nm_exit": 0,
+    "ff_mspel_motion_refs": [
+      "docs/probe/protection-demo/cost/private/full/build/libavcodec/mpegvideo_motion.o:         U ff_mspel_motion"
+    ]
+  }
+]

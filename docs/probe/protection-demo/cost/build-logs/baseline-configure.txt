@@ -1,0 +1,78 @@
+install prefix            /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/baseline/install
+source path               /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/baseline/ffmpeg-8.0.1
+C compiler                /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/baseline/cc
+C library                 glibc
+host C compiler           gcc
+host C library            glibc
+ARCH                      arm (cortex-a7)
+big-endian                no
+runtime cpu detection     yes
+ARMv5TE enabled           yes
+ARMv6 enabled             yes
+ARMv6T2 enabled           yes
+VFP enabled               yes
+NEON enabled              yes
+THUMB enabled             no
+debug symbols             no
+strip symbols             no
+optimize for size         no
+optimizations             yes
+static                    yes
+shared                    yes
+network support           no
+threading support         pthreads
+safe bitstream reader     yes
+texi2html enabled         no
+perl enabled              yes
+pod2man enabled           yes
+makeinfo enabled          no
+makeinfo supports HTML    no
+xmllint enabled           no
+
+External libraries:
+iconv
+
+External libraries providing hardware acceleration:
+
+Libraries:
+avcodec                 avformat
+avfilter                avutil
+
+Programs:
+ffmpeg
+
+Enabled decoders:
+mpeg2video
+
+Enabled encoders:
+rawvideo                wrapped_avframe
+
+Enabled hwaccels:
+
+Enabled parsers:
+mpegvideo
+
+Enabled demuxers:
+mpegvideo
+
+Enabled muxers:
+framemd5                null
+
+Enabled protocols:
+file
+
+Enabled filters:
+aformat                 format                  transpose
+anull                   hflip                   trim
+atrim                   null                    vflip
+crop                    rotate
+
+Enabled bsfs:
+
+Enabled indevs:
+
+Enabled outdevs:
+
+License: LGPL version 2.1 or later
+
+WARNING: arm-linux-gnueabihf-pkg-config not found, library detection may fail.

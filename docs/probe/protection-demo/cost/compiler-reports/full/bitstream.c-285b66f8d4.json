@@ -1,0 +1,144 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 11400,
+        "remaining": 9368,
+        "utilization": 0.17824561403508771
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 36,
+        "cyclomatic_before": 16,
+        "cyclomatic_delta": 20,
+        "indirect_branches": 0,
+        "indirect_calls": 2,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 3.3464566929133857,
+        "opaque_predicates": 68,
+        "score": 25.45767716535433
+      },
+      "insts": {
+        "after": 2032,
+        "before": 228
+      },
+      "name": "ff_copy_bits",
+      "passes": [
+        {
+          "budget_util_after": 0.042807017543859648,
+          "changed": true,
+          "delta_insts": 260,
+          "id": "substitution",
+          "insts_after": 488,
+          "insts_before": 228,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.17824561403508771,
+          "changed": true,
+          "delta_insts": 1544,
+          "id": "bcf",
+          "insts_after": 2032,
+          "insts_before": 488,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.17824561403508771,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 2032,
+          "insts_before": 2032,
+          "seed": 0,
+          "skip_reason": "indirect calls",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 2133101946205532851,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 4050,
+        "remaining": 525,
+        "utilization": 0.87037037037037035
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 42,
+        "cyclomatic_before": 8,
+        "cyclomatic_delta": 34,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.4680851063829787,
+        "opaque_predicates": 87,
+        "score": 33.212765957446813
+      },
+      "insts": {
+        "after": 3525,
+        "before": 81
+      },
+      "name": "ff_put_string",
+      "passes": [
+        {
+          "budget_util_after": 0.037777777777777778,
+          "changed": true,
+          "delta_insts": 72,
+          "id": "substitution",
+          "insts_after": 153,
+          "insts_before": 81,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.28493827160493829,
+          "changed": true,
+          "delta_insts": 1001,
+          "id": "bcf",
+          "insts_after": 1154,
+          "insts_before": 153,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.87037037037037035,
+          "changed": true,
+          "delta_insts": 2371,
+          "id": "flattening",
+          "insts_after": 3525,
+          "insts_before": 1154,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 4026362330769068780,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/bitstream.c-285b66f8d4.annotated.ll",
+    "source_file": "src/libavcodec/bitstream.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

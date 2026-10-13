@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1400,
+        "remaining": 1270,
+        "utilization": 0.09285714285714286
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 130,
+        "before": 28
+      },
+      "name": "ff_toupper4",
+      "passes": [
+        {
+          "budget_util_after": 0.09285714285714286,
+          "changed": true,
+          "delta_insts": 102,
+          "id": "substitution",
+          "insts_after": 130,
+          "insts_before": 28,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.09285714285714286,
+          "changed": false,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 130,
+          "insts_before": 130,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.09285714285714286,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 130,
+          "insts_before": 130,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -297038847285893896,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/to_upper4.c-6f3b8aa28c.annotated.ll",
+    "source_file": "src/libavcodec/to_upper4.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

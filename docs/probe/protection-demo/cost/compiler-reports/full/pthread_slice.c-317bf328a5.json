@@ -1,0 +1,474 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1800,
+        "remaining": 527,
+        "utilization": 0.7072222222222222
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 15,
+        "cyclomatic_before": 4,
+        "cyclomatic_delta": 11,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.5137470542026707,
+        "opaque_predicates": 32,
+        "score": 16.105459544383347
+      },
+      "insts": {
+        "after": 1273,
+        "before": 36
+      },
+      "name": "ff_slice_thread_execute_with_mainfunc",
+      "passes": [
+        {
+          "budget_util_after": 0.029999999999999999,
+          "changed": true,
+          "delta_insts": 18,
+          "id": "substitution",
+          "insts_after": 54,
+          "insts_before": 36,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.23333333333333334,
+          "changed": true,
+          "delta_insts": 366,
+          "id": "bcf",
+          "insts_after": 420,
+          "insts_before": 54,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.7072222222222222,
+          "changed": true,
+          "delta_insts": 853,
+          "id": "flattening",
+          "insts_after": 1273,
+          "insts_before": 420,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 3289819319497346110,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 450,
+        "remaining": 438,
+        "utilization": 0.026666666666666668
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 12,
+        "before": 9
+      },
+      "name": "ff_slice_thread_free",
+      "passes": [
+        {
+          "budget_util_after": 0.026666666666666668,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 12,
+          "insts_before": 9,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.026666666666666668,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 12,
+          "insts_before": 12,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.026666666666666668,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 12,
+          "insts_before": 12,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -1068843108507887524,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 2850,
+        "remaining": 1682,
+        "utilization": 0.40982456140350876
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 17,
+        "cyclomatic_before": 6,
+        "cyclomatic_delta": 11,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 1.9691780821917808,
+        "opaque_predicates": 23,
+        "score": 14.403681506849313
+      },
+      "insts": {
+        "after": 1168,
+        "before": 57
+      },
+      "name": "ff_slice_thread_init",
+      "passes": [
+        {
+          "budget_util_after": 0.025263157894736842,
+          "changed": true,
+          "delta_insts": 15,
+          "id": "substitution",
+          "insts_after": 72,
+          "insts_before": 57,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.06771929824561404,
+          "changed": true,
+          "delta_insts": 121,
+          "id": "bcf",
+          "insts_after": 193,
+          "insts_before": 72,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.40982456140350876,
+          "changed": true,
+          "delta_insts": 975,
+          "id": "flattening",
+          "insts_after": 1168,
+          "insts_before": 193,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 190139510228526812,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 400,
+        "remaining": 389,
+        "utilization": 0.0275
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 1,
+        "cyclomatic_before": 1,
+        "cyclomatic_delta": 0,
+        "indirect_branches": 0,
+        "indirect_calls": 1,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 0,
+        "opaque_predicates": 0,
+        "score": 0
+      },
+      "insts": {
+        "after": 11,
+        "before": 8
+      },
+      "name": "main_function",
+      "passes": [
+        {
+          "budget_util_after": 0.0275,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 11,
+          "insts_before": 8,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.0275,
+          "changed": true,
+          "delta_insts": 0,
+          "id": "bcf",
+          "insts_after": 11,
+          "insts_before": 11,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.0275,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 11,
+          "insts_before": 11,
+          "seed": 0,
+          "skip_reason": "too few blocks",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 6611974409385346901,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1700,
+        "remaining": 0,
+        "utilization": 1.0288235294117647
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 20,
+        "cyclomatic_before": 4,
+        "cyclomatic_delta": 16,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.6300743281875358,
+        "opaque_predicates": 46,
+        "score": 20.21898227558605
+      },
+      "insts": {
+        "after": 1749,
+        "before": 34
+      },
+      "name": "thread_execute",
+      "passes": [
+        {
+          "budget_util_after": 0.03411764705882353,
+          "changed": true,
+          "delta_insts": 24,
+          "id": "substitution",
+          "insts_after": 58,
+          "insts_before": 34,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.36941176470588233,
+          "changed": true,
+          "delta_insts": 570,
+          "id": "bcf",
+          "insts_after": 628,
+          "insts_before": 58,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 1.0288235294117647,
+          "changed": true,
+          "delta_insts": 1121,
+          "id": "flattening",
+          "insts_after": 1749,
+          "insts_before": 628,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 5512347366906255489,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1800,
+        "remaining": 890,
+        "utilization": 0.50555555555555554
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 11,
+        "cyclomatic_before": 4,
+        "cyclomatic_delta": 7,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.3076923076923075,
+        "opaque_predicates": 21,
+        "score": 12.46153846153846
+      },
+      "insts": {
+        "after": 910,
+        "before": 36
+      },
+      "name": "thread_execute2",
+      "passes": [
+        {
+          "budget_util_after": 0.033333333333333333,
+          "changed": true,
+          "delta_insts": 24,
+          "id": "substitution",
+          "insts_after": 60,
+          "insts_before": 36,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.14888888888888888,
+          "changed": true,
+          "delta_insts": 208,
+          "id": "bcf",
+          "insts_after": 268,
+          "insts_before": 60,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.50555555555555554,
+          "changed": true,
+          "delta_insts": 642,
+          "id": "flattening",
+          "insts_after": 910,
+          "insts_before": 268,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 6278376216016818516,
+        "module": 1
+      },
+      "skipped": false
+    },
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1550,
+        "remaining": 1310,
+        "utilization": 0.15483870967741936
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 5,
+        "cyclomatic_before": 3,
+        "cyclomatic_delta": 2,
+        "indirect_branches": 0,
+        "indirect_calls": 2,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 3.75,
+        "opaque_predicates": 9,
+        "score": 13.218750000000002
+      },
+      "insts": {
+        "after": 240,
+        "before": 31
+      },
+      "name": "worker_func",
+      "passes": [
+        {
+          "budget_util_after": 0.021935483870967741,
+          "changed": false,
+          "delta_insts": 3,
+          "id": "substitution",
+          "insts_after": 34,
+          "insts_before": 31,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.15483870967741936,
+          "changed": true,
+          "delta_insts": 206,
+          "id": "bcf",
+          "insts_after": 240,
+          "insts_before": 34,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.15483870967741936,
+          "delta_insts": 0,
+          "id": "flattening",
+          "insts_after": 240,
+          "insts_before": 240,
+          "seed": 0,
+          "skip_reason": "indirect calls",
+          "status": "skipped"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": -4003862333046103510,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/pthread_slice.c-317bf328a5.annotated.ll",
+    "source_file": "src/libavcodec/pthread_slice.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

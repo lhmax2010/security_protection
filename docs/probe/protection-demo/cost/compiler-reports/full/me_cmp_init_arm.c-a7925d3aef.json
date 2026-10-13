@@ -1,0 +1,78 @@
+{
+  "functions": [
+    {
+      "budget": {
+        "enabled": true,
+        "limit": 1000,
+        "remaining": 339,
+        "utilization": 0.66100000000000003
+      },
+      "declaration": false,
+      "difficulty": {
+        "callbrs": 0,
+        "cyclomatic_after": 8,
+        "cyclomatic_before": 2,
+        "cyclomatic_delta": 6,
+        "indirect_branches": 0,
+        "indirect_calls": 0,
+        "mba_avg_depth": 0,
+        "mba_max_depth": 0,
+        "mba_nodes": 0,
+        "opaque_per_100_insts": 2.4205748865355523,
+        "opaque_predicates": 16,
+        "score": 12.0642965204236
+      },
+      "insts": {
+        "after": 661,
+        "before": 20
+      },
+      "name": "ff_me_cmp_init_arm",
+      "passes": [
+        {
+          "budget_util_after": 0.035000000000000003,
+          "changed": true,
+          "delta_insts": 15,
+          "id": "substitution",
+          "insts_after": 35,
+          "insts_before": 20,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.20000000000000001,
+          "changed": true,
+          "delta_insts": 165,
+          "id": "bcf",
+          "insts_after": 200,
+          "insts_before": 35,
+          "seed": 0,
+          "status": "ran"
+        },
+        {
+          "budget_util_after": 0.66100000000000003,
+          "changed": true,
+          "delta_insts": 461,
+          "id": "flattening",
+          "insts_after": 661,
+          "insts_before": 200,
+          "seed": 0,
+          "status": "ran"
+        }
+      ],
+      "seed": {
+        "base": 1,
+        "function": 6126793312384688377,
+        "module": 1
+      },
+      "skipped": false
+    }
+  ],
+  "module": {
+    "data_layout": "e-m:e-p:32:32-Fi8-i64:64-v128:64:128-a:0:32-n32-S64",
+    "identifier": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ir/me_cmp_init_arm.c-a7925d3aef.annotated.ll",
+    "source_file": "src/libavcodec/arm/me_cmp_init_arm.c",
+    "target_triple": "armv7-unknown-linux-gnueabihf"
+  },
+  "schema": "llvm_obfuscator.obf_map",
+  "schema_version": 1
+}

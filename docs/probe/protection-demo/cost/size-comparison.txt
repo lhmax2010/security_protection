@@ -1,0 +1,5 @@
+Variant       .so bytes     growth       .text bytes    growth
+baseline         449904     +0.00%        263236     +0.00%
+selective        507488    +12.80%        318820    +21.12%
+full            2265168   +403.48%       2072916   +687.47%
+All three final libraries unstripped, same component set/ABI/O2. First failed full-source attempt excluded from table.
