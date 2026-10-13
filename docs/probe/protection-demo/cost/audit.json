@@ -1,0 +1,22 @@
+{
+  "three_final_variants_complete_and_measured": true,
+  "native_runs_exit0_frames600": 21,
+  "measured_runs_per_variant": 6,
+  "warmups_per_variant": 1,
+  "raw_wall_and_peak_rss_match_projections": true,
+  "median_max_and_relative_values_verified": true,
+  "source_C_bodies_unchanged": true,
+  "local_binary_hashes_unchanged": true,
+  "board_decoded_frames_identical": 600,
+  "pass_scope_counts_verified": true,
+  "public_UTF8_text_files_checked": 475,
+  "no_binary_or_private_files_tracked": true,
+  "real_errors_preserved": true,
+  "limits": [
+    "Minimal MPEG2 feature set, not full-feature distro library",
+    "Assembly and inlined/removed definitions excluded",
+    "Full attempt gated and only493/584 report changed",
+    "RSS is whole static process peak; decrease is real but unexplained",
+    "No cross-workload guarantee or compiler resource benchmark"
+  ]
+}
