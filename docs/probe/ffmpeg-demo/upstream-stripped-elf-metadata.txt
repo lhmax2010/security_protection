@@ -1,0 +1,415 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          212448 (bytes into file)
+  Flags:                             0x5000400, Version5 EABI, hard-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         6
+  Size of section headers:           40 (bytes)
+  Number of section headers:         27
+  Section header string table index: 26
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .note.gnu.bu[...] NOTE            000000f4 0000f4 000024 00   A  0   0  4
+  [ 2] .gnu.hash         GNU_HASH        00000118 000118 0004d4 04   A  3   0  4
+  [ 3] .dynsym           DYNSYM          000005ec 0005ec 0012d0 10   A  4   3  4
+  [ 4] .dynstr           STRTAB          000018bc 0018bc 0017fa 00   A  0   0  1
+  [ 5] .gnu.version      VERSYM          000030b6 0030b6 00025a 02   A  3   0  2
+  [ 6] .gnu.version_d    VERDEF          00003310 003310 000038 00   A  4   2  4
+  [ 7] .gnu.version_r    VERNEED         00003348 003348 000070 00   A  4   3  4
+  [ 8] .rel.dyn          REL             000033b8 0033b8 004828 08   A  3   0  4
+  [ 9] .rel.plt          REL             00007be0 007be0 0004b8 08  AI  3  21  4
+  [10] .init             PROGBITS        00008098 008098 00000c 00  AX  0   0  4
+  [11] .plt              PROGBITS        000080a4 0080a4 00075c 04  AX  0   0  4
+  [12] .text             PROGBITS        00008800 008800 016350 00  AX  0   0 64
+  [13] .fini             PROGBITS        0001eb50 01eb50 000008 00  AX  0   0  4
+  [14] .rodata           PROGBITS        0001eb60 01eb60 00c348 00   A  0   0 16
+  [15] .ARM.exidx        ARM_EXIDX       0002aea8 02aea8 000008 00  AL 12   0  4
+  [16] .eh_frame         PROGBITS        0002aeb0 02aeb0 000004 00   A  0   0  4
+  [17] .init_array       INIT_ARRAY      0002b000 02b000 000004 04  WA  0   0  4
+  [18] .fini_array       FINI_ARRAY      0002b004 02b004 000004 04  WA  0   0  4
+  [19] .data.rel.ro      PROGBITS        0002b008 02b008 008804 00  WA  0   0  8
+  [20] .dynamic          DYNAMIC         0003380c 03380c 000118 08  WA  4   0  4
+  [21] .got              PROGBITS        00033924 033924 000348 04  WA  0   0  4
+  [22] .data             PROGBITS        00033c6c 033c6c 000010 00  WA  0   0  4
+  [23] .bss              NOBITS          00033c7c 033c7c 000020 00  WA  0   0  4
+  [24] .comment          PROGBITS        00000000 033c7c 00002d 01  MS  0   0  1
+  [25] .ARM.attributes   ARM_ATTRIBUTES  00000000 033ca9 00003b 00      0   0  1
+  [26] .shstrtab         STRTAB          00000000 033ce4 0000fb 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  EXIDX          0x02aea8 0x0002aea8 0x0002aea8 0x00008 0x00008 R   0x4
+  LOAD           0x000000 0x00000000 0x00000000 0x2aeb4 0x2aeb4 R E 0x1000
+  LOAD           0x02b000 0x0002b000 0x0002b000 0x08c7c 0x08c9c RW  0x1000
+  DYNAMIC        0x03380c 0x0003380c 0x0003380c 0x00118 0x00118 RW  0x4
+  NOTE           0x0000f4 0x000000f4 0x000000f4 0x00024 0x00024 R   0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .ARM.exidx 
+   01     .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_d .gnu.version_r .rel.dyn .rel.plt .init .plt .text .fini .rodata .ARM.exidx .eh_frame 
+   02     .init_array .fini_array .data.rel.ro .dynamic .got .data .bss 
+   03     .dynamic 
+   04     .note.gnu.build-id 
+   05     
+
+Dynamic section at offset 0x3380c contains 31 entries:
+  Tag        Type                         Name/Value
+ 0x00000001 (NEEDED)                     Shared library: [libavutil.so.60]
+ 0x00000001 (NEEDED)                     Shared library: [libm.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.6]
+ 0x0000000e (SONAME)                     Library soname: [libavcodec.so.62]
+ 0x00000010 (SYMBOLIC)                   0x0
+ 0x0000000c (INIT)                       0x8098
+ 0x0000000d (FINI)                       0x1eb50
+ 0x00000019 (INIT_ARRAY)                 0x2b000
+ 0x0000001b (INIT_ARRAYSZ)               4 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x2b004
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x6ffffef5 (GNU_HASH)                   0x118
+ 0x00000005 (STRTAB)                     0x18bc
+ 0x00000006 (SYMTAB)                     0x5ec
+ 0x0000000a (STRSZ)                      6138 (bytes)
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000003 (PLTGOT)                     0x33924
+ 0x00000002 (PLTRELSZ)                   1208 (bytes)
+ 0x00000014 (PLTREL)                     REL
+ 0x00000017 (JMPREL)                     0x7be0
+ 0x00000011 (REL)                        0x33b8
+ 0x00000012 (RELSZ)                      18472 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffc (VERDEF)                     0x3310
+ 0x6ffffffd (VERDEFNUM)                  2
+ 0x0000001e (FLAGS)                      SYMBOLIC
+ 0x6ffffffe (VERNEED)                    0x3348
+ 0x6fffffff (VERNEEDNUM)                 3
+ 0x6ffffff0 (VERSYM)                     0x30b6
+ 0x6ffffffa (RELCOUNT)                   2302
+ 0x00000000 (NULL)                       0x0
+
+String dump of section '.comment':
+  [     0]  GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+
+
+Symbol table '.dynsym' contains 301 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00008098     0 SECTION LOCAL  DEFAULT   10 .init
+     2: 00033c6c     0 SECTION LOCAL  DEFAULT   22 .data
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_join@GLIBC_2.34 (3)
+     4: 00000000     0 FUNC    GLOBAL DEFAULT  UND avpriv_request_sample@LIBAVUTIL_60 (4)
+     5: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_refstruct_pool_alloc_ext_c@LIBAVUTIL_60 (4)
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_replace@LIBAVUTIL_60 (4)
+     7: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@GLIBC_2.4 (5)
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_get_buffer@LIBAVUTIL_60 (4)
+     9: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_samples_set_silence@LIBAVUTIL_60 (4)
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_fast_realloc@LIBAVUTIL_60 (4)
+    11: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_refstruct_replace@LIBAVUTIL_60 (4)
+    12: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_mul_q@LIBAVUTIL_60 (4)
+    13: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_alloc@LIBAVUTIL_60 (4)
+    14: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcmp@GLIBC_2.4 (5)
+    15: 00000000     0 FUNC    GLOBAL DEFAULT  UND __prctl_time64@GLIBC_2.34 (3)
+    16: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_log_get_level@LIBAVUTIL_60 (4)
+    17: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_match_list@LIBAVUTIL_60 (4)
+    18: 00000000     0 FUNC    GLOBAL DEFAULT  UND lrintf@GLIBC_2.4 (6)
+    19: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_ref@LIBAVUTIL_60 (4)
+    20: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_bprint_init@LIBAVUTIL_60 (4)
+    21: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_hwdevice_get_type_name@LIBAVUTIL_60 (4)
+    22: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_sample_fmt_is_planar@LIBAVUTIL_60 (4)
+    23: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_opt_set@LIBAVUTIL_60 (4)
+    24: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_pool_uninit@LIBAVUTIL_60 (4)
+    25: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_ref@LIBAVUTIL_60 (4)
+    26: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_opt_set_from_string@LIBAVUTIL_60 (4)
+    27: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_get_side_data@LIBAVUTIL_60 (4)
+    28: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_refstruct_ref@LIBAVUTIL_60 (4)
+    29: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_copy_props@LIBAVUTIL_60 (4)
+    30: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+    31: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_gcd@LIBAVUTIL_60 (4)
+    32: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_freep@LIBAVUTIL_60 (4)
+    33: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_image_fill_linesizes@LIBAVUTIL_60 (4)
+    34: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_create@LIBAVUTIL_60 (4)
+    35: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_hwframe_ctx_alloc@LIBAVUTIL_60 (4)
+    36: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_bprint_init_for_buffer@LIBAVUTIL_60 (4)
+    37: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_is_writable@LIBAVUTIL_60 (4)
+    38: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_mallocz@LIBAVUTIL_60 (4)
+    39: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_pool_get@LIBAVUTIL_60 (4)
+    40: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_bprint_finalize@LIBAVUTIL_60 (4)
+    41: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_move_ref@LIBAVUTIL_60 (4)
+    42: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_fast_mallocz@LIBAVUTIL_60 (4)
+    43: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_wait@GLIBC_2.4 (5)
+    44: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_content_light_metadata_create_side_data@LIBAVUTIL_60 (4)
+    45: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_log@LIBAVUTIL_60 (4)
+    46: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_refstruct_unref@LIBAVUTIL_60 (4)
+    47: 00000000     0 FUNC    GLOBAL DEFAULT  UND memset@GLIBC_2.4 (5)
+    48: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_samples_get_buffer_size@LIBAVUTIL_60 (4)
+    49: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_image_check_sar@LIBAVUTIL_60 (4)
+    50: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_get_pix_fmt_name@LIBAVUTIL_60 (4)
+    51: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_calloc@LIBAVUTIL_60 (4)
+    52: 00000000     0 FUNC    GLOBAL DEFAULT  UND iconv@GLIBC_2.4 (5)
+    53: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_memdup@LIBAVUTIL_60 (4)
+    54: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_hwframe_get_buffer@LIBAVUTIL_60 (4)
+    55: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_once@GLIBC_2.34 (3)
+    56: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_opt_copy@LIBAVUTIL_60 (4)
+    57: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_color_primaries_name@LIBAVUTIL_60 (4)
+    58: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_strerror@LIBAVUTIL_60 (4)
+    59: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_channel_layout_describe@LIBAVUTIL_60 (4)
+    60: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_image_fill_plane_sizes@LIBAVUTIL_60 (4)
+    61: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_broadcast@GLIBC_2.4 (5)
+    62: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_replace@LIBAVUTIL_60 (4)
+    63: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTable
+    64: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_alloc@LIBAVUTIL_60 (4)
+    65: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_channel_layout_check@LIBAVUTIL_60 (4)
+    66: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_bprintf@LIBAVUTIL_60 (4)
+    67: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_image_check_size2@LIBAVUTIL_60 (4)
+    68: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_create@GLIBC_2.34 (3)
+    69: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_copy@LIBAVUTIL_60 (4)
+    70: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_default_item_name@LIBAVUTIL_60 (4)
+    71: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_side_data_get_c@LIBAVUTIL_60 (4)
+    72: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+    73: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_get_bits_per_pixel@LIBAVUTIL_60 (4)
+    74: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_malloc_array@LIBAVUTIL_60 (4)
+    75: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_unlock@GLIBC_2.4 (5)
+    76: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_fourcc_make_string@LIBAVUTIL_60 (4)
+    77: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_get_planar_sample_fmt@LIBAVUTIL_60 (4)
+    78: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_channel_layout_uninit@LIBAVUTIL_60 (4)
+    79: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_bprint_chars@LIBAVUTIL_60 (4)
+    80: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_get_bytes_per_sample@LIBAVUTIL_60 (4)
+    81: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_lock@GLIBC_2.4 (5)
+    82: 00000000     0 FUNC    GLOBAL DEFAULT  UND iconv_close@GLIBC_2.4 (5)
+    83: 00000000     0 FUNC    GLOBAL DEFAULT  UND strlen@GLIBC_2.4 (5)
+    84: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_free@LIBAVUTIL_60 (4)
+    85: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_container_fifo_alloc@LIBAVUTIL_60 (4)
+    86: 00000000     0 FUNC    GLOBAL DEFAULT  UND memcpy@GLIBC_2.4 (5)
+    87: 00000000     0 FUNC    GLOBAL DEFAULT  UND avpriv_slicethread_free@LIBAVUTIL_60 (4)
+    88: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_realloc_f@LIBAVUTIL_60 (4)
+    89: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_pool_init@LIBAVUTIL_60 (4)
+    90: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_signal@GLIBC_2.4 (5)
+    91: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_pix_fmt_desc_get@LIBAVUTIL_60 (4)
+    92: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_side_data_clone@LIBAVUTIL_60 (4)
+    93: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_destroy@GLIBC_2.4 (5)
+    94: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_allocz@LIBAVUTIL_60 (4)
+    95: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_destroy@GLIBC_2.4 (5)
+    96: 00000000     0 FUNC    GLOBAL DEFAULT  UND raise@GLIBC_2.4 (5)
+    97: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_refstruct_pool_get@LIBAVUTIL_60 (4)
+    98: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_side_data_remove@LIBAVUTIL_60 (4)
+    99: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_find_best_pix_fmt_of_2@LIBAVUTIL_60 (4)
+   100: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_hwframe_ctx_init@LIBAVUTIL_60 (4)
+   101: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_mutex_init@GLIBC_2.4 (5)
+   102: 00000000     0 FUNC    GLOBAL DEFAULT  UND avpriv_slicethread_execute@LIBAVUTIL_60 (4)
+   103: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_content_light_metadata_alloc@LIBAVUTIL_60 (4)
+   104: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_get_sample_fmt_name@LIBAVUTIL_60 (4)
+   105: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_color_space_name@LIBAVUTIL_60 (4)
+   106: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_opt_set_defaults2@LIBAVUTIL_60 (4)
+   107: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_realloc_array@LIBAVUTIL_60 (4)
+   108: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_unref@LIBAVUTIL_60 (4)
+   109: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_opt_next@LIBAVUTIL_60 (4)
+   110: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_color_transfer_name@LIBAVUTIL_60 (4)
+   111: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_malloc@LIBAVUTIL_60 (4)
+   112: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_channel_layout_copy@LIBAVUTIL_60 (4)
+   113: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_pix_fmt_count_planes@LIBAVUTIL_60 (4)
+   114: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_get_token@LIBAVUTIL_60 (4)
+   115: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_channel_layout_describe_bprint@LIBAVUTIL_60 (4)
+   116: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_apply_cropping@LIBAVUTIL_60 (4)
+   117: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_side_data_add@LIBAVUTIL_60 (4)
+   118: 00000000     0 FUNC    GLOBAL DEFAULT  UND memmove@GLIBC_2.4 (5)
+   119: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_dynarray_add_nofree@LIBAVUTIL_60 (4)
+   120: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_is_writable@LIBAVUTIL_60 (4)
+   121: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_make_writable@LIBAVUTIL_60 (4)
+   122: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_opt_set_defaults@LIBAVUTIL_60 (4)
+   123: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_free@LIBAVUTIL_60 (4)
+   124: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_mastering_display_metadata_create_side_data@LIBAVUTIL_60 (4)
+   125: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_div_q@LIBAVUTIL_60 (4)
+   126: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_get_cpu_flags@LIBAVUTIL_60 (4)
+   127: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_samples_fill_arrays@LIBAVUTIL_60 (4)
+   128: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_rescale_q@LIBAVUTIL_60 (4)
+   129: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_channel_layout_compare@LIBAVUTIL_60 (4)
+   130: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_get_media_type_string@LIBAVUTIL_60 (4)
+   131: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_samples_copy@LIBAVUTIL_60 (4)
+   132: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_realloc@LIBAVUTIL_60 (4)
+   133: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_refstruct_alloc_ext_c@LIBAVUTIL_60 (4)
+   134: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_fast_malloc@LIBAVUTIL_60 (4)
+   135: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_dict_iterate@LIBAVUTIL_60 (4)
+   136: 00000000     0 FUNC    GLOBAL DEFAULT  UND snprintf@GLIBC_2.4 (5)
+   137: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_strtok@LIBAVUTIL_60 (4)
+   138: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_remove_side_data@LIBAVUTIL_60 (4)
+   139: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_dict_get@LIBAVUTIL_60 (4)
+   140: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_opt_set_dict2@LIBAVUTIL_60 (4)
+   141: 00000000     0 FUNC    GLOBAL DEFAULT  UND pthread_cond_init@GLIBC_2.4 (5)
+   142: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_cpu_count@LIBAVUTIL_60 (4)
+   143: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_realloc@LIBAVUTIL_60 (4)
+   144: 00000000     0 FUNC    GLOBAL DEFAULT  UND iconv_open@GLIBC_2.4 (5)
+   145: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_unref@LIBAVUTIL_60 (4)
+   146: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_side_data_free@LIBAVUTIL_60 (4)
+   147: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_chroma_location_name@LIBAVUTIL_60 (4)
+   148: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_reduce@LIBAVUTIL_60 (4)
+   149: 00000000     0 FUNC    GLOBAL DEFAULT  UND avpriv_slicethread_create@LIBAVUTIL_60 (4)
+   150: 00000000     0 FUNC    GLOBAL DEFAULT  UND strcmp@GLIBC_2.4 (5)
+   151: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_buffer_default_free@LIBAVUTIL_60 (4)
+   152: 00000000     0 FUNC    GLOBAL DEFAULT  UND __errno_location@GLIBC_2.4 (5)
+   153: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_frame_new_side_data@LIBAVUTIL_60 (4)
+   154: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_opt_free@LIBAVUTIL_60 (4)
+   155: 00000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.4 (5)
+   156: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_mastering_display_metadata_alloc_size@LIBAVUTIL_60 (4)
+   157: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_color_range_name@LIBAVUTIL_60 (4)
+   158: 00000000     0 FUNC    GLOBAL DEFAULT  UND av_dict_set@LIBAVUTIL_60 (4)
+   159: 00000000     0 OBJECT  GLOBAL DEFAULT  ABS LIBAVCODEC_62
+   160: 0000984d    48 FUNC    GLOBAL DEFAULT   12 av_codec_iterate@@LIBAVCODEC_62
+   161: 00016bc1    58 FUNC    GLOBAL DEFAULT   12 av_packet_shrink_side_data@@LIBAVCODEC_62
+   162: 0000e6d9  1020 FUNC    GLOBAL DEFAULT   12 avcodec_decode_subtitle2@@LIBAVCODEC_62
+   163: 000123bd    72 FUNC    GLOBAL DEFAULT   12 avcodec_find_best_pix_fmt_of_list@@LIBAVCODEC_62
+   164: 000172bd    60 FUNC    GLOBAL DEFAULT   12 av_packet_side_data_remove@@LIBAVCODEC_62
+   165: 0001e3d5     6 FUNC    GLOBAL DEFAULT   12 av_vorbis_parse_frame@@LIBAVCODEC_62
+   166: 00016f29   140 FUNC    GLOBAL DEFAULT   12 av_packet_rescale_ts@@LIBAVCODEC_62
+   167: 0001cc85    54 FUNC    GLOBAL DEFAULT   12 avcodec_get_hw_config@@LIBAVCODEC_62
+   168: 0001e3ed   952 FUNC    GLOBAL DEFAULT   12 av_vorbis_parse_init@@LIBAVCODEC_62
+   169: 0001ce09    28 FUNC    GLOBAL DEFAULT   12 av_cpb_properties_alloc@@LIBAVCODEC_62
+   170: 000167f1   116 FUNC    GLOBAL DEFAULT   12 av_packet_add_side_data@@LIBAVCODEC_62
+   171: 0001baad    16 FUNC    GLOBAL DEFAULT   12 av_codec_is_encoder@@LIBAVCODEC_62
+   172: 000176a5    32 FUNC    GLOBAL DEFAULT   12 av_parser_close@@LIBAVCODEC_62
+   173: 00016eb5   114 FUNC    GLOBAL DEFAULT   12 av_packet_make_writable@@LIBAVCODEC_62
+   174: 0001cbb9    60 FUNC    GLOBAL DEFAULT   12 av_get_audio_frame_duration@@LIBAVCODEC_62
+   175: 0000cdf5    82 FUNC    GLOBAL DEFAULT   12 av_bsf_free@@LIBAVCODEC_62
+   176: 0001cb4d   108 FUNC    GLOBAL DEFAULT   12 av_get_bits_per_sample@@LIBAVCODEC_62
+   177: 000167c1    46 FUNC    GLOBAL DEFAULT   12 av_packet_free_side_data@@LIBAVCODEC_62
+   178: 0000c131  1468 FUNC    GLOBAL DEFAULT   12 avcodec_open2@@LIBAVCODEC_62
+   179: 0000c919    32 FUNC    GLOBAL DEFAULT   12 avcodec_dct_alloc@@LIBAVCODEC_62
+   180: 0001cc2d    40 FUNC    GLOBAL DEFAULT   12 av_xiphlacing@@LIBAVCODEC_62
+   181: 00014f91     6 FUNC    GLOBAL DEFAULT   12 av_jni_set_java_vm@@LIBAVCODEC_62
+   182: 0000fdcd    10 FUNC    GLOBAL DEFAULT   12 av_dv_codec_profile2@@LIBAVCODEC_62
+   183: 00018c65     4 FUNC    GLOBAL DEFAULT   12 av_qsv_alloc_context@@LIBAVCODEC_62
+   184: 00016dc9    40 FUNC    GLOBAL DEFAULT   12 av_packet_clone@@LIBAVCODEC_62
+   185: 000168e1   456 FUNC    GLOBAL DEFAULT   12 av_packet_side_data_name@@LIBAVCODEC_62
+   186: 0000d365   184 FUNC    GLOBAL DEFAULT   12 av_bsf_list_parse_str@@LIBAVCODEC_62
+   187: 00016fb5   164 FUNC    GLOBAL DEFAULT   12 avpriv_packet_list_put@@LIBAVCODEC_62
+   188: 0001e3e9     4 FUNC    GLOBAL DEFAULT   12 av_vorbis_parse_free@@LIBAVCODEC_62
+   189: 00017171    44 FUNC    GLOBAL DEFAULT   12 av_packet_side_data_get@@LIBAVCODEC_62
+   190: 000164dd    12 FUNC    GLOBAL DEFAULT   12 avcodec_get_class@@LIBAVCODEC_62
+   191: 0000d079    96 FUNC    GLOBAL DEFAULT   12 av_bsf_send_packet@@LIBAVCODEC_62
+   192: 0000b9b1    50 FUNC    GLOBAL DEFAULT   12 avcodec_default_execute@@LIBAVCODEC_62
+   193: 00014f99     4 FUNC    GLOBAL DEFAULT   12 av_jni_get_java_vm@@LIBAVCODEC_62
+   194: 0000ba8d   106 FUNC    GLOBAL DEFAULT   12 avsubtitle_free@@LIBAVCODEC_62
+   195: 000178c5     4 FUNC    GLOBAL DEFAULT   12 av_parser_iterate@@LIBAVCODEC_62
+   196: 00016049     6 FUNC    GLOBAL DEFAULT   12 av_mediacodec_render_buffer_at_time@@LIBAVCODEC_62
+   197: 0000d41d    76 FUNC    GLOBAL DEFAULT   12 avcodec_descriptor_get@@LIBAVCODEC_62
+   198: 0000c90d    12 FUNC    GLOBAL DEFAULT   12 avcodec_dct_get_class@@LIBAVCODEC_62
+   199: 000174e9   444 FUNC    GLOBAL DEFAULT   12 av_parser_parse2@@LIBAVCODEC_62
+   200: 000098b5    56 FUNC    GLOBAL DEFAULT   12 avcodec_find_decoder@@LIBAVCODEC_62
+   201: 0000eb89   192 FUNC    GLOBAL DEFAULT   12 avcodec_get_hw_frames_parameters@@LIBAVCODEC_62
+   202: 00017059    52 FUNC    GLOBAL DEFAULT   12 avpriv_packet_list_get@@LIBAVCODEC_62
+   203: 00011c59  1136 FUNC    GLOBAL DEFAULT   12 avcodec_default_get_buffer2@@LIBAVCODEC_62
+   204: 0000fdb9    14 FUNC    GLOBAL DEFAULT   12 av_dv_frame_profile@@LIBAVCODEC_62
+   205: 000097b9     6 FUNC    GLOBAL DEFAULT   12 av_ac3_parse_header@@LIBAVCODEC_62
+   206: 00016301   392 FUNC    GLOBAL DEFAULT   12 avcodec_alloc_context3@@LIBAVCODEC_62
+   207: 00016639    34 FUNC    GLOBAL DEFAULT   12 av_shrink_packet@@LIBAVCODEC_62
+   208: 000097c9     6 FUNC    GLOBAL DEFAULT   12 avpriv_adts_header_parse@@LIBAVCODEC_62
+   209: 000097c1     6 FUNC    GLOBAL DEFAULT   12 av_adts_header_parse@@LIBAVCODEC_62
+   210: 00017211   172 FUNC    GLOBAL DEFAULT   12 av_packet_side_data_new@@LIBAVCODEC_62
+   211: 0001e7a5   210 FUNC    GLOBAL DEFAULT   12 avpriv_split_xiph_headers@@LIBAVCODEC_62
+   212: 0000d765   356 FUNC    GLOBAL DEFAULT   12 avcodec_parameters_to_context@@LIBAVCODEC_62
+   213: 0000d20d     6 FUNC    GLOBAL DEFAULT   12 av_bsf_list_alloc@@LIBAVCODEC_62
+   214: 00018c89    80 FUNC    GLOBAL DEFAULT   12 avpriv_pix_fmt_find@@LIBAVCODEC_62
+   215: 00016cad    84 FUNC    GLOBAL DEFAULT   12 av_packet_unref@@LIBAVCODEC_62
+   216: 0000baf9  1580 FUNC    GLOBAL DEFAULT   12 avcodec_string@@LIBAVCODEC_62
+   217: 00016031     4 FUNC    GLOBAL DEFAULT   12 av_mediacodec_alloc_context@@LIBAVCODEC_62
+   218: 0000c939   132 FUNC    GLOBAL DEFAULT   12 avcodec_dct_init@@LIBAVCODEC_62
+   219: 0001ba41    58 FUNC    GLOBAL DEFAULT   12 av_fast_padded_malloc@@LIBAVCODEC_62
+   220: 0001e3dd    10 FUNC    GLOBAL DEFAULT   12 av_vorbis_parse_reset@@LIBAVCODEC_62
+   221: 0000ccfd    46 FUNC    GLOBAL DEFAULT   12 av_bsf_get_by_name@@LIBAVCODEC_62
+   222: 000164f9   104 FUNC    GLOBAL DEFAULT   12 av_init_packet@@LIBAVCODEC_62
+   223: 0000d355    16 FUNC    GLOBAL DEFAULT   12 av_bsf_get_null_filter@@LIBAVCODEC_62
+   224: 0000d24d     8 FUNC    GLOBAL DEFAULT   12 av_bsf_list_append@@LIBAVCODEC_62
+   225: 0001c009    42 FUNC    GLOBAL DEFAULT   12 av_get_profile_name@@LIBAVCODEC_62
+   226: 0001e309   204 FUNC    GLOBAL DEFAULT   12 av_vorbis_parse_frame_flags@@LIBAVCODEC_62
+   227: 0000b9e5    52 FUNC    GLOBAL DEFAULT   12 avcodec_default_execute2@@LIBAVCODEC_62
+   228: 0001cb2d    32 FUNC    GLOBAL DEFAULT   12 av_get_pcm_codec@@LIBAVCODEC_62
+   229: 0000c6ed    58 FUNC    GLOBAL DEFAULT   12 avcodec_receive_frame@@LIBAVCODEC_62
+   230: 0001c075   266 FUNC    GLOBAL DEFAULT   12 av_get_exact_bits_per_sample@@LIBAVCODEC_62
+   231: 000165ad   140 FUNC    GLOBAL DEFAULT   12 av_new_packet@@LIBAVCODEC_62
+   232: 00016035     6 FUNC    GLOBAL DEFAULT   12 av_mediacodec_default_init@@LIBAVCODEC_62
+   233: 00010821    72 FUNC    GLOBAL DEFAULT   12 avcodec_receive_packet@@LIBAVCODEC_62
+   234: 0001d265    12 FUNC    GLOBAL DEFAULT   12 avcodec_license@@LIBAVCODEC_62
+   235: 0000ba19   116 FUNC    GLOBAL DEFAULT   12 avcodec_flush_buffers@@LIBAVCODEC_62
+   236: 0000d8c9     4 FUNC    GLOBAL DEFAULT   12 av_d3d11va_alloc_context@@LIBAVCODEC_62
+   237: 0000d469    36 FUNC    GLOBAL DEFAULT   12 avcodec_descriptor_next@@LIBAVCODEC_62
+   238: 0000987d    56 FUNC    GLOBAL DEFAULT   12 avcodec_find_encoder@@LIBAVCODEC_62
+   239: 00016aa9   168 FUNC    GLOBAL DEFAULT   12 av_packet_pack_dictionary@@LIBAVCODEC_62
+   240: 00017361   176 FUNC    GLOBAL DEFAULT   12 av_parser_init@@LIBAVCODEC_62
+   241: 00018c69    32 FUNC    GLOBAL DEFAULT   12 avcodec_pix_fmt_to_codec_tag@@LIBAVCODEC_62
+   242: 00010121    96 FUNC    GLOBAL DEFAULT   12 avcodec_default_get_encode_buffer@@LIBAVCODEC_62
+   243: 0001665d   272 FUNC    GLOBAL DEFAULT   12 av_grow_packet@@LIBAVCODEC_62
+   244: 00016d01    28 FUNC    GLOBAL DEFAULT   12 av_packet_free@@LIBAVCODEC_62
+   245: 000098ed    58 FUNC    GLOBAL DEFAULT   12 avcodec_find_encoder_by_name@@LIBAVCODEC_62
+   246: 0000ce85   116 FUNC    GLOBAL DEFAULT   12 av_bsf_alloc@@LIBAVCODEC_62
+   247: 0000d215    54 FUNC    GLOBAL DEFAULT   12 av_bsf_list_free@@LIBAVCODEC_62
+   248: 00010239    52 FUNC    GLOBAL DEFAULT   12 avcodec_encode_subtitle@@LIBAVCODEC_62
+   249: 00016489    82 FUNC    GLOBAL DEFAULT   12 avcodec_free_context@@LIBAVCODEC_62
+   250: 0001cd49   192 FUNC    GLOBAL DEFAULT   12 avpriv_find_start_code@@LIBAVCODEC_62
+   251: 0000d035    30 FUNC    GLOBAL DEFAULT   12 av_bsf_flush@@LIBAVCODEC_62
+   252: 0001bfbd    76 FUNC    GLOBAL DEFAULT   12 avcodec_get_name@@LIBAVCODEC_62
+   253: 0001bbb1   784 FUNC    GLOBAL DEFAULT   12 avcodec_align_dimensions2@@LIBAVCODEC_62
+   254: 0001cbf5    56 FUNC    GLOBAL DEFAULT   12 av_get_audio_frame_duration2@@LIBAVCODEC_62
+   255: 0001ba7d    48 FUNC    GLOBAL DEFAULT   12 av_fast_padded_mallocz@@LIBAVCODEC_62
+   256: 0000fdad     6 FUNC    GLOBAL DEFAULT   12 av_dirac_parse_sequence_header@@LIBAVCODEC_62
+   257: 0001603d     2 FUNC    GLOBAL DEFAULT   12 av_mediacodec_default_free@@LIBAVCODEC_62
+   258: 00016041     6 FUNC    GLOBAL DEFAULT   12 av_mediacodec_release_buffer@@LIBAVCODEC_62
+   259: 0001d259    12 FUNC    GLOBAL DEFAULT   12 avcodec_configuration@@LIBAVCODEC_62
+   260: 000164e9    12 FUNC    GLOBAL DEFAULT   12 avcodec_get_subtitle_rect_class@@LIBAVCODEC_62
+   261: 0000e4ed   170 FUNC    GLOBAL DEFAULT   12 avcodec_send_packet@@LIBAVCODEC_62
+   262: 0000d48d    34 FUNC    GLOBAL DEFAULT   12 avcodec_descriptor_get_by_name@@LIBAVCODEC_62
+   263: 00016865    66 FUNC    GLOBAL DEFAULT   12 av_packet_new_side_data@@LIBAVCODEC_62
+   264: 00016b51   110 FUNC    GLOBAL DEFAULT   12 av_packet_unpack_dictionary@@LIBAVCODEC_62
+   265: 00016561    72 FUNC    GLOBAL DEFAULT   12 av_packet_alloc@@LIBAVCODEC_62
+   266: 000097b1     6 FUNC    GLOBAL DEFAULT   12 avpriv_ac3_parse_header@@LIBAVCODEC_62
+   267: 0001d24d    10 FUNC    GLOBAL DEFAULT   12 avcodec_version@@LIBAVCODEC_62
+   268: 0000fdc9     4 FUNC    GLOBAL DEFAULT   12 av_dv_codec_profile@@LIBAVCODEC_62
+   269: 0001676d    84 FUNC    GLOBAL DEFAULT   12 av_packet_from_data@@LIBAVCODEC_62
+   270: 00010645   476 FUNC    GLOBAL DEFAULT   12 avcodec_send_frame@@LIBAVCODEC_62
+   271: 0002ac00    21 OBJECT  GLOBAL DEFAULT   14 av_codec_ffversion@@LIBAVCODEC_62
+   272: 000168a9    54 FUNC    GLOBAL DEFAULT   12 av_packet_get_side_data@@LIBAVCODEC_62
+   273: 0001bf11   164 FUNC    GLOBAL DEFAULT   12 avcodec_fill_audio_frame@@LIBAVCODEC_62
+   274: 00016bfd   176 FUNC    GLOBAL DEFAULT   12 av_packet_copy_props@@LIBAVCODEC_62
+   275: 0001babd    12 FUNC    GLOBAL DEFAULT   12 av_codec_is_decoder@@LIBAVCODEC_62
+   276: 00016d39   144 FUNC    GLOBAL DEFAULT   12 av_packet_ref@@LIBAVCODEC_62
+   277: 0001bfb5     8 FUNC    GLOBAL DEFAULT   12 avpriv_codec_get_cap_skip_frame_fill_param@@LIBAVCODEC_62
+   278: 00016e55    94 FUNC    GLOBAL DEFAULT   12 av_packet_make_refcounted@@LIBAVCODEC_62
+   279: 000172f9    52 FUNC    GLOBAL DEFAULT   12 av_packet_side_data_free@@LIBAVCODEC_62
+   280: 0000c125    10 FUNC    GLOBAL DEFAULT   12 avcodec_is_open@@LIBAVCODEC_62
+   281: 0001732d    52 FUNC    GLOBAL DEFAULT   12 av_container_fifo_alloc_avpacket@@LIBAVCODEC_62
+   282: 0000d0d9     6 FUNC    GLOBAL DEFAULT   12 av_bsf_receive_packet@@LIBAVCODEC_62
+   283: 0001708d    46 FUNC    GLOBAL DEFAULT   12 avpriv_packet_list_free@@LIBAVCODEC_62
+   284: 0000ccf9     4 FUNC    GLOBAL DEFAULT   12 av_bsf_iterate@@LIBAVCODEC_62
+   285: 0000c8dd    48 FUNC    GLOBAL DEFAULT   12 avcodec_get_supported_config@@LIBAVCODEC_62
+   286: 00009929    58 FUNC    GLOBAL DEFAULT   12 avcodec_find_decoder_by_name@@LIBAVCODEC_62
+   287: 0001bec1    78 FUNC    GLOBAL DEFAULT   12 avcodec_align_dimensions@@LIBAVCODEC_62
+   288: 0000ead5   178 FUNC    GLOBAL DEFAULT   12 avcodec_default_get_format@@LIBAVCODEC_62
+   289: 00016df1    72 FUNC    GLOBAL DEFAULT   12 av_packet_move_ref@@LIBAVCODEC_62
+   290: 0001719d   116 FUNC    GLOBAL DEFAULT   12 av_packet_side_data_add@@LIBAVCODEC_62
+   291: 0000d58d    24 FUNC    GLOBAL DEFAULT   12 avcodec_parameters_free@@LIBAVCODEC_62
+   292: 0000d5a5   116 FUNC    GLOBAL DEFAULT   12 avcodec_parameters_copy@@LIBAVCODEC_62
+   293: 0000d4b1    18 FUNC    GLOBAL DEFAULT   12 avcodec_get_type@@LIBAVCODEC_62
+   294: 0000cef9   196 FUNC    GLOBAL DEFAULT   12 av_bsf_init@@LIBAVCODEC_62
+   295: 0000d579    20 FUNC    GLOBAL DEFAULT   12 avcodec_parameters_alloc@@LIBAVCODEC_62
+   296: 0000d309    76 FUNC    GLOBAL DEFAULT   12 av_bsf_list_finalize@@LIBAVCODEC_62
+   297: 0000d301     6 FUNC    GLOBAL DEFAULT   12 av_bsf_list_append2@@LIBAVCODEC_62
+   298: 0001c035    64 FUNC    GLOBAL DEFAULT   12 avcodec_profile_name@@LIBAVCODEC_62
+   299: 0000d619   330 FUNC    GLOBAL DEFAULT   12 avcodec_parameters_from_context@@LIBAVCODEC_62
+   300: 0000ce79    12 FUNC    GLOBAL DEFAULT   12 av_bsf_get_class@@LIBAVCODEC_62

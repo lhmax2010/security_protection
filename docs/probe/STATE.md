@@ -200,3 +200,7 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - 已闭合步骤 5：REA6.4 + Ghidra12.1.4 在板子 libavcodec ARMv7 库完成分析（首次成功 overview 83.1s，单次时长不是 benchmark）。三个导出 API 与内部音频助手伪代码、反汇编、已解析调用关系见 `ffmpeg-demo/board/`；选择/定位见 `function-selection.md`，5 个安全明文样本与符号统计见 board/strings-samples.json、symbol-string-statistics.json。非 thunk/非 external 函数 3156，其中 147 非 FUN 标签（仅标签代理比例，不能等同原名恢复率）。
 - 已解决工具失败：首次 MCP 默认60秒超时，原样错误见 `ffmpeg-demo/mcp-first-attempt-error.txt`；修正 v2 客户端 callTool 超时参数为第二参数后成功。没有把失败当成功。
 - 观察限制：音频助手的 codec 枚举被 Ghidra 误推为 char*，短字符串伪影不能当明文；结构体字段名、枚举名没有自动恢复。
+
+- 已闭合步骤 6：官方 FFmpeg 8.0.1 原版（精确包版本匹配），GCC13.3 ARMv7 -O2 最小共享库构建；先生成未 strip，再 --strip-unneeded 生成副本。完整命令和成功日志 `ffmpeg-demo/upstream-build.txt`，脚本 `scripts/build-upstream.sh`、来源/归档哈希 `upstream-source.txt`，自己编译的产物及哈希 `upstream-artifacts/manifest.json`。
+- 基线实际条件：初次构建发现 Ubuntu GCC 默认 SSP_STRONG、FORTIFY_SOURCE=3（证据 `upstream-default-hardening-check.txt`，初版日志 `upstream-build-initial-defaults.txt`），因此最终显式关闭栈保护、FORTIFY 与 RELRO；最终 ELF 为 RELRO None、NX Enabled、canary/FORTIFY 无动态导入证据，无 RPATH/RUNPATH，未 strip/已 strip 副本属性除 .symtab 外相同。证据 `upstream[-stripped]-lua-metadata.txt`、`upstream[-stripped]-elf-metadata.txt`。FFmpeg 默认 NX 保留，不将“裸编译”误写成所有内存防护都关闭。
+- 对照限制挂账：板库 soft-float ABI、上游可用工具链 hard-float ABI，见 `ffmpeg-demo/arm-abi-attributes.txt`；本轮仅比较无浮点入参的函数静态逻辑，不声明可替换到板上运行。板子发行版 patches/构建器未知，最小组件集合不同于完整板库。

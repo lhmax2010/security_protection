@@ -1,0 +1,14 @@
+#define __SSP_STRONG__ 3
+#define _FORTIFY_SOURCE 3
+#define __PIE__ 2
+#define __pic__ 2
+#define __PIC__ 2
+  -fstack-protector           		[disabled]
+  -fstack-protector-all       		[disabled]
+  -fstack-protector-explicit  		[disabled]
+  -fstack-protector-strong    		[enabled]
+    74: 00000000     0 FUNC    GLOBAL DEFAULT  UND __memcpy_chk@GLIBC_2.4 (5)
+    97: 00000000     0 OBJECT  GLOBAL DEFAULT  UND __stack_chk_guard@GLIBC_2.4 (7)
+   102: 00000000     0 FUNC    GLOBAL DEFAULT  UND __snprintf_chk@GLIBC_2.4 (5)
+   113: 00000000     0 FUNC    GLOBAL DEFAULT  UND __stack_chk_fail@GLIBC_2.4 (5)
+   158: 00000000     0 FUNC    GLOBAL DEFAULT  UND __memset_chk@GLIBC_2.4 (5)

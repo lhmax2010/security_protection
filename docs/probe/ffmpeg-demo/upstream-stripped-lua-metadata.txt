@@ -1,0 +1,523 @@
+METHOD	HOST_LUA_SAME_METADATA_DECODER	Lua=Lua 5.3
+TARGET	/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/ffmpeg-demo/upstream-artifacts/libavcodec-stripped.so	shared-library
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	6	shoff	0x33de0	shnum	27
+PROGRAM_HEADER	0	0x70000001	offset	0x2aea8	vaddr	0x2aea8	filesz	8	memsz	8	flags	4
+PROGRAM_HEADER	1	0x1	offset	0x0	vaddr	0x0	filesz	175796	memsz	175796	flags	5
+PROGRAM_HEADER	2	0x1	offset	0x2b000	vaddr	0x2b000	filesz	35964	memsz	35996	flags	6
+PROGRAM_HEADER	3	0x2	offset	0x3380c	vaddr	0x3380c	filesz	280	memsz	280	flags	6
+PROGRAM_HEADER	4	0x4	offset	0xf4	vaddr	0xf4	filesz	36	memsz	36	flags	4
+PROGRAM_HEADER	5	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.note.gnu.build-id	7	offset	0xf4	size	36	link	0	entsize	0
+SECTION	2	.gnu.hash	1879048182	offset	0x118	size	1236	link	3	entsize	4
+SECTION	3	.dynsym	11	offset	0x5ec	size	4816	link	4	entsize	16
+SECTION	4	.dynstr	3	offset	0x18bc	size	6138	link	0	entsize	0
+SECTION	5	.gnu.version	1879048191	offset	0x30b6	size	602	link	3	entsize	2
+SECTION	6	.gnu.version_d	1879048189	offset	0x3310	size	56	link	4	entsize	0
+SECTION	7	.gnu.version_r	1879048190	offset	0x3348	size	112	link	4	entsize	0
+SECTION	8	.rel.dyn	9	offset	0x33b8	size	18472	link	3	entsize	8
+SECTION	9	.rel.plt	9	offset	0x7be0	size	1208	link	3	entsize	8
+SECTION	10	.init	1	offset	0x8098	size	12	link	0	entsize	0
+SECTION	11	.plt	1	offset	0x80a4	size	1884	link	0	entsize	4
+SECTION	12	.text	1	offset	0x8800	size	90960	link	0	entsize	0
+SECTION	13	.fini	1	offset	0x1eb50	size	8	link	0	entsize	0
+SECTION	14	.rodata	1	offset	0x1eb60	size	49992	link	0	entsize	0
+SECTION	15	.ARM.exidx	1879048193	offset	0x2aea8	size	8	link	12	entsize	0
+SECTION	16	.eh_frame	1	offset	0x2aeb0	size	4	link	0	entsize	0
+SECTION	17	.init_array	14	offset	0x2b000	size	4	link	0	entsize	4
+SECTION	18	.fini_array	15	offset	0x2b004	size	4	link	0	entsize	4
+SECTION	19	.data.rel.ro	1	offset	0x2b008	size	34820	link	0	entsize	0
+SECTION	20	.dynamic	6	offset	0x3380c	size	280	link	4	entsize	8
+SECTION	21	.got	1	offset	0x33924	size	840	link	0	entsize	4
+SECTION	22	.data	1	offset	0x33c6c	size	16	link	0	entsize	0
+SECTION	23	.bss	8	offset	0x33c7c	size	32	link	0	entsize	0
+SECTION	24	.comment	1	offset	0x33c7c	size	45	link	0	entsize	1
+SECTION	25	.ARM.attributes	1879048195	offset	0x33ca9	size	59	link	0	entsize	0
+SECTION	26	.shstrtab	3	offset	0x33ce4	size	251	link	0	entsize	0
+DYNAMIC_SYMBOL	0	0x0	type	0	bind	0	vis	0	ndx	0	name	
+DYNAMIC_SYMBOL	1	0x8098	type	3	bind	0	vis	0	ndx	10	name	
+DYNAMIC_SYMBOL	2	0x33c6c	type	3	bind	0	vis	0	ndx	22	name	
+DYNAMIC_SYMBOL	3	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_join
+DYNAMIC_SYMBOL	4	0x0	type	2	bind	1	vis	0	ndx	0	name	avpriv_request_sample
+DYNAMIC_SYMBOL	5	0x0	type	2	bind	1	vis	0	ndx	0	name	av_refstruct_pool_alloc_ext_c
+DYNAMIC_SYMBOL	6	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_replace
+DYNAMIC_SYMBOL	7	0x0	type	2	bind	1	vis	0	ndx	0	name	abort
+DYNAMIC_SYMBOL	8	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_get_buffer
+DYNAMIC_SYMBOL	9	0x0	type	2	bind	1	vis	0	ndx	0	name	av_samples_set_silence
+DYNAMIC_SYMBOL	10	0x0	type	2	bind	1	vis	0	ndx	0	name	av_fast_realloc
+DYNAMIC_SYMBOL	11	0x0	type	2	bind	1	vis	0	ndx	0	name	av_refstruct_replace
+DYNAMIC_SYMBOL	12	0x0	type	2	bind	1	vis	0	ndx	0	name	av_mul_q
+DYNAMIC_SYMBOL	13	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_alloc
+DYNAMIC_SYMBOL	14	0x0	type	2	bind	1	vis	0	ndx	0	name	memcmp
+DYNAMIC_SYMBOL	15	0x0	type	2	bind	1	vis	0	ndx	0	name	__prctl_time64
+DYNAMIC_SYMBOL	16	0x0	type	2	bind	1	vis	0	ndx	0	name	av_log_get_level
+DYNAMIC_SYMBOL	17	0x0	type	2	bind	1	vis	0	ndx	0	name	av_match_list
+DYNAMIC_SYMBOL	18	0x0	type	2	bind	1	vis	0	ndx	0	name	lrintf
+DYNAMIC_SYMBOL	19	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_ref
+DYNAMIC_SYMBOL	20	0x0	type	2	bind	1	vis	0	ndx	0	name	av_bprint_init
+DYNAMIC_SYMBOL	21	0x0	type	2	bind	1	vis	0	ndx	0	name	av_hwdevice_get_type_name
+DYNAMIC_SYMBOL	22	0x0	type	2	bind	1	vis	0	ndx	0	name	av_sample_fmt_is_planar
+DYNAMIC_SYMBOL	23	0x0	type	2	bind	1	vis	0	ndx	0	name	av_opt_set
+DYNAMIC_SYMBOL	24	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_pool_uninit
+DYNAMIC_SYMBOL	25	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_ref
+DYNAMIC_SYMBOL	26	0x0	type	2	bind	1	vis	0	ndx	0	name	av_opt_set_from_string
+DYNAMIC_SYMBOL	27	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_get_side_data
+DYNAMIC_SYMBOL	28	0x0	type	2	bind	1	vis	0	ndx	0	name	av_refstruct_ref
+DYNAMIC_SYMBOL	29	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_copy_props
+DYNAMIC_SYMBOL	30	0x0	type	0	bind	2	vis	0	ndx	0	name	__gmon_start__
+DYNAMIC_SYMBOL	31	0x0	type	2	bind	1	vis	0	ndx	0	name	av_gcd
+DYNAMIC_SYMBOL	32	0x0	type	2	bind	1	vis	0	ndx	0	name	av_freep
+DYNAMIC_SYMBOL	33	0x0	type	2	bind	1	vis	0	ndx	0	name	av_image_fill_linesizes
+DYNAMIC_SYMBOL	34	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_create
+DYNAMIC_SYMBOL	35	0x0	type	2	bind	1	vis	0	ndx	0	name	av_hwframe_ctx_alloc
+DYNAMIC_SYMBOL	36	0x0	type	2	bind	1	vis	0	ndx	0	name	av_bprint_init_for_buffer
+DYNAMIC_SYMBOL	37	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_is_writable
+DYNAMIC_SYMBOL	38	0x0	type	2	bind	1	vis	0	ndx	0	name	av_mallocz
+DYNAMIC_SYMBOL	39	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_pool_get
+DYNAMIC_SYMBOL	40	0x0	type	2	bind	1	vis	0	ndx	0	name	av_bprint_finalize
+DYNAMIC_SYMBOL	41	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_move_ref
+DYNAMIC_SYMBOL	42	0x0	type	2	bind	1	vis	0	ndx	0	name	av_fast_mallocz
+DYNAMIC_SYMBOL	43	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_cond_wait
+DYNAMIC_SYMBOL	44	0x0	type	2	bind	1	vis	0	ndx	0	name	av_content_light_metadata_create_side_data
+DYNAMIC_SYMBOL	45	0x0	type	2	bind	1	vis	0	ndx	0	name	av_log
+DYNAMIC_SYMBOL	46	0x0	type	2	bind	1	vis	0	ndx	0	name	av_refstruct_unref
+DYNAMIC_SYMBOL	47	0x0	type	2	bind	1	vis	0	ndx	0	name	memset
+DYNAMIC_SYMBOL	48	0x0	type	2	bind	1	vis	0	ndx	0	name	av_samples_get_buffer_size
+DYNAMIC_SYMBOL	49	0x0	type	2	bind	1	vis	0	ndx	0	name	av_image_check_sar
+DYNAMIC_SYMBOL	50	0x0	type	2	bind	1	vis	0	ndx	0	name	av_get_pix_fmt_name
+DYNAMIC_SYMBOL	51	0x0	type	2	bind	1	vis	0	ndx	0	name	av_calloc
+DYNAMIC_SYMBOL	52	0x0	type	2	bind	1	vis	0	ndx	0	name	iconv
+DYNAMIC_SYMBOL	53	0x0	type	2	bind	1	vis	0	ndx	0	name	av_memdup
+DYNAMIC_SYMBOL	54	0x0	type	2	bind	1	vis	0	ndx	0	name	av_hwframe_get_buffer
+DYNAMIC_SYMBOL	55	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_once
+DYNAMIC_SYMBOL	56	0x0	type	2	bind	1	vis	0	ndx	0	name	av_opt_copy
+DYNAMIC_SYMBOL	57	0x0	type	2	bind	1	vis	0	ndx	0	name	av_color_primaries_name
+DYNAMIC_SYMBOL	58	0x0	type	2	bind	1	vis	0	ndx	0	name	av_strerror
+DYNAMIC_SYMBOL	59	0x0	type	2	bind	1	vis	0	ndx	0	name	av_channel_layout_describe
+DYNAMIC_SYMBOL	60	0x0	type	2	bind	1	vis	0	ndx	0	name	av_image_fill_plane_sizes
+DYNAMIC_SYMBOL	61	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_cond_broadcast
+DYNAMIC_SYMBOL	62	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_replace
+DYNAMIC_SYMBOL	63	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_deregisterTMCloneTable
+DYNAMIC_SYMBOL	64	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_alloc
+DYNAMIC_SYMBOL	65	0x0	type	2	bind	1	vis	0	ndx	0	name	av_channel_layout_check
+DYNAMIC_SYMBOL	66	0x0	type	2	bind	1	vis	0	ndx	0	name	av_bprintf
+DYNAMIC_SYMBOL	67	0x0	type	2	bind	1	vis	0	ndx	0	name	av_image_check_size2
+DYNAMIC_SYMBOL	68	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_create
+DYNAMIC_SYMBOL	69	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_copy
+DYNAMIC_SYMBOL	70	0x0	type	2	bind	1	vis	0	ndx	0	name	av_default_item_name
+DYNAMIC_SYMBOL	71	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_side_data_get_c
+DYNAMIC_SYMBOL	72	0x0	type	0	bind	2	vis	0	ndx	0	name	_ITM_registerTMCloneTable
+DYNAMIC_SYMBOL	73	0x0	type	2	bind	1	vis	0	ndx	0	name	av_get_bits_per_pixel
+DYNAMIC_SYMBOL	74	0x0	type	2	bind	1	vis	0	ndx	0	name	av_malloc_array
+DYNAMIC_SYMBOL	75	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_unlock
+DYNAMIC_SYMBOL	76	0x0	type	2	bind	1	vis	0	ndx	0	name	av_fourcc_make_string
+DYNAMIC_SYMBOL	77	0x0	type	2	bind	1	vis	0	ndx	0	name	av_get_planar_sample_fmt
+DYNAMIC_SYMBOL	78	0x0	type	2	bind	1	vis	0	ndx	0	name	av_channel_layout_uninit
+DYNAMIC_SYMBOL	79	0x0	type	2	bind	1	vis	0	ndx	0	name	av_bprint_chars
+DYNAMIC_SYMBOL	80	0x0	type	2	bind	1	vis	0	ndx	0	name	av_get_bytes_per_sample
+DYNAMIC_SYMBOL	81	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_lock
+DYNAMIC_SYMBOL	82	0x0	type	2	bind	1	vis	0	ndx	0	name	iconv_close
+DYNAMIC_SYMBOL	83	0x0	type	2	bind	1	vis	0	ndx	0	name	strlen
+DYNAMIC_SYMBOL	84	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_free
+DYNAMIC_SYMBOL	85	0x0	type	2	bind	1	vis	0	ndx	0	name	av_container_fifo_alloc
+DYNAMIC_SYMBOL	86	0x0	type	2	bind	1	vis	0	ndx	0	name	memcpy
+DYNAMIC_SYMBOL	87	0x0	type	2	bind	1	vis	0	ndx	0	name	avpriv_slicethread_free
+DYNAMIC_SYMBOL	88	0x0	type	2	bind	1	vis	0	ndx	0	name	av_realloc_f
+DYNAMIC_SYMBOL	89	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_pool_init
+DYNAMIC_SYMBOL	90	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_cond_signal
+DYNAMIC_SYMBOL	91	0x0	type	2	bind	1	vis	0	ndx	0	name	av_pix_fmt_desc_get
+DYNAMIC_SYMBOL	92	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_side_data_clone
+DYNAMIC_SYMBOL	93	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_cond_destroy
+DYNAMIC_SYMBOL	94	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_allocz
+DYNAMIC_SYMBOL	95	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_destroy
+DYNAMIC_SYMBOL	96	0x0	type	2	bind	1	vis	0	ndx	0	name	raise
+DYNAMIC_SYMBOL	97	0x0	type	2	bind	1	vis	0	ndx	0	name	av_refstruct_pool_get
+DYNAMIC_SYMBOL	98	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_side_data_remove
+DYNAMIC_SYMBOL	99	0x0	type	2	bind	1	vis	0	ndx	0	name	av_find_best_pix_fmt_of_2
+DYNAMIC_SYMBOL	100	0x0	type	2	bind	1	vis	0	ndx	0	name	av_hwframe_ctx_init
+DYNAMIC_SYMBOL	101	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_mutex_init
+DYNAMIC_SYMBOL	102	0x0	type	2	bind	1	vis	0	ndx	0	name	avpriv_slicethread_execute
+DYNAMIC_SYMBOL	103	0x0	type	2	bind	1	vis	0	ndx	0	name	av_content_light_metadata_alloc
+DYNAMIC_SYMBOL	104	0x0	type	2	bind	1	vis	0	ndx	0	name	av_get_sample_fmt_name
+DYNAMIC_SYMBOL	105	0x0	type	2	bind	1	vis	0	ndx	0	name	av_color_space_name
+DYNAMIC_SYMBOL	106	0x0	type	2	bind	1	vis	0	ndx	0	name	av_opt_set_defaults2
+DYNAMIC_SYMBOL	107	0x0	type	2	bind	1	vis	0	ndx	0	name	av_realloc_array
+DYNAMIC_SYMBOL	108	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_unref
+DYNAMIC_SYMBOL	109	0x0	type	2	bind	1	vis	0	ndx	0	name	av_opt_next
+DYNAMIC_SYMBOL	110	0x0	type	2	bind	1	vis	0	ndx	0	name	av_color_transfer_name
+DYNAMIC_SYMBOL	111	0x0	type	2	bind	1	vis	0	ndx	0	name	av_malloc
+DYNAMIC_SYMBOL	112	0x0	type	2	bind	1	vis	0	ndx	0	name	av_channel_layout_copy
+DYNAMIC_SYMBOL	113	0x0	type	2	bind	1	vis	0	ndx	0	name	av_pix_fmt_count_planes
+DYNAMIC_SYMBOL	114	0x0	type	2	bind	1	vis	0	ndx	0	name	av_get_token
+DYNAMIC_SYMBOL	115	0x0	type	2	bind	1	vis	0	ndx	0	name	av_channel_layout_describe_bprint
+DYNAMIC_SYMBOL	116	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_apply_cropping
+DYNAMIC_SYMBOL	117	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_side_data_add
+DYNAMIC_SYMBOL	118	0x0	type	2	bind	1	vis	0	ndx	0	name	memmove
+DYNAMIC_SYMBOL	119	0x0	type	2	bind	1	vis	0	ndx	0	name	av_dynarray_add_nofree
+DYNAMIC_SYMBOL	120	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_is_writable
+DYNAMIC_SYMBOL	121	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_make_writable
+DYNAMIC_SYMBOL	122	0x0	type	2	bind	1	vis	0	ndx	0	name	av_opt_set_defaults
+DYNAMIC_SYMBOL	123	0x0	type	2	bind	1	vis	0	ndx	0	name	av_free
+DYNAMIC_SYMBOL	124	0x0	type	2	bind	1	vis	0	ndx	0	name	av_mastering_display_metadata_create_side_data
+DYNAMIC_SYMBOL	125	0x0	type	2	bind	1	vis	0	ndx	0	name	av_div_q
+DYNAMIC_SYMBOL	126	0x0	type	2	bind	1	vis	0	ndx	0	name	av_get_cpu_flags
+DYNAMIC_SYMBOL	127	0x0	type	2	bind	1	vis	0	ndx	0	name	av_samples_fill_arrays
+DYNAMIC_SYMBOL	128	0x0	type	2	bind	1	vis	0	ndx	0	name	av_rescale_q
+DYNAMIC_SYMBOL	129	0x0	type	2	bind	1	vis	0	ndx	0	name	av_channel_layout_compare
+DYNAMIC_SYMBOL	130	0x0	type	2	bind	1	vis	0	ndx	0	name	av_get_media_type_string
+DYNAMIC_SYMBOL	131	0x0	type	2	bind	1	vis	0	ndx	0	name	av_samples_copy
+DYNAMIC_SYMBOL	132	0x0	type	2	bind	1	vis	0	ndx	0	name	av_realloc
+DYNAMIC_SYMBOL	133	0x0	type	2	bind	1	vis	0	ndx	0	name	av_refstruct_alloc_ext_c
+DYNAMIC_SYMBOL	134	0x0	type	2	bind	1	vis	0	ndx	0	name	av_fast_malloc
+DYNAMIC_SYMBOL	135	0x0	type	2	bind	1	vis	0	ndx	0	name	av_dict_iterate
+DYNAMIC_SYMBOL	136	0x0	type	2	bind	1	vis	0	ndx	0	name	snprintf
+DYNAMIC_SYMBOL	137	0x0	type	2	bind	1	vis	0	ndx	0	name	av_strtok
+DYNAMIC_SYMBOL	138	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_remove_side_data
+DYNAMIC_SYMBOL	139	0x0	type	2	bind	1	vis	0	ndx	0	name	av_dict_get
+DYNAMIC_SYMBOL	140	0x0	type	2	bind	1	vis	0	ndx	0	name	av_opt_set_dict2
+DYNAMIC_SYMBOL	141	0x0	type	2	bind	1	vis	0	ndx	0	name	pthread_cond_init
+DYNAMIC_SYMBOL	142	0x0	type	2	bind	1	vis	0	ndx	0	name	av_cpu_count
+DYNAMIC_SYMBOL	143	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_realloc
+DYNAMIC_SYMBOL	144	0x0	type	2	bind	1	vis	0	ndx	0	name	iconv_open
+DYNAMIC_SYMBOL	145	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_unref
+DYNAMIC_SYMBOL	146	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_side_data_free
+DYNAMIC_SYMBOL	147	0x0	type	2	bind	1	vis	0	ndx	0	name	av_chroma_location_name
+DYNAMIC_SYMBOL	148	0x0	type	2	bind	1	vis	0	ndx	0	name	av_reduce
+DYNAMIC_SYMBOL	149	0x0	type	2	bind	1	vis	0	ndx	0	name	avpriv_slicethread_create
+DYNAMIC_SYMBOL	150	0x0	type	2	bind	1	vis	0	ndx	0	name	strcmp
+DYNAMIC_SYMBOL	151	0x0	type	2	bind	1	vis	0	ndx	0	name	av_buffer_default_free
+DYNAMIC_SYMBOL	152	0x0	type	2	bind	1	vis	0	ndx	0	name	__errno_location
+DYNAMIC_SYMBOL	153	0x0	type	2	bind	1	vis	0	ndx	0	name	av_frame_new_side_data
+DYNAMIC_SYMBOL	154	0x0	type	2	bind	1	vis	0	ndx	0	name	av_opt_free
+DYNAMIC_SYMBOL	155	0x0	type	2	bind	2	vis	0	ndx	0	name	__cxa_finalize
+DYNAMIC_SYMBOL	156	0x0	type	2	bind	1	vis	0	ndx	0	name	av_mastering_display_metadata_alloc_size
+DYNAMIC_SYMBOL	157	0x0	type	2	bind	1	vis	0	ndx	0	name	av_color_range_name
+DYNAMIC_SYMBOL	158	0x0	type	2	bind	1	vis	0	ndx	0	name	av_dict_set
+DYNAMIC_SYMBOL	159	0x0	type	1	bind	1	vis	0	ndx	65521	name	LIBAVCODEC_62
+EXPORT	1	1	0	65521	LIBAVCODEC_62
+DYNAMIC_SYMBOL	160	0x984d	type	2	bind	1	vis	0	ndx	12	name	av_codec_iterate
+EXPORT	2	1	0	12	av_codec_iterate
+DYNAMIC_SYMBOL	161	0x16bc1	type	2	bind	1	vis	0	ndx	12	name	av_packet_shrink_side_data
+EXPORT	2	1	0	12	av_packet_shrink_side_data
+DYNAMIC_SYMBOL	162	0xe6d9	type	2	bind	1	vis	0	ndx	12	name	avcodec_decode_subtitle2
+EXPORT	2	1	0	12	avcodec_decode_subtitle2
+DYNAMIC_SYMBOL	163	0x123bd	type	2	bind	1	vis	0	ndx	12	name	avcodec_find_best_pix_fmt_of_list
+EXPORT	2	1	0	12	avcodec_find_best_pix_fmt_of_list
+DYNAMIC_SYMBOL	164	0x172bd	type	2	bind	1	vis	0	ndx	12	name	av_packet_side_data_remove
+EXPORT	2	1	0	12	av_packet_side_data_remove
+DYNAMIC_SYMBOL	165	0x1e3d5	type	2	bind	1	vis	0	ndx	12	name	av_vorbis_parse_frame
+EXPORT	2	1	0	12	av_vorbis_parse_frame
+DYNAMIC_SYMBOL	166	0x16f29	type	2	bind	1	vis	0	ndx	12	name	av_packet_rescale_ts
+EXPORT	2	1	0	12	av_packet_rescale_ts
+DYNAMIC_SYMBOL	167	0x1cc85	type	2	bind	1	vis	0	ndx	12	name	avcodec_get_hw_config
+EXPORT	2	1	0	12	avcodec_get_hw_config
+DYNAMIC_SYMBOL	168	0x1e3ed	type	2	bind	1	vis	0	ndx	12	name	av_vorbis_parse_init
+EXPORT	2	1	0	12	av_vorbis_parse_init
+DYNAMIC_SYMBOL	169	0x1ce09	type	2	bind	1	vis	0	ndx	12	name	av_cpb_properties_alloc
+EXPORT	2	1	0	12	av_cpb_properties_alloc
+DYNAMIC_SYMBOL	170	0x167f1	type	2	bind	1	vis	0	ndx	12	name	av_packet_add_side_data
+EXPORT	2	1	0	12	av_packet_add_side_data
+DYNAMIC_SYMBOL	171	0x1baad	type	2	bind	1	vis	0	ndx	12	name	av_codec_is_encoder
+EXPORT	2	1	0	12	av_codec_is_encoder
+DYNAMIC_SYMBOL	172	0x176a5	type	2	bind	1	vis	0	ndx	12	name	av_parser_close
+EXPORT	2	1	0	12	av_parser_close
+DYNAMIC_SYMBOL	173	0x16eb5	type	2	bind	1	vis	0	ndx	12	name	av_packet_make_writable
+EXPORT	2	1	0	12	av_packet_make_writable
+DYNAMIC_SYMBOL	174	0x1cbb9	type	2	bind	1	vis	0	ndx	12	name	av_get_audio_frame_duration
+EXPORT	2	1	0	12	av_get_audio_frame_duration
+DYNAMIC_SYMBOL	175	0xcdf5	type	2	bind	1	vis	0	ndx	12	name	av_bsf_free
+EXPORT	2	1	0	12	av_bsf_free
+DYNAMIC_SYMBOL	176	0x1cb4d	type	2	bind	1	vis	0	ndx	12	name	av_get_bits_per_sample
+EXPORT	2	1	0	12	av_get_bits_per_sample
+DYNAMIC_SYMBOL	177	0x167c1	type	2	bind	1	vis	0	ndx	12	name	av_packet_free_side_data
+EXPORT	2	1	0	12	av_packet_free_side_data
+DYNAMIC_SYMBOL	178	0xc131	type	2	bind	1	vis	0	ndx	12	name	avcodec_open2
+EXPORT	2	1	0	12	avcodec_open2
+DYNAMIC_SYMBOL	179	0xc919	type	2	bind	1	vis	0	ndx	12	name	avcodec_dct_alloc
+EXPORT	2	1	0	12	avcodec_dct_alloc
+DYNAMIC_SYMBOL	180	0x1cc2d	type	2	bind	1	vis	0	ndx	12	name	av_xiphlacing
+EXPORT	2	1	0	12	av_xiphlacing
+DYNAMIC_SYMBOL	181	0x14f91	type	2	bind	1	vis	0	ndx	12	name	av_jni_set_java_vm
+EXPORT	2	1	0	12	av_jni_set_java_vm
+DYNAMIC_SYMBOL	182	0xfdcd	type	2	bind	1	vis	0	ndx	12	name	av_dv_codec_profile2
+EXPORT	2	1	0	12	av_dv_codec_profile2
+DYNAMIC_SYMBOL	183	0x18c65	type	2	bind	1	vis	0	ndx	12	name	av_qsv_alloc_context
+EXPORT	2	1	0	12	av_qsv_alloc_context
+DYNAMIC_SYMBOL	184	0x16dc9	type	2	bind	1	vis	0	ndx	12	name	av_packet_clone
+EXPORT	2	1	0	12	av_packet_clone
+DYNAMIC_SYMBOL	185	0x168e1	type	2	bind	1	vis	0	ndx	12	name	av_packet_side_data_name
+EXPORT	2	1	0	12	av_packet_side_data_name
+DYNAMIC_SYMBOL	186	0xd365	type	2	bind	1	vis	0	ndx	12	name	av_bsf_list_parse_str
+EXPORT	2	1	0	12	av_bsf_list_parse_str
+DYNAMIC_SYMBOL	187	0x16fb5	type	2	bind	1	vis	0	ndx	12	name	avpriv_packet_list_put
+EXPORT	2	1	0	12	avpriv_packet_list_put
+DYNAMIC_SYMBOL	188	0x1e3e9	type	2	bind	1	vis	0	ndx	12	name	av_vorbis_parse_free
+EXPORT	2	1	0	12	av_vorbis_parse_free
+DYNAMIC_SYMBOL	189	0x17171	type	2	bind	1	vis	0	ndx	12	name	av_packet_side_data_get
+EXPORT	2	1	0	12	av_packet_side_data_get
+DYNAMIC_SYMBOL	190	0x164dd	type	2	bind	1	vis	0	ndx	12	name	avcodec_get_class
+EXPORT	2	1	0	12	avcodec_get_class
+DYNAMIC_SYMBOL	191	0xd079	type	2	bind	1	vis	0	ndx	12	name	av_bsf_send_packet
+EXPORT	2	1	0	12	av_bsf_send_packet
+DYNAMIC_SYMBOL	192	0xb9b1	type	2	bind	1	vis	0	ndx	12	name	avcodec_default_execute
+EXPORT	2	1	0	12	avcodec_default_execute
+DYNAMIC_SYMBOL	193	0x14f99	type	2	bind	1	vis	0	ndx	12	name	av_jni_get_java_vm
+EXPORT	2	1	0	12	av_jni_get_java_vm
+DYNAMIC_SYMBOL	194	0xba8d	type	2	bind	1	vis	0	ndx	12	name	avsubtitle_free
+EXPORT	2	1	0	12	avsubtitle_free
+DYNAMIC_SYMBOL	195	0x178c5	type	2	bind	1	vis	0	ndx	12	name	av_parser_iterate
+EXPORT	2	1	0	12	av_parser_iterate
+DYNAMIC_SYMBOL	196	0x16049	type	2	bind	1	vis	0	ndx	12	name	av_mediacodec_render_buffer_at_time
+EXPORT	2	1	0	12	av_mediacodec_render_buffer_at_time
+DYNAMIC_SYMBOL	197	0xd41d	type	2	bind	1	vis	0	ndx	12	name	avcodec_descriptor_get
+EXPORT	2	1	0	12	avcodec_descriptor_get
+DYNAMIC_SYMBOL	198	0xc90d	type	2	bind	1	vis	0	ndx	12	name	avcodec_dct_get_class
+EXPORT	2	1	0	12	avcodec_dct_get_class
+DYNAMIC_SYMBOL	199	0x174e9	type	2	bind	1	vis	0	ndx	12	name	av_parser_parse2
+EXPORT	2	1	0	12	av_parser_parse2
+DYNAMIC_SYMBOL	200	0x98b5	type	2	bind	1	vis	0	ndx	12	name	avcodec_find_decoder
+EXPORT	2	1	0	12	avcodec_find_decoder
+DYNAMIC_SYMBOL	201	0xeb89	type	2	bind	1	vis	0	ndx	12	name	avcodec_get_hw_frames_parameters
+EXPORT	2	1	0	12	avcodec_get_hw_frames_parameters
+DYNAMIC_SYMBOL	202	0x17059	type	2	bind	1	vis	0	ndx	12	name	avpriv_packet_list_get
+EXPORT	2	1	0	12	avpriv_packet_list_get
+DYNAMIC_SYMBOL	203	0x11c59	type	2	bind	1	vis	0	ndx	12	name	avcodec_default_get_buffer2
+EXPORT	2	1	0	12	avcodec_default_get_buffer2
+DYNAMIC_SYMBOL	204	0xfdb9	type	2	bind	1	vis	0	ndx	12	name	av_dv_frame_profile
+EXPORT	2	1	0	12	av_dv_frame_profile
+DYNAMIC_SYMBOL	205	0x97b9	type	2	bind	1	vis	0	ndx	12	name	av_ac3_parse_header
+EXPORT	2	1	0	12	av_ac3_parse_header
+DYNAMIC_SYMBOL	206	0x16301	type	2	bind	1	vis	0	ndx	12	name	avcodec_alloc_context3
+EXPORT	2	1	0	12	avcodec_alloc_context3
+DYNAMIC_SYMBOL	207	0x16639	type	2	bind	1	vis	0	ndx	12	name	av_shrink_packet
+EXPORT	2	1	0	12	av_shrink_packet
+DYNAMIC_SYMBOL	208	0x97c9	type	2	bind	1	vis	0	ndx	12	name	avpriv_adts_header_parse
+EXPORT	2	1	0	12	avpriv_adts_header_parse
+DYNAMIC_SYMBOL	209	0x97c1	type	2	bind	1	vis	0	ndx	12	name	av_adts_header_parse
+EXPORT	2	1	0	12	av_adts_header_parse
+DYNAMIC_SYMBOL	210	0x17211	type	2	bind	1	vis	0	ndx	12	name	av_packet_side_data_new
+EXPORT	2	1	0	12	av_packet_side_data_new
+DYNAMIC_SYMBOL	211	0x1e7a5	type	2	bind	1	vis	0	ndx	12	name	avpriv_split_xiph_headers
+EXPORT	2	1	0	12	avpriv_split_xiph_headers
+DYNAMIC_SYMBOL	212	0xd765	type	2	bind	1	vis	0	ndx	12	name	avcodec_parameters_to_context
+EXPORT	2	1	0	12	avcodec_parameters_to_context
+DYNAMIC_SYMBOL	213	0xd20d	type	2	bind	1	vis	0	ndx	12	name	av_bsf_list_alloc
+EXPORT	2	1	0	12	av_bsf_list_alloc
+DYNAMIC_SYMBOL	214	0x18c89	type	2	bind	1	vis	0	ndx	12	name	avpriv_pix_fmt_find
+EXPORT	2	1	0	12	avpriv_pix_fmt_find
+DYNAMIC_SYMBOL	215	0x16cad	type	2	bind	1	vis	0	ndx	12	name	av_packet_unref
+EXPORT	2	1	0	12	av_packet_unref
+DYNAMIC_SYMBOL	216	0xbaf9	type	2	bind	1	vis	0	ndx	12	name	avcodec_string
+EXPORT	2	1	0	12	avcodec_string
+DYNAMIC_SYMBOL	217	0x16031	type	2	bind	1	vis	0	ndx	12	name	av_mediacodec_alloc_context
+EXPORT	2	1	0	12	av_mediacodec_alloc_context
+DYNAMIC_SYMBOL	218	0xc939	type	2	bind	1	vis	0	ndx	12	name	avcodec_dct_init
+EXPORT	2	1	0	12	avcodec_dct_init
+DYNAMIC_SYMBOL	219	0x1ba41	type	2	bind	1	vis	0	ndx	12	name	av_fast_padded_malloc
+EXPORT	2	1	0	12	av_fast_padded_malloc
+DYNAMIC_SYMBOL	220	0x1e3dd	type	2	bind	1	vis	0	ndx	12	name	av_vorbis_parse_reset
+EXPORT	2	1	0	12	av_vorbis_parse_reset
+DYNAMIC_SYMBOL	221	0xccfd	type	2	bind	1	vis	0	ndx	12	name	av_bsf_get_by_name
+EXPORT	2	1	0	12	av_bsf_get_by_name
+DYNAMIC_SYMBOL	222	0x164f9	type	2	bind	1	vis	0	ndx	12	name	av_init_packet
+EXPORT	2	1	0	12	av_init_packet
+DYNAMIC_SYMBOL	223	0xd355	type	2	bind	1	vis	0	ndx	12	name	av_bsf_get_null_filter
+EXPORT	2	1	0	12	av_bsf_get_null_filter
+DYNAMIC_SYMBOL	224	0xd24d	type	2	bind	1	vis	0	ndx	12	name	av_bsf_list_append
+EXPORT	2	1	0	12	av_bsf_list_append
+DYNAMIC_SYMBOL	225	0x1c009	type	2	bind	1	vis	0	ndx	12	name	av_get_profile_name
+EXPORT	2	1	0	12	av_get_profile_name
+DYNAMIC_SYMBOL	226	0x1e309	type	2	bind	1	vis	0	ndx	12	name	av_vorbis_parse_frame_flags
+EXPORT	2	1	0	12	av_vorbis_parse_frame_flags
+DYNAMIC_SYMBOL	227	0xb9e5	type	2	bind	1	vis	0	ndx	12	name	avcodec_default_execute2
+EXPORT	2	1	0	12	avcodec_default_execute2
+DYNAMIC_SYMBOL	228	0x1cb2d	type	2	bind	1	vis	0	ndx	12	name	av_get_pcm_codec
+EXPORT	2	1	0	12	av_get_pcm_codec
+DYNAMIC_SYMBOL	229	0xc6ed	type	2	bind	1	vis	0	ndx	12	name	avcodec_receive_frame
+EXPORT	2	1	0	12	avcodec_receive_frame
+DYNAMIC_SYMBOL	230	0x1c075	type	2	bind	1	vis	0	ndx	12	name	av_get_exact_bits_per_sample
+EXPORT	2	1	0	12	av_get_exact_bits_per_sample
+DYNAMIC_SYMBOL	231	0x165ad	type	2	bind	1	vis	0	ndx	12	name	av_new_packet
+EXPORT	2	1	0	12	av_new_packet
+DYNAMIC_SYMBOL	232	0x16035	type	2	bind	1	vis	0	ndx	12	name	av_mediacodec_default_init
+EXPORT	2	1	0	12	av_mediacodec_default_init
+DYNAMIC_SYMBOL	233	0x10821	type	2	bind	1	vis	0	ndx	12	name	avcodec_receive_packet
+EXPORT	2	1	0	12	avcodec_receive_packet
+DYNAMIC_SYMBOL	234	0x1d265	type	2	bind	1	vis	0	ndx	12	name	avcodec_license
+EXPORT	2	1	0	12	avcodec_license
+DYNAMIC_SYMBOL	235	0xba19	type	2	bind	1	vis	0	ndx	12	name	avcodec_flush_buffers
+EXPORT	2	1	0	12	avcodec_flush_buffers
+DYNAMIC_SYMBOL	236	0xd8c9	type	2	bind	1	vis	0	ndx	12	name	av_d3d11va_alloc_context
+EXPORT	2	1	0	12	av_d3d11va_alloc_context
+DYNAMIC_SYMBOL	237	0xd469	type	2	bind	1	vis	0	ndx	12	name	avcodec_descriptor_next
+EXPORT	2	1	0	12	avcodec_descriptor_next
+DYNAMIC_SYMBOL	238	0x987d	type	2	bind	1	vis	0	ndx	12	name	avcodec_find_encoder
+EXPORT	2	1	0	12	avcodec_find_encoder
+DYNAMIC_SYMBOL	239	0x16aa9	type	2	bind	1	vis	0	ndx	12	name	av_packet_pack_dictionary
+EXPORT	2	1	0	12	av_packet_pack_dictionary
+DYNAMIC_SYMBOL	240	0x17361	type	2	bind	1	vis	0	ndx	12	name	av_parser_init
+EXPORT	2	1	0	12	av_parser_init
+DYNAMIC_SYMBOL	241	0x18c69	type	2	bind	1	vis	0	ndx	12	name	avcodec_pix_fmt_to_codec_tag
+EXPORT	2	1	0	12	avcodec_pix_fmt_to_codec_tag
+DYNAMIC_SYMBOL	242	0x10121	type	2	bind	1	vis	0	ndx	12	name	avcodec_default_get_encode_buffer
+EXPORT	2	1	0	12	avcodec_default_get_encode_buffer
+DYNAMIC_SYMBOL	243	0x1665d	type	2	bind	1	vis	0	ndx	12	name	av_grow_packet
+EXPORT	2	1	0	12	av_grow_packet
+DYNAMIC_SYMBOL	244	0x16d01	type	2	bind	1	vis	0	ndx	12	name	av_packet_free
+EXPORT	2	1	0	12	av_packet_free
+DYNAMIC_SYMBOL	245	0x98ed	type	2	bind	1	vis	0	ndx	12	name	avcodec_find_encoder_by_name
+EXPORT	2	1	0	12	avcodec_find_encoder_by_name
+DYNAMIC_SYMBOL	246	0xce85	type	2	bind	1	vis	0	ndx	12	name	av_bsf_alloc
+EXPORT	2	1	0	12	av_bsf_alloc
+DYNAMIC_SYMBOL	247	0xd215	type	2	bind	1	vis	0	ndx	12	name	av_bsf_list_free
+EXPORT	2	1	0	12	av_bsf_list_free
+DYNAMIC_SYMBOL	248	0x10239	type	2	bind	1	vis	0	ndx	12	name	avcodec_encode_subtitle
+EXPORT	2	1	0	12	avcodec_encode_subtitle
+DYNAMIC_SYMBOL	249	0x16489	type	2	bind	1	vis	0	ndx	12	name	avcodec_free_context
+EXPORT	2	1	0	12	avcodec_free_context
+DYNAMIC_SYMBOL	250	0x1cd49	type	2	bind	1	vis	0	ndx	12	name	avpriv_find_start_code
+EXPORT	2	1	0	12	avpriv_find_start_code
+DYNAMIC_SYMBOL	251	0xd035	type	2	bind	1	vis	0	ndx	12	name	av_bsf_flush
+EXPORT	2	1	0	12	av_bsf_flush
+DYNAMIC_SYMBOL	252	0x1bfbd	type	2	bind	1	vis	0	ndx	12	name	avcodec_get_name
+EXPORT	2	1	0	12	avcodec_get_name
+DYNAMIC_SYMBOL	253	0x1bbb1	type	2	bind	1	vis	0	ndx	12	name	avcodec_align_dimensions2
+EXPORT	2	1	0	12	avcodec_align_dimensions2
+DYNAMIC_SYMBOL	254	0x1cbf5	type	2	bind	1	vis	0	ndx	12	name	av_get_audio_frame_duration2
+EXPORT	2	1	0	12	av_get_audio_frame_duration2
+DYNAMIC_SYMBOL	255	0x1ba7d	type	2	bind	1	vis	0	ndx	12	name	av_fast_padded_mallocz
+EXPORT	2	1	0	12	av_fast_padded_mallocz
+DYNAMIC_SYMBOL	256	0xfdad	type	2	bind	1	vis	0	ndx	12	name	av_dirac_parse_sequence_header
+EXPORT	2	1	0	12	av_dirac_parse_sequence_header
+DYNAMIC_SYMBOL	257	0x1603d	type	2	bind	1	vis	0	ndx	12	name	av_mediacodec_default_free
+EXPORT	2	1	0	12	av_mediacodec_default_free
+DYNAMIC_SYMBOL	258	0x16041	type	2	bind	1	vis	0	ndx	12	name	av_mediacodec_release_buffer
+EXPORT	2	1	0	12	av_mediacodec_release_buffer
+DYNAMIC_SYMBOL	259	0x1d259	type	2	bind	1	vis	0	ndx	12	name	avcodec_configuration
+EXPORT	2	1	0	12	avcodec_configuration
+DYNAMIC_SYMBOL	260	0x164e9	type	2	bind	1	vis	0	ndx	12	name	avcodec_get_subtitle_rect_class
+EXPORT	2	1	0	12	avcodec_get_subtitle_rect_class
+DYNAMIC_SYMBOL	261	0xe4ed	type	2	bind	1	vis	0	ndx	12	name	avcodec_send_packet
+EXPORT	2	1	0	12	avcodec_send_packet
+DYNAMIC_SYMBOL	262	0xd48d	type	2	bind	1	vis	0	ndx	12	name	avcodec_descriptor_get_by_name
+EXPORT	2	1	0	12	avcodec_descriptor_get_by_name
+DYNAMIC_SYMBOL	263	0x16865	type	2	bind	1	vis	0	ndx	12	name	av_packet_new_side_data
+EXPORT	2	1	0	12	av_packet_new_side_data
+DYNAMIC_SYMBOL	264	0x16b51	type	2	bind	1	vis	0	ndx	12	name	av_packet_unpack_dictionary
+EXPORT	2	1	0	12	av_packet_unpack_dictionary
+DYNAMIC_SYMBOL	265	0x16561	type	2	bind	1	vis	0	ndx	12	name	av_packet_alloc
+EXPORT	2	1	0	12	av_packet_alloc
+DYNAMIC_SYMBOL	266	0x97b1	type	2	bind	1	vis	0	ndx	12	name	avpriv_ac3_parse_header
+EXPORT	2	1	0	12	avpriv_ac3_parse_header
+DYNAMIC_SYMBOL	267	0x1d24d	type	2	bind	1	vis	0	ndx	12	name	avcodec_version
+EXPORT	2	1	0	12	avcodec_version
+DYNAMIC_SYMBOL	268	0xfdc9	type	2	bind	1	vis	0	ndx	12	name	av_dv_codec_profile
+EXPORT	2	1	0	12	av_dv_codec_profile
+DYNAMIC_SYMBOL	269	0x1676d	type	2	bind	1	vis	0	ndx	12	name	av_packet_from_data
+EXPORT	2	1	0	12	av_packet_from_data
+DYNAMIC_SYMBOL	270	0x10645	type	2	bind	1	vis	0	ndx	12	name	avcodec_send_frame
+EXPORT	2	1	0	12	avcodec_send_frame
+DYNAMIC_SYMBOL	271	0x2ac00	type	1	bind	1	vis	0	ndx	14	name	av_codec_ffversion
+EXPORT	1	1	0	14	av_codec_ffversion
+DYNAMIC_SYMBOL	272	0x168a9	type	2	bind	1	vis	0	ndx	12	name	av_packet_get_side_data
+EXPORT	2	1	0	12	av_packet_get_side_data
+DYNAMIC_SYMBOL	273	0x1bf11	type	2	bind	1	vis	0	ndx	12	name	avcodec_fill_audio_frame
+EXPORT	2	1	0	12	avcodec_fill_audio_frame
+DYNAMIC_SYMBOL	274	0x16bfd	type	2	bind	1	vis	0	ndx	12	name	av_packet_copy_props
+EXPORT	2	1	0	12	av_packet_copy_props
+DYNAMIC_SYMBOL	275	0x1babd	type	2	bind	1	vis	0	ndx	12	name	av_codec_is_decoder
+EXPORT	2	1	0	12	av_codec_is_decoder
+DYNAMIC_SYMBOL	276	0x16d39	type	2	bind	1	vis	0	ndx	12	name	av_packet_ref
+EXPORT	2	1	0	12	av_packet_ref
+DYNAMIC_SYMBOL	277	0x1bfb5	type	2	bind	1	vis	0	ndx	12	name	avpriv_codec_get_cap_skip_frame_fill_param
+EXPORT	2	1	0	12	avpriv_codec_get_cap_skip_frame_fill_param
+DYNAMIC_SYMBOL	278	0x16e55	type	2	bind	1	vis	0	ndx	12	name	av_packet_make_refcounted
+EXPORT	2	1	0	12	av_packet_make_refcounted
+DYNAMIC_SYMBOL	279	0x172f9	type	2	bind	1	vis	0	ndx	12	name	av_packet_side_data_free
+EXPORT	2	1	0	12	av_packet_side_data_free
+DYNAMIC_SYMBOL	280	0xc125	type	2	bind	1	vis	0	ndx	12	name	avcodec_is_open
+EXPORT	2	1	0	12	avcodec_is_open
+DYNAMIC_SYMBOL	281	0x1732d	type	2	bind	1	vis	0	ndx	12	name	av_container_fifo_alloc_avpacket
+EXPORT	2	1	0	12	av_container_fifo_alloc_avpacket
+DYNAMIC_SYMBOL	282	0xd0d9	type	2	bind	1	vis	0	ndx	12	name	av_bsf_receive_packet
+EXPORT	2	1	0	12	av_bsf_receive_packet
+DYNAMIC_SYMBOL	283	0x1708d	type	2	bind	1	vis	0	ndx	12	name	avpriv_packet_list_free
+EXPORT	2	1	0	12	avpriv_packet_list_free
+DYNAMIC_SYMBOL	284	0xccf9	type	2	bind	1	vis	0	ndx	12	name	av_bsf_iterate
+EXPORT	2	1	0	12	av_bsf_iterate
+DYNAMIC_SYMBOL	285	0xc8dd	type	2	bind	1	vis	0	ndx	12	name	avcodec_get_supported_config
+EXPORT	2	1	0	12	avcodec_get_supported_config
+DYNAMIC_SYMBOL	286	0x9929	type	2	bind	1	vis	0	ndx	12	name	avcodec_find_decoder_by_name
+EXPORT	2	1	0	12	avcodec_find_decoder_by_name
+DYNAMIC_SYMBOL	287	0x1bec1	type	2	bind	1	vis	0	ndx	12	name	avcodec_align_dimensions
+EXPORT	2	1	0	12	avcodec_align_dimensions
+DYNAMIC_SYMBOL	288	0xead5	type	2	bind	1	vis	0	ndx	12	name	avcodec_default_get_format
+EXPORT	2	1	0	12	avcodec_default_get_format
+DYNAMIC_SYMBOL	289	0x16df1	type	2	bind	1	vis	0	ndx	12	name	av_packet_move_ref
+EXPORT	2	1	0	12	av_packet_move_ref
+DYNAMIC_SYMBOL	290	0x1719d	type	2	bind	1	vis	0	ndx	12	name	av_packet_side_data_add
+EXPORT	2	1	0	12	av_packet_side_data_add
+DYNAMIC_SYMBOL	291	0xd58d	type	2	bind	1	vis	0	ndx	12	name	avcodec_parameters_free
+EXPORT	2	1	0	12	avcodec_parameters_free
+DYNAMIC_SYMBOL	292	0xd5a5	type	2	bind	1	vis	0	ndx	12	name	avcodec_parameters_copy
+EXPORT	2	1	0	12	avcodec_parameters_copy
+DYNAMIC_SYMBOL	293	0xd4b1	type	2	bind	1	vis	0	ndx	12	name	avcodec_get_type
+EXPORT	2	1	0	12	avcodec_get_type
+DYNAMIC_SYMBOL	294	0xcef9	type	2	bind	1	vis	0	ndx	12	name	av_bsf_init
+EXPORT	2	1	0	12	av_bsf_init
+DYNAMIC_SYMBOL	295	0xd579	type	2	bind	1	vis	0	ndx	12	name	avcodec_parameters_alloc
+EXPORT	2	1	0	12	avcodec_parameters_alloc
+DYNAMIC_SYMBOL	296	0xd309	type	2	bind	1	vis	0	ndx	12	name	av_bsf_list_finalize
+EXPORT	2	1	0	12	av_bsf_list_finalize
+DYNAMIC_SYMBOL	297	0xd301	type	2	bind	1	vis	0	ndx	12	name	av_bsf_list_append2
+EXPORT	2	1	0	12	av_bsf_list_append2
+DYNAMIC_SYMBOL	298	0x1c035	type	2	bind	1	vis	0	ndx	12	name	avcodec_profile_name
+EXPORT	2	1	0	12	avcodec_profile_name
+DYNAMIC_SYMBOL	299	0xd619	type	2	bind	1	vis	0	ndx	12	name	avcodec_parameters_from_context
+EXPORT	2	1	0	12	avcodec_parameters_from_context
+DYNAMIC_SYMBOL	300	0xce79	type	2	bind	1	vis	0	ndx	12	name	av_bsf_get_class
+EXPORT	2	1	0	12	av_bsf_get_class
+DYNAMIC	0x1	0x1795
+DYNAMIC	0x1	0x17a5
+DYNAMIC	0x1	0x17af
+DYNAMIC	0xe	0x17b9
+DYNAMIC	0x10	0x0
+DYNAMIC	0xc	0x8098
+DYNAMIC	0xd	0x1eb50
+DYNAMIC	0x19	0x2b000
+DYNAMIC	0x1b	0x4
+DYNAMIC	0x1a	0x2b004
+DYNAMIC	0x1c	0x4
+DYNAMIC	0x6ffffef5	0x118
+DYNAMIC	0x5	0x18bc
+DYNAMIC	0x6	0x5ec
+DYNAMIC	0xa	0x17fa
+DYNAMIC	0xb	0x10
+DYNAMIC	0x3	0x33924
+DYNAMIC	0x2	0x4b8
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x7be0
+DYNAMIC	0x11	0x33b8
+DYNAMIC	0x12	0x4828
+DYNAMIC	0x13	0x8
+DYNAMIC	0x6ffffffc	0x3310
+DYNAMIC	0x6ffffffd	0x2
+DYNAMIC	0x1e	0x2
+DYNAMIC	0x6ffffffe	0x3348
+DYNAMIC	0x6fffffff	0x3
+DYNAMIC	0x6ffffff0	0x30b6
+DYNAMIC	0x6ffffffa	0x8fe
+DYNAMIC	0x0	0x0
+COMPILER_COMMENT	GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+FIELD	RELRO	None
+FIELD	NX	Enabled
+FIELD	PIE	N/A(DSO)
+FIELD	canary	No dynamic evidence
+FIELD	FORTIFY	No dynamic evidence
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Absent
+FIELD	dynamic_export_count_including_ABS	142
+FIELD	dynamic_export_non_ABS_count	141
+FIELD	dynamic_export_function_count	140
+METADATA_READER_SUCCESS

@@ -1,0 +1,17 @@
+{
+  "libavcodec-stripped.so": {
+    "sha256": "2bed47a34655adf02394acfe06e04c38d6e88b111a24141f4780454d4b209d3c",
+    "size": 213528,
+    "origin": "locally built unmodified official FFmpeg 8.0.1, never from board"
+  },
+  "libavutil-unstripped.so": {
+    "sha256": "da9976424ccf0f37c431c1bd76c6531e96eb3d6e70599f02be6d72683b6ef3a7",
+    "size": 545200,
+    "origin": "locally built unmodified official FFmpeg 8.0.1, never from board"
+  },
+  "libavcodec-unstripped.so": {
+    "sha256": "800f421db012547e5386156410cb8fb842b97367b84241e6793b857708d1668c",
+    "size": 248940,
+    "origin": "locally built unmodified official FFmpeg 8.0.1, never from board"
+  }
+}

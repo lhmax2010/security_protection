@@ -1,0 +1,23 @@
+Board: readelf -A emitted no attribute entries (no .ARM.attributes); ELF header flags 0x5000200 = Version5 EABI, soft-float ABI.
+Upstream: header flags 0x5000400 = Version5 EABI, hard-float ABI.
+Attribute Section: aeabi
+File Attributes
+  Tag_CPU_name: "7-A"
+  Tag_CPU_arch: v7
+  Tag_CPU_arch_profile: Application
+  Tag_ARM_ISA_use: Yes
+  Tag_THUMB_ISA_use: Thumb-2
+  Tag_FP_arch: VFPv3
+  Tag_Advanced_SIMD_arch: NEONv1
+  Tag_ABI_PCS_wchar_t: 4
+  Tag_ABI_FP_denormal: Needed
+  Tag_ABI_FP_exceptions: Needed
+  Tag_ABI_FP_number_model: IEEE 754
+  Tag_ABI_align_needed: 8-byte
+  Tag_ABI_align_preserved: 8-byte, except leaf SP
+  Tag_ABI_enum_size: int
+  Tag_ABI_VFP_args: VFP registers
+  Tag_CPU_unaligned_access: v6
+  Tag_ABI_FP_16bit_format: IEEE 754
+
+Scope: static-only comparison of these integer/pointer APIs; upstream arm-linux-gnueabihf build is not claimed to be an ABI-compatible drop-in for Tizen.
