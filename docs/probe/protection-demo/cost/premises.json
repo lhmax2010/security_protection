@@ -1,0 +1,15 @@
+{
+  "ffmpeg_version": "8.0.1",
+  "archive": "docs/probe/ffmpeg-demo/private/download/ffmpeg-8.0.1.tar.xz",
+  "archive_sha256": "05ee0b03119b45c0bdb4df654b96802e909e0a752f72e4fe3794f487229e5a41",
+  "existing_source": "docs/probe/ffmpeg-demo/private/ffmpeg-8.0.1",
+  "toolchain_record": "docs/probe/protection-demo/obfuscation/toolchain.json",
+  "compiler": "22.1.8 / xollvm v0.11.1",
+  "ABI": "ARMv7 hard-float self-contained static executable; board userspace soft-float mismatch avoided by bundling static runtime, not claiming replaceability of system library",
+  "plan": [
+    "baseline22",
+    "selective10",
+    "whole-library attempted with actual skips recorded"
+  ],
+  "performance": "Native mpeg2video software decode, single thread; same deterministic clip, >=5 interleaved measured runs per successful variant, warmup, median/range/CV and maxrss; no conclusion predetermined."
+}
