@@ -1,0 +1,17 @@
+{
+  "method": "Projections of saved REA results; no new baseline analysis; labels and string-row counts are not recovery rates.",
+  "targets": {
+    "baseline": {
+      "procedure_rows": 32,
+      "local_non_thunk": 10,
+      "local_FUN_labels": 0,
+      "string_rows": 88
+    },
+    "protected": {
+      "procedure_rows": 35,
+      "local_non_thunk": 10,
+      "local_FUN_labels": 6,
+      "string_rows": 43
+    }
+  }
+}

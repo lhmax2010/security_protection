@@ -1,0 +1,78 @@
+{
+  "method": "Existing validated elf-metadata.lua via host Lua 5.3 ctypes runner; independent GNU readelf cross-check. No REA attribution.",
+  "decoder_sha256": "7437938075125d088fb56bb1fa502e1c3fc1bed0234ca2bd8c3a439fe638eeaa",
+  "targets": {
+    "baseline": {
+      "path": "docs/probe/samples/bin/target_c_llvm_armv7l",
+      "sha256": "4a08f9e874b23446695be329b13e9cd102d733cefcf9d7fcafd56302afcd6d5e",
+      "fields": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "No dynamic evidence",
+        "FORTIFY": "No dynamic evidence",
+        "stripped": "No",
+        "RPATH": "Absent",
+        "RUNPATH": "Absent",
+        "dynamic_export_count_including_ABS": "0",
+        "dynamic_export_non_ABS_count": "0",
+        "dynamic_export_function_count": "0"
+      },
+      "expected_from_GNU_readelf": {
+        "RELRO": "Partial",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "stripped": "No",
+        "RPATH": "Absent",
+        "RUNPATH": "Absent",
+        "canary": "No dynamic evidence",
+        "FORTIFY": "No dynamic evidence",
+        "dynamic_export_count_including_ABS": "0",
+        "dynamic_export_non_ABS_count": "0",
+        "dynamic_export_function_count": "0"
+      },
+      "mismatches": {},
+      "marker_bytes_found": true,
+      "marker_strings_hits": 1,
+      "helper_symbol_rows": [
+        "94: 0000054c    60 FUNC    GLOBAL DEFAULT   13 simple_checksum",
+        "99: 00000588   100 FUNC    GLOBAL DEFAULT   13 main",
+        "100: 00000534    24 FUNC    GLOBAL DEFAULT   13 secret_transform"
+      ]
+    },
+    "protected": {
+      "path": "docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected",
+      "sha256": "b7e6e7bcd1faf053beda7f1566d2699ca30c6fcdb875cea7b8486c5744ba9e77",
+      "fields": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "stripped": "Yes(no .symtab)",
+        "RPATH": "Absent",
+        "RUNPATH": "Absent",
+        "dynamic_export_count_including_ABS": "0",
+        "dynamic_export_non_ABS_count": "0",
+        "dynamic_export_function_count": "0"
+      },
+      "expected_from_GNU_readelf": {
+        "RELRO": "Full",
+        "NX": "Enabled",
+        "PIE": "Yes",
+        "stripped": "Yes(no .symtab)",
+        "RPATH": "Absent",
+        "RUNPATH": "Absent",
+        "canary": "Detected(import)",
+        "FORTIFY": "Detected(import)",
+        "dynamic_export_count_including_ABS": "0",
+        "dynamic_export_non_ABS_count": "0",
+        "dynamic_export_function_count": "0"
+      },
+      "mismatches": {},
+      "marker_bytes_found": false,
+      "marker_strings_hits": 0,
+      "helper_symbol_rows": []
+    }
+  }
+}

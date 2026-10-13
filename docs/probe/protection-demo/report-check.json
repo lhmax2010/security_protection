@@ -1,0 +1,14 @@
+{
+  "raw_MCP_equals_decoded_projections": true,
+  "target_digests_and_Ghidra_provider_match": true,
+  "pseudocode_exactly_equal_after_name_replacement": true,
+  "main_decompiler_recovers_all_marker_characters": true,
+  "ELF_decoder_readelf_all_agree": true,
+  "QEMU_equal_cases": 11,
+  "limitations": [
+    "No blind discovery timing",
+    "No obfuscation added",
+    "XOR marker is recoverable",
+    "11 runtime cases only"
+  ]
+}
