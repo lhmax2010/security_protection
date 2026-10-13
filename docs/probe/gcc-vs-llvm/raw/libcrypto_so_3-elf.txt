@@ -1,0 +1,213 @@
+SAMPLE libcrypto_so_3
+SHA256 022434b886ab3aaf95633a5ea880522c9833e75fc4d2e63512759cac2786ff3d
+METHOD main ELF GNU readelf plus independently validated Lua ELF decoder; full dynsym/strings local-only.
+COMMAND readelf -W -h -l -d -S <ELF>
+EXIT 0
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          2779356 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         7
+  Size of section headers:           40 (bytes)
+  Number of section headers:         27
+  Section header string table index: 26
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .note.gnu.build-id NOTE            00000114 000114 000024 00   A  0   0  4
+  [ 2] .gnu.hash         GNU_HASH        00000138 000138 008a44 04   A  3   0  4
+  [ 3] .dynsym           DYNSYM          00008b7c 008b7c 017500 10   A  4   3  4
+  [ 4] .dynstr           STRTAB          0002007c 02007c 01e5f5 00   A  0   0  1
+  [ 5] .gnu.version      VERSYM          0003e672 03e672 002ea0 02   A  3   0  2
+  [ 6] .gnu.version_d    VERDEF          00041514 041514 000158 00   A  4  10  4
+  [ 7] .gnu.version_r    VERNEED         0004166c 04166c 000100 00   A  4   3  4
+  [ 8] .rel.dyn          REL             0004176c 04176c 02b958 08   A  3   0  4
+  [ 9] .rel.plt          REL             0006d0c4 06d0c4 0004f8 08  AI  3  22  4
+  [10] .init             PROGBITS        0006d5bc 06d5bc 00000c 00  AX  0   0  4
+  [11] .plt              PROGBITS        0006d5c8 06d5c8 0007ec 04  AX  0   0  4
+  [12] .text             PROGBITS        0006ddc0 06ddc0 174228 00  AX  0   0 64
+  [13] .fini             PROGBITS        001e1fe8 1e1fe8 000008 00  AX  0   0  4
+  [14] .rodata           PROGBITS        001e2000 1e2000 07b6d3 00   A  0   0 4096
+  [15] .ARM.extab        PROGBITS        0025d6d4 25d6d4 001bfc 00   A  0   0  4
+  [16] .ARM.exidx        ARM_EXIDX       0025f2d0 25f2d0 00f4f8 00  AL 12   0  4
+  [17] .eh_frame         PROGBITS        0026e7c8 26e7c8 000004 00   A  0   0  4
+  [18] .init_array       INIT_ARRAY      0026f000 26f000 000008 04  WA  0   0  4
+  [19] .fini_array       FINI_ARRAY      0026f008 26f008 000004 04  WA  0   0  4
+  [20] .data.rel.ro      PROGBITS        0026f010 26f010 035e84 00  WA  0   0  8
+  [21] .dynamic          DYNAMIC         002a4e94 2a4e94 000120 08  WA  4   0  4
+  [22] .got              PROGBITS        002a5000 2a5000 0007d8 04  WA  0   0  4
+  [23] .data             PROGBITS        002a57d8 2a57d8 000fec 00  WA  0   0  8
+  [24] .bss              NOBITS          002a67c8 2a67c4 002250 00  WA  0   0  8
+  [25] .gnu_debuglink    PROGBITS        00000000 2a67c4 00001c 00      0   0  4
+  [26] .shstrtab         STRTAB          00000000 2a67e0 0000fc 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  EXIDX          0x25f2d0 0x0025f2d0 0x0025f2d0 0x0f4f8 0x0f4f8 R   0x4
+  LOAD           0x000000 0x00000000 0x00000000 0x26e7cc 0x26e7cc R E 0x1000
+  LOAD           0x26f000 0x0026f000 0x0026f000 0x377c4 0x39a18 RW  0x1000
+  DYNAMIC        0x2a4e94 0x002a4e94 0x002a4e94 0x00120 0x00120 RW  0x4
+  NOTE           0x000114 0x00000114 0x00000114 0x00024 0x00024 R   0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10
+  GNU_RELRO      0x26f000 0x0026f000 0x0026f000 0x36000 0x36000 R   0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .ARM.exidx 
+   01     .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_d .gnu.version_r .rel.dyn .rel.plt .init .plt .text .fini .rodata .ARM.extab .ARM.exidx .eh_frame 
+   02     .init_array .fini_array .data.rel.ro .dynamic .got .data .bss 
+   03     .dynamic 
+   04     .note.gnu.build-id 
+   05     
+   06     .init_array .fini_array .data.rel.ro .dynamic 
+
+Dynamic section at offset 0x2a4e94 contains 32 entries:
+  Tag        Type                         Name/Value
+ 0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [ld-linux.so.3]
+ 0x0000000e (SONAME)                     Library soname: [libcrypto.so.3]
+ 0x00000010 (SYMBOLIC)                   0x0
+ 0x0000000c (INIT)                       0x6d5bc
+ 0x0000000d (FINI)                       0x1e1fe8
+ 0x00000019 (INIT_ARRAY)                 0x26f000
+ 0x0000001b (INIT_ARRAYSZ)               8 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x26f008
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x6ffffef5 (GNU_HASH)                   0x138
+ 0x00000005 (STRTAB)                     0x2007c
+ 0x00000006 (SYMTAB)                     0x8b7c
+ 0x0000000a (STRSZ)                      124405 (bytes)
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000003 (PLTGOT)                     0x2a5000
+ 0x00000002 (PLTRELSZ)                   1272 (bytes)
+ 0x00000014 (PLTREL)                     REL
+ 0x00000017 (JMPREL)                     0x6d0c4
+ 0x00000011 (REL)                        0x4176c
+ 0x00000012 (RELSZ)                      178520 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffc (VERDEF)                     0x41514
+ 0x6ffffffd (VERDEFNUM)                  10
+ 0x0000001e (FLAGS)                      SYMBOLIC
+ 0x6ffffffb (FLAGS_1)                    Flags: NODELETE
+ 0x6ffffffe (VERNEED)                    0x4166c
+ 0x6fffffff (VERNEEDNUM)                 3
+ 0x6ffffff0 (VERSYM)                     0x3e672
+ 0x6ffffffa (RELCOUNT)                   22306
+ 0x00000000 (NULL)                       0x0
+
+COMMAND readelf -n <ELF>
+EXIT 0
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: 95f16373b8444d249370a5f6ff2215c2ffb8905e
+
+RAW_LUA_PROJECTION: full symbol-name records withheld; all other emitted metadata follows.
+METHOD	HOST_LUA_SAME_VALIDATED_ELF_METADATA_DECODER	Lua=Lua 5.3
+TARGET	<SURVEY_ROOT>/private/extract/libcrypto_so_3.elf	shared-library
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	7	shoff	0x2a68dc	shnum	27
+PROGRAM_HEADER	0	0x70000001	offset	0x25f2d0	vaddr	0x25f2d0	filesz	62712	memsz	62712	flags	4
+PROGRAM_HEADER	1	0x1	offset	0x0	vaddr	0x0	filesz	2549708	memsz	2549708	flags	5
+PROGRAM_HEADER	2	0x1	offset	0x26f000	vaddr	0x26f000	filesz	227268	memsz	236056	flags	6
+PROGRAM_HEADER	3	0x2	offset	0x2a4e94	vaddr	0x2a4e94	filesz	288	memsz	288	flags	6
+PROGRAM_HEADER	4	0x4	offset	0x114	vaddr	0x114	filesz	36	memsz	36	flags	4
+PROGRAM_HEADER	5	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+PROGRAM_HEADER	6	0x6474e552	offset	0x26f000	vaddr	0x26f000	filesz	221184	memsz	221184	flags	4
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.note.gnu.build-id	7	offset	0x114	size	36	link	0	entsize	0
+SECTION	2	.gnu.hash	1879048182	offset	0x138	size	35396	link	3	entsize	4
+SECTION	3	.dynsym	11	offset	0x8b7c	size	95488	link	4	entsize	16
+SECTION	4	.dynstr	3	offset	0x2007c	size	124405	link	0	entsize	0
+SECTION	5	.gnu.version	1879048191	offset	0x3e672	size	11936	link	3	entsize	2
+SECTION	6	.gnu.version_d	1879048189	offset	0x41514	size	344	link	4	entsize	0
+SECTION	7	.gnu.version_r	1879048190	offset	0x4166c	size	256	link	4	entsize	0
+SECTION	8	.rel.dyn	9	offset	0x4176c	size	178520	link	3	entsize	8
+SECTION	9	.rel.plt	9	offset	0x6d0c4	size	1272	link	3	entsize	8
+SECTION	10	.init	1	offset	0x6d5bc	size	12	link	0	entsize	0
+SECTION	11	.plt	1	offset	0x6d5c8	size	2028	link	0	entsize	4
+SECTION	12	.text	1	offset	0x6ddc0	size	1524264	link	0	entsize	0
+SECTION	13	.fini	1	offset	0x1e1fe8	size	8	link	0	entsize	0
+SECTION	14	.rodata	1	offset	0x1e2000	size	505555	link	0	entsize	0
+SECTION	15	.ARM.extab	1	offset	0x25d6d4	size	7164	link	0	entsize	0
+SECTION	16	.ARM.exidx	1879048193	offset	0x25f2d0	size	62712	link	12	entsize	0
+SECTION	17	.eh_frame	1	offset	0x26e7c8	size	4	link	0	entsize	0
+SECTION	18	.init_array	14	offset	0x26f000	size	8	link	0	entsize	4
+SECTION	19	.fini_array	15	offset	0x26f008	size	4	link	0	entsize	4
+SECTION	20	.data.rel.ro	1	offset	0x26f010	size	220804	link	0	entsize	0
+SECTION	21	.dynamic	6	offset	0x2a4e94	size	288	link	4	entsize	8
+SECTION	22	.got	1	offset	0x2a5000	size	2008	link	0	entsize	4
+SECTION	23	.data	1	offset	0x2a57d8	size	4076	link	0	entsize	0
+SECTION	24	.bss	8	offset	0x2a67c4	size	8784	link	0	entsize	0
+SECTION	25	.gnu_debuglink	1	offset	0x2a67c4	size	28	link	0	entsize	0
+SECTION	26	.shstrtab	3	offset	0x2a67e0	size	252	link	0	entsize	0
+DYNAMIC	0x1	0x1e4c3
+DYNAMIC	0x1	0x1e4d1
+DYNAMIC	0x1	0x1e4db
+DYNAMIC	0xe	0x1e4e9
+DYNAMIC	0x10	0x0
+DYNAMIC	0xc	0x6d5bc
+DYNAMIC	0xd	0x1e1fe8
+DYNAMIC	0x19	0x26f000
+DYNAMIC	0x1b	0x8
+DYNAMIC	0x1a	0x26f008
+DYNAMIC	0x1c	0x4
+DYNAMIC	0x6ffffef5	0x138
+DYNAMIC	0x5	0x2007c
+DYNAMIC	0x6	0x8b7c
+DYNAMIC	0xa	0x1e5f5
+DYNAMIC	0xb	0x10
+DYNAMIC	0x3	0x2a5000
+DYNAMIC	0x2	0x4f8
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x6d0c4
+DYNAMIC	0x11	0x4176c
+DYNAMIC	0x12	0x2b958
+DYNAMIC	0x13	0x8
+DYNAMIC	0x6ffffffc	0x41514
+DYNAMIC	0x6ffffffd	0xa
+DYNAMIC	0x1e	0x2
+DYNAMIC	0x6ffffffb	0x8
+DYNAMIC	0x6ffffffe	0x4166c
+DYNAMIC	0x6fffffff	0x3
+DYNAMIC	0x6ffffff0	0x3e672
+DYNAMIC	0x6ffffffa	0x5722
+DYNAMIC	0x0	0x0
+FIELD	RELRO	Partial
+FIELD	NX	Enabled
+FIELD	PIE	N/A(DSO)
+FIELD	canary	Detected(import)
+FIELD	FORTIFY	Detected(import)
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Absent
+FIELD	dynamic_export_count_including_ABS	5799
+FIELD	dynamic_export_non_ABS_count	5790
+FIELD	dynamic_export_function_count	5790
+METADATA_READER_SUCCESS
+GNU_READELF_DYNSYM_COUNT_PROJECTION {"export_non_ABS": 5790, "export_FUNC_IFUNC": 5790, "Cpp_mangled": 0}
+FULL_PRIVATE_DYNSYM_SHA256 52edfec65ad3423baa96c369d8f23b87a8db3cd2f32f33626dfb9a25c9fa05e9
+RODATA_ASCII_PRINTABLE_RUNS_MIN8_COUNT 7824
+RODATA_SCANNED_BYTES 505555
+RODATA_SAMPLE_PROJECTION [[".rodata", 1974296, "assertion failed: in && out && key && ivec"], [".rodata", 1974340, "assertion failed: (AES_ENCRYPT == enc) || (AES_DECRYPT == enc)"], [".rodata", 1974404, "assertion failed: (length % AES_BLOCK_SIZE) == 0"]]
+
+MATCHED_DEBUG_PRODUCER_FLAGS_PROJECTION {"stack_protector_flags": ["-fstack-protector-strong"], "visibility_flags": [], "compiler_evidence": "raw/libcrypto_so_3-compiler.txt"}

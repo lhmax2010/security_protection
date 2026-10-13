@@ -228,3 +228,10 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - 已闭合步骤 2：15个主RPM抽出16 ELF（初版误以为 sqlite 主包包含库，真实“缺1”见 `gcc-vs-llvm/extraction-initial-status.json`；补充 libsqlite RPM 后成功，清单/网络记录已更新）。抽取只 materialize 已选常规ELF，不安装、不建立RPM内链接；见 `extraction-status.json`。
 - 编译器实证：16/16 为 **GCC14.2.0**。主ELF均无.comment，未猜测；在同一reference相邻 standard/debug 索引找到精确NEVRA debug RPM，逐ELF通过debuglink文件名+CRC32配对，并全部核对GNU build-id相同；匹配debug的DW_AT_producer真实输出见 `raw/<id>-compiler.txt`，汇总 `gcc-compiler-evidence.txt/json`、下载元数据 `debug-download-status.json`。debug ELF/RPM和完整CU属性原输出留private，不上传。
 - 保留限制：编译器/旗标证据适用于匹配CU，不能代表所有链接输入；libavcodec producer可见 SSP strong/all，部分库可见 visibility=hidden；LLVM板用户态逐库编译器仍未知且本轮禁止重测。公共reference是公司GCC产物的对照代理，不自动证明公司内部构建配置相同。
+
+- 步骤3采集完成待REA补充：16 ELF的GNU readelf头/节/动态表及既有Lua解码逐样本实证，Lua导出计数与完整私有readelf --dyn-syms independently一致。公开 raw/<id>-elf.txt 不含完整动态符号清单；它明确标为过滤投影并附计数/私有原输出哈希。记录RELRO/NX/PIE/SSP及FORTIFY导入/.symtab、C++导出计数、.rodata最少8字符ASCII串数量和最多3条明文样本；汇总 `gcc-hardening-matrix.txt/json`。主ELF的stack-protector是canary同一证据轴，匹配debug另补精确producer旗标，不重复计作独立保护。
+- 小诊断错误留证：rpm2cpio不支持--version，真实错误见 `gcc-vs-llvm/tool-diagnostic-errors.txt`；实际所有解包exit0。首次SQLite候选缺库已解决。
+
+- 已闭合步骤3：GNU readelf 与 Lua16样本解码/导出计数交叉复验完成，矩阵 `gcc-vs-llvm/gcc-hardening-matrix.txt/json`。参考libavcodec亦完成REA6.4.0+Ghidra12.1.4分析，见 `rea/upstream/`（此目录指参考GCC发行库，不是上轮裸编译）；只取overview及两公开API的info/pseudocode/assembly/callers/callees，不调用或公开完整函数/字符串清单。公开所有新raw不含完整动态符号清单，完整原输出留private。
+- 关键GCC加固证据：参考FFmpeg configure明文含 --toolchain=hardened（`raw/libavcodec-config-string.txt`），匹配producer有 -fstack-protector-all/strong；两选API的REA伪代码均有guard/fail检查。历史板库这两同名函数未见guard/fail，原库整体仍有canary导入，不能说板侧完全没栈保护。双方算法主要逻辑均可读，保护攻击面没有自动遮蔽算法。
+- 期间聊天响应反复断流：本机Codex日志已定位为HTTP200后模型采样流处理失败并自动重试，非shell命令timeout；RPM/ELF/REA结果保存完整。本机私有诊断留private，request ID和应用日志不上传。尚不能确定服务端内部根因；不改代理/凭据/模型配置、不冒称已修复。

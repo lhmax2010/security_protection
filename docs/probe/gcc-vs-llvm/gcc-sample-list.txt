@@ -1,4 +1,4 @@
-Public Tizen reference ARMv7 RPM selection; snapshot URLs are mutable, observed hashes/time are recorded. Compiler classification pending, not assumed GCC.
+Public Tizen reference ARMv7 RPM selection; snapshot URLs are mutable, observed hashes/time are recorded. All 16 selected ELF now confirmed GCC14.2.0 via matched debug producers; see gcc-compiler-evidence.txt.
 15 common ELF counterparts + libavcodec, from 15 RPMs.
 repo	package NEVRA	Source RPM	bytes	SHA256	URL	intended ELF IDs
 unified	libavcodec 8.0.1 1 armv7l	ffmpeg-8.0.1-1.src.rpm	2028488	3aaabe64f535e4de0b0ee7cf59f085c7512493cbd1a46f4df2182e13122cdfc4	https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/packages/armv7l/libavcodec-8.0.1-1.armv7l.rpm	libavcodec

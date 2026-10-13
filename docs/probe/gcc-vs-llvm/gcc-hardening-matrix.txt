@@ -1,0 +1,18 @@
+Verified GCC reference cohort; compiler confirmed through CRC32/build-id-matched debug producers. Canary is stack-protector import evidence, not an independent mitigation. Producer flags are per matched CU.
+id	compiler	compiler_version	RELRO	NX	PIE	canary	FORTIFY	stripped	producer_stack_protector_flags	producer_visibility_flags	dynamic_export_non_ABS_count	dynamic_export_function_count	export_Cpp_mangled	rodata_ascii_min8_runs	rodata_sample_count	raw_evidence
+libavcodec	GCC	14.2.0	Full	Enabled	N/A(DSO)	Detected(import)	Detected(import)	Yes(no .symtab)	['-fstack-protector-all', '-fstack-protector-strong']	[]	145	144	0	5642	3	raw/libavcodec-elf.txt
+libc_so_6	GCC	14.2.0	Full	Enabled	N/A(DSO)	Provider-definition-only	Provider-definition-only	Yes(no .symtab)	['-fno-stack-protector']	[]	3149	3003	0	1609	3	raw/libc_so_6-elf.txt
+libstdc++_so_6	GCC	14.2.0	Partial	Enabled	N/A(DSO)	No dynamic evidence	No dynamic evidence	Yes(no .symtab)	[]	[]	5898	4610	5816	4928	3	raw/libstdc++_so_6-elf.txt
+libcrypto_so_3	GCC	14.2.0	Partial	Enabled	N/A(DSO)	Detected(import)	Detected(import)	Yes(no .symtab)	['-fstack-protector-strong']	[]	5790	5790	0	7824	3	raw/libcrypto_so_3-elf.txt
+libssl_so_3	GCC	14.2.0	Partial	Enabled	N/A(DSO)	Detected(import)	Detected(import)	Yes(no .symtab)	['-fstack-protector-strong']	[]	599	599	0	1616	3	raw/libssl_so_3-elf.txt
+dbus_daemon	GCC	14.2.0	Full	Enabled	Yes	Detected(import)	Detected(import)	Yes(no .symtab)	['-fno-stack-protector', '-fstack-protector', '-fstack-protector-strong']	['-fvisibility=hidden']	0	0	0	538	3	raw/dbus_daemon-elf.txt
+libdbus_1_so_3	GCC	14.2.0	Partial	Enabled	N/A(DSO)	Detected(import)	Detected(import)	Yes(no .symtab)	['-fstack-protector', '-fstack-protector-strong']	['-fvisibility=hidden']	562	561	0	689	3	raw/libdbus_1_so_3-elf.txt
+libglib_2_0_so_0	GCC	14.2.0	Partial	Enabled	N/A(DSO)	Detected(import)	Detected(import)	Yes(no .symtab)	['-fstack-protector-strong']	['-fvisibility=hidden']	1879	1857	0	3079	3	raw/libglib_2_0_so_0-elf.txt
+sqlite3	GCC	14.2.0	Partial	Enabled	Yes	Detected(import)	Detected(import)	Yes(no .symtab)	['-fno-stack-protector', '-fstack-protector-strong']	[]	0	0	0	2996	3	raw/sqlite3-elf.txt
+libsqlite3_so_0	GCC	14.2.0	None	Enabled	N/A(DSO)	Detected(import)	Detected(import)	Yes(no .symtab)	['-fstack-protector-strong']	[]	341	338	0	1273	3	raw/libsqlite3_so_0-elf.txt
+bash	GCC	14.2.0	Partial	Enabled	Yes	Detected(import)	Detected(import)	Yes(no .symtab)	['-fno-stack-protector', '-fstack-protector-strong']	['-fvisibility=hidden']	11	1	0	1620	3	raw/bash-elf.txt
+systemctl	GCC	14.2.0	Full	Enabled	Yes	Detected(import)	Detected(import)	Yes(no .symtab)	['-fno-stack-protector', '-fstack-protector', '-fstack-protector-strong']	['-fvisibility=hidden']	0	0	0	1069	3	raw/systemctl-elf.txt
+rpm	GCC	14.2.0	None	Enabled	Yes	Detected(import)	No dynamic evidence	Yes(no .symtab)	['-fno-stack-protector']	[]	0	0	0	48	3	raw/rpm-elf.txt
+find	GCC	14.2.0	Partial	Enabled	Yes	Detected(import)	Detected(import)	Yes(no .symtab)	['-fno-stack-protector', '-fstack-protector-strong']	[]	5	5	0	373	3	raw/find-elf.txt
+libdlog_so_0	GCC	14.2.0	None	Enabled	N/A(DSO)	No dynamic evidence	No dynamic evidence	Yes(no .symtab)	[]	['-fvisibility=hidden']	11	11	0	216	3	raw/libdlog_so_0-elf.txt
+libpkgmgr_info_so_0	GCC	14.2.0	Partial	Enabled	N/A(DSO)	Detected(import)	Detected(import)	Yes(no .symtab)	['-fstack-protector-strong']	['-fvisibility=hidden']	1371	1299	1073	859	3	raw/libpkgmgr_info_so_0-elf.txt

@@ -1,0 +1,225 @@
+SAMPLE libpkgmgr_info_so_0
+SHA256 62a3097ebc1748dd6e9ff869ebda63696374628b2c79b33ff34d42ef3283e842
+METHOD main ELF GNU readelf plus independently validated Lua ELF decoder; full dynsym/strings local-only.
+COMMAND readelf -W -h -l -d -S <ELF>
+EXIT 0
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 03 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - GNU
+  ABI Version:                       0
+  Type:                              DYN (Shared object file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x0
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          516464 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         7
+  Size of section headers:           40 (bytes)
+  Number of section headers:         26
+  Section header string table index: 25
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .note.gnu.build-id NOTE            00000114 000114 000024 00   A  0   0  4
+  [ 2] .gnu.hash         GNU_HASH        00000138 000138 002970 04   A  3   0  4
+  [ 3] .dynsym           DYNSYM          00002aa8 002aa8 0065d0 10   A  4   3  4
+  [ 4] .dynstr           STRTAB          00009078 009078 015348 00   A  0   0  1
+  [ 5] .gnu.version      VERSYM          0001e3c0 01e3c0 000cba 02   A  3   0  2
+  [ 6] .gnu.version_r    VERNEED         0001f07c 01f07c 000250 00   A  4   7  4
+  [ 7] .rel.dyn          REL             0001f2cc 01f2cc 001b78 08   A  3   0  4
+  [ 8] .rel.plt          REL             00020e44 020e44 001b48 08  AI  3  21  4
+  [ 9] .init             PROGBITS        0002298c 02298c 00000c 00  AX  0   0  4
+  [10] .plt              PROGBITS        00022998 022998 002a38 04  AX  0   0  4
+  [11] .text             PROGBITS        000253d0 0253d0 0484ec 00  AX  0   0  8
+  [12] .fini             PROGBITS        0006d8bc 06d8bc 000008 00  AX  0   0  4
+  [13] .rodata           PROGBITS        0006d8c8 06d8c8 008267 00   A  0   0  8
+  [14] .ARM.extab        PROGBITS        00075b30 075b30 00458e 00   A  0   0  4
+  [15] .ARM.exidx        ARM_EXIDX       0007a0c0 07a0c0 001630 00  AL 11   0  4
+  [16] .eh_frame         PROGBITS        0007b6f0 07b6f0 000004 00   A  0   0  4
+  [17] .init_array       INIT_ARRAY      0007c000 07c000 000018 04  WA  0   0  4
+  [18] .fini_array       FINI_ARRAY      0007c018 07c018 000004 04  WA  0   0  4
+  [19] .data.rel.ro      PROGBITS        0007c020 07c020 000d88 00  WA  0   0  8
+  [20] .dynamic          DYNAMIC         0007cda8 07cda8 000158 08  WA  4   0  4
+  [21] .got              PROGBITS        0007d000 07d000 001050 04  WA  0   0  4
+  [22] .data             PROGBITS        0007e050 07e050 00000c 00  WA  0   0  4
+  [23] .bss              NOBITS          0007e05c 07e05c 0001b0 00  WA  0   0  4
+  [24] .gnu_debuglink    PROGBITS        00000000 07e05c 000024 00      0   0  4
+  [25] .shstrtab         STRTAB          00000000 07e080 0000ed 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  R (retain), D (mbind), y (purecode), p (processor specific)
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  EXIDX          0x07a0c0 0x0007a0c0 0x0007a0c0 0x01630 0x01630 R   0x4
+  LOAD           0x000000 0x00000000 0x00000000 0x7b6f4 0x7b6f4 R E 0x1000
+  LOAD           0x07c000 0x0007c000 0x0007c000 0x0205c 0x0220c RW  0x1000
+  DYNAMIC        0x07cda8 0x0007cda8 0x0007cda8 0x00158 0x00158 RW  0x4
+  NOTE           0x000114 0x00000114 0x00000114 0x00024 0x00024 R   0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10
+  GNU_RELRO      0x07c000 0x0007c000 0x0007c000 0x01000 0x01000 R   0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .ARM.exidx 
+   01     .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rel.dyn .rel.plt .init .plt .text .fini .rodata .ARM.extab .ARM.exidx .eh_frame 
+   02     .init_array .fini_array .data.rel.ro .dynamic .got .data .bss 
+   03     .dynamic 
+   04     .note.gnu.build-id 
+   05     
+   06     .init_array .fini_array .data.rel.ro .dynamic 
+
+Dynamic section at offset 0x7cda8 contains 39 entries:
+  Tag        Type                         Name/Value
+ 0x00000001 (NEEDED)                     Shared library: [libbundle.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libcapi-system-resource.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libcynara-client-helpers.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libdlog.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libglib-2.0.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libsystemd.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libtzplatform-config-2.0.so.2]
+ 0x00000001 (NEEDED)                     Shared library: [libxml2.so.16]
+ 0x00000001 (NEEDED)                     Shared library: [libminizip.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libparcel.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libvconf.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libstdc++.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [ld-linux.so.3]
+ 0x0000000e (SONAME)                     Library soname: [libpkgmgr-info.so.0]
+ 0x0000000c (INIT)                       0x2298c
+ 0x0000000d (FINI)                       0x6d8bc
+ 0x00000019 (INIT_ARRAY)                 0x7c000
+ 0x0000001b (INIT_ARRAYSZ)               24 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x7c018
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x6ffffef5 (GNU_HASH)                   0x138
+ 0x00000005 (STRTAB)                     0x9078
+ 0x00000006 (SYMTAB)                     0x2aa8
+ 0x0000000a (STRSZ)                      86856 (bytes)
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000003 (PLTGOT)                     0x7d000
+ 0x00000002 (PLTRELSZ)                   6984 (bytes)
+ 0x00000014 (PLTREL)                     REL
+ 0x00000017 (JMPREL)                     0x20e44
+ 0x00000011 (REL)                        0x1f2cc
+ 0x00000012 (RELSZ)                      7032 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffe (VERNEED)                    0x1f07c
+ 0x6fffffff (VERNEEDNUM)                 7
+ 0x6ffffff0 (VERSYM)                     0x1e3c0
+ 0x6ffffffa (RELCOUNT)                   580
+ 0x00000000 (NULL)                       0x0
+
+COMMAND readelf -n <ELF>
+EXIT 0
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: 04af69011e1966b7e516c2776da375d0c22f5927
+
+RAW_LUA_PROJECTION: full symbol-name records withheld; all other emitted metadata follows.
+METHOD	HOST_LUA_SAME_VALIDATED_ELF_METADATA_DECODER	Lua=Lua 5.3
+TARGET	<SURVEY_ROOT>/private/extract/libpkgmgr_info_so_0.elf	shared-library
+HEADER	class	ELF32	encoding	LSB	type	3	machine	40	phoff	0x34	phnum	7	shoff	0x7e170	shnum	26
+PROGRAM_HEADER	0	0x70000001	offset	0x7a0c0	vaddr	0x7a0c0	filesz	5680	memsz	5680	flags	4
+PROGRAM_HEADER	1	0x1	offset	0x0	vaddr	0x0	filesz	505588	memsz	505588	flags	5
+PROGRAM_HEADER	2	0x1	offset	0x7c000	vaddr	0x7c000	filesz	8284	memsz	8716	flags	6
+PROGRAM_HEADER	3	0x2	offset	0x7cda8	vaddr	0x7cda8	filesz	344	memsz	344	flags	6
+PROGRAM_HEADER	4	0x4	offset	0x114	vaddr	0x114	filesz	36	memsz	36	flags	4
+PROGRAM_HEADER	5	0x6474e551	offset	0x0	vaddr	0x0	filesz	0	memsz	0	flags	6
+PROGRAM_HEADER	6	0x6474e552	offset	0x7c000	vaddr	0x7c000	filesz	4096	memsz	4096	flags	4
+SECTION	0		0	offset	0x0	size	0	link	0	entsize	0
+SECTION	1	.note.gnu.build-id	7	offset	0x114	size	36	link	0	entsize	0
+SECTION	2	.gnu.hash	1879048182	offset	0x138	size	10608	link	3	entsize	4
+SECTION	3	.dynsym	11	offset	0x2aa8	size	26064	link	4	entsize	16
+SECTION	4	.dynstr	3	offset	0x9078	size	86856	link	0	entsize	0
+SECTION	5	.gnu.version	1879048191	offset	0x1e3c0	size	3258	link	3	entsize	2
+SECTION	6	.gnu.version_r	1879048190	offset	0x1f07c	size	592	link	4	entsize	0
+SECTION	7	.rel.dyn	9	offset	0x1f2cc	size	7032	link	3	entsize	8
+SECTION	8	.rel.plt	9	offset	0x20e44	size	6984	link	3	entsize	8
+SECTION	9	.init	1	offset	0x2298c	size	12	link	0	entsize	0
+SECTION	10	.plt	1	offset	0x22998	size	10808	link	0	entsize	4
+SECTION	11	.text	1	offset	0x253d0	size	296172	link	0	entsize	0
+SECTION	12	.fini	1	offset	0x6d8bc	size	8	link	0	entsize	0
+SECTION	13	.rodata	1	offset	0x6d8c8	size	33383	link	0	entsize	0
+SECTION	14	.ARM.extab	1	offset	0x75b30	size	17806	link	0	entsize	0
+SECTION	15	.ARM.exidx	1879048193	offset	0x7a0c0	size	5680	link	11	entsize	0
+SECTION	16	.eh_frame	1	offset	0x7b6f0	size	4	link	0	entsize	0
+SECTION	17	.init_array	14	offset	0x7c000	size	24	link	0	entsize	4
+SECTION	18	.fini_array	15	offset	0x7c018	size	4	link	0	entsize	4
+SECTION	19	.data.rel.ro	1	offset	0x7c020	size	3464	link	0	entsize	0
+SECTION	20	.dynamic	6	offset	0x7cda8	size	344	link	4	entsize	8
+SECTION	21	.got	1	offset	0x7d000	size	4176	link	0	entsize	4
+SECTION	22	.data	1	offset	0x7e050	size	12	link	0	entsize	0
+SECTION	23	.bss	8	offset	0x7e05c	size	432	link	0	entsize	0
+SECTION	24	.gnu_debuglink	1	offset	0x7e05c	size	36	link	0	entsize	0
+SECTION	25	.shstrtab	3	offset	0x7e080	size	237	link	0	entsize	0
+DYNAMIC	0x1	0x150c0
+DYNAMIC	0x1	0x150cf
+DYNAMIC	0x1	0x150ec
+DYNAMIC	0x1	0x1510a
+DYNAMIC	0x1	0x15117
+DYNAMIC	0x1	0x15128
+DYNAMIC	0x1	0x15138
+DYNAMIC	0x1	0x15156
+DYNAMIC	0x1	0x15164
+DYNAMIC	0x1	0x15174
+DYNAMIC	0x1	0x15183
+DYNAMIC	0x1	0x15191
+DYNAMIC	0x1	0x151a0
+DYNAMIC	0x1	0x151ae
+DYNAMIC	0x1	0x151b8
+DYNAMIC	0xe	0x151c6
+DYNAMIC	0xc	0x2298c
+DYNAMIC	0xd	0x6d8bc
+DYNAMIC	0x19	0x7c000
+DYNAMIC	0x1b	0x18
+DYNAMIC	0x1a	0x7c018
+DYNAMIC	0x1c	0x4
+DYNAMIC	0x6ffffef5	0x138
+DYNAMIC	0x5	0x9078
+DYNAMIC	0x6	0x2aa8
+DYNAMIC	0xa	0x15348
+DYNAMIC	0xb	0x10
+DYNAMIC	0x3	0x7d000
+DYNAMIC	0x2	0x1b48
+DYNAMIC	0x14	0x11
+DYNAMIC	0x17	0x20e44
+DYNAMIC	0x11	0x1f2cc
+DYNAMIC	0x12	0x1b78
+DYNAMIC	0x13	0x8
+DYNAMIC	0x6ffffffe	0x1f07c
+DYNAMIC	0x6fffffff	0x7
+DYNAMIC	0x6ffffff0	0x1e3c0
+DYNAMIC	0x6ffffffa	0x244
+DYNAMIC	0x0	0x0
+FIELD	RELRO	Partial
+FIELD	NX	Enabled
+FIELD	PIE	N/A(DSO)
+FIELD	canary	Detected(import)
+FIELD	FORTIFY	Detected(import)
+FIELD	stripped	Yes(no .symtab)
+FIELD	RPATH	Absent
+FIELD	RUNPATH	Absent
+FIELD	dynamic_export_count_including_ABS	1371
+FIELD	dynamic_export_non_ABS_count	1371
+FIELD	dynamic_export_function_count	1299
+METADATA_READER_SUCCESS
+GNU_READELF_DYNSYM_COUNT_PROJECTION {"export_non_ABS": 1371, "export_FUNC_IFUNC": 1299, "Cpp_mangled": 1073}
+FULL_PRIVATE_DYNSYM_SHA256 1d00db2f2a31c0124e89225d80da830f79d18278b4d228a97ebb6454601e80d0
+RODATA_ASCII_PRINTABLE_RUNS_MIN8_COUNT 859
+RODATA_SCANNED_BYTES 33383
+RODATA_SAMPLE_PROJECTION [[".rodata", 449056, "Failed to open library: "], [".rodata", 449480, "Failed to connect client socket, try to direct access, Request type: "], [".rodata", 450092, "Failed to inotify_init. errno: "]]
+
+MATCHED_DEBUG_PRODUCER_FLAGS_PROJECTION {"stack_protector_flags": ["-fstack-protector-strong"], "visibility_flags": ["-fvisibility=hidden"], "compiler_evidence": "raw/libpkgmgr_info_so_0-compiler.txt"}
