@@ -180,3 +180,12 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 **保留挂账**：板上标准ELF工具均缺失（替代元数据结果已取得，但标准工具复验未完成）；/sys/kernel/security/lsm不存在；vconftool非ELF已排除；初次busctl标准Properties.Get不支持，改真实GetProperties接口后成功；SDB长命令/初次交互及heredoc解析错误原样存档。没有需PM执行的阻断项；是否重启验网由PM决定。
 
 - 最终证据审计通过：逐样本原输出/派生字段、统计分母、网络备份与最终读回、身份/平台断言、STATE证据链接、脚本语法及全部新增文件UTF8/非二进制检查通过。新增调查文件均位于docs/probe/board-survey，忽略SDB/SSH运行时目录；所有结果只通过git push同步。证据：[审计结果](board-survey/final-audit.json)、[文本文件SHA256清单](board-survey/metadata-manifest.json)。未把替代解码器误写为readelf，不隐藏工具缺失，不宣称重启联网验证。
+
+## ffmpeg-demo 进度与结论
+
+- 计划：SDB 身份/清单 → libavcodec 版本/编译器/加固与本地抽取 → REA 三函数 → FFmpeg 同版本 ARMv7 -O2 裸编译及 strip 副本 → 两份上游 REA → 三列对比及报告节选。
+- 回传边界：用户确认仍为上一轮 RPi4 LLVM 开源开发板；板上只读。板子库、本机缓存/数据库、原始暂存数据置于 `docs/probe/ffmpeg-demo/private/` 并 gitignore，公开输出审查后只经 git push 同步。上游自己编出的库可公开。
+- 已闭合步骤 1：pull --ff-only 成功；工具版本复核见 `docs/probe/ffmpeg-demo/tool-versions.txt`。SDB 默认 26101 online/root，Tizen 11.0.0 Unified、RPi4 Model B Rev1.5、armv7l，见 `board-identity.txt`、`sdb-connect.txt`（本节证据相对 `docs/probe/ffmpeg-demo/`）。
+- 已采集清单（步骤 2 待单独提交）：FFmpeg 包 8.0.1；libavcodec 62.11.100 大约 3MB，可优先分析，无需预先退到 libavutil；`/usr/bin/ffmpeg` 不存在原样留证。
+- 需人工裁决：暂无线性依赖的裁决；若分析发现无法确认可公开的私有内容，留本机挂账。
+- 未决：版本/producer、加固、REA 可读性及上游对照尚待实测；本任务不能预设“全库无保护”。

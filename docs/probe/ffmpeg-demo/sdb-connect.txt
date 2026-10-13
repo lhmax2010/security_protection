@@ -1,0 +1,4 @@
+192.168.108.26:26101 is already connected
+List of devices attached 
+192.168.108.26:26101	device    	rpi4
+Switched to 'root' account mode

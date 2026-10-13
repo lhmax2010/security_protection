@@ -1,0 +1,10 @@
+{
+  "serial": "192.168.108.26:26101",
+  "script": "scripts/identity.sh",
+  "script_sha256": "44b4a8bf6a9ce27c07ce86a6a0a1782d897220b8062ff0f057502c99f4f25fb8",
+  "normalized_source_sha256": "45b8dbb16d1fc051426770ee0b647e56d8965918c05f888a5060f358826a2dc7",
+  "sdb_exit_code": 0,
+  "elapsed_seconds": 0.165,
+  "transport": "sdb shell sh -c, no script file copied to board",
+  "remote_script_readonly": true
+}
