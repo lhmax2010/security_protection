@@ -1,0 +1,844 @@
+{
+  "evidence_id": "ev_f384364f3cf997189b4830f04ed1dcc5fc3ed3ea73b692b2deda6c97d7afc1c7",
+  "subject": {
+    "name": "target_c_llvm_armv7l_protected",
+    "digest": {
+      "sha256": "b7e6e7bcd1faf053beda7f1566d2699ca30c6fcdb875cea7b8486c5744ba9e77"
+    },
+    "format": "elf",
+    "architecture": "arm",
+    "local_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected"
+  },
+  "provider": {
+    "id": "ghidra",
+    "name": "Ghidra",
+    "version": "12.1.4"
+  },
+  "analysis_profile": {
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "elf",
+      "architecture": "arm",
+      "available_architectures": [
+        "arm"
+      ],
+      "import_mode": "ephemeral-source-immutable",
+      "annotation_policy": "atomic-function-entry-metadata-v1",
+      "load_image_observations": "source-mappings-entry-context-v2",
+      "function_body_evidence": "complete-inclusive-ranges-v1",
+      "function_references": "complete-body-and-entry-reference-manager-v2",
+      "string_inventory_evidence": "defined-data-coverage-v1",
+      "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+      "instruction_flow_evidence": "decoded-return-pcode-v1",
+      "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+      "no_return_repair": "returning-imports-decoded-return-v2",
+      "process_launch": "inspected-jvm-launch-support-v1",
+      "jump_table_evidence": "typed-case-default-blocks-v1",
+      "decompiler_jump_loads": true,
+      "loader": "auto-from-header",
+      "language_id": "auto-from-header",
+      "compiler_spec_id": "auto-default",
+      "analyzer_preset": "ghidra-default"
+    },
+    "digest": "e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "list_strings",
+  "parameters": {},
+  "raw_result": [
+    {
+      "address": "0x10154",
+      "value": "/lib/ld-linux-armhf.so.3",
+      "string": {
+        "encoding": "US-ASCII",
+        "termination": "present_or_not_required",
+        "byte_length": 25
+      }
+    },
+    {
+      "address": "0x1029d",
+      "value": "__stack_chk_fail",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 17
+      }
+    },
+    {
+      "address": "0x102ae",
+      "value": "__printf_chk",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 13
+      }
+    },
+    {
+      "address": "0x102bb",
+      "value": "__libc_start_main",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 18
+      }
+    },
+    {
+      "address": "0x102cd",
+      "value": "__cxa_finalize",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 15
+      }
+    },
+    {
+      "address": "0x102dc",
+      "value": "strtoul",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": "0x102e4",
+      "value": "abort",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": "0x102ea",
+      "value": "__stack_chk_guard",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 18
+      }
+    },
+    {
+      "address": "0x102fc",
+      "value": "libc.so.6",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": "0x10306",
+      "value": "ld-linux-armhf.so.3",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 20
+      }
+    },
+    {
+      "address": "0x1031a",
+      "value": "GLIBC_2.4",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": "0x10324",
+      "value": "GLIBC_2.34",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 11
+      }
+    },
+    {
+      "address": "0x1032f",
+      "value": "_ITM_deregisterTMCloneTable",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 28
+      }
+    },
+    {
+      "address": "0x1034b",
+      "value": "__gmon_start__",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 15
+      }
+    },
+    {
+      "address": "0x1035a",
+      "value": "_ITM_registerTMCloneTable",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 26
+      }
+    },
+    {
+      "address": "0x1087c",
+      "value": "%s %u %u\n",
+      "string": {
+        "encoding": "US-ASCII",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": ".comment:0x0",
+      "value": "GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 45
+      }
+    },
+    {
+      "address": ".comment:0x2d",
+      "value": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 39
+      }
+    },
+    {
+      "address": ".shstrtab:0x1",
+      "value": ".shstrtab",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": ".shstrtab:0xb",
+      "value": ".interp",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": ".shstrtab:0x13",
+      "value": ".note.gnu.build-id",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 19
+      }
+    },
+    {
+      "address": ".shstrtab:0x26",
+      "value": ".note.ABI-tag",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 14
+      }
+    },
+    {
+      "address": ".shstrtab:0x34",
+      "value": ".gnu.hash",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": ".shstrtab:0x3e",
+      "value": ".dynsym",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": ".shstrtab:0x46",
+      "value": ".dynstr",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": ".shstrtab:0x4e",
+      "value": ".gnu.version",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 13
+      }
+    },
+    {
+      "address": ".shstrtab:0x5b",
+      "value": ".gnu.version_r",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 15
+      }
+    },
+    {
+      "address": ".shstrtab:0x6a",
+      "value": ".rel.dyn",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 9
+      }
+    },
+    {
+      "address": ".shstrtab:0x73",
+      "value": ".rel.plt",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 9
+      }
+    },
+    {
+      "address": ".shstrtab:0x7c",
+      "value": ".init",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": ".shstrtab:0x82",
+      "value": ".text",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": ".shstrtab:0x88",
+      "value": ".fini",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": ".shstrtab:0x8e",
+      "value": ".rodata",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": ".shstrtab:0x96",
+      "value": ".ARM.exidx",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 11
+      }
+    },
+    {
+      "address": ".shstrtab:0xa1",
+      "value": ".eh_frame",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": ".shstrtab:0xab",
+      "value": ".init_array",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 12
+      }
+    },
+    {
+      "address": ".shstrtab:0xb7",
+      "value": ".fini_array",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 12
+      }
+    },
+    {
+      "address": ".shstrtab:0xc3",
+      "value": ".dynamic",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 9
+      }
+    },
+    {
+      "address": ".shstrtab:0xcc",
+      "value": ".got",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 5
+      }
+    },
+    {
+      "address": ".shstrtab:0xd1",
+      "value": ".data",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": ".shstrtab:0xd7",
+      "value": ".bss",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 5
+      }
+    },
+    {
+      "address": ".shstrtab:0xdc",
+      "value": ".comment",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 9
+      }
+    },
+    {
+      "address": ".shstrtab:0xe5",
+      "value": ".ARM.attributes",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 16
+      }
+    }
+  ],
+  "normalized_result": [
+    {
+      "address": "0x10154",
+      "value": "/lib/ld-linux-armhf.so.3",
+      "string": {
+        "encoding": "US-ASCII",
+        "termination": "present_or_not_required",
+        "byte_length": 25
+      }
+    },
+    {
+      "address": "0x1029d",
+      "value": "__stack_chk_fail",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 17
+      }
+    },
+    {
+      "address": "0x102ae",
+      "value": "__printf_chk",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 13
+      }
+    },
+    {
+      "address": "0x102bb",
+      "value": "__libc_start_main",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 18
+      }
+    },
+    {
+      "address": "0x102cd",
+      "value": "__cxa_finalize",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 15
+      }
+    },
+    {
+      "address": "0x102dc",
+      "value": "strtoul",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": "0x102e4",
+      "value": "abort",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": "0x102ea",
+      "value": "__stack_chk_guard",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 18
+      }
+    },
+    {
+      "address": "0x102fc",
+      "value": "libc.so.6",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": "0x10306",
+      "value": "ld-linux-armhf.so.3",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 20
+      }
+    },
+    {
+      "address": "0x1031a",
+      "value": "GLIBC_2.4",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": "0x10324",
+      "value": "GLIBC_2.34",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 11
+      }
+    },
+    {
+      "address": "0x1032f",
+      "value": "_ITM_deregisterTMCloneTable",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 28
+      }
+    },
+    {
+      "address": "0x1034b",
+      "value": "__gmon_start__",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 15
+      }
+    },
+    {
+      "address": "0x1035a",
+      "value": "_ITM_registerTMCloneTable",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 26
+      }
+    },
+    {
+      "address": "0x1087c",
+      "value": "%s %u %u\n",
+      "string": {
+        "encoding": "US-ASCII",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": ".comment:0x0",
+      "value": "GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 45
+      }
+    },
+    {
+      "address": ".comment:0x2d",
+      "value": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 39
+      }
+    },
+    {
+      "address": ".shstrtab:0x1",
+      "value": ".shstrtab",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": ".shstrtab:0xb",
+      "value": ".interp",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": ".shstrtab:0x13",
+      "value": ".note.gnu.build-id",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 19
+      }
+    },
+    {
+      "address": ".shstrtab:0x26",
+      "value": ".note.ABI-tag",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 14
+      }
+    },
+    {
+      "address": ".shstrtab:0x34",
+      "value": ".gnu.hash",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": ".shstrtab:0x3e",
+      "value": ".dynsym",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": ".shstrtab:0x46",
+      "value": ".dynstr",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": ".shstrtab:0x4e",
+      "value": ".gnu.version",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 13
+      }
+    },
+    {
+      "address": ".shstrtab:0x5b",
+      "value": ".gnu.version_r",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 15
+      }
+    },
+    {
+      "address": ".shstrtab:0x6a",
+      "value": ".rel.dyn",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 9
+      }
+    },
+    {
+      "address": ".shstrtab:0x73",
+      "value": ".rel.plt",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 9
+      }
+    },
+    {
+      "address": ".shstrtab:0x7c",
+      "value": ".init",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": ".shstrtab:0x82",
+      "value": ".text",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": ".shstrtab:0x88",
+      "value": ".fini",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": ".shstrtab:0x8e",
+      "value": ".rodata",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": ".shstrtab:0x96",
+      "value": ".ARM.exidx",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 11
+      }
+    },
+    {
+      "address": ".shstrtab:0xa1",
+      "value": ".eh_frame",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": ".shstrtab:0xab",
+      "value": ".init_array",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 12
+      }
+    },
+    {
+      "address": ".shstrtab:0xb7",
+      "value": ".fini_array",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 12
+      }
+    },
+    {
+      "address": ".shstrtab:0xc3",
+      "value": ".dynamic",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 9
+      }
+    },
+    {
+      "address": ".shstrtab:0xcc",
+      "value": ".got",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 5
+      }
+    },
+    {
+      "address": ".shstrtab:0xd1",
+      "value": ".data",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": ".shstrtab:0xd7",
+      "value": ".bss",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 5
+      }
+    },
+    {
+      "address": ".shstrtab:0xdc",
+      "value": ".comment",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 9
+      }
+    },
+    {
+      "address": ".shstrtab:0xe5",
+      "value": ".ARM.attributes",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 16
+      }
+    }
+  ],
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+    "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+    "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+    "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+    "Only Ghidra-defined string Data is observed; packed or undefined string bytes may be absent. Completeness applies to that inventory, and an empty search does not establish that text is absent from the artifact. If an address is known, use read_bytes and xrefs to inspect bytes and references.",
+    "Charset is reported, while a non-missing terminator cannot distinguish a present terminator from a fixed or Pascal layout."
+  ],
+  "locations": [],
+  "evidence_links": []
+}

@@ -1,0 +1,4 @@
+Helper-file lookup (not analysis/build failure):
+$ rg -n 'rpm|elf-metadata.lua|SUMMARY|FORTIFY|DYNAMIC_EXPORT' docs/probe/gcc-vs-llvm/scripts/collect* docs/probe/board-survey/scripts/elf-metadata.lua docs/probe/board-survey/scripts/*validation* 2>/dev/null
+exit=2; stderr was redirected by this lookup command and is unavailable.
+Existing matching elf-metadata.lua lines were printed; script file inventory was then queried with rg --files. No build/REA error occurred.

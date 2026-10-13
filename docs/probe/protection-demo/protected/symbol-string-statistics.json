@@ -1,0 +1,100 @@
+{
+  "method": "Projection of complete REA procedures/strings responses; Ghidra labels are not original-name recovery rates",
+  "procedure_rows": 35,
+  "local_non_thunk": 10,
+  "local_FUN_labels": 6,
+  "secret_transform_named_rows": 0,
+  "string_rows": 43,
+  "string_samples": [
+    {
+      "address": "0x10154",
+      "value": "/lib/ld-linux-armhf.so.3",
+      "string": {
+        "encoding": "US-ASCII",
+        "termination": "present_or_not_required",
+        "byte_length": 25
+      }
+    },
+    {
+      "address": "0x1029d",
+      "value": "__stack_chk_fail",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 17
+      }
+    },
+    {
+      "address": "0x102ae",
+      "value": "__printf_chk",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 13
+      }
+    },
+    {
+      "address": "0x102bb",
+      "value": "__libc_start_main",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 18
+      }
+    },
+    {
+      "address": "0x102cd",
+      "value": "__cxa_finalize",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 15
+      }
+    },
+    {
+      "address": "0x102dc",
+      "value": "strtoul",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 8
+      }
+    },
+    {
+      "address": "0x102e4",
+      "value": "abort",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 6
+      }
+    },
+    {
+      "address": "0x102ea",
+      "value": "__stack_chk_guard",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 18
+      }
+    },
+    {
+      "address": "0x102fc",
+      "value": "libc.so.6",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 10
+      }
+    },
+    {
+      "address": "0x10306",
+      "value": "ld-linux-armhf.so.3",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 20
+      }
+    }
+  ]
+}

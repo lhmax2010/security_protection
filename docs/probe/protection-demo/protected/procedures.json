@@ -1,0 +1,707 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_d50a30896407f969d1c4570a62e30a0d869a44594e7ec54a390036ea9beba2b1\",\"subject\":{\"name\":\"target_c_llvm_armv7l_protected\",\"digest\":{\"sha256\":\"b7e6e7bcd1faf053beda7f1566d2699ca30c6fcdb875cea7b8486c5744ba9e77\"},\"format\":\"elf\",\"architecture\":\"arm\",\"local_path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"elf\",\"architecture\":\"arm\",\"available_architectures\":[\"arm\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"list_procedures\",\"parameters\":{},\"raw_result\":[{\"address\":\"EXTERNAL:0x1\",\"value\":\"<EXTERNAL>::__libc_start_main\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x2\",\"value\":\"<EXTERNAL>::__cxa_finalize\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x3\",\"value\":\"<EXTERNAL>::__stack_chk_fail\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x4\",\"value\":\"<EXTERNAL>::strtoul\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x5\",\"value\":\"<EXTERNAL>::__printf_chk\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x6\",\"value\":\"<EXTERNAL>::abort\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x7\",\"value\":\"<EXTERNAL>::__gmon_start__\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x8\",\"value\":\"<EXTERNAL>::_ITM_deregisterTMCloneTable\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x9\",\"value\":\"<EXTERNAL>::_ITM_registerTMCloneTable\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x10460\",\"value\":\"_DT_INIT\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x10480\",\"value\":\"<EXTERNAL>::__libc_start_main\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x13000\"}},{\"address\":\"0x1048c\",\"value\":\"<EXTERNAL>::__cxa_finalize\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x13004\"}},{\"address\":\"0x10498\",\"value\":\"<EXTERNAL>::__stack_chk_fail\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x13010\"}},{\"address\":\"0x104b0\",\"value\":\"<EXTERNAL>::strtoul\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x13018\"}},{\"address\":\"0x104bc\",\"value\":\"<EXTERNAL>::__printf_chk\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x1301c\"}},{\"address\":\"0x104c8\",\"value\":\"<EXTERNAL>::abort\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x13024\"}},{\"address\":\"0x104d4\",\"value\":\"entry\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x10508\",\"value\":\"FUN_00010508\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x1052c\",\"value\":\"FUN_0001052c\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x10558\",\"value\":\"FUN_00010558\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x1058c\",\"value\":\"_FINI_0\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x105cc\",\"value\":\"_INIT_0\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x10558\"}},{\"address\":\"0x105d0\",\"value\":\"FUN_000105d0\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x105e8\",\"value\":\"FUN_000105e8\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x10624\",\"value\":\"FUN_00010624\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x107cc\",\"value\":\"_DT_FINI\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x13000\",\"value\":\"<EXTERNAL>::__libc_start_main\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x1\"}},{\"address\":\"0x13004\",\"value\":\"<EXTERNAL>::__cxa_finalize\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x2\"}},{\"address\":\"0x13008\",\"value\":\"<EXTERNAL>::_ITM_deregisterTMCloneTable\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x8\"}},{\"address\":\"0x13010\",\"value\":\"<EXTERNAL>::__stack_chk_fail\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x3\"}},{\"address\":\"0x13014\",\"value\":\"<EXTERNAL>::__gmon_start__\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x7\"}},{\"address\":\"0x13018\",\"value\":\"<EXTERNAL>::strtoul\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x4\"}},{\"address\":\"0x1301c\",\"value\":\"<EXTERNAL>::__printf_chk\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x5\"}},{\"address\":\"0x13020\",\"value\":\"<EXTERNAL>::_ITM_registerTMCloneTable\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x9\"}},{\"address\":\"0x13024\",\"value\":\"<EXTERNAL>::abort\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x6\"}}],\"normalized_result\":[{\"address\":\"EXTERNAL:0x1\",\"value\":\"<EXTERNAL>::__libc_start_main\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x2\",\"value\":\"<EXTERNAL>::__cxa_finalize\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x3\",\"value\":\"<EXTERNAL>::__stack_chk_fail\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x4\",\"value\":\"<EXTERNAL>::strtoul\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x5\",\"value\":\"<EXTERNAL>::__printf_chk\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x6\",\"value\":\"<EXTERNAL>::abort\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x7\",\"value\":\"<EXTERNAL>::__gmon_start__\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x8\",\"value\":\"<EXTERNAL>::_ITM_deregisterTMCloneTable\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"EXTERNAL:0x9\",\"value\":\"<EXTERNAL>::_ITM_registerTMCloneTable\",\"procedure\":{\"external\":true,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x10460\",\"value\":\"_DT_INIT\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x10480\",\"value\":\"<EXTERNAL>::__libc_start_main\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x13000\"}},{\"address\":\"0x1048c\",\"value\":\"<EXTERNAL>::__cxa_finalize\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x13004\"}},{\"address\":\"0x10498\",\"value\":\"<EXTERNAL>::__stack_chk_fail\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x13010\"}},{\"address\":\"0x104b0\",\"value\":\"<EXTERNAL>::strtoul\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x13018\"}},{\"address\":\"0x104bc\",\"value\":\"<EXTERNAL>::__printf_chk\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x1301c\"}},{\"address\":\"0x104c8\",\"value\":\"<EXTERNAL>::abort\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x13024\"}},{\"address\":\"0x104d4\",\"value\":\"entry\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x10508\",\"value\":\"FUN_00010508\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x1052c\",\"value\":\"FUN_0001052c\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x10558\",\"value\":\"FUN_00010558\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x1058c\",\"value\":\"_FINI_0\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x105cc\",\"value\":\"_INIT_0\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"0x10558\"}},{\"address\":\"0x105d0\",\"value\":\"FUN_000105d0\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x105e8\",\"value\":\"FUN_000105e8\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x10624\",\"value\":\"FUN_00010624\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x107cc\",\"value\":\"_DT_FINI\",\"procedure\":{\"external\":false,\"thunk\":false,\"thunk_target\":null}},{\"address\":\"0x13000\",\"value\":\"<EXTERNAL>::__libc_start_main\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x1\"}},{\"address\":\"0x13004\",\"value\":\"<EXTERNAL>::__cxa_finalize\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x2\"}},{\"address\":\"0x13008\",\"value\":\"<EXTERNAL>::_ITM_deregisterTMCloneTable\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x8\"}},{\"address\":\"0x13010\",\"value\":\"<EXTERNAL>::__stack_chk_fail\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x3\"}},{\"address\":\"0x13014\",\"value\":\"<EXTERNAL>::__gmon_start__\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x7\"}},{\"address\":\"0x13018\",\"value\":\"<EXTERNAL>::strtoul\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x4\"}},{\"address\":\"0x1301c\",\"value\":\"<EXTERNAL>::__printf_chk\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x5\"}},{\"address\":\"0x13020\",\"value\":\"<EXTERNAL>::_ITM_registerTMCloneTable\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x9\"}},{\"address\":\"0x13024\",\"value\":\"<EXTERNAL>::abort\",\"procedure\":{\"external\":false,\"thunk\":true,\"thunk_target\":\"EXTERNAL:0x6\"}}],\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"External functions and local thunks are distinct; procedure metadata identifies both and preserves a thunk target when Ghidra resolves one.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_d50a30896407f969d1c4570a62e30a0d869a44594e7ec54a390036ea9beba2b1",
+    "subject": {
+      "name": "target_c_llvm_armv7l_protected",
+      "digest": {
+        "sha256": "b7e6e7bcd1faf053beda7f1566d2699ca30c6fcdb875cea7b8486c5744ba9e77"
+      },
+      "format": "elf",
+      "architecture": "arm",
+      "local_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "elf",
+        "architecture": "arm",
+        "available_architectures": [
+          "arm"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "returning-imports-decoded-return-v2",
+        "process_launch": "inspected-jvm-launch-support-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "list_procedures",
+    "parameters": {},
+    "raw_result": [
+      {
+        "address": "EXTERNAL:0x1",
+        "value": "<EXTERNAL>::__libc_start_main",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x2",
+        "value": "<EXTERNAL>::__cxa_finalize",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x3",
+        "value": "<EXTERNAL>::__stack_chk_fail",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x4",
+        "value": "<EXTERNAL>::strtoul",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x5",
+        "value": "<EXTERNAL>::__printf_chk",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x6",
+        "value": "<EXTERNAL>::abort",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x7",
+        "value": "<EXTERNAL>::__gmon_start__",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x8",
+        "value": "<EXTERNAL>::_ITM_deregisterTMCloneTable",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x9",
+        "value": "<EXTERNAL>::_ITM_registerTMCloneTable",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x10460",
+        "value": "_DT_INIT",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x10480",
+        "value": "<EXTERNAL>::__libc_start_main",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x13000"
+        }
+      },
+      {
+        "address": "0x1048c",
+        "value": "<EXTERNAL>::__cxa_finalize",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x13004"
+        }
+      },
+      {
+        "address": "0x10498",
+        "value": "<EXTERNAL>::__stack_chk_fail",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x13010"
+        }
+      },
+      {
+        "address": "0x104b0",
+        "value": "<EXTERNAL>::strtoul",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x13018"
+        }
+      },
+      {
+        "address": "0x104bc",
+        "value": "<EXTERNAL>::__printf_chk",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x1301c"
+        }
+      },
+      {
+        "address": "0x104c8",
+        "value": "<EXTERNAL>::abort",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x13024"
+        }
+      },
+      {
+        "address": "0x104d4",
+        "value": "entry",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x10508",
+        "value": "FUN_00010508",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x1052c",
+        "value": "FUN_0001052c",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x10558",
+        "value": "FUN_00010558",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x1058c",
+        "value": "_FINI_0",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x105cc",
+        "value": "_INIT_0",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x10558"
+        }
+      },
+      {
+        "address": "0x105d0",
+        "value": "FUN_000105d0",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x105e8",
+        "value": "FUN_000105e8",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x10624",
+        "value": "FUN_00010624",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x107cc",
+        "value": "_DT_FINI",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x13000",
+        "value": "<EXTERNAL>::__libc_start_main",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x1"
+        }
+      },
+      {
+        "address": "0x13004",
+        "value": "<EXTERNAL>::__cxa_finalize",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x2"
+        }
+      },
+      {
+        "address": "0x13008",
+        "value": "<EXTERNAL>::_ITM_deregisterTMCloneTable",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x8"
+        }
+      },
+      {
+        "address": "0x13010",
+        "value": "<EXTERNAL>::__stack_chk_fail",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x3"
+        }
+      },
+      {
+        "address": "0x13014",
+        "value": "<EXTERNAL>::__gmon_start__",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x7"
+        }
+      },
+      {
+        "address": "0x13018",
+        "value": "<EXTERNAL>::strtoul",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x4"
+        }
+      },
+      {
+        "address": "0x1301c",
+        "value": "<EXTERNAL>::__printf_chk",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x5"
+        }
+      },
+      {
+        "address": "0x13020",
+        "value": "<EXTERNAL>::_ITM_registerTMCloneTable",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x9"
+        }
+      },
+      {
+        "address": "0x13024",
+        "value": "<EXTERNAL>::abort",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x6"
+        }
+      }
+    ],
+    "normalized_result": [
+      {
+        "address": "EXTERNAL:0x1",
+        "value": "<EXTERNAL>::__libc_start_main",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x2",
+        "value": "<EXTERNAL>::__cxa_finalize",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x3",
+        "value": "<EXTERNAL>::__stack_chk_fail",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x4",
+        "value": "<EXTERNAL>::strtoul",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x5",
+        "value": "<EXTERNAL>::__printf_chk",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x6",
+        "value": "<EXTERNAL>::abort",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x7",
+        "value": "<EXTERNAL>::__gmon_start__",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x8",
+        "value": "<EXTERNAL>::_ITM_deregisterTMCloneTable",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "EXTERNAL:0x9",
+        "value": "<EXTERNAL>::_ITM_registerTMCloneTable",
+        "procedure": {
+          "external": true,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x10460",
+        "value": "_DT_INIT",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x10480",
+        "value": "<EXTERNAL>::__libc_start_main",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x13000"
+        }
+      },
+      {
+        "address": "0x1048c",
+        "value": "<EXTERNAL>::__cxa_finalize",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x13004"
+        }
+      },
+      {
+        "address": "0x10498",
+        "value": "<EXTERNAL>::__stack_chk_fail",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x13010"
+        }
+      },
+      {
+        "address": "0x104b0",
+        "value": "<EXTERNAL>::strtoul",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x13018"
+        }
+      },
+      {
+        "address": "0x104bc",
+        "value": "<EXTERNAL>::__printf_chk",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x1301c"
+        }
+      },
+      {
+        "address": "0x104c8",
+        "value": "<EXTERNAL>::abort",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x13024"
+        }
+      },
+      {
+        "address": "0x104d4",
+        "value": "entry",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x10508",
+        "value": "FUN_00010508",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x1052c",
+        "value": "FUN_0001052c",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x10558",
+        "value": "FUN_00010558",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x1058c",
+        "value": "_FINI_0",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x105cc",
+        "value": "_INIT_0",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "0x10558"
+        }
+      },
+      {
+        "address": "0x105d0",
+        "value": "FUN_000105d0",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x105e8",
+        "value": "FUN_000105e8",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x10624",
+        "value": "FUN_00010624",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x107cc",
+        "value": "_DT_FINI",
+        "procedure": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null
+        }
+      },
+      {
+        "address": "0x13000",
+        "value": "<EXTERNAL>::__libc_start_main",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x1"
+        }
+      },
+      {
+        "address": "0x13004",
+        "value": "<EXTERNAL>::__cxa_finalize",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x2"
+        }
+      },
+      {
+        "address": "0x13008",
+        "value": "<EXTERNAL>::_ITM_deregisterTMCloneTable",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x8"
+        }
+      },
+      {
+        "address": "0x13010",
+        "value": "<EXTERNAL>::__stack_chk_fail",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x3"
+        }
+      },
+      {
+        "address": "0x13014",
+        "value": "<EXTERNAL>::__gmon_start__",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x7"
+        }
+      },
+      {
+        "address": "0x13018",
+        "value": "<EXTERNAL>::strtoul",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x4"
+        }
+      },
+      {
+        "address": "0x1301c",
+        "value": "<EXTERNAL>::__printf_chk",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x5"
+        }
+      },
+      {
+        "address": "0x13020",
+        "value": "<EXTERNAL>::_ITM_registerTMCloneTable",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x9"
+        }
+      },
+      {
+        "address": "0x13024",
+        "value": "<EXTERNAL>::abort",
+        "procedure": {
+          "external": false,
+          "thunk": true,
+          "thunk_target": "EXTERNAL:0x6"
+        }
+      }
+    ],
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "External functions and local thunks are distinct; procedure metadata identifies both and preserves a thunk target when Ghidra resolves one."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}

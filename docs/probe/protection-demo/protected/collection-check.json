@@ -1,0 +1,8 @@
+{
+  "calls": 19,
+  "all_requests_success": true,
+  "function_name_hits": 0,
+  "marker_hits": 0,
+  "pseudocode_address": "0x105d0",
+  "note": "Address selected using pre-strip symbol and ELF/Ghidra .text relocation; no claim of blind recovery time."
+}

@@ -255,3 +255,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [完成步骤1] protection-demo/src/target_protected.c 复用原算法与校验，辅助函数static、marker按0xa7编码并在局部缓冲区解码；volatile读防优化折回静态明文，运行等价待步骤2实测。
 
 - [完成步骤2] protection-demo：全部指定flag被Clang18接受（exit0无警告），另显式-fPIE；--strip-all后玩具ELF5568字节，QEMU11/11输入stdout/exit完全一致、stderr为空，二进制无marker明文字节。完整命令/build-log/run-equivalence与哈希已保存。pre-strip-symbols/function-addresses仅作为下一步地址定位真值，不能冒充盲逆向。
+
+- [完成步骤3] protection-demo/protected 保存19次真实REA响应及decoded投影（REA6.4/Ghidra12.1.4）；secret_transform名字搜索0、marker搜索0。按预strip真值与.text映射得到0x105d0/FUN_000105d0，伪代码仍为原xor/乘33/加7，算法可读；main解码/guard亦已采集，不能称逻辑无法恢复。完整procedures/strings及统计已保存，会话已关闭。辅助文件rg glob查询exit2（该命令stderr已重定向，未保留内容），记录diagnostic-errors.txt；改实际文件库存查询后正常，无构建或REA失败。

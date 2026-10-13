@@ -1,0 +1,322 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_43aaf5ac9fc5d3229ed83908df4922af8dd8fc8981f3d918921371440b314f7e\",\"subject\":{\"name\":\"target_c_llvm_armv7l_protected\",\"digest\":{\"sha256\":\"b7e6e7bcd1faf053beda7f1566d2699ca30c6fcdb875cea7b8486c5744ba9e77\"},\"format\":\"elf\",\"architecture\":\"arm\",\"local_path\":\"/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected\"},\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"elf\",\"architecture\":\"arm\",\"available_architectures\":[\"arm\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"procedure_info\",\"parameters\":{\"procedure\":\"0x10624\"},\"raw_result\":{\"value\":{\"name\":\"FUN_00010624\",\"entrypoint\":\"0x10624\",\"basicblock_count\":4,\"length\":408,\"body\":{\"available\":true,\"provenance\":\"ghidra-function-body-address-set\",\"ranges\":[{\"start\":\"0x10624\",\"end\":\"0x107bb\"}],\"total_bytes\":408,\"span_bytes\":408,\"non_contiguous\":false,\"contains_entry\":true},\"signature\":\"undefined FUN_00010624()\",\"locals\":[{\"description\":\"undefined4 local_14 @ Stack[-0x14]:4\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_15 @ Stack[-0x15]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_16 @ Stack[-0x16]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_17 @ Stack[-0x17]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_18 @ Stack[-0x18]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_19 @ Stack[-0x19]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1a @ Stack[-0x1a]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1b @ Stack[-0x1b]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1c @ Stack[-0x1c]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1d @ Stack[-0x1d]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1e @ Stack[-0x1e]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1f @ Stack[-0x1f]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_20 @ Stack[-0x20]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_21 @ Stack[-0x21]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_22 @ Stack[-0x22]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_23 @ Stack[-0x23]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_24 @ Stack[-0x24]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_25 @ Stack[-0x25]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_26 @ Stack[-0x26]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_27 @ Stack[-0x27]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_28 @ Stack[-0x28]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_29 @ Stack[-0x29]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined4 local_30 @ Stack[-0x30]:4\",\"provenance\":\"ghidra-function-database\"}],\"classification\":{\"external\":false,\"thunk\":false,\"thunk_target\":null,\"provenance\":\"ghidra-function-manager\"}},\"limitations\":[\"Ghidra Listing reports a terminal call at 0x107b8 to 0x10498 <EXTERNAL>::__stack_chk_fail (external=false, thunk=true, hasNoReturn=true); fallthrough is excluded by Ghidra's flow model. This records Ghidra's FunctionManager flag, not an independent verification that the callee cannot return.\"]},\"normalized_result\":{\"name\":\"FUN_00010624\",\"entrypoint\":\"0x10624\",\"basicblock_count\":4,\"length\":408,\"signature\":\"undefined FUN_00010624()\",\"locals\":[{\"description\":\"undefined4 local_14 @ Stack[-0x14]:4\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_15 @ Stack[-0x15]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_16 @ Stack[-0x16]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_17 @ Stack[-0x17]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_18 @ Stack[-0x18]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_19 @ Stack[-0x19]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1a @ Stack[-0x1a]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1b @ Stack[-0x1b]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1c @ Stack[-0x1c]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1d @ Stack[-0x1d]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1e @ Stack[-0x1e]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_1f @ Stack[-0x1f]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_20 @ Stack[-0x20]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_21 @ Stack[-0x21]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_22 @ Stack[-0x22]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_23 @ Stack[-0x23]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_24 @ Stack[-0x24]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_25 @ Stack[-0x25]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_26 @ Stack[-0x26]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_27 @ Stack[-0x27]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_28 @ Stack[-0x28]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined1 local_29 @ Stack[-0x29]:1\",\"provenance\":\"ghidra-function-database\"},{\"description\":\"undefined4 local_30 @ Stack[-0x30]:4\",\"provenance\":\"ghidra-function-database\"}],\"classification\":{\"external\":false,\"thunk\":false,\"thunk_target\":null,\"provenance\":\"ghidra-function-manager\"},\"body\":{\"available\":true,\"provenance\":\"ghidra-function-body-address-set\",\"ranges\":[{\"start\":\"0x10624\",\"end\":\"0x107bb\"}],\"total_bytes\":408,\"span_bytes\":408,\"non_contiguous\":false,\"contains_entry\":true}},\"confidence\":\"observed\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.\",\"The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.\",\"Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.\",\"Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.\",\"Ghidra Listing reports a terminal call at 0x107b8 to 0x10498 <EXTERNAL>::__stack_chk_fail (external=false, thunk=true, hasNoReturn=true); fallthrough is excluded by Ghidra's flow model. This records Ghidra's FunctionManager flag, not an independent verification that the callee cannot return.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_43aaf5ac9fc5d3229ed83908df4922af8dd8fc8981f3d918921371440b314f7e",
+    "subject": {
+      "name": "target_c_llvm_armv7l_protected",
+      "digest": {
+        "sha256": "b7e6e7bcd1faf053beda7f1566d2699ca30c6fcdb875cea7b8486c5744ba9e77"
+      },
+      "format": "elf",
+      "architecture": "arm",
+      "local_path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "elf",
+        "architecture": "arm",
+        "available_architectures": [
+          "arm"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "function_references": "complete-body-and-entry-reference-manager-v2",
+        "string_inventory_evidence": "defined-data-coverage-v1",
+        "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+        "instruction_flow_evidence": "decoded-return-pcode-v1",
+        "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+        "no_return_repair": "returning-imports-decoded-return-v2",
+        "process_launch": "inspected-jvm-launch-support-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default"
+      },
+      "digest": "e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_info",
+    "parameters": {
+      "procedure": "0x10624"
+    },
+    "raw_result": {
+      "value": {
+        "name": "FUN_00010624",
+        "entrypoint": "0x10624",
+        "basicblock_count": 4,
+        "length": 408,
+        "body": {
+          "available": true,
+          "provenance": "ghidra-function-body-address-set",
+          "ranges": [
+            {
+              "start": "0x10624",
+              "end": "0x107bb"
+            }
+          ],
+          "total_bytes": 408,
+          "span_bytes": 408,
+          "non_contiguous": false,
+          "contains_entry": true
+        },
+        "signature": "undefined FUN_00010624()",
+        "locals": [
+          {
+            "description": "undefined4 local_14 @ Stack[-0x14]:4",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_15 @ Stack[-0x15]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_16 @ Stack[-0x16]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_17 @ Stack[-0x17]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_18 @ Stack[-0x18]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_19 @ Stack[-0x19]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_1a @ Stack[-0x1a]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_1b @ Stack[-0x1b]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_1c @ Stack[-0x1c]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_1d @ Stack[-0x1d]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_1e @ Stack[-0x1e]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_1f @ Stack[-0x1f]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_20 @ Stack[-0x20]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_21 @ Stack[-0x21]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_22 @ Stack[-0x22]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_23 @ Stack[-0x23]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_24 @ Stack[-0x24]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_25 @ Stack[-0x25]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_26 @ Stack[-0x26]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_27 @ Stack[-0x27]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_28 @ Stack[-0x28]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined1 local_29 @ Stack[-0x29]:1",
+            "provenance": "ghidra-function-database"
+          },
+          {
+            "description": "undefined4 local_30 @ Stack[-0x30]:4",
+            "provenance": "ghidra-function-database"
+          }
+        ],
+        "classification": {
+          "external": false,
+          "thunk": false,
+          "thunk_target": null,
+          "provenance": "ghidra-function-manager"
+        }
+      },
+      "limitations": [
+        "Ghidra Listing reports a terminal call at 0x107b8 to 0x10498 <EXTERNAL>::__stack_chk_fail (external=false, thunk=true, hasNoReturn=true); fallthrough is excluded by Ghidra's flow model. This records Ghidra's FunctionManager flag, not an independent verification that the callee cannot return."
+      ]
+    },
+    "normalized_result": {
+      "name": "FUN_00010624",
+      "entrypoint": "0x10624",
+      "basicblock_count": 4,
+      "length": 408,
+      "signature": "undefined FUN_00010624()",
+      "locals": [
+        {
+          "description": "undefined4 local_14 @ Stack[-0x14]:4",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_15 @ Stack[-0x15]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_16 @ Stack[-0x16]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_17 @ Stack[-0x17]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_18 @ Stack[-0x18]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_19 @ Stack[-0x19]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_1a @ Stack[-0x1a]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_1b @ Stack[-0x1b]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_1c @ Stack[-0x1c]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_1d @ Stack[-0x1d]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_1e @ Stack[-0x1e]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_1f @ Stack[-0x1f]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_20 @ Stack[-0x20]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_21 @ Stack[-0x21]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_22 @ Stack[-0x22]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_23 @ Stack[-0x23]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_24 @ Stack[-0x24]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_25 @ Stack[-0x25]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_26 @ Stack[-0x26]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_27 @ Stack[-0x27]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_28 @ Stack[-0x28]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined1 local_29 @ Stack[-0x29]:1",
+          "provenance": "ghidra-function-database"
+        },
+        {
+          "description": "undefined4 local_30 @ Stack[-0x30]:4",
+          "provenance": "ghidra-function-database"
+        }
+      ],
+      "classification": {
+        "external": false,
+        "thunk": false,
+        "thunk_target": null,
+        "provenance": "ghidra-function-manager"
+      },
+      "body": {
+        "available": true,
+        "provenance": "ghidra-function-body-address-set",
+        "ranges": [
+          {
+            "start": "0x10624",
+            "end": "0x107bb"
+          }
+        ],
+        "total_bytes": 408,
+        "span_bytes": 408,
+        "non_contiguous": false,
+        "contains_entry": true
+      }
+    },
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Ghidra Listing reports a terminal call at 0x107b8 to 0x10498 <EXTERNAL>::__stack_chk_fail (external=false, thunk=true, hasNoReturn=true); fallthrough is excluded by Ghidra's flow model. This records Ghidra's FunctionManager flag, not an independent verification that the callee cannot return."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}

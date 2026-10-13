@@ -1,0 +1,185 @@
+[
+  {
+    "label": "open",
+    "tool": "open_binary",
+    "arguments": {
+      "path": "/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected",
+      "provider_id": "ghidra"
+    },
+    "elapsed_ms": 813,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "overview",
+    "tool": "binary_overview",
+    "arguments": {},
+    "elapsed_ms": 15293,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "function-search",
+    "tool": "search_procedures",
+    "arguments": {
+      "pattern": "secret_transform"
+    },
+    "elapsed_ms": 7,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "marker-search",
+    "tool": "search_strings",
+    "arguments": {
+      "pattern": "LICENSE_KEY_CHECK_V1"
+    },
+    "elapsed_ms": 5,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "procedures",
+    "tool": "list_procedures",
+    "arguments": {},
+    "elapsed_ms": 9,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "strings",
+    "tool": "list_strings",
+    "arguments": {},
+    "elapsed_ms": 8,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-info",
+    "tool": "procedure_info",
+    "arguments": {
+      "procedure": "0x105d0"
+    },
+    "elapsed_ms": 14,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-pseudocode",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x105d0"
+    },
+    "elapsed_ms": 18,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-assembly",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "0x105d0"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "secret_transform-callers",
+    "tool": "procedure_callers",
+    "arguments": {
+      "procedure": "0x105d0"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-info",
+    "tool": "procedure_info",
+    "arguments": {
+      "procedure": "0x105e8"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-pseudocode",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x105e8"
+    },
+    "elapsed_ms": 7,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-assembly",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "0x105e8"
+    },
+    "elapsed_ms": 3,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "simple_checksum-callers",
+    "tool": "procedure_callers",
+    "arguments": {
+      "procedure": "0x105e8"
+    },
+    "elapsed_ms": 2,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-info",
+    "tool": "procedure_info",
+    "arguments": {
+      "procedure": "0x10624"
+    },
+    "elapsed_ms": 6,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-pseudocode",
+    "tool": "procedure_pseudo_code",
+    "arguments": {
+      "procedure": "0x10624"
+    },
+    "elapsed_ms": 27,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-assembly",
+    "tool": "procedure_assembly",
+    "arguments": {
+      "procedure": "0x10624"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "main-callers",
+    "tool": "procedure_callers",
+    "arguments": {
+      "procedure": "0x10624"
+    },
+    "elapsed_ms": 2,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "close",
+    "tool": "close_binary",
+    "arguments": {},
+    "elapsed_ms": 400,
+    "isError": false,
+    "transport_error": null
+  }
+]

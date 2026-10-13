@@ -1,0 +1,35 @@
+{
+  "method": "Compiler-assisted ground truth from pre-strip readelf, not a blind REA discovery",
+  "elf_text": 1236,
+  "ghidra_text": 66772,
+  "relocation": 65536,
+  "functions": {
+    "secret_transform": {
+      "address": "0x105d0",
+      "ground_truth": {
+        "elf_value": "000005d0",
+        "size": 24,
+        "binding": "LOCAL",
+        "visibility": "DEFAULT"
+      }
+    },
+    "simple_checksum": {
+      "address": "0x105e8",
+      "ground_truth": {
+        "elf_value": "000005e8",
+        "size": 60,
+        "binding": "LOCAL",
+        "visibility": "DEFAULT"
+      }
+    },
+    "main": {
+      "address": "0x10624",
+      "ground_truth": {
+        "elf_value": "00000624",
+        "size": 424,
+        "binding": "GLOBAL",
+        "visibility": "HIDDEN"
+      }
+    }
+  }
+}
