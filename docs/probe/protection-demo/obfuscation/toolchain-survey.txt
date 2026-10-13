@@ -16,3 +16,5 @@ Primary sources:
 
 Limits: source claims and release metadata do not yet prove binaries usable, passes applied, runtime equivalent, or Ghidra readability reduced. Acquisition, real version/backend inspection, pass metrics and decompilation must resolve these.
 Raw failed web-release fetch and API failures preserved under survey/. No board/GBS operations performed.
+
+Actual bundle version: clang/opt22.1.8, exact PM premise match; ARM/X86 confirmed. opt accepts -passes=obfuscation (empty IR exit0). --print-passes omission caused an initial assertion failure, fully preserved in toolchain-validation-error.txt; actual annotated application remains pending. No LLVM22 port needed for this version; vendor/GBS integration untested.

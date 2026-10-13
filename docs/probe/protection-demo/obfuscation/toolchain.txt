@@ -12,3 +12,13 @@ Thread model: posix
 InstalledDir: /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/obfuscation/xollvm-v0.11.1/bin
 
 release_asset_digest_verified: True
+llvm_version: 22.1.8
+platform_version: 22.1.8
+exact_version_matches_PM_premise: True
+llvm_base_commit: ca7933e47d3a3451d81e72ac174dcb5aa28b59d1
+ARM_X86_backends_present: True
+obfuscation_pipeline_accepted_by_opt: True
+port_to_LLVM22_required: False
+limitation: --print-passes does not list this extension; opt -passes=obfuscation accepted empty IR. Actual annotated transforms and Tizen integration are not yet verified.
+clang_sha256: fbb73533603d3bc661c3e8c27e699aa29f3d2861165fcb9f2554e76e4b54891f
+opt_sha256: 774788cee1997f8847ca9c0c83c996deaa42613df8612d08a109a0bb10b3c4fb

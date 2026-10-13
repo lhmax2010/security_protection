@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "<stdin>", line 6, in <module>
+AssertionError
+
+Cause under investigation: broad check required arm/x86 backend strings and obfuscation in opt --print-passes. Shell continued to checkpoint after assertion; STATE prematurely claimed pass registration. Original opt-passes.txt/clang-targets.txt preserved; actual invocation must verify capability.
+
+Resolved: ARM/X86 are present; --print-passes omits extension pass names. Actual opt -passes=obfuscation accepted empty IR (exit0), so parser registration is verified, not annotated transformation success.

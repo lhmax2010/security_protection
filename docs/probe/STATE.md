@@ -273,3 +273,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [完成调研] obfuscation：找到明确LLVM22预编译资产的xollvm v0.11.1，commit eb0850bd7cc87f551ad2948826605e518f5b8aa2；优先验收bundle，不预设22.1.8或ARM实测成功。README/USER/BUILD已在忽略工具目录读取，猜测workflow路径HTTP404原样保留survey/fetch-.github-workflows-build-release.yml.error.txt（不影响已确认发布资产）。下一步下载验版本/后端。
 
 - [完成工具链取得] obfuscation：xollvm v0.11.1 Linux LLVM22预编译包真实下载105340192字节，SHA256 c834fc02d46f15d6ed5ae06698b6d026499aa8f1de6563d4ba87fe1f2f81ee90 与release asset digest相同；clang/opt实际22.1.8、LLVM base ca7933e47d3a3451d81e72ac174dcb5aa28b59d1，ARM/X86后端及obfuscation pass已注册。工具全在忽略.local-tools/，未自编、没有ABI跨18加载。与PM平台22.1.8精确版本一致，本轮不需把pass移植到LLVM22；Tizen vendor补丁/打包/GBS及板子集成未测。ARM链接/QEMU/pass效果待后续。
+
+- [验收记录纠正] obfuscation：辅助断言因为opt --print-passes未列自定义扩展而AssertionError；原trace在toolchain-validation-error.txt。该shell未设失败即停，后续checkpoint提前提交了pass注册结论，已纠正其证据范围。真实opt -passes=obfuscation -disable-output空IR调用exit0确认pipeline可被解析，ARM/X86和22.1.8实际版本已复核。尚不等于两函数被转换，下一步以真实pass报告验证；本错误不隐藏、不改写原始opt输出。
