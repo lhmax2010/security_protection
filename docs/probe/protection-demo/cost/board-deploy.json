@@ -1,0 +1,116 @@
+[
+  {
+    "command": "sdb -s 192.168.108.26:26101 shell 'sh -c '\"'\"'mkdir -p /opt/protection-cost-20261013-c5113b25 && echo SETUP_OK'\"'\"''",
+    "exit": 0,
+    "stdout": "SETUP_OK\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 push /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/baseline/ffmpeg-static /opt/protection-cost-20261013-c5113b25/ffmpeg-baseline",
+    "exit": 0,
+    "stdout": "WARNING: Your data are to be sent over an unencrypted connection and could be read by others.\n\npushed                  ffmpeg-static\t  0%\t      0KB\t    0KB/s\npushed                  ffmpeg-static\t100%\t   2014KB\t    0KB/s\n1 file(s) pushed. 0 file(s) skipped.\n/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/baseline/ffmpeg-static   5092KB/s (2063188 bytes in 0.395s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 push /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/selective/ffmpeg-static /opt/protection-cost-20261013-c5113b25/ffmpeg-selective",
+    "exit": 0,
+    "stdout": "WARNING: Your data are to be sent over an unencrypted connection and could be read by others.\n\npushed                  ffmpeg-static\t  0%\t      0KB\t    0KB/s\npushed                  ffmpeg-static\t100%\t   2071KB\t    0KB/s\n1 file(s) pushed. 0 file(s) skipped.\n/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/selective/ffmpeg-static   5189KB/s (2120804 bytes in 0.399s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 push /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ffmpeg-static /opt/protection-cost-20261013-c5113b25/ffmpeg-full",
+    "exit": 0,
+    "stdout": "WARNING: Your data are to be sent over an unencrypted connection and could be read by others.\n\npushed                  ffmpeg-static\t  0%\t      0KB\t    0KB/s\npushed                  ffmpeg-static\t100%\t   3662KB\t    0KB/s\n1 file(s) pushed. 0 file(s) skipped.\n/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/full/ffmpeg-static   5775KB/s (3750884 bytes in 0.634s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 push /home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/fixed-640x360-600frames.m2v /opt/protection-cost-20261013-c5113b25/workload.m2v",
+    "exit": 0,
+    "stdout": "WARNING: Your data are to be sent over an unencrypted connection and could be read by others.\n\npushed    fixed-640x360-600frames.m2v\t  0%\t      0KB\t    0KB/s\npushed    fixed-640x360-600frames.m2v\t100%\t   8187KB\t12377KB/s\n1 file(s) pushed. 0 file(s) skipped.\n/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/fixed-640x360-600frames.m2v   6767KB/s (8383885 bytes in 1.209s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 push docs/probe/protection-demo/cost/scripts/check-board.sh /opt/protection-cost-20261013-c5113b25/check-board.sh",
+    "exit": 0,
+    "stdout": "WARNING: Your data are to be sent over an unencrypted connection and could be read by others.\n\npushed                 check-board.sh\t  0%\t      0 B\t    0KB/s\npushed                 check-board.sh\t100%\t    779 B\t    0KB/s\n1 file(s) pushed. 0 file(s) skipped.\ndocs/probe/protection-demo/cost/scripts/check-board.sh   4KB/s (779 bytes in 0.172s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 shell 'sh -c '\"'\"'cd /opt/protection-cost-20261013-c5113b25 && chmod 755 ffmpeg-* && sha256sum ffmpeg-* workload.m2v'\"'\"''",
+    "exit": 0,
+    "stdout": "705e76051c2901d153ea331178581e5d28bf5db1f35da6f2e5e89ceaded47121  ffmpeg-baseline\nbf8d39f6453252790457b27d1590925156fa16bf8cb0e0e46b07cb4ed292d791  ffmpeg-full\n3a3fcaee7cdbc457646a539cbd7c384ff2e52823ac57d27e13758cc023c04fbd  ffmpeg-selective\n595ea153ee063e90ced2404f00fe0467d4bd37ef1ceeffdd8cd7b3d2a2de58d1  workload.m2v\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 shell 'sh /opt/protection-cost-20261013-c5113b25/check-board.sh /opt/protection-cost-20261013-c5113b25'",
+    "exit": 0,
+    "stdout": "BOARD_CONTENT_CHECK_FINISHED\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/hash-status.tsv docs/probe/protection-demo/cost/raw/hash-status.tsv",
+    "exit": 0,
+    "stdout": "\npulled                hash-status.tsv\t  0%\t      0 B\t    0KB/s\npulled                hash-status.tsv\t100%\t     36 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/hash-status.tsv   0KB/s (36 bytes in 0.134s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/conditions-before.txt docs/probe/protection-demo/cost/raw/conditions-before.txt",
+    "exit": 0,
+    "stdout": "\npulled          conditions-before.txt\t  0%\t      0 B\t    0KB/s\npulled          conditions-before.txt\t100%\t    378 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/conditions-before.txt   2KB/s (378 bytes in 0.133s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/hash-baseline.txt docs/probe/protection-demo/cost/raw/hash-baseline.txt",
+    "exit": 0,
+    "stdout": "\npulled              hash-baseline.txt\t  0%\t      0KB\t    0KB/s\npulled              hash-baseline.txt\t100%\t     47KB\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/hash-baseline.txt   339KB/s (48214 bytes in 0.138s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/version-baseline.txt docs/probe/protection-demo/cost/raw/version-baseline.txt",
+    "exit": 0,
+    "stdout": "\npulled           version-baseline.txt\t  0%\t      0 B\t    0KB/s\npulled           version-baseline.txt\t100%\t   1428 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/version-baseline.txt   7KB/s (1428 bytes in 0.175s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/hash-selective.txt docs/probe/protection-demo/cost/raw/hash-selective.txt",
+    "exit": 0,
+    "stdout": "\npulled             hash-selective.txt\t  0%\t      0KB\t    0KB/s\npulled             hash-selective.txt\t100%\t     47KB\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/hash-selective.txt   340KB/s (48214 bytes in 0.138s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/version-selective.txt docs/probe/protection-demo/cost/raw/version-selective.txt",
+    "exit": 0,
+    "stdout": "\npulled          version-selective.txt\t  0%\t      0 B\t    0KB/s\npulled          version-selective.txt\t100%\t   1430 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/version-selective.txt   10KB/s (1430 bytes in 0.136s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/hash-full.txt docs/probe/protection-demo/cost/raw/hash-full.txt",
+    "exit": 0,
+    "stdout": "\npulled                  hash-full.txt\t  0%\t      0KB\t    0KB/s\npulled                  hash-full.txt\t100%\t     47KB\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/hash-full.txt   325KB/s (48214 bytes in 0.144s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/version-full.txt docs/probe/protection-demo/cost/raw/version-full.txt",
+    "exit": 0,
+    "stdout": "\npulled               version-full.txt\t  0%\t      0 B\t    0KB/s\npulled               version-full.txt\t100%\t   1420 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/version-full.txt   10KB/s (1420 bytes in 0.134s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/hash-baseline-stderr.txt docs/probe/protection-demo/cost/raw/hash-baseline-stderr.txt",
+    "exit": 0,
+    "stdout": "\npulled       hash-baseline-stderr.txt\t100%\t      0 B\t    0KB/s\npulled       hash-baseline-stderr.txt\t100%\t      0 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/hash-baseline-stderr.txt   0KB/s (0 bytes in 0.141s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/hash-selective-stderr.txt docs/probe/protection-demo/cost/raw/hash-selective-stderr.txt",
+    "exit": 0,
+    "stdout": "\npulled      hash-selective-stderr.txt\t100%\t      0 B\t    0KB/s\npulled      hash-selective-stderr.txt\t100%\t      0 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/hash-selective-stderr.txt   0KB/s (0 bytes in 0.131s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/hash-full-stderr.txt docs/probe/protection-demo/cost/raw/hash-full-stderr.txt",
+    "exit": 0,
+    "stdout": "\npulled           hash-full-stderr.txt\t100%\t      0 B\t    0KB/s\npulled           hash-full-stderr.txt\t100%\t      0 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/hash-full-stderr.txt   0KB/s (0 bytes in 0.131s)\n",
+    "stderr": ""
+  }
+]

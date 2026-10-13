@@ -1,0 +1,9 @@
+ffmpeg version 8.0.1 Copyright (c) 2000-2025 the FFmpeg developers
+built with clang version 22.1.8 (https://github.com/llvm/llvm-project ca7933e47d3a3451d81e72ac174dcb5aa28b59d1)
+configuration: --prefix=/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/selective/install --arch=arm --cpu=cortex-a7 --target-os=linux --enable-cross-compile --cross-prefix=arm-linux-gnueabihf- --cc=/home/linhao/Toolchain/development/security_optimization_rea/docs/probe/protection-demo/cost/private/selective/cc --sysroot=/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot --extra-cflags='-mfpu=neon -fno-stack-protector -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=0' --optflags=-O2 --extra-ldflags='-Wl,-z,norelro -Wl,-z,lazy' --enable-shared --enable-static --enable-pic --disable-stripping --disable-debug --disable-autodetect --disable-doc --disable-network --disable-avdevice --disable-swscale --disable-swresample --disable-ffplay --disable-ffprobe --disable-everything --enable-ffmpeg --enable-decoder=mpeg2video --enable-parser=mpegvideo --enable-demuxer=mpegvideo --enable-muxer='null,framemd5' --enable-protocol=file --enable-encoder='wrapped_avframe,rawvideo' --enable-filter=null
+libavutil      60.  8.100 / 60.  8.100
+libavcodec     62. 11.100 / 62. 11.100
+libavformat    62.  3.100 / 62.  3.100
+libavfilter    11.  4.100 / 11.  4.100
+
+Exiting with exit code 0

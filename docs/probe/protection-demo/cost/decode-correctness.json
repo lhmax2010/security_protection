@@ -1,0 +1,26 @@
+{
+  "baseline": {
+    "version_exit": 0,
+    "decode_exit": 0,
+    "frames": 600,
+    "aggregate_frame_rows_sha256": "a9dbf0263220430cfa312221920373a8eb3874027720164f2c78848f4d62ab42",
+    "content_matches_baseline": true,
+    "valid_for_benchmark": true
+  },
+  "selective": {
+    "version_exit": 0,
+    "decode_exit": 0,
+    "frames": 600,
+    "aggregate_frame_rows_sha256": "a9dbf0263220430cfa312221920373a8eb3874027720164f2c78848f4d62ab42",
+    "content_matches_baseline": true,
+    "valid_for_benchmark": true
+  },
+  "full": {
+    "version_exit": 0,
+    "decode_exit": 0,
+    "frames": 600,
+    "aggregate_frame_rows_sha256": "a9dbf0263220430cfa312221920373a8eb3874027720164f2c78848f4d62ab42",
+    "content_matches_baseline": true,
+    "valid_for_benchmark": true
+  }
+}

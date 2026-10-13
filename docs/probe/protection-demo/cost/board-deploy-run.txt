@@ -1,0 +1,1 @@
+Native board content verification: {'baseline': (600, True), 'selective': (600, True), 'full': (600, True)}

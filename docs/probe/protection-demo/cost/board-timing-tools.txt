@@ -1,0 +1,5 @@
+/usr/bin/taskset
+TASKSET_LOOKUP_EXIT=0
+0-3
+
+exit=0
