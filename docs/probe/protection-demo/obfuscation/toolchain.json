@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/und3ath/xollvm",
+  "tag": "v0.11.1",
+  "commit": "eb0850bd7cc87f551ad2948826605e518f5b8aa2",
+  "acquisition": "upstream prebuilt, not locally built",
+  "archive_sha256": "c834fc02d46f15d6ed5ae06698b6d026499aa8f1de6563d4ba87fe1f2f81ee90",
+  "archive_bytes": 105340192,
+  "clang": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/obfuscation/xollvm-v0.11.1/bin/clang",
+  "opt": "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/obfuscation/xollvm-v0.11.1/bin/opt",
+  "clang_version": "clang version 22.1.8 (https://github.com/llvm/llvm-project ca7933e47d3a3451d81e72ac174dcb5aa28b59d1)\nTarget: x86_64-unknown-linux-gnu\nThread model: posix\nInstalledDir: /home/linhao/Toolchain/development/security_optimization_rea/.local-tools/obfuscation/xollvm-v0.11.1/bin\n",
+  "release_asset_digest_verified": true
+}

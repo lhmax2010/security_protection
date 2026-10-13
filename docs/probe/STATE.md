@@ -271,3 +271,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - 真实失败：web工具抓取xollvm release页timeout，GitHub API成功替代；旧bloesadi/Pluto URL API 404，原错误保留survey/。待决：下载/实际版本/ARM交叉编译/pass生效/QEMU一致/REA可读性。
 
 - [完成调研] obfuscation：找到明确LLVM22预编译资产的xollvm v0.11.1，commit eb0850bd7cc87f551ad2948826605e518f5b8aa2；优先验收bundle，不预设22.1.8或ARM实测成功。README/USER/BUILD已在忽略工具目录读取，猜测workflow路径HTTP404原样保留survey/fetch-.github-workflows-build-release.yml.error.txt（不影响已确认发布资产）。下一步下载验版本/后端。
+
+- [完成工具链取得] obfuscation：xollvm v0.11.1 Linux LLVM22预编译包真实下载105340192字节，SHA256 c834fc02d46f15d6ed5ae06698b6d026499aa8f1de6563d4ba87fe1f2f81ee90 与release asset digest相同；clang/opt实际22.1.8、LLVM base ca7933e47d3a3451d81e72ac174dcb5aa28b59d1，ARM/X86后端及obfuscation pass已注册。工具全在忽略.local-tools/，未自编、没有ABI跨18加载。与PM平台22.1.8精确版本一致，本轮不需把pass移植到LLVM22；Tizen vendor补丁/打包/GBS及板子集成未测。ARM链接/QEMU/pass效果待后续。
