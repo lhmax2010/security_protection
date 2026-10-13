@@ -1,0 +1,22 @@
+{
+  "annotation": "obf: substitution(prob=50,loop=1), bcf(prob=30,loop=1,maxBlocks=200), flattening(minBlocks=3,maxBlocks=200)",
+  "functions": {
+    "libavcodec/avcodec.c": {
+      "avcodec_receive_frame": "Public output API / frame handoff"
+    },
+    "libavcodec/decode.c": {
+      "avcodec_send_packet": "Public input/API validation",
+      "ff_decode_receive_frame_internal": "Decode dispatch and buffer/error handling",
+      "decode_receive_frame_internal": "Frame properties/error/discard checks"
+    },
+    "libavcodec/mpeg12dec.c": {
+      "mpeg_decode_frame": "MPEG2 frame dispatch",
+      "mpeg_decode_postinit": "Sequence properties and decoder reinitialization",
+      "mpeg1_decode_picture": "Picture header validation",
+      "mpeg1_decode_sequence": "Sequence header validation",
+      "mpeg_decode_sequence_extension": "MPEG2 profile/dimension extension",
+      "mpeg_decode_picture_coding_extension": "Picture coding extension/flags"
+    }
+  },
+  "rationale": "10 real pipeline/header parsing functions; avoids inner pixel/IDCT/macroblock kernels. Source annotations may be inlined before pass execution; actual reports decide surviving scope. This selection does not protect the whole decoder algorithm."
+}

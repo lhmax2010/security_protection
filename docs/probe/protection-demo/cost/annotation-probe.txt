@@ -1,0 +1,8 @@
+[".local-tools/obfuscation/xollvm-v0.11.1/bin/clang", "--target=arm-linux-gnueabihf", "-O2", "-include", "docs/probe/protection-demo/cost/scripts/full-annotation.h", "-mllvm", "-enable-obfuscation", "-mllvm", "-obf-seed=1", "-mllvm", "-obf-verify", "-mllvm", "-obf-report-json=docs/probe/protection-demo/cost/private/annotation-probe.json", "-x", "c", "-c", "-", "-o", "docs/probe/protection-demo/cost/private/annotation-probe.o"]
+In file included from <built-in>:1:
+./docs/probe/protection-demo/cost/scripts/full-annotation.h:1:15: error: unterminated '#pragma clang attribute push' at end of file
+    1 | #pragma clang attribute push(__attribute__((annotate("obf: substitution(prob=50,loop=1), bcf(prob=30,loop=1,maxBlocks=200), flattening(minBlocks=3,maxBlocks=200)"))), apply_to=function)
+      |               ^
+1 error generated.
+
+exit=1

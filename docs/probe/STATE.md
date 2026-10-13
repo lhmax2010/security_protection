@@ -293,3 +293,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [准备完成] cost/premises.json记录真实复用路径与归档校验；先确认板子可达以决定是否继续长构建。
 
 - [板子验收完成] cost：sdb连接192.168.108.26:26101、root成功，真实id/uname/Tizen/设备树确认RPi4 ModelB开源ARMv7板；board-identity.txt保存实时版本/CPU/存储/governor等。尚未推程序/测性能；下一步三档同配置构建。
+
+- [构建方法完成，三档运行中] cost：选10个API/帧管线/序列与picture头解析函数，不含像素/IDCT内核；全档对所有libavcodec C TU与存活头函数注解，汇编/其他库不混淆。三档同O2/ARM硬浮点PIC与最小mpeg2配置、同sub50%loop1/bcf30%loop1/fla(min3,max200)/seed1，IR硬上限12000及默认倍率50，不将有跳过的配置称全部无条件混淆。首次-force-include pragma测试报unterminated push（annotation-probe.txt原错），根因必须同文件配对pop；改生成同文件包裹、保留#line/quote include路径后真实报告三pass均ran，见balanced与report。基线构建已完成、静态链接成功；选择与全档尚在构建，不预设成功/效果。

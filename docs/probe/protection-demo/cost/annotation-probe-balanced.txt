@@ -1,0 +1,3 @@
+[".local-tools/obfuscation/xollvm-v0.11.1/bin/clang", "--target=arm-linux-gnueabihf", "-O2", "-mllvm", "-enable-obfuscation", "-mllvm", "-obf-seed=1", "-mllvm", "-obf-verify", "-mllvm", "-obf-report-json=docs/probe/protection-demo/cost/private/annotation-probe.json", "-x", "c", "-c", "-", "-o", "docs/probe/protection-demo/cost/private/annotation-probe.o"]
+
+exit=0
