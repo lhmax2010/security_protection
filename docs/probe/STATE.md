@@ -224,3 +224,7 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - 未决：下载、版本、编译器归属、指标与同名配对均待实测。
 
 - 已闭合步骤 1：本机 curl 访问两个指定索引及 armv7l 子目录 HTTP200，14 RPM均真实下载并完成 rpm -qp 版本查询；选15个常见ELF目标 + libavcodec，共16目标。Base索引观察更新时间2026-10-06、Unified2026-10-13；参考URL可变，以下载SHA256和版本固定本轮样本。证据 `gcc-vs-llvm/gcc-sample-list.txt`、`network-downloads.txt`；网络 web 工具访问失败但 curl 成功，错误记录 `network-web-errors.txt`。RPM本体仅 private/download。
+
+- 已闭合步骤 2：15个主RPM抽出16 ELF（初版误以为 sqlite 主包包含库，真实“缺1”见 `gcc-vs-llvm/extraction-initial-status.json`；补充 libsqlite RPM 后成功，清单/网络记录已更新）。抽取只 materialize 已选常规ELF，不安装、不建立RPM内链接；见 `extraction-status.json`。
+- 编译器实证：16/16 为 **GCC14.2.0**。主ELF均无.comment，未猜测；在同一reference相邻 standard/debug 索引找到精确NEVRA debug RPM，逐ELF通过debuglink文件名+CRC32配对，并全部核对GNU build-id相同；匹配debug的DW_AT_producer真实输出见 `raw/<id>-compiler.txt`，汇总 `gcc-compiler-evidence.txt/json`、下载元数据 `debug-download-status.json`。debug ELF/RPM和完整CU属性原输出留private，不上传。
+- 保留限制：编译器/旗标证据适用于匹配CU，不能代表所有链接输入；libavcodec producer可见 SSP strong/all，部分库可见 visibility=hidden；LLVM板用户态逐库编译器仍未知且本轮禁止重测。公共reference是公司GCC产物的对照代理，不自动证明公司内部构建配置相同。

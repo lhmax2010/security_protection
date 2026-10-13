@@ -1,0 +1,74 @@
+COMMAND readelf -p .comment <MAIN_ELF>
+EXIT 0
+readelf: Warning: Section '.comment' was not dumped because it does not exist
+
+COMMAND readelf -p .GCC.command.line <MAIN_ELF>
+EXIT 0
+readelf: Warning: Section '.GCC.command.line' was not dumped because it does not exist
+
+COMMAND readelf --debug-dump=info --dwarf-depth=1 --debug-dump=no-follow-links <MAIN_ELF>
+EXIT 0
+
+COMMAND readelf -n <MAIN_ELF>
+EXIT 0
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: a803cbe5a61b8008c72e49fec4c0067ca135d9f0
+
+COMMAND readelf -S <MAIN_ELF>
+EXIT 0
+There are 27 section headers, starting at offset 0xd7800:
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .note.gnu.bu[...] NOTE            000000f4 0000f4 000024 00   A  0   0  4
+  [ 2] .hash             HASH            00000118 000118 000b0c 04   A  4   0  4
+  [ 3] .gnu.hash         GNU_HASH        00000c24 000c24 000a80 04   A  4   0  4
+  [ 4] .dynsym           DYNSYM          000016a4 0016a4 001ba0 10   A  5   3  4
+  [ 5] .dynstr           STRTAB          00003244 003244 0020e6 00   A  0   0  1
+  [ 6] .gnu.version      VERSYM          0000532a 00532a 000374 02   A  4   0  2
+  [ 7] .gnu.version_r    VERNEED         000056a0 0056a0 0000d0 00   A  5   4  4
+  [ 8] .rel.dyn          REL             00005770 005770 003c38 08   A  4   0  4
+  [ 9] .rel.plt          REL             000093a8 0093a8 000788 08  AI  4  22  4
+  [10] .init             PROGBITS        00009b30 009b30 00000c 00  AX  0   0  4
+  [11] .plt              PROGBITS        00009b3c 009b3c 000c48 04  AX  0   0  4
+  [12] .text             PROGBITS        0000a788 00a788 0b26e8 00  AX  0   0  8
+  [13] .fini             PROGBITS        000bce70 0bce70 000008 00  AX  0   0  4
+  [14] .rodata           PROGBITS        000bce78 0bce78 0122a7 00   A  0   0  8
+  [15] .ARM.extab        PROGBITS        000cf120 0cf120 0006fc 00   A  0   0  4
+  [16] .ARM.exidx        ARM_EXIDX       000cf81c 0cf81c 003db8 00  AL 12   0  4
+  [17] .eh_frame         PROGBITS        000d35d4 0d35d4 000004 00   A  0   0  4
+  [18] .init_array       INIT_ARRAY      000d45d8 0d35d8 000004 04  WA  0   0  4
+  [19] .fini_array       FINI_ARRAY      000d45dc 0d35dc 000004 04  WA  0   0  4
+  [20] .data.rel.ro      PROGBITS        000d45e0 0d35e0 0016e0 00  WA  0   0  8
+  [21] .dynamic          DYNAMIC         000d5cc0 0d4cc0 000110 08  WA  5   0  4
+  [22] .got              PROGBITS        000d5dd0 0d4dd0 0003fc 04  WA  0   0  4
+  [23] .data             PROGBITS        000d61d0 0d51d0 002520 00  WA  0   0  8
+  [24] .bss              NOBITS          000d86f0 0d76f0 0003dc 00  WA  0   0  8
+  [25] .gnu_debuglink    PROGBITS        00000000 0d76f0 000020 00      0   0  4
+  [26] .shstrtab         STRTAB          00000000 0d7710 0000ed 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+DEBUG_MATCH exact filename+CRC32 libsqlite3.so.3.51.0.debug
+DEBUG_SHA256 983522c2b4bf3f68789fa9a895b5b62d4efc310aa23c1ae194b75a7e41255dd2
+COMMAND readelf -n <MATCHED_DEBUG_ELF>
+EXIT 0
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: a803cbe5a61b8008c72e49fec4c0067ca135d9f0
+
+COMMAND readelf --debug-dump=info --dwarf-depth=1 --debug-dump=no-follow-links <MATCHED_DEBUG_ELF>
+EXIT 0
+PROJECTION only DW_AT_producer lines (CU filenames/other attributes remain private):
+    <1c>   DW_AT_producer    : (indirect string, offset: 0xa52): GNU AS 2.43
+    <2f>   DW_AT_producer    : (indirect string, offset: 0xfa7): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIC --param=ssp-buffer-size=4
+    <18ac1c>   DW_AT_producer    : (indirect string, offset: 0xa52): GNU AS 2.43

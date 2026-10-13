@@ -134,6 +134,14 @@ PACKAGE sqlite-3.51.0-3.10.armv7l.rpm CURL_EXIT 0
  60  661k   60  399k    0     0   245k      0  0:00:02  0:00:01  0:00:01  245k
 100  661k  100  661k    0     0   399k      0  0:00:01  0:00:01 --:--:--  398k
 
+PACKAGE libsqlite-3.51.0-3.10.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  546k  100  546k    0     0   328k      0  0:00:01  0:00:01 --:--:--  328k
+
 PACKAGE bash-3.2.57-1.22.armv7l.rpm CURL_EXIT 0
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed

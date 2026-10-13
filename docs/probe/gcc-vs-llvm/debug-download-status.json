@@ -1,0 +1,167 @@
+[
+  {
+    "package": "libavcodec-8.0.1-1.armv7l.rpm",
+    "debug_filename": "libavcodec-debuginfo-8.0.1-1.armv7l.rpm",
+    "repo": "unified",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/debug/libavcodec-debuginfo-8.0.1-1.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "f9e9935552f0fbdf553e7e410445b5852d8073a8fbaeb6175ecbfd11e0b6369b",
+    "bytes": 5234824,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "glibc-2.40-16.4.armv7l.rpm",
+    "debug_filename": "glibc-debuginfo-2.40-16.4.armv7l.rpm",
+    "repo": "base",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/debug/glibc-debuginfo-2.40-16.4.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "6fe151044f1cb996e76ff245d5e544e7ab919e50d4937d28fbfbf5384dcadec7",
+    "bytes": 4699005,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "libstdc++-14.2.0-4.25.armv7l.rpm",
+    "debug_filename": "libstdc++-debuginfo-14.2.0-4.25.armv7l.rpm",
+    "repo": "base",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/debug/libstdc%2B%2B-debuginfo-14.2.0-4.25.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "2e331677d031d3c6e1d435026bf05f2d700b15c9b75f23c34eb607250d7ca3a0",
+    "bytes": 4431929,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "libopenssl3-3.5.5-2.19.armv7l.rpm",
+    "debug_filename": "libopenssl3-debuginfo-3.5.5-2.19.armv7l.rpm",
+    "repo": "base",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/debug/libopenssl3-debuginfo-3.5.5-2.19.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "35fbec1de24334374333c5e48887a241bfaf832661a3d73011bb31f8d95f0c7c",
+    "bytes": 4562053,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "dbus-1.12.20-3.armv7l.rpm",
+    "debug_filename": "dbus-debuginfo-1.12.20-3.armv7l.rpm",
+    "repo": "unified",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/debug/dbus-debuginfo-1.12.20-3.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "ed447da9d20f82f04d9a99213a00ac98b5f720d890cf5108bf7fb568d928aab8",
+    "bytes": 323636,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "dbus-libs-1.12.20-3.armv7l.rpm",
+    "debug_filename": "dbus-libs-debuginfo-1.12.20-3.armv7l.rpm",
+    "repo": "unified",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/debug/dbus-libs-debuginfo-1.12.20-3.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "2a204769b2f8793c81ec21026c7fe2c9d45055e26309eb91167744e38b303899",
+    "bytes": 338464,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "libglib-2.80.5-0.armv7l.rpm",
+    "debug_filename": "libglib-debuginfo-2.80.5-0.armv7l.rpm",
+    "repo": "unified",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/debug/libglib-debuginfo-2.80.5-0.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "530cb13f691f3e49683369cedceeb47b862557245ac758c9a1f773bb529816f9",
+    "bytes": 1107932,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "sqlite-3.51.0-3.10.armv7l.rpm",
+    "debug_filename": "sqlite-debuginfo-3.51.0-3.10.armv7l.rpm",
+    "repo": "base",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/debug/sqlite-debuginfo-3.51.0-3.10.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "63fa775de9461b22ce9d2c2bca6e0f46b6b4b038da40928249b602e7c258db73",
+    "bytes": 2088013,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "libsqlite-3.51.0-3.10.armv7l.rpm",
+    "debug_filename": "libsqlite-debuginfo-3.51.0-3.10.armv7l.rpm",
+    "repo": "base",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/debug/libsqlite-debuginfo-3.51.0-3.10.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "0fff411b44c2a4ed7e438dd16986617b928a43887b94318657ddc1cded117c4e",
+    "bytes": 1788497,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "bash-3.2.57-1.22.armv7l.rpm",
+    "debug_filename": "bash-debuginfo-3.2.57-1.22.armv7l.rpm",
+    "repo": "base",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/debug/bash-debuginfo-3.2.57-1.22.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "1ea722ffd253a0611490519ef63ba89e18c0b6bdf40574a46dd892303715043c",
+    "bytes": 794385,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "systemd-244-0.armv7l.rpm",
+    "debug_filename": "systemd-debuginfo-244-0.armv7l.rpm",
+    "repo": "unified",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/debug/systemd-debuginfo-244-0.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "d6f210dba59f8e84b12736c742e1922b2246f497cbc7681f41a790cc73deff4f",
+    "bytes": 5827536,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "rpm-4.14.1.1-6.12.armv7l.rpm",
+    "debug_filename": "rpm-debuginfo-4.14.1.1-6.12.armv7l.rpm",
+    "repo": "base",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/debug/rpm-debuginfo-4.14.1.1-6.12.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "ad810aca015ea04c4af72817b8b595a056f42392dc2c072769b4ce0406e02a5a",
+    "bytes": 126826,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "findutils-4.3.8-2.19.armv7l.rpm",
+    "debug_filename": "findutils-debuginfo-4.3.8-2.19.armv7l.rpm",
+    "repo": "base",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/debug/findutils-debuginfo-4.3.8-2.19.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "e0e3992f097b477f843cdd699b4aeb853037770fa40ea9eae75dd855b364f442",
+    "bytes": 211489,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "libdlog-9.0.2-1.armv7l.rpm",
+    "debug_filename": "libdlog-debuginfo-9.0.2-1.armv7l.rpm",
+    "repo": "unified",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/debug/libdlog-debuginfo-9.0.2-1.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "941b3af7e220cc82660c48c784fb98fd1f30115f712115e40140c6bb150e9985",
+    "bytes": 95400,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  },
+  {
+    "package": "pkgmgr-info-0.37.5-1.armv7l.rpm",
+    "debug_filename": "pkgmgr-info-debuginfo-0.37.5-1.armv7l.rpm",
+    "repo": "unified",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/debug/pkgmgr-info-debuginfo-0.37.5-1.armv7l.rpm",
+    "curl_exit": 0,
+    "sha256": "c0fb0b3e17846f252ac896c31899625e5c5740af68d58c90ce4c3f1e254b6260",
+    "bytes": 7003088,
+    "rpm2cpio_exit": 0,
+    "rpm2cpio_stderr": ""
+  }
+]

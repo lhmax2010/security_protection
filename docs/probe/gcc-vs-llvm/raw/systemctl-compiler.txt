@@ -1,0 +1,90 @@
+COMMAND readelf -p .comment <MAIN_ELF>
+EXIT 0
+readelf: Warning: Section '.comment' was not dumped because it does not exist
+
+COMMAND readelf -p .GCC.command.line <MAIN_ELF>
+EXIT 0
+readelf: Warning: Section '.GCC.command.line' was not dumped because it does not exist
+
+COMMAND readelf --debug-dump=info --dwarf-depth=1 --debug-dump=no-follow-links <MAIN_ELF>
+EXIT 0
+
+COMMAND readelf -n <MAIN_ELF>
+EXIT 0
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: 74a4049efe3271f24f5ea486b351f74dbde8a09b
+
+Displaying notes found in: .note.ABI-tag
+  Owner                Data size 	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)
+    OS: Linux, ABI: 3.2.0
+
+COMMAND readelf -S <MAIN_ELF>
+EXIT 0
+There are 29 section headers, starting at offset 0x2c294:
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .interp           PROGBITS        00000154 000154 000013 00   A  0   0  1
+  [ 2] .note.gnu.bu[...] NOTE            00000168 000168 000024 00   A  0   0  4
+  [ 3] .note.ABI-tag     NOTE            0000018c 00018c 000020 00   A  0   0  4
+  [ 4] .gnu.hash         GNU_HASH        000001ac 0001ac 000018 04   A  5   0  4
+  [ 5] .dynsym           DYNSYM          000001c4 0001c4 0014b0 10   A  6   3  4
+  [ 6] .dynstr           STRTAB          00001674 001674 00172a 00   A  0   0  1
+  [ 7] .gnu.version      VERSYM          00002d9e 002d9e 000296 02   A  5   0  2
+  [ 8] .gnu.version_r    VERNEED         00003034 003034 0000e0 00   A  6   4  4
+  [ 9] .rel.dyn          REL             00003114 003114 001350 08   A  5   0  4
+  [10] .rel.plt          REL             00004464 004464 0009b0 08  AI  5  23  4
+  [11] .init             PROGBITS        00004e14 004e14 00000c 00  AX  0   0  4
+  [12] .plt              PROGBITS        00004e20 004e20 000ec0 04  AX  0   0  4
+  [13] .text             PROGBITS        00005ce0 005ce0 0191b4 00  AX  0   0  8
+  [14] .fini             PROGBITS        0001ee94 01ee94 000008 00  AX  0   0  4
+  [15] .rodata           PROGBITS        0001ee9c 01ee9c 0088f9 00   A  0   0  4
+  [16] .ARM.extab        PROGBITS        00027798 027798 001b62 00   A  0   0  4
+  [17] .ARM.exidx        ARM_EXIDX       000292fc 0292fc 0002f8 00  AL 13   0  4
+  [18] .eh_frame         PROGBITS        000295f4 0295f4 000004 00   A  0   0  4
+  [19] .init_array       INIT_ARRAY      0002a000 02a000 000004 04  WA  0   0  4
+  [20] .fini_array       FINI_ARRAY      0002a004 02a004 000004 04  WA  0   0  4
+  [21] .data.rel.ro      PROGBITS        0002a008 02a008 0013d0 00  WA  0   0  4
+  [22] .dynamic          DYNAMIC         0002b3d8 02b3d8 000118 08  WA  6   0  4
+  [23] .got              PROGBITS        0002b4f0 02b4f0 00052c 04  WA  0   0  4
+  [24] .data             PROGBITS        0002c000 02c000 000134 00  WA  0   0  8
+  [25] SYSTEMD_STAT[...] PROGBITS        0002c134 02c134 000030 00  WA  0   0  4
+  [26] .bss              NOBITS          0002c168 02c164 00007c 00  WA  0   0  8
+  [27] .gnu_debuglink    PROGBITS        00000000 02c164 000014 00      0   0  4
+  [28] .shstrtab         STRTAB          00000000 02c178 00011b 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+DEBUG_MATCH exact filename+CRC32 systemctl.debug
+DEBUG_SHA256 eafa407825f1df3ed024a5b6c86a05e55c439355c85f2eb4ac018524e406f1c5
+COMMAND readelf -n <MATCHED_DEBUG_ELF>
+EXIT 0
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: 74a4049efe3271f24f5ea486b351f74dbde8a09b
+
+Displaying notes found in: .note.ABI-tag
+  Owner                Data size 	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)
+    OS: Linux, ABI: 3.2.0
+
+COMMAND readelf --debug-dump=info --dwarf-depth=1 --debug-dump=no-follow-links <MATCHED_DEBUG_ELF>
+EXIT 0
+PROJECTION only DW_AT_producer lines (CU filenames/other attributes remain private):
+    <1d>   DW_AT_producer    : (indirect string, offset: 0x427): GNU AS 2.43
+    <2f>   DW_AT_producer    : (indirect string, offset: 0x72e): GNU C11 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv7-a+simd -g2 -gdwarf-4 -g -g -O2 -O2 -std=gnu11 -fgnu89-inline -fno-inline-functions -fmessage-length=0 -funwind-tables -fmerge-all-constants -frounding-math -fno-stack-protector -fno-common -fmath-errno -fPIE -ftls-model=initial-exec --param=ssp-buffer-size=4
+    <18f>   DW_AT_producer    : (indirect string, offset: 0x72e): GNU C11 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv7-a+simd -g2 -gdwarf-4 -g -g -O2 -O2 -std=gnu11 -fgnu89-inline -fno-inline-functions -fmessage-length=0 -funwind-tables -fmerge-all-constants -frounding-math -fno-stack-protector -fno-common -fmath-errno -fPIE -ftls-model=initial-exec --param=ssp-buffer-size=4
+    <1db>   DW_AT_producer    : (indirect string, offset: 0x427): GNU AS 2.43
+    <1ed>   DW_AT_producer    : (indirect string, offset: 0x579): GNU C99 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -std=gnu99 -ffast-math -fno-common -fno-strict-aliasing -fvisibility=hidden -fstack-protector -fstack-protector-strong -ffunction-sections -fdata-sections -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE --param=ssp-buffer-size=4 --param=ssp-buffer-size=4
+    <321a7>   DW_AT_producer    : (indirect string, offset: 0x579): GNU C99 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -std=gnu99 -ffast-math -fno-common -fno-strict-aliasing -fvisibility=hidden -fstack-protector -fstack-protector-strong -ffunction-sections -fdata-sections -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE --param=ssp-buffer-size=4 --param=ssp-buffer-size=4
+    <3274d>   DW_AT_producer    : (indirect string, offset: 0x427): GNU AS 2.43

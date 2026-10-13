@@ -1,0 +1,290 @@
+{
+  "method": "rpm2cpio plus in-memory newc reader; only selected regular ELF copied under private; no symlinks materialized or installed",
+  "samples": [
+    {
+      "id": "libavcodec",
+      "kind": "shared-library",
+      "package": "libavcodec-8.0.1-1.armv7l.rpm",
+      "repo": "unified",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/packages/armv7l/libavcodec-8.0.1-1.armv7l.rpm",
+      "rpm_query": "libavcodec\t8.0.1\t1\tarmv7l\tffmpeg-8.0.1-1.src.rpm",
+      "archive_path": "./usr/lib/libavcodec.so.62.11.100",
+      "local_path": "private/extract/libavcodec.elf",
+      "bytes": 5049684,
+      "sha256": "f849d5ad757b78ba300d1f370960b8eab5d4d3d0c3f406f8ae8d82b7dcbeacd9",
+      "reason": "ffmpeg-demo/board counterpart"
+    },
+    {
+      "id": "libc_so_6",
+      "kind": "shared-library",
+      "package": "glibc-2.40-16.4.armv7l.rpm",
+      "repo": "base",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/armv7l/glibc-2.40-16.4.armv7l.rpm",
+      "rpm_query": "glibc\t2.40\t16.4\tarmv7l\tglibc-2.40-16.4.src.rpm",
+      "archive_path": "./lib/libc.so.6",
+      "local_path": "private/extract/libc_so_6.elf",
+      "bytes": 1450052,
+      "sha256": "d11f13fe5bd9357c8d6bf9d4dc86f7aeb696503b7a2c9b845d268072004f6c81",
+      "reason": "C runtime/provider"
+    },
+    {
+      "id": "libstdc++_so_6",
+      "kind": "shared-library",
+      "package": "libstdc++-14.2.0-4.25.armv7l.rpm",
+      "repo": "base",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/armv7l/libstdc%2B%2B-14.2.0-4.25.armv7l.rpm",
+      "rpm_query": "libstdc++\t14.2.0\t4.25\tarmv7l\tgcc-14.2.0-4.25.src.rpm",
+      "archive_path": "./usr/lib/libstdc++.so.6.0.33",
+      "local_path": "private/extract/libstdc++_so_6.elf",
+      "bytes": 1683800,
+      "sha256": "eee9e9e4f941c656c2c5750c2639ef901097cd695c82bb21893256ff29467dfd",
+      "reason": "C++ ABI runtime"
+    },
+    {
+      "id": "libcrypto_so_3",
+      "kind": "shared-library",
+      "package": "libopenssl3-3.5.5-2.19.armv7l.rpm",
+      "repo": "base",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/armv7l/libopenssl3-3.5.5-2.19.armv7l.rpm",
+      "rpm_query": "libopenssl3\t3.5.5\t2.19\tarmv7l\topenssl3-3.5.5-2.19.src.rpm",
+      "archive_path": "./usr/lib/libcrypto.so.3",
+      "local_path": "private/extract/libcrypto_so_3.elf",
+      "bytes": 2780436,
+      "sha256": "022434b886ab3aaf95633a5ea880522c9833e75fc4d2e63512759cac2786ff3d",
+      "reason": "crypto ABI"
+    },
+    {
+      "id": "libssl_so_3",
+      "kind": "shared-library",
+      "package": "libopenssl3-3.5.5-2.19.armv7l.rpm",
+      "repo": "base",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/armv7l/libopenssl3-3.5.5-2.19.armv7l.rpm",
+      "rpm_query": "libopenssl3\t3.5.5\t2.19\tarmv7l\topenssl3-3.5.5-2.19.src.rpm",
+      "archive_path": "./usr/lib/libssl.so.3",
+      "local_path": "private/extract/libssl_so_3.elf",
+      "bytes": 458932,
+      "sha256": "396820d0ca3369ef9f16d7a883413ab8cdc01a58aeb318cbec01a7d45f37f597",
+      "reason": "TLS ABI"
+    },
+    {
+      "id": "dbus_daemon",
+      "kind": "executable",
+      "package": "dbus-1.12.20-3.armv7l.rpm",
+      "repo": "unified",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/packages/armv7l/dbus-1.12.20-3.armv7l.rpm",
+      "rpm_query": "dbus\t1.12.20\t3\tarmv7l\tdbus-1.12.20-3.src.rpm",
+      "archive_path": "./usr/bin/dbus-daemon",
+      "local_path": "private/extract/dbus_daemon.elf",
+      "bytes": 185960,
+      "sha256": "def2562baa909cb182a7954037eb30b0ce1d8216423e8146098b81cd8889ac58",
+      "reason": "IPC daemon"
+    },
+    {
+      "id": "libdbus_1_so_3",
+      "kind": "shared-library",
+      "package": "dbus-libs-1.12.20-3.armv7l.rpm",
+      "repo": "unified",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/packages/armv7l/dbus-libs-1.12.20-3.armv7l.rpm",
+      "rpm_query": "dbus-libs\t1.12.20\t3\tarmv7l\tdbus-1.12.20-3.src.rpm",
+      "archive_path": "./usr/lib/libdbus-1.so.3.19.13",
+      "local_path": "private/extract/libdbus_1_so_3.elf",
+      "bytes": 273840,
+      "sha256": "0f8d021f0038cd2cc4369e071bc8c2e55b16d7b989eeb332ee4aba4923fe12ff",
+      "reason": "IPC library"
+    },
+    {
+      "id": "libglib_2_0_so_0",
+      "kind": "shared-library",
+      "package": "libglib-2.80.5-0.armv7l.rpm",
+      "repo": "unified",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/packages/armv7l/libglib-2.80.5-0.armv7l.rpm",
+      "rpm_query": "libglib\t2.80.5\t0\tarmv7l\tglib2-2.80.5-0.src.rpm",
+      "archive_path": "./usr/lib/libglib-2.0.so.0.8000.5",
+      "local_path": "private/extract/libglib_2_0_so_0.elf",
+      "bytes": 1006876,
+      "sha256": "e5fd277fe8d8f281133dce1ac85b89413e15eff58f1c03b6ba3e99503db8c9ae",
+      "reason": "GLib platform ABI"
+    },
+    {
+      "id": "sqlite3",
+      "kind": "executable",
+      "package": "sqlite-3.51.0-3.10.armv7l.rpm",
+      "repo": "base",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/armv7l/sqlite-3.51.0-3.10.armv7l.rpm",
+      "rpm_query": "sqlite\t3.51.0\t3.10\tarmv7l\tsqlite-3.51.0-3.10.src.rpm",
+      "archive_path": "./usr/bin/sqlite3",
+      "local_path": "private/extract/sqlite3.elf",
+      "bytes": 1102272,
+      "sha256": "0101af72e6fe263cca03c1471870c098809f798500ca4ceef8518c3dc3190e15",
+      "reason": "database CLI"
+    },
+    {
+      "id": "libsqlite3_so_0",
+      "kind": "shared-library",
+      "package": "libsqlite-3.51.0-3.10.armv7l.rpm",
+      "repo": "base",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/armv7l/libsqlite-3.51.0-3.10.armv7l.rpm",
+      "rpm_query": "libsqlite\t3.51.0\t3.10\tarmv7l\tsqlite-3.51.0-3.10.src.rpm",
+      "archive_path": "./usr/lib/libsqlite3.so.3.51.0",
+      "local_path": "private/extract/libsqlite3_so_0.elf",
+      "bytes": 883768,
+      "sha256": "7e2fcd872102b670a7bb45034edb5156c4ad06b1228a68d0631a8fd43bebeb63",
+      "reason": "database library"
+    },
+    {
+      "id": "bash",
+      "kind": "executable",
+      "package": "bash-3.2.57-1.22.armv7l.rpm",
+      "repo": "base",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/armv7l/bash-3.2.57-1.22.armv7l.rpm",
+      "rpm_query": "bash\t3.2.57\t1.22\tarmv7l\tbash-3.2.57-1.22.src.rpm",
+      "archive_path": "./usr/bin/bash",
+      "local_path": "private/extract/bash.elf",
+      "bytes": 502220,
+      "sha256": "755f2c37306d9649e19b9679789912943e87ff446f255cf9cde24d069ea435d0",
+      "reason": "shell"
+    },
+    {
+      "id": "systemctl",
+      "kind": "executable",
+      "package": "systemd-244-0.armv7l.rpm",
+      "repo": "unified",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/packages/armv7l/systemd-244-0.armv7l.rpm",
+      "rpm_query": "systemd\t244\t0\tarmv7l\tsystemd-244-0.src.rpm",
+      "archive_path": "./usr/bin/systemctl",
+      "local_path": "private/extract/systemctl.elf",
+      "bytes": 182044,
+      "sha256": "65b58b5974323b8359ce58ae8d13f69af1dc68789fe8140a99307e78ceb504ec",
+      "reason": "service CLI"
+    },
+    {
+      "id": "rpm",
+      "kind": "executable",
+      "package": "rpm-4.14.1.1-6.12.armv7l.rpm",
+      "repo": "base",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/armv7l/rpm-4.14.1.1-6.12.armv7l.rpm",
+      "rpm_query": "rpm\t4.14.1.1\t6.12\tarmv7l\trpm-4.14.1.1-6.12.src.rpm",
+      "archive_path": "./bin/rpm",
+      "local_path": "private/extract/rpm.elf",
+      "bytes": 14484,
+      "sha256": "ccb12469fcd6e5f187f9f80787386b1484d50db1b6150e83b3e85d072d6326ff",
+      "reason": "package manager"
+    },
+    {
+      "id": "find",
+      "kind": "executable",
+      "package": "findutils-4.3.8-2.19.armv7l.rpm",
+      "repo": "base",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/armv7l/findutils-4.3.8-2.19.armv7l.rpm",
+      "rpm_query": "findutils\t4.3.8\t2.19\tarmv7l\tfindutils-4.3.8-2.19.src.rpm",
+      "archive_path": "./usr/bin/find",
+      "local_path": "private/extract/find.elf",
+      "bytes": 109328,
+      "sha256": "5b79a206217ea03f4d24bc946c3cf2d885f66ba74425440e601637f228776144",
+      "reason": "file utility"
+    },
+    {
+      "id": "libdlog_so_0",
+      "kind": "shared-library",
+      "package": "libdlog-9.0.2-1.armv7l.rpm",
+      "repo": "unified",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/packages/armv7l/libdlog-9.0.2-1.armv7l.rpm",
+      "rpm_query": "libdlog\t9.0.2\t1\tarmv7l\tdlog-9.0.2-1.src.rpm",
+      "archive_path": "./usr/lib/libdlog.so.0.0.0",
+      "local_path": "private/extract/libdlog_so_0.elf",
+      "bytes": 63800,
+      "sha256": "a92a46eabd22fa3b28221b59ecf1a0a7aec898e3b5d351b15f8f2e51f0bcdf16",
+      "reason": "Tizen logging ABI"
+    },
+    {
+      "id": "libpkgmgr_info_so_0",
+      "kind": "shared-library",
+      "package": "pkgmgr-info-0.37.5-1.armv7l.rpm",
+      "repo": "unified",
+      "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/packages/armv7l/pkgmgr-info-0.37.5-1.armv7l.rpm",
+      "rpm_query": "pkgmgr-info\t0.37.5\t1\tarmv7l\tpkgmgr-info-0.37.5-1.src.rpm",
+      "archive_path": "./usr/lib/libpkgmgr-info.so.0.37.5",
+      "local_path": "private/extract/libpkgmgr_info_so_0.elf",
+      "bytes": 517504,
+      "sha256": "62a3097ebc1748dd6e9ff869ebda63696374628b2c79b33ff34d42ef3283e842",
+      "reason": "Tizen C++ implementation exposure"
+    }
+  ],
+  "operations": [
+    {
+      "package": "libavcodec-8.0.1-1.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "glibc-2.40-16.4.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "libstdc++-14.2.0-4.25.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "libopenssl3-3.5.5-2.19.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "dbus-1.12.20-3.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "dbus-libs-1.12.20-3.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "libglib-2.80.5-0.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "sqlite-3.51.0-3.10.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "libsqlite-3.51.0-3.10.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "bash-3.2.57-1.22.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "systemd-244-0.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "rpm-4.14.1.1-6.12.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "findutils-4.3.8-2.19.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "libdlog-9.0.2-1.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    },
+    {
+      "package": "pkgmgr-info-0.37.5-1.armv7l.rpm",
+      "rpm2cpio_exit": 0,
+      "stderr": ""
+    }
+  ]
+}

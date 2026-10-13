@@ -1,0 +1,89 @@
+COMMAND readelf -p .comment <MAIN_ELF>
+EXIT 0
+readelf: Warning: Section '.comment' was not dumped because it does not exist
+
+COMMAND readelf -p .GCC.command.line <MAIN_ELF>
+EXIT 0
+readelf: Warning: Section '.GCC.command.line' was not dumped because it does not exist
+
+COMMAND readelf --debug-dump=info --dwarf-depth=1 --debug-dump=no-follow-links <MAIN_ELF>
+EXIT 0
+
+COMMAND readelf -n <MAIN_ELF>
+EXIT 0
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: ce0e06bc4022f6c37598fa898e8573ebcfed07b4
+
+Displaying notes found in: .note.ABI-tag
+  Owner                Data size 	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)
+    OS: Linux, ABI: 3.2.0
+
+COMMAND readelf -S <MAIN_ELF>
+EXIT 0
+There are 28 section headers, starting at offset 0x10cd60:
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .interp           PROGBITS        00000154 000154 000013 00   A  0   0  1
+  [ 2] .note.gnu.bu[...] NOTE            00000168 000168 000024 00   A  0   0  4
+  [ 3] .note.ABI-tag     NOTE            0000018c 00018c 000020 00   A  0   0  4
+  [ 4] .gnu.hash         GNU_HASH        000001ac 0001ac 000018 04   A  5   0  4
+  [ 5] .dynsym           DYNSYM          000001c4 0001c4 0008f0 10   A  6   3  4
+  [ 6] .dynstr           STRTAB          00000ab4 000ab4 00054f 00   A  0   0  1
+  [ 7] .gnu.version      VERSYM          00001004 001004 00011e 02   A  5   0  2
+  [ 8] .gnu.version_r    VERNEED         00001124 001124 0000e0 00   A  6   4  4
+  [ 9] .rel.dyn          REL             00001204 001204 004a50 08   A  5   0  4
+  [10] .rel.plt          REL             00005c54 005c54 000310 08  AI  5  23  4
+  [11] .init             PROGBITS        00005f64 005f64 00000c 00  AX  0   0  4
+  [12] .plt              PROGBITS        00005f70 005f70 0004fc 04  AX  0   0  4
+  [13] .text             PROGBITS        00006470 006470 0d92b8 00  AX  0   0  8
+  [14] .fini             PROGBITS        000df728 0df728 000008 00  AX  0   0  4
+  [15] .rodata           PROGBITS        000df730 0df730 0235c7 00   A  0   0  8
+  [16] .ARM.extab        PROGBITS        00102cf8 102cf8 000900 00   A  0   0  4
+  [17] .ARM.exidx        ARM_EXIDX       001035f8 1035f8 004718 00  AL 13   0  4
+  [18] .eh_frame         PROGBITS        00107d10 107d10 000004 00   A  0   0  4
+  [19] .init_array       INIT_ARRAY      00108000 108000 000004 04  WA  0   0  4
+  [20] .fini_array       FINI_ARRAY      00108004 108004 000004 04  WA  0   0  4
+  [21] .data.rel.ro      PROGBITS        00108008 108008 001ecc 00  WA  0   0  8
+  [22] .dynamic          DYNAMIC         00109ed4 109ed4 000110 08  WA  6   0  4
+  [23] .got              PROGBITS        0010a000 10a000 0001e8 04  WA  0   0  4
+  [24] .data             PROGBITS        0010a1e8 10a1e8 002a60 00  WA  0   0  8
+  [25] .bss              NOBITS          0010cc48 10cc48 00063c 00  WA  0   0  8
+  [26] .gnu_debuglink    PROGBITS        00000000 10cc48 000014 00      0   0  4
+  [27] .shstrtab         STRTAB          00000000 10cc5c 000103 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+DEBUG_MATCH exact filename+CRC32 sqlite3.debug
+DEBUG_SHA256 053f38f99c0d56dccb5547ab827b04d5eaa7544678d8c36ae413841604d6f412
+COMMAND readelf -n <MATCHED_DEBUG_ELF>
+EXIT 0
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: ce0e06bc4022f6c37598fa898e8573ebcfed07b4
+
+Displaying notes found in: .note.ABI-tag
+  Owner                Data size 	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)
+    OS: Linux, ABI: 3.2.0
+
+COMMAND readelf --debug-dump=info --dwarf-depth=1 --debug-dump=no-follow-links <MATCHED_DEBUG_ELF>
+EXIT 0
+PROJECTION only DW_AT_producer lines (CU filenames/other attributes remain private):
+    <1d>   DW_AT_producer    : (indirect string, offset: 0xb40): GNU AS 2.43
+    <2f>   DW_AT_producer    : (indirect string, offset: 0x121d): GNU C11 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv7-a+simd -g2 -gdwarf-4 -g -g -O2 -O2 -std=gnu11 -fgnu89-inline -fno-inline-functions -fmessage-length=0 -funwind-tables -fmerge-all-constants -frounding-math -fno-stack-protector -fno-common -fmath-errno -fPIE -ftls-model=initial-exec --param=ssp-buffer-size=4
+    <18f>   DW_AT_producer    : (indirect string, offset: 0x121d): GNU C11 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv7-a+simd -g2 -gdwarf-4 -g -g -O2 -O2 -std=gnu11 -fgnu89-inline -fno-inline-functions -fmessage-length=0 -funwind-tables -fmerge-all-constants -frounding-math -fno-stack-protector -fno-common -fmath-errno -fPIE -ftls-model=initial-exec --param=ssp-buffer-size=4
+    <1db>   DW_AT_producer    : (indirect string, offset: 0xb40): GNU AS 2.43
+    <1ed>   DW_AT_producer    : (indirect string, offset: 0x111d): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIC --param=ssp-buffer-size=4
+    <4556b>   DW_AT_producer    : (indirect string, offset: 0x111d): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIC --param=ssp-buffer-size=4
+    <1d1521>   DW_AT_producer    : (indirect string, offset: 0xb40): GNU AS 2.43

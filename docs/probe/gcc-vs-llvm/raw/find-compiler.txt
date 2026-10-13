@@ -1,0 +1,142 @@
+COMMAND readelf -p .comment <MAIN_ELF>
+EXIT 0
+readelf: Warning: Section '.comment' was not dumped because it does not exist
+
+COMMAND readelf -p .GCC.command.line <MAIN_ELF>
+EXIT 0
+readelf: Warning: Section '.GCC.command.line' was not dumped because it does not exist
+
+COMMAND readelf --debug-dump=info --dwarf-depth=1 --debug-dump=no-follow-links <MAIN_ELF>
+EXIT 0
+
+COMMAND readelf -n <MAIN_ELF>
+EXIT 0
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: c24f089048dd43f102efc5497ea3ee7218c03ebb
+
+Displaying notes found in: .note.ABI-tag
+  Owner                Data size 	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)
+    OS: Linux, ABI: 3.2.0
+
+COMMAND readelf -S <MAIN_ELF>
+EXIT 0
+There are 28 section headers, starting at offset 0x1a6b0:
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .interp           PROGBITS        00000154 000154 000013 00   A  0   0  1
+  [ 2] .note.gnu.bu[...] NOTE            00000168 000168 000024 00   A  0   0  4
+  [ 3] .note.ABI-tag     NOTE            0000018c 00018c 000020 00   A  0   0  4
+  [ 4] .gnu.hash         GNU_HASH        000001ac 0001ac 000040 04   A  5   0  4
+  [ 5] .dynsym           DYNSYM          000001ec 0001ec 000940 10   A  6   3  4
+  [ 6] .dynstr           STRTAB          00000b2c 000b2c 0005ab 00   A  0   0  1
+  [ 7] .gnu.version      VERSYM          000010d8 0010d8 000128 02   A  5   0  2
+  [ 8] .gnu.version_r    VERNEED         00001200 001200 0000e0 00   A  6   4  4
+  [ 9] .rel.dyn          REL             000012e0 0012e0 001198 08   A  5   0  4
+  [10] .rel.plt          REL             00002478 002478 000410 08  AI  5  23  4
+  [11] .init             PROGBITS        00002888 002888 00000c 00  AX  0   0  4
+  [12] .plt              PROGBITS        00002894 002894 000660 04  AX  0   0  4
+  [13] .text             PROGBITS        00002ef8 002ef8 0114b0 00  AX  0   0  8
+  [14] .fini             PROGBITS        000143a8 0143a8 000008 00  AX  0   0  4
+  [15] .rodata           PROGBITS        000143b0 0143b0 003af0 00   A  0   0  8
+  [16] .ARM.extab        PROGBITS        00017ea0 017ea0 0001bc 00   A  0   0  4
+  [17] .ARM.exidx        ARM_EXIDX       0001805c 01805c 0008e8 00  AL 13   0  4
+  [18] .eh_frame         PROGBITS        00018944 018944 000004 00   A  0   0  4
+  [19] .init_array       INIT_ARRAY      00019000 019000 000004 04  WA  0   0  4
+  [20] .fini_array       FINI_ARRAY      00019004 019004 000004 04  WA  0   0  4
+  [21] .data.rel.ro      PROGBITS        00019008 019008 000d30 00  WA  0   0  8
+  [22] .dynamic          DYNAMIC         00019d38 019d38 000108 08  WA  6   0  4
+  [23] .got              PROGBITS        0001a000 01a000 0002f0 04  WA  0   0  4
+  [24] .data             PROGBITS        0001a2f0 01a2f0 0002ac 00  WA  0   0  8
+  [25] .bss              NOBITS          0001a5a0 01a59c 000d28 00  WA  0   0  8
+  [26] .gnu_debuglink    PROGBITS        00000000 01a59c 000010 00      0   0  4
+  [27] .shstrtab         STRTAB          00000000 01a5ac 000103 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+DEBUG_MATCH exact filename+CRC32 find.debug
+DEBUG_SHA256 c4a3b8b74635830b3f7aeaa2643620225a43c1cf226b6bc18bf845e15a5cdca9
+COMMAND readelf -n <MATCHED_DEBUG_ELF>
+EXIT 0
+
+Displaying notes found in: .note.gnu.build-id
+  Owner                Data size 	Description
+  GNU                  0x00000014	NT_GNU_BUILD_ID (unique build ID bitstring)
+    Build ID: c24f089048dd43f102efc5497ea3ee7218c03ebb
+
+Displaying notes found in: .note.ABI-tag
+  Owner                Data size 	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)
+    OS: Linux, ABI: 3.2.0
+
+COMMAND readelf --debug-dump=info --dwarf-depth=1 --debug-dump=no-follow-links <MATCHED_DEBUG_ELF>
+EXIT 0
+PROJECTION only DW_AT_producer lines (CU filenames/other attributes remain private):
+    <1d>   DW_AT_producer    : (indirect string, offset: 0x118): GNU AS 2.43
+    <2f>   DW_AT_producer    : (indirect string, offset: 0x1c3): GNU C11 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv7-a+simd -g2 -gdwarf-4 -g -g -O2 -O2 -std=gnu11 -fgnu89-inline -fno-inline-functions -fmessage-length=0 -funwind-tables -fmerge-all-constants -frounding-math -fno-stack-protector -fno-common -fmath-errno -fPIE -ftls-model=initial-exec --param=ssp-buffer-size=4
+    <18f>   DW_AT_producer    : (indirect string, offset: 0x1c3): GNU C11 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mtls-dialect=gnu -marm -march=armv7-a+simd -g2 -gdwarf-4 -g -g -O2 -O2 -std=gnu11 -fgnu89-inline -fno-inline-functions -fmessage-length=0 -funwind-tables -fmerge-all-constants -frounding-math -fno-stack-protector -fno-common -fmath-errno -fPIE -ftls-model=initial-exec --param=ssp-buffer-size=4
+    <1db>   DW_AT_producer    : (indirect string, offset: 0x118): GNU AS 2.43
+    <1ed>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2b56>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <3077>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <95ce>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <db95>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <10af8>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <11702>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1a284>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1a2c1>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1a308>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1b93a>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1bae3>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1bd67>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1cf0a>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1d507>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1d944>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1dc35>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1e138>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <1fcc9>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <214e7>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2168a>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <217e7>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <218e5>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <21a14>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <221a4>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <223dd>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <22828>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <228b2>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <22baf>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2305b>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <25e5a>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2602e>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2769c>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2882d>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <28a9b>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <291bf>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2992e>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2a05c>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2a293>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2a445>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2b97c>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2bb80>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2bd34>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2c2d5>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2c47a>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2c8cc>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2cb32>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2cbed>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2d105>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2d21c>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2dc4e>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2e4d6>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2e891>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2ec59>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2ed37>   DW_AT_producer    : (indirect string, offset: 0x339): GNU C17 14.2.0 -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -mtls-dialect=gnu -march=armv7-a+simd -g2 -gdwarf-4 -g -O2 -fno-inline-functions -fexceptions -fstack-protector-strong -fmessage-length=0 -fPIE -fcommon --param=ssp-buffer-size=4
+    <2ee76>   DW_AT_producer    : (indirect string, offset: 0x118): GNU AS 2.43
