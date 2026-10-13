@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<stdin>", line 19, in <module>
+AssertionError: Candidate found; inspect capability before deciding.
+
+exit=1
+Initial helper stopped on a broad selector match; no compiler/obfuscation execution was attempted.

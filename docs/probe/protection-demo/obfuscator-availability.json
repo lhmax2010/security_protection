@@ -1,0 +1,26 @@
+{
+  "command": [
+    "/home/linhao/Toolchain/development/security_optimization_rea/.local-tools/sysroot/usr/bin/clang-18",
+    "-cc1",
+    "-mllvm",
+    "--help-hidden"
+  ],
+  "exit": 0,
+  "option_output_sha256": "d711bb162b825b05ffff65309bcd30df768ed4bfe557cae78b722c5f3527fb3d",
+  "option_lines": 2657,
+  "known_obfuscation_selectors": [],
+  "common_native_obfuscator_commands": {
+    "tigress": null,
+    "ollvm": null,
+    "clang-ollvm": null,
+    "clang-obfuscator": null,
+    "obfuscator-llvm": null,
+    "cobfuscator": null
+  },
+  "PATH_candidate_executables": [],
+  "review_of_initial_matches": "split-dwarf-cross-cu-references is DWO debugging; split-spill-mode and split-threshold-for-reg-with-hint concern register allocation, not obfuscation.",
+  "ready_obfuscator_found": false,
+  "decision": "No ready native C/ARM obfuscator found in bounded checks; code obfuscation is a next step, not performed this round.",
+  "scope": "PATH executable names, installed Clang18 LLVM option inventory, and earlier .local-tools file-name inventory; not a proof of absence from every machine directory.",
+  "no_download_or_obfuscator_build_or_handmade_obfuscation": true
+}

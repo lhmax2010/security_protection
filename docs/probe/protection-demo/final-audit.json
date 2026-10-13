@@ -1,0 +1,21 @@
+{
+  "allowed_synthetic_ELF": [
+    "docs/probe/protection-demo/bin/target_c_llvm_armv7l_protected"
+  ],
+  "third_party_binaries": 0,
+  "text_files_UTF8": true,
+  "manifest_hashes_unchanged": true,
+  "runtime_cases_equal": 11,
+  "obfuscation_performed": false,
+  "local_runtime_gitignored": true,
+  "errors_preserved": [
+    "diagnostic-errors.txt",
+    "obfuscator-initial-check-error.txt"
+  ],
+  "limitations": [
+    "Algorithm pseudocode unchanged except name",
+    "Marker reconstructed in Ghidra main",
+    "No blind reverse-engineering timing",
+    "Bounded obfuscator availability check"
+  ]
+}

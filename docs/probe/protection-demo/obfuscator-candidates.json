@@ -1,0 +1,16 @@
+{
+  "matched_options": [
+    "  --split-dwarf-cross-cu-references                                          - Enable cross-cu references in DWO files",
+    "  --split-spill-mode=<value>                                                 - Spill mode for splitting live ranges",
+    "  --split-threshold-for-reg-with-hint=<uint>                                 - The threshold for splitting a virtual register with a hint, in percentate"
+  ],
+  "commands": {
+    "tigress": null,
+    "ollvm": null,
+    "clang-ollvm": null,
+    "clang-obfuscator": null,
+    "obfuscator-llvm": null,
+    "cobfuscator": null
+  },
+  "candidate_executables": []
+}
