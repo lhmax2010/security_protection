@@ -1,0 +1,16 @@
+Source: board-side existing RPM Lua5.1 ELF metadata reader; not checksec/readelf. Prior independently validated decoder reused.
+{
+  "RELRO": "None",
+  "NX": "Enabled",
+  "PIE": "N/A(DSO)",
+  "canary": "Detected(import)",
+  "FORTIFY": "Detected(import)",
+  "stripped": "Yes(no .symtab)",
+  "RPATH": "Absent",
+  "RUNPATH": "Absent",
+  "dynamic_export_count_including_ABS": "146",
+  "dynamic_export_non_ABS_count": "145",
+  "dynamic_export_function_count": "144"
+}
+Canary/FORTIFY: imported symbols are presence evidence only, not whole-library coverage. PIE is N/A for a DSO.
+Evidence: board-target-elf-metadata.txt
