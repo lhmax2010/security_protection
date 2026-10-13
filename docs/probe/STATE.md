@@ -244,3 +244,12 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 ## 子步骤提交日志
 
 - gcc-vs-llvm 收尾检查与步骤5闭合：六个必需产物齐全且非空；提交既有 compare.md、audit.json、scripts/audit.py 及 STATE 更新，仅公开文本，使用普通 git push 同步。
+
+## protection-demo 进度与结论
+
+- 计划：1源码XOR编码/static → 2 ARM保护构建/完整strip/QEMU等价 → 3 REA+Ghidra真实采集 → 4只读ELF画像/对比/报告节选 → 5已有混淆器能力检查。
+- 开场 poc/probe 的 pull --ff-only 成功且工作区干净，已 source env.sh；Clang为 .local-tools/sysroot/usr/bin/clang-18（18.1.3），沿用 build-one.sh 的 arm-linux-gnueabihf + -march=armv7-a/-mfpu=vfpv3-d16。只复用裸版及既有REA，不重编/重分析基线。
+- 边界：不连板、不走GBS、不下载；本轮公开目录 protection-demo，仅自建玩具保护ELF允许提交。原始REA响应与decoded投影分开保留。XOR隐藏静态明文不等于密码学保护，strip/static消除名字不等于算法不可读。
+- 未决：保护flag接受情况、QEMU等价、REA定位/明文/算法、实际ELF画像待验证。常见混淆器命令未发现，仅已有普通Clang；后续检查既有能力，不现编或手搓混淆。
+
+- [完成步骤1] protection-demo/src/target_protected.c 复用原算法与校验，辅助函数static、marker按0xa7编码并在局部缓冲区解码；volatile读防优化折回静态明文，运行等价待步骤2实测。
