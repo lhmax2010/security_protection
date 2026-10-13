@@ -20,7 +20,7 @@ for variant in ['baseline','selective','full']:
         actual.append({'function':f['name'],'report':f['report_file'],'any_pass_changed':changed,
             'insts':f['insts'],'passes':[{k:p[k] for k in ['id','status','changed','skip_reason','insts_before','insts_after'] if k in p} for p in f['passes']]})
     scope[variant]={'C_TUs_completed':sum(e['exit']==0 for e in events),'C_TU_failures':sum(e['exit']!=0 for e in events),
-        'optimized_definition_count':sum(len(e.get('post_O2_definitions',[])) for e in events),
+        'optimized_definition_count':sum(len(e.get('post_O2_definitions',e.get('post_O2_definitions_annotated',[]))) for e in events),
         'annotated_definition_count':sum(len(e.get('post_O2_definitions_annotated',[])) for e in events),
         'reported_functions':len(reports),'functions_any_pass_changed':sum(a['any_pass_changed'] for a in actual),
         'per_pass':perpass,'skip_reasons':skip,'functions':actual,

@@ -364,7 +364,7 @@
   "full": {
     "C_TUs_completed": 89,
     "C_TU_failures": 0,
-    "optimized_definition_count": 0,
+    "optimized_definition_count": 584,
     "annotated_definition_count": 584,
     "reported_functions": 584,
     "functions_any_pass_changed": 493,

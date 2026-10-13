@@ -1,0 +1,22 @@
+RUN_FINISHED warmup 0 baseline 0
+RUN_FINISHED warmup 0 selective 0
+RUN_FINISHED warmup 0 full 0
+RUN_FINISHED measured 1 baseline 0
+RUN_FINISHED measured 1 selective 0
+RUN_FINISHED measured 1 full 0
+RUN_FINISHED measured 2 selective 0
+RUN_FINISHED measured 2 full 0
+RUN_FINISHED measured 2 baseline 0
+RUN_FINISHED measured 3 full 0
+RUN_FINISHED measured 3 baseline 0
+RUN_FINISHED measured 3 selective 0
+RUN_FINISHED measured 4 baseline 0
+RUN_FINISHED measured 4 selective 0
+RUN_FINISHED measured 4 full 0
+RUN_FINISHED measured 5 selective 0
+RUN_FINISHED measured 5 full 0
+RUN_FINISHED measured 5 baseline 0
+RUN_FINISHED measured 6 full 0
+RUN_FINISHED measured 6 baseline 0
+RUN_FINISHED measured 6 selective 0
+BOARD_PERF_MEASUREMENT_FINISHED

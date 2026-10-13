@@ -1,0 +1,152 @@
+[
+  {
+    "command": "sdb -s 192.168.108.26:26101 push docs/probe/protection-demo/cost/scripts/run-board.sh /opt/protection-cost-20261013-c5113b25/run-board.sh",
+    "exit": 0,
+    "stdout": "WARNING: Your data are to be sent over an unencrypted connection and could be read by others.\n\npushed                   run-board.sh\t  0%\t      0 B\t    0KB/s\npushed                   run-board.sh\t100%\t   1441 B\t    0KB/s\n1 file(s) pushed. 0 file(s) skipped.\ndocs/probe/protection-demo/cost/scripts/run-board.sh   7KB/s (1441 bytes in 0.178s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 shell 'sh /opt/protection-cost-20261013-c5113b25/run-board.sh /opt/protection-cost-20261013-c5113b25'",
+    "exit": 0,
+    "stdout": "RUN_FINISHED warmup 0 baseline 0\nRUN_FINISHED warmup 0 selective 0\nRUN_FINISHED warmup 0 full 0\nRUN_FINISHED measured 1 baseline 0\nRUN_FINISHED measured 1 selective 0\nRUN_FINISHED measured 1 full 0\nRUN_FINISHED measured 2 selective 0\nRUN_FINISHED measured 2 full 0\nRUN_FINISHED measured 2 baseline 0\nRUN_FINISHED measured 3 full 0\nRUN_FINISHED measured 3 baseline 0\nRUN_FINISHED measured 3 selective 0\nRUN_FINISHED measured 4 baseline 0\nRUN_FINISHED measured 4 selective 0\nRUN_FINISHED measured 4 full 0\nRUN_FINISHED measured 5 selective 0\nRUN_FINISHED measured 5 full 0\nRUN_FINISHED measured 5 baseline 0\nRUN_FINISHED measured 6 full 0\nRUN_FINISHED measured 6 baseline 0\nRUN_FINISHED measured 6 selective 0\nBOARD_PERF_MEASUREMENT_FINISHED\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/timings.tsv docs/probe/protection-demo/cost/raw/timings.tsv",
+    "exit": 0,
+    "stdout": "\npulled                    timings.tsv\t  0%\t      0 B\t    0KB/s\npulled                    timings.tsv\t100%\t   1364 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/timings.tsv   9KB/s (1364 bytes in 0.134s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-context.txt docs/probe/protection-demo/cost/raw/perf-context.txt",
+    "exit": 0,
+    "stdout": "\npulled               perf-context.txt\t  0%\t      0 B\t    0KB/s\npulled               perf-context.txt\t100%\t   1254 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-context.txt   9KB/s (1254 bytes in 0.134s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-warmup-0-baseline.txt docs/probe/protection-demo/cost/raw/perf-warmup-0-baseline.txt",
+    "exit": 0,
+    "stdout": "\npulled     perf-warmup-0-baseline.txt\t  0%\t      0 B\t    0KB/s\npulled     perf-warmup-0-baseline.txt\t100%\t    936 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-warmup-0-baseline.txt   6KB/s (936 bytes in 0.133s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-warmup-0-selective.txt docs/probe/protection-demo/cost/raw/perf-warmup-0-selective.txt",
+    "exit": 0,
+    "stdout": "\npulled    perf-warmup-0-selective.txt\t  0%\t      0 B\t    0KB/s\npulled    perf-warmup-0-selective.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-warmup-0-selective.txt   6KB/s (935 bytes in 0.148s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-warmup-0-full.txt docs/probe/protection-demo/cost/raw/perf-warmup-0-full.txt",
+    "exit": 0,
+    "stdout": "\npulled         perf-warmup-0-full.txt\t  0%\t      0 B\t    0KB/s\npulled         perf-warmup-0-full.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-warmup-0-full.txt   6KB/s (935 bytes in 0.148s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-1-baseline.txt docs/probe/protection-demo/cost/raw/perf-measured-1-baseline.txt",
+    "exit": 0,
+    "stdout": "\npulled   perf-measured-1-baseline.txt\t  0%\t      0 B\t    0KB/s\npulled   perf-measured-1-baseline.txt\t100%\t    936 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-1-baseline.txt   6KB/s (936 bytes in 0.142s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-1-selective.txt docs/probe/protection-demo/cost/raw/perf-measured-1-selective.txt",
+    "exit": 0,
+    "stdout": "\npulled  perf-measured-1-selective.txt\t  0%\t      0 B\t    0KB/s\npulled  perf-measured-1-selective.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-1-selective.txt   6KB/s (935 bytes in 0.132s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-1-full.txt docs/probe/protection-demo/cost/raw/perf-measured-1-full.txt",
+    "exit": 0,
+    "stdout": "\npulled       perf-measured-1-full.txt\t  0%\t      0 B\t    0KB/s\npulled       perf-measured-1-full.txt\t100%\t    936 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-1-full.txt   6KB/s (936 bytes in 0.134s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-2-selective.txt docs/probe/protection-demo/cost/raw/perf-measured-2-selective.txt",
+    "exit": 0,
+    "stdout": "\npulled  perf-measured-2-selective.txt\t  0%\t      0 B\t    0KB/s\npulled  perf-measured-2-selective.txt\t100%\t    936 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-2-selective.txt   6KB/s (936 bytes in 0.134s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-2-full.txt docs/probe/protection-demo/cost/raw/perf-measured-2-full.txt",
+    "exit": 0,
+    "stdout": "\npulled       perf-measured-2-full.txt\t  0%\t      0 B\t    0KB/s\npulled       perf-measured-2-full.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-2-full.txt   6KB/s (935 bytes in 0.133s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-2-baseline.txt docs/probe/protection-demo/cost/raw/perf-measured-2-baseline.txt",
+    "exit": 0,
+    "stdout": "\npulled   perf-measured-2-baseline.txt\t  0%\t      0 B\t    0KB/s\npulled   perf-measured-2-baseline.txt\t100%\t    936 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-2-baseline.txt   6KB/s (936 bytes in 0.133s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-3-full.txt docs/probe/protection-demo/cost/raw/perf-measured-3-full.txt",
+    "exit": 0,
+    "stdout": "\npulled       perf-measured-3-full.txt\t  0%\t      0 B\t    0KB/s\npulled       perf-measured-3-full.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-3-full.txt   6KB/s (935 bytes in 0.134s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-3-baseline.txt docs/probe/protection-demo/cost/raw/perf-measured-3-baseline.txt",
+    "exit": 0,
+    "stdout": "\npulled   perf-measured-3-baseline.txt\t  0%\t      0 B\t    0KB/s\npulled   perf-measured-3-baseline.txt\t100%\t    936 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-3-baseline.txt   6KB/s (936 bytes in 0.133s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-3-selective.txt docs/probe/protection-demo/cost/raw/perf-measured-3-selective.txt",
+    "exit": 0,
+    "stdout": "\npulled  perf-measured-3-selective.txt\t  0%\t      0 B\t    0KB/s\npulled  perf-measured-3-selective.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-3-selective.txt   5KB/s (935 bytes in 0.177s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-4-baseline.txt docs/probe/protection-demo/cost/raw/perf-measured-4-baseline.txt",
+    "exit": 0,
+    "stdout": "\npulled   perf-measured-4-baseline.txt\t  0%\t      0 B\t    0KB/s\npulled   perf-measured-4-baseline.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-4-baseline.txt   6KB/s (935 bytes in 0.147s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-4-selective.txt docs/probe/protection-demo/cost/raw/perf-measured-4-selective.txt",
+    "exit": 0,
+    "stdout": "\npulled  perf-measured-4-selective.txt\t  0%\t      0 B\t    0KB/s\npulled  perf-measured-4-selective.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-4-selective.txt   6KB/s (935 bytes in 0.134s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-4-full.txt docs/probe/protection-demo/cost/raw/perf-measured-4-full.txt",
+    "exit": 0,
+    "stdout": "\npulled       perf-measured-4-full.txt\t  0%\t      0 B\t    0KB/s\npulled       perf-measured-4-full.txt\t100%\t    936 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-4-full.txt   6KB/s (936 bytes in 0.135s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-5-selective.txt docs/probe/protection-demo/cost/raw/perf-measured-5-selective.txt",
+    "exit": 0,
+    "stdout": "\npulled  perf-measured-5-selective.txt\t  0%\t      0 B\t    0KB/s\npulled  perf-measured-5-selective.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-5-selective.txt   6KB/s (935 bytes in 0.134s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-5-full.txt docs/probe/protection-demo/cost/raw/perf-measured-5-full.txt",
+    "exit": 0,
+    "stdout": "\npulled       perf-measured-5-full.txt\t  0%\t      0 B\t    0KB/s\npulled       perf-measured-5-full.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-5-full.txt   6KB/s (935 bytes in 0.134s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-5-baseline.txt docs/probe/protection-demo/cost/raw/perf-measured-5-baseline.txt",
+    "exit": 0,
+    "stdout": "\npulled   perf-measured-5-baseline.txt\t  0%\t      0 B\t    0KB/s\npulled   perf-measured-5-baseline.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-5-baseline.txt   6KB/s (935 bytes in 0.133s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-6-full.txt docs/probe/protection-demo/cost/raw/perf-measured-6-full.txt",
+    "exit": 0,
+    "stdout": "\npulled       perf-measured-6-full.txt\t  0%\t      0 B\t    0KB/s\npulled       perf-measured-6-full.txt\t100%\t    935 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-6-full.txt   6KB/s (935 bytes in 0.132s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-6-baseline.txt docs/probe/protection-demo/cost/raw/perf-measured-6-baseline.txt",
+    "exit": 0,
+    "stdout": "\npulled   perf-measured-6-baseline.txt\t  0%\t      0 B\t    0KB/s\npulled   perf-measured-6-baseline.txt\t100%\t    936 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-6-baseline.txt   6KB/s (936 bytes in 0.133s)\n",
+    "stderr": ""
+  },
+  {
+    "command": "sdb -s 192.168.108.26:26101 pull /opt/protection-cost-20261013-c5113b25/perf-measured-6-selective.txt docs/probe/protection-demo/cost/raw/perf-measured-6-selective.txt",
+    "exit": 0,
+    "stdout": "\npulled  perf-measured-6-selective.txt\t  0%\t      0 B\t    0KB/s\npulled  perf-measured-6-selective.txt\t100%\t    936 B\t    0KB/s\n1 file(s) pulled. 0 file(s) skipped.\n/opt/protection-cost-20261013-c5113b25/perf-measured-6-selective.txt   6KB/s (936 bytes in 0.136s)\n",
+    "stderr": ""
+  }
+]

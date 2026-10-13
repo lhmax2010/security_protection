@@ -1,0 +1,11 @@
+Native board; 600 frames of 640x360 MPEG2; warmup1, measured6 per variant, rotating order; CPU2 affinity, single codec/filter thread, governor unchanged.
+Memory: median of per-process peak RSS, not total machine/free memory. Time: on-board wall, excludes SDB transport.
+Variant       wall median(s) change      min..max(s)       CV%       peak RSS median(KiB) change      max
+baseline         0.832662    +0.00% 0.827201..0.841183    0.69           6322    +0.00%     6420
+selective        0.853490    +2.50% 0.847535..0.862955    0.75           6420    +1.55%     6420
+full             3.604341  +332.87% 3.579928..3.616530    0.39           5398   -14.62%     5656
+Maximum observed peak RSS across measured runs and change from baseline:
+baseline: 6420 KiB (+0.00%)
+selective: 6420 KiB (+0.00%)
+full: 5656 KiB (-11.90%)
+Raw runs and benchmark outputs preserved; no single-run conclusions.

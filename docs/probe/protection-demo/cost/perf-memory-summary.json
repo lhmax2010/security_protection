@@ -1,0 +1,56 @@
+{
+  "method": "Native open board. Same saved MPEG2 workload verified 600 frame hashes identical across three. One warmup per variant, 6 rotating interleaved rounds. Single codec/filter threads; taskset CPU2 when present; governor unchanged. Wall from on-board date around process (SDB latency excluded); FFmpeg benchmark utime/rtime and getrusage maxrss. Table peak memory is median of per-run peak RSS (KiB), also report max/range; includes whole static ffmpeg, not just libavcodec. No process/VFS cache flush.",
+  "variants": {
+    "baseline": {
+      "measured": true,
+      "valid_runs": 6,
+      "warmups": 1,
+      "wall_median_seconds": 0.8326617495,
+      "wall_min_seconds": 0.827201092,
+      "wall_max_seconds": 0.841183092,
+      "wall_CV_percent": 0.6885576861114199,
+      "utime_median_seconds": 0.706,
+      "ffmpeg_rtime_median_seconds": 0.814,
+      "peak_rss_median_KiB": 6322.0,
+      "peak_rss_max_KiB": 6420,
+      "peak_rss_min_KiB": 6008,
+      "wall_median_change_percent": 0.0,
+      "peak_rss_median_change_percent": 0.0,
+      "peak_rss_max_change_percent": 0.0
+    },
+    "selective": {
+      "measured": true,
+      "valid_runs": 6,
+      "warmups": 1,
+      "wall_median_seconds": 0.853490453,
+      "wall_min_seconds": 0.847535481,
+      "wall_max_seconds": 0.862954852,
+      "wall_CV_percent": 0.7476512777261758,
+      "utime_median_seconds": 0.7295,
+      "ffmpeg_rtime_median_seconds": 0.835,
+      "peak_rss_median_KiB": 6420.0,
+      "peak_rss_max_KiB": 6420,
+      "peak_rss_min_KiB": 6292,
+      "wall_median_change_percent": 2.5014603483956455,
+      "peak_rss_median_change_percent": 1.5501423600126518,
+      "peak_rss_max_change_percent": 0.0
+    },
+    "full": {
+      "measured": true,
+      "valid_runs": 6,
+      "warmups": 1,
+      "wall_median_seconds": 3.6043410629999997,
+      "wall_min_seconds": 3.579927738,
+      "wall_max_seconds": 3.616529813,
+      "wall_CV_percent": 0.3916613963335007,
+      "utime_median_seconds": 3.4234999999999998,
+      "ffmpeg_rtime_median_seconds": 3.5,
+      "peak_rss_median_KiB": 5398.0,
+      "peak_rss_max_KiB": 5656,
+      "peak_rss_min_KiB": 5376,
+      "wall_median_change_percent": 332.8697775734683,
+      "peak_rss_median_change_percent": -14.6156279658336,
+      "peak_rss_max_change_percent": -11.900311526479745
+    }
+  }
+}

@@ -1,0 +1,17 @@
+Input #0, mpegvideo, from 'workload.m2v':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: mpeg2video (Main), yuv420p(tv, progressive), 640x360 [SAR 1:1 DAR 16:9], 25 fps, 30 tbr, 1200k tbn
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 1130496 vbv_delay: N/A
+Stream mapping:
+  Stream #0:0 -> #0:0 (mpeg2video (native) -> wrapped_avframe (native))
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf62.3.100
+  Stream #0:0: Video: wrapped_avframe, yuv420p(tv, progressive), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn
+    Metadata:
+      encoder         : Lavc62.11.100 wrapped_avframe
+[out#0/null @ 0x5f9e30] video:169KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+frame=  600 fps=0.0 q=-0.0 Lsize=N/A time=00:00:20.00 bitrate=N/A speed=24.1x elapsed=0:00:00.83    
+bench: utime=0.731s stime=0.098s rtime=0.831s
+bench: maxrss=6420KiB
