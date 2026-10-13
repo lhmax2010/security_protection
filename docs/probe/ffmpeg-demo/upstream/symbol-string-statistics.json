@@ -1,0 +1,12 @@
+{
+  "variant": "upstream",
+  "procedure_evidence_id": "ev_fbb87934686fc5915aea2d259752eb61214104d5276fa9c50f0bd043ee1f7815",
+  "all_procedures_including_imports_and_thunks": 852,
+  "local_non_thunk_procedures": 389,
+  "local_non_FUN_labels": 389,
+  "non_FUN_label_ratio_percent": 100.0,
+  "ratio_limit": "Provider label proxy, not ground-truth original name recovery rate; synthetic entry/runtime labels can be included. Auto-analysis detects fewer boundaries after stripping.",
+  "string_evidence_id": "ev_1324144993dd2280d2d4bd2fa9fbd099cf342475bff17ce6087c7e2ce1ee771e",
+  "defined_strings": 2412,
+  "selected_string_samples": 7
+}

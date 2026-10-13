@@ -1,0 +1,72 @@
+{
+  "evidence_id": "ev_a720eac00025e13dfedd20f5c7bdfbbfb2b98029470b49ed1c0d6ff48cec9f08",
+  "subject": {
+    "name": "libavcodec-stripped.so",
+    "digest": {
+      "sha256": "2bed47a34655adf02394acfe06e04c38d6e88b111a24141f4780454d4b209d3c"
+    },
+    "format": "elf",
+    "architecture": "arm",
+    "local_path": "<DEMO_ROOT>/upstream-artifacts/libavcodec-stripped.so"
+  },
+  "provider": {
+    "id": "ghidra",
+    "name": "Ghidra",
+    "version": "12.1.4"
+  },
+  "analysis_profile": {
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "elf",
+      "architecture": "arm",
+      "available_architectures": [
+        "arm"
+      ],
+      "import_mode": "ephemeral-source-immutable",
+      "annotation_policy": "atomic-function-entry-metadata-v1",
+      "load_image_observations": "source-mappings-entry-context-v2",
+      "function_body_evidence": "complete-inclusive-ranges-v1",
+      "function_references": "complete-body-and-entry-reference-manager-v2",
+      "string_inventory_evidence": "defined-data-coverage-v1",
+      "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+      "instruction_flow_evidence": "decoded-return-pcode-v1",
+      "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+      "no_return_repair": "returning-imports-decoded-return-v2",
+      "process_launch": "inspected-jvm-launch-support-v1",
+      "jump_table_evidence": "typed-case-default-blocks-v1",
+      "decompiler_jump_loads": true,
+      "loader": "auto-from-header",
+      "language_id": "auto-from-header",
+      "compiler_spec_id": "auto-default",
+      "analyzer_preset": "ghidra-default"
+    },
+    "digest": "e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "procedure_assembly",
+  "parameters": {
+    "procedure": "av_packet_rescale_ts"
+  },
+  "raw_result": {
+    "value": "0x26f28: sub sp, #0x8\n0x26f2a: push {r4,r5,r6,r7,lr}\n0x26f2c: sub sp, #0x14\n0x26f2e: ldr r5, [r0,#0x8]\n0x26f30: add r7, sp,#0x8\n0x26f32: str r3, [sp,#0x2c]\n0x26f34: mov r4, r0\n0x26f36: ldr r3, [r0,#0xc]\n0x26f38: stm r7, {r1,r2}\n0x26f3c: cmp.w r3, #0x80000000\n0x26f40: it eq\n0x26f42: cmp.eq r5, #0x0\n0x26f44: beq 0x00026f60\n0x26f46: add r2, sp,#0x2c\n0x26f48: ldm.w r2, {r0,r1}\n0x26f4c: stm sp, {r0,r1}\n0x26f50: mov r1, r3\n0x26f52: mov r0, r5\n0x26f54: ldm.w r7, {r2,r3}\n0x26f58: blx 0x00018694\n0x26f5c: strd r0, r1, [r4,#0x8]\n0x26f60: ldrd r2, r3, [r4,#0x10]\n0x26f64: cmp.w r3, #0x80000000\n0x26f68: it eq\n0x26f6a: cmp.eq r2, #0x0\n0x26f6c: beq 0x00026f86\n0x26f6e: add r1, sp,#0x2c\n0x26f70: ldmia r1, {r0,r1}\n0x26f72: stm sp, {r0,r1}\n0x26f76: mov r0, r2\n0x26f78: mov r1, r3\n0x26f7a: ldm.w r7, {r2,r3}\n0x26f7e: blx 0x00018694\n0x26f82: strd r0, r1, [r4,#0x10]\n0x26f86: ldrd r6, r5, [r4,#0x30]\n0x26f8a: cmp r6, #0x1\n0x26f8c: sbcs r3, r5, #0x0\n0x26f90: blt 0x00026faa\n0x26f92: add r1, sp,#0x2c\n0x26f94: ldm.w r7, {r2,r3}\n0x26f98: ldmia r1, {r0,r1}\n0x26f9a: stm sp, {r0,r1}\n0x26f9e: mov r0, r6\n0x26fa0: mov r1, r5\n0x26fa2: blx 0x00018694\n0x26fa6: strd r0, r1, [r4,#0x30]\n0x26faa: add sp, #0x14\n0x26fac: pop.w {r4,r5,r6,r7,lr}\n0x26fb0: add sp, #0x8\n0x26fb2: bx lr",
+    "limitations": []
+  },
+  "normalized_result": "0x26f28: sub sp, #0x8\n0x26f2a: push {r4,r5,r6,r7,lr}\n0x26f2c: sub sp, #0x14\n0x26f2e: ldr r5, [r0,#0x8]\n0x26f30: add r7, sp,#0x8\n0x26f32: str r3, [sp,#0x2c]\n0x26f34: mov r4, r0\n0x26f36: ldr r3, [r0,#0xc]\n0x26f38: stm r7, {r1,r2}\n0x26f3c: cmp.w r3, #0x80000000\n0x26f40: it eq\n0x26f42: cmp.eq r5, #0x0\n0x26f44: beq 0x00026f60\n0x26f46: add r2, sp,#0x2c\n0x26f48: ldm.w r2, {r0,r1}\n0x26f4c: stm sp, {r0,r1}\n0x26f50: mov r1, r3\n0x26f52: mov r0, r5\n0x26f54: ldm.w r7, {r2,r3}\n0x26f58: blx 0x00018694\n0x26f5c: strd r0, r1, [r4,#0x8]\n0x26f60: ldrd r2, r3, [r4,#0x10]\n0x26f64: cmp.w r3, #0x80000000\n0x26f68: it eq\n0x26f6a: cmp.eq r2, #0x0\n0x26f6c: beq 0x00026f86\n0x26f6e: add r1, sp,#0x2c\n0x26f70: ldmia r1, {r0,r1}\n0x26f72: stm sp, {r0,r1}\n0x26f76: mov r0, r2\n0x26f78: mov r1, r3\n0x26f7a: ldm.w r7, {r2,r3}\n0x26f7e: blx 0x00018694\n0x26f82: strd r0, r1, [r4,#0x10]\n0x26f86: ldrd r6, r5, [r4,#0x30]\n0x26f8a: cmp r6, #0x1\n0x26f8c: sbcs r3, r5, #0x0\n0x26f90: blt 0x00026faa\n0x26f92: add r1, sp,#0x2c\n0x26f94: ldm.w r7, {r2,r3}\n0x26f98: ldmia r1, {r0,r1}\n0x26f9a: stm sp, {r0,r1}\n0x26f9e: mov r0, r6\n0x26fa0: mov r1, r5\n0x26fa2: blx 0x00018694\n0x26fa6: strd r0, r1, [r4,#0x30]\n0x26faa: add sp, #0x14\n0x26fac: pop.w {r4,r5,r6,r7,lr}\n0x26fb0: add sp, #0x8\n0x26fb2: bx lr",
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+    "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+    "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+    "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+    "Assembly is Ghidra Listing text and does not claim textual equivalence with Hopper output."
+  ],
+  "locations": [],
+  "evidence_links": []
+}

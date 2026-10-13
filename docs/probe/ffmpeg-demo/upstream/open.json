@@ -1,0 +1,17 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"<DEMO_ROOT>/upstream-artifacts/libavcodec-unstripped.so\",\"format\":\"elf\",\"kind\":\"executable\",\"sha256\":\"800f421db012547e5386156410cb8fb842b97367b84241e6793b857708d1668c\",\"architecture\":\"arm\"}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "<DEMO_ROOT>/upstream-artifacts/libavcodec-unstripped.so",
+      "format": "elf",
+      "kind": "executable",
+      "sha256": "800f421db012547e5386156410cb8fb842b97367b84241e6793b857708d1668c",
+      "architecture": "arm"
+    }
+  }
+}

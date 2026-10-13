@@ -1,0 +1,67 @@
+{
+  "evidence_id": "ev_db7763a8fae917674acb1604a38312f7464a82bc4f5d7b3d42608ad90140da72",
+  "subject": {
+    "name": "libavcodec-stripped.so",
+    "digest": {
+      "sha256": "2bed47a34655adf02394acfe06e04c38d6e88b111a24141f4780454d4b209d3c"
+    },
+    "format": "elf",
+    "architecture": "arm",
+    "local_path": "<DEMO_ROOT>/upstream-artifacts/libavcodec-stripped.so"
+  },
+  "provider": {
+    "id": "ghidra",
+    "name": "Ghidra",
+    "version": "12.1.4"
+  },
+  "operation": "list_strings",
+  "limitations": [
+    "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+    "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+    "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+    "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+    "Only Ghidra-defined string Data is observed; packed or undefined string bytes may be absent. Completeness applies to that inventory, and an empty search does not establish that text is absent from the artifact. If an address is known, use read_bytes and xrefs to inspect bytes and references.",
+    "Charset is reported, while a non-missing terminator cannot distinguish a present terminator from a fixed or Pascal layout."
+  ],
+  "projection": "whitelisted samples from original list_strings Evidence, not the complete raw response",
+  "raw_local_sha256": "42d7ca92c42f57c1f8d1c91dbeee892852c66f3fb2310a18eec74a0d00b072ef",
+  "total_defined_strings": 1742,
+  "samples": [
+    {
+      "address": "0x12811",
+      "value": "avcodec_align_dimensions2",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 26
+      }
+    },
+    {
+      "address": "0x12b54",
+      "value": "av_packet_rescale_ts",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 21
+      }
+    },
+    {
+      "address": "0x12ec5",
+      "value": "av_get_audio_frame_duration2",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 29
+      }
+    },
+    {
+      "address": "0x3ac00",
+      "value": "FFmpeg version 8.0.1",
+      "string": {
+        "encoding": "US-ASCII",
+        "termination": "present_or_not_required",
+        "byte_length": 24
+      }
+    }
+  ]
+}

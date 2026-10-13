@@ -204,3 +204,6 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - 已闭合步骤 6：官方 FFmpeg 8.0.1 原版（精确包版本匹配），GCC13.3 ARMv7 -O2 最小共享库构建；先生成未 strip，再 --strip-unneeded 生成副本。完整命令和成功日志 `ffmpeg-demo/upstream-build.txt`，脚本 `scripts/build-upstream.sh`、来源/归档哈希 `upstream-source.txt`，自己编译的产物及哈希 `upstream-artifacts/manifest.json`。
 - 基线实际条件：初次构建发现 Ubuntu GCC 默认 SSP_STRONG、FORTIFY_SOURCE=3（证据 `upstream-default-hardening-check.txt`，初版日志 `upstream-build-initial-defaults.txt`），因此最终显式关闭栈保护、FORTIFY 与 RELRO；最终 ELF 为 RELRO None、NX Enabled、canary/FORTIFY 无动态导入证据，无 RPATH/RUNPATH，未 strip/已 strip 副本属性除 .symtab 外相同。证据 `upstream[-stripped]-lua-metadata.txt`、`upstream[-stripped]-elf-metadata.txt`。FFmpeg 默认 NX 保留，不将“裸编译”误写成所有内存防护都关闭。
 - 对照限制挂账：板库 soft-float ABI、上游可用工具链 hard-float ABI，见 `ffmpeg-demo/arm-abi-attributes.txt`；本轮仅比较无浮点入参的函数静态逻辑，不声明可替换到板上运行。板子发行版 patches/构建器未知，最小组件集合不同于完整板库。
+
+- 已闭合步骤 7：最终明确关闭默认加固的两份上游产物已各完成 REA+Ghidra 查询，三个同名 API 及唯一音频助手的 info/pseudocode/assembly/callees/callers 全部真实成功；见 `ffmpeg-demo/upstream/`、`ffmpeg-demo/upstream-stripped/`。未 strip 库内部助手名字保留，strip 后为 FUN 地址；两个公开 API 的伪代码逐字相同（待步骤8独立核对），三组均没有自动恢复结构体字段名。
+- 新样本统计：未 strip 本地非 thunk 函数389/非 FUN标签389；strip 后305/143；这是 Ghidra 命名标签代理和识别边界的变化，不是完整函数恢复率。真实 Evidence 见各目录 `procedures.decoded.json`、`symbol-string-statistics.json`；字符串只公开标注为投影的白名单样本，完整原始记录本地保留。

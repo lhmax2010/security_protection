@@ -1,0 +1,233 @@
+[
+  {
+    "label": "open",
+    "name": "open_binary",
+    "args": {
+      "path": "<DEMO_ROOT>/upstream-artifacts/libavcodec-stripped.so",
+      "provider_id": "ghidra"
+    },
+    "elapsed_ms": 1495,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "overview",
+    "name": "binary_overview",
+    "args": {},
+    "elapsed_ms": 11593,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "procedures",
+    "name": "list_procedures",
+    "args": {},
+    "elapsed_ms": 37,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "strings",
+    "name": "list_strings",
+    "args": {},
+    "elapsed_ms": 70,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "avcodec_align_dimensions2/search",
+    "name": "search_procedures",
+    "args": {
+      "pattern": "avcodec_align_dimensions2"
+    },
+    "elapsed_ms": 6,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "avcodec_align_dimensions2/info",
+    "name": "procedure_info",
+    "args": {
+      "procedure": "avcodec_align_dimensions2"
+    },
+    "elapsed_ms": 11,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "avcodec_align_dimensions2/pseudocode",
+    "name": "procedure_pseudo_code",
+    "args": {
+      "procedure": "avcodec_align_dimensions2"
+    },
+    "elapsed_ms": 52,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "avcodec_align_dimensions2/assembly",
+    "name": "procedure_assembly",
+    "args": {
+      "procedure": "avcodec_align_dimensions2"
+    },
+    "elapsed_ms": 8,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "avcodec_align_dimensions2/callees",
+    "name": "procedure_callees",
+    "args": {
+      "procedure": "avcodec_align_dimensions2"
+    },
+    "elapsed_ms": 5,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "avcodec_align_dimensions2/callers",
+    "name": "procedure_callers",
+    "args": {
+      "procedure": "avcodec_align_dimensions2"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_get_audio_frame_duration2/search",
+    "name": "search_procedures",
+    "args": {
+      "pattern": "av_get_audio_frame_duration2"
+    },
+    "elapsed_ms": 2,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_get_audio_frame_duration2/info",
+    "name": "procedure_info",
+    "args": {
+      "procedure": "av_get_audio_frame_duration2"
+    },
+    "elapsed_ms": 5,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_get_audio_frame_duration2/pseudocode",
+    "name": "procedure_pseudo_code",
+    "args": {
+      "procedure": "av_get_audio_frame_duration2"
+    },
+    "elapsed_ms": 7,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_get_audio_frame_duration2/assembly",
+    "name": "procedure_assembly",
+    "args": {
+      "procedure": "av_get_audio_frame_duration2"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_get_audio_frame_duration2/callees",
+    "name": "procedure_callees",
+    "args": {
+      "procedure": "av_get_audio_frame_duration2"
+    },
+    "elapsed_ms": 3,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_get_audio_frame_duration2/callers",
+    "name": "procedure_callers",
+    "args": {
+      "procedure": "av_get_audio_frame_duration2"
+    },
+    "elapsed_ms": 3,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_packet_rescale_ts/search",
+    "name": "search_procedures",
+    "args": {
+      "pattern": "av_packet_rescale_ts"
+    },
+    "elapsed_ms": 2,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_packet_rescale_ts/info",
+    "name": "procedure_info",
+    "args": {
+      "procedure": "av_packet_rescale_ts"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_packet_rescale_ts/pseudocode",
+    "name": "procedure_pseudo_code",
+    "args": {
+      "procedure": "av_packet_rescale_ts"
+    },
+    "elapsed_ms": 10,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_packet_rescale_ts/assembly",
+    "name": "procedure_assembly",
+    "args": {
+      "procedure": "av_packet_rescale_ts"
+    },
+    "elapsed_ms": 4,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_packet_rescale_ts/callees",
+    "name": "procedure_callees",
+    "args": {
+      "procedure": "av_packet_rescale_ts"
+    },
+    "elapsed_ms": 2,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "av_packet_rescale_ts/callers",
+    "name": "procedure_callers",
+    "args": {
+      "procedure": "av_packet_rescale_ts"
+    },
+    "elapsed_ms": 3,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "session",
+    "name": "binary_session",
+    "args": {},
+    "elapsed_ms": 203,
+    "isError": false,
+    "transport_error": null
+  },
+  {
+    "label": "close",
+    "name": "close_binary",
+    "args": {},
+    "elapsed_ms": 387,
+    "isError": false,
+    "transport_error": null
+  }
+]

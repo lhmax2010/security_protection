@@ -1,0 +1,263 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_ed7868d4e459d7cde9617dd0fe15ac2019da87a1aadae1f98cb74fafae7dbcf8\",\"subject\":{\"name\":\"libavcodec-stripped.so\",\"digest\":{\"sha256\":\"2bed47a34655adf02394acfe06e04c38d6e88b111a24141f4780454d4b209d3c\"},\"format\":\"elf\",\"architecture\":\"arm\",\"local_path\":\"<DEMO_ROOT>/upstream-artifacts/libavcodec-stripped.so\"},\"provider\":{\"id\":\"rea-workflow\",\"name\":\"REA composed investigation workflow\",\"version\":\"1\"},\"analysis_profile\":{\"provider\":{\"id\":\"rea-workflow\",\"name\":\"REA composed investigation workflow\",\"version\":\"1\"},\"parameters\":{\"upstream_analysis_profile\":{\"provider\":{\"id\":\"ghidra\",\"name\":\"Ghidra\",\"version\":\"12.1.4\"},\"parameters\":{\"target_kind\":\"executable\",\"target_format\":\"elf\",\"architecture\":\"arm\",\"available_architectures\":[\"arm\"],\"import_mode\":\"ephemeral-source-immutable\",\"annotation_policy\":\"atomic-function-entry-metadata-v1\",\"load_image_observations\":\"source-mappings-entry-context-v2\",\"function_body_evidence\":\"complete-inclusive-ranges-v1\",\"function_references\":\"complete-body-and-entry-reference-manager-v2\",\"string_inventory_evidence\":\"defined-data-coverage-v1\",\"location_resolution\":\"explicit-address-exact-entry-symbol-first-v3\",\"instruction_flow_evidence\":\"decoded-return-pcode-v1\",\"function_boundary_observations\":\"ghidra-terminal-call-limitations-v1\",\"no_return_repair\":\"returning-imports-decoded-return-v2\",\"process_launch\":\"inspected-jvm-launch-support-v1\",\"jump_table_evidence\":\"typed-case-default-blocks-v1\",\"decompiler_jump_loads\":true,\"loader\":\"auto-from-header\",\"language_id\":\"auto-from-header\",\"compiler_spec_id\":\"auto-default\",\"analyzer_preset\":\"ghidra-default\"},\"digest\":\"e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac\"},\"workflow_revision\":2},\"digest\":\"d17eb7f7834bcb15c683d2046bf7b579955f68fcb9bb8646c93e925c81ed7a69\"},\"predicate_type\":\"rea.analysis\",\"operation\":\"binary_overview\",\"parameters\":{},\"raw_result\":null,\"normalized_result\":{\"document\":\"target-2bed47a34655.so\",\"segments\":[{\"name\":\"segment_1.1\",\"start\":\"0x10000\",\"end\":\"0x100f4\",\"length\":244},{\"name\":\".note.gnu.build-id\",\"start\":\"0x100f4\",\"end\":\"0x10118\",\"length\":36},{\"name\":\".gnu.hash\",\"start\":\"0x10118\",\"end\":\"0x105ec\",\"length\":1236},{\"name\":\".dynsym\",\"start\":\"0x105ec\",\"end\":\"0x118bc\",\"length\":4816},{\"name\":\".dynstr\",\"start\":\"0x118bc\",\"end\":\"0x130b6\",\"length\":6138},{\"name\":\".gnu.version\",\"start\":\"0x130b6\",\"end\":\"0x13310\",\"length\":602},{\"name\":\".gnu.version_d\",\"start\":\"0x13310\",\"end\":\"0x13348\",\"length\":56},{\"name\":\".gnu.version_r\",\"start\":\"0x13348\",\"end\":\"0x133b8\",\"length\":112},{\"name\":\".rel.dyn\",\"start\":\"0x133b8\",\"end\":\"0x17be0\",\"length\":18472},{\"name\":\".rel.plt\",\"start\":\"0x17be0\",\"end\":\"0x18098\",\"length\":1208},{\"name\":\".init\",\"start\":\"0x18098\",\"end\":\"0x180a4\",\"length\":12},{\"name\":\".plt\",\"start\":\"0x180a4\",\"end\":\"0x18800\",\"length\":1884},{\"name\":\".text\",\"start\":\"0x18800\",\"end\":\"0x2eb50\",\"length\":90960},{\"name\":\".fini\",\"start\":\"0x2eb50\",\"end\":\"0x2eb58\",\"length\":8},{\"name\":\".rodata\",\"start\":\"0x2eb60\",\"end\":\"0x3aea8\",\"length\":49992},{\"name\":\".ARM.exidx\",\"start\":\"0x3aea8\",\"end\":\"0x3aeb0\",\"length\":8},{\"name\":\".eh_frame\",\"start\":\"0x3aeb0\",\"end\":\"0x3aeb4\",\"length\":4},{\"name\":\".init_array\",\"start\":\"0x3b000\",\"end\":\"0x3b004\",\"length\":4},{\"name\":\".fini_array\",\"start\":\"0x3b004\",\"end\":\"0x3b008\",\"length\":4},{\"name\":\".data.rel.ro\",\"start\":\"0x3b008\",\"end\":\"0x4380c\",\"length\":34820},{\"name\":\".dynamic\",\"start\":\"0x4380c\",\"end\":\"0x43924\",\"length\":280},{\"name\":\".got\",\"start\":\"0x43924\",\"end\":\"0x43c6c\",\"length\":840},{\"name\":\".data\",\"start\":\"0x43c6c\",\"end\":\"0x43c7c\",\"length\":16},{\"name\":\".bss\",\"start\":\"0x43c7c\",\"end\":\"0x43c9c\",\"length\":32},{\"name\":\"EXTERNAL\",\"start\":\"0x44000\",\"end\":\"0x44270\",\"length\":624},{\"name\":\".ARM.attributes\",\"start\":\".ARM.attributes:0x0\",\"end\":\".ARM.attributes:0x3b\",\"length\":59},{\"name\":\".comment\",\"start\":\".comment:0x0\",\"end\":\".comment:0x2d\",\"length\":45},{\"name\":\".shstrtab\",\"start\":\".shstrtab:0x0\",\"end\":\".shstrtab:0xfb\",\"length\":251},{\"name\":\"_elfSectionHeaders\",\"start\":\"_elfSectionHeaders:0x0\",\"end\":\"_elfSectionHeaders:0x438\",\"length\":1080}],\"segment_count\":29,\"procedure_count\":767,\"string_count\":1742},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Derived by an REA composed workflow.\"],\"locations\":[],\"evidence_links\":[]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_ed7868d4e459d7cde9617dd0fe15ac2019da87a1aadae1f98cb74fafae7dbcf8",
+    "subject": {
+      "name": "libavcodec-stripped.so",
+      "digest": {
+        "sha256": "2bed47a34655adf02394acfe06e04c38d6e88b111a24141f4780454d4b209d3c"
+      },
+      "format": "elf",
+      "architecture": "arm",
+      "local_path": "<DEMO_ROOT>/upstream-artifacts/libavcodec-stripped.so"
+    },
+    "provider": {
+      "id": "rea-workflow",
+      "name": "REA composed investigation workflow",
+      "version": "1"
+    },
+    "analysis_profile": {
+      "provider": {
+        "id": "rea-workflow",
+        "name": "REA composed investigation workflow",
+        "version": "1"
+      },
+      "parameters": {
+        "upstream_analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "elf",
+            "architecture": "arm",
+            "available_architectures": [
+              "arm"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "function_references": "complete-body-and-entry-reference-manager-v2",
+            "string_inventory_evidence": "defined-data-coverage-v1",
+            "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+            "instruction_flow_evidence": "decoded-return-pcode-v1",
+            "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+            "no_return_repair": "returning-imports-decoded-return-v2",
+            "process_launch": "inspected-jvm-launch-support-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default"
+          },
+          "digest": "e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac"
+        },
+        "workflow_revision": 2
+      },
+      "digest": "d17eb7f7834bcb15c683d2046bf7b579955f68fcb9bb8646c93e925c81ed7a69"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "binary_overview",
+    "parameters": {},
+    "raw_result": null,
+    "normalized_result": {
+      "document": "target-2bed47a34655.so",
+      "segments": [
+        {
+          "name": "segment_1.1",
+          "start": "0x10000",
+          "end": "0x100f4",
+          "length": 244
+        },
+        {
+          "name": ".note.gnu.build-id",
+          "start": "0x100f4",
+          "end": "0x10118",
+          "length": 36
+        },
+        {
+          "name": ".gnu.hash",
+          "start": "0x10118",
+          "end": "0x105ec",
+          "length": 1236
+        },
+        {
+          "name": ".dynsym",
+          "start": "0x105ec",
+          "end": "0x118bc",
+          "length": 4816
+        },
+        {
+          "name": ".dynstr",
+          "start": "0x118bc",
+          "end": "0x130b6",
+          "length": 6138
+        },
+        {
+          "name": ".gnu.version",
+          "start": "0x130b6",
+          "end": "0x13310",
+          "length": 602
+        },
+        {
+          "name": ".gnu.version_d",
+          "start": "0x13310",
+          "end": "0x13348",
+          "length": 56
+        },
+        {
+          "name": ".gnu.version_r",
+          "start": "0x13348",
+          "end": "0x133b8",
+          "length": 112
+        },
+        {
+          "name": ".rel.dyn",
+          "start": "0x133b8",
+          "end": "0x17be0",
+          "length": 18472
+        },
+        {
+          "name": ".rel.plt",
+          "start": "0x17be0",
+          "end": "0x18098",
+          "length": 1208
+        },
+        {
+          "name": ".init",
+          "start": "0x18098",
+          "end": "0x180a4",
+          "length": 12
+        },
+        {
+          "name": ".plt",
+          "start": "0x180a4",
+          "end": "0x18800",
+          "length": 1884
+        },
+        {
+          "name": ".text",
+          "start": "0x18800",
+          "end": "0x2eb50",
+          "length": 90960
+        },
+        {
+          "name": ".fini",
+          "start": "0x2eb50",
+          "end": "0x2eb58",
+          "length": 8
+        },
+        {
+          "name": ".rodata",
+          "start": "0x2eb60",
+          "end": "0x3aea8",
+          "length": 49992
+        },
+        {
+          "name": ".ARM.exidx",
+          "start": "0x3aea8",
+          "end": "0x3aeb0",
+          "length": 8
+        },
+        {
+          "name": ".eh_frame",
+          "start": "0x3aeb0",
+          "end": "0x3aeb4",
+          "length": 4
+        },
+        {
+          "name": ".init_array",
+          "start": "0x3b000",
+          "end": "0x3b004",
+          "length": 4
+        },
+        {
+          "name": ".fini_array",
+          "start": "0x3b004",
+          "end": "0x3b008",
+          "length": 4
+        },
+        {
+          "name": ".data.rel.ro",
+          "start": "0x3b008",
+          "end": "0x4380c",
+          "length": 34820
+        },
+        {
+          "name": ".dynamic",
+          "start": "0x4380c",
+          "end": "0x43924",
+          "length": 280
+        },
+        {
+          "name": ".got",
+          "start": "0x43924",
+          "end": "0x43c6c",
+          "length": 840
+        },
+        {
+          "name": ".data",
+          "start": "0x43c6c",
+          "end": "0x43c7c",
+          "length": 16
+        },
+        {
+          "name": ".bss",
+          "start": "0x43c7c",
+          "end": "0x43c9c",
+          "length": 32
+        },
+        {
+          "name": "EXTERNAL",
+          "start": "0x44000",
+          "end": "0x44270",
+          "length": 624
+        },
+        {
+          "name": ".ARM.attributes",
+          "start": ".ARM.attributes:0x0",
+          "end": ".ARM.attributes:0x3b",
+          "length": 59
+        },
+        {
+          "name": ".comment",
+          "start": ".comment:0x0",
+          "end": ".comment:0x2d",
+          "length": 45
+        },
+        {
+          "name": ".shstrtab",
+          "start": ".shstrtab:0x0",
+          "end": ".shstrtab:0xfb",
+          "length": 251
+        },
+        {
+          "name": "_elfSectionHeaders",
+          "start": "_elfSectionHeaders:0x0",
+          "end": "_elfSectionHeaders:0x438",
+          "length": 1080
+        }
+      ],
+      "segment_count": 29,
+      "procedure_count": 767,
+      "string_count": 1742
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Derived by an REA composed workflow."
+    ],
+    "locations": [],
+    "evidence_links": []
+  }
+}
