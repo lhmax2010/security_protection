@@ -1,0 +1,18 @@
+Survey date: 2026-10-13 (Asia/Shanghai)
+Platform premise supplied by PM: LLVM 22.1.8. Existing local baseline compiler: Clang 18.1.3.
+Decision: LLVM 22 implementations do exist; prioritize xollvm v0.11.1 prebuilt Linux x86_64 LLVM22 toolchain. Do not downgrade or rebuild LLVM while this release is available. Actual patch version and ARM usability must be verified after acquisition.
+
+Primary sources:
+1. https://github.com/und3ath/xollvm
+   Active annotation-driven O-LLVM-family implementation for LLVM22/23, new pass manager, integrated clang/opt or loadable plugin. fla equivalent=flattening, bcf=bcf, sub=substitution. README reports ARM/X86/AArch64/RISCV backends.
+   https://github.com/und3ath/xollvm/releases/tag/v0.11.1
+   Real GitHub API assets include xollvm-linux-llvm22-Release.tar.zst (105340192 bytes) and Obfuscator-linux-x64-llvm22.so. Exact download metadata retained in survey/und3ath-xollvm.json. Plugin alone cannot be loaded into existing Clang18 due LLVM ABI mismatch; use bundled clang/opt22.
+2. https://github.com/vertigo-z/ollvm-22
+   README indexed LLVM22.1.1 plugin; current API default branch has advanced to ollvm-23, and release repository/asset naming differs. Candidate exists but not preferred over explicit LLVM22 bundle with diagnostics.
+3. https://github.com/komimoe/Arkari
+   LLVM22 branch advertised; current default branch LLVM23 and inspected releases expose no Linux assets. Also its supported pass family differs from the required classic fla/bcf/sub combination.
+4. https://github.com/bloesadi/Pluto
+   This legacy URL returned HTTP404 in current API lookup; no conclusion about other Pluto repositories. No attempt to force an older fork.
+
+Limits: source claims and release metadata do not yet prove binaries usable, passes applied, runtime equivalent, or Ghidra readability reduced. Acquisition, real version/backend inspection, pass metrics and decompilation must resolve these.
+Raw failed web-release fetch and API failures preserved under survey/. No board/GBS operations performed.

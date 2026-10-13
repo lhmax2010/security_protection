@@ -1,0 +1,130 @@
+{
+  "sha": "eb0850bd7cc87f551ad2948826605e518f5b8aa2",
+  "node_id": "C_kwDOTUrZgdoAKGViMDg1MGJkN2NjODdmNTUxYWQyOTQ4ODI2NjA1ZTUxOGY1YjhhYTI",
+  "commit": {
+    "author": {
+      "name": "und3ath",
+      "email": "und3ath.bd@gmail.com",
+      "date": "2026-09-17T18:48:26Z"
+    },
+    "committer": {
+      "name": "GitHub",
+      "email": "noreply@github.com",
+      "date": "2026-09-17T18:48:26Z"
+    },
+    "message": "Merge pull request #31 from und3ath/feat/strenc-delabel\n\nstrenc: stop self-labeling encrypted artifacts in the binary",
+    "tree": {
+      "sha": "1f7740791fc323518e34cd497d8ecf758edcfe07",
+      "url": "https://api.github.com/repos/und3ath/xollvm/git/trees/1f7740791fc323518e34cd497d8ecf758edcfe07"
+    },
+    "url": "https://api.github.com/repos/und3ath/xollvm/git/commits/eb0850bd7cc87f551ad2948826605e518f5b8aa2",
+    "comment_count": 0,
+    "verification": {
+      "verified": true,
+      "reason": "valid",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsFcBAABCAAQBQJqrDX6CRC1aQ7uu5UhlAAApOsQAI58Mrf51cvITS6pE468A7Nw\nEBFJBqYXC3xIzxcrnBbT8kpo5+wgpo1BXUjUBJtwai75dlcOCfUSp5E6rO1Mehmn\nLxx0J7UC1LN20SfVtQW48aukHwSOss+vdA+aMtvxYdorMi2/SybXcS1oNdQCmQZK\nl/zXi70uedKAvWesY13hY1NGfKC+owrNviuLDFtzba0q+3ht4uUc2i8yGmEzjXZb\n6rCdCPFuZlhJzEL+5HqyqFTLML7OvPUXqFoVFRS/zb0BLs9C7kDbf1qZpC4B965L\nxCQqDj2ToRzURG5tifeitAP2reLt9WNTLJdAruFnLEds/BdRv6FztSeEnooNoyai\n2MO9kwvuZJh3xFEyhs6I0OkKVuSUuuUXKjfeT4MKeOM1fD/x0flGWUII+WT7ARLg\nwaoiezYel8lT98vbXHPgEO1dxTUMqdwLxYif5sBFbTKEtrexMge4b7Bx8cbmEySq\nQkSa2uWc8li48t55W1TPhcn0iDyv6KrCL5Vrry/2OafMcMhnxaW0o+toAHkYapn5\nTp+CSpKQ4CIAXvPf1TBwACErQqZsNrcGQNVy0G2Be662FHUbPIFjYaBnOMoQLzpz\nOwXCwmCU3D9zVorgnQM2ovjMIyUd/jZ7LpfNfDqS/scLsOeHXOK8O3tmUn8k2El7\nvd7u9QWrtG1IK2w8t0On\n=2AG2\n-----END PGP SIGNATURE-----\n",
+      "payload": "tree 1f7740791fc323518e34cd497d8ecf758edcfe07\nparent 02eaed0ba76ec4f474f4356293c73e78d74e219e\nparent 79f964a8fac2e48db200d43e00ade45a366b973a\nauthor und3ath <und3ath.bd@gmail.com> 1789670906 +0200\ncommitter GitHub <noreply@github.com> 1789670906 +0200\n\nMerge pull request #31 from und3ath/feat/strenc-delabel\n\nstrenc: stop self-labeling encrypted artifacts in the binary",
+      "verified_at": "2026-09-17T18:48:26Z"
+    }
+  },
+  "url": "https://api.github.com/repos/und3ath/xollvm/commits/eb0850bd7cc87f551ad2948826605e518f5b8aa2",
+  "html_url": "https://github.com/und3ath/xollvm/commit/eb0850bd7cc87f551ad2948826605e518f5b8aa2",
+  "comments_url": "https://api.github.com/repos/und3ath/xollvm/commits/eb0850bd7cc87f551ad2948826605e518f5b8aa2/comments",
+  "author": {
+    "login": "und3ath",
+    "id": 15632488,
+    "node_id": "MDQ6VXNlcjE1NjMyNDg4",
+    "avatar_url": "https://avatars.githubusercontent.com/u/15632488?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/und3ath",
+    "html_url": "https://github.com/und3ath",
+    "followers_url": "https://api.github.com/users/und3ath/followers",
+    "following_url": "https://api.github.com/users/und3ath/following{/other_user}",
+    "gists_url": "https://api.github.com/users/und3ath/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/und3ath/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/und3ath/subscriptions",
+    "organizations_url": "https://api.github.com/users/und3ath/orgs",
+    "repos_url": "https://api.github.com/users/und3ath/repos",
+    "events_url": "https://api.github.com/users/und3ath/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/und3ath/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "committer": {
+    "login": "web-flow",
+    "id": 19864447,
+    "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19864447?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/web-flow",
+    "html_url": "https://github.com/web-flow",
+    "followers_url": "https://api.github.com/users/web-flow/followers",
+    "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+    "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+    "organizations_url": "https://api.github.com/users/web-flow/orgs",
+    "repos_url": "https://api.github.com/users/web-flow/repos",
+    "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/web-flow/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "parents": [
+    {
+      "sha": "02eaed0ba76ec4f474f4356293c73e78d74e219e",
+      "url": "https://api.github.com/repos/und3ath/xollvm/commits/02eaed0ba76ec4f474f4356293c73e78d74e219e",
+      "html_url": "https://github.com/und3ath/xollvm/commit/02eaed0ba76ec4f474f4356293c73e78d74e219e"
+    },
+    {
+      "sha": "79f964a8fac2e48db200d43e00ade45a366b973a",
+      "url": "https://api.github.com/repos/und3ath/xollvm/commits/79f964a8fac2e48db200d43e00ade45a366b973a",
+      "html_url": "https://github.com/und3ath/xollvm/commit/79f964a8fac2e48db200d43e00ade45a366b973a"
+    }
+  ],
+  "stats": {
+    "total": 54,
+    "additions": 28,
+    "deletions": 26
+  },
+  "files": [
+    {
+      "sha": "a5e3f342ec994d79926b85daa5d1e65483a19a3e",
+      "filename": "StringEncryption.cpp",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 19,
+      "changes": 35,
+      "blob_url": "https://github.com/und3ath/xollvm/blob/eb0850bd7cc87f551ad2948826605e518f5b8aa2/StringEncryption.cpp",
+      "raw_url": "https://github.com/und3ath/xollvm/raw/eb0850bd7cc87f551ad2948826605e518f5b8aa2/StringEncryption.cpp",
+      "contents_url": "https://api.github.com/repos/und3ath/xollvm/contents/StringEncryption.cpp?ref=eb0850bd7cc87f551ad2948826605e518f5b8aa2",
+      "patch": "@@ -18,6 +18,7 @@\n #include \"llvm/ADT/StringRef.h\"\n #include \"llvm/Bitcode/BitcodeReader.h\"\n #include \"llvm/IR/Constants.h\"\n+#include \"llvm/IR/Metadata.h\"\n #include \"llvm/IR/Dominators.h\"\n #include \"llvm/IR/GlobalVariable.h\"\n #include \"llvm/IR/IRBuilder.h\"\n@@ -568,10 +569,9 @@ namespace {\n             }\n         }\n \n-        // Mark all strenc-private globals the same way.\n+        // Mark all pass-created (owned) globals the same way.\n         for (GlobalVariable& GV : M.globals()) {\n-            StringRef Sec = GV.hasSection() ? GV.getSection() : StringRef();\n-            if (Sec.starts_with(\".strenc\"))\n+            if (GV.getMetadata(\"obf.owned.se\"))\n                 GV.setVisibility(GlobalValue::HiddenVisibility);\n         }\n     }\n@@ -592,9 +592,9 @@ namespace {\n             M, Ty, /*isConstant=*/true,\n             GlobalValue::PrivateLinkage,\n             ConstantArray::get(Ty, Bytes),\n-            \".strenc.kd\");\n+            \"\");  // unnamed: no self-describing symbol in the binary\n \n-        GV->setSection(\".strenc.kd\");\n+        GV->setMetadata(\"obf.owned.se\", MDNode::get(C, {}));\n         GV->setAlignment(Align(16));\n         GV->setUnnamedAddr(GlobalValue::UnnamedAddr::Global);\n         return GV;\n@@ -658,7 +658,6 @@ namespace {\n \n         F->setLinkage(GlobalValue::PrivateLinkage);\n         F->addFnAttr(Attribute::NoUnwind);\n-        F->setSection(\".strenc.kt\");\n         F->setUnnamedAddr(GlobalValue::UnnamedAddr::Global);\n \n         Argument* OutArg = F->getArg(0);\n@@ -701,8 +700,9 @@ namespace {\n         auto* CDA = dyn_cast<ConstantDataArray>(GV.getInitializer());\n         if (!CDA || !CDA->isCString()) return false;\n \n-        // Skip stub-owned globals (section starts with \".strenc\")\n-        if (GV.hasSection() && GV.getSection().starts_with(\".strenc\"))\n+        // Skip our own pass-created globals (marked with owned metadata,\n+        // which is dropped at codegen so it never reaches the binary).\n+        if (GV.getMetadata(\"obf.owned.se\"))\n             return false;\n \n         StringRef S = CDA->getAsCString();\n@@ -734,14 +734,13 @@ namespace {\n             Bytes.push_back(ConstantInt::get(Type::getInt8Ty(C), c));\n         Bytes.push_back(ConstantInt::get(Type::getInt8Ty(C), 0)); // null terminator\n \n-        std::string Name = \".strenc.ct.\" + std::to_string(idx);\n         GlobalVariable* GV = new GlobalVariable(\n             M, Ty, /*isConstant=*/true,\n             GlobalValue::PrivateLinkage,\n             ConstantArray::get(Ty, Bytes),\n-            Name);\n+            \"\");\n \n-        GV->setSection(\".strenc.ct\");\n+        GV->setMetadata(\"obf.owned.se\", MDNode::get(C, {}));\n         GV->setAlignment(Align(1));\n         GV->setUnnamedAddr(GlobalValue::UnnamedAddr::Global);\n         return GV;\n@@ -759,14 +758,13 @@ namespace {\n             Bytes.push_back(ConstantInt::get(Type::getInt8Ty(C),\n                 (uint8_t)((nonce >> (8 * i)) & 0xFF)));\n \n-        std::string Name = \".strenc.nonce.\" + std::to_string(idx);\n         GlobalVariable* GV = new GlobalVariable(\n             M, Ty, /*isConstant=*/true,\n             GlobalValue::PrivateLinkage,\n             ConstantArray::get(Ty, Bytes),\n-            Name);\n+            \"\");\n \n-        GV->setSection(\".strenc.n\");\n+        GV->setMetadata(\"obf.owned.se\", MDNode::get(C, {}));\n         GV->setAlignment(Align(8));\n         GV->setUnnamedAddr(GlobalValue::UnnamedAddr::Global);\n         return GV;\n@@ -783,14 +781,13 @@ namespace {\n         for (int i = 0; i < 12; i++)\n             Bytes.push_back(ConstantInt::get(Type::getInt8Ty(C), nonce12[i]));\n \n-        std::string Name = \".strenc.nc12.\" + std::to_string(idx);\n         GlobalVariable* GV = new GlobalVariable(\n             M, Ty, /*isConstant=*/true,\n             GlobalValue::PrivateLinkage,\n             ConstantArray::get(Ty, Bytes),\n-            Name);\n+            \"\");\n \n-        GV->setSection(\".strenc.n\");\n+        GV->setMetadata(\"obf.owned.se\", MDNode::get(C, {}));\n         GV->setAlignment(Align(8));\n         GV->setUnnamedAddr(GlobalValue::UnnamedAddr::Global);\n         return GV;\n@@ -1161,8 +1158,8 @@ namespace {\n                     M, KeyTy, /*isConstant=*/true,\n                     GlobalValue::PrivateLinkage,\n                     ConstantArray::get(KeyTy, KeyBytes),\n-                    \".strenc.ck\");\n-                Ctx.ChaChaKeyGV->setSection(\".strenc.ck\");\n+                    \"\");\n+                Ctx.ChaChaKeyGV->setMetadata(\"obf.owned.se\", MDNode::get(C, {}));\n                 Ctx.ChaChaKeyGV->setAlignment(Align(16));\n                 Ctx.ChaChaKeyGV->setUnnamedAddr(GlobalValue::UnnamedAddr::Global);\n             }"
+    },
+    {
+      "sha": "9c895e37828345bdfa15a4d2f544785211c172e0",
+      "filename": "aes_stub/aes_stub.c",
+      "status": "modified",
+      "additions": 4,
+      "deletions": 4,
+      "changes": 8,
+      "blob_url": "https://github.com/und3ath/xollvm/blob/eb0850bd7cc87f551ad2948826605e518f5b8aa2/aes_stub%2Faes_stub.c",
+      "raw_url": "https://github.com/und3ath/xollvm/raw/eb0850bd7cc87f551ad2948826605e518f5b8aa2/aes_stub%2Faes_stub.c",
+      "contents_url": "https://api.github.com/repos/und3ath/xollvm/contents/aes_stub%2Faes_stub.c?ref=eb0850bd7cc87f551ad2948826605e518f5b8aa2",
+      "patch": "@@ -19,9 +19,9 @@\n  *  The pass generates two \"key provider\" IR functions whose bodies contain\n  *  the compile-time AES round-key material:\n  *\n- *    void __aes_key_a(uint8_t out[88])   \u2190 memcpy from .strenc.kd global\n+ *    void __aes_key_a(uint8_t out[88])   \u2190 memcpy from an unnamed data global\n  *    void __aes_key_b(uint8_t out[88])   \u2190 88 individual store immediates\n- *                                              in .strenc.kt code section\n+ *                                              (code half of the split key)\n  *\n  *  Both are declared extern here; their definitions are injected by the pass\n  *  after linking this stub module into the target module.\n@@ -37,8 +37,8 @@\n  * \u2500\u2500 Segments \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  *\n  *  __aes_decrypt and helpers \u2192 default .text / __TEXT,__text\n- *  __aes_key_a               \u2192 generated by pass, memcpy from .strenc.kd\n- *  __aes_key_b               \u2192 generated by pass, stores in .strenc.kt\n+ *  __aes_key_a               \u2192 generated by pass, memcpy from an unnamed global\n+ *  __aes_key_b               \u2192 generated by pass, in-code stores (no data global)\n  *\n  * \u2500\u2500 Compile flags used by CMakeLists \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\n  *"
+    },
+    {
+      "sha": "2112abc647febb86182e197d52f59a55c647593e",
+      "filename": "utils/gates/strenc.py",
+      "status": "modified",
+      "additions": 8,
+      "deletions": 3,
+      "changes": 11,
+      "blob_url": "https://github.com/und3ath/xollvm/blob/eb0850bd7cc87f551ad2948826605e518f5b8aa2/utils%2Fgates%2Fstrenc.py",
+      "raw_url": "https://github.com/und3ath/xollvm/raw/eb0850bd7cc87f551ad2948826605e518f5b8aa2/utils%2Fgates%2Fstrenc.py",
+      "contents_url": "https://api.github.com/repos/und3ath/xollvm/contents/utils%2Fgates%2Fstrenc.py?ref=eb0850bd7cc87f551ad2948826605e518f5b8aa2",
+      "patch": "@@ -41,10 +41,15 @@ def strenc_key_providers(obf_ir: str) -> Optional[str]:\n \n @register(\"strenc_keysplit_sections\")\n def strenc_keysplit_sections(obf_ir: str) -> Optional[str]:\n-    missing = [sec for sec in (\".strenc.kd\", \".strenc.kt\")\n-               if sec not in obf_ir]\n+    # Keysplit no longer relies on labeled sections: the split is the data half\n+    # (__aes_key_a memcpy from an unnamed global) plus the code half\n+    # (__aes_key_b individual stores). Also assert the de-labeling invariant \u2014\n+    # no self-describing \".strenc\" section/symbol names leak into the IR.\n+    missing = [fn for fn in (\"__aes_key_a\", \"__aes_key_b\") if fn not in obf_ir]\n     if missing:\n-        return f\"key-split section(s) missing from IR: {', '.join(missing)}\"\n+        return f\"key-split provider(s) missing from IR: {', '.join(missing)}\"\n+    if \".strenc\" in obf_ir:\n+        return \"de-label regression: '.strenc' section/symbol label leaked into IR\"\n     return None\n \n "
+    }
+  ]
+}

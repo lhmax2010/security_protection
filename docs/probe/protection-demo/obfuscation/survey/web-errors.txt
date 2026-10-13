@@ -1,0 +1,4 @@
+web.open https://github.com/und3ath/xollvm/releases:
+Failed to fetch https://github.com/und3ath/xollvm/releases: (400) Timeout fetching
+
+Fallback GitHub API releases query succeeded; see und3ath-xollvm.json. Pluto requested legacy URL API returned HTTP Error 404: Not Found, retained in bloesadi-Pluto.json.

@@ -261,3 +261,13 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [完成步骤4] protection-demo/comparison.md 与 report/原样伪代码/来源已完成，原始MCP=decoded、目标哈希/provider均核对。只读既有Lua解码器与真实GNU readelf全部字段一致：裸Partial RELRO→保护Full、两边NX/PIE已有、保护新增canary/FORTIFY导入且main实际调用、.symtab消失。两边动态导出本来均0，static/hidden去掉的是普通名字。两份算法伪代码替换名字后逐字一致；Ghidra main已把XOR化简为20个明文字符常量，可还原marker，不能宣称密钥不可恢复或逻辑变难读。无盲发现耗时实测，仅11组运行等价；代码混淆能力检查待最终子步骤。
 
 - [完成步骤5与最终审计] protection-demo：现有Clang隐藏选项和PATH/已安装工具检查未找到真实可用的C/ARM混淆器，代码混淆作为下一步，本轮未做；没有下载、现编O-LLVM或手搓混淆。初版能力检查因广泛匹配普通split选项而触发AssertionError: Candidate found; inspect capability before deciding.，原始trace保留obfuscator-initial-check-error.txt，候选原文保留obfuscator-candidates.json；复核为DWO调试/寄存器分配选项，细化检查后exit0，不冒充混淆能力。final-audit.json确认只含授权5568字节玩具ELF与UTF8文本，无第三方二进制，local-runtime忽略、样本/源码哈希一致。步骤1–5已闭合可执行范围；报告应陈述锚点消除与加固增强，不能声称算法明显更难读/密钥不可恢复。未决：真实混淆器与变换前后算法难度实测、盲定位耗时/更多运行输入均作为后续；本轮无须PM审批的阻断项。
+
+## obfuscation 进度与结论
+
+- 计划：LLVM22候选调研 → 预编译混淆clang验收 → 原合成源码两函数fla/bcf/sub构建与QEMU等价 → REA+Ghidra伪代码/汇编/CFG → 原样报告对照。
+- 开场 poc/probe 的 pull --ff-only 成功、工作区干净；已 source env.sh，ARM sysroot .local-tools/sysroot、基线clang18.1.3。平台LLVM22.1.8是PM输入，不能用主机clang18代替平台版本。
+- 边界：不连板、不走GBS；本轮授权取得混淆工具链，所有第三方工具/源码仅 .local-tools/，公开只在 protection-demo/obfuscation/ 的文本与自建小合成ELF，加STATE同commit。复用既有裸版REA；另建同工具链无pass对照以隔离18→22版本影响（若成功取得22）。
+- 初步调研找到支持LLVM22的xollvm等实现，选择xollvm v0.11.1 Linux LLVM22预编译包（约105MB、README称含ARM），不预设实际patch版本或运行成功；详见 obfuscation/toolchain-survey.txt。
+- 真实失败：web工具抓取xollvm release页timeout，GitHub API成功替代；旧bloesadi/Pluto URL API 404，原错误保留survey/。待决：下载/实际版本/ARM交叉编译/pass生效/QEMU一致/REA可读性。
+
+- [完成调研] obfuscation：找到明确LLVM22预编译资产的xollvm v0.11.1，commit eb0850bd7cc87f551ad2948826605e518f5b8aa2；优先验收bundle，不预设22.1.8或ARM实测成功。README/USER/BUILD已在忽略工具目录读取，猜测workflow路径HTTP404原样保留survey/fetch-.github-workflows-build-release.yml.error.txt（不影响已确认发布资产）。下一步下载验版本/后端。

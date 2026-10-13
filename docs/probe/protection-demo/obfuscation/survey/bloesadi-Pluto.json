@@ -1,0 +1,10 @@
+{
+  "repository": {
+    "url": "https://api.github.com/repos/bloesadi/Pluto",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "/releases?per_page=5": {
+    "url": "https://api.github.com/repos/bloesadi/Pluto/releases?per_page=5",
+    "error": "HTTP Error 404: Not Found"
+  }
+}
