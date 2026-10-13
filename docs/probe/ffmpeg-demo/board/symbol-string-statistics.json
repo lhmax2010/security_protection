@@ -1,0 +1,12 @@
+{
+  "variant": "board",
+  "procedure_evidence_id": "ev_c25db25cc5650b3b2cd9bec90d54f5acb800c8be8266bc631b7ffba83ec4e091",
+  "all_procedures_including_imports_and_thunks": 4007,
+  "local_non_thunk_procedures": 3156,
+  "local_non_FUN_labels": 147,
+  "non_FUN_label_ratio_percent": 4.66,
+  "ratio_limit": "Provider label proxy, not ground-truth original name recovery rate; synthetic entry/runtime labels can be included. Auto-analysis detects fewer boundaries after stripping.",
+  "string_evidence_id": "ev_72880244fcbe3e8efe2be4d8b0afc41d56e32fdab0bc9926354ebd984fa2a2de",
+  "defined_strings": 5386,
+  "selected_string_samples": 5
+}

@@ -1,0 +1,76 @@
+{
+  "evidence_id": "ev_72880244fcbe3e8efe2be4d8b0afc41d56e32fdab0bc9926354ebd984fa2a2de",
+  "subject": {
+    "name": "board-libavcodec.so",
+    "digest": {
+      "sha256": "9c72c8cc96dbfd101a03414ff772fe1c6f2f41b4014234869de1be03d6ea5f56"
+    },
+    "format": "elf",
+    "architecture": "arm",
+    "local_path": "<LOCAL_BOARD_SAMPLE_A>"
+  },
+  "provider": {
+    "id": "ghidra",
+    "name": "Ghidra",
+    "version": "12.1.4"
+  },
+  "operation": "list_strings",
+  "limitations": [
+    "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+    "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+    "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+    "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+    "Only Ghidra-defined string Data is observed; packed or undefined string bytes may be absent. Completeness applies to that inventory, and an empty search does not establish that text is absent from the artifact. If an address is known, use read_bytes and xrefs to inspect bytes and references.",
+    "Charset is reported, while a non-missing terminator cannot distinguish a present terminator from a fixed or Pascal layout."
+  ],
+  "projection": "whitelisted samples from original list_strings Evidence, not the complete raw response",
+  "raw_local_sha256": "cc88d723f30d59fe42ddf08fdb8083edfb771502e8c7a163b9a9362d0111aaa5",
+  "total_defined_strings": 5386,
+  "samples": [
+    {
+      "address": "0x1348d",
+      "value": "avcodec_align_dimensions2",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 26
+      }
+    },
+    {
+      "address": "0x13c48",
+      "value": "av_packet_rescale_ts",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 21
+      }
+    },
+    {
+      "address": "0x13f29",
+      "value": "av_get_audio_frame_duration2",
+      "string": {
+        "encoding": "UTF-8",
+        "termination": "present_or_not_required",
+        "byte_length": 29
+      }
+    },
+    {
+      "address": "0x2794c0",
+      "value": "Invalid extradata size: %d\n",
+      "string": {
+        "encoding": "US-ASCII",
+        "termination": "present_or_not_required",
+        "byte_length": 28
+      }
+    },
+    {
+      "address": "0x2e0864",
+      "value": "FFmpeg version 8.0.1",
+      "string": {
+        "encoding": "US-ASCII",
+        "termination": "present_or_not_required",
+        "byte_length": 24
+      }
+    }
+  ]
+}

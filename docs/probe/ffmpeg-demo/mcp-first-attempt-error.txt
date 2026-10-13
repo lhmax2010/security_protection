@@ -1,0 +1,9 @@
+{
+  "transport_error": {
+    "name": "SdkError",
+    "message": "Request timed out",
+    "code": "REQUEST_TIMEOUT"
+  }
+}
+
+Cause: @modelcontextprotocol/client 2.3.1 callTool(params, options) received legacy third-argument timeout, ignored; default 60000ms. Owned first-attempt client/server/Ghidra terminated; outputs retained locally. Fixed options as second argument.

@@ -1,0 +1,72 @@
+{
+  "evidence_id": "ev_c0b80aed8ac01888583e2b4460f6daac920bc2b2a560f81befa8ab6ae182e9ef",
+  "subject": {
+    "name": "board-libavcodec.so",
+    "digest": {
+      "sha256": "9c72c8cc96dbfd101a03414ff772fe1c6f2f41b4014234869de1be03d6ea5f56"
+    },
+    "format": "elf",
+    "architecture": "arm",
+    "local_path": "<LOCAL_BOARD_SAMPLE_A>"
+  },
+  "provider": {
+    "id": "ghidra",
+    "name": "Ghidra",
+    "version": "12.1.4"
+  },
+  "analysis_profile": {
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "parameters": {
+      "target_kind": "executable",
+      "target_format": "elf",
+      "architecture": "arm",
+      "available_architectures": [
+        "arm"
+      ],
+      "import_mode": "ephemeral-source-immutable",
+      "annotation_policy": "atomic-function-entry-metadata-v1",
+      "load_image_observations": "source-mappings-entry-context-v2",
+      "function_body_evidence": "complete-inclusive-ranges-v1",
+      "function_references": "complete-body-and-entry-reference-manager-v2",
+      "string_inventory_evidence": "defined-data-coverage-v1",
+      "location_resolution": "explicit-address-exact-entry-symbol-first-v3",
+      "instruction_flow_evidence": "decoded-return-pcode-v1",
+      "function_boundary_observations": "ghidra-terminal-call-limitations-v1",
+      "no_return_repair": "returning-imports-decoded-return-v2",
+      "process_launch": "inspected-jvm-launch-support-v1",
+      "jump_table_evidence": "typed-case-default-blocks-v1",
+      "decompiler_jump_loads": true,
+      "loader": "auto-from-header",
+      "language_id": "auto-from-header",
+      "compiler_spec_id": "auto-default",
+      "analyzer_preset": "ghidra-default"
+    },
+    "digest": "e87c132666812361c9c173067536033b1a9e95723147e4ced29d458510cce9ac"
+  },
+  "predicate_type": "rea.analysis",
+  "operation": "procedure_assembly",
+  "parameters": {
+    "procedure": "av_get_audio_frame_duration2"
+  },
+  "raw_result": {
+    "value": "0x23e09a: push {r4,r5,r6,r7,r8,r9,lr}\n0x23e09e: sub sp, #0x1c\n0x23e0a0: ldrd r12, r9, [r0,#0x4]\n0x23e0a4: ldrd lr, r3, [r0,#0x88]\n0x23e0a8: ldrd r6, r7, [r0,#0x20]\n0x23e0ac: ldr r5, [r0,#0x28]\n0x23e0ae: ldr r2, [r0,#0x74]\n0x23e0b0: ldr.w r8, [r0,#0xc]\n0x23e0b4: ldr.w r4, [r0,#0x90]\n0x23e0b8: add r0, sp,#0x8\n0x23e0ba: stm r0, {r6,r7,r8}\n0x23e0be: mov r0, r12\n0x23e0c0: strd r4, r1, [sp,#0x14]\n0x23e0c4: mov r1, lr\n0x23e0c6: strd r9, r5, [sp,#0x0]\n0x23e0ca: bl 0x0023d794\n0x23e0ce: bic.w r0, r0, r0, asr #0x1f\n0x23e0d2: add sp, #0x1c\n0x23e0d4: pop.w {r4,r5,r6,r7,r8,r9,pc}",
+    "limitations": []
+  },
+  "normalized_result": "0x23e09a: push {r4,r5,r6,r7,r8,r9,lr}\n0x23e09e: sub sp, #0x1c\n0x23e0a0: ldrd r12, r9, [r0,#0x4]\n0x23e0a4: ldrd lr, r3, [r0,#0x88]\n0x23e0a8: ldrd r6, r7, [r0,#0x20]\n0x23e0ac: ldr r5, [r0,#0x28]\n0x23e0ae: ldr r2, [r0,#0x74]\n0x23e0b0: ldr.w r8, [r0,#0xc]\n0x23e0b4: ldr.w r4, [r0,#0x90]\n0x23e0b8: add r0, sp,#0x8\n0x23e0ba: stm r0, {r6,r7,r8}\n0x23e0be: mov r0, r12\n0x23e0c0: strd r4, r1, [sp,#0x14]\n0x23e0c4: mov r1, lr\n0x23e0c6: strd r9, r5, [sp,#0x0]\n0x23e0ca: bl 0x0023d794\n0x23e0ce: bic.w r0, r0, r0, asr #0x1f\n0x23e0d2: add sp, #0x1c\n0x23e0d4: pop.w {r4,r5,r6,r7,r8,r9,pc}",
+  "confidence": "observed",
+  "authority": "shipped-artifact",
+  "environment": null,
+  "limitations": [
+    "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+    "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+    "Cancelling an active Ghidra request terminates its ephemeral database and discards session annotations. The selected target remains open; the next provider query imports the original artifact again.",
+    "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+    "Assembly is Ghidra Listing text and does not claim textual equivalence with Hopper output."
+  ],
+  "locations": [],
+  "evidence_links": []
+}

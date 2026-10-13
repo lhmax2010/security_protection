@@ -196,3 +196,7 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - 挂账：用户态库编译器无法确认（.comment/DWARF producer 均缺失；真实 readelf 错误见 `ffmpeg-demo/board-target-local-readelf.txt`）；按授权上游用 GCC 回退，不能用内核 LLVM 版本替代库编译器证据。板上无 readelf/nm/checksec，继续使用上一轮已验证 RPM Lua 元数据读取方式。
 
 - 已闭合步骤 4：SDB 只读抽取到 `docs/probe/ffmpeg-demo/private/board-libavcodec.so`，不提交本体；哈希核对见 `ffmpeg-demo/board-pull-verification.txt`，忽略规则见该目录 `.gitignore`。
+
+- 已闭合步骤 5：REA6.4 + Ghidra12.1.4 在板子 libavcodec ARMv7 库完成分析（首次成功 overview 83.1s，单次时长不是 benchmark）。三个导出 API 与内部音频助手伪代码、反汇编、已解析调用关系见 `ffmpeg-demo/board/`；选择/定位见 `function-selection.md`，5 个安全明文样本与符号统计见 board/strings-samples.json、symbol-string-statistics.json。非 thunk/非 external 函数 3156，其中 147 非 FUN 标签（仅标签代理比例，不能等同原名恢复率）。
+- 已解决工具失败：首次 MCP 默认60秒超时，原样错误见 `ffmpeg-demo/mcp-first-attempt-error.txt`；修正 v2 客户端 callTool 超时参数为第二参数后成功。没有把失败当成功。
+- 观察限制：音频助手的 codec 枚举被 Ghidra 误推为 char*，短字符串伪影不能当明文；结构体字段名、枚举名没有自动恢复。

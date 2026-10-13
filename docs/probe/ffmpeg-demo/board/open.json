@@ -1,0 +1,17 @@
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"result\":{\"path\":\"<LOCAL_BOARD_SAMPLE_A>\",\"format\":\"elf\",\"kind\":\"executable\",\"sha256\":\"9c72c8cc96dbfd101a03414ff772fe1c6f2f41b4014234869de1be03d6ea5f56\",\"architecture\":\"arm\"}}"
+    }
+  ],
+  "structuredContent": {
+    "result": {
+      "path": "<LOCAL_BOARD_SAMPLE_A>",
+      "format": "elf",
+      "kind": "executable",
+      "sha256": "9c72c8cc96dbfd101a03414ff772fe1c6f2f41b4014234869de1be03d6ea5f56",
+      "architecture": "arm"
+    }
+  }
+}
