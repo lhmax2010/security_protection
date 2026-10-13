@@ -1,0 +1,186 @@
+URL=https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 13 Oct 2026 10:49:24 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  1165    0  1165    0     0   1148      0 --:--:--  0:00:01 --:--:--  1148
+
+URL=https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base/reference/repos/standard/packages/armv7l/
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 13 Oct 2026 10:49:57 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 32598    0 32598    0     0  25729      0 --:--:--  0:00:01 --:--:-- 25728
+100 73023    0 73023    0     0  57380      0 --:--:--  0:00:01 --:--:-- 57362
+
+URL=https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/packages/
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 13 Oct 2026 10:49:25 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   951    0   951    0     0    940      0 --:--:--  0:00:01 --:--:--   940
+
+URL=https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Unified/reference/repos/standard/packages/armv7l/
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 13 Oct 2026 10:49:57 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 32598    0 32598    0     0  25935      0 --:--:--  0:00:01 --:--:-- 25933
+100  449k    0  449k    0     0   271k      0 --:--:--  0:00:01 --:--:--  271k
+
+PACKAGE libavcodec-8.0.1-1.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 21 1980k   21  431k    0     0   260k      0  0:00:07  0:00:01  0:00:06  260k
+100 1980k  100 1980k    0     0   983k      0  0:00:02  0:00:02 --:--:--  984k
+
+PACKAGE glibc-2.40-16.4.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 30 1304k   30  399k    0     0   240k      0  0:00:05  0:00:01  0:00:04  240k
+100 1304k  100 1304k    0     0   648k      0  0:00:02  0:00:02 --:--:--  649k
+
+PACKAGE libstdc++-14.2.0-4.25.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 68  579k   68  399k    0     0   241k      0  0:00:02  0:00:01  0:00:01  241k
+100  579k  100  579k    0     0   332k      0  0:00:01  0:00:01 --:--:--  332k
+
+PACKAGE libopenssl3-3.5.5-2.19.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 33 1489k   33  495k    0     0   299k      0  0:00:04  0:00:01  0:00:03  299k
+100 1489k  100 1489k    0     0   737k      0  0:00:02  0:00:02 --:--:--  737k
+
+PACKAGE dbus-1.12.20-3.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  123k  100  123k    0     0  90763      0  0:00:01  0:00:01 --:--:-- 90778
+
+PACKAGE dbus-libs-1.12.20-3.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 71  111k   71 81657    0     0  50085      0  0:00:02  0:00:01  0:00:01 50065
+100  111k  100  111k    0     0  64706      0  0:00:01  0:00:01 --:--:-- 64673
+
+PACKAGE libglib-2.80.5-0.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  374k  100  374k    0     0   247k      0  0:00:01  0:00:01 --:--:--  247k
+
+PACKAGE sqlite-3.51.0-3.10.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 60  661k   60  399k    0     0   245k      0  0:00:02  0:00:01  0:00:01  245k
+100  661k  100  661k    0     0   399k      0  0:00:01  0:00:01 --:--:--  398k
+
+PACKAGE bash-3.2.57-1.22.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+ 11  278k   11 32505    0     0  25730      0  0:00:11  0:00:01  0:00:10 25715
+100  278k  100  278k    0     0   180k      0  0:00:01  0:00:01 --:--:--  180k
+
+PACKAGE systemd-244-0.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  1 1938k    1 32503    0     0  28609      0  0:01:09  0:00:01  0:01:08 28586
+100 1938k  100 1938k    0     0  1049k      0  0:00:01  0:00:01 --:--:-- 1049k
+
+PACKAGE rpm-4.14.1.1-6.12.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+100  870k  100  870k    0     0   486k      0  0:00:01  0:00:01 --:--:--  486k
+
+PACKAGE findutils-4.3.8-2.19.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 81037  100 81037    0     0  69134      0  0:00:01  0:00:01 --:--:-- 69144
+
+PACKAGE libdlog-9.0.2-1.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 48152  100 48152    0     0  38216      0  0:00:01  0:00:01 --:--:-- 38246
+
+PACKAGE pkgmgr-info-0.37.5-1.armv7l.rpm CURL_EXIT 0
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100  371k  100  371k    0     0   241k      0  0:00:01  0:00:01 --:--:--  241k
+

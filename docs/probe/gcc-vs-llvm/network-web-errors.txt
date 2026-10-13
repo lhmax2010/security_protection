@@ -1,0 +1,1 @@
+web open failed for both supplied packages URLs with Internal Error: URL is not accessible via this tool. This is not an observed HTTP status; local curl follows.

@@ -213,3 +213,14 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 
 - 已闭合步骤 9：报告节选选 `av_packet_rescale_ts`，两份完整原样 REA 伪代码置于 `ffmpeg-demo/report/board-av_packet_rescale_ts.c`、`report/upstream-av_packet_rescale_ts.c`；Evidence ID/目标哈希/节选哈希见 `report/provenance.json`，注释与报告图注见 `report/README.md`。逐字段名称是与上游定义对照的解释，不冒称 REA 自动恢复。
 - 本轮完成：步骤1–9均有真实文本/产物证据；索引 `ffmpeg-demo/README.md`，未决限于板库 compiler/发行版 patch 不明、ABI/组件差异、静态类型缺失与无运行验证。已保留真实失败并修复客户端超时。没有 board 安装/编译/写文件/重启操作；公开 ELF 仅上游本机产物，board binary 与缓存保持 gitignored。
+
+## gcc-vs-llvm 进度与结论
+
+- 计划：公开 Tizen Base/Unified reference 选取 FFmpeg + 10–15 常见库/工具 RPM → 本机解包与编译器确认 → 逐 ELF 加固/符号数量/明文统计 → 复用板侧27样本与libavcodec对照 → 逐项保护分类。不开新板侧采集、不重测板子。
+- 数据边界：仅新增 `docs/probe/gcc-vs-llvm/` 文本、脚本、对比表；RPM/抽取 ELF、完整符号及字符串原输出留本机 private 并 gitignore，不上传。已有板侧是 PM 指定 LLVM 工具链板，但用户态逐库编译器未被上一轮确认；新 reference 包亦须逐样本验证，不预设 GCC。
+- 开场 pull --ff-only 成功；已读 STATE、board-survey/hardening-summary.txt、ffmpeg-demo/comparison.md 并复用 env。板侧历史基线：PIE11/11，Full RELRO8/27，NX/strip27/27，FORTIFY17/27，canary21/27；libavcodec RELRO None、NX、strip、canary/FORTIFY导入证据。
+- 初始网络情况：web 工具不能访问两个指定 packages 索引（Internal Error）；继续用本机 curl 读取真实 HTTP 输出，失败将原样留证。
+- 需人工裁决：若公开 reference 并非 GCC 构建或缺逐包编译器证据，将明确降低结论级别，不假造“LLVM 补课”因果判断；公司内部 GCC 实际产物/旗标尚不在输入中。
+- 未决：下载、版本、编译器归属、指标与同名配对均待实测。
+
+- 已闭合步骤 1：本机 curl 访问两个指定索引及 armv7l 子目录 HTTP200，14 RPM均真实下载并完成 rpm -qp 版本查询；选15个常见ELF目标 + libavcodec，共16目标。Base索引观察更新时间2026-10-06、Unified2026-10-13；参考URL可变，以下载SHA256和版本固定本轮样本。证据 `gcc-vs-llvm/gcc-sample-list.txt`、`network-downloads.txt`；网络 web 工具访问失败但 curl 成功，错误记录 `network-web-errors.txt`。RPM本体仅 private/download。
