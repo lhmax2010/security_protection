@@ -189,3 +189,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - 已采集清单（步骤 2 待单独提交）：FFmpeg 包 8.0.1；libavcodec 62.11.100 大约 3MB，可优先分析，无需预先退到 libavutil；`/usr/bin/ffmpeg` 不存在原样留证。
 - 需人工裁决：暂无线性依赖的裁决；若分析发现无法确认可公开的私有内容，留本机挂账。
 - 未决：版本/producer、加固、REA 可读性及上游对照尚待实测；本任务不能预设“全库无保护”。
+
+- 已闭合步骤 2：限定范围 FFmpeg / libav 清单已公开，见 `docs/probe/ffmpeg-demo/board-ffmpeg-inventory.txt`；`libavcodec-8.0.1-0.armv7l` 与真实 SONAME 62.11.100 对应；GStreamer libav 插件存在。

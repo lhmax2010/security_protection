@@ -1,0 +1,24 @@
+ls: cannot access /usr/bin/ffmpeg: No such file or directory
+-rwxr-xr-x 1 root root  180252 Oct  3 21:14 /usr/lib/gstreamer-1.0/libgstlibav.so
+lrwxrwxrwx 1 root root      23 Oct  3 19:49 /usr/lib/libavcodec.so.62 -> libavcodec.so.62.11.100
+-rwxr-xr-x 1 root root 3062768 Oct  3 19:49 /usr/lib/libavcodec.so.62.11.100
+lrwxrwxrwx 1 root root      23 Oct  3 19:49 /usr/lib/libavfilter.so.11 -> libavfilter.so.11.4.100
+-rwxr-xr-x 1 root root  213948 Oct  3 19:49 /usr/lib/libavfilter.so.11.4.100
+lrwxrwxrwx 1 root root      23 Oct  3 19:49 /usr/lib/libavformat.so.62 -> libavformat.so.62.3.100
+-rwxr-xr-x 1 root root  698444 Oct  3 19:49 /usr/lib/libavformat.so.62.3.100
+lrwxrwxrwx 1 root root      21 Oct  3 19:49 /usr/lib/libavutil.so.60 -> libavutil.so.60.8.100
+-rwxr-xr-x 1 root root  526112 Oct  3 19:49 /usr/lib/libavutil.so.60.8.100
+/usr/lib/libavutil.so.60.8.100
+/usr/lib/libavcodec.so.62.11.100
+/usr/lib/libavutil.so.60
+/usr/lib/libavcodec.so.62
+/usr/lib/gstreamer-1.0/libgstlibav.so
+/usr/lib/libavformat.so.62.3.100
+/usr/lib/libavformat.so.62
+libavcodec-8.0.1-0.armv7l
+libavfilter-8.0.1-0.armv7l
+gst-libav-1.24.11-41.armv7l
+libavutil-8.0.1-0.armv7l
+libavformat-8.0.1-0.armv7l
+
+Observed packages: FFmpeg 8.0.1; libavcodec 62.11.100, libavformat 62.3.100, libavutil 60.8.100; gst-libav 1.24.11. Missing /usr/bin/ffmpeg is recorded above. Search scope: /usr/lib depth <=3.
