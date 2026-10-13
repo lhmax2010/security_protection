@@ -16,7 +16,8 @@
   "ARM_X86_backends_present": true,
   "obfuscation_pipeline_accepted_by_opt": true,
   "port_to_LLVM22_required": false,
-  "limitation": "--print-passes does not list this extension; opt -passes=obfuscation accepted empty IR. Actual annotated transforms and Tizen integration are not yet verified.",
+  "limitation": "LLVM22.1.8 and annotated ARM compilation verified; platform vendor patches/GBS/board integration remain untested. opt --print-passes omits extension names; actual invocation and pass report prove capability.",
   "clang_sha256": "fbb73533603d3bc661c3e8c27e699aa29f3d2861165fcb9f2554e76e4b54891f",
-  "opt_sha256": "774788cee1997f8847ca9c0c83c996deaa42613df8612d08a109a0bb10b3c4fb"
+  "opt_sha256": "774788cee1997f8847ca9c0c83c996deaa42613df8612d08a109a0bb10b3c4fb",
+  "annotated_ARM_transforms_and_QEMU_verified": true
 }

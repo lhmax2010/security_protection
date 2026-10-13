@@ -1,0 +1,42 @@
+{
+  "compiler_matches_platform_version": "22.1.8",
+  "acquisition": "xollvm v0.11.1 upstream prebuilt",
+  "manifests_unchanged": true,
+  "source_only_adds_annotations": true,
+  "QEMU_main_cases_equal": 11,
+  "successful_REA_calls": 26,
+  "raw_projection_provenance_verified": true,
+  "required_outputs_nonempty": [
+    "comparison.md",
+    "comparison-metrics.json",
+    "toolchain-survey.txt",
+    "toolchain.txt",
+    "obf-build-flags.txt",
+    "obf-run-equivalence.txt",
+    "pass-report.json",
+    "report/provenance.json",
+    "report/baseline18-simple_checksum.c",
+    "report/obfuscated22-simple_checksum.c",
+    "obfuscated/secret_transform-pseudocode.c",
+    "obfuscated/simple_checksum-pseudocode.c"
+  ],
+  "authorized_toy_ELFs": [
+    "docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_obfuscated",
+    "docs/probe/protection-demo/obfuscation/bin/target_c_llvm22_control"
+  ],
+  "third_party_binaries_published": 0,
+  "UTF8_text_files_checked": 128,
+  "no_runtime_files_tracked": true,
+  "algorithm_effect": "secret_transform dataflow readability reduced without CFG growth; simple_checksum most visibly flattened/expanded; neither unrecoverable",
+  "not_done": [
+    "Tizen vendor build/GBS/board integration",
+    "Human reverse-engineering timing",
+    "Exhaustive function-input equivalence"
+  ],
+  "failures_preserved": [
+    "survey/web-errors.txt",
+    "survey/bloesadi-Pluto.json",
+    "survey/fetch-.github-workflows-build-release.yml.error.txt",
+    "toolchain-validation-error.txt"
+  ]
+}

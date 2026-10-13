@@ -1,0 +1,17 @@
+{
+  "raw_MCP_equals_decoded": true,
+  "Ghidra_provider_and_target_digests_verified": true,
+  "ELF_symbol_sizes_equal_Ghidra_body_lengths": true,
+  "LLVM18_vs_22_control_pseudocode_byte_identical": true,
+  "simple_checksum_all_three_passes_changed": true,
+  "secret_transform_flattening_skipped": true,
+  "QEMU_cases_equal": 11,
+  "LLVM22_port_required": false,
+  "representative": "simple_checksum",
+  "limitations": [
+    "No measured human reverse-engineering time",
+    "No full-input equivalence proof",
+    "Ghidra successfully decompiled both",
+    "secret_transform no CFG growth"
+  ]
+}

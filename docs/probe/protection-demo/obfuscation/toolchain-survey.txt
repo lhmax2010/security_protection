@@ -18,3 +18,5 @@ Limits: source claims and release metadata do not yet prove binaries usable, pas
 Raw failed web-release fetch and API failures preserved under survey/. No board/GBS operations performed.
 
 Actual bundle version: clang/opt22.1.8, exact PM premise match; ARM/X86 confirmed. opt accepts -passes=obfuscation (empty IR exit0). --print-passes omission caused an initial assertion failure, fully preserved in toolchain-validation-error.txt; actual annotated application remains pending. No LLVM22 port needed for this version; vendor/GBS integration untested.
+
+Final experiment verified: annotated ARMv7 build successful; QEMU11/11 equal to original18 and control22. checksum sub/bcf/fla all changed, secret fla skipped (single block), bcf no final CFG growth; decompilation effects documented in comparison.md. Compiler22 no-pass control is identical to baseline18 for both decompiled bodies.

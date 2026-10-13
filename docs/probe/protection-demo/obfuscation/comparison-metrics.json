@@ -1,0 +1,172 @@
+{
+  "method": "Ghidra12.1.4 procedure_info/basicblock_count and read_function_instructions. Direct branch count is static ARM b/b<condition>/cbz/cbnz instruction rows, excluding calls, bx/returns, and implicit PC transfers; not CFG-edge counts or dynamic execution counts.",
+  "targets": {
+    "baseline18": {
+      "secret_transform": {
+        "function_bytes": 24,
+        "basic_blocks": 1,
+        "direct_branch_instructions": 0,
+        "instruction_rows": 6,
+        "pseudocode_lines": 7,
+        "pseudocode_nonempty_lines": 4,
+        "pseudocode_if_count": 0,
+        "pseudocode_goto_count": 0,
+        "direct_branch_rows": [],
+        "elf_symbol": {
+          "elf_address": "00000534",
+          "bytes": 24,
+          "bind": "GLOBAL",
+          "visibility": "DEFAULT"
+        },
+        "info_evidence_id": "ev_e2d0a670b3f87ca61790284add3e44213541e649a264a2f72ce4947781bf39f9",
+        "pseudocode_evidence_id": "ev_edbaaa7922f762b74cd80ba7639b64c602a76fee35d1e686e5a1a38c0164f6dd",
+        "report_copy": "docs/probe/protection-demo/obfuscation/report/baseline18-secret_transform.c",
+        "report_copy_sha256": "71099118128b5c9c81d4e58d8afa26ffd6b23bfa76e6abd815f7f0acdbb6856b"
+      },
+      "simple_checksum": {
+        "function_bytes": 60,
+        "basic_blocks": 5,
+        "direct_branch_instructions": 2,
+        "instruction_rows": 15,
+        "pseudocode_lines": 20,
+        "pseudocode_nonempty_lines": 16,
+        "pseudocode_if_count": 1,
+        "pseudocode_goto_count": 0,
+        "direct_branch_rows": [
+          "0x10554: beq 0x00010580",
+          "0x10578: bne 0x00010560"
+        ],
+        "elf_symbol": {
+          "elf_address": "0000054c",
+          "bytes": 60,
+          "bind": "GLOBAL",
+          "visibility": "DEFAULT"
+        },
+        "info_evidence_id": "ev_f42fba364a2be65dd0bf06473c8a9785e9d83f9b13f117f6156baab1b2e71674",
+        "pseudocode_evidence_id": "ev_96288e826d3e6a1d55248c919451d35a4d29945b0cbfacf0da9532644b8dcdb8",
+        "report_copy": "docs/probe/protection-demo/obfuscation/report/baseline18-simple_checksum.c",
+        "report_copy_sha256": "76f7f216f3540837537a9ebd8e7fad621db2045656e08755f85be84f932a6fda"
+      }
+    },
+    "control22": {
+      "secret_transform": {
+        "function_bytes": 24,
+        "basic_blocks": 1,
+        "direct_branch_instructions": 0,
+        "instruction_rows": 6,
+        "pseudocode_lines": 7,
+        "pseudocode_nonempty_lines": 4,
+        "pseudocode_if_count": 0,
+        "pseudocode_goto_count": 0,
+        "direct_branch_rows": [],
+        "elf_symbol": {
+          "elf_address": "00000510",
+          "bytes": 24,
+          "bind": "GLOBAL",
+          "visibility": "DEFAULT"
+        },
+        "info_evidence_id": "ev_3c5b291ad29ca16a7293b4e005cf079fc637e5fc936bd5f853000ed23c746029",
+        "pseudocode_evidence_id": "ev_5eaa62433f3603da33bbd7aa6e53b3e7109d8d42ed548581743b14d1b4b3531e",
+        "report_copy": "docs/probe/protection-demo/obfuscation/report/control22-secret_transform.c",
+        "report_copy_sha256": "71099118128b5c9c81d4e58d8afa26ffd6b23bfa76e6abd815f7f0acdbb6856b"
+      },
+      "simple_checksum": {
+        "function_bytes": 60,
+        "basic_blocks": 5,
+        "direct_branch_instructions": 2,
+        "instruction_rows": 15,
+        "pseudocode_lines": 20,
+        "pseudocode_nonempty_lines": 16,
+        "pseudocode_if_count": 1,
+        "pseudocode_goto_count": 0,
+        "direct_branch_rows": [
+          "0x10530: beq 0x0001055c",
+          "0x10554: bne 0x0001053c"
+        ],
+        "elf_symbol": {
+          "elf_address": "00000528",
+          "bytes": 60,
+          "bind": "GLOBAL",
+          "visibility": "DEFAULT"
+        },
+        "info_evidence_id": "ev_8acb564ed7453c3ab8994b7e7a1e57e820450ac69d1c8d78afc080f6ef236548",
+        "pseudocode_evidence_id": "ev_ca415da0ab5335e3c344fe354b584761334292ea8b03c5c383305e87ed68d67f",
+        "report_copy": "docs/probe/protection-demo/obfuscation/report/control22-simple_checksum.c",
+        "report_copy_sha256": "76f7f216f3540837537a9ebd8e7fad621db2045656e08755f85be84f932a6fda"
+      }
+    },
+    "obfuscated22": {
+      "secret_transform": {
+        "function_bytes": 696,
+        "basic_blocks": 1,
+        "direct_branch_instructions": 0,
+        "instruction_rows": 174,
+        "pseudocode_lines": 42,
+        "pseudocode_nonempty_lines": 38,
+        "pseudocode_if_count": 0,
+        "pseudocode_goto_count": 0,
+        "direct_branch_rows": [],
+        "elf_symbol": {
+          "elf_address": "00000510",
+          "bytes": 696,
+          "bind": "GLOBAL",
+          "visibility": "DEFAULT"
+        },
+        "info_evidence_id": "ev_f05abb84913617dfbd93ee5d2ecd4450c97a57993f06ad007806bd47d0f808fa",
+        "pseudocode_evidence_id": "ev_ba700644b0cbdc6950d45e4fd29b48a366df36bd2dd3de093557a0fd84ee4460",
+        "report_copy": "docs/probe/protection-demo/obfuscation/report/obfuscated22-secret_transform.c",
+        "report_copy_sha256": "3e5ee4d8139366fd1894651898c371d4e5865fbc82a5fe595d2553b5ea5b0c3c"
+      },
+      "simple_checksum": {
+        "function_bytes": 4284,
+        "basic_blocks": 39,
+        "direct_branch_instructions": 28,
+        "instruction_rows": 1071,
+        "pseudocode_lines": 311,
+        "pseudocode_nonempty_lines": 307,
+        "pseudocode_if_count": 36,
+        "pseudocode_goto_count": 4,
+        "direct_branch_rows": [
+          "0x10a18: b 0x00010b1c",
+          "0x10b98: beq 0x00010d10",
+          "0x10ba0: bne 0x00010eac",
+          "0x10c28: bgt 0x0001102c",
+          "0x10c40: beq 0x000114c0",
+          "0x10c50: bne 0x00011878",
+          "0x10d0c: b 0x00011598",
+          "0x10da4: ble 0x000110b8",
+          "0x10db4: bgt 0x0001128c",
+          "0x10dc4: bne 0x00011720",
+          "0x10ea8: b 0x000117ac",
+          "0x10f3c: beq 0x00011164",
+          "0x10f50: bne 0x000111e8",
+          "0x11028: b 0x0001186c",
+          "0x11038: beq 0x00010a1c",
+          "0x110b4: b 0x000111d0",
+          "0x110c4: beq 0x000115ac",
+          "0x110d4: bne 0x00011638",
+          "0x11160: b 0x000111dc",
+          "0x111e4: b 0x00010b08",
+          "0x11288: b 0x00010b0c",
+          "0x11298: bne 0x000117b8",
+          "0x114bc: b 0x00011864",
+          "0x115a8: b 0x00010b0c",
+          "0x11634: b 0x00010b0c",
+          "0x1171c: b 0x00010b00",
+          "0x117b4: b 0x00010b0c",
+          "0x11874: b 0x00010b0c"
+        ],
+        "elf_symbol": {
+          "elf_address": "000007c8",
+          "bytes": 4284,
+          "bind": "GLOBAL",
+          "visibility": "DEFAULT"
+        },
+        "info_evidence_id": "ev_8fd02d37f8de9f4eabc32943bf64bb2069b2685b43ae73434a3a6f5eed451b6c",
+        "pseudocode_evidence_id": "ev_6fd2466cf340889e01e41a8a56df56b193ab7e05dd4b71d651c386a532191933",
+        "report_copy": "docs/probe/protection-demo/obfuscation/report/obfuscated22-simple_checksum.c",
+        "report_copy_sha256": "e64a35f3f46887f21ffd9e0aec9f9636d20afe4fdff5d26d8eca411c52063916"
+      }
+    }
+  }
+}

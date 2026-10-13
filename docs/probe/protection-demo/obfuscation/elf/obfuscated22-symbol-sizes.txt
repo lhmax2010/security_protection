@@ -1,0 +1,123 @@
+
+Symbol table '.dynsym' contains 11 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 000003ac     0 SECTION LOCAL  DEFAULT   10 .init
+     2: 00003038     0 SECTION LOCAL  DEFAULT   21 .data
+     3: 00000000     0 FUNC    GLOBAL DEFAULT  UND __libc_start_main@GLIBC_2.34 (2)
+     4: 00000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.4 (3)
+     5: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTable
+     6: 00000000     0 FUNC    GLOBAL DEFAULT  UND printf@GLIBC_2.4 (3)
+     7: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+     8: 00000000     0 FUNC    GLOBAL DEFAULT  UND strtoul@GLIBC_2.4 (3)
+     9: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+    10: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@GLIBC_2.4 (3)
+
+Symbol table '.symtab' contains 104 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00000154     0 SECTION LOCAL  DEFAULT    1 .interp
+     2: 00000170     0 SECTION LOCAL  DEFAULT    2 .note.ABI-tag
+     3: 00000190     0 SECTION LOCAL  DEFAULT    3 .gnu.hash
+     4: 000001a8     0 SECTION LOCAL  DEFAULT    4 .dynsym
+     5: 00000258     0 SECTION LOCAL  DEFAULT    5 .dynstr
+     6: 000002f4     0 SECTION LOCAL  DEFAULT    6 .gnu.version
+     7: 0000030c     0 SECTION LOCAL  DEFAULT    7 .gnu.version_r
+     8: 0000033c     0 SECTION LOCAL  DEFAULT    8 .rel.dyn
+     9: 0000037c     0 SECTION LOCAL  DEFAULT    9 .rel.plt
+    10: 000003ac     0 SECTION LOCAL  DEFAULT   10 .init
+    11: 000003b8     0 SECTION LOCAL  DEFAULT   11 .plt
+    12: 00000414     0 SECTION LOCAL  DEFAULT   12 .text
+    13: 000018e8     0 SECTION LOCAL  DEFAULT   13 .fini
+    14: 000018f0     0 SECTION LOCAL  DEFAULT   14 .rodata
+    15: 00001a34     0 SECTION LOCAL  DEFAULT   15 .ARM.exidx
+    16: 00001a3c     0 SECTION LOCAL  DEFAULT   16 .eh_frame
+    17: 00002f08     0 SECTION LOCAL  DEFAULT   17 .init_array
+    18: 00002f0c     0 SECTION LOCAL  DEFAULT   18 .fini_array
+    19: 00002f10     0 SECTION LOCAL  DEFAULT   19 .dynamic
+    20: 00003000     0 SECTION LOCAL  DEFAULT   20 .got
+    21: 00003038     0 SECTION LOCAL  DEFAULT   21 .data
+    22: 00003040     0 SECTION LOCAL  DEFAULT   22 .bss
+    23: 00000000     0 SECTION LOCAL  DEFAULT   23 .comment
+    24: 00000000     0 SECTION LOCAL  DEFAULT   24 .ARM.attributes
+    25: 00000000     0 FILE    LOCAL  DEFAULT  ABS Scrt1.o
+    26: 00000170     0 NOTYPE  LOCAL  DEFAULT    2 $d
+    27: 00000170    32 OBJECT  LOCAL  DEFAULT    2 __abi_tag
+    28: 00000414     0 NOTYPE  LOCAL  DEFAULT   12 $t
+    29: 00000440     0 NOTYPE  LOCAL  DEFAULT   12 $d
+    30: 00001a34     0 NOTYPE  LOCAL  DEFAULT   15 $d
+    31: 000018f0     0 NOTYPE  LOCAL  DEFAULT   14 $d
+    32: 00003038     0 NOTYPE  LOCAL  DEFAULT   21 $d
+    33: 00000000     0 FILE    LOCAL  DEFAULT  ABS crti.o
+    34: 00000448     0 NOTYPE  LOCAL  DEFAULT   12 $a
+    35: 00000448     0 FUNC    LOCAL  DEFAULT   12 call_weak_fn
+    36: 00000464     0 NOTYPE  LOCAL  DEFAULT   12 $d
+    37: 000003ac     0 NOTYPE  LOCAL  DEFAULT   10 $a
+    38: 000018e8     0 NOTYPE  LOCAL  DEFAULT   13 $a
+    39: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtn.o
+    40: 000003b4     0 NOTYPE  LOCAL  DEFAULT   10 $a
+    41: 000018ec     0 NOTYPE  LOCAL  DEFAULT   13 $a
+    42: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    43: 000018f4     0 NOTYPE  LOCAL  DEFAULT   14 $d
+    44: 000018f4     0 OBJECT  LOCAL  DEFAULT   14 all_implied_fbits
+    45: 0000046d     0 FUNC    LOCAL  DEFAULT   12 deregister_tm_clones
+    46: 0000046c     0 NOTYPE  LOCAL  DEFAULT   12 $t
+    47: 00000488     0 NOTYPE  LOCAL  DEFAULT   12 $d
+    48: 00000498     0 NOTYPE  LOCAL  DEFAULT   12 $t
+    49: 00000499     0 FUNC    LOCAL  DEFAULT   12 register_tm_clones
+    50: 000004bc     0 NOTYPE  LOCAL  DEFAULT   12 $d
+    51: 0000303c     0 NOTYPE  LOCAL  DEFAULT   21 $d
+    52: 000004cc     0 NOTYPE  LOCAL  DEFAULT   12 $t
+    53: 000004cd     0 FUNC    LOCAL  DEFAULT   12 __do_global_dtors_aux
+    54: 000004f8     0 NOTYPE  LOCAL  DEFAULT   12 $d
+    55: 00003040     1 OBJECT  LOCAL  DEFAULT   22 completed.0
+    56: 00002f0c     0 NOTYPE  LOCAL  DEFAULT   18 $d
+    57: 00002f0c     0 OBJECT  LOCAL  DEFAULT   18 __do_global_dtors_aux_fini_array_entry
+    58: 0000050c     0 NOTYPE  LOCAL  DEFAULT   12 $t
+    59: 0000050d     0 FUNC    LOCAL  DEFAULT   12 frame_dummy
+    60: 00002f08     0 NOTYPE  LOCAL  DEFAULT   17 $d
+    61: 00002f08     0 OBJECT  LOCAL  DEFAULT   17 __frame_dummy_init_array_entry
+    62: 00003040     0 NOTYPE  LOCAL  DEFAULT   22 $d
+    63: 00000000     0 FILE    LOCAL  DEFAULT  ABS target_obfuscated.c
+    64: 00000510     0 NOTYPE  LOCAL  DEFAULT   12 $a
+    65: 000018e0     0 NOTYPE  LOCAL  DEFAULT   12 $d
+    66: 00000000     0 FILE    LOCAL  DEFAULT  ABS crtstuff.c
+    67: 000019a4     0 NOTYPE  LOCAL  DEFAULT   14 $d
+    68: 000019a4     0 OBJECT  LOCAL  DEFAULT   14 all_implied_fbits
+    69: 00001a3c     0 NOTYPE  LOCAL  DEFAULT   16 $d
+    70: 00001a3c     0 OBJECT  LOCAL  DEFAULT   16 __FRAME_END__
+    71: 00000000     0 FILE    LOCAL  DEFAULT  ABS 
+    72: 00002f10     0 OBJECT  LOCAL  DEFAULT  ABS _DYNAMIC
+    73: 00003000     0 OBJECT  LOCAL  DEFAULT  ABS _GLOBAL_OFFSET_TABLE_
+    74: 00001984     0 NOTYPE  LOCAL  DEFAULT   14 $d
+    75: 000003b8     0 NOTYPE  LOCAL  DEFAULT   11 $a
+    76: 000003c8     0 NOTYPE  LOCAL  DEFAULT   11 $d
+    77: 000003cc     0 NOTYPE  LOCAL  DEFAULT   11 $a
+    78: 00000000     0 FUNC    GLOBAL DEFAULT  UND __libc_start_main@GLIBC_2.34
+    79: 00000000     0 FUNC    WEAK   DEFAULT  UND __cxa_finalize@GLIBC_2.4
+    80: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_deregisterTMCloneTable
+    81: 00003038     0 NOTYPE  WEAK   DEFAULT   21 data_start
+    82: 00000000     0 FUNC    GLOBAL DEFAULT  UND printf@GLIBC_2.4
+    83: 00003040     0 NOTYPE  GLOBAL DEFAULT   22 __bss_start__
+    84: 00003044     0 NOTYPE  GLOBAL DEFAULT   22 _bss_end__
+    85: 00003040     0 NOTYPE  GLOBAL DEFAULT   21 _edata
+    86: 000018e8     0 FUNC    GLOBAL HIDDEN    13 _fini
+    87: 00003044     0 NOTYPE  GLOBAL DEFAULT   22 __bss_end__
+    88: 00003038     0 NOTYPE  GLOBAL DEFAULT   21 __data_start
+    89: 00000000     0 NOTYPE  WEAK   DEFAULT  UND __gmon_start__
+    90: 0000303c     0 OBJECT  GLOBAL HIDDEN    21 __dso_handle
+    91: 000018f0     4 OBJECT  GLOBAL DEFAULT   14 _IO_stdin_used
+    92: 00000000     0 FUNC    GLOBAL DEFAULT  UND strtoul@GLIBC_2.4
+    93: 000007c8  4284 FUNC    GLOBAL DEFAULT   12 simple_checksum
+    94: 00003044     0 NOTYPE  GLOBAL DEFAULT   22 _end
+    95: 00000415     0 FUNC    GLOBAL DEFAULT   12 _start
+    96: 00003044     0 NOTYPE  GLOBAL DEFAULT   22 __end__
+    97: 00003040     0 NOTYPE  GLOBAL DEFAULT   22 __bss_start
+    98: 00001884   100 FUNC    GLOBAL DEFAULT   12 main
+    99: 00000510   696 FUNC    GLOBAL DEFAULT   12 secret_transform
+   100: 00003040     0 OBJECT  GLOBAL HIDDEN    21 __TMC_END__
+   101: 00000000     0 NOTYPE  WEAK   DEFAULT  UND _ITM_registerTMCloneTable
+   102: 00000000     0 FUNC    GLOBAL DEFAULT  UND abort@GLIBC_2.4
+   103: 000003ac     0 FUNC    GLOBAL HIDDEN    10 _init
+
+exit=0
