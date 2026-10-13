@@ -71,6 +71,22 @@ GCC16 RELRO分布 Full4/Partial9/None3；同名LLVM16 Full3/Partial11/None2。�
 
 REA原始证据：[GCC时间戳伪代码](rea/upstream/av_packet_rescale_ts/pseudocode.decoded.json)、[GCC尺寸对齐伪代码](rea/upstream/avcodec_align_dimensions2/pseudocode.decoded.json)、[板时间戳伪代码](../ffmpeg-demo/board/av_packet_rescale_ts/pseudocode.decoded.json)、[板尺寸对齐伪代码](../ffmpeg-demo/board/avcodec_align_dimensions2/pseudocode.decoded.json)、[GCC overview](rea/upstream/overview.decoded.json)、[板overview](../ffmpeg-demo/board/overview.decoded.json)。这里是未加载debuginfo的主库静态分析；没有执行库、也没有保证完整解码器或所有间接调用已恢复。
 
-## 逐项保护结论（步骤5待单独提交）
+## 逐项保护结论
 
-以下按已有能力/缺口判定，不能在“两边都已有”和“证据不足”的情况下硬填“LLVM补课”或“两边都没有”。逐项结论下一子步骤补齐。
+以下保留“既有”“局部补齐”“新增候选”“未知”四种状态。强行把全部项目二分为“GCC已有/LLVM补课”或“两边都没有”会违反实际证据。
+
+| 计划项 | GCC参考侧已有？ | LLVM板已有？ | 本轮可支持的判定 |
+|---|---|---|---|
+| 符号收敛 | **部分已有**：7样本producer有hidden；dlog仅11导出；codec保留145动态项。但pkgmgr仍1073个C++mangled条目 | **部分已有的接口形态**：dlog/codec同量级；pkgmgr1158个C++mangled条目，hidden旗标未知 | 不支持“LLVM完全没做”。现有接口收敛不是新增；进一步对白名单之外C++实现严格隐藏是**共同加强/新增策略候选**，必须先审接口契约，不归为单纯LLVM补课 |
+| 完整strip | **主ELF已做**：16/16无.symtab，均无嵌入.debug_info/.zdebug_info | **主ELF已做**：旧27和codec均strip | **两边既有**，不能报作新增或LLVM补课；单独审debug侧车/发布流程，不能靠再strip隐藏动态ABI |
+| Full RELRO | 4/16已有；codec/libc为Full，仍有其他Partial/None | 同名3/16已有；codec None、libc Partial；sqlite Full甚至强于参考GCC | **codec/libc向GCC基线补齐（LLVM板包构建补课）**；其余缺口按包处理，也有GCC更弱项。这是攻击面加固，不是新增代码保密能力 |
+| FORTIFY | 12/16导入正例，libc provider另算；缺导入不证明旗标关闭 | 同名同样12/16；codec两侧均有 | **两边部分既有、需覆盖核验**；没有同名统计缺口证据，不能统称LLVM补课，也不能称两边都没有 |
+| 栈保护 | 13/16导入正例；codec有all/strong producer，两选API有guard/fail | 同名同样13/16，codec整体已有canary，但两选API未见guard/fail；exact flag未知 | **基本SSP已在两边存在**；codec这两路径的更广栈检查属于**GCC已有/LLVM板补齐候选**，应移植验证all/strong策略，而不是宣称首次给LLVM加SSP |
+| 字符串处理 | 每个样本均有.rodata打印串；codec版本/config/诊断仍明文 | codec版本/config/诊断仍明文；其他库同口径数量未知 | 对本轮明确暴露、计划选择的字面量实施隐藏/运行时解码，可列**真正新增的反逆向能力候选**；不能断言两侧从未处理任何别的字符串，也不应承诺清除动态ABI所需名字 |
+| 代码混淆 | REA所选两API主要算法可读，没有形成有效阻碍；未穷尽全部代码/旗标 | 同名主要算法同样可读；类型、匿名名和goto有成本，不自动等于混淆 | 在这些路径加可验证的变换可列**真正新增候选**，不是补memory-hardening；“全库任何混淆均不存在”仍**未知**，需受保护前后同函数对照验证 |
+
+**报告建议**：把“恢复FFmpeg hardened构建效果（Full RELRO和更广SSP）”列为构建策略补齐；把“业务敏感字符串处理、使所选算法更难恢复的代码变换、按API契约进一步收紧C++实现可见性”列为新增反逆向能力候选。已有strip、部分hidden、FORTIFY、基本SSP不能包装为从零新增。
+
+公开reference的**debug包也确实可下载并与16 ELF匹配**（[CRC/build-id/producer证据](gcc-compiler-evidence.json)）。因此“主ELF完整strip”不意味着参考构建的全部调试/内部命名信息不可取得。公司是否向外分发相同debug侧车未在本轮输入中，不能照搬成公司产品结论。
+
+所有分类由前面的逐样本raw/REA结果支撑；这里只判定本批与选定路径。公共GCC与LLVM板非同一构建实验，公司内部GCC实际配方、LLVM用户态compiler/精确旗标、接口白名单、全库选择性字符串保护/混淆是否存在，仍需相应证据。并未通过新测板子补齐这些未知。

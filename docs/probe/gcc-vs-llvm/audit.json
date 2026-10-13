@@ -1,0 +1,32 @@
+{
+  "compiler_matched_debug_GCC14_2_0": 16,
+  "ELF_hashes_and_raw_count_projections": 16,
+  "matched_pair_distribution_verified": true,
+  "equal_export_counts_in_matched16": 15,
+  "REA_focused": {
+    "avcodec_align_dimensions2": {
+      "gcc_evidence": "ev_b3bf1f858bc2aec94822cfc7d16921e38accc329ab92d3a3b840267258aa14e4",
+      "board_reused_evidence": "ev_c6e227192d0b50c21dc3358823a4b242f892aa1945c43028a21adecf7bfb3c30",
+      "gcc_guard_and_fail_observed": true,
+      "board_guard_and_fail_not_in_decompiled_function": true,
+      "limit": "Only these two decompiled bodies; not whole-library SSP coverage or compiler flags."
+    },
+    "av_packet_rescale_ts": {
+      "gcc_evidence": "ev_8fbbbca58055b970992225915146c3bf69892b1f6f4dff374708f6c68ce964cd",
+      "board_reused_evidence": "ev_a3b68a67e90433e0d2b53006a99e88151c42581d6f7d240c50e5160cfd379732",
+      "gcc_guard_and_fail_observed": true,
+      "board_guard_and_fail_not_in_decompiled_function": true,
+      "limit": "Only these two decompiled bodies; not whole-library SSP coverage or compiler flags."
+    }
+  },
+  "no_REA_full_symbol_or_string_inventory_requested": true,
+  "public_text_files_reviewed": 96,
+  "no_private_or_runtime_files_tracked": true,
+  "no_new_board_connection": "No sdb/ssh invoked; saved evidence only; see raw/llvm-evidence-reuse.json",
+  "limitations": [
+    "Public reference is proxy for company GCC products",
+    "LLVM userland compiler/flags unknown, no board remeasurement",
+    "Whole-library selective obfuscation/string handling and interface whitelist unavailable",
+    "Chat model-stream backend error remains unresolved; diagnostic logs/request IDs private only"
+  ]
+}

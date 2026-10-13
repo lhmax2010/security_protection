@@ -238,3 +238,9 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 
 - 已闭合步骤4：`gcc-vs-llvm/compare.md` 分开攻击面加固与反逆向，并同时列同名16配对、历史27、历史+codec28；数据/分母 `comparison-data.json`，板侧raw哈希与复用来源 `raw/llvm-evidence-reuse.json`。同名16两侧NX/strip16/16、PIE6/6、FORTIFY12/16、canary13/16相同；Full RELRO参考4/16 vs板3/16，存在5个双向RELRO差异，不称“所有GCC强于LLVM”。15/16导出总数相同，pkgmgr-info存在不同。
 - 反逆向观察：两侧codec均144公开函数，REA两API主逻辑均可读；GCC更强的RELRO/SSP不掩盖算法。GCC7样本CU明确hidden旗标，但pkgmgr仍千级C++名；判内外接口需API白名单，不能按条目多直接认“内部泄漏”。GCC.rodata明文计数真实存在，LLVM大多数旧样本无同口径字符串计数且禁止重测，已记未知不伪造。
+
+- [收尾核验完成，2026-10-13] gcc-vs-llvm 步骤5逐项保护结论及既有自查产物收尾：开场 git pull --ff-only 返回 Already up to date；六个必需文件均存在且非空：compare.md 92行、comparison-data.json 783行、gcc-hardening-summary.txt 7行、gcc-compiler-evidence.txt 18行、gcc-hardening-matrix.txt 18行、audit.json 32行。既有 audit.json 可解析，记录16份编译器匹配、ELF哈希/计数核验、同名分母核验及公开文本检查；本次未重跑 audit.py、未新增探测/下载/板子连接/REA分析。收尾文件为 compare.md、audit.json、scripts/audit.py 与本 STATE；待提交文件均为UTF-8文本，private/ 与 local-runtime/ 忽略规则已确认。原有结论限制和未决项保持有效。
+
+## 子步骤提交日志
+
+- gcc-vs-llvm 收尾检查与步骤5闭合：六个必需产物齐全且非空；提交既有 compare.md、audit.json、scripts/audit.py 及 STATE 更新，仅公开文本，使用普通 git push 同步。
