@@ -1,0 +1,12 @@
+*
+!.gitignore
+!README.md
+!connect.txt
+!board-identity.txt
+!hardening-matrix.txt
+!hardening-summary.txt
+!anti-re-signs.txt
+!platform-mechanisms.txt
+!protection-inventory.md
+!re-effect.md
+!audit.json
