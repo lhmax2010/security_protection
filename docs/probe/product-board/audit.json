@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "scope": "Sanitized product-board survey; bounded observations, not factory-default certification.",
+  "identity": {
+    "platform": "Tizen 10.0.0 TV",
+    "architecture": "armv7l",
+    "gate_passed": true
+  },
+  "connection": {
+    "strict_PM_verified_host_key": true,
+    "setup_backup_before_changes": true,
+    "SSH_setup_exit": 0,
+    "SDB_root_confirmed": true
+  },
+  "ELF_samples": {
+    "total": 30,
+    "executables": 12,
+    "shared_libraries": 18,
+    "all_decoder_success_markers_present": true,
+    "symbol_counts_published_as_buckets_only": true
+  },
+  "positive_counts": {
+    "Full_RELRO": 6,
+    "NX_request": 30,
+    "PIE_executables": 10,
+    "stripped": 29,
+    "canary_import": 28,
+    "FORTIFY_import": 25
+  },
+  "REA": {
+    "server": "6.4.0",
+    "provider": "Ghidra 12.1.4",
+    "open_source_library_alias": "lib_S",
+    "public_functions_with_real_bodies": 2,
+    "pseudocode_and_assembly_nonempty": true,
+    "literal_search_matches_per_function": [
+      1,
+      1
+    ],
+    "raw_MCP_and_decoded_equal": true,
+    "provider_and_local_subject_identity_verified": true,
+    "first_timeout_preserved": true,
+    "successful_main_requests": 10,
+    "successful_followup_requests": 4
+  },
+  "publication_checks": {
+    "UTF8_text_only": true,
+    "real_sample_names_and_paths_absent": true,
+    "private_mapping_ignored_and_untracked": true,
+    "single_open_source_binary_ignored_and_untracked": true,
+    "raw_MCP_and_diagnostics_private": true,
+    "no_full_symbol_or_string_inventory_requested": true,
+    "STATE_additions_scanned": true
+  },
+  "unresolved": [
+    "Secure-boot enforcement and active integrity coverage are unknown.",
+    "Bounded standard interfaces do not establish absence of vendor TEE or application encryption.",
+    "Private algorithms and whole-product obfuscation/encryption coverage were not analyzed.",
+    "Targeted product and historical open-board cohorts are not matched or random."
+  ],
+  "board_activity": "Only authorized backed-up sdbd setup writes; authored survey commands readonly; no workload, install/remove, injection, reboot or proprietary-library pull."
+}
