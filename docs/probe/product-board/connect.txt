@@ -1,16 +1,10 @@
-Product-board connection: BLOCKED before authentication
-
-This file is a redacted projection. Exact host key/address/local known-host information and original diagnostic text remain in ignored private local records.
-Local route lookup succeeded; source address retained only locally.
-Interactive SSH attempted once. SSH exit=255.
-Original non-identifying error lines:
-WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
-Host key verification failed.
-
-No password prompt reached; no password requested or stored.
-No remote shell/session established. No vconf/service change or backup command executed.
-No local known_hosts deletion/replacement or verification bypass performed.
-SDB kill/start/connect/root/id: NOT ATTEMPTED because prerequisite SSH failed.
-TV-product/ARM architecture identity: UNKNOWN; not read.
-Sample inventory, mitigation coverage, platform mechanism inspection and REA: NOT ATTEMPTED.
-Stop and wait for PM to verify the changed device identity/host key through a trusted terminal; no repeated attempts.
+Product-board connection resumed: PASS
+SSH ED25519 key matches the fingerprint verified by PM; strict pinned-key checking retained.
+Interactive root SSH authenticated in a visible local terminal; password was not placed in scripts, chat, or logs.
+TV/ARMv7 preflight passed before writes. Existing vconf values, service states, and any applicable drop-in were backed up before the authorized sdbd setup.
+Authorized sdbd setup completed, exit 0. Backup locations and raw outputs remain local/private.
+SDB kill-server/start-server/connect/devices/root-on/id: all exit 0; uid=0 confirmed.
+SDB identity gate: Tizen TV product image, armv7l; development-image signatures rejected.
+Local terminal launch initially failed (exit 127, GLIBC_PRIVATE library conflict); original error retained privately. Launch with system libraries succeeded. The inaccessible internal SSH prompt was cancelled before authentication.
+No survey workload, package installation/removal, injection, reboot, or unrelated configuration change was performed.
+Previous host-key-change block is historical and resolved by PM verification; raw records preserved locally.

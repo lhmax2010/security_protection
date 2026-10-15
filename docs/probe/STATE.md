@@ -317,3 +317,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [连接阻断并停止] product-board：一次交互SSH在密码认证之前因“WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!” / “Host key verification failed.”退出255；完整具体诊断仅存忽略private/，公开connect.txt为去标识投影。没有取得shell、没有执行任何板上备份/vconf/服务恢复或其它写入，没有改known_hosts/绕过校验；未反复连接，也未继续sdb或采样。当前产品版本/架构、保护覆盖/是否强于开源板、平台机制、逆向效果及反逆向是否空白全部未知，不能引用旧开源板当产品结果。需PM在可信终端核实设备身份和新的SSH主机密钥后通知继续；按用户“连不上停下等我”要求，本任务止于此阻断，无产品数据公开。
 
 - [已停止等待PM] product-board连接受SSH主机密钥变化阻断，未认证/未执行板上设置/未开展调查；仅推送脱敏连接状态与STATE，不推送原始诊断或映射，等设备身份/主机密钥经可信核验再继续。
+
+- [product-board连接/身份完成] PM已可信核验新SSH指纹，本轮严格固定ED25519校验、未改known_hosts。内部密码终端不可见而认证前取消；可见GNOME终端首次exit127（GLIBC_PRIVATE冲突）原错留private，改系统运行库启动成功，PM直接终端输入密码。SSH先核验TV/armv7，再备份vconf/服务状态及适用drop-in，授权sdbd恢复exit0；SDB各连接/root/id步骤exit0，uid0及Tizen10.0.0 TV/armv7l身份门再次通过。connect与board-identity为脱敏投影，真实输出/备份位置留private；旧主机密钥阻断已解除。采样与REA尚未执行，除授权sdbd设置外不作板上写入。

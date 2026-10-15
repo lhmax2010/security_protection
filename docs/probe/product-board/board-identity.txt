@@ -1,0 +1,7 @@
+Identity gate: PASS
+OS: Tizen 10.0.0 (Tizen10/TV)
+Architecture: armv7l
+Kernel release: 6.12.60
+TV product-image identity confirmed via both SSH preflight and SDB.
+Not the historical unified-toolchain/RPi development image.
+Device hostname, build identifiers, addresses, and raw identity remain local/private.
