@@ -1,0 +1,39 @@
+Product TV image: 30 targeted ELF samples (12 executables, 18 shared libraries).
+Aliases only; real path mapping and raw records are ignored local files.
+Method: existing RPM embedded Lua, metadata-only ELF decoder; no target execution or board files created by the collector.
+Selection: conventional platform utilities/runtime/security/media libraries plus deterministic spread across additional large direct files; targeted, not random, not whole-product coverage.
+Symbol counts are buckets only; C++ majority applies to defined externally visible dynamic entries.
+
+alias	kind	RELRO	NX	PIE	stripped	canary	FORTIFY	RPATH	RUNPATH	dynamic_symbol_bucket	export_bucket	exported_function_bucket	cpp_mangled_majority
+exec_01	executable	Full	Enabled	Yes	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Present	100-999	0	0	N/A(no exports)
+exec_02	executable	Full	Enabled	Yes	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	100-999	0	0	N/A(no exports)
+exec_03	executable	None	Enabled	Yes	Yes(no .symtab)	Detected(import)	No dynamic evidence	Absent	Absent	10-99	0	0	N/A(no exports)
+exec_04	executable	Partial	Enabled	Yes	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	100-999	0	0	N/A(no exports)
+exec_05	executable	Partial	Enabled	Yes	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	10-99	10-99	1-9	No
+exec_06	executable	Partial	Enabled	No	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	100-999	10-99	10-99	Yes
+exec_07	executable	Full	Enabled	Yes	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Present	100-999	10-99	1-9	No
+exec_08	executable	Partial	Enabled	Yes	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Present	100-999	10-99	10-99	Yes
+exec_09	executable	Partial	Enabled	Yes	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Present	100-999	0	0	N/A(no exports)
+exec_10	executable	Full	Enabled	Yes	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Present	100-999	0	0	N/A(no exports)
+exec_11	executable	Partial	Enabled	Yes	No	Detected(import)	Detected(import)	Absent	Absent	100-999	100-999	100-999	Yes
+exec_12	executable	Partial	Enabled	No	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	1000-9999	100-999	100-999	Yes
+lib_A	shared-library	Full	Enabled	N/A(DSO)	Yes(no .symtab)	Provider-definition-only	Provider-definition-only	Absent	Absent	1000-9999	1000-9999	1000-9999	No
+lib_B	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	No dynamic evidence	No dynamic evidence	Absent	Absent	1000-9999	1000-9999	1000-9999	Yes
+lib_C	shared-library	Full	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	No dynamic evidence	Absent	Present	100-999	10-99	1-9	No
+lib_D	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Present	100-999	100-999	100-999	No
+lib_E	shared-library	None	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Present	100-999	100-999	100-999	No
+lib_F	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	1000-9999	100-999	100-999	No
+lib_G	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	1000-9999	1000-9999	1000-9999	No
+lib_H	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	1000-9999	1000-9999	1000-9999	No
+lib_I	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	100-999	100-999	100-999	No
+lib_J	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	1000-9999	100-999	100-999	Yes
+lib_K	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Present	100-999	100-999	10-99	Yes
+lib_L	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	1000-9999	1000-9999	100-999	Yes
+lib_M	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	No dynamic evidence	Absent	Absent	1000-9999	1000-9999	1000-9999	Yes
+lib_N	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	100-999	100-999	10-99	Yes
+lib_O	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	10-99	1-9	1-9	No
+lib_P	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	1000-9999	100-999	100-999	Yes
+lib_Q	shared-library	Partial	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	100-999	100-999	100-999	Yes
+lib_R	shared-library	None	Enabled	N/A(DSO)	Yes(no .symtab)	Detected(import)	Detected(import)	Absent	Absent	100-999	100-999	100-999	No
+
+Limits: absent helper imports do not prove no protection; provider definitions do not count as imports. NX means GNU_STACK request. PIE denominator excludes shared libraries. RUNPATH values, symbol names, addresses, section layouts and component paths are not published.

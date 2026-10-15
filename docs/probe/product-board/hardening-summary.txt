@@ -1,0 +1,19 @@
+Tizen 10.0.0 TV / armv7l: 30 nonrandom samples (12 executable, 18 shared library).
+Property	Detected/denominator	Percent
+PIE (executables)	10/12	83.33%
+Full RELRO	6/30	20.00%
+NX GNU_STACK request	30/30	100.00%
+stripped (.symtab absent)	29/30	96.67%
+canary imported-helper evidence	28/30	93.33%
+FORTIFY imported-helper evidence	25/30	83.33%
+RPATH present	0/30	0.00%
+RUNPATH present	9/30	30.00%
+RELRO distribution: {"Full": 6, "None": 3, "Partial": 21}
+canary: 28 imported-helper positives, 1 provider-definition-only, 1 no dynamic evidence.
+FORTIFY: 25 imported-helper positives, 1 provider-definition-only, 4 no dynamic evidence.
+Defined dynamic export buckets: {"0": 6, "10-99": 5, "100-999": 12, "1000-9999": 6, "1-9": 1}
+C++ mangled entries are a majority in 12/30 samples (12/24 with nonzero exports).
+
+Historical open-board cohort: 27 ELF, 11 executable/16 DSO; Full RELRO 8/27=29.63%, NX/strip 27/27=100%, PIE 11/11=100%, canary 21/27=77.78%, FORTIFY 17/27=62.96%.
+This product cohort has higher canary/FORTIFY import evidence but lower Full RELRO, PIE and strip proportions; no blanket stronger/weaker ranking. Different versions and targeted cohorts are not matched-pair measurements.
+Positive helper imports are not exact flags or all-function coverage; provider definitions counted separately; ELF NX is not a runtime probe.

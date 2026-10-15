@@ -319,3 +319,5 @@ PM明确改用SDB连接192.168.108.26，授权仅对网络持久化配置进行�
 - [已停止等待PM] product-board连接受SSH主机密钥变化阻断，未认证/未执行板上设置/未开展调查；仅推送脱敏连接状态与STATE，不推送原始诊断或映射，等设备身份/主机密钥经可信核验再继续。
 
 - [product-board连接/身份完成] PM已可信核验新SSH指纹，本轮严格固定ED25519校验、未改known_hosts。内部密码终端不可见而认证前取消；可见GNOME终端首次exit127（GLIBC_PRIVATE冲突）原错留private，改系统运行库启动成功，PM直接终端输入密码。SSH先核验TV/armv7，再备份vconf/服务状态及适用drop-in，授权sdbd恢复exit0；SDB各连接/root/id步骤exit0，uid0及Tizen10.0.0 TV/armv7l身份门再次通过。connect与board-identity为脱敏投影，真实输出/备份位置留private；旧主机密钥阻断已解除。采样与REA尚未执行，除授权sdbd设置外不作板上写入。
+
+- [product-board ELF采样完成] 产品TV只读30样本（12可执行/18库）已按占位名输出属性与符号数量级，真实映射忽略且0600。Full RELRO6/30、NX30/30、PIE10/12、strip29/30、canary导入28/30、FORTIFY导入25/30；各有1 provider-only不计导入。无已检测packer段名/W+X段异常，30/30有限rodata窗口有可打印片段，不能据此排除选择性加密或混淆。产品helper导入覆盖高于历史开源板、Full RELRO/PIE/strip比例低，队列非随机且不配对，不能笼统称更强。readelf/独立Lua缺失已实记；本机首个能力片段SyntaxError、直接RPM含空白宏Unterminated、初版传输保护条件及嵌套heredoc引号失败、RPM print拼接致本机解析断言/缺samples文件均保留私有原始输出；最终使用已有RPM内嵌Lua、环境载入代码及普通引号赋值，SHA256验证传输、30/30完成标记通过，本机自有玩具解码校验通过，不把失败结果作证据。未安装工具或写板上采样文件；私有算法未分析。

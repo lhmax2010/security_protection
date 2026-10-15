@@ -1,0 +1,9 @@
+Scope: structural screening of the same 30 aliased ELF samples, not algorithm analysis of private components.
+Named .text present: 30/30.
+Known packer section-name markers (UPX/aspack/.packed): 0/30 detected.
+Writable+executable PT_LOAD: 0/30 detected.
+Nonzero entry belongs to an executable PT_LOAD: 24/24; zero-entry samples: 6 (not treated as anomalies).
+.symtab absent: 29/30; this removes ordinary symbol names, not executable instructions. Dynamic exports remain in 24/30 (counts only published).
+A run of at least four printable ASCII bytes occurs in the first up-to-64KiB of named .rodata for 30/30. No string contents were emitted. This does not rule out selective string encryption and does not identify sensitive strings.
+No positive evidence of the specific packer markers or structural anomalies was detected. These tests cannot establish absence of custom packing, control-flow obfuscation, selective encryption, anti-debugging or runtime unpacking.
+Algorithm readability is assessed separately on one confirmed open-source-origin library only; private functions were not decompiled.
