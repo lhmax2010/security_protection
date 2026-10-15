@@ -1,0 +1,29 @@
+Product board: bounded readonly platform checks, after authorized developer-mode/sdbd setup.
+This describes the sampled state, not a factory-default security certification.
+No policy content, device identifiers, mount source paths, firmware or boot secrets published.
+
+Property	Observed
+SMACK_mount	Present
+ASLR_randomize_va_space	2
+root_mount_mode	rw
+application_encryption_fs_mount_trace	Absent
+module_dm_verity	Present
+module_dm_crypt	Absent
+module_optee	Absent
+device_mapper_node_trace	Present
+verity_dm_uuid_trace	Absent
+crypt_dm_uuid_trace	Absent
+boot_integrity_keyword_trace	Present
+standard_TEE_node_trace	Absent
+standard_secure_boot_interface_trace	Absent
+secure_boot_actual_state	Unknown(no authenticated boot measurement)
+application_encryption_actual_state	Unknown(no application package contents inspected)
+
+SMACK is mounted; rules, exceptions and effective enforcement were not audited.
+ASLR=2 requests full kernel ASLR; no runtime address sampling was performed.
+Root mount is currently rw; historical open-board root was ro. No mounts were changed.
+dm-verity kernel interface plus device-mapper and boot-integrity keyword traces are present. No verity-named DM UUID was found. Active verification, covered partitions, fail-closed behavior and trust chain remain unknown.
+No standard TEE device/class node or optee module interface was found in the bounded checks. Vendor-specific TEE interfaces were not enumerated; TEE absence is not established.
+No standard secure-boot interface was found in the bounded checks. This ARM device can use vendor-specific secure boot; actual secure-boot state is unknown.
+No ecryptfs/encfs mount or crypt-named DM UUID was found. Application package encryption remains unknown; package contents were not inspected.
+Historical open-board checks showed SMACK mounted, ASLR=2 and no dm/verity trace in their narrower query. Different scopes prevent a definitive integrity comparison.
