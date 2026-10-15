@@ -6,4 +6,4 @@
 
 目录使用默认全部忽略、逐个公开文件白名单；.local-mapping.txt永远不进入版本控制。
 
-当前状态：PM核验主机密钥后恢复连接，SSH设置前备份已完成，SDB/root及TV产品ARMv7身份门均通过；加固采样与REA效果仍待测。见connect.txt与board-identity.txt。
+当前状态：PM核验主机密钥后恢复连接，SSH设置前备份已完成，SDB/root及TV产品ARMv7身份门均通过；30样本属性、平台机制和一份确认开源来源库的两个公开实现REA分析已完成。见[protection-inventory.md](protection-inventory.md)与[re-effect.md](re-effect.md)。安全启动/TEE/应用加密强制状态及私有算法保护仍未知，不称反逆向完全空白。
